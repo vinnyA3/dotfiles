@@ -1,21 +1,18 @@
-[submodule "bundle/dracula-theme"]
-	path = bundle/dracula-theme
+[submodule "vim/autoload/vim-pathogen"]
+	path = vim/autoload/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/vim-airline"]
+	path = vim/bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
+[submodule "vim/bundle/bundle/dracula-theme"]
+	path = vim/bundle/bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
-[submodule "bundle/vim-sensible"]
-	path = bundle/vim-sensible
+[submodule "vim/bundle/tmuxline.vim"]
+	path = vim/bundle/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim.git
+[submodule "vim/bundle/vim-sensible"]
+	path = vim/bundle/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule "bundle/vim-airline"]
-	path = bundle/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-[submodule "bundle/vim-airline-themes"]
-	path = bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-[submodule "bundle/tmuxline.vim"]
-	path = bundle/tmuxline.vim
-	url = https://github.com/edkolev/tmuxline.vim
-[submodule "bundle/promptline.vim"]
-	path = bundle/promptline.vim
-	url = https://github.com/edkolev/promptline.vim
