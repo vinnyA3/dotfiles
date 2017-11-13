@@ -1,0 +1,41 @@
+" Pathogen Init
+execute pathogen#infect()
+execute pathogen#helptags()
+
+syntax on
+colors dracula
+filetype plugin indent on
+
+" Airline
+" - set airline theme
+let g:airline_theme='dracula'
+
+" - convenience var for airline fonts
+let g:airline_powerline_fonts = 1
+
+" - set tmux status line with airline's tmuxline
+let g:tmuxline_powerline_separators = 0
+
+" NerdTREE
+map <C-n> :NERDTreeToggle<CR>
+
+" editorconfigs
+set autoindent
+set indentexpr=off
+set expandtab
+set tabstop=4
+set number
+
+set sw=4
+set textwidth=80
+set nohls
+set noshowmatch
+setlocal spell spelllang=en_us
+set nospell
+
+set modeline
+set nojoinspaces " pesky 2-spaces after the period thing - substack :p
+
+set nowritebackup
+set noswapfile
+set nobackup
