@@ -1,0 +1,22 @@
+#!/bin/bash
+
+spotify=/usr/bin/spotify
+
+if [[ -x $spotify && -x /usr/bin/spotblock ]];
+then
+    case "$(pidof yabar | wc -w)" in
+
+        0)  # No instance of yabar running .. contin
+            ;;
+        1)  kill $(pidof yabar)
+            yabar -c ~/.config/yabar/yabar-sp.conf &
+            yb_id=$!
+            ;;
+    esac
+    # start spotblock process in bg
+    spotblock &
+    spot_id=$!
+    $spotify
+    # kill spotblock process upon spotify termination
+    trap "kill -9  $spot_id; kill -9 $yb_id; yabar &" SIGINT SIGTERM EXIT
+fi
