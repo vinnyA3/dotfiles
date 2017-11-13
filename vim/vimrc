@@ -19,6 +19,11 @@ let g:tmuxline_powerline_separators = 0
 " NerdTREE
 map <C-n> :NERDTreeToggle<CR>
 
+" Ale
+" - lint only on save
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+
 " editorconfigs
 set autoindent
 set indentexpr=off
