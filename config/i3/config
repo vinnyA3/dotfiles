@@ -201,7 +201,7 @@ focus_follows_mouse no
 # exec --no-startup-id compton --config $HOME/.config/compton/compton.conf
 
 # Background
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/blocks.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/alexis.jpg
 
 # bindsym $mod+Shift+2 exec i3lock
 
