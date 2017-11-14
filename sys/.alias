@@ -1,3 +1,8 @@
+# Tmux
+alias tmux='tmux -2'
+
+# Xclip
+alias xp='xclip -o -selection clipboard'
 # Git
 alias g='git'
 alias gadd='git add'
@@ -11,8 +16,8 @@ alias l='ls CF'
 alias l1='ls -1a'
 
 # Dir aliases
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias -- -="cd -"                  # Go to previous dir with -
-alias cd.='cd $(readlink -f .)' # Go to real dir (i.e. if current dir is linked)
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias -- -='cd -'                  # Go to previous dir with -
+alias cd.="cd $(readlink -f .)" # Go to real dir (i.e. if current dir is linked)
