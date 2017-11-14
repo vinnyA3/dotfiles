@@ -211,7 +211,9 @@ for_window [class="^.*"] border pixel 0
 gaps inner 24 
 gaps outer 0 
 
-#                         border  bg      text    indicat child_border
+# Exec Lemonbar
+exec_always --no-startup-id killall lemonbar; sh ~/.config/lemonbar/bar_primary &
+
 #client.focused            #101110 #151515 #8d928f #4F4F4F #101110
 #client.focused_inactive   #101110 #121312 #6c777a #121212 #101110
 #client.unfocused          #101110 #121312 #6c777a #4F4F4F #101107
