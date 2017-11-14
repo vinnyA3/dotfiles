@@ -3,6 +3,7 @@ alias tmux='tmux -2'
 
 # Xclip
 alias xp='xclip -o -selection clipboard'
+
 # Git
 alias g='git'
 alias gadd='git add'
