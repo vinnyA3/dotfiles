@@ -3,7 +3,7 @@
 # It will not be overwritten, so edit it as you like.
 #
 # Should you change your keyboard layout some time, delete
-# this file and re-run i3-config-wizard(1).
+ # this file and re-run i3-config-wizard(1).
 #
 
 # i3 config file (v4)
@@ -195,13 +195,13 @@ exec --no-startup-id unclutter -idle 1
 focus_follows_mouse no
 
 # Yabar start
-# exec --no-startup-id yabar
+exec --no-startup-id yabar
 
 # Compton
 # exec --no-startup-id compton --config $HOME/.config/compton/compton.conf
 
 # Background
-exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/alexis.jpg
+exec --no-startup-id feh --bg-scale ~/Pictures/wallpaper/parasite-eve.jpg
 
 # bindsym $mod+Shift+2 exec i3lock
 
@@ -212,7 +212,7 @@ gaps inner 24
 gaps outer 0 
 
 # Exec Lemonbar
-exec_always --no-startup-id killall lemonbar; sh ~/.config/lemonbar/bar_primary &
+# exec_always --no-startup-id killall lemonbar; sh ~/.config/lemonbar/bar_primary &
 
 #client.focused            #101110 #151515 #8d928f #4F4F4F #101110
 #client.focused_inactive   #101110 #121312 #6c777a #121212 #101110
