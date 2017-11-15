@@ -18,5 +18,5 @@ then
     spot_id=$!
     $spotify
     # kill spotblock process upon spotify termination
-    trap "kill -9  $spot_id; kill -9 $yb_id; yabar &" SIGINT SIGTERM EXIT
+    trap "kill -9  $spot_id $yb_id; yabar &" SIGINT SIGTERM EXIT
 fi
