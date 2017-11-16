@@ -2,3 +2,5 @@ config/spotify
 config/pulse
 config/lemonbar
 config/dconf
+config/configstore/
+config/mimeapps.list
