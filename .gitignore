@@ -6,8 +6,8 @@ config/*
 !config/i3
 !config/compton
 !config/gtk-3.0
-
-# config/vifm
+!config/vifm
+config/vifm/*
 !config/vifm/vifmrc
 
 # Nvm
