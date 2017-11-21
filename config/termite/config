@@ -1,0 +1,109 @@
+[options]
+scroll_on_output = false
+scroll_on_keystroke = true
+audible_bell = false
+mouse_autohide = false
+allow_bold = true
+dynamic_title = true
+urgent_on_bell = true
+clickable_url = true
+font = Source Code Pro Medium 10
+scrollback_lines = 10000
+search_wrap = true
+#icon_name = terminal
+geometry = 520x340
+
+# "system", "on" or "off"
+cursor_blink = system
+
+# "block", "underline" or "ibeam"
+cursor_shape = underline 
+
+# $BROWSER is used by default if set, with xdg-open as a fallback
+browser = firefox
+
+# set size hints for the window
+#size_hints = false
+
+# Hide links that are no longer valid in url select overlay mode
+filter_unmatched_urls = true
+
+# emit escape sequences for extra modified keys
+#modify_other_keys = false
+
+[colors]
+cursor = #313533
+cursor_foreground = #28292c
+#foreground = #6d787b
+#foreground_bold = #d5f1f4
+background = #101110
+
+# 20% background transparency (requires a compositor)
+background = rgba(.8,.4,5.9,.96)
+
+# if unset, will reverse foreground and background
+#highlight = #212322
+
+# colors from color0 to color254 can be set
+
+## black
+#color0= #171917
+#color8= #262826
+#
+## red
+#color1= #665059
+#color9= #744b5a
+#
+## Green
+#color2= #58625a
+#color10= #5e6b61
+#
+## Yellow
+#color3= #616258
+#color11= #6d6d66
+#
+## Blue
+#color4 = #6c7179
+#color12 = #7e838c
+#
+## Magenta
+#color5 =  #666069
+#color13 = #7a7080
+#
+## Cyan
+#color6 = #5c7176
+#color14 = #67878c
+#
+## White
+#color7=  #7c8b8e
+#color15= #98a7aa
+
+foreground= #e2e2e2
+#background= #282a36
+color0=     #000000
+color8=     #4d4d4d
+color1=     #ff5555
+color9=     #ff6e67
+color2=     #50fa7b
+color10=    #5af78e
+color3=     #f1fa8c
+color11=    #f4f99d
+color4=     #bd93f9
+color12=    #caa9fa
+color5=     #ff79c6
+color13=    #ff92d0
+color6=     #8be9fd
+color14=    #9aedfe
+color7=     #bfbfbf
+color15=    #e6e6e6
+
+#[hints]
+#font = Monospace 12
+#foreground:    #ac8e8e
+#background:    #101011
+#active_foreground = #e68080
+#active_background = #3f3f3f
+#padding = 4
+#border = #3f3f3f
+#border_width = 0.5
+#roundness = 2.0
