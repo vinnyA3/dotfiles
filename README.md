@@ -6,7 +6,8 @@ system.  This
 repo contains my very own dotfiles.  Feel free to use anything here.
 
 **Note**:  As of now, the master installation file does not install everything
-you need if you want to get up and running with my full setup.
+you need, that is if you want to get up and running with my full setup without
+hassle.
 
 
 ## Install
