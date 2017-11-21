@@ -1,9 +1,18 @@
-config/spotify
-config/pulse
-config/lemonbar
-config/dconf
-config/configstore/
-config/mimeapps.list
+# Config
+config/*
+!config/neofetch
+!config/termite
+!config/yabar
+!config/i3
+!config/compton
+
+# config/vifm
+config/vifm/*
+!config/vifm/vifmrc
+
+# Nvm
 nvm
+
+# Xmonad
 xmonad/*
 !xmonad/xmonad.hs
