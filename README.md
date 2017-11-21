@@ -21,6 +21,7 @@ To install with Git:
 ## Additional Resources
 
 * Get started with your own dotfiles 
+
     Lars Kappart has a fantastic [article](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789) on dotfiles and how to get them set up. I
     used some of Lar's setup scripts to help with some
     scaffolding. 
