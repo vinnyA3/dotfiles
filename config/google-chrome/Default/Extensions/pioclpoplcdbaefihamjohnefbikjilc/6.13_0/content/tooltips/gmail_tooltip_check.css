@@ -1,0 +1,13 @@
+@keyframes nodeInserted {
+    from {
+        clip: rect(1px, auto, auto, auto);
+    }
+    to {
+        clip: rect(0px, auto, auto, auto);
+    }
+}
+
+span:last-child > div > span > [src='images/cleardot.gif'] {
+    animation-name: nodeInserted;
+    animation-duration: 0.001s;
+}

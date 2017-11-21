@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+var CommonSelector={};CommonSelector.SPECIAL_CHAR_REGEX=/^[`~!@#\$%\^&\*\(\)\[\]\{\}\-_\+=\\\|'";:,<\.>\/\?]+/,CommonSelector.binaryInsert=function(a,b,c,d){d||(d=0);for(var e=a.children.length-1,f=c.innerText.toLowerCase();d<=e;){var g=d+Math.floor((e-d)/2);f<b(a.children[g]).toLowerCase()?e=g-1:d=g+1}a.insertBefore(c,a.children[d])};

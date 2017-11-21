@@ -1,0 +1,9 @@
+
+#contentToDisplay .section.checked .checkbox { background-image: url('../img/checkmark.png'); }
+
+/* retina */ 
+@media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) { 
+
+    #contentToDisplay .section.checked .checkbox { background-image: url('../img/checkmark@2x.png'); background-size: 11px 9px; }
+
+}

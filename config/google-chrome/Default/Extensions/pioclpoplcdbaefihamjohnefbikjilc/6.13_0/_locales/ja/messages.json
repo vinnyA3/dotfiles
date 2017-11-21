@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "4月"
+   },
+   "Aug": {
+      "message": "8月"
+   },
+   "August": {
+      "message": "8 月"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Evernote にクリップ"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "ビジネス"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "閉じる"
+   },
+   "Dec": {
+      "message": "12月"
+   },
+   "December": {
+      "message": "12 月"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "不明なエラー"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "不明なノートブック"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "権限がありません"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "アカウントが停止中なのでアクセスが拒否されました"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "ログイン失敗回数が上限に達しました。後ほど再度お試し下さい。"
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web クリッパーは、お客様のアカウントを確認するために Cookie を使用します。ブラウザの設定で、Evernote からサードパーティ製 Cookie が許可されていることをご確認ください。"
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Cookie を有効にして Web クリッパーを使用"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web クリッパーを正常に機能させるために、Cookie が必要になります。ブラウザの設定にて Cookie を有効にしてください。"
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "ノートブックの作成中にエラーが発生しました。"
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "このノートブック名は既に存在します。"
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "無効なノートブック名です。"
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "ノートブックの数が上限に達しました。"
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "サーバとの通信に問題が生じました [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernote のサーバは現在利用できません。後ほど再度お試しください"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "インターネット接続がありません"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "まだノートブックがありません。"
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "ノートブックの更新中にエラーが発生しました。"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Evernote の拡張機能を使用して、Web 上で見つけたページを Evernote アカウントに保存します。"
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "2月"
+   },
+   "February": {
+      "message": "2 月"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "(金)"
+   },
+   "Friday": {
+      "message": "金曜日"
+   },
+   "Jan": {
+      "message": "1月"
+   },
+   "January": {
+      "message": "1 月"
+   },
+   "July": {
+      "message": "7月"
+   },
+   "June": {
+      "message": "6月"
+   },
+   "Last_used": {
+      "message": "最後に使用"
+   },
+   "March": {
+      "message": "3月"
+   },
+   "May": {
+      "message": "5月"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "(月)"
+   },
+   "Monday": {
+      "message": "月曜日"
+   },
+   "Nov": {
+      "message": "11月"
+   },
+   "November": {
+      "message": "11 月"
+   },
+   "Oct": {
+      "message": "10月"
+   },
+   "October": {
+      "message": "10 月"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "個人"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "(土)"
+   },
+   "Saturday": {
+      "message": "土曜日"
+   },
+   "Sept": {
+      "message": "9月"
+   },
+   "September": {
+      "message": "9 月"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "ログイン"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "概要"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "(日)"
+   },
+   "Sunday": {
+      "message": "日曜日"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "(木)"
+   },
+   "Thursday": {
+      "message": "木曜日"
+   },
+   "Today": {
+      "message": "今日"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "(火)"
+   },
+   "Tuesday": {
+      "message": "火曜日"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "(水)"
+   },
+   "Wednesday": {
+      "message": "水曜日"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "メッセージを追加"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "アカウントを追加"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "ビジネスアカウントを追加"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "日付を追加"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "個人アカウントを追加"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "リマインダーを追加"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "タグを追加"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "タスクを追加"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "クリップした後"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "すべて必須項目です。"
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "常に表示"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "常に次を選択:"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "常に次のタグを付ける:"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "注釈"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "適用"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "承認"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "矢印"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "矢印ツール"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "記事"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "このページを記事としてクリップできません。クリップしたい箇所を選択して下さい。"
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "アプリケーションのアクセスが Evernote Web サービスにより取り消されました。再度パスワードを入力して下さい。"
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "認証中"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "ブラウザ設定が Evernote 拡張機能と矛盾しています。Google Chrome のプライバシーコンテンツ設定を初期設定に戻して下さい: ローカルデータの設定を許可、サードパーティのクッキーをブロックしない、他のサードパーティ製拡張機能の動作を無効化。"
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "クリッパーを自動終了"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Evernote プラスまたは Evernote プレミアムにアップグレードすると、有料プラン限定機能をご利用いただけます。"
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "上限に達する前に Evernote プラスにアップグレードすれば、アップロード容量が 1GB に増加します。"
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "プレミアム版にアップグレードすると、クリップ保存した記事をモバイル端末でオフライン時に読めるようになります。プレミアム版では、オフラインノートブックを設定してノートを常に閲覧可能にできます。"
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "「Evernote プラス」と「Evernote プレミアム」"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "アップグレードで月間アップロード容量が 1GB に"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "パソコンでクリップして、スマホで読む"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "ビジネスノートまたはビジネスノートブックを共有しようとしているチャット参加者の中に、社外の人が含まれています。「OK」をクリックすると、参加者全員に共有されます。"
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "ビジネス"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "ビジネスノートブック"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "編集が可能"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "編集・招待が可能"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "閲覧が可能"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "クリップを保存できません"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "このクリップを保存できません"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "見つかりませんか？"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "番号を入力"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "このバージョンの Evernote Web クリッパーは、Evernote サービスと互換性がありません。最新版をインストールして下さい。"
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "この通知を今後表示しない"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "すべてのタグをクリア"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "簡易版の記事"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "クリップする"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "クリップ:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "クリッパーのオプション"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "$site$ からのクリップ",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Web クリッパーまたは起動中のパネルを閉じる"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "ワークチャットで共同作業"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "カラー"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "アクティビティを確認"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Google と連携"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Evernote サポートに連絡"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span> \u003Cspan id=\"status\">をクリップ中\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"title\">「…」\u003C/span>\u003Cspan id=\"status\">をクリップ中\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "クリップ中"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span> \u003Cspan id=\"status\">を同期中\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "同期中"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "画像をクリップ"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "PDF をクリップ"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "ページ全体をクリップ"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "スクリーンショットをクリップ"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "選択部分をクリップ"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "ブックマークをクリップ"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "クリップを作成する前に「Evernote にクリップ」ツールバーボタンからサインインする必要があります"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "続ける"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "記事の選択範囲を収縮する"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "記事の選択範囲を収縮する"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "クリップボードにコピー"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. All rights reserved.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>プライバシーポリシー\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>サービス利用規約\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ のビジネスノート",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "作成"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "新規ノートブックを作成"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "切り取り"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Safari 版 Web クリッパーでは、ページ発行元のコンテンツセキュリティ方針上の制限により、このページをクリップすることができません。"
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "サイドバーのメニューを一段ずつ下に移動してプレビューする"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "既定のクリップ用アカウント:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "姓"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "クリップしたノートを削除中..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "ログイン情報が間違っているか、ログイン情報保持の期間が過ぎました。ツールバーボタンから再度サインインして下さい。"
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "\"$clipTitle$\" を保存できません",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "クリップ \"$title$\" は何度も失敗したため、再試行できません。",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "\u003Cspan id=\"notebookName\">$notebookName$\u003C/span> にクリップしました",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "再試行"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "\"$clipTitle$\" を保存できません",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "クリップを保存できません"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "クリップ保存中に不明なエラーが起きました。エラーメッセージ: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "閉じる"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "この画面を閉じる"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "完了"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "次回から表示しない"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "楕円"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "メールアドレス"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "メール"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "メールは 1 日 $limit$ 通までしか送信できません",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>メール送信するノート: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "キーボードショートカットを有効にする"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "コードを入力"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "メールアドレスを入力してください"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "名前を入力"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "名前またはメールアドレスを入力"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "エラーログ"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote は、お客様が検索したキーワードおよび検索結果を記録したり、お客様の情報を検索エンジンに共有したりすることはありません。"
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "記事の選択範囲を拡大する"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "記事の選択範囲を拡大する"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "ログインのセッションの期限が切れました。再度お試し下さい。"
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "パスワードの更新が必要です。"
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Evernote へのフィードバック（必須）"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "ノートを保存中..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "ノートブックの検索"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "連絡先を検索"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "ツアーを終了"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "次へ"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "友達にも教える"
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "新しくなった Web クリッパーのことをぜひ友達や同僚にもご紹介下さい！"
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "ノートブック"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web クリッパー"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "ツアー"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "ワンクリックでスクリーンショットを撮影。"
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "サイドバーの\u003Cstrong>スクリーンショット\u003C/strong>をクリックします。"
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "画面キャプチャ"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "注釈ツールを使い、気になったことを分かりやすくそして簡単に、自分用のメモとして、または同僚・友達に伝えることができます。矢印・蛍光ペンなどのツールで重要な箇所を強調することができます。"
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "スタンプツールは、何かを承認・却下したり、気に入った箇所を示す時に使います。\u003Cbr/>モザイクツールは、個人情報などを隠す時にご活用ください。何にでも描き込むことが可能です。"
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "では、撮ったスクリーンショットに描き込んでみましょう。"
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Web クリップに注釈を追加"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "保存した Web クリップの共有はとても簡単です。"
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "サイドバーの「\u003Cstrong>共有ボタン\u003C/strong>」をクリックして、試してみてください。"
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Web クリップの形式（簡易版の記事、注釈が入った記事など）を選択したら、3 つのいずれかの方法で共有できます: Facebook・Twitter・LinkedIn などのソーシャルメディアに投稿するか、Web クリップへのリンクを使用するか、メール送信で共有します。"
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "共有オプション"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Web クリップを簡単に共有"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Web クリッパーの新機能"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "新しい Web クリッパーを使えば、オンラインで見つけた Web ページをクリップしたり、スクリーンショットを撮ったり、ブックマークを保存したり、注釈を描き込んだりするだけでなく、特定の友達に共有することも簡単にできます。"
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "ブラウザ上または Evernote に保存した記事を読みやすくしたい時は、「簡易版の記事」をクリックして不要な部分をページから取り除くことができます。"
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "サイドバーで「\u003Cstrong>簡易版の記事\u003C/strong>」をクリックして表示を切り替え、必要に応じて Evernote アカウントに保存してください。"
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "新しい Web クリッパーを使い始める"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Web にある記事を保存・注釈を付ける"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "パスワードを忘れたら"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>送信者: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "ページ全体"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Evernote はページ全体をクリップできません。クリップしたい箇所を選択して再度お試し下さい。"
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Google 認証システムアプリに表示された確認コードを入力します。"
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "全般オプション"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "1GB を追加入手"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "グローバル（システム全体）:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Gmail からクリップするには、スレッドを選択する必要があります。"
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Gmail のスレッドを Evernote アカウントへ直接クリップできるようになりました。"
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "プレミアムに登録"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Inbox by Gmail のスレッドを Evernote アカウントへ直接クリップできるようになりました。"
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "了解"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Evernote アカウントを作成"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "関連するノートを隠す"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "蛍光ペン"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "無視"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "ブラウザの制限により、このページをクリップすることができません"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "画像マーカー"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "添付ファイルを含める"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "元のメールを含める"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "入力したコードが正しくありません。"
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "インストール"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "キーボードショートカット"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "最後に実行した操作"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "最後に使用したノートブック"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "詳細はこちら"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "規約・法務情報"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web クリッパーは、以下のオープンソースソフトウェアを使用しています"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "線"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "読み込み中..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Evernote にサインイン中"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "サインイン"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "パスワード"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "パスワードが必要です。"
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "パスワードが正しくありません"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "ログイン情報を記憶する"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Web での検索時に関連結果を表示"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "メールまたはユーザー名"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "ユーザ名は必須です。"
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "ユーザ名とパスワードが登録済みユーザと一致しません。"
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "不明なログインです。Evernote 国際版をお試し下さい"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "そのユーザ名は存在しません。"
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "有効にすると、サポートしている検索エンジンで検索した際に、自分の Evernote アカウントからの結果も表示されます。"
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "ログをエクスポート"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "最新のログを追う"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "ログファイルを選択: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "イベントログ"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "メール"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "ペン"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "ペンツール"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "注釈:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>メッセージ:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "さらに"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "詳細情報"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+ 他 $num$ ページ",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "記事の選択範囲を下へ移動する"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "記事の選択範囲を上へ移動する"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "もうすぐ月間アップロード容量の上限に達します。"
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "残りがわずか 5MB です。アップグレードすると、月間アップロード容量を増やすことができます。"
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "残りはあと 250MB です。アップグレードすると、月間アップロード容量を増やすことができます。"
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "残りはあと 250MB です。"
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web クリッパーは、クリップの内容に基づいてタグやノートブックを提案します。Web クリッパーの\u003Cspan class='newFeatureOptionsPseudoLink'>設定\u003C/span>から、この機能やその他の設定を管理できます。"
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "スマートファイリング"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "1 週間後"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "該当なし"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "いいえ、結構です"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "後で行う"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "クリップが $size$ を超えています",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "$size$ よりも大きいノートを保存するには、Evernote プラスまたは Evernote プレミアムが必要です。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "$size$ よりも大きいノートを保存するには、Evernote プレミアムが必要です。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "ノートの上限サイズは $size$ です。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "ノートブックの選択"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "通知…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Office 365 のスレッドを Evernote アカウントへ直接クリップできるようになりました。"
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "OK"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+ 他 1 ページ"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Gmail のスレッドを開く"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Inbox by Gmail のスレッドを開く"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Evernote で開く"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote Web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote デスクトップ"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "クリップの送信先"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "ビルド ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "ノートを開くために使用:"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "この設定を初めて使用する時に「外部プロトコルリクエスト」のダイアログが表示されます。「この選択を保存」という内容のチェックボックスをオンにして、「アプリケーションの起動」を選択して下さい。"
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "デスクトップクライアント"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Web クライアント"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "デフォルトのクリップ操作"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "記事をクリップ"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "ページ全体をクリップ"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "URL をクリップ"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "通知を有効にする"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "有効にした場合、クリップのアップロード完了と同時に通知が表示されます。通知から、クリップの閲覧、編集、共有が簡単にできるようになります。"
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "スタイルを保持する"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "有効にすると、元のページのスタイル情報を可能な限り保持しながらクリップします。無効にすると、装飾のないシンプルなデザインのテキストとしてクリップします。"
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "開発者向けオプション"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF ページのボタン"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF ページで Evernote への保存ボタンを表示します。"
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "アクティビティログには、Evernote アプリが処理した内容やアカウントに関する情報、お使いのデバイス情報、位置情報（有効な場合）などが含まれます。ノートの題名、タグ、ノートブック名、そして場合によってはノートのコンテンツも含まれていることがあります。弊社ではアクティビティログのデータは機密扱いとなっており、\u003Ca href=\"$privacyLink$\" target=\"_blank\">プライバシーポリシー\u003C/a>の適用対象となります。",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "ログを隠す"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "ログを表示"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "セキュアでないプロトコル"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "サービス URL を上書き"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "すべてのオプションをリセット"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "「記憶する」ボタンを有効化"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "画像、Gmail のメール、Facebook の投稿を素早く保存するためのボタンを表示します"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "保存中..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "セキュアなプロトコル"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "checkVersion 障害をシミュレート"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "中国語（簡体）シミュレーション"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "このオプションが有効な場合、クリッパーは接続するサービスを選択するため、簡体中国語に設定されているかのように動作します。"
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "ビジネスノートブックでスマートファイリング機能を許可"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "スマートファイリングを有効化"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "スマートファイリングは、クリッピングしているページに基づいて、ノートブックとタグのリストを自動的に選択します。"
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "タグとノートブック"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "スマートファイリングを無効化"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "ノートブックのみ"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "タグのみ"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "認証情報"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>注意:\u003C/b> パスワードを保存すると、このブラウザを使用している他の方があなたの Evernote アカウントにアクセスすることができます。Clip To Evernote 拡張機能からログアウトするかアンインストールしてブラウザに保存されているユーザ名とパスワードを削除して下さい。"
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "オプション"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "コンテキストメニューを有効にする"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "有効にした場合、コンテキストメニューからウェブページをクリップすることができます。画像や選択したテキスト上など、ページ内で右クリックすると、適切なクリップオプションが表示されます。"
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "関連結果"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Webを検索した際に、Evernote からも関連情報を表示"
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "クリッパーが、本番環境の代わりに通常テスト用にしか使われない「ステージ」環境を使用するように設定します。"
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "保存先"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "元のメール"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "＋{COUNT_PLURAL:他 {COUNT} 人}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Outlook のスレッドを Evernote アカウントへ直接クリップできるようになりました。"
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Evernote アカウントに保存できるノート数が上限に達しました。ノートを新たに作成するには、アカウント内のノート数を $max$ 以内に減らしてください。",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "空き容量が足りません。Evernote プレミアム版またはプラス版にアップグレードすると、アップロード容量および 1 ノートあたりの上限サイズが増加します。"
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "空き容量が足りません。Evernote プレミアム版にアップグレードすると、アップロード容量および 1 ノートあたりの上限サイズが増加します。"
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "今月分の容量が足りません。"
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "ページ: $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "ヒント: Ctrl を押しながらクリックして移動"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "参加者"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF クリップ"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Web クリッパーで Evernote アカウントに直接 PD​​F をクリップできるのはご存じですか？"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "最高"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "個人"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "モザイク処理"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "モザイクツール"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "クリップするには、このページを再度読み込む必要があります。ページの再読み込み後に、もう一度お試しください。"
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "ローカルファイルのクリップ保存には対応していません。"
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "ノートブックを読み込み中"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "ログイン情報の確認がタイムアウトしました。インターネットに接続していることを確認し、再度お試し下さい。"
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "その他のノート $count$ を表示...",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "もう 1 個ノートを表示..."
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "この場所からのクリッピングはサポートされていません。"
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "ページを待機中..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "記事をプレビュー"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web クリッパー（プレビュー）\u003Cbr>注: レイアウトが崩れる場合があります"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "ページ全体をプレビュー"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "ブックマークをプレビュー"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "次へ進む"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "クリップ"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "記事を保存"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "ページ全体を保存"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "選択範囲を保存"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "URLを保存"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "コメントを追加"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "タグの追加"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "テキストを追加する"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "ノートブック"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "保存"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "タグは使用できません"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "タイトル"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "無題のノート"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "今すぐ評価"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Web クリッパーの今バージョンにはどのような評価をしますか？"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "新しい Web クリッパーを使えば、オンラインで見つけたページを保存したり、注釈を描き込んだり、特定の人に共有するのが簡単になります。ぜひご感想をお聞かせください。"
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Web クリッパーは気に入っていただけましたか？"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "長方形"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "やり直す"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "紹介した友達が Evernote を使い始めると、あなたにも Evernote プレミアムや Evernote プラスなどへのアップグレードに使えるポイントが贈呈されます。"
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "友達を招待"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "友達を招待して、ポイントを獲得。"
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "リストを更新"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "アイデア、好きなもの、聞こえる\nもの、見えるものをすべて保存。"
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "キャンセル"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "ユーザ名が停止されています。アカウントを\u003Ca href='$url$'>復活\u003C/a>させますか？",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "メールアドレスは必須です。"
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "絵の中に見える番号を入力して下さい。"
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "メールアドレスが正しくないようです。"
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "文字、数字、および句読点で構成される 6 ～ 64 文字のパスワードを選択して下さい。"
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "ユーザ名は半角英数字で入力し、先頭と末尾は文字または数字にする必要があります。途中にハイフンやアンダーラインを含めることは可能です。"
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "パスワードは必須項目です。"
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "このメールアドレスは既に使用されています。"
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "選択したユーザ名は、既に別のユーザにより使用されています。"
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "登録する"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "ユーザ名"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "登録をクリックすると、\u003Ca href='$tos_url$' target='_blank' tabindex='6'>サービス利用規約\u003C/a>および\u003Ca href='$pp_url$' target='_blank' tabindex='7'>プライバシーポリシー\u003C/a>に同意したことになります。",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "拒否"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "関連するノート"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "クリップしたページに関連するノートがアカウント内で 3 個まで検出され、ここに表示されます。"
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "記憶する"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "記憶する"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "記憶する"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "リマインダーを追加しました"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "リマインダーを保存しました"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "リセット"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "ショートカットをリセット"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Web クリッパーを最小化"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "角丸長方形"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Evernote に画像を保存"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "PDFをEvernoteに保存"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Evernote にページ全体を保存"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "スクリーンショットを Evernote に保存"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Evernote に選択範囲を保存"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Evernote にブックマークを保存"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Evernote のノートを Salesforce のレコードと連携させ、顧客に関する詳細なメモを記録し、相手について新しい発見をする可能性が高まります。"
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "ノートを同僚に共有して、相手について知らなかった情報を入手し、さらにノートを Salesforce レコードに直接連携させることが可能です。（Evernote Business for Salesforce をセットアップした場合）"
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Evernote Business for Salesforce で生産性を向上"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Evernote Business で生産性を向上"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Evernote に保存"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "この記事を Evernote に保存"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "保存"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "スクリーンショット"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>クリック\u003C/strong>して全画面を撮るか、\u003Cstrong>マウスをドラッグ\u003C/strong>して選択した領域を撮ります。"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "スクリーンショットを撮りました"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Web と一緒に自分の Evernote アカウントも検索"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "Evernote アカウント内の\u003Cb>結果上位\u003C/b>"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>関連結果を見るには、Web クリッパーに\u003Ca target='_blank' href='$loginUrl$'>サインイン\u003C/a>して下さい\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Evernote のサーバにアクセスできないため、現在同時検索を利用できません。"
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "個人およびビジネスノートに関連結果はありません"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "ノートに関連結果はありません"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "ビジネスノートの関連結果 $num$ 件",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "ビジネスノートの関連結果 1 件"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "個人のノートの関連結果 $num$ 件",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "個人のノートの関連結果 1 件"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "ノートの関連結果 $num$ 件",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "あなたのノートの関連結果 1 件"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "閉じて二度と表示しない"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "閉じる"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "さらに見る »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "描き込んだ注釈をすべて選択"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "すべてのメッセージを選択"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "ノートブックを選択"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "選択範囲"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "範囲選択モード"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "送信"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "フィードバックを送信"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "レポートを Evernote に送信"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "宛先:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "変更する場合、キーボードでキーの組み合わせを押してください。"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "図形ツール"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "共有"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "ノートを共有"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "このクリップを共有"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "URL を共有"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "共有ノートブック"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "二つのショートカットが競合しています"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "ショートカットで同時に押すキーの数は、3 個以内で指定してください。"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "このショートカットでは esc キーは使用できません。"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "\u003Ca href='$href$' target='_blank'>オプション\u003C/a>ページでお気に入りのショートカットがあれば、設定することができます。一番有効なショートカットを今すぐ設定してみましょう！",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "キーボードショートカットが設定可能になりました。"
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "入力欄にマウスカーソルを置き、使いたいショートカットを押してください"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "メールクリップ"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "もっと見る"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "関連するノートを表示"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "クリップが成功した時の画面を表示"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "クリップが成功した時の画面を表示(関連ノートは非表示)"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Web クリッパーにサインイン"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "ビジネスにサインイン"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "$name$ からログアウト",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "サインイン中:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "ログアウト"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "6 桁のコード"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "確認コードを記載したテキストメッセージを $phone$ に送信しました。",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "申し訳ございません"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "使用量が多いお客様へ"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "短時間に大量のコンテンツを追加すると、サービスの途絶が発生する場合があります。現在のアクティビティレベルが、意図した量のものであることをご確認ください。"
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "ビジネスのコンテンツにアクセスするために追加手順が必要です"
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "「無視」をクリックした場合、これらの手順を完了するまではビジネスのコンテンツにアクセスできなくなります。その間、個人のコンテンツを操作することは可能です。"
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "別画面で自分のビジネスへの認証手続きを促すメッセージが表示されるはずです。この画面が開かない場合は「再試行」をクリックしてください。"
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "ノートブックスタック"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "スタンプ"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "スタンプツール"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Web クリッパーを起動"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Web クリッパーを簡易モードで起動"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "件名（必須）"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "もしかして:"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "もしかして:"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "システム情報"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "タグは 20 個までです"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "タグの選択"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "スクリーンショットを撮る"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "スクリーンショットを撮る"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "テキスト"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "宛先:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "アカウント切り替え"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "明日"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Web クリッパーで $siteName$ のクリップをよりきれいに保存できるようになりました。必要なセクションを選択し、Evernote にずっと残しておけます。",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "ブックマークよりも便利な、Web クリップをご活用ください。"
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "このページを保存してみませんか？"
+   },
+   "tryAgain": {
+      "message": "再試行"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "お試し下さい"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "確認コードが取得できません"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "タイプツール"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "メッセージを入力してください..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "このメッセージを開くことができません"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "取り消す"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "アップデート"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "アップグレード"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "ブックマーク"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL がクリップボードにコピーされました"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "スマートファイリングを使用"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "バージョン:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "クラッシュレポートを閲覧"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Evernote で表示"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Gmail で表示"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Web クリッパーの新機能を見る"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "これは何？"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "詳細な説明"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Web から保存したクリップについてメッセージを交換。アプリ内で、記事について話したり、注釈を付けて共有したりできます。"
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに \u003Cb>$receiverNames$\u003C/b> と他 $numUnknown$ 人を追加しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに \u003Cb>$receiverNames$\u003C/b> と他 1 人を追加しました",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに他 $numUnknown$ 人を追加しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに \u003Cb>$receiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに他 1 人を追加しました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットに\u003Cb>あなた\u003C/b>を追加しました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> がトピックを\u003Cb>$threadName$\u003C/b>に変更しました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "yyyy MMM d EEE h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "MMM d 日 EEE h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 1 人を外しました",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから \u003Cb>$receiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> がこのチャットから他 1 人を外しました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート $numNotes$ 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート $numNotes$ 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート $numNotes$ 個とノートブック 1 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート 1 個を含めました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート 1 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノート 1 個とノートブック 1 個を含めました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> がノートブック 1 個を含めました",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットに \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットに \u003Cb>$receiverNames$\u003C/b> と他 $numUnknown$ 人を追加しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットに \u003Cb>$receiverNames$\u003C/b> と他 1 人を追加しました",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b> がこのチャットに他 $numUnknown$ 人を追加しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットに \u003Cb>$receiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットに他 1 人を追加しました"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がトピックを\u003Cb>$threadName$\u003C/b>に変更しました",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 1 人を外しました",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから \u003Cb>$receiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がこのチャットから他 1 人を外しました"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート $numNotes$ 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート $numNotes$ 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート $numNotes$ 個とノートブック 1 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート 1 個を含めました"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート 1 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノート 1 個とノートブック 1 個を含めました"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>他のユーザ\u003C/b>がノートブック 1 個を含めました"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットに \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットに \u003Cb>$receiverName$\u003C/b> を追加しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>あなた\u003C/b>がトピックを\u003Cb>$threadName$\u003C/b>に変更しました",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と \u003Cb>$lastReceiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから \u003Cb>$receiverNames$\u003C/b> と他 1 人を外しました",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから他 $numUnknown$ 人を外しました",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから \u003Cb>$receiverName$\u003C/b> を外しました",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>あなた\u003C/b>がこのチャットから他 1 人を外しました"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>あなた\u003C/b>がノート $numNotes$ 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノート $numNotes$ 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノート $numNotes$ 個とノートブック 1 個を含めました",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>あなた\u003C/b>がノート 1 個を含めました"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノート 1 個とノートブック $numNotebooks$ 個を含めました",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノート 1 個とノートブック 1 個を含めました"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>あなた\u003C/b>がノートブック 1 個を含めました"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "見て！"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "この Evernote ボタンをクリックすると、WSJ の記事を保存できます。"
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "類似するノートがあります"
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "YouTube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "拡大"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "縮小"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "ウィンドウのサイズに合わせる"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "100% で表示"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "拡大"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "縮小"
+   }
+}

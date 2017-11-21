@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link href="../../css/common.css" rel="stylesheet"></link>
+    <link href="sharing.css" rel="stylesheet"></link>
+    <script src="../../third_party/port.js" type="text/javascript"></script>
+    <script src="../../js/common/Browser.js" type="text/javascript"></script>
+    <script src="../../js/GlobalUtils.js" type="text/javascript"></script>
+    <script src="../../thrift/gen/Limits_types.js" type="text/javascript"></script>
+    <script src="sharing.js"></script>
+    <title message="share"></title>
+  </head>
+  <body>
+    <h1 id="title"></h1>
+    <hr />
+    <section id="email">
+      <label for="recipients" message="sendTo"></label>
+      <input id="recipients" autofocus tabindex="1" />
+      <div id="contacts"></div>
+      <textarea id="message" tabindex="2"></textarea>
+      <button class="disabled button" message="send" id="send" tabindex="3"></button>
+    </section>
+    <section id="url">
+      <label for="shareLink" message="urlCopied"></label>
+      <input id="shareLink" readonly />
+      <button class="green button" message="copyToClipboard" id="copy"></button>
+    </section>
+  </body>
+</html>

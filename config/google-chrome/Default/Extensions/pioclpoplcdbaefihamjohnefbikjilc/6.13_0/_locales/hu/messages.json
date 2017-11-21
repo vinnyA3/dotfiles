@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "DE"
+   },
+   "April": {
+      "message": "Április"
+   },
+   "Aug": {
+      "message": "Aug"
+   },
+   "August": {
+      "message": "Augusztus"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Kivágás az Evernote-ba"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Business"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Bezár"
+   },
+   "Dec": {
+      "message": "Dec"
+   },
+   "December": {
+      "message": "December"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Ismeretlen hiba"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Ismeretlen jegyzetfüzet"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Engedély megtagadva"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Engedély megtagadva, mert a felhasználó inaktív."
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Túl sok sikertelen próbálkozás. Próbálja meg később."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper uses cookies to identify your account. Check your browser settings to make sure third-party cookies are accepted from Evernote."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Enable cookies to use Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper requires cookies to work correctly. Please enable cookies in your browser settings."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "There was an error creating the notebook."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Sorry, a notebook with this name already exists."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Érvénytelen jegyzetfüzet név."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "You have reached the maximum amount of notebooks."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Probléma lépett fel a szerverrel való kommunikációban [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernote servers are currently unavailable, please try again later"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Nincs internet kapcsolat"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "You don't have any notebooks yet."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "There was an error updating notebooks."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Használja az Evernote bővítményt, ha a weben látott dolgokat el akarja menteni Evernote fiókjába."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Feb"
+   },
+   "February": {
+      "message": "Február"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Pén"
+   },
+   "Friday": {
+      "message": "Péntek"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "Január"
+   },
+   "July": {
+      "message": "Július"
+   },
+   "June": {
+      "message": "Június"
+   },
+   "Last_used": {
+      "message": "Last used"
+   },
+   "March": {
+      "message": "Március"
+   },
+   "May": {
+      "message": "Május"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Hét"
+   },
+   "Monday": {
+      "message": "Hétfő"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "November"
+   },
+   "Oct": {
+      "message": "Okt"
+   },
+   "October": {
+      "message": "Október"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "DU"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Személyes"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Szo"
+   },
+   "Saturday": {
+      "message": "Szombat"
+   },
+   "Sept": {
+      "message": "Szep"
+   },
+   "September": {
+      "message": "Szeptember"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Bejelentkezés"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Summary"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Vas"
+   },
+   "Sunday": {
+      "message": "Vasárnap"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Csüt"
+   },
+   "Thursday": {
+      "message": "Csütörtök"
+   },
+   "Today": {
+      "message": "Ma"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Ke"
+   },
+   "Tuesday": {
+      "message": "Kedd"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Sze"
+   },
+   "Wednesday": {
+      "message": "Szerda"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Üzenet hozzáadása"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Add account"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Add Business Account"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Dátum hozzáadása"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Add Personal Account"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Emlékeztető hozzáadása"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Címkék hozzáadása"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Tennivaló hozzáadása"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Kivágás után"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Minden mező szükséges."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Mindig mutassa"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Mindig kezdjen"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Mindig ezzel a címkével lássa el"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Jegyzetelés"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Alkalmaz"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Elfogadva"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Nyíl"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Nyíl eszköz"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Cikk"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Sajnos az Evernote nem tudja az egész lapot cikként kivágni. Jelölje ki a kivágandó területet."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "Az alkalmazás hozzáférését az Evernote szolgáltatás elutasította. Adja meg újra jelszavát."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Hitelesítés folyamatban"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "Böngészőjének beállításai nem megfelelőek az Evernote kiterjesztés futtatásához. Próbálja visszaállítani a Chrome Adatvédelmi beállításait az alapértelmezésre: Engedélyezze a helyi adatok mentését, és NE tiltsa le a harmadik féltől származó cookie-kat. Próbálja meg kikapcsolni a többi harmadik féltől származó kiterjesztést."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Automatikusan zárja be a Kivágót"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Használja ki a további funkciókat, ha frissít Evernote Plus-ra, vagy Evernote Premium-ra."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Kerülje el a korlátokba ütközést. Váltson Evernote Plus-ra most a havi 1GB feltöltésért."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Fizessen elő a Premium-ra, hogy hálózati kapcsolat nélkül is elérhesse kivágott cikkeit mobil eszközén. Premium felhasználóként beállíthat hálózati kapcsolat nélküli jegyzetfüzeteket és jegyzeteit mindig gyorsan elérheti."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Bemutatkozik az Evernote Plus és a Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Fizessen elő a havi 1GB feltöltéshez"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Kivágás a számítógépen, olvasás a mobilon"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Ön most Business jegyzeteket vagy jegyzetfüzeteket oszt meg ebben a chat-ben, melyben külső személyek is részt vesznek. Kattintson az OK-ra a minden résztvevővel történő megosztáshoz."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Business"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Business jegyzetfüzet"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Szerkeszthet"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Szerkeszthet és meghívhat"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Megtekinthet"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Nem lehet menteni"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Nem lehet menteni ezt a kivágást"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Can't find it?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Adja meg a számokat"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Az Evernote Web Clipper ezen verziója már nem kompatibilis az Evernote Service-szel. Telepítse a legfrissebb verziót."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Ez az értesítés ne jelenjen meg újra"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Minden címke törlése"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Egyszerűsített cikk"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Kivágás"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Kivágás:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Clipper Options"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Kivágás innen: $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Web kivágó vagy aktív panel bezárása"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Közös munka a Work Chat-tel"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Színek"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Tevékenység megerősítése"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Kapcsolódás a Google-hoz"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Contact Evernote support"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">Kivágás\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Kivágás\u003C/span>\u003Cspan id=\"title\">“…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Kivágás"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">Szinkronizálás\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Szinkronizálás"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Kép kivágása"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "PDF kivágása"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Teljes oldal kivágása"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Képernyőkép kivágása"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Kijelölés kivágása"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Könyvjelző kivágása"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Be kell jelentkeznie az Evernote Web Clipper használatához  az eszköztár gombját használva"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Folytatás"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Kijelölt cikkrészlet tömörítése"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "A kijelölt cikkrészlet tömörítése"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Másolás a Vágólapra"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. All rights reserved.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Privacy Policy\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Terms of Service\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ Business jegyzetek",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Létrehoz"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Create new notebook"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Levágás"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "A Safari Web Clipper nem tudja kivágni ezt a lapot az oldal publikálójának Tartalom Biztonsági Szabályzata miatt."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Cycle through sidebar preview one step down at a time"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Default clipping account:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Utolsó"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Kivágott jegyzet törlése..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Érvénytelen vagy lejárt hitelesítés. Jelentkezzen be az eszköztár-gomb segítségével és próbálja újra"
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Nem lehet menteni: \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "A \"$title$\" című kivágással túl sokszor próbálkoztunk és többször már nem lehet.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Kivágva ide: \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Újra"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Nem lehet menteni: \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "A kivágást nem lehet menteni"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Ismeretlen hiba az egyik kivágott rész mentése közben. Hibaüzenet: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Mégsem"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Tipp eltüntetése"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Kész"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Ne mutassa többé"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Ellipszis"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "Email cím"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "Email"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "$limit$ darab emailnél többet nem küldhet naponta",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Email jegyzet: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Gyorsbillentyűk engedélyezése"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Írja be a kódot"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Email cím(ek) megadása"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Enter name"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Név, vagy email megadása"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Hibanaplók"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote does not track your search terms or results, or share any of your information with search engines."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Cikk kijelölés kibővítése"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Cikk kijelölés kibővítése"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "A bejelentkezési időtartam lejárt. Próbálja meg újra."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Jelszómódosítás szükséges."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Visszajelzés az Evernote-nak (kötelező)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Jegyzet eltárolása..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Jegyzetfüzet keresése"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Kapcsolatok keresése"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Bemutató vége"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Következő"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Terjessze."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Terjessze, mondja el családjának, barátainak, kollégáinak miket tud az új Web Clipper."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Jegyzetfüzet"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web Kivágó"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Bemutató"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Képernyőkép készítése egy egyszerű kattintással."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Kattintson a \u003Cstrong>Képernyőképre\u003C/strong> az oldalsávon."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Képernyőkép"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Használjon jelölő eszközöket, hogy gyorsan és tisztán kifejthesse gondolatait barátainak és kollégáinak. Használja a nyilat és a kiemelőt, hogy a fontos szövegrészre fókuszáljanak."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "The stamp tool offers a simple system to approve, reject or call out favorite content.\u003Cbr/>Blur sensitive information with the Pixelator tool. Draw attention to anything."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Now, let’s markup your screenshot."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Markup Web Clips"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Sharing your web clips couldn’t be easier."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Click the \u003Cstrong>Share button\u003C/strong> in the sidebar and give it a try."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Once you’ve selected the format for your web clip (simplified articled, marked up article, etc.) you can share it in three ways: Post to social networks including Facebook, Twitter and LinkedIn, grab the link to the web clip, or send via email."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Sharing options"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Easily Share Web Clips"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "What’s New in Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "The new Web Clipper lets you clip, bookmark, screenshot, markup, and save content you come across online as well as easily and selectively share it with friends."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "For a cleaner reading experience online or in your Evernote account, use the Simplified Article view to remove unnecessary distractions from the page."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Click \u003Cstrong>Simplified Article\u003C/strong> to view, then save to your Evernote account if you wish."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Get Started with the new Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Clip and Markup Articles from the Web"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Elfelejtetted a jelszavadat?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>From: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Teljes oldal"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Sajnos, ezt az oldalt az Evernote nem tudja teljes egészében kivágni. Kérjük, válassza ki az oldal kivágandó részét!"
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Adja meg a Google alkalmazásban megjelenő ellenőrző kódot."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "General options"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Get 1GB more"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Global:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "You need to have a conversation selected to clip from Gmail."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "You can now clip email threads from Gmail directly to your Evernote account."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Premiumra váltás"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "You can now clip email threads from Inbox by Gmail directly to your Evernote account."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Értem"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Új Evernote fiók létrehozása"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Hasonló jegyzettömbök rejtése"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Kiemelő"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Ignore"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "A böngésző beállított korlátozásai miatt erről az oldalról nem tud kivágni"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Kép kiemelő"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Include Attachment"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Include Original Email"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "A megadott kód érvénytelen."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Install now"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Gyorsbillentyűk"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Utoljára használt művelet"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Utoljára használt jegyzetfüzet"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Tudjon meg többet"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Jogi feltételek"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "A Web Clipper a következő nyílt forráskódú szoftvereket használja"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Vonal"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Beltöltés..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Bejelentkezés az Evernote-ba"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Bejelentkezés"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Jelszó"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Jelszó szükséges."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Érvénytelen jelszó"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Emlékezzen rám"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Hasonló találatok megjelenítése böngészés közben"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "Email vagy felhasználónév"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Felhasználói név szükséges."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Ehhez a felhasználói névhez és jelszóhoz nem tartozik érvényes felhasználó."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Ismeretlen felhasználó vagy próbálja az Evernote International verziót"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Ilyen felhasználó nem létezik."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "When enabled, your searches on supported search engines will also be performed on your Evernote account."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Naplók exportálása"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Következő"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Naplófájl kiválasztása: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Eseménynaplók"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Mail"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Jelölő"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Jelölő eszköz"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Megjelöl:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Üzenet:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Tovább"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "További információ"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ more pages",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Move article selection down"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Move article selection up"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "You've almost reached your monthly upload limit."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "You only have 5MB left. Upgrade to get additional monthly upload capacity."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "You only have 250MB left. Upgrade to get additional monthly upload capacity."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "You only have 250MB left."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "A Web Clipper a kivágandó tartalom alapján címkéket és jegyzetfüzeteket fog javasolni. Ennek és más opcióknak a beállítása a Web Clipperben: \u003Cspan class='newFeatureOptionsPseudoLink'>Beállítások\u003C/span>."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Intelligens irattározás"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Egy hét múlva"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "No Result"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Nem, köszönjük."
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Most nem"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Clip is over $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "You need Evernote Plus or Evernote Premium to clip notes larger than $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "You need Evernote Premium to clip notes larger than $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Sorry, maximum note size is $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Jegyzetfüzet kijelölés"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Emlékeztessen…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "You can now clip email threads from Office 365 directly to your Evernote account."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "Ok"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+1 more page"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Open conversation in Gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Open conversation in Inbox by Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Open in Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote desktop"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Kivágások küldése:"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "Build ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Jegyzetek megnyitása"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "Első használatkor egy 'Külső Protokoll Kérés' dialógust fog látni. A könnyebb használhatóság érdekében jelölje be az 'Emlékezzen a döntésemre' jelölőnégyzetet majd kattintson az 'Alkalmazás indításá'-ra."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Asztali kliens"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Web kliens"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Alapértelmezett kivágási művelet"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Cikk kivágása"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Teljes oldal kivágása"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "URL kivágása"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Értesítések engedélyezése"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "Ha engedélyezve van, akkor értesítést kap arról, ha a kivágás fel lett töltve. Az értesítések megkönnyítik a kivágások megtekintését, szerkesztését és megosztását."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Stílus megtartása"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Ha engedélyezve van, akkor a kivágott rész stílusinformációit a program a lehetséges mértékig megőrzi. Ha tiltva, akkor a kivágás egyszerű, formázatlan szöveg lesz."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Fejlesztői opciók"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF page button"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Show Save to Evernote button on PDF pages."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "The Activity Log contains a detailed list of the steps the Evernote application performs, as well as information about your account, your device and location information (if enabled).  Your Note titles, tags, Notebook names and occasionally Note content also may be included. We treat your Activity Log data as confidential, and the terms of our \u003Ca href=\"$privacyLink$\" target=\"_blank\">Privacy Policy\u003C/a> apply.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Hide Logs"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Naplók megtekintése"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Nem biztonságos protokoll"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Override Service URL"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Reset All Options"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Enable 'Remember' buttons"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Show quick access buttons for saving images, GMail messages and Facebook posts"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Mentés..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Biztonságos protokoll"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulate checkVersion Failure"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Egyszerűsített kínai nyelv szimulálása"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Ha engedélyezve van, akkor a program úgy viselkedik, mintha egyszerűsített kínai nyelvre lenne állítva."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Intelligens irattározás engedélyezése Business jegyzetfüzetekhez"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Intelligens irattározás engedélyezése"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Az intelligens irattározás automatikusan kiválaszt egy, a kivágandó tartalomhoz illő jegyzetfüzetet és néhány címkét."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Címkék és jegyzetfüzetek"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Intelligens irattározás tiltása"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Csak jegyzetfüzetek"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Csak címkék"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Felhasználói adatok"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>FIGYELEM:\u003C/b> A jelszavak tárolása lehetővé teszi más felhasználó részére, hogy hozzáférjen Evernote fiókjához a böngésző használatakor. Távolítsa el, vagy jelentkezzen ki a „Kivágás az Evernote-ba” bővítményből a felhasználónév és a jelszó végleges törléséhez."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Beállítások"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Környezetfüggő menük engedélyezése"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "Ha engedélyezve van, akkor a tartalomnak megfelelő menü jelenik meg jobb egérgomb kattintásra."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Hasonló találatok"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Mutassa a weboldalhoz kapcsolódó Evernote tartalmat."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Instructs the clipper to use the 'stage' service in place of the production service, which is normal only for testing."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Rendez"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "ORIGINAL EMAIL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "and {COUNT_PLURAL:{COUNT} other|{COUNT} others}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "You can now clip email threads from Outlook directly to your Evernote account."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "You've reached the maximum number of notes in your Evernote account. You cannot create more notes until you reduce the number of notes in your account to less than $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "You're out of space. Upgrade to Evernote Plus or Evernote Premium to increase your monthly upload capacity and note size limit."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "You're out of space. Upgrade to Evernote Premium to increase your monthly upload capacity and note size limit."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "You're out of space."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Page $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Tip: Hold Ctrl while clicking to pan"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Participants"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF clip"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Did you know that you can clip PDF's directly to your Evernote account with the Web Clipper?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Tökéletes"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Személyes"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pixelesítés"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pixelező eszköz"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "This page needs to be reloaded before you can clip it. Reload the page and try again."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Sorry, clipping local files is not supported."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Jegyzetfüzetek betöltése"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "A felhasználói adatok ellenőrzése túl sok időt vett igénybe. Győződjön meg róla, hogy kapcsolódik az internethez és próbálja meg újra."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Még $count$ jegyzet megtekintése…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Még egy jegyzet megtekintése..."
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Erről a helyről a kivágás nem lehetséges."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Várakozás az oldalra..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Preview article"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web Clipper Preview\u003Cbr>Things can break!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Teljes oldal előnézete"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Könyvjelző előnézet"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Proceed"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Kivágás"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Cikk mentése"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Teljes oldal mentése"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Kijelölés mentése"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "URL mentése"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Megjegyzés hozzáadása"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Címke hozzáadása"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Megjegyzés hozzáadása"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Jegyzetfüzet"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Mentés"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Nem támogatott címkék"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Cím"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Névtelen jegyzet"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Rate Now"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "How would you rate this version of the Web Clipper?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "The new Web Clipper is designed to help you capture, save, markup and selectively share anything from the Web. Tell us how you like it."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "How do you like the Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Négyszög"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Újra"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "When your invited friends get started with Evernote, we'll reward you with points to use toward upgrading to Evernote Plus or Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Invite Friends"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Invite friends. Earn points."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Refresh list"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Mentse el ötleteit, mindent, ami tetszik, amit hall, amit lát."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Mégsem"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "A felhasználónév nem aktív.   Szeretné újra \u003Ca href='$url$'>aktiválni\u003C/a> a fiókot?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "Az email címet kötelező megadni."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Type the numbers you see in the picture."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "Az email cím érvénytelennek tűnik."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Válasszon egy 6 és 64 karakterhossz közötti jelszót, ami ékezet nélküli betűket, számokat és egyes írásjeleket tartalmaz."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "A felhasználói névnek betűvel vagy számmal kell kezdődnie és végződnie, de tartalmazhat választójeleket és aláhúzásokat."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "A jelszót kötelező megadni."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "Ez az email cím már használatban van."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "Az Ön által választott felhasználói név már foglalt."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Regisztráció"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Felhasználói név"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "By clicking Register, you agree to the \u003Ca href='$tos_url$' target='_blank' tabindex='6'>Terms of Service\u003C/a> and \u003Ca href='$pp_url$' target='_blank' tabindex='7'>Privacy Policy\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Elutasítva"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Hasonló jegyzetek"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Az Evernote megkeresi az első három jegyzetet, melyek tartalom szempontjából kapcsolódhatnak az oldalhoz."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Jegyezze meg"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Jegyezze meg"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Jegyezze meg"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Reminder Added"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Reminder Saved"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Alaphelyzetbe állítás"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Reset shortcuts"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimize Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Lekerekített sarkú négyszög"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Kép mentése az Evernote-ba"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "PDF mentése az Evernote-ba"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Teljes oldal mentése az Evernote-ba"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Save screenshot to Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Save selection to Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Könyvjelző mentése az Evernote-ba"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Quickly connect Evernote notes with Salesforce records, take detailed notes about customers, and gain new insights into the people you're connecting with."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Share notes with colleagues, gain new insights into the people you're connecting with, and even link your notes directly to Salesforce records if you install the Evernote Business for Salesforce integration."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Do more with Evernote Business for Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Do more with Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Mentés az Evernote-ba"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Save this article to Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Mentés"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Képernyőkép"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Click\u003C/strong> to capture full screen or \u003Cstrong>drag and release\u003C/strong> to capture a region"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Képernyőkép kivágva"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Search your Evernote account as you search the web"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Elsődleges találatok\u003C/b> Evernote fiókjában"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Jelentkezzen be\u003C/a> a Web Clipper szolgáltatásba a hasonló találatok megtekintéséhez\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "A többszálon végzett keresés jelenleg nem végezhető el, mert az Evernote szervereket nem lehet elérni."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Nincsenek hasonló jegyzetek személyes vagy Business fiókjában"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Nincsenek hasonló jegyzetek"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ hasonló Business jegyzete van",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 Related Result in your Business notes"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ hasonló személyes jegyzete van",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 Related Result in your Personal notes"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ hasonló jegyzete van",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 Related Result in your notes"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Soha ne jelenjen meg"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Mégsem"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "See More »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Select all Markup objects"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Select all messages"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Jegyzetfüzet kiválasztása"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Kiválasztás"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Selection mode"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Küldés"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Send Feedback"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Send report to Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Címzett:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "To change - strike key combination on your keyboard now"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alakzatok eszköz"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Megosztás"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Jegyzet megosztása"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Share this clip"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Share URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Megosztott jegyzetfüzet"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Two shortcuts are in conflict"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Shortcuts must be 3 or fewer keys in combination"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Cannot use ESC in this shortcut"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Visit the \u003Ca href='$href$' target='_blank'>options\u003C/a> page to learn and set your favorite shortcuts. Set the most important shortcut right now!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "We've made keyboard shortcuts configurable."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Place the cursor in the field and strike the shortcut you want to have"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Email kivágás"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Show me more"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Show Related Notes"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "A sikeres kivágás ablak mutatása"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Show successful clip dialog without Related notes"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Sign in to Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Jelentkezzen be a Business-be"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Kijelentkezés: $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Bejelentkezve mint:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Kijelentkezés"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Hat karakteres kód"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "We sent a text message with a verification code to $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Sorry"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Szorgos volt!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Nagy mennyiségű adatok hozzáadása rövid idő alatt zavart okozhat a szolgáltatásban. Erősítse meg, hogy a jelenlegi aktivitási szintje szándékosan ilyen."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Néhány lépést még be kell fejeznie, hogy elérhesse Business tartalmait."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "If you click Ignore, you will not be able to access Business content until you complete these steps. In the interim, you can continue to work with your Personal content."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "You should be prompted to authenticate to your Business in a separate window. Please click 'Try Again' if this window does not open."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Jegyzetfüzet gyűjtő"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Bélyegző"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Bélyeg eszköz"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Start Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Start Web Clipper in Simplified"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Subject (required)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Suggested Chats"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Suggested Contacts"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "System info"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Maximum 20 címke"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Címke kiválasztása"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Képernyőkép készítése"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Take screenshot"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Szöveg"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Meddig:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Account switch"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Holnap"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Now, Web Clipper saves $siteName$ clips as clean and clutter-free notes. Select the sections you want, then keep it in Evernote, forever.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Go beyond bookmarks, start clipping."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Like this page? Save it."
+   },
+   "tryAgain": {
+      "message": "Újra"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Próbálja ki"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Segítségre van szükségem a leellenőrzési kód beszerzésénél"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Gépelés eszköz"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Gépelje be az üzenetet..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Unable to open this message"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Visszavonás"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Frissítés"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Díjcsomag váltás"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Könyvjelző"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "Hivatkozás kimásolva a vágólapra"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Intelligens kiválasztás"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Verzió:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Hibajelentés megtekintése"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Mutassa az Evernote-ban"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "View in Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "See what's new in the Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "Mi?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "What's this?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Chat about clips from the Web. Discuss articles or share annotated clips without leaving your workspace."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and 1 other person to this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added 1 other person to this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>you\u003C/b> to this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed 1 other person from this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note 1 notebook",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 notebook",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and 1 other person to this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added 1 other person to this chat"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Someone\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed 1 other person from this chat"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note 1 notebook"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 notebook"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>You\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>You\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>You\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed 1 other person from this chat"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note 1 notebook"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 notebook"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Wow!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Click this Evernote button to collect WSJ articles for research or reading later."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Vannak ehhez hasonló jegyzetei."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Zoom in (step)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Zoom out (step)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Hogy elférjen"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoom to 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Nagyítás"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Kicsinyítés"
+   }
+}

@@ -1,0 +1,270 @@
+body {
+    font-size: 11px;
+    font-style: normal;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+}
+
+* {
+    background-repeat: no-repeat;
+    color: inherit;
+    font: inherit;
+    text-shadow: inherit;
+    -webkit-font-smoothing: inherit;
+}
+
+textarea, div[contenteditable] {
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tab {
+    cursor: pointer;
+    display: inline-block;
+    height: 26px;
+    vertical-align: top;
+}
+
+.tab.pressed {
+    background-image: url(../images/clip_result_arrow.png);
+    background-size: 16px 8px;
+}
+
+.pinch {
+    background-color: #2F373D;
+    border-top: 1px solid #272D33;
+    border-bottom: 1px solid #272D33;
+    margin-top: -1px;
+}
+
+.button {
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.green.button {
+    background-color: #26B064;
+    box-shadow: inset 0 1px 0 0 #33CC78;
+}
+
+.green.button:hover, .green.button:active {
+    background-color: #33CC78;
+}
+
+.flat.green.button {
+    background-color: #499A56;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.flat.green.button:hover {
+    background-color: #32B965;
+}
+
+.flat.green.button:active {
+    background-color: #119944;
+}
+
+.gray.button {
+    background-color: #8A98A2;
+    box-shadow: inset 0 1px 0 0 #B3C1CC;
+}
+
+.gray.button:hover {
+    background-color: #B3C1CC;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label {
+    vertical-align: middle;
+}
+
+input[type=radio] + label:before {
+    background-image: url(../images/radio.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+input[type=radio]:checked + label:before {
+    background-image: url(../images/radio-dot.png), url(../images/radio.png);
+    background-position: 5px, 0;
+    background-size: 6px 7px, 16px 16px;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+}
+
+label:before {
+    vertical-align: middle;
+}
+
+label span {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    background-color: #737F89;
+    border: 1px solid #232A31;
+    border-radius: 4px;
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+input[type=checkbox]:checked + label:before {
+    background-image: url(../images/checkmark-big.png);
+    background-position: 50% 5px;
+    background-repeat: no-repeat;
+    background-size: 14px 12px;
+}
+
+select {
+    background-color: white;
+    background-image: url(../images/icon_down_padded.png);
+    background-position: calc(100% - 10px) 50%;
+    background-size: 8px 5px;
+    border: 1px solid #232A30;
+    border-radius: 3px;
+    color: #3A4045;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 24px;
+    margin: 0;
+    outline: none;
+    padding: 0 28px 0 10px;
+    text-shadow: none;
+    -webkit-appearance: button;
+}
+
+.isEdge select {
+    padding: 0 10px;
+}
+
+.green.text {
+    color: #26B064;
+}
+
+@font-face {
+    font-family: "CaeciliaBold";
+    src: url(../fonts/caecilialtstd-bold-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "CaeciliaRoman";
+    src: url(../fonts/caecilialtstd-roman-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "CaeciliaItalic";
+    src: url(../fonts/caecilialtstd-italic-webfont.woff) format('woff');
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(../fonts/GothamSSm-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(../fonts/GothamSSm-Light-Italic.woff) format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(../fonts/GothamSSm-Book.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(../fonts/GothamSSm-Book-Italic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(../fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(../fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(../fonts/GothamSSm-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(../fonts/GothamSSm-Bold-Italic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .tab.pressed {
+        background-image: url(../images/clip_result_arrow@2x.png);
+    }
+
+    input[type=radio] + label:before {
+        background-image: url(../images/radio@2x.png);
+    }
+
+    input[type=radio]:checked + label:before {
+        background-image: url(../images/radio-dot@2x.png), url(../images/radio@2x.png);
+    }
+
+    input[type=checkbox]:checked + label:before {
+        background-image: url(../images/checkmark-big@2x.png);
+    }
+
+    select {
+        background-image: url(../images/icon_down_padded@2x.png);
+    }
+}
+
+.hidden {
+    display: none !important;
+}

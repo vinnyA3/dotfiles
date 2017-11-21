@@ -1,0 +1,30 @@
+.swl_label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.swl_select {
+    float: right;
+    position: relative;
+}
+
+.swl_selected {
+    cursor: pointer;
+}
+
+.swl_allOptions {
+    display: none;
+    position: absolute;
+    right: -1px;
+    top: -1px;
+}
+
+.swl_select.open .swl_allOptions {
+    display: block;
+}
+
+.swl_option {
+    cursor: pointer;
+    white-space: nowrap;
+}

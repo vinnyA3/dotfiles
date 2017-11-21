@@ -16,7 +16,7 @@ else
 fi
 
 # Source the dotfiles (order matters here)
-for DOTFILE in "$DOTFILES_DIR"/sys/.{alias,prompt,terminal}; do
+for DOTFILE in "$DOTFILES_DIR"/sys/.{env,alias,prompt,terminal}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 

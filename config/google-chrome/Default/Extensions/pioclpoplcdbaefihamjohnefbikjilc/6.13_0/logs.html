@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/evernote.css" />
+    <link rel="stylesheet" type="text/css" href="css/logviewer.css" />
+
+    <script type="text/javascript" src="third_party/port.js"></script>
+    <script type="text/javascript" src="js/common/Browser.js"></script>
+    <script type="text/javascript" src="js/GlobalUtils.js"></script>
+    <script type="text/javascript" src="js/common/Log.js"></script>
+    <script type="text/javascript" src="js/options/Version.js"></script>
+    <script type="text/javascript" src="js/logs/LogReader.js"></script>
+    <script type="text/javascript" src="js/logs/LogViewer.js"></script>
+
+    <title message="logs_title"></title>
+  </head>
+  <body class="logs">
+    <div id="logsHeader">
+      <form action="#" method="get" name="logSelectorForm" id="logSelectorForm">
+        <label for="logSelector" message="logs_selectLogFile"></label>
+        <select id="logSelector">
+        </select>
+        <input type="checkbox" name="logFollow" id="logFollow"></input>
+        <label for="logFollow" message="logs_follow"></label>
+        <div id="logsStatus">
+          <input id="exportButton" type="button" message="logs_export"></input>
+        </div>
+      </form>
+    </div>
+    <div id="logViewer">
+    </div>
+  </body>
+</html>

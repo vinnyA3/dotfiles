@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "Abril"
+   },
+   "Aug": {
+      "message": "Ago"
+   },
+   "August": {
+      "message": "Agosto"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Capturar para o Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Business"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Fechar"
+   },
+   "Dec": {
+      "message": "Dez"
+   },
+   "December": {
+      "message": "Dezembro"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Erro desconhecido"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Bloco de notas desconhecido"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Permissão negada"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Permissão negada porque o utilizador está inativo"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Demasiadas tentativas fracassadas para iniciar sessão. Por favor, tente novamente mais tarde."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "O Evernote Web Clipper utiliza cookies para identificar a sua conta. Verifique as definições do seu browser para garantir que os cookies de terceiros sejam aceites no Evernote."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Ativar cookies para utilizar o Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "O Web Clipper requer cookies para funcionar corretamente. Ative os cookies nas definições do navegador."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "Ocorreu um erro ao tentar criar o bloco de notas."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Desculpe mas já existe um bloco de notas com este nome."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Nome do bloco de notas inválido."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "Atingiu o número máximo de blocos de notas."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Problemas na comunicação com o servidor [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Os servidores do Evernote estão atualmente indisponíveis, tente novamente mais tarde"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Sem ligação à Internet"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "Você ainda não tem nenhum bloco de notas."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "Ocorreu um erro ao tentar fazer a atualização dos blocos de notas."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Use a extensão do Evernote para guardar as coisas que você vê na web na sua conta do Evernote."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Fev"
+   },
+   "February": {
+      "message": "Fevereiro"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Sex"
+   },
+   "Friday": {
+      "message": "Sexta-feira"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "Janeiro"
+   },
+   "July": {
+      "message": "Julho"
+   },
+   "June": {
+      "message": "Junho"
+   },
+   "Last_used": {
+      "message": "Última utilização"
+   },
+   "March": {
+      "message": "Março"
+   },
+   "May": {
+      "message": "Maio"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Seg"
+   },
+   "Monday": {
+      "message": "Segunda-feira"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "Novembro"
+   },
+   "Oct": {
+      "message": "Out"
+   },
+   "October": {
+      "message": "Outubro"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Pessoal"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Sáb"
+   },
+   "Saturday": {
+      "message": "Sábado"
+   },
+   "Sept": {
+      "message": "Set"
+   },
+   "September": {
+      "message": "Setembro"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Iniciar sessão"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Resumo"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Dom"
+   },
+   "Sunday": {
+      "message": "Domingo"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Qui"
+   },
+   "Thursday": {
+      "message": "Quinta-feira"
+   },
+   "Today": {
+      "message": "Hoje"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Ter"
+   },
+   "Tuesday": {
+      "message": "Terça-feira‎"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Qua"
+   },
+   "Wednesday": {
+      "message": "Quarta-feira"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Adicionar uma mensagem"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Adicionar conta"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Adicionar conta business"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Adicionar uma Data"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Adicionar conta pessoal"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Adicionar um lembrete"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Adicionar etiquetas"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Adicionar Tarefa"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Depois de capturar"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Todos os campos são obrigatórios."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Exibir sempre"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Iniciar sempre em"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Marcar sempre com"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Anotar"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Aplicar"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Aprovado"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Seta"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Ferramenta seta"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artigo"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "O Evernote não pode capturar esta página como um artigo. Selecione a parte que deseja capturar."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "O acesso a esta aplicação foi revogado através do serviço web do Evernote. Por favor, volte a introduzir a sua palavra-passe."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Autenticação em curso"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "As preferências do seu browser estão em conflito com a extensão Evernote. Tente restaurar as definições de privacidade do conteúdo para os valores predefinidos: Permita que sejam definidos dados locais e NÃO bloqueie os cookies de terceiros. Considere desativar outras extensões de terceiros."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Encerrar automaticamente o Clipper"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Desfrute de recursos adicionais quando fizer o upgrade para o Evernote Plus ou Evernote Premium."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Evite atingir os limites. Faça agora o upgrade para o Evernote Plus e obtenha 1GB de uploads mensais."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Faça o upgrade para o modo Premium para aceder aos seus artigos capturados a partir do seu dispositivo móvel, mesmo quando estiver off-line. Como utilizador Premium, você poderá definir blocos de notas off-line e aceder rapidamente e a qualquer momento às suas notas."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Introdução ao Evernote Plus e Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Faça o upgrade para obter 1GB de uploads mensais."
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Capture no desktop, leia no seu telemóvel"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Você está a partilhar notas business ou blocos de notas neste chat, que inclui pessoas que não pertencem à sua conta business. Clique em OK para partilhar com todos os participantes deste chat."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Business"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Bloco de notas Business"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Pode editar"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Pode editar e convidar"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Pode ver"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Não é possível guardar esta captura"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Não é possível guardar esta captura"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Não a encontra?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Introduza os dígitos"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Esta versão do Evernote Web Clipper já não é compatível com o Serviço Evernote. Por favor instale a última versão disponível."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Não exibir novamente esta notificação"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Limpar todas as etiquetas"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Artigo simplificado"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Fixe-o"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Capturar:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Opções do Clipper"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Capturas do $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Fechar o Web Clipper ou o painel ativo"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Colabore com o Work Chat"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Cores"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Confirmar Atividade"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Ligar ao Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Contactar o suporte do Evernote"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">A capturar\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">A capturar\u003C/span>\u003Cspan id=\"title\">\"...\"\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Captura"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">A sincronizar\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "A sincronizar"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Capturar imagem"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Capturar PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Capturar a página inteira"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Recortar captura de ecrã"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Capturar seleção"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Capturar favorito"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Tem de iniciar sessão utilizando o botão da barra de ferramentas 'Capturar para o Evernote' antes de poder fazer uma captura"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Continuar"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Contrair a seleção de artigos"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Contrair a seleção de artigos"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Copiar para área de transferência"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. Todos os direitos reservados.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Política de privacidade\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Termos do serviço\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ Notas Business",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Criar"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Criar um novo bloco de notas"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Cortar"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "O Safari Web Clipper não pode capturar esta página devido às opções restritivas da Política de Segurança do Conteúdo existentes na página do editor."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Percorrer através da vista da barra lateral um passo de cada vez"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Conta padrão para as capturas:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Último"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "A eliminar nota capturada..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Autenticação inválida ou expirada. Por favor inicie sessão clicando no botão da barra de ferramentas e tente novamente."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Não é possível guardar \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "A captura \"$title$\" falhou demasiadas vezes e não é possível tentar novamente.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Capturado para \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Tentar novamente"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Não é possível guardar \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Não é possível guardar a captura"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Ocorreu um erro desconhecido ao tentar guardar uma das suas capturas. Mensagem de Erro: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Dispensar"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Dispensar dica"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Concluído"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Não exibir novamente"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Elipse"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "Endereço de e-mail"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "E-mail"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "Você não poderá enviar mais do que $limit$ e-mails por dia",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Nota de e-mail: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Ativar atalhos de teclado"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Introduza o código"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Introduza o(s) endereço(s) de e-mail"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Introduza o nome"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Introduza o nome ou e-mail"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Histórico de erros"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "O Evernote não monitoriza os termos ou resultados das suas pesquisas, ou partilha nenhuma das suas informações com motores de busca."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Expandir a seleção de artigos"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Expandir a seleção de artigos"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "A sua sessão expirou. Por favor, tente novamente."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "É necessária uma atualização da palavra-passe."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Feedback para o Evernote (obrigatório)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "A arquivar nota..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Encontrar um bloco de notas"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Procurar contactos"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Terminar o tour"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Seguinte"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Espalhe pelo mundo."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Espalhe pelo mundo! Fale à sua família, amigos e colegas acerca do novo Web Clipper."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Bloco de notas"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Capturador de páginas web"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Tour"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Faça capturas de ecrã através de um único clique."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Clique em \u003Cstrong>Captura de ecrã\u003C/strong> na barra lateral."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Captura de ecrã"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Utilize as ferramentas de marcação e comunique de forma rápida e clara algo para si mesmo, ou com colegas e amigos. Utilize as setas, o realçador e o marcador para se focar no texto mais importante."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "A ferramenta carimbo oferece um sistema simples para facilmente poder aprovar, rejeitar ou realçar o seu conteúdo favorito.\u003Cbr/>Esconda informações confidenciais com a ferramenta de Pixealização. Chame a atenção para qualquer coisa."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Agora, vamos marcar a sua captura de ecrã"
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Marcar Capturas da Web"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Partilhar as suas capturas da web não podia ser mais simples."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Clique no \u003Cstrong>botão Partilhar\u003C/strong> existente na barra lateral e dê-lhe uma tentativa."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Depois de selecionar o formato para a captura da web (artigo simplificado, artigo marcado, etc), você poderá partilhá-lo de três formas: Numa mensagem nas redes sociais, incluindo Facebook, Twitter e LinkedIn, colar o link numa captura da web, ou enviando-o por e-mail."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Opções de partilha"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Partilhe Facilmente Capturas da Web"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Novidades no Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "O novo Web Clipper permite que corte, marque, faça capturas de ecrã, etiquete e guarde o conteúdo que você encontrar on-line, bem como os partilhe fácil e seletivamente com os seus amigos."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "Para uma experiência de leitura on-line mais limpa ou na sua conta Evernote, utilize a vista de 'Artigo simplificado' para remover as distrações desnecessárias da página."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Clique em \u003Cstrong>Artigo simplificado\u003C/strong> para o ver e em seguida, guardar na sua conta do Evernote, se assim o desejar."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Introdução ao novo Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Capture e marque artigos da Web"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Esqueceu-se da palavra-passe?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>De: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Página inteira"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "O Evernote não consegue capturar esta página inteira. Por favor, selecione a parte da página que deseja capturar."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Introduza o código de verificação exibido na sua aplicação Google Authenticator."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "Opções gerais"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Obtenha mais 1GB"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Global:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Você necessita de ter uma conversa selecionada para poder fazer uma captura a partir do Gmail."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Agora você pode capturar os tópicos de e-mail a partir do Gmail diretamente para a sua conta do Evernote."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Obter o modo Premium"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Agora você pode capturar os tópicos de e-mail a partir da caixa de entrada do Gmail diretamente para a sua conta do Evernote."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Entendi"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Crie uma conta do Evernote"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Ocultar Notas Relacionadas"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Marcador"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Ignorar"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Devido às restrições definidas pelo seu browser, não pode capturar esta página."
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Marcador de imagens"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Incluir Anexos"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Incluir E-mail Original"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "O código que você introduziu está incorrecto."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Instalar agora"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Atalhos do teclado"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Última ação utilizada"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Último bloco de notas utilizado"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Saiba mais"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Informação legal"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "O Web Clipper utiliza o seguinte software de código fonte aberto"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Linha"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "A carregar..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "A iniciar sessão no Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Iniciar sessão"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Palavra-passe"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "É obrigatória uma palavra-passe."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Palavra-passe Inválida"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Memorizar-me"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Exibir 'Resultados relacionados' ao pesquisar na web"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "E-mail ou nome de utilizador"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "É obrigatório um nome de utilizador."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "O nome de utilizador e a palavra-passe não correspondem a nenhum utilizador existente."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Inicio de sessão desconhecido ou tente através do Evernote Internacional"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Não existe nenhum utilizador com esse nome."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Quando ativo, as suas pesquisas nos motores de busca suportados também serão realizadas na sua conta do Evernote."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Exportar Registos"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Seguir"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Selecione ficheiro de registo: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Registo de Eventos"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Mail"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Etiqueta"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Ferramenta Marcador"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Marcar:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Mensagem:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Mais"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "Mais informações"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "mais $num$ páginas",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Mover para baixo a seleção de artigos"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Mover para cima a seleção de artigos"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "Quase que atingiu o máximo do seu limite mensal para uploads."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "Você só tem 5MB restantes. Faça o upgrade para obter uma capacidade mensal adicional de uploads."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "Você só tem 250MB restantes. Faça o upgrade para obter uma capacidade mensal adicional de uploads."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "Você só tem 250MB restantes."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "O Web Clipper fornecerá sugestões de etiquetas e blocos de notas com base no conteúdo capturado. Administre esse recurso e outras definições nas \u003Cspan class='newFeatureOptionsPseudoLink'>Opções\u003C/span> do Web Clipper."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Preenchimento inteligente"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Numa Semana"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "Sem Resultados"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Não, obrigado"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Agora não"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "A captura é maior do que $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Você necessita do Evernote Plus ou Evernote Premium para capturar notas maiores do que $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Você necessita do Evernote Premium para capturar notas maiores do que $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Desculpe, mas o tamanho máximo permitido para a nota é de $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Seleção de bloco de notas"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Notificar-me…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Agora você pode capturar os tópicos de e-mail a partir do Office 365 diretamente para a sua conta do Evernote."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "Ok"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "Mais uma página"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Abrir a conversação no Gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Abrir conversa no Inbox do Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Abrir no Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Área de trabalho do Evernote"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Enviar capturas para"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "ID da Compilação:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Abrir notas no"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "No primeiro uso desta definição, uma caixa de diálogo 'Solicitação de protocolo externo' será exibida. Para obter a melhor experiência, marque a caixa de seleção 'Lembrar minha escolha' e, em seguida, 'Iniciar aplicação'."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Cliente desktop"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Cliente web"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Ação padrão na captura"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Capturar artigo"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Capturar a página inteira"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Capturar URL"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Ativar notificações"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "Quando esta opção estiver ativa, será notificado do envio de uma captura. As notificações tornam mais fácil mostrar, editar e partilhar as suas capturas."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Preservar Estilo"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Quando esta opção estiver ativa, as capturas preservarão as informações de estilo para refletir da forma mais exata possível a página original. Quando desativada, elas receberão um estilo simples com texto plano e nenhuma decoração."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Opções para programadores"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Botão em páginas de PDF"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Exibe o botão 'Guardar para o Evernote' em páginas PDF."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "O 'Registo de atividade' contém uma lista detalhada dos passos que a aplicação Evernote executa, bem como informações sobre a sua conta, sobre o seu dispositivo e informações de localização (se ativo). Os títulos das suas Notas, etiquetas, nomes de blocos de notas e, ocasionalmente, o conteúdo das notas também podem ser incluídos. Nós tratamos os seus dados do 'Registo de atividade' como confidenciais, e são aplicados os termos da nossa \u003Ca href=\"$privacyLink$\" target=\"_blank\">Política de privacidade\u003C/a>.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Ocultar registos"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Exibir registos de eventos"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Protocolo inseguro"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Substituir URL de Serviço"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Repor todas as opções"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Ativar os botões 'Lembrar'"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Exibir os botões de acesso rápido para guardar imagens, mensagens do Gmail e publicações do Facebook"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "A guardar..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Protocolo seguro"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simular falha de checkVersion"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simular Chinês Simplificado"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Quando esta opção está ativa, o Clipper agirá como se estivesse definido para o idioma Chinês Simplificado e com o objetivo de escolher um serviço para se ligar."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Permitir o “Preenchimento inteligente” em blocos de notas Business"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Ativar o “Preenchimento inteligente”"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "O “Preenchimento inteligente” seleciona automaticamente um bloco de notas e uma lista de etiquetas para si com base na qual está a fazer a captura."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Etiquetas e Blocos de Notas"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Desativar o “Preenchimento inteligente”"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Apenas Blocos de Notas"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Apenas Etiquetas"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Credenciais"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>ATENÇÃO:\u003C/b> Ao armazenar as palavra-passe pode permitir que outros acedam à sua conta do Evernote quando estiverem a utilizar este browser. Remova ou termine sessão na extensão Capturar para o Evernote para remover permanentemente o nome de utilizador e a palavra-passe armazenados na extensão do seu browser."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Opções"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Ativar menus de contexto"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "Quando esta opção estiver ativa, pode capturar paginas web através do menu de contexto. Ao clicar com o botão direito em imagens, texto selecionado ou qualquer outro sítio, irá revelar quais as opções de captura apropriadas."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Resultados relacionados"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Exibir o conteúdo Evernote relacionado com as minhas pesquisas da web."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Instrui o Clipper a utilizar a 'plataforma' de serviço em vez do serviço de produção, o que é normal apenas para testes."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Organizar"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "E-MAIL ORIGINAL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "e {COUNT_PLURAL:outro|outros {COUNT}}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Agora você pode capturar os tópicos de e-mail a partir do Outlook diretamente para a sua conta do Evernote."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Atingiu o número máximo de notas na sua conta do Evernote. Você não pode criar mais notas até que reduza o número de notas na sua conta para menos do que $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "Você está sem espaço. Faça o upgrade para o Evernote Plus ou Evernote Premium para aumentar a sua capacidade de uploads mensal e o limite do tamanho das notas."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "Você está sem espaço. Faça o upgrade para o Evernote Premium para aumentar a sua capacidade de uploads mensal e o limite do tamanho das notas."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "Você está sem espaço."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Página $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Dica: Mantenha a tecla Ctrl pressionada enquanto clica para se deslocar"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Participantes"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "Captura de PDF"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Sabia que pode capturar PDF's diretamente para a sua conta Evernote utilizando o Web Clipper?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Perfeito"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Pessoal"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pixelizar"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Ferramenta Pixelizar"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "Esta página necessita de ser recarregada antes de a poder gravar. Recarregue a página e tente novamente."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Desculpe, mas não é suportada a captura de ficheiros locais."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "A carregar o bloco de notas"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "A verificação de credenciais levou muito tempo. Certifique-se que se encontra ligado à Internet e tente novamente."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Exibir mais $count$ notas…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Veja mais uma nota…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "A captura a partir desta localização não é suportada."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Esperando pela página..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Pré-visualizar artigo"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Pré-visualização do Evernote Web Clipper\u003Cbr>Poderão surgir alguns erros de funcionamento!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Pré-visualizar a página inteira"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Pré-visualizar marcador"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Prosseguir"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Capturar"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Guardar artigo"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Guardar Página Inteira"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Guardar seleção"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Guardar URL"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Adicionar comentário"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Adicionar etiqueta"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Adicionar texto"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Bloco de notas"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Guardar"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Não são suportadas etiquetas"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Título"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Nota sem título"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Classifique Agora"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Como é que você classificaria esta versão do Web Clipper?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "O novo Web Clipper é projetado para o ajudar a capturar, armazenar, marcar e partilhar selectivamente qualquer coisa da web. Conte-nos o que você mais gosta."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Como é que você gosta do Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Retângulo"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Refazer"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "Quando os seus amigos convidados começarem a utilizar o Evernote, iremos recompensá-lo com pontos que poderá utilizar para fazer o upgrade para o Evernote Plus ou Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Convide amigos"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Convide amigos. Ganhe pontos."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Atualizar lista"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Guarde as suas ideias, coisas que gosta, coisas que vê e ouve."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Cancelar"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Nome de utilizador desativado.  Deseja \u003Ca href='$url$'>reativar\u003C/a> a conta?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "O endereço de e-mail é um campo obrigatório."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Introduza os números que você vê na imagem."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "O endereço de e-mail parece inválido."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Selecione uma palavra-passe de 6 a 64 caracteres com letras, números e pontuação."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "O seu nome de utilizador deve começar e terminar com uma letra ou número e pode conter hífenes e underscores."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "A palavra-passe é um campo obrigatório."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "Este endereço de e-mail já se encontra em utilização."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "O nome de utilizador selecionado já está em sendo utilizado por outro utilizador."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Registar"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Nome de utilizador"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "Ao clicar em Registar está a concordar com os \u003Ca href='$tos_url$' target='_blank' tabindex='6'>Termos do serviço\u003C/a> and \u003Ca href='$pp_url$' target='_blank' tabindex='7'>Política de privacidade\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Rejeitado"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Notas Relacionadas"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "O Evernote encontra até três notas na sua conta que estão relacionadas com a página que você acabou de capturar e apresenta-as aqui."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Lembrar"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Lembrar"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Lembrar"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Adicionado Lembrete"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Lembrete Guardado"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Repor"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Repor atalhos"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimizar o Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Retângulo arredondado"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Guardar imagem no Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "Guardar PDF no Evernote"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Guardar página inteira no Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Guardar captura de ecrã no Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Guardar seleção no Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Guardar marcador no Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Ligue rapidamente as notas do Evernote com os registos da Salesforce, faça notas detalhadas sobre os clientes e ganhe novos conhecimentos acerca das pessoas com as quais se está a relacionar."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Partilhe notas com seus colegas, ganhe novos conhecimentos acerca das pessoas com as quais se está a relacionar e pode mesmo até vincular as suas notas diretamente aos registos da Salesforce, se instalar a integração do Evernote Business para a Salesforce."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Faça mais com o Evernote Business para a Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Faça mais com o Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Guardar no Evernote"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Guardar este artigo no Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Guardar"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Captura de ecrã"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Clique\u003C/strong> para capturar o ecrã inteiro ou \u003Cstrong>arraste e solte\u003C/strong> para capturar apenas uma parte"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Captura de ecrã"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Pesquise na sua conta do Evernote tal como pesquisa na web"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Principais resultados\u003C/b> na sua conta Evernote"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Iniciar sessão\u003C/a> no Web Clipper para exibir os 'Resultados relacionados'\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "A Pesquisa simultânea está neste momento indisponível porque não foi possível contactar os servidores do Evernote."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Nenhum Resultado Relacionado nas suas notas Pessoais ou de Negócios"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Nenhum Resultado Relacionado nas suas notas"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ Resultados relacionados nas suas notas Business",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 Resultado Relacionado nas suas notas Business"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ Resultados relacionados nas suas notas pessoais",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 Resultado Relacionado nas suas notas pessoais"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ Resultados relacionados nas suas notas",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 Resultado Relacionado nas suas notas"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Dispensar para sempre"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Dispensar"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "Veja Mais »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Selecionar todos os objetos marcados"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Selecionar todas as mensagens"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Selecionar bloco de notas"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Seleção"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Modo de seleção"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Enviar"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Enviar feedback"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Enviar relatório para o Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Enviar para:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "Para alterar - atacar agora a combinação de teclas no seu teclado"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Ferramenta Forma"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Partilhar"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Partilhar nota"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Partilhar esta captura"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Partilhar URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Bloco de notas partilhado"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Estão em conflito dois atalhos"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Os atalhos devem ter 3 ou menos teclas em combinação"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Não é possível utilizar o ESC neste atalho"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Aceda à página das \u003Ca href='$href$' target='_blank'>opções\u003C/a> para aprender e definir os seus atalhos favoritos. Defina o atalho mais importante agora!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Fizemos atalhos de teclado configuráveis."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Coloque o cursor no campo e coloque o atalho que você deseje ter"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Enviar captura por e-mail"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Mostre-me mais"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Exibir 'Notas relacionadas'"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Exibir diálogo de captura com sucesso"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Exibir diálogo de captura com sucesso sem as respetivas 'Notas relacionadas'"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Iniciar sessão no Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Iniciar sessão no Business"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Terminar a sessão do $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Iniciou sessão como:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Terminar sessão"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Código de seis dígitos"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "Enviámos uma mensagem de texto com um código de verificação para $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Desculpe"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Tem estado ocupado!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "A adição de grandes quantidades de conteúdos em períodos curtos poderá levar a uma interrupção no serviço. Por favor, confirme que o seu nível de atividade atual é intencional."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Você necessita de completar alguns passos adicionais para poder aceder ao conteúdo da sua conta Business"
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "Se clicar em 'Ignorar', você não será capaz de aceder ao conteúdo da conta Business até que você conclua esses passos. Enquanto isso não acontece, poderá continuar a trabalhar com o seu conteúdo pessoal."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "Ser-lhe-á solicitada numa janela separada a autenticação da sua conta Business. Por favor, clique em 'Tentar Novamente' se essa janela não aparecer."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Pilha de blocos de notas"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Carimbo"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Ferramenta carimbo"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Iniciar o Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Iniciar o Web Clipper no Modo Simplificado"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Assunto (obrigatório)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Chats Sugeridos"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Contactos sugeridos"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "Informações sobre o sistema"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Max 20 etiquetas"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Seleção de etiqueta"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Faça uma captura de ecrã"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Capturar ecrã"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Texto"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Para:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Mudar de conta"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Amanhã"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Agora, o Web Clipper guarda as capturas do(a) $siteName$ como notas limpas e sem desordem. Selecione as partes que deseja e depois guarde-as para sempre no Evernote.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Vá para além dos marcadores, comece a capturar."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Gostou desta página? Guarde-a."
+   },
+   "tryAgain": {
+      "message": "Tentar novamente"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Experimenta"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Necessito de ajuda para obter um código de verificação"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Ferramenta Tipo"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Introduza a sua mensagem..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Não foi possível abrir esta mensagem"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Desfazer"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Atualizar"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Atualizar"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Marcador"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL copiado para área de transferência"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Utilizar o “Preenchimento inteligente”"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Versão:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Ver relatório de incidente"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Ver no Evernote"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Ver no Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Veja o que há de novo no Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "O quê?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "O que é isto?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Converse acerca de capturas da Web. Discuta artigos e partilhe capturas anotadas sem sair do seu espaço de trabalho."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e $numUnknown$ outras pessoas a este chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e uma outra pessoa a este chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou $numUnknown$ outras pessoas a este chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou \u003Cb>$receiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou uma outra pessoa a este chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> adicionou-o a \u003Cb>si\u003C/b> a este chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> alterou o assunto para \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e uma outra pessoa deste chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu \u003Cb>$receiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removeu uma outra pessoa deste chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: $numNotes$ notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: $numNotes$ notas e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: $numNotes$ notas e um bloco de notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: uma nota",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: uma nota e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: uma nota e um bloco de notas",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> incluiu: um bloco de notas",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e $numUnknown$ outra pessoa a este chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e uma outra pessoa a este chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou $numUnknown$ outras pessoas a este chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou \u003Cb>$receiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> adicionou uma outra pessoa a este chat"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Alguém\u003C/b> alterou o assunto para \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e uma outra pessoa deste chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu \u003Cb>$receiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Alguém\u003C/b> removeu uma outra pessoa deste chat"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: $numNotes$ notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: $numNotes$ notas e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: $numNotes$ notas e um bloco de notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: uma nota"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: uma nota e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: uma nota e um bloco de notas"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Alguém\u003C/b> incluiu: um bloco de notas"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>Você\u003C/b> adicionou \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>Você\u003C/b> adicionou \u003Cb>$receiverName$\u003C/b> a este chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>Você\u003C/b> alterou o assunto para \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Você\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e \u003Cb>$lastReceiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Você\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Você\u003C/b> removeu \u003Cb>$receiverNames$\u003C/b> e uma outra pessoa deste chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Você\u003C/b> removeu $numUnknown$ outras pessoas deste chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Você\u003C/b> removeu \u003Cb>$receiverName$\u003C/b> deste chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Você\u003C/b> removeu uma outra pessoa deste chat"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: $numNotes$ notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: $numNotes$ notas e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: $numNotes$ notas e um bloco de notas",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: uma nota"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: uma nota e $numNotebooks$ blocos de notas",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: Uma nota e um bloco de notas"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>Você\u003C/b> incluiu: um bloco de notas"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Wow!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Clique neste botão do Evernote para reunir artigos WSJ para pesquisa ou para ler mais tarde."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Você possui outras notas iguais a esta."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Ampliar (passo)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Diminuir (passo)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zoom para ajustar"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoom para 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Ampliar"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Diminuir"
+   }
+}

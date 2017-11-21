@@ -1,0 +1,120 @@
+body {
+    background: white;
+    color: #696969;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+    display: inline;
+}
+
+label {
+    font-size: 12px;
+}
+
+input[type=text], input[type=password], input[type=search], input[type=submit], textarea, select {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #696969;
+    outline: none;
+}
+
+input.disabled {
+    border: none;
+}
+
+a, a:active, a:hover, a:visited {
+    color: #7ebe40;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.description {
+    color: #696969;
+    font-size: 10px;
+}
+
+.loginDescription {
+    color: #999999;
+    font-size: 8pt;
+}
+
+/**
+ * Errors and messages
+ */
+div .globalErrorMessage, div.globalMessage {
+    font-size: 12px;
+    line-height: 15px;
+    vertical-align: baseline;
+    min-height: 30px;
+    display: none;
+    padding: 0px;
+}
+
+div.globalErrorMessage {
+    color: white;
+    background-image: url(../images/icon_error.png);
+    background-position: 99% center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-origin: padding;
+    padding: 8px 26px 8px 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    div.globalErrorMessage {
+        background-image: url(../images/icon_error@2x.png);
+    }
+}
+
+div.globalErrorMessage .simpleMessage, div.globalMessage .simpleMessage {
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: baseline;
+}
+
+div.globalErrorMessage a {
+    color: #cc0000;
+    text-decoration: underline;
+}
+
+div.error {
+    color: red;
+    font-style: italic;
+    font-size: 9pt;
+}
+
+form div.error {
+    margin-bottom: 6px;
+}
+
+div.globalErrorMessage ul {
+    margin: 4px 0px;
+}
+
+div.friendlyWarning {
+    color: #999999;
+}
+
+div.friendlyWarning b {
+    color: #696969;
+}
+
+/**
+ * General forms
+ */
+form {
+    padding: 0px;
+    margin: 0px;
+}
+

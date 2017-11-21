@@ -1,0 +1,598 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#suggestions {
+    background-color: white;
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+#suggestions.hasContent {
+    display: block;
+}
+
+.booster h2 {
+    color: #BFCBD4;
+    font-family: GothamMedium;
+    font-size: 12px;
+    margin: 8px 0 9px 0;
+    padding: 0 16px;
+    text-transform: uppercase;
+}
+
+.booster .content {
+    max-height: 138px;
+    overflow: hidden;
+}
+
+/* recipients */
+#recipients {
+    border-bottom: 1px solid #BFCBD4;
+    font-family: GothamBook;
+    font-size: 12px;
+    color: #2F373D;
+}
+
+#recipients .subsection {
+    vertical-align: top;
+}
+
+#recipients .subsection:first-child {
+    float: left;
+}
+
+#recipients .subsection:last-child {
+    overflow: hidden;
+}
+
+#recipients label {
+    background-image: url(../../images/workchat-green2.png);
+    background-position: 8px 50%;
+    background-size: 12px 14px;
+    color: #2F373D;
+    line-height: 28px;
+    padding: 0 3px 0 28px;
+}
+
+.loz_existing {
+    line-height: 28px;
+    max-width: calc(100% - 115px);
+    overflow: hidden;
+}
+
+.loz_lozenge {
+    background-color: #82919D;
+    border-radius: 9px;
+    color: white;
+    line-height: 18px;
+    margin-right: 10px;
+    padding: 0 9px;
+}
+
+.loz_lozenge.selected {
+    background-color: #10BE69;
+}
+
+.loz_inputContainer {
+    padding-left: 10px;
+}
+
+.loz_input {
+    border: none;
+    height: 28px;
+    line-height: 28px;
+    outline: none;
+    padding: 0;
+}
+
+.loz_input::-webkit-input-placeholder,
+.loz_input::-moz-placeholder {
+    color: #BFCBD4;
+}
+
+/* suggested chats and contacts, find contacts */
+#suggestedChats, #suggestedContacts, #findContacts {
+    display: none;
+}
+
+#suggestedChats.hasContent, #suggestedContacts.hasContent, #findContacts.google {
+    display: block;
+}
+
+.existingThread, .contact {
+    padding: 7px 16px;
+}
+
+.existingThread.hover, .contact.hover, .serviceOption:hover {
+    background-color: #10BE69;
+    cursor: pointer;
+}
+
+.existingThread .thumbnail, .existingThread .thumbnailContainer, .existingThread .container,
+.contact img, .contact .container,
+.serviceOption .img, .serviceOption .container {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.existingThread .container, .contact .container, .serviceOption .container {
+    max-width: calc(100% - 46px);
+}
+
+.existingThread .thumbnail, .existingThread .thumbnailContainer,
+.contact img, .serviceOption .img {
+    background-color: #BFCBD4;
+    border-radius: 16px;
+    height: 32px;
+    margin-right: 14px;
+    width: 32px;
+}
+
+.existingThread .participants, .existingThread .snippet,
+.contact .name, .contact .details {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.existingThread .participants, .contact .name {
+    color: #2F373D;
+    font-family: GothamMedium;
+    font-size: 13px;
+}
+
+.existingThread .snippet, .contact .details {
+    color: #62727D;
+    font-family: GothamBook;
+    font-size: 12px;
+    max-height: 15px;
+}
+
+.existingThread.hover .participants, .contact.hover .name,
+.existingThread.hover .snippet, .contact.hover .details,
+.serviceOption:hover .container {
+    color: white;
+}
+
+/* container that holds suggestions and the selected thread */
+#suggestionsThreadContainer {
+    border-bottom: 1px solid #BFCBD4;
+    height: calc(100% - 139px);
+    overflow-y: auto;
+    position: relative;
+}
+
+body.noShareNote #suggestionsThreadContainer {
+    height: calc(100% - 93px);
+}
+
+/* suggested chats */
+.existingThread .thumbnailContainer {
+    background-color: transparent;
+    border-radius: 0;
+    position: relative;
+}
+
+.existingThread .thumbnailContainer img {
+    background-color: #BFCBD4;
+    border-radius: 11px;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+}
+
+.existingThread .thumbnailContainer img:first-child {
+    border: 1px solid white;
+    left: 8px;
+    top: 8px;
+    z-index: 1;
+}
+
+/* suggested contacts */
+.contact {
+    background-position: right 16px center;
+    background-size: 14px 11px;
+}
+
+.contact.sameBusiness {
+    background-image: url(../../images/building-workchat.png);
+}
+
+.contact.sameBusiness.hover {
+    background-image: url(../../images/building-workchat-white.png);
+}
+
+.contact.google {
+    background-image: url(../../images/google-workchat.png);
+}
+
+.contact.google.hover {
+    background-image: url(../../images/google-workchat-white.png);
+}
+
+/* find contacts */
+.serviceOption {
+    padding: 2px 16px;
+}
+
+.serviceOption .img {
+    background-color: transparent;
+}
+
+.serviceOption .container {
+    color: #62727D;
+    font-family: GothamBook;
+    font-size: 12px;
+    line-height: 32px;
+}
+
+#google .img {
+    background-image: url(../../images/workchat-gmail.png);
+    background-size: 32px 32px;
+    border-radius: 0;
+}
+
+#findContacts.google #google {
+    display: block;
+}
+
+/* Messages in thread */
+#selectedThread {
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+    font-family: GothamBook;
+    height: 100%;
+    overflow: auto;
+    padding: 12px 16px;
+    position: relative;
+}
+
+#selectedThread:empty {
+    background-image: url(../../images/workchat-no-messages.png);
+    background-position: 50%;
+    background-size: 36px 44px;
+}
+
+.messageTurn {
+    margin: 10px 0;
+}
+
+.messageTurn:first-child {
+    margin-top: 0;
+}
+
+.messageTurn:last-child {
+    margin-bottom: 0;
+}
+
+.messageTurn.startsWithThreadChange {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.messageTurn .message, .messageTurn .threadChange {
+    margin: 5px 0;
+    position: relative;
+}
+
+.messageTurn .message {
+    margin-left: 16px;
+}
+
+.messageTurn:last-child :last-child {
+    margin-bottom: 0;
+}
+
+.messageTurn .message .inner {
+    background-color: #ECECEC;
+    border-radius: 4px;
+    color: #2F373D;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 17px;
+    max-width: 320px;
+    padding: 6px 9px;
+    text-align: left;
+}
+
+.messageTurn .message:nth-child(2):before {
+    background-image: url(../../images/arrow-chat-gray.png);
+    background-size: 9px 7px;
+    content: "";
+    height: 7px;
+    left: 16px;
+    position: absolute;
+    top: -7px;
+    width: 9px;
+}
+
+.messageTurn.self .message {
+    text-align: right;
+}
+
+.messageTurn.self .message .inner {
+    background-color: #2DBE60;
+    color: white;
+}
+
+.messageTurn.self .message:nth-child(2):before {
+    background-image: url(../../images/arrow-chat-green.png);
+    background-size: 7px 9px;
+    height: 9px;
+    left: 100%;
+    top: 6px;
+    width: 7px;
+}
+
+.sender .photo, .sender .name, .sender .messageTime {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.sender .photo {
+    background-color: #BFCBD4;
+    border-radius: 16px;
+    height: 32px;
+    margin-right: 10px;
+    width: 32px;
+}
+
+.sender .name {
+    font-size: 12px;
+    height: 19px;
+    margin-right: 10px;
+}
+
+.messageTurn.self .sender {
+    text-align: right;
+}
+
+.messageTurn.startsWithThreadChange .sender {
+    text-align: center;
+}
+
+.sender .messageTime {
+    color: #82919D;
+    height: 18px;
+}
+
+.messageTurn.self .sender .photo, .messageTurn.self .sender .name,
+.messageTurn.startsWithThreadChange .sender .photo,
+.messageTurn.startsWithThreadChange .sender .name {
+    display: none;
+}
+
+.messageTurn .attachment {
+    background-color: #F5F5F5;
+    background-position: 7px 50%;
+    background-size: 11px 13px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: block;
+    line-height: 27px;
+    margin-top: 7px;
+    max-width: 308px;
+    overflow: hidden;
+    padding: 0 7px 0 25px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.messageTurn .attachment:first-child {
+    margin-top: 0;
+}
+
+.messageTurn.self .attachment {
+    background-color: #57CD8D;
+}
+
+.messageTurn .attachment.note {
+    background-image: url(../../images/workchat-note-gray.png);
+}
+
+.messageTurn.self .attachment.note {
+    background-image: url(../../images/workchat-note-white.png);
+}
+
+.messageTurn .attachment.notebook {
+    background-image: url(../../images/workchat-notebook-gray.png);
+}
+
+.messageTurn.self .attachment.notebook {
+    background-image: url(../../images/workchat-notebook-white.png);
+}
+
+.messageTurn .body {
+    word-break: break-word;
+}
+
+.messageTurn .body a {
+    text-decoration: underline;
+    word-break: break-all;
+}
+
+.threadChange {
+    color: #2F373D;
+    font-size: 13px;
+    padding: 0 34px;
+    text-align: center;
+}
+
+.threadChange b {
+    font-family: GothamMedium;
+}
+
+/* note attachment */
+#noteShare {
+    border: 1px solid #BFCBD4;
+    border-radius: 4px;
+    color: #82919D;
+    font-family: GothamBook;
+    font-size: 12px;
+    line-height: 28px;
+    margin: 16px 16px 0 16px;
+}
+
+body.noShareNote #noteShare {
+    display: none;
+}
+
+#noteShare .swl_label {
+    background-image: url(../../images/workchat-note-attachment.png);
+    background-position: 9px 50%;
+    background-size: 11px 13px;
+    padding: 0 7px 0 29px;
+}
+
+#noteShare .swl_selected {
+    background-image: url(../../images/workchat-attachment-permissions-arrow.png);
+    background-position: right 11px center;
+    background-size: 14px 8px;
+    border-left: 1px solid #BFCBD4;
+    padding-right: 32px;
+    padding-left: 7px;
+}
+
+#noteShare .swl_allOptions {
+    background-color: white;
+    border: 1px solid #CDD7E0;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45);
+    color: #82919D;
+}
+
+#noteShare .swl_option {
+    line-height: 20px;
+    padding: 0 12.5px;
+}
+
+#noteShare .swl_option:hover {
+    background-color: #82919D;
+    color: white;
+}
+
+/* new message */
+#messageArea {
+    margin: 13px 16px 13px 16px;
+}
+
+#newMessage, #sendButton {
+    display: inline-block;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+#newMessage {
+    color: #2F373D;
+    font-family: GothamBook;
+    line-height: 16px;
+    padding: 6px 2px 0 2px;
+    width: 100%;
+}
+
+#newMessage::-webkit-input-placeholder,
+#newMessage::-moz-placeholder {
+    color: #BFCBD4;
+}
+
+#newMessageContainer {
+    overflow: hidden;
+}
+
+#sendButton {
+    background-color: #26B064;
+    border: 1px solid #D5D5D5;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    float: right;
+    font-family: GothamMedium;
+    line-height: 26px;
+    outline: none;
+    padding: 0 21px;
+}
+
+#sendButton:hover {
+    background-color: #28A955;
+}
+
+#sendButton:active {
+    background-color: #23944B;
+}
+
+#sendButton:disabled {
+    background-color: #E2E2E2;
+    cursor: default;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #recipients label {
+        background-image: url(../../images/workchat-green2@2x.png);
+    }
+
+    .contact.sameBusiness {
+        background-image: url(../../images/building-workchat@2x.png);
+    }
+
+    .contact.sameBusiness.hover {
+        background-image: url(../../images/building-workchat-white@2x.png);
+    }
+
+    .contact.google {
+        background-image: url(../../images/google-workchat@2x.png);
+    }
+
+    .contact.google.hover {
+        background-image: url(../../images/google-workchat-white@2x.png);
+    }
+
+    #google .img {
+        background-image: url(../../images/workchat-gmail@2x.png);
+    }
+
+    #selectedThread:empty {
+        background-image: url(../../images/workchat-no-messages@2x.png);
+    }
+
+    .messageTurn .message:nth-child(2):before {
+        background-image: url(../../images/arrow-chat-gray@2x.png);
+    }
+
+    .messageTurn.self .message:nth-child(2):before {
+        background-image: url(../../images/arrow-chat-green@2x.png);
+    }
+
+    .messageTurn .attachment.note {
+        background-image: url(../../images/workchat-note-gray@2x.png);
+    }
+
+    .messageTurn.self .attachment.note {
+        background-image: url(../../images/workchat-note-white@2x.png);
+    }
+
+    .messageTurn .attachment.notebook {
+        background-image: url(../../images/workchat-notebook-gray@2x.png);
+    }
+
+    .messageTurn.self .attachment.notebook {
+        background-image: url(../../images/workchat-notebook-white@2x.png);
+    }
+
+    #noteShare .swl_label {
+        background-image: url(../../images/workchat-note-attachment@2x.png);
+    }
+
+    #noteShare .swl_selected {
+        background-image: url(../../images/workchat-attachment-permissions-arrow@2x.png);
+    }
+}

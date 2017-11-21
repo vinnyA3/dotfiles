@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+function FeedbackFormCoordinator(){"use strict";function a(a,b,d){contentPreview.clear(),c.parentNode.removeChild(c),d&&"function"==typeof d&&d()}function b(a,b,d){contentPreview.gray(),c=document.createElement("iframe"),c.id="evernoteFeedbackForm",c.src=Browser.extension.getURL("content/feedback_form/feedback_form.html"),document.documentElement.appendChild(c),d&&"function"==typeof d&&d()}var c;Browser.addMessageHandlers({closeFeedbackForm:a,showFeedbackForm:b}),Object.preventExtensions(this)}Object.preventExtensions(FeedbackFormCoordinator);

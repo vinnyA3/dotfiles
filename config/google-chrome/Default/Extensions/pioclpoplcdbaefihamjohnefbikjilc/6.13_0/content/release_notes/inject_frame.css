@@ -1,0 +1,29 @@
+#evernoteReleaseNotes {
+    background: none !important;
+    border: 2px solid rgba(34, 40, 44, 0.38) !important;
+    border-radius: 4px;
+    bottom: auto !important;
+    box-shadow: none !important;
+    box-sizing: content-box !important;
+    height: 276px !important;
+    left: auto !important;
+    margin: 0 !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    outline: invert none medium !important;
+    padding: 0 !important;
+    position: fixed !important;
+    resize: none !important;
+    right: 10px !important;
+    top: 10px !important;
+    vertical-align: baseline !important;
+    visibility: visible !important;
+    z-index: 2147483647 !important;
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+    user-select: none !important;
+    width: 308px !important;
+}

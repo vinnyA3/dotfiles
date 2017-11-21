@@ -1,0 +1,19 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "https://read.amazon.com/?ref_=kcr_app_chrome_link"
+      },
+      "urls": [ "https://read.amazon.com/" ]
+   },
+   "description": "Kindle Cloud Reader - Read Kindle books in your browser, and shop on Amazon.com.",
+   "icons": {
+      "128": "icon_128.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCrdLeUOj/zfb+BivY98YLl6wB65p2aAEBXmVxyTtM+tuWzBRRidiFDof7QA7yK7V3eZBcW0oHKRqj4BvMGyEBtQrtEXSp7/p590RTwlbuvxGRpYY5yjP+9w8Qh6KpB+4zTza8JEos4zGXS0r19d5glexh7UbGgIDVwA5RctOX+tQIDAQAB",
+   "manifest_version": 2,
+   "name": "Kindle Cloud Reader",
+   "offline_enabled": true,
+   "permissions": [ "unlimitedStorage", "notifications" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.7.0.1"
+}

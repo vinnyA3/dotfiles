@@ -1,0 +1,146 @@
+html.skitchReady body *:not(.en-markup-editor):not(.en-markup-surface):not(.en-markup-layer):not(.en-markup-tool-element-text-editor):not(.en-markup-toolbar-wrapper):not(.skitchVisible) {
+    visibility: hidden !important;
+}
+
+html.skitchReady body iframe {
+    display: none !important;
+}
+
+html.skitchReady body {
+    min-width: 100% !important;
+    overflow: hidden !important;
+    position: fixed !important;
+}
+
+/* Multiple tools */
+#evernoteFeedbackForm, #evernoteGlobalTools, #evernoteOptionsPage {
+    background: none !important;
+    box-sizing: content-box !important;
+    margin: 0 !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+    outline: invert none medium !important;
+    padding: 0 !important;
+    position: fixed !important;
+    resize: none !important;
+    vertical-align: baseline !important;
+    visibility: visible !important;
+    z-index: 2147483647 !important;
+    animation-duration: 0s !important;
+    user-select: none !important;
+}
+
+/* Feedback form */
+#evernoteFeedbackForm {
+    border: none !important;
+    bottom: auto !important;
+    box-shadow: none !important;
+    height: 468px !important;
+    left: calc(50% - 168px) !important;
+    right: auto !important;
+    top: calc(50% - 234px) !important;
+    transition-duration: 0s !important;
+    width: 336px !important;
+}
+
+/* Global tools */
+#evernoteGlobalTools {
+    border: none !important;
+    bottom: auto !important;
+    box-shadow: none !important;
+    display: block !important;
+    height: 100%;
+    left: auto !important;
+    opacity: 0 !important;
+    right: 21px !important;
+    top: 21px !important;
+    transform: translate3d(30%, 0, 0) !important;
+    transition: transform 300ms ease, opacity 300ms ease;
+    width: 270px !important;
+}
+
+#evernoteGlobalTools.evernoteClipperVisible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+}
+
+html.skitchWaiting #evernoteGlobalTools {
+    display: none !important;
+}
+
+html.skitchReady #evernoteGlobalTools {
+    display: block !important;
+}
+
+html.evernoteOptionsOpen #evernoteGlobalTools {
+    display: none !important;
+}
+
+/* Options page */
+#evernoteOptionsPage {
+    border: none !important;
+    bottom: auto !important;
+    box-shadow: none !important;
+    display: none !important;
+    left: calc(50% - 315px) !important;
+    right: auto !important;
+    transition-duration: 0 !important;
+    width: 620px !important;
+}
+
+html.evernoteOptionsOpen {
+    overflow-y: hidden;
+}
+
+html.evernoteOptionsOpen #evernoteOptionsPage {
+    display: inline !important;
+}
+
+/* loading indicator
+todo: fix for cross-browsers */
+#evernoteLoading {
+    background-color: transparent !important;
+    background-image: url(chrome-extension://__MSG_@@extension_id__/images/loading--big.gif),
+     
+    url(chrome-extension://__MSG_@@extension_id__/images/loading--background.png),
+      !important;
+    background-repeat: no-repeat;
+    background-size: 118px 117px !important;
+    bottom: auto !important;
+    height: 117px !important;
+    left: calc(50% - 59px) !important;
+    position: fixed !important;
+    right: auto !important;
+    top: calc(50% - 58px) !important;
+    width: 118px !important;
+    z-index: 2147483647 !important;
+}
+
+@media screen and (min-resolution: 0dppx), screen and(-webkit-min-device-pixel-ratio: 0) {
+    #evernoteLoading {
+        background-image: url(../images/loading--big.gif), url(../images/loading--background.png) !important;
+    }
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #evernoteLoading {
+        background-image: url(chrome-extension://__MSG_@@extension_id__/images/loading--big@2x.gif),
+        url(../images/loading--big@2x.gif),
+        url(chrome-extension://__MSG_@@extension_id__/images/loading--background@2x.png) !important;
+    }
+}
+
+@media screen and(min-resolution: 1.5dppx), screen and(-webkit-min-device-pixel-ratio: 1.5) {
+    #evernoteLoading {
+        background-image: url(../images/loading--big@2x.gif), url(../images/loading--background@2x.png) !important;
+    }
+}
+
+@media print {
+    #evernoteGlobalTools, #evernoteOptionsPage {
+        display: none !important;
+    }
+}

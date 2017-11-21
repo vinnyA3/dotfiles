@@ -1,0 +1,992 @@
+body {
+    font-size: 12px;
+    margin: 0;
+}
+
+#main {
+    background-clip: content-box;
+    background-color: #2F373D;
+    border: 2px solid rgba(34, 40, 44, 0.38);
+    border-radius: 5px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 452px;
+}
+
+#close {
+    background-image: url(../../images/close-sidebar.png);
+    background-size: 14px;
+    cursor: pointer;
+    display: none;
+    height: 14px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 14px;
+    z-index: 2;
+}
+
+body.done #close, body.error #close {
+    display: block;
+}
+
+#account {
+    color: #768794;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding: 14px 25px 0 25px;
+}
+
+#header {
+    background-image: url(../../images/sync_big.gif);
+    background-position: 17px 50%;
+    background-size: 26px;
+    padding: 14px 17px 14px 53px;
+    position: relative;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+body.done #header {
+    background: none;
+    padding: 20px 22px 13px 22px;
+}
+
+#status {
+    color: #26B064;
+    display: block;
+    font-family: CaeciliaBold;
+    float: left;
+    font-size: 15px;
+    line-height: 26px;
+    overflow: hidden;
+    padding: 0 12px 0 0;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+}
+
+#status:last-child {
+    display: inline-block;
+    float: none;
+    padding: 0 0 0 12px;
+    vertical-align: middle;
+}
+
+body.done #status {
+    background-image: url(../../images/check.png);
+    background-position: 0 50%;
+    background-size: 18px 13px;
+    float: none;
+    line-height: 18px;
+    margin: 0 0 11px 0;
+    padding: 0 0 0 27px;
+}
+
+#title {
+    color: white;
+    display: block;
+    font-family: CaeciliaItalic;
+    font-size: 15px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    white-space: nowrap;
+}
+
+#title:first-child {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+body.done #title {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 21px;
+    max-width: calc(100% - 21px);
+    padding: 0 15px 0 0;
+    position: relative;
+}
+
+body.done #title:hover:after {
+    /* underline title on hover */
+    border-bottom: 1px solid white;
+    bottom: 3px;
+    content: "";
+    left: 0;
+    position: absolute;
+    width: calc(100% - 15px);
+}
+
+#reminders {
+    display: none;
+    vertical-align: top;
+    z-index: 2;
+}
+
+body.done #reminders {
+    display: inline-block;
+}
+
+body.brief #reminders {
+    display: none;
+}
+
+/* Share buttons */
+#share {
+    height: 0;
+    margin: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 0 0 74px;
+    transition: padding 400ms ease, opacity 400ms ease;
+}
+
+body.done #share {
+    height: auto;
+    margin: 0 0 18px 0;
+    opacity: 1;
+    padding: 0 0 0 24px;
+}
+
+body.brief #share, body.noShare #share {
+    display: none;
+}
+
+#defaultShare, #shareDropdownToggle {
+    background-color: #26B064;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    height: 28px;
+    line-height: 28px;
+    vertical-align: top;
+}
+
+#defaultShare {
+    background-image: url(../../images/workchat-green.png);
+    background-position: 10px 50%;
+    background-size: 12px 14px;
+    border-radius: 14px 0 0 14px;
+    font-family: GothamMedium;
+    font-size: 12px;
+    padding: 0 10px 0 32px;
+}
+
+#shareDropdownToggle {
+    background-image: url(../../images/arrow-down-green.png);
+    background-position: 50% 50%;
+    background-size: 12px 7px;
+    border-left: 1px solid #11723C;
+    border-radius: 0 14px 14px 0;
+    width: 28px;
+}
+
+#shareDropdown {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
+    color: #82919D;
+    display: none;
+    font-family: GothamMedium;
+    font-size: 12px;
+    position: absolute;
+    z-index: 1;
+}
+
+#shareDropdown.open {
+    display: block;
+}
+
+.shareOpt {
+    background-color: white;
+    cursor: pointer;
+    line-height: 26px;
+    padding: 0 11px 0 38px;
+}
+
+.shareOpt:hover {
+    background-color: #26B064;
+    color: white;
+}
+
+.shareOpt:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.shareOpt:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+#linkedin {
+    background-image: url(../../images/linkedin-grey.png);
+    background-position: 11px 50%;
+    background-size: 16px 16px;
+}
+
+#linkedin:hover {
+    background-image: url(../../images/linkedin-white.png);
+}
+
+#weibo {
+    background-image: url(../../images/weibo-grey.png);
+    background-position: 9.5px 50%;
+    background-size: 19px 16px;
+    display: none;
+}
+
+#weibo:hover {
+    background-image: url(../../images/weibo-white.png);
+}
+
+body.china #weibo {
+    display: block;
+}
+
+#facebook {
+    background-image: url(../../images/facebook-grey.png);
+    background-position: 15px 50%;
+    background-size: 8px 15px;
+}
+
+#facebook:hover {
+    background-image: url(../../images/facebook-white.png);
+}
+
+#twitter {
+    background-image: url(../../images/twitter-grey.png);
+    background-position: 12px 50%;
+    background-size: 14px 12px;
+}
+
+#twitter:hover {
+    background-image: url(../../images/twitter-white.png);
+}
+
+#gplus {
+    background-image: url(../../images/gplus-grey.png);
+    background-position: 9.5px 50%;
+    background-size: 19px 16px;
+}
+
+#gplus:hover {
+    background-image: url(../../images/gplus-white.png);
+}
+
+#email {
+    background-image: url(../../images/email-grey.png);
+    background-position: 11px 50%;
+    background-size: 16px 10px;
+}
+
+#email:hover {
+    background-image: url(../../images/email-white.png);
+}
+
+#url {
+    background-image: url(../../images/url-grey.png);
+    background-position: 12.5px 50%;
+    background-size: 13px 13px;
+}
+
+#url:hover {
+    background-image: url(../../images/url-white.png);
+}
+
+#workchat {
+    background-image: url(../../images/workchat-grey.png);
+    background-position: 13px 50%;
+    background-size: 12px 14px;
+}
+
+#workchat:hover {
+    background-image: url(../../images/workchat-white.png);
+}
+
+body.noSingleNote #linkedin, body.noSingleNote #facebook,
+body.noSingleNote #twitter, body.noSingleNote #gplus,
+body.noSingleNote #weibo, body.noSingleNote #url,
+body.noFacebook #facebook, body.noLinkedin #linkedin,
+body.noTwitter #twitter, body.china #gplus {
+    display: none;
+}
+
+hr {
+    border-top: 1px solid #21262C;
+    border-right: none;
+    border-bottom: 1px solid #495865;
+    border-left: none;
+    display: none;
+    margin: 0 12px;
+}
+
+body.done hr {
+    display: block;
+}
+
+body.partial hr {
+    display: none;
+}
+
+body.noDismissButtonAndDivider hr {
+    display: none;
+}
+
+#smart {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: max-height 400ms, opacity 400ms;
+}
+
+body.done #smart {
+    /*  max-height: 266px;*/
+    max-height: 366px;
+    opacity: 1;
+}
+
+body.partial #smart {
+    max-height: 0;
+    opacity: 0;
+}
+
+#smart.relatedNotes #smartPanel > div {
+    left: 0;
+}
+
+#smart.sameSiteNotes #smartPanel > div {
+    left: -404px;
+}
+
+#smart.tips {
+    overflow: visible;
+}
+
+#smart.tips #smartPanel {
+    overflow: visible;
+}
+
+#smart.tips #smartPanel > div {
+    left: -808px;
+}
+
+/*body.done.noSmart #smart {
+  display: none;
+}*/
+
+h2 {
+    color: #8A98A2;
+    cursor: pointer;
+    display: block;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: normal;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    vertical-align: top;
+}
+
+h2.pressed {
+    color: white;
+}
+
+#relatedNotes {
+    float: left;
+    padding: 19px 30px 24px 0;
+}
+
+#sameSiteNotes {
+    overflow: hidden;
+    padding: 19px 0 24px 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#smart.tips #relatedNotes, #smart.tips #sameSiteNotes {
+    display: none;
+}
+
+#tips {
+    color: #8A98A2;
+    display: none;
+    padding: 19px 0 24px 0;
+}
+
+#tips:hover {
+    color: white;
+}
+
+#smart.tips #tips {
+    display: inline-block;
+}
+
+body.noDismissButtonAndDivider #smart #tips {
+    display: none;
+}
+
+#smartPanel {
+    /*  max-height: 208px;*/
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#smartPanel.hasAtLeastOneNotebookName {
+    max-height: 232px;
+}
+
+#relatedNotesContainer, #sameSiteNotesContainer, #tipsContainer {
+    display: inline-block;
+    margin: 0 0 19px 0;
+    position: relative;
+    transition: left 200ms ease;
+    vertical-align: top;
+    width: 404px;
+}
+
+#sameSiteNotesContainer {
+    max-height: 244px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#smartPanel.hasAtLeastOneNotebookName #sameSiteNotesContainer {
+    max-height: 204px;
+}
+
+.noResults {
+    background-color: #21262C;
+    height: 236px;
+}
+
+.noResults:before {
+    color: white;
+    content: attr(data-no-result);
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    line-height: 236px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+/* tips */
+#tipsContainer {
+    height: 236px;
+}
+
+#tipsContainer > div {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+}
+
+#smartPanel.hasAtLeastOneNotebookName #tipsContainer {
+    height: 232px;
+}
+
+/* common tips */
+#tipsContainer.ratings #ratingsPrompt, #tipsContainer.nearQuota #nearQuotaTip,
+#tipsContainer.referral #referralTip, #tipsContainer.basicUpsell #basicUpsellTip,
+#tipsContainer.workchat #workchatTip, #tipsContainer.hitSpeedbump #speedbumpTip {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+.tipLogo {
+    background-position: 0 18px;
+    margin: 0 20px;
+    text-align: center;
+    white-space: normal;
+}
+
+.tipDetails {
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0 20px;
+    text-align: center;
+    white-space: normal;
+}
+
+.tipButtons {
+    bottom: 18px;
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.tipButton {
+    background-color: #26B064;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 0 0 #33CC78;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tipButton:hover {
+    background-color: #26C66E;
+}
+
+.tipButton:active {
+    background-color: #26B064;
+    box-shadow: inset 0 0 8px 3px rgba(2, 52, 24, 0.3);
+}
+
+.tipCloseX {
+    cursor: pointer;
+    position: absolute;
+}
+
+/* ratings prompt */
+#ratingsPrompt {
+    background-color: #495865;
+    color: white;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#ratingsPrompt .tipLogo {
+    font-family: CaeciliaBold, Times, serif;
+    font-size: 15px;
+    padding-top: 25px;
+}
+
+#ratingsPrompt .tipDetails {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#ratingsPrompt .tipLink {
+    cursor: pointer;
+    font-size: 12px;
+    height: 16px;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+#ratingsPrompt .tipLink span {
+    border-bottom: 1px solid white;
+}
+
+#rateNow {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 34px;
+    margin: 19px 0 0 0;
+    padding: 0 61px;
+}
+
+body.safari #rateNow {
+    display: none;
+}
+
+/* referral tip */
+#referralTip {
+    background-color: #F4F1F1;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+}
+
+#referralTip .tipLogo {
+    background-image: url(../../images/blue-ribbon.png);
+    background-position: 50% 18px;
+    background-size: 44px 56px;
+    color: #656C71;
+    font-family: "CaeciliaBold", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding-top: 86px;
+}
+
+#referralTip .tipDetails {
+    color: #656C71;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+#referralTip .button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0 47.5px;
+}
+
+/* nearQuota tip */
+#nearQuotaTip {
+    background-color: white;
+    color: #171A1D;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+}
+
+#nearQuotaTip .tipTextContainer {
+    height: 179px;
+}
+
+#nearQuotaTip .tipLogo {
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+#nearQuotaTip.upgradable .tipLogo {
+    background-image: url(../../images/upsell-arrow.png);
+    background-position: 50% 15px;
+    background-size: 36px;
+    padding-top: 66px;
+}
+
+#nearQuotaTip .tipDetails {
+    font-family: GothamBook, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#nearQuotaTip .button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+/* speedbump */
+#speedbumpTip {
+    background-color: white;
+    color: #171A1D;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+}
+
+#speedbumpTip .tipTextContainer {
+    height: 154px;
+}
+
+#speedbumpTip .tipDismiss {
+    cursor: pointer;
+    font-size: 13px;
+    margin: 17.5px 0;
+}
+
+#speedbumpTip .tipLogo {
+    font-size: 13px;
+    padding-top: 30px;
+}
+
+#speedbumpTip .tipDetails {
+    font-family: GothamBook, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#speedbumpTip .button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 30px;
+    vertical-align: top;
+}
+
+/* work chat tip */
+#workchatTip {
+    background-color: white;
+    border-radius: 4px;
+    color: #1C1C1C;
+}
+
+#workchatTip:before {
+    content: "";
+    border-color: transparent;
+    border-style: solid;
+    border-width: 10px;
+    border-bottom-color: white;
+    left: 40px;
+    position: absolute;
+    top: -20px;
+}
+
+#workchatTip .tipLogo {
+    background-image: url(../../images/workchat-promo.png);
+    background-position: 50% 15px;
+    background-size: 66px 81px;
+    font-family: CaeciliaRoman;
+    font-size: 20px;
+    padding: 105px 0 0 0;
+}
+
+#workchatTip .tipDetails {
+    font-family: GothamBook;
+    font-size: 12px;
+    margin: 3px 35px 12px 35px;
+}
+
+#workchatTip .button {
+    display: inline-block;
+    padding: 9.5px 33px;
+}
+
+#workchatTip .tipCloseX {
+    background-image: url(../../images/workchat-promo-close.png);
+    background-size: 14px 14px;
+    height: 14px;
+    right: 8px;
+    top: 8px;
+    width: 14px;
+}
+
+/* Basic Upsell */
+#basicUpsellTip {
+    background-color: white;
+    color: #171A1D;
+}
+
+#basicUpsellTip .tipTextContainer {
+    height: 174px;
+}
+
+#basicUpsellTip .tipLogo {
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    background-image: url(../../images/upsell-arrow.png);
+    background-position: 50% 15px;
+    background-size: 36px;
+    padding-top: 66px;
+}
+
+#basicUpsellTip .tipDetails {
+    font-family: GothamBook, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+#basicUpsellTip .button {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 30px;
+    margin: 15px 0 0 0;
+}
+
+/* Error states */
+#error {
+    display: none;
+}
+
+#error.subscription {
+    text-align: center;
+}
+
+#errorTitle, #errorDetails, #errorButton {
+    color: white;
+    padding-left: 46px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#errorTitle {
+    background-image: url(../../images/error-clip.png);
+    background-position: 15px 15px;
+    background-size: 16px 16px;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 15px 15px 0 46px;
+}
+
+#error.subscription #errorTitle {
+    background-image: none;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding: 30px 25px 0;
+    text-align: center;
+}
+
+#error.subscription.upgradable #errorTitle {
+    background-image: url(../../images/upsell-arrow.png);
+    background-position: 50% 15px;
+    background-size: 36px;
+    padding-top: 66px;
+}
+
+#errorDetails {
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    padding-top: 5px;
+    padding-right: 24px;
+    padding-bottom: 30px;
+}
+
+#error.subscription #errorDetails {
+    font-family: "GothamBook", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding: 0 25px 30px 25px;
+    text-align: center;
+}
+
+#logLink {
+    border-bottom: 1px solid #C2CFD7;
+    color: #C2CFD7;
+}
+
+#errorButton {
+    background-color: #26B064;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 0 0 #33CC78;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    margin: 15px 0 15px 46px;
+    overflow: hidden;
+    padding: 0 30px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#errorButton:empty {
+    display: none;
+}
+
+#error.subscription #errorButton {
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 32px;
+    margin: 0 0 25px 0;
+    vertical-align: bottom;
+}
+
+#errorButton:hover {
+    background-color: #26C66E;
+}
+
+#errorButton:active {
+    background-color: #26B064;
+    box-shadow: inset 0 0 8px 3px rgba(2, 52, 24, 0.3);
+}
+
+body.error #error {
+    display: block;
+}
+
+body.error #header {
+    display: none;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #close {
+        background-image: url(../../images/close-sidebar@2x.png);
+    }
+
+    #header {
+        background-image: url(../../images/sync_big@2x.gif);
+    }
+
+    body.done #status {
+        background-image: url(../../images/check@2x.png);
+    }
+
+    #defaultShare {
+        background-image: url(../../images/workchat-green@2x.png);
+    }
+
+    #shareDropdownToggle {
+        background-image: url(../../images/arrow-down-green@2x.png);
+    }
+
+    #linkedin {
+        background-image: url(../../images/linkedin-grey@2x.png);
+    }
+
+    #linkedin:hover {
+        background-image: url(../../images/linkedin-white@2x.png);
+    }
+
+    #weibo {
+        background-image: url(../../images/weibo-grey@2x.png);
+    }
+
+    #weibo:hover {
+        background-image: url(../../images/weibo-white@2x.png);
+    }
+
+    #facebook {
+        background-image: url(../../images/facebook-grey@2x.png);
+    }
+
+    #facebook:hover {
+        background-image: url(../../images/facebook-white@2x.png);
+    }
+
+    #twitter {
+        background-image: url(../../images/twitter-grey@2x.png);
+    }
+
+    #twitter:hover {
+        background-image: url(../../images/twitter-white@2x.png);
+    }
+
+    #gplus {
+        background-image: url(../../images/gplus-grey@2x.png);
+    }
+
+    #gplus:hover {
+        background-image: url(../../images/gplus-white@2x.png);
+    }
+
+    #email {
+        background-image: url(../../images/email-grey@2x.png);
+    }
+
+    #email:hover {
+        background-image: url(../../images/email-white@2x.png);
+    }
+
+    #url {
+        background-image: url(../../images/url-grey@2x.png);
+    }
+
+    #url:hover {
+        background-image: url(../../images/url-white@2x.png);
+    }
+
+    #workchat {
+        background-image: url(../../images/workchat-grey@2x.png);
+    }
+
+    #workchat:hover {
+        background-image: url(../../images/workchat-white@2x.png);
+    }
+
+    #referralTip .tipLogo {
+        background-image: url(../../images/blue-ribbon@2x.png);
+    }
+
+    #nearQuotaTip.upgradable .tipLogo {
+        background-image: url(../../images/upsell-arrow@2x.png);
+    }
+
+    #workchatTip .tipLogo {
+        background-image: url(../../images/workchat-promo@2x.png);
+    }
+
+    #workchatTip .tipCloseX {
+        background-image: url(../../images/workchat-promo-close@2x.png);
+    }
+
+    #basicUpsellTip .tipLogo {
+        background-image: url(../../images/upsell-arrow@2x.png);
+    }
+
+    #errorTitle {
+        background-image: url(../../images/error-clip@2x.png);
+    }
+
+    #error.subscription.upgradable #errorTitle {
+        background-image: url(../../images/upsell-arrow@2x.png);
+    }
+}

@@ -1,0 +1,44 @@
+
+/* stars */
+/* ===== */
+
+    .middle td { vertical-align: middle; }
+
+    .stars { 
+        width: 80px; 
+        height: 15px; 
+        display: block;
+        background-position: top left; 
+        background-repeat: no-repeat;
+        position: relative;
+        top: -0.1em;
+    }
+
+
+/* product images */
+/* ============== */
+
+    .product_image { 
+        max-height: 175px; 
+        border: 1px solid #E7E7E7;
+        float: left; 
+        margin-right: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    #contentToDisplay #display__section__images { padding-right: 0; padding-left: 1.5em; }
+    #contentToDisplay #display__section__images .header { margin-left: 1.5em; }
+    #contentToDisplay .product_image {
+        margin-right: 0;
+        margin-left: 1.5em;
+    }
+
+/* technical details */
+/* ================= */
+
+    .technical { border-collapse: collapse; }
+    .technical td.label { background-color: #F7F7F7; }
+    .technical td { 
+        padding: 0.25em 0.5em 0.25em 0.5em; 
+        border: 1px solid #E7E7E7; 
+    }

@@ -1,0 +1,140 @@
+.row {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.row:nth-child(n+2) {
+    margin-top: 10px;
+}
+
+.container {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.container:first-child {
+    margin-right: 6px;
+    margin-left: 0;
+}
+
+.container:nth-child(3) {
+    margin-right: 0;
+    margin-left: 6px;
+}
+
+.noteBlock {
+    background-color: white;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: Helvetica;
+    height: 180px;
+    position: relative;
+    width: 136px;
+}
+
+.noteBlock div.snippet {
+    float: left;
+    margin-left: -1px;
+    padding: 6px 10px 0px 10px;
+    position: absolute;
+    width: 110px;
+}
+
+.noteBlock h1 {
+    font-size: 13px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 15px;
+    margin: 0px 0px 7px 0px;
+    overflow: hidden;
+}
+
+.noteBlock p {
+    color: #808080;
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0px;
+}
+
+.noteBlock p.date {
+    color: #518C94;
+    font-style: italic;
+}
+
+.noteBlock p.snippettext {
+    height: 112px;
+    overflow: hidden;
+}
+
+.noteBlock p.mixed {
+    height: 48px;
+    overflow: hidden;
+}
+
+.noteBlock img {
+    margin-top: 1px;
+    margin-bottom: 0px;
+    max-height: 110px;
+    max-width: 110px;
+}
+
+.noteBlock img.smallimage {
+    margin-top: 3px;
+    max-height: 60px;
+    max-width: 60px;
+}
+
+.noteLink {
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.notebookName, .contactName {
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    color: #E4EBF0;
+    padding-left: 21px;
+    background-position-x: 0px;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 120px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.notebookName {
+    background-image: url(../../images/notebook.png);
+    background-size: 11px 12px;
+    background-position-y: 1px;
+}
+
+.contactName {
+    background-image: url(../../images/head_shoulders.png);
+    background-size: 10px 12px;
+    background-position-y: 2px;
+}
+
+.moreOnServer {
+    color: #E4EBF0;
+    cursor: pointer;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .notebookName {
+        background-image: url(../../images/notebook@2x.png);
+    }
+
+    .contactName {
+        background-image: url(../../images/head_shoulders@2x.png);
+    }
+}

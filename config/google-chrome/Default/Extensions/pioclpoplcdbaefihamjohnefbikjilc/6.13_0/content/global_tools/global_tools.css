@@ -1,0 +1,858 @@
+body {
+    margin: 0;
+}
+
+#main {
+    background-clip: padding-box;
+    background-color: #2F373D;
+    border: 2px solid rgba(178, 186, 193, 0.6);
+    border-radius: 2px;
+    padding: 10px 25px 0 25px;
+    position: relative;
+}
+
+#closeSidebar {
+    background-image: url(../../images/close-sidebar.png);
+    background-size: 14px;
+    cursor: pointer;
+    height: 14px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    width: 14px;
+}
+
+#closeSidebar.useSvg {
+    background-size: 10px;
+    height: 10px;
+    width: 10px;
+}
+
+#closeSidebar.useSvg {
+    background-image: url(../../images/close-sidebar.svg);
+}
+
+#minimizeButton.hide {
+    display: none;
+}
+
+#minimizeButton.minimiseSidebar {
+    background-size: 8px 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 29px;
+    top: 9px;
+    height: 10px;
+    width: 8px;
+}
+
+#minimizeButton.minimiseSidebar.useSvg {
+    background-image: url(../../images/minimize.svg);
+}
+
+#minimizeButton.maximiseSidebar.useSvg {
+    background-image: url(../../images/maximize.svg);
+}
+
+#main.minified {
+    padding: 10px 25px;
+    background-color: rgba(193, 195, 197, 0.8);
+}
+
+#main.minified:hover {
+    background-color: rgba(47, 55, 61, 1);
+}
+
+#main.minified #closeSidebar.useSvg {
+    background-image: url(../../images/close-sidebar-minimized.svg);
+}
+
+#main.minified:hover #closeSidebar.useSvg {
+    background-image: url(../../images/close-sidebar.svg);
+}
+
+#main.minified #minimizeButton.minimiseSidebar.useSvg {
+    background-image: url(../../images/maximize.svg);
+}
+
+#main.minified:hover #minimizeButton.maximiseSidebar.useSvg {
+    background-image: url(../../images/maximize-hover.svg);
+}
+
+#main.minified #title {
+    color: #F5F5F5;
+    text-shadow: none;
+}
+
+#main.minified #clip,
+#main.minified #organize,
+#main.minified #account,
+#main.minified #saveButton,
+#main.minified #annotate,
+#main.minified #accountSelector {
+    display: none;
+}
+
+#title {
+    background-color: transparent;
+    border-radius: 2px;
+    border-top: 4px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 6px solid transparent;
+    color: white;
+    font-family: CaeciliaItalic, Times, serif;
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+    width: 90%;
+}
+
+#title:hover, #title:focus {
+    background-color: #21262C;
+}
+
+#title:focus {
+    overflow-y: auto;
+}
+
+#title::-webkit-input-placeholder,
+#title::-moz-placeholder {
+    color: white;
+}
+
+#saveButton, #cancelScreenshot {
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
+    margin: 10px 0 0 0;
+}
+
+section {
+    margin: 20px 0 0 0;
+}
+
+#main.smallScreenMode section#clip {
+    display: none;
+}
+
+#main.smallScreenMode .nbList {
+    max-height: 140px;
+}
+
+h1 {
+    color: #8A9CA8;
+    display: inline-block;
+    font-family: CaeciliaBold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    left: 24px;
+    margin: 0 0 7px 0;
+    padding: 0 6px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+h1:before, h1:after {
+    border-top: 1px solid #21262C;
+    border-bottom: 1px solid #495865;
+    content: "";
+    position: absolute;
+    top: 47%;
+}
+
+h1:before {
+    left: -24px;
+    width: 24px;
+}
+
+h1:after {
+    left: 100%;
+    width: calc(216px - 100% - 24px);
+}
+
+h2 {
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+    margin: 0 1px;
+    padding: 0 0 0 30px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    width: calc(100% - 30px - 2px);
+}
+
+h2:hover {
+    background-color: #21262C;
+}
+
+h2:before {
+    border-radius: 50%;
+    content: "";
+    height: 8px;
+    left: 11px;
+    position: absolute;
+    top: 9px;
+    width: 8px;
+}
+
+h2:hover:before {
+    background-color: #8A9CA8;
+}
+
+h2.active:before {
+    background-color: #26B064;
+}
+
+body.html h2.html, body.email h2.email, body.pdf h2.pdf,
+body.selection h2.selection, body.frameset h2.frameset,
+body.custom h2.custom {
+    display: block;
+}
+
+#comments {
+    background-color: transparent;
+    border-radius: 2px;
+    border-width: 5px 8px;
+    border-style: solid;
+    border-color: transparent;
+    box-sizing: border-box;
+    color: #8A9CA8;
+    cursor: pointer;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 7px 0 0 23px;
+    overflow: hidden;
+    padding: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    width: calc(100% - 23px);
+}
+
+#comments:hover {
+    color: white;
+}
+
+#comments:focus {
+    background-color: #21262C;
+    color: white;
+    cursor: text;
+    overflow: auto;
+}
+
+#comments:hover::-webkit-input-placeholder,
+#comments:hover::-moz-placeholder {
+    color: white;
+}
+
+#comments::-webkit-input-placeholder,
+#comments::-moz-placeholder,
+#comments:focus::-webkit-input-placeholder,
+#comments:focus::-moz-placeholder {
+    color: #8A9CA8;
+}
+
+/* Skitch */
+#annotate {
+    display: none;
+    padding: 0 0 8px 0;
+}
+
+#skitchToolsContainer {
+    position: relative;
+}
+
+.skitchTool {
+    background-size: 35px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    height: 35px;
+    margin-right: 10px;
+    width: 35px;
+}
+
+.skitchTool:hover, .skitchTool.selectedSkitchTool {
+    background-color: #21262C;
+}
+
+.skitchTool:nth-child(5n+5) {
+    margin-right: 0;
+}
+
+.skitchTool:nth-child(n+6) {
+    margin-top: 10px;
+}
+
+.skitchTool.expandable {
+    background-position: 0 0, calc(100% - 2px) calc(100% - 1px);
+    background-size: 35px, 8px;
+}
+
+#highlighter {
+    background-image: url(../../skitch/images/highlighter.png);
+}
+
+#shapes.arrow {
+    background-image: url(../../skitch/images/arrow.png), url(../../skitch/images/expand.png);
+}
+
+#shapes.rectangle {
+    background-image: url(../../skitch/images/rectangle.png), url(../../skitch/images/expand.png);
+}
+
+#shapes.roundedRectangle {
+    background-image: url(../../skitch/images/roundedRectangle.png), url(../../skitch/images/expand.png);
+}
+
+#shapes.ellipse {
+    background-image: url(../../skitch/images/ellipse.png), url(../../skitch/images/expand.png);
+}
+
+#shapes.line {
+    background-image: url(../../skitch/images/line.png), url(../../skitch/images/expand.png);
+}
+
+#marker {
+    background-image: url(../../skitch/images/marker.png);
+}
+
+#crop {
+    background-image: url(../../skitch/images/crop.png);
+}
+
+#zoomout {
+    background-image: url(../../skitch/images/zoomout.png);
+}
+
+#stamps.stampAccept {
+    background-image: url(../../skitch/images/stampAccept.png), url(../../skitch/images/expand.png);
+}
+
+#stamps.stampReject {
+    background-image: url(../../skitch/images/stampReject.png), url(../../skitch/images/expand.png);
+}
+
+#stamps.stampExclaim {
+    background-image: url(../../skitch/images/stampExclaim.png), url(../../skitch/images/expand.png);
+}
+
+#stamps.stampQuestion {
+    background-image: url(../../skitch/images/stampQuestion.png), url(../../skitch/images/expand.png);
+}
+
+#stamps.stampPerfect {
+    background-image: url(../../skitch/images/stampPerfect.png), url(../../skitch/images/expand.png);
+}
+
+#text {
+    background-image: url(../../skitch/images/text.png);
+}
+
+#pixelate {
+    background-image: url(../../skitch/images/pixelate.png);
+}
+
+#colors.red {
+    background-image: url(../../skitch/images/red.png), url(../../skitch/images/expand.png);
+}
+
+#colors.orange {
+    background-image: url(../../skitch/images/orange.png), url(../../skitch/images/expand.png);
+}
+
+#colors.yellow {
+    background-image: url(../../skitch/images/yellow.png), url(../../skitch/images/expand.png);
+}
+
+#colors.black {
+    background-image: url(../../skitch/images/black.png), url(../../skitch/images/expand.png);
+}
+
+#colors.green {
+    background-image: url(../../skitch/images/green.png), url(../../skitch/images/expand.png);
+}
+
+#colors.blue {
+    background-image: url(../../skitch/images/blue.png), url(../../skitch/images/expand.png);
+}
+
+#colors.pink {
+    background-image: url(../../skitch/images/pink.png), url(../../skitch/images/expand.png);
+}
+
+#colors.white {
+    background-image: url(../../skitch/images/white.png), url(../../skitch/images/expand.png);
+}
+
+#zoomin {
+    background-image: url(../../skitch/images/zoomin.png);
+}
+
+.subtools {
+    background-color: #BBCBD5;
+    border-radius: 2px;
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+}
+
+.subtools.open {
+    display: block;
+}
+
+.subtool {
+    cursor: pointer;
+    display: inline-block;
+}
+
+#shapesSubtools .subtool, #stampsSubtools .subtool {
+    background-size: 35px;
+    height: 35px;
+    margin-right: 10px;
+    width: 35px;
+}
+
+#shapesSubtools .subtool:last-child, #stampsSubtools .subtool:last-child {
+    margin-right: 0;
+}
+
+#shapesSubtools, #stampsSubtools {
+    left: -5px;
+    padding: 0 5px;
+    white-space: nowrap;
+}
+
+#shapesSubtools {
+    top: 45px;
+}
+
+#shapesSubtools:before {
+    border-right: 5px solid transparent;
+    border-bottom: 6px solid #BBCBD5;
+    border-left: 5px solid transparent;
+    content: "";
+    left: 61.5px;
+    position: absolute;
+    top: -6px;
+}
+
+#arrow {
+    background-image: url(../../skitch/images/arrow_sub.png);
+}
+
+#rectangle {
+    background-image: url(../../skitch/images/rectangle_sub.png);
+}
+
+#roundedRectangle {
+    background-image: url(../../skitch/images/roundedRectangle_sub.png);
+}
+
+#ellipse {
+    background-image: url(../../skitch/images/ellipse_sub.png);
+}
+
+#line {
+    background-image: url(../../skitch/images/line_sub.png);
+}
+
+#stampsSubtools {
+    bottom: 45px;
+}
+
+#stampsSubtools:after {
+    border-top: 6px solid #BBCBD5;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -6px;
+    content: "";
+    left: 16.5px;
+    position: absolute;
+}
+
+#stampAccept {
+    background-image: url(../../skitch/images/stampAccept_sub.png);
+}
+
+#stampReject {
+    background-image: url(../../skitch/images/stampReject_sub.png);
+}
+
+#stampExclaim {
+    background-image: url(../../skitch/images/stampExclaim_sub.png);
+}
+
+#stampQuestion {
+    background-image: url(../../skitch/images/stampQuestion_sub.png);
+}
+
+#stampPerfect {
+    background-image: url(../../skitch/images/stampPerfect_sub.png);
+}
+
+#colorsSubtools {
+    bottom: 45px;
+    padding: 5px 8px;
+    right: -5px;
+    width: 182px;
+}
+
+#colorsSubtools:after {
+    border-top: 6px solid #BBCBD5;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -6px;
+    content: "";
+    position: absolute;
+    right: 61.5px;
+}
+
+#colorsSubtools .subtool {
+    background-size: 28px;
+    height: 28px;
+    margin-right: 18px;
+    width: 28px;
+}
+
+#colorsSubtools .subtool:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+#colorsSubtools .subtool:nth-child(n+5) {
+    margin-top: 4px;
+}
+
+#red {
+    background-image: url(../../skitch/images/red_sub.png);
+}
+
+#orange {
+    background-image: url(../../skitch/images/orange_sub.png);
+}
+
+#yellow {
+    background-image: url(../../skitch/images/yellow_sub.png);
+}
+
+#black {
+    background-image: url(../../skitch/images/black_sub.png);
+}
+
+#green {
+    background-image: url(../../skitch/images/green_sub.png);
+}
+
+#blue {
+    background-image: url(../../skitch/images/blue_sub.png);
+}
+
+#pink {
+    background-image: url(../../skitch/images/pink_sub.png);
+}
+
+#white {
+    background-image: url(../../skitch/images/white_sub.png);
+}
+
+#cancelScreenshot {
+    display: none;
+    margin-bottom: 20px;
+}
+
+body.skitchWaiting #accountSelector {
+    display: none;
+}
+
+body.skitchWaiting #cancelScreenshot {
+    display: block;
+}
+
+body.skitchWaiting #saveButton {
+    display: none;
+}
+
+body.skitchWaiting #clip {
+    display: none;
+}
+
+body.skitchWaiting #organize {
+    display: none;
+}
+
+body.skitchWaiting #account {
+    display: none;
+}
+
+body.skitchReady #cancelScreenshot {
+    display: none;
+}
+
+body.skitchReady #accountSelector {
+    display: block;
+}
+
+body.skitchReady #annotate {
+    display: block;
+}
+
+body.skitchReady #saveButton {
+    display: block;
+}
+
+body.skitchReady #organize {
+    display: block;
+}
+
+body.skitchReady #account {
+    display: block;
+}
+
+/* Organize */
+#organize {
+    margin: 12px 0 0 0;
+}
+
+#organize h1 {
+    margin: 0 0 4px 0;
+}
+
+/* Account */
+hr {
+    border: none;
+    border-top: 1px solid #21262C;
+    border-bottom: 1px solid #495865;
+    margin: 0;
+}
+
+#account {
+    margin: 6px 0 0 0;
+}
+
+#previewBanner {
+    border-radius: 2px;
+    border: solid 1px #2dbe60;
+    padding: 11px 17px;
+    font-family: CaeciliaItalic, Times, serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+#settings {
+    color: #8A9CA8;
+    cursor: pointer;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    padding-left: 29px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+#settings:hover {
+    color: white;
+}
+
+#settings {
+    background-image: url(../../images/settings.png);
+    background-position: 2px 50%;
+    background-size: 18px 19px;
+    line-height: 40px;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #closeSidebar {
+        background-image: url(../../images/close-sidebar@2x.png);
+    }
+
+    #highlighter {
+        background-image: url(../../skitch/images/highlighter@2x.png);
+    }
+
+    #shapes.arrow {
+        background-image: url(../../skitch/images/arrow@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #shapes.rectangle {
+        background-image: url(../../skitch/images/rectangle@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #shapes.roundedRectangle {
+        background-image: url(../../skitch/images/roundedRectangle@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #shapes.ellipse {
+        background-image: url(../../skitch/images/ellipse@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #shapes.line {
+        background-image: url(../../skitch/images/line@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #marker {
+        background-image: url(../../skitch/images/marker@2x.png);
+    }
+
+    #crop {
+        background-image: url(../../skitch/images/crop@2x.png);
+    }
+
+    #zoomout {
+        background-image: url(../../skitch/images/zoomout@2x.png);
+    }
+
+    #stamps.stampAccept {
+        background-image: url(../../skitch/images/stampAccept@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #stamps.stampReject {
+        background-image: url(../../skitch/images/stampReject@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #stamps.stampExclaim {
+        background-image: url(../../skitch/images/stampExclaim@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #stamps.stampQuestion {
+        background-image: url(../../skitch/images/stampQuestion@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #stamps.stampPerfect {
+        background-image: url(../../skitch/images/stampPerfect@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #text {
+        background-image: url(../../skitch/images/text@2x.png);
+    }
+
+    #pixelate {
+        background-image: url(../../skitch/images/pixelate@2x.png);
+    }
+
+    #colors.red {
+        background-image: url(../../skitch/images/red@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.orange {
+        background-image: url(../../skitch/images/orange@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.yellow {
+        background-image: url(../../skitch/images/yellow@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.black {
+        background-image: url(../../skitch/images/black@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.green {
+        background-image: url(../../skitch/images/green@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.blue {
+        background-image: url(../../skitch/images/blue@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.pink {
+        background-image: url(../../skitch/images/pink@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #colors.white {
+        background-image: url(../../skitch/images/white@2x.png), url(../../skitch/images/expand@2x.png);
+    }
+
+    #zoomin {
+        background-image: url(../../skitch/images/zoomin@2x.png);
+    }
+
+    #arrow {
+        background-image: url(../../skitch/images/arrow_sub@2x.png);
+    }
+
+    #rectangle {
+        background-image: url(../../skitch/images/rectangle_sub@2x.png);
+    }
+
+    #roundedRectangle {
+        background-image: url(../../skitch/images/roundedRectangle_sub@2x.png);
+    }
+
+    #ellipse {
+        background-image: url(../../skitch/images/ellipse_sub@2x.png);
+    }
+
+    #line {
+        background-image: url(../../skitch/images/line_sub@2x.png);
+    }
+
+    #stampAccept {
+        background-image: url(../../skitch/images/stampAccept_sub@2x.png);
+    }
+
+    #stampReject {
+        background-image: url(../../skitch/images/stampReject_sub@2x.png);
+    }
+
+    #stampExclaim {
+        background-image: url(../../skitch/images/stampExclaim_sub@2x.png);
+    }
+
+    #stampQuestion {
+        background-image: url(../../skitch/images/stampQuestion_sub@2x.png);
+    }
+
+    #stampPerfect {
+        background-image: url(../../skitch/images/stampPerfect_sub@2x.png);
+    }
+
+    #red {
+        background-image: url(../../skitch/images/red_sub@2x.png);
+    }
+
+    #orange {
+        background-image: url(../../skitch/images/orange_sub@2x.png);
+    }
+
+    #yellow {
+        background-image: url(../../skitch/images/yellow_sub@2x.png);
+    }
+
+    #black {
+        background-image: url(../../skitch/images/black_sub@2x.png);
+    }
+
+    #green {
+        background-image: url(../../skitch/images/green_sub@2x.png);
+    }
+
+    #blue {
+        background-image: url(../../skitch/images/blue_sub@2x.png);
+    }
+
+    #pink {
+        background-image: url(../../skitch/images/pink_sub@2x.png);
+    }
+
+    #white {
+        background-image: url(../../skitch/images/white_sub@2x.png);
+    }
+
+    #settings {
+        background-image: url(../../images/settings@2x.png);
+    }
+
+    #sso {
+        background-image: url(../../images/sso@2x.png);
+    }
+}

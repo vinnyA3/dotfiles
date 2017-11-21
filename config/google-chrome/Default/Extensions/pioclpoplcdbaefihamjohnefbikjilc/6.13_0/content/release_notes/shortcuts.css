@@ -1,0 +1,147 @@
+body {
+    background-color: #2F373D;
+    color: #C2CFD7;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#close {
+    background-image: url(../../images/close_login.png);
+    background-size: 8px;
+    cursor: pointer;
+    height: 8px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 8px;
+}
+
+body > * {
+    margin-left: 12px;
+}
+
+#logo {
+    background-image: url(../../images/web-clipper-logo.png);
+    background-size: 170px 36px;
+    height: 36px;
+    margin-top: 15px;
+    width: 170px;
+}
+
+body.china #logo {
+    background-image: url(../../images/web-clipper-logo-china2.png);
+    background-size: 88px 47px;
+    height: 47px;
+    width: 88px;
+}
+
+#header {
+    color: #4DBDCB;
+    font-family: "CaeciliaBold", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    margin-top: 16px;
+    margin-right: 12px;
+}
+
+#body {
+    margin-top: 6px;
+    margin-right: 12px;
+    margin-bottom: 13px;
+}
+
+a {
+    border-bottom: 1px solid #C2CFD7;
+}
+
+#textbox {
+    background-color: #EAF0F5;
+    border: 1px solid #232A30;
+    border-radius: 3px;
+    color: #3A4045;
+    font-size: 11px;
+    height: 28px;
+    margin-top: 4px;
+    outline: none;
+    padding: 0 7px;
+    width: 142px;
+    text-shadow: none;
+}
+
+.shortcutTooltip:before {
+    background-image: url(../../images/tooltip-arrow-left.png);
+    background-size: 8px 12px;
+    content: "";
+    height: 12px;
+    position: absolute;
+    right: 142px;
+    width: 8px;
+    z-index: 1;
+}
+
+.shortcutTooltip:after {
+    background-color: #FAFAFA;
+    border: 1px solid #232A30;
+    border-radius: 3px;
+    color: #575757;
+    content: attr(tooltip);
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 12px;
+    padding: 5px 7px;
+    position: absolute;
+    right: 5px;
+    text-shadow: none;
+    white-space: normal;
+    width: 122px;
+}
+
+.shortcutTooltip.error input {
+    background-image: url(../../images/error-clip.png);
+    background-position: calc(100% - 5px) 50%;
+    background-size: 16px 16px;
+}
+
+#button {
+    background-color: #26B064;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 0 0 #33CC78;
+    color: #C6DDE5;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 28px;
+    margin-top: 22px;
+    padding: 0 18px;
+}
+
+#button:hover {
+    background-color: #26C66E;
+}
+
+#button:active {
+    background-color: #26B064;
+    box-shadow: inset 0 0 8px 3px rgba(2, 52, 24, 0.3);
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #close {
+        background-image: url(../../images/close_login@2x.png);
+    }
+
+    #logo {
+        background-image: url(../../images/web-clipper-logo@2x.png);
+    }
+
+    body.china #logo {
+        background-image: url(../../images/web-clipper-logo-china2@2x.png);
+    }
+
+    .shortcutTooltip:before {
+        background-image: url(../../images/tooltip-arrow-left@2x.png);
+    }
+
+    .shortcutTooltip.error input {
+        background-image: url(../../images/error-clip@2x.png);
+    }
+}

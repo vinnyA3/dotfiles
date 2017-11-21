@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"></link>
+    <link rel="stylesheet" type="text/css" href="LozengeInput.css"></link>
+    <link rel="stylesheet" type="text/css" href="SelectWithLabel.css"></link>
+    <link rel="stylesheet" type="text/css" href="workchat.css"></link>
+    <script type="text/javascript" src="../../third_party/port.js"></script>
+    <script type="text/javascript" src="../../third_party/plurr.js"></script>
+    <script type="text/javascript" src="../../js/common/Browser.js"></script>
+    <script type="text/javascript" src="../../js/GlobalUtils.js"></script>
+    <script src="../../js/common/Log.js" type="text/javascript"></script>
+    <script type="text/javascript" src="LozengeInput.js"></script>
+    <script type="text/javascript" src="SelectWithLabel.js"></script>
+    <script type="text/javascript" src="../../js/common/Analytics.js"></script>
+    <script type="text/javascript" src="../../thrift/gen/Types_types.js"></script>
+    <script type="text/javascript" src="../../thrift/gen/MessageStore_types.js"></script>
+    <script type="text/javascript" src="workchat.js"></script>
+  </head>
+  <body>
+    <section id="recipients">
+      <div class="subsection">
+        <label message="toColon"></label>
+      </div>
+      <div class="subsection"></div>
+    </section>
+    <div id="suggestionsThreadContainer">
+      <section id="suggestions">
+        <div id="suggestedChats" class="booster">
+          <h2 message="suggestedChats"></h2>
+          <div class="content"></div>
+        </div>
+        <div id="suggestedContacts" class="booster">
+          <h2 message="suggestedContacts"></h2>
+          <div class="content"></div>
+        </div>
+        <div id="findContacts" class="booster">
+          <h2 message="findContacts"></h2>
+          <div class="content">
+            <a class="serviceOption" id="google" target="_blank">
+              <div class="img"></div>
+              <div class="container" message="connectToGoogle"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="selectedThread"></section>
+    </div>
+    <section>
+      <div id="noteShare"></div>
+      <div id="messageArea">
+        <button message="send" id="sendButton" tabindex="3"></button>
+        <div id="newMessageContainer">
+          <textarea id="newMessage" rows="2" tabindex="2"></textarea>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="../css/common.css" />
+    <link type="text/css" rel="stylesheet" href="clip_result/small_snippet.css" />
+    <link type="text/css" rel="stylesheet" href="sim_search_results.css" />
+    <script type="text/javascript" src="../third_party/port.js"></script>
+    <script type="text/javascript" src="../js/common/Browser.js"></script>
+    <script type="text/javascript" src="../js/common/Compatibility.js"></script>
+    <script type="text/javascript" src="../js/GlobalUtils.js"></script>
+    <script type="text/javascript" src="clip_result/NoteSnippets.js"></script>
+    <script type="text/javascript" src="../js/common/Log.js"></script>
+    <script type="text/javascript" src="sim_search_results.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <a class="branding" target="_blank">
+        <span></span>
+      </a>
+      <div id="closeSimSearch">
+        <div id="closeButton"></div>
+        <div id="closeOptions">
+          <ul>
+            <li id="dismiss" message="searchHelper_hideTemp"></li>
+            <li class="divider"></li>
+            <li id="dismissForever" message="searchHelper_hidePerm"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="simSearchNotes">
+      <div class="noteSection" id="account"></div>
+      <div class="noteSection" id="library"></div>
+      <div class="noteSection" id="all"></div>
+      <div class="grayText" id="noNotes" message="searchHelperNotesNotFoundPers"></div>
+    </div>
+    <div id="featureInfo">
+      <span>
+        <span message="alwaysShow" class="cta" id="keepSimsearchOn"></span>
+        <span>&nbsp;|&nbsp;</span>
+        <span message="dontShowAgain" class="cta" id="disableSimsearch"></span>
+      </span>
+      <a message="whatsThis" class="info" target="_blank" href="https://evernote.com/contact/support/kb/#!/article/23193838"></a>
+    </div>
+    <div id="featureInfoPreview">
+      <h1 message="searchEvernoteAsYouSearchWeb"></h1>
+      <br>
+      <div class="body" message="evernoteDoesNotTrackYou"></div>
+      <div class="green button" message="gotIt"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+document.addEventListener("contextmenu",function(a){var b=!1;if(window.getSelection().rangeCount){window.getSelection().getRangeAt(0).collapsed||(b=!0)}var c=!1;document.querySelector("embed[type='application/pdf']")&&(c=!0),safari.self.tab.setContextMenuEventUserInfo(a,{node:a.target.nodeName,selection:b,srcUrl:a.target.src,url:document.location.href,pdf:c})},!1);

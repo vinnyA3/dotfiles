@@ -1,0 +1,1 @@
+[ -s "$NVM_DIR/nvm-exec" ] && . "NVM_DIR/nvm-exec" # load nvm

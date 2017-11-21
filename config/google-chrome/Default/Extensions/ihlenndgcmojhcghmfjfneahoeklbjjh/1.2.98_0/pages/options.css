@@ -1,0 +1,154 @@
+html, body {
+  font-family: 'DejaVu Sans', 'Helvetica Neue', 'Helvetica', 'Noto Sans UI', 'Segoe UI', 'Chrome Droid Sans', 'Droid Sans Fallback', 'Lucida Grande', 'Tahoma', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12pt;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  min-width: 800px;
+  margin-bottom: 25pt;
+  background-color: #eee;
+}
+
+* { box-sizing: inline-block; }
+
+#container_main {}
+
+#container_title {
+  padding: 3px;
+  line-height: 50px;
+  display: block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  color: #222;
+  font-size: 24pt;
+}
+
+td {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+tr {
+  border: 1px solid #aaa;
+}
+
+.options-left {
+  width: 20%;
+  top: 0;
+  padding: 5px;
+  color: #222;
+  background-color: #eee;
+  border-right: 1px solid #aaa;
+  text-align: center;
+}
+
+.options-right {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0 0;
+}
+
+#settings {
+  display: block;
+}
+
+#edit_mode {
+  font-size: 8pt;
+  background-color: #eee;
+  border: none;
+  outline-style: none;
+}
+
+#cssSetting {
+  position: absolute;
+}
+
+
+select {
+  display: block;
+  margin: 0 auto;
+}
+
+#mappings {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+  resize: none;
+  font-family: monospace;
+  font-size: 10pt;
+}
+
+#title {
+  display: inline-block;
+}
+
+#save_container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(34,34,34,0.8);
+  box-shadow: 0 -3px 3px rgba(0,0,0,0.5);
+  width: 100%;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 5px;
+  z-index: 999;
+}
+
+#save_button, #reset_button {
+  font-size: 10pt;
+  border: 1px solid #777;
+  border-radius: 2px;
+  height: 35px;
+}
+#clearHistory, #gistSync {
+  border: 1px solid #777;
+  border-radius: 2px;
+  height: 25px;
+  margin-left: 10px;
+}
+#save_button, #reset_button, #clearHistory, #gistSync {
+  background-color: #bbb;
+}
+
+#save_button:hover, #reset_button:hover {
+  opacity: 1;
+}
+
+a {
+  color: darkcyan;
+}
+
+#gistSync {
+  float: right;
+  width: 55px;
+  margin: 5px;
+}
+
+#gistUrl {
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-left: 3px;
+  width: calc(100% - 65px);
+  position: absolute;
+}
+
+textarea, input {
+  opacity: 0.8;
+  color: #000;
+  border: none;
+  transition: opacity 0.5s;
+  box-sizing: border-box;
+}
+
+textarea:hover, input:hover, textarea:focus, input:focus {
+  opacity: 1;
+}

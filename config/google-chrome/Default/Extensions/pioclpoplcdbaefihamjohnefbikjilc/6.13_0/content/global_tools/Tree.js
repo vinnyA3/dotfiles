@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+function Tree(a){"use strict";function b(a,b){if(a){a=a.toLowerCase();for(var c=f,d=0;d<a.length;d++)c[a[d]]||(c[a[d]]={}),c=c[a[d]];c.name=a,c.value||(c.value=[]),c.value.push(b)}}function c(a,b){if(b&&h>=b)return!1;a.name&&a.value&&(g.push([a.name,a.value]),h+=a.value.length);for(var d in a)if("name"!==d&&"value"!==d&&!c(a[d],b))return!1;return!0}function d(a,b){if(g=[],h=0,!a)return g;a=a.toLowerCase();for(var d=f,e=0;e<a.length;e++){if(!d[a[e]])return g;d=d[a[e]]}return c(d,b),g}function e(){return f}var f={};a&&(f=a);var g=[],h=0;this.insert=b,this.getMatching=d,this.getPersistableForm=e,Object.preventExtensions(this)}Object.preventExtensions(Tree);

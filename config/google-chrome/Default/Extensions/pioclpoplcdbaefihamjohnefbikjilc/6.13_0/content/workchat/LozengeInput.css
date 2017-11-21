@@ -1,0 +1,23 @@
+.loz_existing {
+    float: left;
+    position: relative;
+    white-space: nowrap;
+}
+
+.loz_lozenge {
+    cursor: default;
+    display: inline-block;
+}
+
+.loz_lozenge:last-child {
+    margin-right: 0;
+}
+
+.loz_inputContainer {
+    overflow: hidden;
+}
+
+.loz_input {
+    box-sizing: border-box;
+    width: 100%;
+}

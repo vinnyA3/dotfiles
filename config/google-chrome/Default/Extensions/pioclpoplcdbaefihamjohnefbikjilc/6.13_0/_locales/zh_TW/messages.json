@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "四月"
+   },
+   "Aug": {
+      "message": "八月"
+   },
+   "August": {
+      "message": "八月"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "擷取至 Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "企業版"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "關閉"
+   },
+   "Dec": {
+      "message": "十二月"
+   },
+   "December": {
+      "message": "十二月"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "不明錯誤"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "不明記事本"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "權限遭拒"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "權限遭拒，因為使用者未使用中"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "登入嘗試失敗次數過多。請稍後再試一次。"
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper 使用 cookie 來辨識您的帳戶。請檢查您的瀏覽器設定以確保第三方 cookie 已從 Evernote 接受。"
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "啟用 cookie 以使用 Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper 需使用 cookie 以正常運作。請到您的瀏覽器設定中啟用 cookie。"
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "建立記事本時發生了錯誤。"
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "很抱歉，已有使用同樣名稱的記事本了。"
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "無效的記事本名稱。"
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "您已達到記事本數量上限。"
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "與伺服器 [$status$] 通訊時發生錯誤。$errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernote 伺服器目前無法使用，請稍後再試一次"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "無網際網路連線"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "您尚未設定任何記事本。"
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "更新記事本時發生了錯誤。"
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "使用 Evernote 擴充套件，將您在網路上的所見所聞儲存至 Evernote 帳戶。"
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "二月"
+   },
+   "February": {
+      "message": "二月"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Fri"
+   },
+   "Friday": {
+      "message": "星期五"
+   },
+   "Jan": {
+      "message": "一月"
+   },
+   "January": {
+      "message": "一月"
+   },
+   "July": {
+      "message": "七月"
+   },
+   "June": {
+      "message": "六月"
+   },
+   "Last_used": {
+      "message": "上次使用"
+   },
+   "March": {
+      "message": "三月"
+   },
+   "May": {
+      "message": "五月"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Mon"
+   },
+   "Monday": {
+      "message": "星期一"
+   },
+   "Nov": {
+      "message": "十一月"
+   },
+   "November": {
+      "message": "十一月"
+   },
+   "Oct": {
+      "message": "十月"
+   },
+   "October": {
+      "message": "十月"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "個人"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Sat"
+   },
+   "Saturday": {
+      "message": "星期六"
+   },
+   "Sept": {
+      "message": "九月"
+   },
+   "September": {
+      "message": "九月"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "登入"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "摘要"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Sun"
+   },
+   "Sunday": {
+      "message": "星期日"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Thu"
+   },
+   "Thursday": {
+      "message": "星期四"
+   },
+   "Today": {
+      "message": "今日"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Tue"
+   },
+   "Tuesday": {
+      "message": "星期二"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Wed"
+   },
+   "Wednesday": {
+      "message": "星期三"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "新增一個訊息"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "新增帳戶"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "新增企業帳戶"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "新增日期"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "新增個人帳戶"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "新增提醒"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "新增標籤"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "新增任務"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "擷取後"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "均為必填欄位。"
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "始終顯示"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "始終開始於"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "始終貼上標籤"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "註記"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "套用"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "已核准"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "箭頭"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "箭號工具"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "擷取文章"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "很抱歉，Evernote 無法擷取整個頁面。請選取您要擷取的部份。"
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "透過 Evernote 網路服務撤銷此應用程式的存取。請重新輸入密碼。"
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "驗證進行中"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "您的瀏覽器偏好設定與 Evernote 擴充套件衝突。嘗試將 Chrome 的隱私權內容設定還原回預設值：允許設定本機資料且「不」封鎖協力廠商 Cookie。考慮停用其他協力廠商的擴充套件。"
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "自動關閉擷取"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "升級到 Evernote 進階版或 Evernote 專業版，享有更多專業功能。"
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "不再擔心容量不足。升級到 Evernote 進階版，立即獲得 1GB 的每月上傳量。"
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "升級到專業版就可以設定離線記事本，不論是剪藏的網頁、會議紀錄、或捕捉的靈感，隨時拿出手機就能使用，有沒有網路連線完全沒差。"
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "向您介紹 Evernote 進階版和專業版"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "升級就能取得 1GB 的每月上載配額"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "在電腦上擷取、在手機上閱讀"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "您要在此對話中分享企業記事或記事本，請注意，此對話中有參與者不屬於企業人員。如您要與所有對話者分享記事，請點 OK。"
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "企業"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "企業記事本"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "可以編輯"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "可以編輯並邀請他人"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "可以檢視"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "無法儲存您擷取的網頁"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "無法儲存擷取資料"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "找不到嗎？"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "輸入字元"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "此版本的 Evernote Web Clipper 不再與 Evernote 服務相容。 請安裝最新版本。"
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "不要再顯示此通知"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "清除所有標籤"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "簡化文章"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "擷取"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "擷取："
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Clipper 選項"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "來自 $site$ 的擷取資料",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "關閉 Web Clipper 或側邊工具欄"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "使用 Work Chat 協作"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "色彩"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "確認動態"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "連結到 Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "聯絡 Evernote 客服"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">正在擷取\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">正在擷取\u003C/span>\u003Cspan id=\"title\">“…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "擷取"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">正在同步\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "同步處理"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "擷取影像"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "擷取 PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "擷取完整頁面"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "擷取螢幕擷取畫面"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "擷取選取項目"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "擷取書籤"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "擷取前，必須使用 [擷取至 Evernote] 工具列按鈕進行登入。"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "繼續"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "收縮文章範圍"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "收縮文章範圍"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "複製至剪貼簿"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "版權所有 2009-$currentYear$ Evernote Corporation. 保留所有權利. \u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>隱私權政策\u003C/a>| \u003Ca href='$baseUrl$/tos' target='_blank'>服務條款\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ 企業記事",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "建立"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "建立新的記事本"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "裁切"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "因為此網頁的出版方設有內容安全政策設定，Safari Web Clipper 無法擷取此頁。"
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "逐一檢視側欄的預覽畫面"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "預設的擷取帳戶："
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "最後"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "刪除擷取的記事中..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "驗證無效或已過期。請使用工具列按鈕登入，然後再試一次。"
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "無法儲存 \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "擷取 \"$title$\" 已失敗太多次，無法重試。",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "已保存到 \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "重試"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "無法儲存 \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "無法儲存擷取"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "嘗試儲存其中一項擷取時，發生錯誤。錯誤訊息：$details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "關閉"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "關閉建議"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "完成"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "不再顯示"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "橢圓形"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "電子郵件地址"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "電郵"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "您無法在一天之內傳送超過 $limit$ 封電子郵件",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>電子郵件記事：\u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "啟用鍵盤捷徑"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "輸入代碼"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "輸入電郵地址"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "輸入名稱"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "輸入姓名或電子郵件地址"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "錯誤記錄檔"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote 不會追蹤您的搜尋詞或搜尋結果，亦不會將您的資訊分享給搜尋引擎。"
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "展開文章範圍"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "展開文章範圍"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "登入工作階段已逾期。請再試一次。"
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "需要更新密碼。"
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "給 Evernote 的意見 (必填)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "歸檔記事中..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "尋找記事本"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "尋找聯絡人"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "結束導覽"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "下一頁"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "散播好消息！"
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "好事道香報 — 告訴家人好友和同事全新的 Web Clipper。"
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "記事本"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "網頁擷取工具"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "使用導覽"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "一鍵擷取螢幕畫面。"
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "在側欄中點擊\u003Cstrong>螢幕擷取畫面\u003C/strong>。"
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "螢幕擷取"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "透過標註工具，快速並清楚地溝通想法。例如用箭頭、螢光筆等等聚焦重點。"
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "圖章工具更生動直覺，立即表達您同意、否決或指出最喜歡的內容。\u003Cbr/>敏感的個人資料可用像素化工具打上馬賽克，一張圖涵蓋千言萬語。"
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "現在，一起來標註您的螢幕截圖。"
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "標註網頁擷取"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "分享網頁擷取資料真的很簡單。"
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "點擊側欄中的\u003Cstrong>分享按鈕\u003C/strong>，馬上試試看。"
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "當您選擇了想要的擷取型式 (例，簡化文章、標註文章)，有三種分享方式：分享到 Facebook、Twitter 和 LinkedIn 社群網路，存取網頁擷取的連結，或用電子郵件轉發。"
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "分享選項"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "輕鬆分享網頁擷取"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Web Clipper 的新增功能"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "新的 Web Clipper 讓您輕鬆擷取內容，加上書籤，螢幕截圖，進行標註並儲存網路上的內容，與好友分享也非常容易。"
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "讓 Web Clipper 的「簡化文章功能」還原一個無負擔的清爽網路閱讀經驗，幫您剔除分心的廣告、導覽列等，隨時享受美好的閱讀時光。"
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "點擊\u003Cstrong>簡化文章\u003C/strong>，並將簡化畫面存入 Evernote 帳戶。"
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "使用新版 Evernote Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "從網路上擷取並標註文章"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "忘記密碼？"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>來自：\u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "完整頁面"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "很抱歉，Evernote 無法擷取整個頁面。請選取您要擷取的部份。"
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "輸入 Google Authenticator 應用程式中所顯示的驗證碼。"
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "一般選項"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "獲得 1GB 以上"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "全域捷徑鍵："
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "您必需在 Gmail 上選取一段對話/通信記錄以擷取至 Evernote。"
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "您可以直接將 Gmail 帳戶中的電子郵件擷取到 Evernote。"
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "升級到專業版"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "您現在可以將 Inbox by Gmail 中的電子郵件直接擷取到 Evernote。"
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "知道了"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "建立 Evernote 帳戶"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "隱藏相關記事"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "反白工具"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "忽略"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "由於瀏覽器所設的限制，您無法擷取此頁面"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "影像反白工具"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "包含附件"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "包含原電子郵件"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "您輸入的代碼不正確。"
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "現在安裝"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "鍵盤捷徑"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "最後執行的動作"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "最後使用的記事本"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "了解更多"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "法律"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper 使用以下公開源代碼軟體"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "行"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "載入中..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "登入 Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "登入"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "密碼"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "密碼必填。"
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "無效密碼"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "記住我"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "搜尋網頁時顯示相關結果"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "電子郵件或使用者名稱"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "使用者名稱必填。"
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "使用者名稱與密碼與現有的使用者不相符。"
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "不明登入，或者嘗試Evernote國際版本"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "不存在採用該名稱的使用者。"
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "當您啟用此功能之後，您在搜尋引擎上執行的搜尋亦會在您的 Evernote 帳戶中執行。"
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "匯出記錄檔"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "跟隨"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "選取日誌檔： "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "事件記錄檔"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "郵件"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "標記"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "麥克筆工具"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "標註"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>訊息：\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "更多"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "更多資訊"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "尚有 +$num$ 頁",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "向下移動正文的選取區域"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "向上移動正文的選取區域"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "您快達到每月上傳容量的上限。"
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "您僅剩下 5MB 的資料上傳空間。升級以取得更多每個月上載配額。"
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "您僅剩下 250MB 的資料上傳空間。升級以取得更多每個月上載配額。"
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "您僅剩下 250MB 的資料上傳空間。"
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "「網頁擷取工具」會根據擷取內容來建議標籤和記事本。管理此功能和「網頁擷取工具\u003Cspan class='newFeatureOptionsPseudoLink'>選項\u003C/span>」中的其他設定。"
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "智慧填入"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "一周內"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "未找到結果"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "不，謝謝"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "並非此時"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "網頁擷取超過 $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "您需要 Evernote 進階版或 Evernote 專業版才能擷取超過 $size$ 的記事。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "您需要 Evernote 專業版才能擷取超過 $size$ 的記事。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "很抱歉，記事大小不得超過 $size$。",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "記事本選取項目"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "設定提醒…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "您現在可以將 Office 365 的電子郵件直接擷取到 Evernote。"
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "確定"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "尚有 +1頁"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "在 Gmail 中開啟對話"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "在 Inbox by Gmail 中開啟對話"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "在 Evernote 中開啟"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote 網頁版"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote 桌機版"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "傳送擷取至"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "建置 ID："
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "記事開啟方式"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "首次使用此設定時，您會看見「外部通訊協定要求」對話方塊。為了享受最佳的體驗，請核取「記住我的選擇」，然後選取「啟動應用程式」。"
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "桌面用戶端"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "網頁用戶端"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "預設的擷取動作"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "文章夾"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "擷取完整頁面"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "擷取 URL"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "啟用通知"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "啟用後，將會於上傳擷取後通知您。「通知」可讓您更輕鬆地檢視、編輯與分享。"
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "保留樣式"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "啟用時，擷取將保留樣式資訊，以便盡可能接近原始頁面的外觀。停用時，擷取將取得只有純文字而沒有任何修飾的簡單樣式。"
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "開發人員選項"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF 頁鈕"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "在 PDF 頁面上顯示「儲存到 Evernote」鈕"
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "活動記錄檔包含 Evernote 執行步驟的詳細資料，還有您的帳戶資訊、裝置和地點訊息 (若啟用)。您的記事標題、標籤、記事本名稱，並且有時候您的記事內容或許會包含於其中。我們將您的活動記錄檔視為機密資料，並嚴格遵循我們的\u003Ca href=\"$privacyLink$\" target=\"_blank\">隱私權政策\u003C/a>。",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "隱藏記錄檔"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "檢視記錄檔"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "不安全的通訊協定"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "覆蓋服務 URL"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "重設所有選項"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "啟用「記得」按鈕"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "顯示儲存圖片、Gmail 信件、Facebook 發文的快速存取按鈕"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "儲存中..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "安全的通訊協定"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "模擬 checkVersion 失敗"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "模擬簡體中文"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "此選項啟用時，擷取工具將假設設定為簡體中文語言，以便選擇需要連線的服務。"
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "允許智慧填入企業記事本"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "啟用智慧填入"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "智慧填入將基於您正在擷取的頁面自動為您選取記事本和標籤清單。"
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "標籤和記事本"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "停用智慧歸檔"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "僅記事本"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "僅標籤"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "認證"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>注意：\u003C/b>儲存密碼可能讓其他人在使用此瀏覽器時得以存取您的 Evernote 帳戶。移除或登出 [擷取至 Evernote] 擴充套件，以永久移除儲存在您瀏覽器擴充套件中的使用者名稱和密碼。"
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "選項"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "啟用內容功能表"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "啟用時，您可透過內容功能表擷取網頁。右擊影像、所選的文字或頁面上任何一處，將顯示適當的擷取選項。"
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "相關結果"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "顯示 Evernote 中與我的網頁搜尋相關的內容。"
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "指示擷取工具在生產服務中使用「階段」服務，這通常僅用於測試。"
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "分類"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "原電子郵件"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "及 {COUNT} 個其他"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "您現在可以將 Outlook 電子郵件直接擷取到 Evernote。"
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "您的 Evernote 帳戶中的記事總數量已達 $max$ 上限。請從帳戶中刪除一些記事，即可建立新筆記。",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "每月上載配額已滿。升級到 Evernote 進階版或 Evernote 專業版，取得更大上載配額和單則記事大小限制。"
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "每月上載配額已滿。升級到 Evernote 專業版，取得更大上載配額和單則記事容量。"
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "您即將用完本月的上傳配額."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "第 $num$ 頁",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "提示：滑動時按住 Ctrl 鍵"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "參與者"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF 擷取"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "您知道可以使用 Web Clipper，將 PDF 直接擷取至 Evernote 帳戶嗎？"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "完美"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "個人"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "像素化"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "像素化工具"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "此頁必須重新載入方能擷取。請重新載入網頁後再試一次。"
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "很抱歉，目前不支援剪藏本機檔案。"
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "載入記事本"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "檢查認證的耗費時間過長。確認您已連線至網際網路，然後再試一次。"
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "查看另外 $count$ 個記事…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "再查看一個記事…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "不支援從此位置擷取。"
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "正在等候頁面..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "預覽文章"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web Clipper 預覽\u003Cbr>可能不穩！"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "預覽全頁"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "預覽書籤"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "處理"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "擷取"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "儲存文章"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "儲存完整頁面"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "儲存選取項目"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "儲存 URL"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "添加註解"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "新增標籤"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "新增文字"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "記事本"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "儲存"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "不支援標籤功能"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "標題"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "未命名記事"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "立即評分"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "您會如何評價此版 Web Clipper 呢？"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "新版的 Web Clipper 經過設計，讓您直接擷取並標註網路上的新鮮資訊，想儲存或立刻分享都無比容易。讓我們知道您對新版 Web Clipper 的滿意程度。"
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "您認為 Web Clipper 表現如何呢？"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "矩形"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "取消復原"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "當您的好友開始使用 Evernote，您及會獲得 Evernote 點數可用來升級到進階版或專業版。"
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "邀請好友"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "邀請朋友，獲得點數！"
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "重新整理清單"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "儲存點子、喜愛事物以及所見所聞。"
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "取消"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "使用者名稱已停用。您要\u003Ca href='$url$'>重新啟用\u003C/a>帳戶嗎？",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "電子郵件地址是必要欄位。"
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "請輸入圖像中的字元。"
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "電子郵件地址似乎無效。"
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "選取介於 6 到 64 個字元，且包括字母、數字以及標點符號的密碼。"
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "您的使用者名稱必須以字母或號碼做為開頭與結尾，可包括連字號與下劃線。"
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "密碼是必填欄位。"
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "這個電子郵件地址已經在使用中。"
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "已有其他使用者使用您選取的使用者名稱。"
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "登錄"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "使用者名稱"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "按一下「註冊」表示您同意我們的\u003Ca href='$tos_url$' target='_blank' tabindex='6'>服務條款\u003C/a>以及\u003Ca href='$pp_url$' target='_blank' tabindex='7'>隱私權政策\u003C/a>。",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "已拒絕"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "相關記事"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote 在與您剛才所擷取頁面有關的帳戶中找到多達三個記事，並且將其在此顯示。"
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "記住"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "記住"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "記住"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "提醒已新增"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "已儲存提醒"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "重設"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "重置快捷鍵"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Web Clipper 極小化"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "圓角矩形"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "將影像儲存至 Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "儲存 PDF 至 Evernote"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "將完整頁面儲存至 Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "儲存截圖到 Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "將選取項目儲存至 Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "儲存書籤到 Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "把 Evernote 和 Salesforce 客戶記錄快速連結起來，記錄關於每位客戶的筆記，獲得全新視野。"
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "與同事分享記事，進一步了解正在聯繫的客戶。如果安裝了 Salesforce Evernote 企業版，還可以直接將你的記事連接到 Salesforce。"
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Salesforce Evernote 企業版，為您提升競爭力"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Evernote 企業版，為您提升競爭力"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "儲存至 Evernote"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "儲存文章到 Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "儲存"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "螢幕擷取畫面"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>點擊\u003C/strong>擷取整個螢幕，或\u003Cstrong>拖曳並放開\u003C/strong>以擷取所需區域"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "已擷取快照"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "搜尋 Evernote 帳戶的方法與搜尋網路是一樣的"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "Evernote 帳戶中的\u003Cb>最前面幾個結果\u003C/b>"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>登入\u003C/a> Web Clipper 以檢視相關結果\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "目前無法使用同步搜尋，因為呼叫不到 Evernote 伺服器。"
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "在個人或企業記事中找不到相關結果"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "在記事中找不到相關結果"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "在企業記事中找到 $num$ 個相關結果",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "在企業記事中找到 1 個相關結果"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "在個人記事中找到 $num$ 個相關結果",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "在個人記事中找到 1 個相關結果"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "在記事中找到 $num$ 個相關結果",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "在記事中找到 1 個相關結果"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "永遠關閉"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "關閉"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "了解更多»"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "選取所有標註項目"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "選取所有訊息"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "選取記事本"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "選擇擷取"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "選取模式"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "傳送"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "傳送回饋"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "傳送報告給 Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "傳送至："
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "若要變更，請在鍵盤按下組合鍵"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "形狀工具"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "分享"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "共用記事"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "分享擷取的網頁"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "分享 URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "共用記事本"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "有 2 個捷徑衝突"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "捷徑必須是 3 個以下的組合鍵"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "在這個捷徑中不能使用 ESC"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "打開\u003Ca href='$href$' target='_blank'>選項\u003C/a>頁面了解更多，並設定您的快捷鍵。現在就設置好最重要的快捷鍵吧！",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "鍵盤快捷鍵是專門設計成可以自定義的喔。"
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "將游標放在相應字段，按下您喜歡的組合鍵。"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "電子郵件擷取"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "了解更多"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "顯示相關記事"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "顯示擷取成功的訊息"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "顯示擷取成功的訊息，不含相關記事"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "登入 Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "登入企業版"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "登出 $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "登入為:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "登出"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "六位數代碼"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "我們已傳送含有代碼的文字訊息至 $phone$。",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "抱歉"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "您好像很忙！"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "在短時間內新增大量內容可能導致服務中斷，請確認您目前的操作是本人使用。"
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "造訪企業內容還需要完成幾個步驟。"
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "如果點擊「忽略」，直到您完成這些步驟為止您將無法訪問企業內容。同時，您仍然可以存取所有個人內容。"
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "將導入到一個新視窗，針對您的企業身份進行驗證。如視窗未出現，請點擊「再試一次」。"
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "記事本堆疊"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "圖章"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "戳記圖章工具"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "啟用 Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "在文章簡化模式中啟用 Web Clipper"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "主旨 (必填)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "建議的對話"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "建議聯絡人"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "系統資訊"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "最多僅能加入 20 個標籤"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "標籤選取項目"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "螢幕截圖"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "拍攝螢幕截圖"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "文字"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "至:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "帳戶切換"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "明天"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "全新 Web Clipper，$siteName$ 上剪藏的資料都能存成清爽易讀的記事。選取要儲存的部分，存到 Evernote，永久保留！",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "超越書籤，直接剪藏。"
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "喜歡這一頁嗎？立即儲存！"
+   },
+   "tryAgain": {
+      "message": "請再試一次"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "立即體驗"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "我需要幫助以取得驗證碼"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "打字工具"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "輸入您的訊息…"
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "無法開啟此訊息。"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "復原"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "更新"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "升級"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "書籤"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "已經複製 URL 到剪貼簿。"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "使用智慧填入"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "版本："
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "檢視故障報告"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "在 Evernote 中檢視"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "在 Gmail 裡檢視"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "搶先看 Web Clipper 的新增功能"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "微博"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "什麼？"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "這是什麼?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "就在您的工作空間中討論從網路擷取的文章或分享標註的資料。"
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 $numUnknown$ 名其他人加到對話群組裡",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 1 名其他人加到對話群組裡",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 $numUnknown$ 名其他人加到對話群組裡",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 1 名其他人加到對話群組裡",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>您\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將對話標題改為 \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 1 名其他人從對話群組裡移除",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已將 1 名其他人從對話群組裡移除",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：$numNotes$ 則記事",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：$numNotes$ 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：$numNotes$ 則記事 1 本記事本",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：$numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：1 則記事",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：1 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：1 則記事 1 本記事本",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> 已附加了：1 本記事本",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 $numUnknown$ 名其他人加到對話群組裡",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 1 名其他人加到對話群組裡",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 $numUnknown$ 名其他人加到對話群組裡",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 1 名其他人加到對話群組裡"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>某人\u003C/b> 已將對話標題改為 \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 1 名其他人從對話群組裡移除",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>某人\u003C/b> 已將 1 名其他人從對話群組裡移除"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：$numNotes$ 則記事",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：$numNotes$ 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：$numNotes$ 則記事 1 本記事本",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：$numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：1 則記事"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：1 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：1 則記事 1 本記事本"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>某人\u003C/b> 已附加了：1 本記事本"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 加到對話群組裡",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>您\u003C/b> 已將對話標題改為 \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 \u003Cb>$lastReceiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverNames$\u003C/b> 和 1 名其他人從對話群組裡移除",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>您\u003C/b> 已將 $numUnknown$ 名其他人從對話群組裡移除",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>您\u003C/b> 已將 \u003Cb>$receiverName$\u003C/b> 從對話群組裡移除",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>您\u003C/b> 已將 1 名其他人從對話群組裡移除"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：$numNotes$ 則記事",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：$numNotes$ 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：$numNotes$ 則記事 1 本記事本",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：$numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：1 則記事"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：1 則記事 $numNotebooks$ 本記事本",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：1 則記事 1 本記事本"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>您\u003C/b> 已附加了：1 本記事本"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "哇！"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "點擊 Evernote 按鈕就能將《華爾街日報》收藏起來日後再讀或作為研究資料。"
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "您有與此類似的其他記事。"
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "YouTube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "放大(階段)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "縮小(階段)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "縮放至適當比例"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "縮放至原始比例"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "放大"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "縮小"
+   }
+}

@@ -1,0 +1,16 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.isudokugames.com/ChromeSudoku.html"
+      },
+      "urls": [ "http://www.isudokugames.com/ChromeSudoku.html" ]
+   },
+   "icons": {
+      "128": "sudoku_icon.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBa76062L1igTmjY6Ua9x4gM4xBLVjIzwzg2bxUC4ggnQJ0bfVJigx6UuXxdsJ/WfJUsR/zEnZG1y9c4oGgbupOv7s/3nRabb5fpHu7gxl3gOsCYwL+bTZDLfNDIl8se4fRqRPBcFjmpCRhchL5qn4LlZlPP5qAF7VzPxfPr9C9QIDAQAB",
+   "manifest_version": 2,
+   "name": "Sudoku",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2.0.2"
+}

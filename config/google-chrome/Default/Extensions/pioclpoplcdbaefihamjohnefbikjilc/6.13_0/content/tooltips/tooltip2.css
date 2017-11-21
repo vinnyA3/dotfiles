@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+}
+
+#main {
+    position: relative;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+}
+
+#main .wsj {
+    display: none;
+    text-align: center;
+}
+
+.wsj #main {
+    background-color: white;
+    border: 1px solid #8F99A1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45);
+    margin: 0 8px 0 12px;
+}
+
+.wsj #main:before {
+    background-color: white;
+    border-top: 1px solid #8F99A1;
+    border-left: 1px solid #8F99A1;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.45);
+    content: "";
+    height: 9px;
+    left: -1px;
+    position: absolute;
+    top: 43px;
+    transform-origin: 0 100%;
+    transform: rotate(-45deg);
+    width: 9px;
+}
+
+.wsj #main:after {
+    background-color: white;
+    content: "";
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 34px;
+    width: 11px;
+}
+
+.wsj #main .wsj {
+    color: #2F373D;
+    display: block;
+}
+
+.wsj #close {
+    background-image: url(../../images/wsj-tooltip-close.png);
+    background-size: 12px 12px;
+    height: 12px;
+    right: 8px;
+    top: 8px;
+    width: 12px;
+}
+
+.wsj #image {
+    background-image: url(../../images/wsj-tooltip.png);
+    background-size: 285px 118px;
+    height: 118px;
+    margin: 23px auto 10px auto;
+    width: 285px;
+}
+
+#header .wsj {
+    font-family: CaeciliaBold;
+    font-size: 16px;
+    margin-top: 23px;
+}
+
+#body .wsj {
+    font-family: GothamBook;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 2px;
+    padding: 0 18px;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .wsj #close {
+        background-image: url(../../images/wsj-tooltip-close@2x.png);
+    }
+
+    .wsj #image {
+        background-image: url(../../images/wsj-tooltip@2x.png);
+    }
+}

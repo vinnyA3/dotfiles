@@ -1,0 +1,13 @@
+body {
+    color: #3F474C;
+    margin: 0;
+}
+
+#main {
+    background-color: #FAFAFA;
+    border: 1px solid #6D7880;
+    box-shadow: 0 4px 6px 0 rgba(47, 55, 61, 0.42);
+    left: 5px;
+    position: relative;
+    top: 1px;
+}

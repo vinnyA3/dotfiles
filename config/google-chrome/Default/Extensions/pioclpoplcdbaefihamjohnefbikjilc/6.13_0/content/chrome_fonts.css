@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "GothamLight";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Light-Italic.woff) format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Book.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Book-Italic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Bold-Italic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "caecilia";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/caecilialtstd-roman-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* for clearly top sites */
+@font-face {
+    font-family: "Gotham";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caecilia";
+    font-weight: 700;
+    font-style: normal;
+    src: url(chrome-extension://__MSG_@@extension_id__/fonts/caecilialtstd-bold-webfont.woff) format('woff');
+}

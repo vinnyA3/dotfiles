@@ -1,0 +1,3 @@
+09:43:07 GMT-0500 (EST) (WARN) /background.html: Got error: {"errorCode":5,"parameter":"authenticationToken"}. Clipper logged out
+    at n (/js/main/Account.js:3:3272)
+    at <anonymous>

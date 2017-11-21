@@ -1,0 +1,13 @@
+
+/* picture */
+/* ======= */
+
+    .profile_picture { 
+        max-width: 200px; 
+        border: 1px solid #E7E7E7; 
+    }
+
+/* skills */
+/* ====== */
+
+    .skills td { padding-right: 0.75em; }

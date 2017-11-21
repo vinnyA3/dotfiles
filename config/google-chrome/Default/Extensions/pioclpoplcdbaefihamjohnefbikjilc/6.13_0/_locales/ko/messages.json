@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "오전"
+   },
+   "April": {
+      "message": "4월"
+   },
+   "Aug": {
+      "message": "8월"
+   },
+   "August": {
+      "message": "8월"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Evernote로 스크랩"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "비즈니스"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "닫기"
+   },
+   "Dec": {
+      "message": "12월"
+   },
+   "December": {
+      "message": "12월"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "알 수 없는 오류"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "알 수 없는 노트북"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "권한이 거부되었습니다."
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "사용자가 비활성화되어 권한이 거부되었습니다."
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "로그인 실패 횟수가 너무 많습니다. 나중에 다시 시도해보세요"
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper는 쿠키를 사용해 계정을 식별합니다. 브라우저 설정에서 Evernote의 타사 쿠키가 허용되어 있는지 확인하세요."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Web Clipper를 사용하려면 쿠키를 허용하세요"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper를 사용하려면 쿠키가 제대로 작동해야 합니다. 브라우저 설정에서 쿠키를 활성화하세요."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "노트북을 만드는 중 오류가 발생했습니다."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "죄송합니다. 이 이름의 노트북이 이미 있습니다."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "잘못된 노트북 이름."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "노트북 개수가 최대 한도에 도달했습니다."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "서버와 통신 문제 [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "현재 Evernote 서버를 사용할 수 없습니다. 나중에 다시 시도해 보세요."
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "인터넷이 연결되어 있지 않습니다."
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "아직 노트북이 없습니다."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "노트북 업데이트 중 오류가 발생했습니다."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Evernote 확장 프로그램을 사용해 웹에서 본 정보를 Evernote 계정에 저장하세요."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "2월"
+   },
+   "February": {
+      "message": "2월"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "금"
+   },
+   "Friday": {
+      "message": "금요일"
+   },
+   "Jan": {
+      "message": "1월"
+   },
+   "January": {
+      "message": "1월"
+   },
+   "July": {
+      "message": "7월"
+   },
+   "June": {
+      "message": "6월"
+   },
+   "Last_used": {
+      "message": "마지막으로 사용"
+   },
+   "March": {
+      "message": "3월"
+   },
+   "May": {
+      "message": "5월"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "월"
+   },
+   "Monday": {
+      "message": "월요일"
+   },
+   "Nov": {
+      "message": "11월"
+   },
+   "November": {
+      "message": "11월"
+   },
+   "Oct": {
+      "message": "10월"
+   },
+   "October": {
+      "message": "10월"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "오후"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "개인"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "토"
+   },
+   "Saturday": {
+      "message": "토요일"
+   },
+   "Sept": {
+      "message": "9월"
+   },
+   "September": {
+      "message": "9월"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "로그인"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "요약"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "일"
+   },
+   "Sunday": {
+      "message": "일요일"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "목"
+   },
+   "Thursday": {
+      "message": "목요일"
+   },
+   "Today": {
+      "message": "오늘"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "화"
+   },
+   "Tuesday": {
+      "message": "화요일"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "수"
+   },
+   "Wednesday": {
+      "message": "수요일"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "메시지 추가"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "계정 추가"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "비즈니스 계정 추가"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "날짜 추가"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "개인 계정 추가"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "알리미 추가"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "태그 추가"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "할 일 추가"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "스크랩 후"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "모든 필드를 입력하셔야 합니다."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "항상 표시"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "항상 여기에서 시작"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "항상 이것으로 태그"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "주석 달기"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "적용"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "승인됨"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "화살표"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "화살표 도구"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "기사"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "죄송합니다. 전체 페이지를 스크랩할 수 없습니다. 스크랩할 부분을 선택하십시오."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "Evernote 웹 서비스를 통해 이 애플리케이션의 액세스가 취소되었습니다. 비밀번호를 다시 입력해 주세요."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "인증 진행중"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "브라우저의 기본 설정이 Evernote 확장과 충돌합니다. Chrome의 개인정보 보호 콘텐츠 설정을 기본값으로 복원해 보십시오. 로컬 데이터 설정을 허용하고 타사 쿠키를 차단하지 마십시오. 다른 타사 확장을 비활성화해 보십시오."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Clipper 자동 종료"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Evernote 플러스 또는 Evernote 프리미엄으로 업그레이드하시면 추가 기능을 즐길 수 있습니다."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "한도에 도달하기 전에 지금 Evernote 플러스로 업그레이드하셔서 1GB의 월 업로드 용량을 누리세요."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "프리미엄으로 업그레이드해 오프라인 상태에서도 모바일 장치에서 스크랩해둔 기사에 액세스하세요. 프리미엄 사용자는 오프라인 노트북을 지정해 언제나 빠르게 노트에 액세스할 수 있습니다."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Evernote 플러스와 프리미엄을 소개합니다"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "월 업로드 허용량 1GB로 업그레이드하세요"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "데스크톱에서 스크랩 후 휴대폰에서 읽으세요"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "비즈니스 계정 이외의 사람들이 포함되어 있는 이 채팅에서 비즈니스 노트 또는 노트북을 공유하려고 합니다. 모든 채팅 참가자와 공유하시려면 '확인'을 클릭하세요."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "비즈니스"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "비즈니스 노트북"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "수정"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "수정 및 다른 사용자 초대"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "보기"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "스크랩을 저장할 수 없습니다"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "이 스크랩을 저장할 수 없습니다"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "찾을 수 없나요?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "숫자 입력"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "이 버전의 Evernote Web Clipper는 더 이상 Evernote 서비스와 호환되지 않습니다. 최신 버전을 설치하십시오."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "이 알림을 다시 표시 안 함"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "모든 태그 지우기"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "간소화된 기사"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "스크랩"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "스크랩:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Clipper 옵션"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "$site$의 클립",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Web Clipper 또는 활성화된 패널 닫기"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "워크챗으로 협업하세요"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "색상"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "작업 확인"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Google에 연결"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Evernote 지원 문의"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span>\u003Cspan id=\"status\">스크랩 중\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"title\">“…”\u003C/span>\u003Cspan id=\"status\">스크랩 중\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "스크랩 중"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span>\u003Cspan id=\"status\">동기화 중\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "동기화하는 중"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "이미지 스크랩"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "PDF 스크랩"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "전체 페이지 스크랩"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "스크린샷 스크랩"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "선택 영역 스크랩"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "북마크 스크랩"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "'Evernote로 스크랩' 도구모음 버튼을 사용해 먼저 로그인해야만 스크랩할 수 있습니다."
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "계속"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "기사 선택 축소"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "기사 선택 축소"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "클립보드에 복사"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. All rights reserved.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>개인정보 취급방침\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>사용 약관\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ 비즈니스 노트",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "만들기"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "새 노트북 만들기"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "자르기"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "페이지 발행자의 제한적인 콘텐츠 보안 정책 설정 때문에 Safari Web Clipper가 이 페이지를 스크랩할 수 없습니다."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "한 번에 한 단계씩 아래로 사이드바 미리보기를 순환합니다."
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "기본 스크랩 계정:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "마지막"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "스크랩한 노트를 삭제하는 중..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "인증이 잘못되었거나 만료되었습니다. 도구 모음 버튼을 사용하여 로그인한 후 다시 해보세요."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "\"$clipTitle$\"을(를) 저장할 수 없음",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "\"$title$\" 클립은 실패 횟수가 너무 많아 재시도할 수 없습니다.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "\u003Cspan id=\"notebookName\">$notebookName$\u003C/span>에 스크랩 완료",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "재시도"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "\"$clipTitle$\"을(를) 저장할 수 없음",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "스크랩을 저장할 수 없음"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "스크랩 저장 중 알 수 없는 오류가 발생했습니다. 오류 메시지: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "미리 알림 해제"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "팁 해제"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "완료"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "다시 표시 안 함"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "타원"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "이메일 주소"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "이메일"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "이메일은 하루 $limit$개까지만 보낼 수 있습니다",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>노트 이메일: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "단축키 활성화"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "코드 입력"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "이메일 주소 입력"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "이름 입력"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "이름 또는 이메일을 입력하세요"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "오류 로그"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote는 검색어 또는 검색 결과를 추적하지 않으며, 회원님의 어떠한 정보도 검색 엔진과 공유하지 않습니다."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "기사 선택 펼치기"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "기사 선택 펼치기"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "로그인 세션이 만료되었습니다. 다시 시도해 주세요."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "비밀번호 업데이트 필요"
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Evernote에 피드백 보내기(필수)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "노트 채우는 중..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "노트북 찾기"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "연락처 찾기"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "투어 종료"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "다음"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "소문 내 주세요."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "소문 내 주세요! 가족, 친구, 동료들에게 새로운 Web Clipper에 대해 이야기해 주세요."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "노트북"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web Clipper"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "투어"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "한 번의 클릭으로 스크린샷을 포착하세요."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "사이드 바의 \u003Cstrong>스크린샷\u003C/strong>을 클릭하세요."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "화면 캡처"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "표식 도구를 이용해 친구와 동료 뿐 아니라 자기 자신에게도 빠르고 명확하게 정보를 전달하세요. 화살표, 하이라이터, 마커를 이용해 중요한 텍스트를 강조해 보세요!"
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "스탬프는 콘텐츠를 승인하거나, 거절하거나, 마음에 드는 부분을 부각시킬 수 있는 간단한 도구입니다.\u003Cbr/> 민감한 정보는 모자이크 도구로 흐릿하게 처리하세요. 어떠한 내용이든 관심을 집중시킬 수 있습니다."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "자, 스크린샷에 표시를 해봅시다."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "웹 클립에 표시하세요."
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "웹 클립을 공유하기는 너무나 쉽습니다."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "사이드바에 있는\u003Cstrong>공유 버튼\u003C/strong>을 클릭해 공유를 시도해 보세요."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "간소화된 기사, 표식이 있는 기사 등 웹 클립의 형식을 선택한 후, 3가지 방법으로 공유할 수 있습니다. Facebook, Twitter, LinkedIn 등의 소셜 네트워크에 게시하거나, 링크를 웹 클립에 담거나, 이메일로 전송하세요."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "공유 옵션"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "웹 클립 쉽게 공유하기"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Web Clipper의 새로운 기능"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "새로운 Web Clipper를 사용하면 온라인에서 만난 콘텐츠를 스크랩하고, 북마크하고, 스크린샷을 찍고, 표식을 추가하고, 저장하는 것은 물론, 간편하고 선별적으로 친구들과 공유할 수 있습니다."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "온라인이나 Evernote 계정에서 좀 더 깔끔한 독서 경험을 원하신다면 페이지에서 불필요한 방해 요소를 제거한 '간소화된 기사' 보기를 사용해 보세요."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "\u003Cstrong>간소화된 기사\u003C/strong>를 클릭해 내용을 확인하시고, 원하는 경우 회원님의 Evernote 계정에 저장하세요."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "새로운 Web Clipper 시작하기"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "웹에서 기사를 스크랩하고 표시하기"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "비밀번호를 잊으셨나요?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>보낸 사람: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "전체 페이지"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "죄송합니다. Evernote는 이 페이지 전체를 스크랩할 수 없습니다. 스크랩하고 싶은 부분을 선택하세요."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Google Authenticator 앱에 표시된 인증 코드를 입력하세요."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "일반 설정"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "추가 1GB 받기"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "전역:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Gmail에서 선택해서 클립 할 대화가 필요합니다."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "이제 Gmail에서 바로 이메일 스레드를 스크랩해서 Evernote 계정으로 보낼 수 있습니다."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "프리미엄 시작하기"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "이제 Inbox by Gmail의 이메일 스레드를 Evernote 계정으로 직접 스크랩할 수 있습니다."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "알겠습니다"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Evernote 계정 만들기"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "관련 노트 숨기기"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "하이라이터"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "무시"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "브라우저에서 설정된 제한사항으로 인해 이 페이지를 스크랩할 수 없습니다."
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "이미지 하이라이터"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "첨부파일 포함"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "원본 이메일 포함"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "입력하신 코드가 틀립니다."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "지금 설치하기"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "단축키"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "마지막으로 사용한 동작"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "마지막으로 사용한 노트북"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "자세히 알아보기"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "법적 고지"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper는 다음과 같은 오픈소스 소프트웨어를 사용합니다"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "선"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "불러오는 중..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Evernote에 로그인 중"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "로그인"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "비밀번호"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "비밀번호가 필요합니다."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "비밀번호가 잘못되었습니다."
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "내 정보 기억"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "웹을 검색할 때 관련 검색 결과를 보여줍니다"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "이메일 또는 사용자 아이디"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "사용자 아이디가 필요합니다."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "사용자 아이디 및 비밀번호가 기존 사용자와 일치하지 않습니다."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "알 수 없는 로그인 또는 Evernote International 사용"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "해당 이름의 사용자가 없습니다."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "이 옵션을 선택하면 이 옵션을 지원하는 검색 엔진에서 검색을 수행할 때 회원님의 Evernote 계정에서도 동일한 검색이 수행됩니다."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "로그 내보내기"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "팔로우"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "로그 파일 선택: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "이벤트 로그"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "메일"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "마커"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "마커 도구"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "표식:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>메시지 :\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "더 보기"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "추가 정보"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ 페이지가 더 있습니다.",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "기사 선택 아래로 이동"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "기사 선택 위로 이동"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "월 업로드 제한에 거의 도달했습니다."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "용량이 5MB밖에 남지 않았습니다. 업그레이드하여 월 업로드 용량을 늘리세요."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "용량이 250MB밖에 남지 않았습니다. 업그레이드하여 월 업로드 용량을 늘리세요."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "용량이 250MB밖에 남지 않았습니다."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper는 스크랩한 콘텐츠에 따라 적절한 태그와 노트북을 제안합니다. Web Clipper \u003Cspan class='newFeatureOptionsPseudoLink'>옵션\u003C/span>에서 이 기능 및 기타 설정을 관리하세요."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "스마트 파일링"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "한 주간"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "결과가 없습니다"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "아니요, 괜찮습니다."
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "지금 하지 않음"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "스크랩 크기가 $size$ 이상입니다",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "$size$ 이상의 노트를 스크랩하려면 Evernote 플러스 또는 Evernote 프리미엄이 필요합니다.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "$size$ 이상의 노트를 스크랩하려면 Evernote 프리미엄이 필요합니다.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "죄송하지만 최대 노트 크기는 $size$입니다.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "노트북 선택"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "알림 받기…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "이제 Office 365에서 바로 이메일 스레드를 스크랩해서 Evernote 계정으로 보낼 수 있습니다."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "확인"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "1페이지가 더 있습니다"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Gmail 대화 열기"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Inbox by Gmail의 대화 열기"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Evernote로 열기"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote 웹"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote 데스크톱"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "클립 보내기"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "빌드 ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "노트 열기"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "이 설정으로 처음 사용하는 경우 ‘외부 프로토콜 요청’ 대화 상자가 나타납니다. 애플리케이션을 최적으로 이용하기 위해 ‘현재 설정 기억’ 체크박스를 선택한 다음 ‘애플리케이션 실행’을 클릭하세요."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "데스크톱 클라이언트"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "웹 클라이언트"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "기본 스크랩 동작"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "기사 스크랩"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "전체 페이지 스크랩"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "URL 스크랩"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "알림 사용"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "이 옵션을 선택하면 클립이 업로드될 때마다 알림 메시지를 받습니다. 알림 메시지를 통해 더 쉽게 클립을 보거나 편집 및 공유할 수 있습니다."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "형식 유지"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "이 옵션을 선택하면 스크랩한 페이지가 가급적 원본 페이지와 동일하게 표시되도록 형식 정보를 유지합니다. 이 옵션을 선택하지 않으면 스크랩한 페이지에 플레인 텍스트와 장식 없는 단순한 서식이 적용됩니다."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "개발자 옵션"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF 페이지 버튼"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF 페이지에 'Evernote에 저장' 버튼을 표시합니다."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "작업 로그에는 회원님의 계정과 장치에 대한 정보 및 위치 정보(사용 중인 경우), 그리고 Evernote 애플리케이션이 수행하는 작업의 상세 목록이 단계별로 담겨 있습니다. 노트 제목, 태그, 노트북 이름과 때로 노트 내용 일부가 포함될 수 있습니다. 저희는 회원님의 작업 로그 데이터를 기밀로 취급하며, 여기에 Evernote \u003Ca href=\"$privacyLink$\" target=\"_blank\">개인정보 취급방침\u003C/a> 조항을 적용합니다.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "로그 숨기기"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "로그 보기"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "비보안 프로토콜"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "서비스 URL 재정의"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "모든 옵션 초기화"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "'기억하기' 버튼 사용"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "이미지, GMail 메시지, Facebook 게시물 저장을 위한 퀵 액세스 버튼 표시"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "저장중..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "보안 프로토콜"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "checkVersion 시뮬레이션 실패"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "중국어(간체) 시뮬레이션"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "이 옵션을 선택하면 연결할 서비스를 선택하기 위해 Clipper가 중국어(간체)를 설정하는 것처럼 시뮬레이션됩니다."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "비즈니스 노트북에 스마트 파일링 기능 허용"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "스마트 파일링 기능 사용"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "스마트 파일링은 회원님이 스크랩 중인 페이지를 바탕으로 노트북과 태그 목록을 자동으로 선택합니다."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "태그 및 노트북"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "스마트 파일링 사용 안 함"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "노트북 전용"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "태그 전용"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "자격 증명"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>참고:\u003C/b> 비밀번호를 저장하면 다른 사용자가 이 브라우저를 사용할 때 사용자의 Evernote 계정에 액세스할 수 있습니다. 'Evernote로 스크랩' 확장을 제거하거나 로그아웃하여 브라우저의 확장에 저장된 사용자 아이디 및 비밀번호를 영구히 제거하세요."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "옵션"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "상황별 메뉴 사용"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "이 옵션을 선택하면 상황별 메뉴를 통해 웹 페이지를 스크랩할 수 있습니다. 이미지, 선택된 텍스트 또는 페이지의 아무 곳이나 마우스 오른쪽 버튼으로 클릭하면 적절한 스크랩 옵션이 표시됩니다."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "관련 검색 결과"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "웹 검색과 관련된 Evernote 콘텐츠 표시"
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Clipper를 연동하여 작성 서비스에 있는 '단계' 서비스를 사용하십시오. 이 작업은 테스트를 위해 일반적으로 수행됩니다."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "정리"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "원본 이메일"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "외 {COUNT}명"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "이제 Outlook에서 바로 이메일 스레드를 스크랩해서 Evernote 계정으로 보낼 수 있습니다."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Evernote 계정의 노트 수가 최대 한도에 도달했습니다. 계정의 노트 수를 $max$개 미만으로 줄이기 전에는 노트를 더 만들 수 없습니다.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "공간이 부족합니다. Evernote 플러스 또는 Evernote 프리미엄으로 업그레이드해 월 업로드 용량과 노트 크기 제한을 늘리세요."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "공간이 부족합니다. Evernote 프리미엄으로 업그레이드해 월 업로드 용량과 노트 크기 제한을 늘리세요."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "업로드 공간이 부족합니다."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "$num$페이지",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "팁: Ctrl 키를 누른 상태에서 클릭하여 초점 이동하세요."
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "참가자"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF 클립"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Web Clipper로 PDF를 곧바로 회원님의 Evernote 계정으로 스크랩할 수 있다는 거 아셨나요?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "완벽함"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "개인"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "모자이크 처리"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "모자이크 도구"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "이 페이지를 스크랩하려면 다시 로드해야 합니다. 페이지를 다시 로드하고 다시 시도해 보세요."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "죄송합니다. 로컬 파일의 스크랩은 지원되지 않습니다."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "노트북 불러오는 중"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "자격 증명을 확인하는 데 시간이 너무 오래 걸렸습니다. 인터넷에 연결되었는지 확인한 후 다시 해보십시오."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "$count$개의 추가 노트 보기...",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "하나 이상의 노트 보기..."
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "이 위치에서는 스크랩이 지원되지 않습니다."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "페이지를 기다리는 중…"
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "기사 미리보기"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web Clipper 프리뷰\u003Cbr>오류가 발생할 수 있습니다!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "전체 페이지 미리보기"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "북마크 미리보기"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "계속"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "스크랩"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "기사 저장"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "전체 페이지 저장"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "선택 항목 저장"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "URL 저장"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "의견 추가"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "태그 추가"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "내용 추가"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "노트북"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "저장"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "지원되지 않는 태그"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "제목"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "제목 없는 노트"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "지금 평가하기"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "이 버전의 Web Clipper를 어떻게 평가하시겠습니까?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "새로운 Web Clipper는 웹 콘텐츠를 캡처하고, 저장하며, 표식을 추가하고, 선택적으로 공유할 수 있도록 설계되었습니다. 마음에 드는지 말씀해 주세요."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Web Clipper가 마음에 드시나요?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "직사각형"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "다시 실행"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "친구들이 Evernote를 시작하시면 회원님에게는 Evernote 플러스 또는 Evernote 프리미엄 업그레이드에 사용할 수 있는 포인트가 지급됩니다."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "친구를 초대하세요"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "친구를 초대하고, 포인트를 적립하세요."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "목록 새로 고침"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "아이디어, 보고 들은 것들, 좋아하는 것들을 모두 저장하세요."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "취소"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "사용자 아이디가 비활성화되었습니다. 계정을 \u003Ca href='$url$'>다시 활성화\u003C/a>하시겠습니까?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "이메일 주소는 필수 입력 항목입니다."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "그림에 보이는 숫자를 입력하세요."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "이메일 주소가 잘못되었습니다."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "비밀번호는 문자, 숫자, 구두점을 포함하여 6~64자 사이여야 합니다."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "사용자 아이디는 문자나 숫자로 시작하고 끝나야 하며, 하이픈과 밑줄을 포함할 수 있습니다."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "비밀번호는 필수 입력 항목입니다."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "이 이메일 주소는 이미 사용 중입니다."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "선택하신 사용자 아이디는 이미 다른 사람이 사용 중입니다."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "등록"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "사용자 아이디"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "등록을 클릭하면 Evernote의 \u003Ca href='$tos_url$' target='_blank' tabindex='6'>사용 약관\u003C/a> 및 \u003Ca href='$pp_url$' target='_blank' tabindex='7'>개인정보 취급방침\u003C/a>에 동의하는 것입니다.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "거부됨"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "관련 노트"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote는 회원님의 계정에서 방금 스크랩한 페이지와 관련된 노트를 최대 3개까지 찾아서 여기에 표시해줍니다."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "기억하기"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "기억하기"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "기억하기"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "알리미 추가됨"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "알리미 저장됨"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "초기화"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "바로가기 재설정"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Web Clipper 최소화"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "둥근 사각형"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Evernote에 이미지 저장"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "PDF를 Evernote에 저장"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Evernote에 전체 페이지 저장"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Evernote에 스크린샷 저장"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Evernote에 선택 항목 저장"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Evernote에 북마크 저장"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Evernote 노트와 Salesforce 레코드를 재빨리 연결하여 고객에 대한 상세 정보를 메모하고, 만나는 사람들에 대한 새로운 통찰을 얻으세요."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Salesforce용 Evernote 비즈니스 통합 기능을 설치하면 동료들과 노트를 공유하고, 만나는 사람들에 대한 새로운 통찰을 얻으며, 노트를 Salesforce 레코드와 직접 연결할 수 있습니다."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Salesforce용 Evernote 비즈니스를 더욱 효율적으로 활용해 보세요"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Evernote 비즈니스를 더욱 효율적으로 활용해 보세요"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Evernote에 저장"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "이 기사를 Evernote에 저장"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "저장"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "스크린샷"
+   },
+   "screenshotCrosshairToast": {
+      "message": "전체 화면을 캡처하려면 \u003Cstrong>클릭\u003C/strong>하고 부분을 캡처하려면 \u003Cstrong>마우스를 끌어서 선택합니다\u003C/strong>."
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "스크린샷 캡처 완료"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "웹을 검색하면서 Evernote 계정을 검색하세요"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "Evernote 계정의 \u003Cb>상위 결과\u003C/b>"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>관련 검색 결과를 보시려면 Web Clipper에 \u003Ca target='_blank' href='$loginUrl$'>로그인\u003C/a>하세요\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "현재 Evernote 서버에 연결할 수 없어서 동시 검색을 사용할 수 없습니다."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "회원님의 개인 또는 비즈니스 노트에 관련 검색 결과가 없습니다"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "노트에 관련 검색 결과 없음"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "비즈니스 노트에 $num$개의 관련 검색 결과",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "비즈니스 노트에 1개의 관련 검색 결과"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "개인 노트에 $num$ 개의 관련 검색 결과",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "개인 노트에 1개의 관련 검색 결과"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "회원님의 노트 중 관련 검색 결과 $num$개",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "회원님의 노트 중 관련 검색 결과 1개"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "영구 해제"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "미리 알림 해제"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "더 보기 »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "모든 표식 개체를 선택"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "전체 메시지 선택"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "노트북 선택"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "선택"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "선택 모드"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "보내기"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "피드백 보내기"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Evernote로 보고서 보내기"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "수신자:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "변경하려면 지금 키보드에서 키 조합을 입력하세요."
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "도형 도구"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "공유"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "노트 공유"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "이 스크랩 공유하기"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "URL 공유"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "공유된 노트북"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "두 단축키가 충돌합니다."
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "단축키는 3개 이하의 키 조합으로 이루어져야 합니다."
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "이 단축키에 ESC를 사용할 수 없습니다."
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "마음에 드는 단축키 설정 방법을 알아보려면 \u003Ca href='$href$' target='_blank'>옵션\u003C/a> 페이지를 방문하세요. 중요한 단축키를 지금 설정해 두세요!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "단축키를 설정할 수 있게 만들었습니다."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "커서를 필드 안에 놓고 원하는 바로가기를 누르세요."
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Email clip"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "더 보기"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "관련 노트 표시"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "스크랩 성공 대화 상자 표시"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "관련 노트 없이 스크랩 성공 대화 상자 표시"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Web Clipper에 로그인"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "비즈니스에 로그인"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "$name$ 로그아웃",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "로그인 아이디:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "로그아웃"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "여섯 자리 코드"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "인증 코드가 담긴 문자 메시지를 $phone$(으)로 전송했습니다.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "죄송합니다."
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "그동안 사용량이 많으셨군요!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "단기간에 대량의 콘텐츠를 추가하면 서비스 장애로 이어질 수 있습니다. 현재 작업 수준이 의도하신 것인지 확인해 주세요."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "비즈니스 콘텐츠에 액세스하려면 몇 가지 추가 단계를 완료하셔야 합니다."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "'무시하기'를 클릭하면 이 단계를 완료하기 전까지 비즈니스 콘텐츠에 액세스할 수 없습니다. 그동안 개인 콘텐츠로 작업을 계속할 수 있습니다."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "비즈니스 인증을 위해 별도의 창이 열릴 것입니다. 만약 이 창이 열리지 않으면 '다시 시도'를 클릭하세요."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "노트북 스택"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "스탬프"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "스탬프 도구"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Web Clipper 시작"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "간소화된 기사에서 Web Clipper 시작"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "주제(필수)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "추천 채팅"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "추천 연락처"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "시스템 정보"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "최대 20개 태그"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "태그 선택"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "스크린샷 찍기"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "스크린샷 찍기"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "텍스트"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "받는 사람:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "계정 전환"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "내일"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "이제 Web Clipper는 $siteName$ 스크랩을 깔끔하고 군더더기 없는 노트로 저장합니다. 원하는 구역을 선택한 다음 Evernote에 영구히 보관하세요.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "북마크 그 이상의 기능, 스크랩을 시작하세요."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "이 페이지가 마음에 드세요? 저장하세요."
+   },
+   "tryAgain": {
+      "message": "다시 시도"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "사용해 보기"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "인증 코드를 받는 데 도움이 필요합니다"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "텍스트 도구"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "메시지 입력..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "이 메시지를 열 수 없습니다"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "실행 취소"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "업데이트"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "업그레이드"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "북마크"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL이 클립보드에 복사되었습니다."
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "스마트 파일링 기능 사용"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "버전:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "충돌 보고서 보기"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Evernote에서 보기"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Gmail에서 보기"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Web Clipper의 새로운 기능들을 확인하세요"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "뭐라고?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "설명"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "웹에서 스크랩한 내용에 관해 채팅하세요. 업무 공간을 벗어나지 않고 기사에 대해 논의하거나 주석을 단 스크랩을 공유할 수 있습니다."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 $numUnknown$명의 다른 사람들을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 1명의 다른 사람을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 $numUnknown$명의 다른 사람들을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 1명의 다른 사람을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>회원님을\u003C/b> 이 채팅에 추가했습니다",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$threadName$\u003C/b>의 주제를 변경했습니다",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverNames$\u003C/b>님과 1명의 다른 사람을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 \u003Cb>$receiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b>님이 1명의 다른 사람을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 $numNotes$개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 $numNotes$개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 $numNotes$개 노트북 1개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 1개",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 1개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트 1개 노트북 1개",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b>님의 추가 내역: 노트북 1개",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 $numUnknown$명의 다른 사람들을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 1명의 다른 사람을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 $numUnknown$명의 다른 사람들을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 1명의 다른 사람을 이 채팅에 추가했습니다"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$threadName$\u003C/b>의 주제를 변경했습니다",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverNames$\u003C/b>님과 1명의 다른 사람을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 \u003Cb>$receiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>가 1명의 다른 사람을 이 채팅에서 제거했습니다"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 $numNotes$개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 $numNotes$개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 $numNotes$개 노트북 1개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 1개"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 1개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트 1개 노트북 1개"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>어떤 사용자\u003C/b>의 추가 내역: 노트북 1개"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverName$\u003C/b>님을 이 채팅에 추가했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$threadName$\u003C/b>의 주제를 변경했습니다",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverNames$\u003C/b>님과 \u003Cb>$lastReceiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverNames$\u003C/b>님과 $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverNames$\u003C/b>님과 1명의 다른 사람을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>회원님이\u003C/b> $numUnknown$명의 다른 사람들을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>회원님이\u003C/b> \u003Cb>$receiverName$\u003C/b>님을 이 채팅에서 제거했습니다",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>회원님이\u003C/b> 1명의 다른 사람을 이 채팅에서 제거했습니다"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 $numNotes$개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 $numNotes$개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 $numNotes$개 노트북 1개",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 1개"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 1개 노트북 $numNotebooks$개",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트 1개 노트북 1개"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>회원님\u003C/b>의 추가 내역: 노트북 1개"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "와우!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "이 Evernote 버튼을 클릭해 조사 자료로 활용하거나 나중에 읽을 WSJ 기사를 수집하세요."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "이와 유사한 다른 노트가 있습니다."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "확대 (단계)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "축소 (단계)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "크기에 맞춤"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "100%에 맞춤"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "확대"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "축소"
+   }
+}

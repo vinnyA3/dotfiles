@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "GothamLight";
+    src: url(../fonts/GothamSSm-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url(../fonts/GothamSSm-Light-Italic.woff) format("woff");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(../fonts/GothamSSm-Book.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBook";
+    src: url(../fonts/GothamSSm-Book-Italic.woff) format("woff");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(../fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url(../fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(../fonts/GothamSSm-Bold.woff) format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url(../fonts/GothamSSm-Bold-Italic.woff) format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "caecilia";
+    src: url(../fonts/caecilialtstd-roman-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* for clearly top sites */
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/GothamSSm-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Gotham";
+    src: url(../fonts/GothamSSm-Medium-Italic.woff) format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Caecilia";
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/caecilialtstd-bold-webfont.woff) format('woff');
+}

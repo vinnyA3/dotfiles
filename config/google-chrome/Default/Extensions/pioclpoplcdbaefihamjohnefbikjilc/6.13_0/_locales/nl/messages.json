@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "April"
+   },
+   "Aug": {
+      "message": "Aug"
+   },
+   "August": {
+      "message": "Augustus"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Stuur naar Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Business"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Sluit"
+   },
+   "Dec": {
+      "message": "Dec"
+   },
+   "December": {
+      "message": "December"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Onbekende fout"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Onbekend notitieboek"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Toestemming geweigerd"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Toestemming geweigerd omdat de gebruiker niet actief is"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Teveel mislukte inlogpogingen. Probeer het later opnieuw."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper gebruiket cookies om je account te identificeren. Controleer je browserinstellingen en zorg er voor dat 'cookies van derden' voor Evernote aanvaard worden."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Schakel cookies in om Web Clipper te gebruiken"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper heeft cookies nodig om goed te werken. Schakel de cookies in, in de instellingen van je browser."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "Er is een fout opgetreden bij het aanmaken van het notitieboek."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Sorry, er bestaat al een notitieboek met deze naam."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Ongeldige notitieboeknaam."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "Je hebt het maximale aantal notitieboeken bereikt."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Communicatieprobleem met server [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernote servers zijn op dit moment niet beschikbaar, probeer het later opnieuw"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Geen internetverbinding"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "Je hebt nog geen notitieboeken."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "Er is een fout opgetreden bij het updaten van je notitieboeken."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Gebruik de Evernote extensie om dingen die je ziet op het internet in je Evernote account op te slaan."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Feb"
+   },
+   "February": {
+      "message": "Februari"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Vr"
+   },
+   "Friday": {
+      "message": "Vrijdag"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "Januari"
+   },
+   "July": {
+      "message": "Juli"
+   },
+   "June": {
+      "message": "Juni"
+   },
+   "Last_used": {
+      "message": "Laatst gebruikt"
+   },
+   "March": {
+      "message": "Maart"
+   },
+   "May": {
+      "message": "Mei"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Ma"
+   },
+   "Monday": {
+      "message": "Maandag"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "November"
+   },
+   "Oct": {
+      "message": "Okt"
+   },
+   "October": {
+      "message": "Oktober"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Persoonlijk"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Zat"
+   },
+   "Saturday": {
+      "message": "Zaterdag"
+   },
+   "Sept": {
+      "message": "Sept"
+   },
+   "September": {
+      "message": "September"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Log in"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Samenvatting"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Zo"
+   },
+   "Sunday": {
+      "message": "Zondag"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Do"
+   },
+   "Thursday": {
+      "message": "Donderdag"
+   },
+   "Today": {
+      "message": "Vandaag"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Di"
+   },
+   "Tuesday": {
+      "message": "Dinsdag"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Wo"
+   },
+   "Wednesday": {
+      "message": "Woensdag"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Voeg bericht toe"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Voeg account toe"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Voeg Business account toe"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Voeg datum toe"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Voeg Persoonlijk account toe"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Voeg herinnering toe"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Voeg labels toe"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Voeg taak toe"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Weergave knipsel"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Alle velden zijn verplicht."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Toon altijd"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Begin altijd in"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Geef altijd het label"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Annoteer"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Pas toe"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Goedgekeurd"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Pijl"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pijl tool"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artikel"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Sorry, Evernote kan geen knipsel maken van het artikel op deze pagina. Selecteer het deel waar je een knipsel van wil maken."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "De toegang tot deze app is ingetrokken via de Evernote webservice. Voer je wachtwoord opnieuw in."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "De authenticatie wordt uitgevoerd"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "De voorkeursinstellingen van je browser zijn in conflict met de Evernote extensie. Probeer de standaardinstellingen van de Privacy content instellingen van Chrome te herstellen: 'Toestaan dat lokaal gegevens worden ingesteld (aanbevolen)' en 'Geen cookies van derden blokkeren'. Overweeg om extensies van andere partijen uit te schakelen."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Sluit Clipper automatisch"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Maak gebruik van de extra functies wanneer je naar Evernote Plus of Evernote Premium upgrade."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Voorkom dat je jouw limiet bereikt. Upgrade naar Evernote Plus voor 1 GB aan maandelijkse uploads."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Upgrade naar Premium om je geknipte artikelen op je mobiele apparaat te bekijken, zelfs wanneer je offline bent. Als Premium gebruiker kan je offline notitieboeken instellen en je notities altijd en overal bekijken."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "We introduceren Evernote Plus & Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Upgrade voor 1GB aan maandelijkse uploads"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Knip op desktop, lees op je telefoon"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Je deelt zakelijke notities en notitieboeken in deze chat. Er zitten mensen in deze chat die niet bij jouw bedrijf werken. Klik op 'OK' om dit met alle mensen in deze chat te delen."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Zakelijk"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Zakelijk notitieboek"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Bewerken"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Bewerken en uitnodigen"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Bekijken"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Het knipsel kan niet opgeslagen worden"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Dit knipsel kan niet opgeslagen worden"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Kan je het niet vinden?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Voer cijfers in"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Deze versie van Evernote Web Clipper is niet langer compatibel met de Evernote Service. Installeer de laatste versie."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Laat deze melding niet meer zien"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Wis alle labels"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Vereenvoudigd artikel"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Knip"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Knip:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Opties Clipper"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Knipsels van $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Sluit Web Clipper of het actieve venster"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Werk samen in Work Chat"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Kleuren"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Bevestig activiteiten"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Koppel aan Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Neem contact op met Evernote support"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span>\u003Cspan id=\"status\">Aan het knippen\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Bezig met het knippen van\u003C/span>\u003Cspan id=\"title\">'...'\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Aan het knippen"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"title\">$clipTitle$\u003C/span>\u003Cspan id=\"status\">aan het synchroniseren\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Aan het synchroniseren"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Knip afbeelding"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Knip PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Knip hele pagina"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Knip screenshot"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Knip selectie"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Knip bladwijzer"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Je moet ingelogd zijn via de knop op de 'Stuur naar Evernote' in de menubalk, voordat je knipsels kunt maken."
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Ga door"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Vouw artikelselectie in"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Vouw artikelselectie in"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Kopieer naar Klembord"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. Alle rechten voorbehouden.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Privacybeleid\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Gebruiksvoorwaarden\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ Zakelijke notities",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Maak aan"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Maak een nieuw notitieboek"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Snijd bij"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Safari Web Clipper kan deze pagina niet knippen vanwege beperkende Beveiligingspolicy instellingen voor de content van de uitgever van deze webpagina."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Blader met één stap per keer door de voorbeeldweergave van de zijbalk"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Standaard knipaccount:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Laatste"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Knipsel aan het verwijderen..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Ongeldige of verlopen authenticatie. Log in met de knop op de menubalk en probeer het opnieuw."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "'$clipTitle$' kan niet worden opgeslagen",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "Het knipsel '$title$' is te vaak mislukt en kan niet nogmaals geprobeerd worden.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Opgeslagen in \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Opnieuw"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "'$clipTitle$' kan niet worden opgeslagen",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Knipsel kan niet opgeslagen worden"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Er is een fout opgetreden tijdens het opslaan van je knipsels. Foutmelding: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Negeer"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Negeer tip"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Klaar"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Toon niet opnieuw"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Ovaal"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "E-mailadres"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "E-mail"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "Je kan niet meer dan $limit$ e-mails per dag versturen",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Notitie per e-mail versturen: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Schakel sneltoetsen in"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Voer de code in"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Voer één of meer e-mailadressen in"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Voer naam in"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Voer naam of e-mailadres in"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Foutlogboeken"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote volgt je zoektermen of -resultaten niet. Evernote deelt jouw zoekinformatie ook niet met een zoekmachine."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Vouw artikelselectie uit"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Vouw artikelselectie uit"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "Inlogsessie verlopen. Probeer het opnieuw."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Update wachtwoord."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Feedback voor Evernote (verplicht)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Notitie wordt opgeslagen..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Zoek een notitieboek"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Zoek contactpersonen"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Stop rondleiding"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Volgende"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Zegt het voort."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Zeg het tegen iedereen! Vertel je familieleden, vrienden en collega's over de nieuwe Web Clipper."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Notitieboek"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web Clipper"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Rondleiding"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Maak met één klik een screenshot."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Klik op de knop \u003Cstrong>Screenshot\u003C/strong> in de zijbalk."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Screenshot"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Gebruik de opmaak tools om snel en duidelijk iets met jezelf of met je collega's en vrienden te communiceren. Gebruik de pijl, markeerstift en andere tools om belangrijke teksten aan te wijzen."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "De stempel tool biedt een eenvoudige manier om je favoriete content goed en af te keuren of op te laten vallen.\u003Cbr/>Maak gevoelige informatie vaag met de Pixeleertool. Zorg dat alles opvalt."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Laten we nu annotaties aan je screenshot toevoegen."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Voeg opmaak toe aan webknipsels"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Het delen van je webknipsels was nog nooit zo eenvoudig."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Klik in de zijbalk op de knop \u003Cstrong>Deel\u003C/strong> om het te proberen."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Wanneer je de indeling van je webknipsel (vereenvoudigd artikel, artikel met opmerkingen, enz.) hebt geselecteerd, kan je het knipsel op drie manieren delen: via publicatie op sociale netwerken, zoals Facebook, Twitter en LinkedIn, via een URL naar het webknipsel en via e-mail."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Opties voor delen"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Deel webknipsels eenvoudig"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Wat is er nieuw in Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "Met de nieuwe Web Clipper kan je alle content die je online tegenkomt knippen, als bladwijzer toevoegen, of als screenshot opslaan, opmaken en opslaan. Bovendien kan je de content eenvoudig en selectief delen met vrienden."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "Gebruik de vereenvoudigde artikelweergave om onnodig afleidende elementen van de pagina te verwijderen, zodat je de artikelen online en in je Evernote-account beter kunt lezen."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Klik op \u003Cstrong>Vereenvoudigd artikel\u003C/strong> om het artikel te bekijken. Sla het artikel daarna op in je Evernote-account."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Aan de slag met de nieuwe Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Verzamel internetartikelen en voeg opmerkingen toe"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Wachtwoord vergeten?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>Van: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Volledige pagina"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Helaas, Evernote kan niet de gehele pagina kopiëren. Selecteer het deel dat je wil kopiëren."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Voer de verificatiecode in die wordt getoond in je Google Authenticator-app."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "Algemene opties"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Verhoog met 1GB"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Algemeen:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Je moet een conversatie in Gmail selecteren om deze te knippen."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Je kan e-mail onderwerpen nu uit Gmail knippen en in je Evernote-account plakken."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Neem Premium"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Je kan e-mail onderwerpen nu uit je Gmail inbox knippen en in je Evernote account plakken."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Ik begrijp het"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Maak een Evernote Account aan"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Gerelateerde notities verbergen"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Markeerstift"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Negeren"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Vanwege beperkingen van je browser kan je geen knipsel maken van deze pagina."
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Afbeeldingsmarkering"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Voeg bijlage toe"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Voeg originele e-mail toe"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "De door jou ingevoerde code is onjuist."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Nu installeren"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Sneltoetsen"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Laatst gebruikte actie"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Laatst gebruikte notitieboek"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Meer informatie"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Juridisch"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper maakt gebruik van de volgende open sourcesoftware"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Lijn"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Laden..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Bezig met inloggen op Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Inloggen"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Wachtwoord"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Een wachtwoord is vereist."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Ongeldig wachtwoord"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Onthoud mij"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Gerelateerde resultaten tonen wanneer je op het web zoekt"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "E-mailadres of gebruikersnaam:"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Gebruikersnaam is vereist."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Gebruikersnaam en wachtwoord komen niet overeen met de bestaande gebruiker."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Onbekende login, of probeer Evernote International"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Er bestaat geen gebruiker met die naam."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Wanneer deze functie is ingeschakeld, worden zoekopdrachten in ondersteunde zoekmachines ook uitgevoerd in je Evernote-account."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Exportlijst"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Volgen"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Logbestand selecteren: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Activiteitenlogboek"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Mail"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Markeerstift"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Markeerstif"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Opmaken:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Bericht:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Meer"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "Meer info"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+ nog $num$ pagina's",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Verplaats de geselecteerde artikelen omlaag"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Verplaats de geselecteerde artikelen omhoog"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "Je hebt bijna je maandelijkse upload-limiet bereikt."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "Je hebt nog maar 5 MB over. Upgrade om meer maandelijkse uploadcapaciteit te krijgen."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "Je hebt nog maar 250 MB over. Upgrade om meer maandelijkse uploadcapaciteit te krijgen."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "Je hebt nog maar 250 MB over."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper stelt labels en notitieboeken voor op basis van de content van het knipsel. Beheer deze en andere instellingen onder \u003Cspan class='newFeatureOptionsPseudoLink'>Opties\u003C/span> in Web Clipper."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Smart Filing"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Binnen een week"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "Geen Resultaat"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Nee, bedankt"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Niet nu"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Het knipsel is groter dan $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Je hebt Evernote Plus of Evernote Premium nodig om een notitie te knippen dat groter is dan $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Je hebt Evernote Premium nodig om een notitie te knippen dat groter is dan $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Sorry, de maximale notitiegrootte is $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Notitieboekselectie"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Waarschuw mij..."
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Je kan e-mail onderwerpen nu uit Office 365 knippen en in je Evernote account plakken."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "OK"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+ nog 1 pagina"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Conversatie openen in Gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Open gesprekken in Inbox van Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Openen in Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote desktop"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Knipsels verzenden naar"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "Build ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Open notities in"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "Wanneer je deze instelling voor het eerst gebruikt, zie je een venster voor een 'Extern protocolverzoek'. Vink de checkbox 'Onthoud mijn keuze' aan en klik vervolgens op 'Open applicatie' voor de beste ervaring."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Desktop-app"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Web-app"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Standaard actie voor knippen"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Kopieer artikel"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Kopieer hele pagina"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Kopieer URL"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Meldingen inschakelen"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "Je krijg een melding na upload van een knipsel als dit ingeschakeld is. Meldingen vereenvoudigen het weergeven, wijzigen en delen van knipsels."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Opmaak behouden"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Wanneer ingeschakeld, wordt ook de opmaak meegenomen waardoor de kopie zo veel mogelijk overeenkomt met de bron. Wanneer uitgeschakeld, wordt een eenvoudige stijl gebruikt met platte tekst en zonder decoratie."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Opties voor ontwikkelaars"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF pagina knop"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Toon de 'Opslaan in Evernote' knop op PDF pagina's."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "Het Activiteitenlogboek bevat een gedetailleerd overzicht van de stappen die de Evernote-applicatie uitvoert. Daarnaast bevat het logboek ook informatie over je account, apparaat en locatie (indien ingeschakeld). Je notitietitels, labels, notitieboeknamen en de content van je notities worden eventueel ook opgeslagen. We behandelen de gegevens in je Activiteitenlogboek als vertrouwelijk. Op de verwerking gelden de voorwaarden uit ons \u003Ca href=\"$privacyLink$\" target=\"_blank\">Privacybeleid\u003C/a>.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Verberg logs"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Logboeken bekijken"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Onveilig protocol"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "URL override service"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Herstel alle opties"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Schakel 'Herinnering' knoppen in"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Toon snelle toegang knoppen voor het opslaan van afbeeldingen, GMail berichten en Facebookposts"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Opslaan..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Veiligheidsprotocol"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simuleren checkVersie Fout"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simuleren Vereenvoudigd Chinees"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Als deze optie is ingeschakeld, doet de clipper alsof deze is ingesteld op de taal Vereenvoudigd Chinees, zodat er een dienst kan worden geselecteerd waarmee verbinding moet worden gemaakt."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Slim opslaan in Zakelijke notitieboeken opslaan"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Smart Filing inschakelen"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Smart Filing selecteert automatisch voor jou een notitieboek en een lijst met labels, gebaseerd op de pagina waar die je geknipt hebt."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Labels en notitieboeken"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Smart Filing uitschakelen"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Alleen notitieboeken"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Alleen labels"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Referenties"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>OPMERKING:\u003C/b> Het opslaan van wachtwoorden kan er toe leiden ​​dat anderen via deze browser bij je Evernote account kunnen komen. Meldt je af of verwijderde de Stuur naar Evernote extensie om permanent je gebruikersnaam en wachtwoord te verwijderen."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Opties"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Snelmenu's inschakelen"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "Je kan webpagina's kopiëren via een snelmenu als dit ingeschakeld is. Klik rechts op foto's, en er verschijnt een kader op de pagina met beschikbare kopieer opties."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Gerelateerde resultaten"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Laat Evernote gerelateerde content zien wanneer ik op het web zoek."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Laat de clipper de 'stage' dienst gebruiken in plaats van de productiedienst, die normaal alleen voor testen bedoeld is."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Ordenen"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "ORIGINELE E-MAIL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "en {COUNT_PLURAL:{COUNT} ander|{COUNT} anderen}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Je kan e-mail onderwerpen nu uit Outlook knippen en in je Evernote account plakken."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Je hebt het maximaal aantal notities bereikt voor jouw Evernote account. Je kan geen nieuwe notities meer maken totdat je het aantal notities in je account vermindert tot minder dan $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "Je opslagruimte is vol. Upgrade naar Evernote Plus of Evernote Premium om je maandelijkse uploadcapaciteit en notitiegrootte te vergroten."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "Je opslagruimte is vol. Upgrade naar Evernote Premium om je maandelijkse uploadcapaciteit en notitiegrootte te vergroten."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "Je hebt geen ruimte meer."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Pagina $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Tip: houd Ctrl tijdens het slepen ingedrukt om te verplaatsen"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Deelnemers"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "Knipsel van PDF-bestand"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Wist je dat je met de Web Clipper PDF-bestanden rechtstreeks naar je Evernote-account kunt sturen?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Perfect"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Persoonlijk"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "In pixels omzetten"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pixel tool"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "Deze pagina moet herladen worden voordat die geknipt kan worden. Herlaad de pagina en probeer het opnieuw."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Sorry, het knippen van lokale bestanden wordt niet ondersteund."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Notitieboeken aan het laden"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "Het controleren van de verificatiegegevsn duurde te lang. Controleer of je verbonden bent met het internet en probeer het nog een keer."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Zie $count$ meer notities…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Nog een notitie tonen..."
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Knippen vanuit deze locatie wordt niet ondersteund."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Wachten op pagina..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Voorbeeld van artikel"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web Clipper Preview\u003Cbr> Alles kan breken!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Voorbeeld van volledige pagina"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Voorbeeld van bladwijzer"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Doorgaan"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Knipsel"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Artikel opslaan"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Volledige pagina opslaan"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Selectie opslaan"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "URL opslaan"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Voeg opmerking toe"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Voeg label toe"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Tekst toevoegen"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Notitieboek"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Opslaan"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Labels worden niet ondersteund"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Titel"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Notitie zonder naam"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Nu beoordelen"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Wat is jouw beoordeling over deze versie van Web Clipper?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "De nieuwe Web Clipper is bedoeld om jou te helpen om alles wat je op het web vindt vast te leggen, op te slaan, op te maken en selectief te delen. Geef ons je mening."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Wat vind je van de Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Driehoek"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Opnieuw"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "Wanneer de vrienden die jij uitgenodigd hebt aan de slag gaan met Evernote, ontvang je punten van ons die je kan gebruiken om te upgraden naar Evernote Plus of Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Nodig vrienden uit"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Nodig vrienden uit. Verdien punten."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Ververs lijst"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Bewaar de ideeën en dingen die je leuk vindt, hoort of ziet."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Annuleren"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Gebruikersnaam is opgeheven. Wilt je het account \u003Ca href='$url$'>heractiveren\u003C/a> ?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "E-mailadres is een verplicht veld."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Voer de cijfers in die je in de afbeelding ziet."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "E-mailadres lijkt onjuist te zijn."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Selecteer een wachtwoord tussen de 6 en 64 tekens lang bestaande uit letters, cijfers en leestekens."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "Je gebruikersnaam moet beginnen en eindigen met een letter of getal en mag leestekens en onderstrepingstekens bevatten."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "Wachtwoord is een verplicht veld."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "dit e-mailadres wordt al gebruikt."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "De gebruikersnaam die je hebt geselecteerd wordt al gebruikt door een andere gebruiker."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Registreer"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Gebruikersnaam"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "Door op 'Registreren' te klikken stem je in met onze \u003Ca href='$tos_url$' target='_blank' tabindex='6'>Gebruiksvoorwaarden\u003C/a> en met ons \u003Ca href='$pp_url$' target='_blank' tabindex='7'>Privacybeleid\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Afgekeurd"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Gerelateerde notities"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote toont maximaal drie notities uit jouw account die gerelateerd zijn aan de pagina die je zojuist hebt geknipt en zal ze hier weergeven."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Herinner"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Herinner"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Herinner"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Herinnering toegevoegd"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Herinnering opgeslagen"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Herstellen"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Snelkoppelingen herstellen"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimaliseer Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Driehoek met afgeronde punten"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Afbeelding opslaan naar Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "PDF in Evernote bewaren"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Volledige pagina opslaan naar Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Sla screenshot op in Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Selectie opslaan naar Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Sla bladwijzer op in Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Koppel razendsnel Evernote-notities aan gegevens in Salesforce, maak gedetailleerde notities over klanten en verkrijg nieuwe inzichten in de mensen met wie jij contact legt."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Deel notities met collega's, verkrijg nieuwe inzichten in de mensen met wie je contact legt en koppel je notities zelfs rechtstreeks aan Salesforce-gegevens wanneer je de Evernote Business-integratie voor Salesforce installeert."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Doe meer met Evernote Business voor Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Doe meer met Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "In Evernote opslaan"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Sla dit artikel op in Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Opslaan"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Screenshot"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Klik\u003C/strong> om het volledige scherm vast te leggen of \u003Cstrong>sleep en laat los\u003C/strong> om een gedeelte van het scherm vast te leggen"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Screenshot gemaakt"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Zoek in je Evernote-account, zoals je ook op het web zoekt"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Beste resultaten\u003C/b> uit je Evernote-account"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Inloggen\u003C/a> met Web Clipper om gerelateerde resultaten te zien\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Gelijktijdig zoeken is momenteel niet beschikbaar, omdat de Evernote servers onbereikbaar zijn."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Geen gerelateerde resultaten in je persoonlijke of zakelijke notities"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Geen gerelateerde resultaten in je notities"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ gerelateerde resultaten in je zakelijke notities",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 gerelateerd resultaat in jouw Zakelijke notities"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ gerelateerde resultaten in je persoonlijke notities",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 gerelateerd resultaat in jouw Persoonlijke notities"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ gerelateerde resultaten in je notities",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 gerelateerd resultaat in jouw notities"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Voor altijd negeren"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Negeren"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "Lees meer »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Selecteer alle opmaak objecten"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Selecteer alle berichten"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Notitieboek selecteren"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Selectie"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Selectiemodus"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Versturen"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Feedback geven"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Rapport versturen naar Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Verzend naar:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "Sla de toetsencombinatie nu op je toetsenbord aan om deze instelling te wijzigen"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Vorm tool"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Deel"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Deel notitie"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Deel dit knipsel"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Deel URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Gedeeld notitieboek"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Er zijn twee conflicterende sneltoetsen"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "De sneltoetsen dienen uit maximaal 3 toetsen te bestaan"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Je kunt ESC niet gebruiken in deze sneltoets"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Bezoek de pagina \u003Ca href='$href$' target='_blank'>Opties\u003C/a> voor meer informatie over het instellen van je favoriete snelkoppelingen. Stel nu de belangrijkste snelkoppelingen in!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Vanaf nu kan je jouw sneltoetsen zelf instellen."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Plaats de cursor in het veld en druk de toetsencombinatie in die je wil gebruiken"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "E-mail knipsel"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Meer tonen"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Gerelateerde notities weergeven"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Laat het succesvolle knipseldialoog zien"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Laat succesvol knipseldialoog zien zonder Gerelateerde notities"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Inloggen voor de Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Inloggen bij Business"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Uitloggen voor $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Aangemeld als:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Uitloggen"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Zes cijferige code"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "We stuurden een sms met een verificatiecode naar $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Helaas"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Je hebt het druk gehad!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Het toevoegen van veel content in een korte periode kan leiden tot een verstoring van de service. Bevestig dat je huidige hoge aantal activiteiten opzettelijk zijn."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Je moet extra stappen voltooien om toegang te krijgen tot de content van je Business-account."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "Wanneer je op 'Negeer' klikt, kan je de content van je Business-account niet openen totdat je deze stappen hebt voltooid. Je kunt ondertussen wel je persoonlijke content blijven bewerken."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "Je ziet het verificatieverzoek voor je bedrijf in een nieuw venster. Klik op 'Opnieuw proberen' wanneer dit venster niet wordt geopend."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Notitieboekstapel"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Zegel"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Stempel"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Web Clipper starten"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Web Clipper starten in vereenvoudigde modus"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Onderwerp (verplicht)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Aanbevolen chatgesprekken"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Misschien ken je mensen"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "Systeeminformatie"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Max. 20 labels"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Labelselectie"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Screenshot maken"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Screenshot maken"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Tekst"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Te:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Switch account"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Morgen"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Web Clipper slaat nu $siteName$ knipsels op als schone notities zonder rommel. Selecteer het gedeelte dat jij wil en sla het op voor altijd op in Evernote.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Ga verder dan bladwijzers, begin te knippen."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Vind je deze pagina leuk? Sla het op."
+   },
+   "tryAgain": {
+      "message": "Probeer het opnieuw"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Probeer het uit"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Ik heb hulp nodig met het krijgen van een verificatiecode"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Typ tool"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Typ je bericht..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Dit bericht kan niet geopend worden"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Maak ongedaan"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Bijwerken"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Upgrade"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Bladwijzer"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "De URL werd naar het klembord gekopieerd"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Slim opslaan gebruiken"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Versie:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Crashrapport bekijken"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Bekijk in Evernote"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Bekijk in Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Ontdek de nieuwe functies in de Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "Wat?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "Wat is dit?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Chat over knipsels van het Web. Bespreek artikelen of deel geannoteerde knipsels zonder je werkplek te hoeven verlaten."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en $numUnknown$ andere mensen aan deze chat toegevoegd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en nog iemand aan deze chat toegevoegd",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numUnknown$ andere mensen aan deze chat toegevoegd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft nog iemand aan deze chat toegevoegd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>jou\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft het onderwerp veranderd naar \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, d MMM yyyy, h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, d MMM h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en nog iemand uit deze chat verwijderd",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft \u003Cb>$receiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft nog iemand uit deze chat verwijderd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numNotes$ notities toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numNotes$ notities en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numNotes$ notities en 1 notitieboek toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft 1 note toegevoegd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft 1 note en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft 1 note en 1 notebook toegevoegd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> heeft 1 notebook toegevoegd",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en $numUnknown$ andere mensen aan deze chat toegevoegd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en nog iemand aan deze chat toegevoegd",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added $numUnknown$ andere mensen aan deze chat toegevoegd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft nog iemand aan deze chat toegevoegd"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft het onderwerp veranderd naar \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverNames$\u003C/b> en nog iemand uit deze chat verwijderd",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft \u003Cb>$receiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft nog iemand uit deze chat verwijderd"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft $numNotes$ notities toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft $numNotes$ notities en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft $numNotes$ notities en 1 notitieboek toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft 1 notitie toegevoegd"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft 1 note en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft 1 notitie en 1 notitieboek toegevoegd"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Iemand\u003C/b> heeft 1 notitieboek toegevoegd"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverName$\u003C/b> aan deze chat toegevoegd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>Jij\u003C/b> hebt het onderwerp veranderd naar \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverNames$\u003C/b> en \u003Cb>$lastReceiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverNames$\u003C/b> en $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverNames$\u003C/b> en nog iemand uit deze chat verwijderd",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt $numUnknown$ andere mensen uit deze chat verwijderd",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt \u003Cb>$receiverName$\u003C/b> uit deze chat verwijderd",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Jij\u003C/b> hebt nog iemand uit deze chat verwijderd"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>Jij\u003C/b> hebt $numNotes$ notities toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt $numNotes$ notities en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt $numNotes$ notities en 1 notitieboek toegevoegd",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>Jij\u003C/b> hebt 1 note toegevoegd"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt 1 note en $numNotebooks$ notitieboeken toegevoegd",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt 1 note en 1 notebook toegevoegd"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>Jij\u003C/b> hebt 1 notitieboek toegevoegd"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Wow!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Klik op deze Evernote knop om WSJ artikelen voor onderzoek te verzamelen. Je kan ze natuurlijk ook op een ander moment lezen."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Je hebt andere notities die hier op lijken."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Inzoomen (stap)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Uitzoomen (stap)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Inzoomen om te passen"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoom naar 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Zoom in"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Zoom uit"
+   }
+}

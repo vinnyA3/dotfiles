@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "April"
+   },
+   "Aug": {
+      "message": "Aug"
+   },
+   "August": {
+      "message": "August"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Clip to Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Business"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Close"
+   },
+   "Dec": {
+      "message": "Dec"
+   },
+   "December": {
+      "message": "December"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Unknown error"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Unknown notebook"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Permission denied"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Permission denied because user is inactive"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Too many failed login attempts. Please try again later."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper uses cookies to identify your account. Check your browser settings to make sure third-party cookies are accepted from Evernote."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Enable cookies to use Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper requires cookies to work correctly. Please enable cookies in your browser settings."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "There was an error creating the notebook."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Sorry, a notebook with this name already exists."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Invalid notebook name."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "You have reached the maximum amount of notebooks."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Problem communicating with server [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernote servers are currently unavailable, please try again later"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "No Internet Connection"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "You don't have any notebooks yet."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "There was an error updating notebooks."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Use the Evernote extension to save things you see on the web into your Evernote account."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Feb"
+   },
+   "February": {
+      "message": "February"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Fri"
+   },
+   "Friday": {
+      "message": "Friday"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "January"
+   },
+   "July": {
+      "message": "July"
+   },
+   "June": {
+      "message": "June"
+   },
+   "Last_used": {
+      "message": "Last used"
+   },
+   "March": {
+      "message": "March"
+   },
+   "May": {
+      "message": "May"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Mon"
+   },
+   "Monday": {
+      "message": "Monday"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "November"
+   },
+   "Oct": {
+      "message": "Oct"
+   },
+   "October": {
+      "message": "October"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Personal"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Sat"
+   },
+   "Saturday": {
+      "message": "Saturday"
+   },
+   "Sept": {
+      "message": "Sept"
+   },
+   "September": {
+      "message": "September"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Sign in"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Summary"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Sun"
+   },
+   "Sunday": {
+      "message": "Sunday"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Thu"
+   },
+   "Thursday": {
+      "message": "Thursday"
+   },
+   "Today": {
+      "message": "Today"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Tue"
+   },
+   "Tuesday": {
+      "message": "Tuesday"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Wed"
+   },
+   "Wednesday": {
+      "message": "Wednesday"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Add a message"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Add account"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Add Business Account"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Add a Date"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Add Personal Account"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Add a reminder"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Add tags"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Add Task"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "After clip"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "All fields are required."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Always show"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Always start in"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Always tag with"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Annotate"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Apply"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Approved"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Arrow"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Arrow tool"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Article"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Sorry, Evernote cannot clip this page as an article. Please select the portion you wish to clip."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "This application's access was revoked via the Evernote web service. Please re-enter your password."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Authentication in progress"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "Your browser's preferences conflict with the Evernote extension. Try restoring Chrome's Privacy Content settings to the defaults: Allow local data to be set and do NOT block third-party cookies. Consider disabling other 3rd party extensions."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Automatically close Clipper"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Enjoy additional features when you upgrade to Evernote Plus or Evernote Premium."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Avoid hitting a limit. Upgrade to Evernote Plus now for 1GB of monthly uploads."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Upgrade to Premium to access your clipped articles on your mobile device even when you’re offline. As a Premium user, you can set offline notebooks and access your notes quickly at all times."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Introducing Evernote Plus & Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Upgrade to get 1GB of monthly uploads"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Clip on desktop, read on your phone"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "You’re sharing business notes or notebooks in this chat, which includes people outside your business. Click OK to share with all chat participants."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Business"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Business notebook"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Can edit"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Can edit and invite"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Can view"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Cannot save clip"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Can't save this clip"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Can't find it?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Enter digits"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "This version of Evernote Web Clipper is no longer compatible with Evernote Service. Please install the latest version."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Don't show this notification again"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Clear all tags"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Simplified article"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Clip it"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Clip:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Clipper Options"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Clips from $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Close Web Clipper or active panel"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Collaborate with Work Chat"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Colors"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Confirm Activity"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Connect to Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Contact Evernote support"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">Clipping\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Clipping\u003C/span>\u003Cspan id=\"title\">“…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Clipping"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">Syncing\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Syncing"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Clip image"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Clip PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Clip full page"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Clip screenshot"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Clip selection"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Clip bookmark"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "You must sign in using the Clip To Evernote toolbar button before you can make clips"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Continue"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Contract article selection"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Contract the article selection"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Copy to Clipboard"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. All rights reserved.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Privacy Policy\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Terms of Service\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "$bizName$ Business Notes",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Create"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Create new notebook"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Crop"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Safari Web Clipper cannot clip this page due to restrictive Content Security Policy settings from the page publisher."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Cycle through sidebar preview one step down at a time"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Default clipping account:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Last"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Deleting clipped note..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Invalid or expired authentication. Please sign in using the toolbar button, and try again."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Unable to save \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "The clip \"$title$\" has failed too many times and cannot be retried.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Clipped to \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Retry"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Unable to save \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Unable to save clip"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Unknown error occured while trying to save one of your clips. Error Message: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Dismiss"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Dismiss tip"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Done"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Don't show again"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Ellipse"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "Email address"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "Email"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "You cannot send more than $limit$ emails per day",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Email note: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Enable keyboard shortcuts"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Enter code"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Enter email address(es)"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Enter name"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Enter name, or email"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Error logs"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote does not track your search terms or results, or share any of your information with search engines."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Expand article selection"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Expand the article selection"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "Login session expired. Please try again."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Password update needed."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Feedback to Evernote (required)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Filing note..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Find a notebook"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Find Contacts"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Finish the tour"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Next"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Spread the word."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Spread the word! Tell your family, friends and colleagues about the new Web Clipper."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Notebook"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web Clipper"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Tour"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Grab screenshots with a single click."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Click \u003Cstrong>Screenshot\u003C/strong> in the sidebar."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Screen Capture"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Use markup tools to quickly and clearly communicate something to yourself as well as colleagues and friends. Use the arrow, highlighter and marker to focus on important text."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "The stamp tool offers a simple system to approve, reject or call out favorite content.\u003Cbr/>Blur sensitive information with the Pixelator tool. Draw attention to anything."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Now, let’s markup your screenshot."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Markup Web Clips"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Sharing your web clips couldn’t be easier."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Click the \u003Cstrong>Share button\u003C/strong> in the sidebar and give it a try."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Once you’ve selected the format for your web clip (simplified articled, marked up article, etc.) you can share it in three ways: Post to social networks including Facebook, Twitter and LinkedIn, grab the link to the web clip, or send via email."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Sharing options"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Easily Share Web Clips"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "What’s New in Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "The new Web Clipper lets you clip, bookmark, screenshot, markup, and save content you come across online as well as easily and selectively share it with friends."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "For a cleaner reading experience online or in your Evernote account, use the Simplified Article view to remove unnecessary distractions from the page."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Click \u003Cstrong>Simplified Article\u003C/strong> to view, then save to your Evernote account if you wish."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Get Started with the new Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Clip and Markup Articles from the Web"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Forgot password?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>From: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Full page"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Sorry, Evernote cannot clip this entire page. Please select the portion you wish to clip."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Enter the verification code displayed in your Google Authenticator app."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "General options"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Get 1GB more"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Global:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "You need to have a conversation selected to clip from Gmail."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "You can now clip email threads from Gmail directly to your Evernote account."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Go Premium"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "You can now clip email threads from Inbox by Gmail directly to your Evernote account."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Got it"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Create an Evernote account"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Hide Related Notes"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Highlighter"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Ignore"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Due to the restrictions set by the browser, you cannot clip this page"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Image highlighter"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Include Attachment"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Include Original Email"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "The code you entered is incorrect."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Install now"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Keyboard shortcuts"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Last used action"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Last used notebook"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Learn more"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Legal"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper uses the following open source software"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Line"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Loading..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Signing in to Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Sign In"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Password"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Password is required."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Invalid Password"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Remember me"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Show Related Results when you search the web"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "Email or username"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Username is required."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Username and password do not match existing user."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Unknown login, or try Evernote International"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "No user with that name exists."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "When enabled, your searches on supported search engines will also be performed on your Evernote account."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Export Logs"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Follow"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Select log file: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Event Logs"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Mail"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Marker"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Marker tool"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Markup:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Message:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "More"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "More info"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ more pages",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Move article selection down"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Move article selection up"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "You've almost reached your monthly upload limit."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "You only have 5MB left. Upgrade to get additional monthly upload capacity."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "You only have 250MB left. Upgrade to get additional monthly upload capacity."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "You only have 250MB left."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper will suggest tags and notebooks based on the content of the clip. Manage this feature and other settings in the Web Clipper \u003Cspan class='newFeatureOptionsPseudoLink'>Options\u003C/span>."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Smart Filing"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "In a Week"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "No Result"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "No Thanks"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Not now"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Clip is over $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "You need Evernote Plus or Evernote Premium to clip notes larger than $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "You need Evernote Premium to clip notes larger than $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Sorry, maximum note size is $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Notebook selection"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Notify me…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "You can now clip email threads from Office 365 directly to your Evernote account."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "Ok"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+1 more page"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Open conversation in Gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Open conversation in Inbox by Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Open in Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote desktop"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Send clips to"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "Build ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Open notes in"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "On first use with this setting you will see an ‘External Protocol Request’ dialog. For best experience check the ‘Remember my choice’ checkbox and then ‘Launch Application’."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Desktop client"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Web client"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Default clip action"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Clip article"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Clip full page"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Clip URL"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Enable notifications"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "When enabled, you will be notified whenever a clip has been uploaded. Notifications make it easier for you to view, edit, and share your clips."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Preserve Style"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "When enabled, clips will preserve styling information to look as close to the original page as possible. When disabled, clips will be given a simple style with plain text and no decoration."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Developer Options"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF page button"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Show Save to Evernote button on PDF pages."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "The Activity Log contains a detailed list of the steps the Evernote application performs, as well as information about your account, your device and location information (if enabled).  Your Note titles, tags, Notebook names and occasionally Note content also may be included. We treat your Activity Log data as confidential, and the terms of our \u003Ca href=\"$privacyLink$\" target=\"_blank\">Privacy Policy\u003C/a> apply.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Hide Logs"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "View Logs"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Insecure protocol"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Override Service URL"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Reset All Options"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Enable 'Remember' buttons"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Show quick access buttons for saving images, GMail messages and Facebook posts"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Saving..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Secure protocol"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulate checkVersion Failure"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulate Simplified Chinese"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "When this options is enabled, the clipper will pretend to be set to the Simplified Chinese language for the purpose of choosing a service to connect to."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Allow Smart Filing into Business Notebooks"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Enable Smart Filing"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Smart Filing will automatically select a notebook and a list of tags for you based on the page you're clipping from."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Tags and Notebooks"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Disable Smart Filing"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Notebooks Only"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Tags Only"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Credentials"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>NOTE:\u003C/b> Storing passwords may allow others to access your Evernote account when using this browser. Remove or sign out of the Clip to Evernote extension to permanently remove the username and password stored in your browser's extension."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Options"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Enable contextual menus"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "When enabled, you can clip web pages via contextual menu. Right-clicking on images, selected text or anywhere on the page will reveal appropriate clipping options."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Related results"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Show Evernote content related to my web searches."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Instructs the clipper to use the 'stage' service in place of the production service, which is normal only for testing."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Organize"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "ORIGINAL EMAIL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "and {COUNT_PLURAL:{COUNT} other|{COUNT} others}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "You can now clip email threads from Outlook directly to your Evernote account."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "You've reached the maximum number of notes in your Evernote account. You cannot create more notes until you reduce the number of notes in your account to less than $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "You're out of space. Upgrade to Evernote Plus or Evernote Premium to increase your monthly upload capacity and note size limit."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "You're out of space. Upgrade to Evernote Premium to increase your monthly upload capacity and note size limit."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "You're out of space."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Page $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Tip: Hold Ctrl while clicking to pan"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Participants"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF clip"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Did you know that you can clip PDF's directly to your Evernote account with the Web Clipper?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Perfect"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Personal"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pixelate"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pixelator tool"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "This page needs to be reloaded before you can clip it. Reload the page and try again."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Sorry, clipping local files is not supported."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Loading Notebooks"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "Checking credentials took too long. Make sure you're connected to the internet and try again."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "See $count$ more notes…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "See one more note…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Clipping from this location is not supported."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Waiting for page…"
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Preview article"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Web Clipper Preview\u003Cbr>Things can break!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Preview full page"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Preview bookmark"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Proceed"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Clip"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Save Article"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Save Full Page"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Save Selection"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Save URL"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Add remark"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Add tag"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Add text"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Notebook"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Save"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Tags not supported"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Title"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Untitled note"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Rate Now"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "How would you rate this version of the Web Clipper?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "The new Web Clipper is designed to help you capture, save, markup and selectively share anything from the Web. Tell us how you like it."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "How do you like the Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Rectangle"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Redo"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "When your invited friends get started with Evernote, we'll reward you with points to use toward upgrading to Evernote Plus or Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Invite Friends"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Invite friends. Earn points."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Refresh list"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Save your ideas, things you like, things you hear, and things you see."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Cancel"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Username has been deactivated.  Would you like to \u003Ca href='$url$'>reactivate\u003C/a> the account?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "Email address is a required field."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Type the numbers you see in the picture."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "Email address appears to be invalid."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Select a password between 6 and 64 characters long consisting of letters, numbers and punctuation."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "Your username must start and end with a letter or number, it can contain hyphens and underscores."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "Password is a required field."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "This email address is already in use."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "The username you have selected is already in use by another user."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Register"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Username"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "By clicking Register, you agree to the \u003Ca href='$tos_url$' target='_blank' tabindex='6'>Terms of Service\u003C/a> and \u003Ca href='$pp_url$' target='_blank' tabindex='7'>Privacy Policy\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Rejected"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Related Notes"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote finds up to three notes in your account that are related to the page you just clipped and presents them here."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Remember"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Remember"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Remember"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Reminder Added"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Reminder Saved"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Reset"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Reset shortcuts"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimize Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Rounded Rectangle"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Save image to Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "Save PDF to Evernote"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Save full page to Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Save screenshot to Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Save selection to Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Save bookmark to Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Quickly connect Evernote notes with Salesforce records, take detailed notes about customers, and gain new insights into the people you're connecting with."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Share notes with colleagues, gain new insights into the people you're connecting with, and even link your notes directly to Salesforce records if you install the Evernote Business for Salesforce integration."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Do more with Evernote Business for Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Do more with Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Save to Evernote"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Save this article to Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Save"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Screenshot"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Click\u003C/strong> to capture full screen or \u003Cstrong>drag and release\u003C/strong> to capture a region"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Screenshot captured"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Search your Evernote account as you search the web"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Top results\u003C/b> in your Evernote account"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Sign in\u003C/a> to Web Clipper to see Related Results\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Simultaneous search is currently unavailable because evernote servers cannot be reached."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "No Related Results in your Personal or Business notes"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "No Related Results in your notes"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ Related Results in your Business notes",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 Related Result in your Business notes"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ Related Results in your Personal notes",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 Related Result in your Personal notes"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ Related Results in your notes",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 Related Result in your notes"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Dismiss forever"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Dismiss"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "See More »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Select all Markup objects"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Select all messages"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Select notebook"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Selection"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Selection mode"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Send"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Send Feedback"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Send report to Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Send to:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "To change - strike key combination on your keyboard now"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Shape tool"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Share"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Share note"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Share this clip"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Share URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Shared notebook"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Two shortcuts are in conflict"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Shortcuts must be 3 or fewer keys in combination"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Cannot use ESC in this shortcut"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Visit the \u003Ca href='$href$' target='_blank'>options\u003C/a> page to learn and set your favorite shortcuts. Set the most important shortcut right now!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "We've made keyboard shortcuts configurable."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Place the cursor in the field and strike the shortcut you want to have"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Email clip"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Show me more"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Show Related Notes"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Show successful clip dialog"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Show successful clip dialog without Related notes"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Sign in to Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Sign in to Business"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Sign out of $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Signed in as:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Sign out"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Six-digit code"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "We sent a text message with a verification code to $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Sorry"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "You've been busy!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Adding large amounts of content over short periods can lead to a disruption in service. Please confirm your current activity level is intentional."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "You need to complete additional steps to access your Business's content."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "If you click Ignore, you will not be able to access Business content until you complete these steps. In the interim, you can continue to work with your Personal content."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "You should be prompted to authenticate to your Business in a separate window. Please click 'Try Again' if this window does not open."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Notebook stack"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Stamp"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Stamp tool"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Start Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Start Web Clipper in Simplified"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Subject (required)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Suggested Chats"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Suggested Contacts"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "System info"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Max 20 tags"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Tag selection"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Take a Screenshot"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Take screenshot"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Text"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "To:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Account switch"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Tomorrow"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Now, Web Clipper saves $siteName$ clips as clean and clutter-free notes. Select the sections you want, then keep it in Evernote, forever.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Go beyond bookmarks, start clipping."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Like this page? Save it."
+   },
+   "tryAgain": {
+      "message": "Try again"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Try it out"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "I need help getting a verification code"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Type tool"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Type your message..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Unable to open this message"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Undo"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Update"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Upgrade"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Bookmark"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL copied to clipboard"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Use smart filing"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Version:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "View crash report"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "View in Evernote"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "View in Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "See what's new in the Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "What?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "What's this?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Chat about clips from the Web. Discuss articles or share annotated clips without leaving your workspace."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and 1 other person to this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> added 1 other person to this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> added \u003Cb>you\u003C/b> to this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> removed 1 other person from this chat",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 note 1 notebook",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> included: 1 notebook",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and 1 other person to this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added $numUnknown$ other people to this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Someone\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> added 1 other person to this chat"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Someone\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Someone\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Someone\u003C/b> removed 1 other person from this chat"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 note 1 notebook"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Someone\u003C/b> included: 1 notebook"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>You\u003C/b> added \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>You\u003C/b> added \u003Cb>$receiverName$\u003C/b> to this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>You\u003C/b> changed the topic to \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and \u003Cb>$lastReceiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverNames$\u003C/b> and 1 other person from this chat",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed $numUnknown$ other people from this chat",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>You\u003C/b> removed \u003Cb>$receiverName$\u003C/b> from this chat",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>You\u003C/b> removed 1 other person from this chat"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotes$ notes 1 notebook",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note $numNotebooks$ notebooks",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 note 1 notebook"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>You\u003C/b> included: 1 notebook"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Wow!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Click this Evernote button to collect WSJ articles for research or reading later."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "You have other notes like this."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Zoom in (step)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Zoom out (step)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zoom to fit"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoom to 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Zoom In"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Zoom Out"
+   }
+}

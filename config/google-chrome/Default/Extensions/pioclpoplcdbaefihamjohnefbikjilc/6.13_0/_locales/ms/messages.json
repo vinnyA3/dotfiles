@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "PG"
+   },
+   "April": {
+      "message": "April"
+   },
+   "Aug": {
+      "message": "Ogo"
+   },
+   "August": {
+      "message": "Ogos"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Klipkan pada Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Perniagaan"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Tutup"
+   },
+   "Dec": {
+      "message": "Dis"
+   },
+   "December": {
+      "message": "Disember"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Ralat tidak diketahui"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Buku nota tidak diketahui"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Keizinan ditolak"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Keizinan ditolak kerana pengguna tidak aktif"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Terlalu banyak kali percubaan log masuk yang gagal. Sila cuba lagi nanti."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper menggunakan kuki untuk mengenal pasti akaun anda. Semak tetapan pelayar anda untuk memastikan kuki pihak ketiga diterima daripada Evernote."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Dayakan kuki untuk menggunakan Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Web Clipper memerlukan kuki untuk berfungsi dengan betul. Sila dayakan kuki dalam tetapan penyemak imbas anda."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "Ralat berlaku semasa mencipta buku nota."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Maaf, buku nota dengan nama ini telah wujud."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Nama buku nota tidak sah."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "Anda telah mencapai bilangan maksimum buku nota."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Masalah berhubung dengan pelayan [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Pelayan Evernote tidak tersedia sekarang, sila cuba lagi kemudian"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Tiada Sambungan Internet"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "Anda masih belum mempunyai sebarang buku nota."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "Terdapat ralat ketika mengemas kini buku nota."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Gunakan sambungan Evernote untuk menyimpan bahan yang anda lihat di web ke dalam akaun Evernote anda."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Feb"
+   },
+   "February": {
+      "message": "Februari"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Jum"
+   },
+   "Friday": {
+      "message": "Jumaat"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "Januari"
+   },
+   "July": {
+      "message": "Julai"
+   },
+   "June": {
+      "message": "Jun"
+   },
+   "Last_used": {
+      "message": "Terakhir digunakan"
+   },
+   "March": {
+      "message": "Mac"
+   },
+   "May": {
+      "message": "Mei"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Isn"
+   },
+   "Monday": {
+      "message": "Isnin"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "November"
+   },
+   "Oct": {
+      "message": "Okt"
+   },
+   "October": {
+      "message": "Oktober"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PTG"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Peribadi"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Sab"
+   },
+   "Saturday": {
+      "message": "Sabtu"
+   },
+   "Sept": {
+      "message": "Sept"
+   },
+   "September": {
+      "message": "September"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Daftar masuk"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Ringkasan"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Aha"
+   },
+   "Sunday": {
+      "message": "Ahad"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Kha"
+   },
+   "Thursday": {
+      "message": "Khamis"
+   },
+   "Today": {
+      "message": "Hari Ini"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Sel"
+   },
+   "Tuesday": {
+      "message": "Selasa"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Rab"
+   },
+   "Wednesday": {
+      "message": "Rabu"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Tambah mesej"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Tambah akaun"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Tambah Akaun Perniagaan"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Tambah Tarikh"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Tambah Akaun Peribadi"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Tambah satu peringatan"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Tambah teg"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Tambah Tugasan"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Selepas klip"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Kesemua medan diperlukan."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Sentiasa tunjukkan"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Sentiasa mulakan dalam"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Sentiasa teg dengan"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Anotasi"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Guna"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Diluluskan"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Anak panah"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alat anak panah"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artikel"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Maaf, Evernote tidak dapat mengklip halaman ini sebagai artikel. Sila pilih bahagian yang anda ingin klipkan."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "Akses apl ini telah dibatalkan melalui perkhidmatan web Evernote. Sila masukkan semula kata laluan anda."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Pengesahan sedang dijalankan"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "Keutamaan penyemak imbas anda berkonflik dengan sambungan Evernote. Cuba pulihkan tetapan Kandungan Privasi Chrome kepada lalai: Benarkan data setempat ditetapkan dan JANGAN sekat kuki pihak ketiga. Pertimbangkan untuk melumpuhkan sambungan pihak ketiga yang lain."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Tutup Clipper secara automatik"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Nikmati ciri-ciri tambahan apabila anda menaik taraf kepada Evernote Plus atau Evernote Premium."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Elakkan mencapai had. Naik taraf ke Evernote Plus sekarang untuk muat naik bulanan 1 GB."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Naik taraf kepada Premium untuk mengakses artikel diklip anda pada peranti mudah alih anda walaupun anda di luar talian. Sebagai pengguna Premium, anda boleh menetapkan buku nota luar talian dan mengakses nota anda dengan pantas sepanjang masa."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Memperkenalkan Evernote Plus & Evernote Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Naik taraf untuk mendapatkan muat naik bulanan 1GB"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Clip pada desktop, baca pada telefon anda"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Anda berkongsi nota atau buku nota perniagaan dalam sembang ini, yang merangkumi orang di luar perniagaan anda. Klik OK untuk berkongsi dengan semua peserta sembang."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Perniagaan"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Buku nota perniagaan"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Boleh edit"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Boleh edit dan jemput"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Boleh lihat"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Tidak boleh menyimpan klip"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Tidak boleh menyimpan klip ini"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Tidak menemuinya?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Masukkan digit"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Versi Evernote Web Clipper ini tidak lagi serasi dengan Evernote Service. Sila pasang versi terbaharu."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Jangan tunjukkan lagi pemberitahuan ini"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Kosongkan semua teg"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Artikel ringkas"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Klipkannya"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Klip:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Pilihan Clipper"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Klip daripada $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Tutup Web Clipper atau panel aktif"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Bekerjasama dengan Work Chat"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Warna"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Sahkan Aktiviti"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Sambung ke Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Hubungi sokongan Evernote"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">Pengklipan\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Pengklipan\u003C/span>\u003Cspan id=\"title\">“…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Klip"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">Segerakkan\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Sedang disegerak"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Klipkan imej"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Klipkan PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Klipkan halaman penuh"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Klipkan tangkapan skrin"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Klipkan pilihan"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Klipkan penanda buku"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Anda hendaklah mendaftar masuk menggunakan butang bar alat Klipkan Pada Evernote sebelum anda boleh membuat klip"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Teruskan"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Pemilihan artikel kontrak"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Sempitkan pemilihan artikel"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Salin ke Papan Klip"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Hak Cipta 2009-$currentYear$ Evernote Corporation. Hak Cipta Terpelihara.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Dasar Privasi\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Syarat Perkhidmatan\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "Nota Perniagaan $bizName$",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Cipta"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Cipta buku nota baru"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Pangkas"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Safari Web Clipper tidak boleh mengklip halaman ini disebabkan tetapan Dasar Keselamatan Kandungan terhad daripada penerbit halaman."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Kitar melalui pratonton bar sisi satu langkah ke bawah pada satu masa"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Akaun pengklipan lalai:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Akhir"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Memadamkan nota berklip"
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Pengesahan tidak sah atau telah tamat tempoh. Sila daftar masuk menggunakan butang bar alat dan cuba lagi."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Tidak dapat menyimpan \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "Terlalu banyak kali \"$title$\" klip gagal, dengan itu tidak dapat dicuba semula.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Diklipkan pada \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Cuba semula"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Tidak dapat menyimpan \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Tidak dapat menyimpan klip"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Ralat tidak diketahui telah berlaku semasa cuba menyimpan satu daripada klip anda. Mesej Ralat: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Buang"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Buang petua"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Selesai"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Jangan tunjukkan lagi"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Elips"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "Alamat e-mel"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "E-mel"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "Anda tidak boleh menghantar lebih daripada $limit$ e-mel sehari",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Nota e-mel: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Dayakan pintasan papan kekunci"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Masukkan kod"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Masukkan alamat e-mel"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Masukkan nama"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Masukkan nama, atau e-mel"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Log ralat"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote tidak menjejak istilah atau hasil carian anda, atau berkongsi sebarang makluma anda dengan enjin carian."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Perluaskan pemilihan artikel"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Perluaskan pemilihan artikel"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "Sesi log masuk tamat tempoh. Sila cuba lagi."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Kata laluan perlu dikemas kini."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Maklum balas ke Evernote (diperlukan)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Memfailkan nota..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Dapatkan buku nota"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Cari Kenalan"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Tamatkan lawatan"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Seterusnya"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Sebarkan perkataan tersebut."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Sebarkan berita ini! Beritahu keluarga, rakan dan rakan sekerja anda tentang Web Clipper baharu."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Buku nota"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Web Clipper"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Lawatan"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Ambil tangkapan skrin dengan satu klik."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Klik \u003Cstrong>Tangkapan skrin\u003C/strong> dalam bar sisi."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Rakaman Skrin"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Gunakan alat penanda untuk menyampaikan sesuatu kepada diri anda dan rakan sekerja serta rakan anda dengan cepat dan jelas. Gunakan anak panah, penyerlah dan penanda untuk memfokuskan pada teks yang penting."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "Alat setem menawarkan sistem yang mudah untuk meluluskan, menolak atau panduan kandungan kegemaran.\u003Cbr/>Kaburkan maklumat sensitif menggunakan alat Pixelator. Tarik perhatian kepada apa-apa sahaja."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Sekarang, mari menandakan tangkapan skrin anda."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Tanda Klip Web"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Tidak pernah semudah ini untuk berkongsi klip web anda."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Klik \u003Cstrong>butang Kongsi\u003C/strong> dalam bar sisi dan cuba gunakannya."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Setelah anda memilih format untuk klip web anda (artikel ringkas, artikel yang ditandakan, dll.) anda boleh kongsikannya dalam tiga cara: Siarkan pada rangkaian sosial termasuk Facebook, Twitter dan LinkedIn, sambar pautan ke klip web atau hantar melalui e-mel."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Pilihan perkongsian"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Kongsikan Klip Web Dengan Mudah"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Apa yang Baharu dalam Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "Web Clipper baharu membolehkan anda mengklip, menanda buku, mengambil tangkapan skrin, menanda serta menyimpan kandungan yang anda temui dalam talian di samping mengongsikannya bersama rakan dengan mudah dan secara terpilih."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "Untuk pengalaman membaca dalam talian atau dalam akaun Evernote anda dengan lebih jelas, gunakan paparan Artikel Ringkas untuk mengalih keluar gangguan yang tidak diperlukan daripada halaman."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Klik \u003Cstrong>Artikel Ringkas\u003C/strong> untuk melihat, kemudian simpan ke akaun Evernote anda jika anda mahu."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Bermula dengan Web Clipper yang baharu"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Klip dan Tanda Artikel daripada Web"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Terlupa kata laluan?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>Daripada: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Halaman penuh"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Maaf, Evernote tidak dapat mengklip seluruh halaman ini. Sila pilih bahagian yang anda ingin klipkan."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Masukkan kod pengesahan yang dipaparkan dalam apl Pengesah Google anda."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "Pilihan umum"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Dapatkan 1GB lagi"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Global:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Anda harus memilih sebuah perbualan untuk mengklip daripada Gmail."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Kini anda boleh mengklip jaluran e-mel daripada Gmail secara terus ke akaun Evernote anda."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Sertai Premium"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Kini anda boleh mengklip jaluran e-mel daripada Inbox oleh Gmail secara terus ke akaun Evernote anda."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Faham"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Cipta akaun Evernote"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Sembunyikan Nota Berkaitan"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Penyerlah"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Abaikan"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Disebabkan oleh sekatan yang ditetapkan oleh penyemak imbas, anda tidak boleh mengklip halaman ini"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Penyerlah Imej"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Sertakan Lampiran"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Sertakan E-mel Asal"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "Kod yang anda masukkan salah."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Pasang sekarang"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Pintasan papan kekunci"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Tindakan terakhir yang digunakan"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Buku nota terakhir yang digunakan"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Ketahui lebih lanjut"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Undang-undang"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper menggunakan perisian sumber terbuka yang berikut"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Baris"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Memuatkan..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Mendaftar masuk ke Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Daftar Masuk"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Kata laluan"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Kata laluan diperlukan."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Kata Laluan tidak sah"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Ingat saya"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Tunjukkan Hasil Berkaitan apabila anda mencari di web"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "E-mel atau nama pengguna"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Nama pengguna diperlukan."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Nama pengguna dan kata laluan tidak sepadan dengan pengguna sedia ada."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Log masuk tidak diketahui, atau cuba Evernote Antarabangsa"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Pengguna dengan nama itu tidak wujud."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Apabila didayakan, carian anda pada enjin carian yang disokong juga akan dilaksanakan pada akaun Evernote anda."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Log Eksport"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Ikut"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Pilih fail log: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Log Peristiwa"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Mel"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Penanda"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Alat Penanda"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Penanda:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Mesej:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Lagi"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "Maklumat lanjut"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ halaman lagi",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Pindahkan pemilihan artikel ke bawah"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Pindahkan pemilihan artikel ke atas"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "Anda telah hampir mencapai had muat naik bulanan anda."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "Anda hanya mempunyai 5MB lagi. Naik taraf untuk mendapatkan kapasiti muat naik bulanan tambahan."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "Anda hanya mempunyai 250Mb lagi. Naik taraf untuk mendapatkan kapasiti muat naik bulanan tambahan."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "Anda hanya mempunyai 250MB lagi."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper akan mencadangkan teg dan buku nota berdasarkan kandungan klip. Urus ciri ini dan tetapan lain dalam \u003Cspan class='newFeatureOptionsPseudoLink'>Pilihan\u003C/span> Web Clipper."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Pemfailan Pintar"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Dalam Seminggu"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "Tiada Hasil"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Tidak, Terima Kasih"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Bukan sekarang"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Klip melebihi $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Anda memerlukan Evernote Plus atau Evernote Premium untuk mengklip nota lebih besar daripada $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Anda memerlukan Evernote Premium untuk mengklip nota lebih besar daripada $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Maaf, saiz nota maksimum ialah $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Pemilihan buku nota"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Maklumkan saya…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Kini anda boleh mengklip jaluran e-mel daripada Office 365 secara terus ke akaun Evernote anda."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "Ok"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+1 halaman lagi"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Buka perbualan dalam Gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Buka perbualan dalam Inbox oleh Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Buka dalam Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Desktop Evernote"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Hantar klip ke"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "ID Binaan:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Buka nota dalam"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "Semasa penggunaan pertama dengan tetapan ini, anda akan melihat dialog ‘Permintaan Protokol Luar’. Untuk mendapatkan pengalaman terbaik, tandai kotak semak ‘Ingat pilihan saya’, kemudian ‘Lancar Apl’."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Klien desktop"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Klien web"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Aksi klip lalai"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Klipkan artikel"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Klipkan halaman penuh"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Klipkan URL"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Dayakan pemberitahuan"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "Apabila didayakan, anda akan diberitahu apabila sesuatu klip telah dimuat naik. Pemberitahuan memudahkan anda untuk melihat, mengedit dan mengongsi klip anda."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Kekalkan Gaya"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Apabila didayakan, klip akan mengekalkan maklumat gaya agar kelihatan hampir menyerupai halaman asal. Apabila dilumpuhkan, klip akan diberi gaya ringkas dengan teks biasa dan tiada hiasan latar."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Pilihan Pembangun"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Butang halaman PDF"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Tunjukkan butang Simpan ke Evernote pada halamaan PDF."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "Log Aktiviti mengandungi senarai lengkap langkah yang dilaksanakan oleh apl Evernote, di samping maklumat tentang akaun anda, peranti dan maklumat lokasi anda (jika didayakan).  Tajuk Nota, teg, nama Buku Nota dan kadangkala kandungan Nota anda juga mungkin disertakan. Kami mengendalikan data Log Aktiviti anda sebagai sulit dan tertakluk pada syarat dalam \u003Ca href=\"$privacyLink$\" target=\"_blank\">Dasar Privasi\u003C/a> kami.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Sembunyikan Log"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Lihat Log"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Protokol tidak selamat"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Tulis Ganti URL Perkhidmatan"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Tetapkan Semula Semua Pilihan"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Dayakan butang 'Ingat'"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Tunjukkan butang akses cepat untuk menyimpan imej, mesej GMail dan siaran Facebook"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Menyimpan..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Protokol selamat"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulasikan Kegagalan checkVersion"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulasikan bahasa Cina Ringkas"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Apabila pilihan ini didayakan, pengklip seolah-olah ditetapkan kepada bahasa Cina Ringkas untuk tujuan memilih perkhidmatan yang hendak disambungkan."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Benarkan Pemfailan Pintar dalam Buku Nota Perniagaan"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Dayakan Pemfailan Pintar"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Pemfailan Pintar akan memilih buku nota dan senarai teg secara automatik untuk anda berdasarkan halaman yang diklip."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Teg dan Buku Nota"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Lumpuhkan Pemfailan Pintar"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Buku Nota Sahaja"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Teg Sahaja"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Bukti kelayakan"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>NOTA:\u003C/b> Menyimpan kata laluan turut membolehkan orang lain mengakses akaun Evernote anda apabila menggunakan penyemak imbas ini. Alih keluar atau daftar keluar daripada sambungan Klipkan pada Evernote untuk mengalih keluar nama pengguna dan kata laluan yang disimpan secara kekal dalam sambungan penyemak imbas anda."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Pilihan"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Dayakan menu mengikut konteks"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "Apabila didayakan, anda boleh klipkan halaman web melalui menu mengikut konteks. Mengklik kanan pada imej, teks pilihan atau pada mana-mana bahagian halaman akan turut mendedahkan pilihan pengklipan yang sesuai."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Hasil berkaitan"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Tunjukkan kandungan Evernote yang berkaitan dengan carian web saya."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Mengarahkan pengklip menggunakan perkhidmatan 'peringkat' sebagai ganti perkhidmatan pengeluaran, yang dianggap normal hanya untuk pengujian."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Atur"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "E-MEL ASAL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "dan {COUNT_PLURAL:{COUNT} yang lain|{COUNT} yang lain}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Kini anda boleh mengklip jaluran e-mel daripada Outlook secara terus ke akaun Evernote anda."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Anda telah mencapai bilangan maksimum nota dalam akaun Evernote anda. Anda tidak boleh mencipta lebih banyak nota sehingga anda mengurangkan bilangan nota dalam akaun anda kepada kurang daripada $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "Anda telah kehabisan ruang. Naik taraf ke Evernote Plus atau Evernote Premium untuk meningkatkan kapasiti muat naik bulanan dan had saiz nota anda."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "Anda telah kehabisan ruang. Naik taraf ke Evernote Premium untuk meningkatkan kapasiti muat naik bulanan dan had saiz nota anda."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "Anda telah kehabisan ruang."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Halaman $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Petua: Tekan dan tahan Ctrl semasa mengklik untuk menyorot"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Peserta"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "Klip PDF"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Adakah anda tahu bahawa anda boleh klipkan PDF secara langsung pada akaun Evernote anda dengan Web Clipper?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Bagus Sekali"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Peribadi"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pixelate"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alat Pixelator"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "Halaman ini perlu dimuat semula sebelum anda boleh mengklipnya. Muat semula halaman dan cuba lagi."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Maaf, pengklipan fail tempatan tidak disokong."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Memuatkan Buku Nota"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "Terlalu lama masa diambil untuk menyemak bukti kelayakan. Pastikan anda bersambung ke internet dan cuba lagi."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Lihat $count$ lagi nota…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Lihat satu lagi nota…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Pengklipan dari lokasi ini tidak disokong."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Menunggu halaman..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Pratonton artikel"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Pratonton Evernote Web Clipper\u003Cbr>Apa-apa sahaja boleh berlaku!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Pratonton halaman penuh"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Pratonton tanda buku"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Teruskan"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Klip"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Simpan Artikel"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Simpan Halaman Penuh"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Simpan Pilihan"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Simpan URL"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Tambah catatan"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Tambah teg"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Tambah teks"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Buku nota"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Simpan"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Teg tidak disokong"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Tajuk"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Nota tidak bertajuk"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Nilaikan Sekarang"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Bagaimana anda menilai versi Web Clipper ini?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "Web Clipper baharu direka untuk membantu anda merakam, menyimpan, menanda serta berkongsi apa-apa sahaja daripada Web secara terpilih. Beritahu kami sejauh mana anda menyukainya."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Sejauh mana anda menyukai Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Segi Empat Sama"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Lakukan semula"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "Apabila anda menjemput rakan-rakan anda menggunakan Evernote, kami akan memberi anda mata ganjaran untuk digunakan dalam menaik taraf ke Evernote Plus atau Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Jemput Rakan"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Jemput rakan. Peroleh mata."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Segar semula senarai"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Simpan idea, perkara yang anda sukai, perkara yang anda dengari dan perkara yang anda lihat."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Batal"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Nama pengguna telah dinyahaktifkan.  Adakah anda ingin \u003Ca href='$url$'>aktifkan semula\u003C/a> akaun tersebut?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "Alamat e-mel adalah medan yang diperlukan."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Taip nombor yang anda lihat dalam gambar."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "Alamat e-mel kelihatan seperti tidak sah."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Pilih kata laluan antara 6 hingga 64 aksara dan mengandungi huruf, nombor dan tanda baca."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "Nama pengguna anda hendaklah bermula dan berakhir dengan huruf atau nombor, ia boleh mengandungi sengkang dan garis bawah."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "Kata laluan perlu diisi dalam medan."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "Alamat e-mel ini telah digunakan."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "Nama pengguna yang anda telah pilih sudah pun digunakan oleh pengguna lain."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Daftar"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Nama pengguna"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "Dengan mengklik Daftar, anda bersetuju terhadap \u003Ca href='$tos_url$' target='_blank' tabindex='6'>Syarat Perkhidmatan\u003C/a> dan \u003Ca href='$pp_url$' target='_blank' tabindex='7'>Dasar Privasi\u003C/a> kami.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Ditolak"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Nota Berkaitan"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote menemui sehingga tiga nota dalam akaun anda yang berkaitan dengan halaman yang baru sahaja anda klipkan dan tampilkannya di sini."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Ingat"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Ingat"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Ingat"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Peringatan Ditambah"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Peringatan Disimpan"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Tetapkan semula"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Tetapkan semula pintasan"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimumkan Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Segi Empat Sama Berbucu Bulat"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Simpan imej ke Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "Simpan PDF pada Evernote"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Simpan halaman penuh ke Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Simpan tangkapan skrin ke Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Simpan pilihan ke Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Simpan penanda buku ke Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Sambung ke nota Evernote dengan cepat melalui rekod Salesforce, tumpukan sepenuh perhatian tentang pelanggan dan gandakan pemahaman tambahan baharu kepada orang yang berhubung dengan anda."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Kongsikan nota dengan rakan sekerja, gandakan pemahaman tambahan baharu kepada orang yang berhubung dengan anda, malah pautkan nota anda secara terus pada rekod Salesforce jika anda memasang Evernote Business untuk penyepaduan Salesforce."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Lakukan lebih lagi dengan Evernote Business untuk Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Lakukan lebih lagi dengan Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Simpan pada Evernote"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Simpan artikel ini ke Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Simpan"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Tangkapan Skrin"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Klik\u003C/strong> untuk merakam skrin penuh atau \u003Cstrong>seret dan lepas\u003C/strong> untuk merakam kawasan"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Tangkapan skrin dirakam"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Cari akaun Evernote sama seperti anda mencari di web"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Hasil tertinggi\u003C/b> dalam akaun Evernote anda"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Daftar masuk\u003C/a> ke Web Clipper untuk melihat Hasil Berkaitan\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Carian serentak tidak tersedia buat masa ini kerana pelayan Evernote tidak boleh dicapai."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Tiada Hasil Berkaitan dalam nota Peribadi atau Perniagaan anda"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Tiada Hasil Berkaitan dalam nota anda"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ Hasil Berkaitan dalam nota Perniagaan anda",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 Hasil Berkaitan dalam nota Perniagaan anda"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ Hasil Berkaitan dalam nota Peribadi anda",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 Hasil Berkaitan dalam nota Peribadi anda"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ Hasil Berkaitan dalam nota anda",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 Hasil Berkaitan dalam nota anda"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Buang selama-lamanya"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Buang"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "Lihat Selanjutnya »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Pilih semua objek Penanda"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Pilih semua mesej"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Pilih buku nota"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Pilihan"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Mod pemilihan"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Hantar"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Hantar Maklum Balas"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Hantar laporan ke Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Hantar kepada:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "Untuk menukar - tekan gabungan kekunci pada papan kekunci anda sekarang"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alat Bentuk"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Kongsi"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Kongsi nota"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Kongsi klip ini"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Kongsi URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Buku nota dikongsi"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Dua pintasan sedang bercanggah"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Pintasan mestilah gabungan 3 atau kurang kekunci"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Tidak boleh menggunakan ESC dalam pintasan ini"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Lawati \u003Ca href='$href$' target='_blank'>halaman\u003C/a> pilihan untuk mempelajari dan menetapkan pintasan kegemaran anda. Tetapkan pintasan yang paling penting sekarang juga!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Kami telah menjadikan papan kekunci boleh ditatarajah."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Tempatkan kursor dalam medan dan tekan pintasan yang anda mahukan"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Klip e-mel"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Tunjukan lebih lagi pada saya"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Tunjukkan Nota Berkaitan"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Tunjukkan dialog klip yang berjaya"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Tunjukkan dialog klip yang berjaya tanpa Nota berkaitan"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Daftar masuk ke Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Daftar masuk ke Perniagaan"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Daftar keluar dari $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Didaftar masuk sebagai:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Daftar keluar"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Kod enam angka"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "Kami menghantar mesej teks yang mengandungi kod pengesahan ke $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Maaf"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Nampaknya anda sibuk!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Menambah banyak kandungan dalam tempoh masa yang singkat boleh menyebabkan gangguan perkhidmatan. Sila sahkan sama ada paras aktiviti semasa anda adalah sahih."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Anda perlu melengkapkan langkah tambahan untuk mencapai kandungan Perniagaan anda."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "Jika anda klik Abai, anda tidak boleh mengakses kandungan Perniagaan sehingga anda melengkapkan langkah ini. Sementara itu, anda boleh terus menggunakan kandungan Peribadi anda."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "Anda harus digesa untuk mengesahkan Perniagaan anda dalam tetingkap berasingan. Sila klik 'Cuba lagi' jika tetingkap ini tidak terbuka."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Susunan buku nota"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Cap"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alat cap"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Mulakan Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Mulakan Web Clipper secara Ringkas"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Subjek (diperlukan)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Sembang yang Dicadangkan"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Kenalan Cadangan"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "Maklumat sistem"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Maks 20 teg"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Pemilihan Teg"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Ambil Tangkapan Skrin"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Ambil tangkapan skrin"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Teks"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Kepada:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Tukar akaun"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Esok"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Kini, Web Clipper menyimpan klip $siteName$ sebagai nota bersih dan bebas selerak. Pilih apa yang anda suka, kemudian simpannya dalam Evernote, selama-lamanya.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Jangkaui penanda buku, mula mengklip."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Menyukai halaman ini? Simpannya."
+   },
+   "tryAgain": {
+      "message": "Cuba lagi"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Cubalah"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Saya perlukan bantuan untuk mendapatkan kod pengesahan"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Alat Taip"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Taipkan mesej anda..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Tidak dapat membuka mesej ini"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Buat asal"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Kemas kini"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Naik taraf"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Penanda buku"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL disalin ke papan klip"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Gunakan pemfailan pintar"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Versi:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Lihat laporan ranap"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Lihat dalam Evernote"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Lihat dalam Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Lihat perkara baharu dalam Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "Apa?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "Apakah ini?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Sembang tentang klip daripada Web. Bincangkan artikel atau kongsi klip beranotasi tanpa meninggalkan ruang kerja anda."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan $numUnknown$ orang lain pada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan 1 orang lain pada sembang ini",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan $numUnknown$ orang lain pada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan \u003Cb>$receiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan 1 orang lain pada sembang ini",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> menambahkan \u003Cb>you\u003C/b> pada sembang ini",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah menukar topik kepada \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan 1 orang lain daripada sembang ini",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar \u003Cb>$receiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> telah mengalih keluar 1 orang lain daripada sembang ini",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: $numNotes$ nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: $numNotes$ nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: $numNotes$ nota 1 buku nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: 1 nota",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: 1 nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: 1 nota 1 buku nota",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> menyertakan: 1 buku nota",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan $numUnknown$ orang lain pada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan 1 orang lain pada sembang ini",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan $numUnknown$ orang lain pada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan \u003Cb>$receiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> menambahkan 1 orang lain pada sembang ini"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah menukar topik kepada \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan 1 orang lain daripada sembang ini",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar \u003Cb>$receiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Seseorang\u003C/b> telah mengalih keluar 1 orang lain daripada sembang ini"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: $numNotes$ nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: $numNotes$ nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: $numNotes$ nota 1 buku nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: 1 nota"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: 1 nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: 1 nota 1 buku nota"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Seseorang\u003C/b> menyertakan: 1 buku nota"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>Anda\u003C/b> menambahkan \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>Anda\u003C/b> menambahkan \u003Cb>$receiverName$\u003C/b> pada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>Anda\u003C/b> telah menukar topik kepada \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan \u003Cb>$lastReceiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar \u003Cb>$receiverNames$\u003C/b> dan 1 orang lain daripada sembang ini",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar $numUnknown$ orang lain daripada sembang ini",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar \u003Cb>$receiverName$\u003C/b> daripada sembang ini",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Anda\u003C/b> telah mengalih keluar 1 orang lain daripada sembang ini"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: $numNotes$ nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: $numNotes$ nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: $numNotes$ nota 1 buku nota",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: 1 nota"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: 1 nota $numNotebooks$ buku nota",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: 1 nota 1 buku nota"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>Anda\u003C/b> menyertakan: 1 buku nota"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Wau!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Klik butang Evernote ini untuk mengumpulkan artikel WSJ untuk penyelidikan atau dibaca kemudian."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Anda ada nota lain seperti ini."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Zum masuk (langkah)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Zum keluar (langkah)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zum hingga muat"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zum hingga 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Zum Masuk"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Zum Keluar"
+   }
+}

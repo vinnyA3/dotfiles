@@ -1,0 +1,106 @@
+<html>
+<head>
+  <title>Scratch JS</title>
+
+  <link rel="stylesheet" href="repl.css"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+  <div class="top-nav">
+    <select class="execution-context-selector">
+    </select>
+  </div>
+  <div class="input">
+    <textarea id="input"></textarea>
+  </div>
+  <div class="output is-hidden">
+    <div class="resize" id="resize"></div>
+    <textarea id="output"></textarea>
+  </div>
+  <div class="actions">
+    <svg xmlns="http://www.w3.org/2000/svg" class="open-settings" viewBox="0 0 512 512">
+      <path d="M445.52 215H415.6c-3.92-15-9.94-29.44-17.7-42.55l21.24-21.28c6.44-6.43 6.44-16.9 0-23.33l-34.96-34.97c-6.43-6.44-16.87-6.44-23.3 0l-21.33 21.22c-13.1-7.8-27.55-13.8-42.55-17.7V66.43c0-9.1-7.18-16.48-16.28-16.48h-49.44c-9.1 0-16.28 7.4-16.28 16.47V96.4c-15 3.92-29.44 9.94-42.55 17.7l-21.28-21.2c-6.43-6.43-16.9-6.43-23.33 0l-34.97 34.96c-6.44 6.44-6.44 16.87 0 23.3l21.22 21.3C106.3 185.6 100.3 200 96.4 215H66.48c-9.1 0-16.48 7.2-16.48 16.28v49.44c0 9.1 7.4 16.3 16.5 16.28h29.93c3.9 15 9.9 29.4 17.7 42.55L92.9 360.83c-6.43 6.43-6.43 16.9 0 23.33l34.96 35c6.44 6.4 16.9 6.4 23.3 0l21.33-21.23c13 7.77 27.5 13.77 42.5 17.67v29.9c0 9.1 7.2 16.5 16.3 16.5h49.4c9.1 0 16.3-7.4 16.3-16.5v-29.9c15-3.95 29.42-9.97 42.53-17.7l21.28 21.2c6.44 6.4 16.9 6.4 23.3 0l34.98-34.95c6.44-6.43 6.45-16.87 0-23.3l-21.2-21.33c7.74-13.15 13.8-27.55 17.7-42.55h29.9c9.1 0 16.5-7.2 16.5-16.3v-49.43c0-9.08-7.4-16.28-16.5-16.28zM256 338.4c-45.5 0-82.4-36.9-82.4-82.4 0-45.5 36.9-82.4 82.4-82.4 45.5 0 82.4 36.9 82.4 82.4 0 45.5-36.9 82.4-82.4 82.4z"/>
+    </svg>
+    <button class="btn btn-secondary" id="toggleOutput">Toggle output</button>
+    <button class="btn btn-primary" id="executeScript">Run (<span id="combinationKey">&#8984;</span>&#8617;)</button>
+  </div>
+  <div class="settings">
+    <div class="settings__panel">
+      <div class="settings__title">
+        <h3 class="type--standard-weight">Settings</h3>
+        <div class="settings__spinner"></div>
+        <a class="settings__close-btn" href="#">&#10006;</a>
+      </div>
+
+      <div class="settings__content">
+        <div class="settings-item">
+          <h4>Transformer</h4>
+          <div class="transformer-options"></div>
+        </div>
+        <div class="settings-item">
+          <h4>Editor</h4>
+          <div>
+            <div class="settings__option-container">
+              <label>Tab size</label>
+              <input type="number" name="tabSize">
+            </div>
+            <div class="settings__option-container">
+              <label>
+                <input type="checkbox" name="indentWithTabs">
+                <span>Indent with tabs</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="settings-item">
+          <h4>Theme</h4>
+          <div>
+            <div class="settings__option-container">
+              <label>
+                <input type="radio" name="theme" value="default">
+                <span>Default</span>
+              </label>
+            </div>
+            <div class="settings__option-container">
+              <label>
+                <input type="radio" name="theme" value="solarized dark">
+                <span>Solarized Dark</span>
+              </label>
+            </div>
+            <div class="settings__option-container">
+              <label>
+                <input type="radio" name="theme" value="monokai">
+                <span>Monokai</span>
+              </label>
+            </div>
+            <div class="settings__option-container">
+              <label>
+                <input type="radio" name="theme" value="eclipse">
+                <span>Eclipse</span>
+              </label>
+            </div>
+            <div class="settings__option-container">
+              <label>
+                <input type="radio" name="theme" value="neo">
+                <span>Neo</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="settings-item settings-item--full-width">
+          <h4>Additional Scripts</h4>
+          <div>
+            <div id="includesContainer"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="vendor.js"></script>
+
+  <script src="repl.js"></script>
+</body>
+</html>

@@ -1,0 +1,715 @@
+body {
+    background-color: #778895;
+    background-repeat: repeat;
+    background-size: 1066px 940px;
+    margin: 0;
+    overflow: auto;
+}
+
+body.iframe #main {
+    margin: 2px auto;
+}
+
+body.iframe #done {
+    display: block;
+}
+
+body.newui #done {
+    display:none;
+}
+
+body.iframe {
+    background-color: transparent;
+    background-image: none;
+    overflow: hidden;
+}
+
+body.newui {
+    overflow-y: scroll;
+}
+
+#main {
+    background-color: #3C454C;
+    border: 1px solid #272D33;
+    border-radius: 6px;
+    margin: 20px auto 20px auto;
+    position: relative;
+    width: 614px;
+}
+
+body.newui #main {
+    background-color: #3C454C;
+    border: none;
+    border-radius: unset;
+    width: auto;
+}
+
+#main:before {
+    background-clip: content-box;
+    background-color: #272D33;
+    border: 2px solid rgba(178, 186, 193, 0.6);
+    border-radius: 6px;
+    bottom: -3px;
+    content: "";
+    left: -3px;
+    position: absolute;
+    right: -3px;
+    top: -3px;
+    z-index: -1;
+}
+
+#logo {
+    background-image: url(../images/clipboard.png), url(../images/evernote_web_clipper.png);
+    background-position: 0, 49px 50%;
+    background-size: 58px 58px, 134px 36px;
+    height: 58px;
+    margin: 4px 0 0 12px;
+}
+
+body.china #logo {
+    background-image: url(../images/clipboard.png), url(../images/evernote_web_clipper_china.png);
+    background-position: 0, 58px 11px;
+    background-size: 58px 58px, 48px 47px;
+}
+
+body.newui #logo {
+    display: none;
+}
+
+body.newui #versionInfo {
+    padding-top: 12px;
+}
+
+
+#versionInfo, #userStatus, #defaultClipping {
+    color: #82919D;
+    font-family: GothamBold;
+    font-size: 12px;
+    margin: 0 0 8px 0;
+    padding: 0 0 0 24px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#version, #username, #signOut {
+    color: #E4EBF0;
+    font-family: GothamMedium;
+}
+
+#version {
+    user-select: initial;
+}
+
+#signOut {
+    color: #209BC9;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin-left: 5px;
+}
+
+.sectionAccountDropdown {
+    position: relative;
+}
+
+.add-account {
+    display: none !important;
+}
+
+#userStatus, #alwaysStartInNotebookOption, #bizAlwaysStartInNotebookOption {
+    display: none;
+}
+
+body.loggedIn #userStatus {
+    display: block;
+}
+
+body.loggedIn #alwaysStartInNotebookOption, body.loggedIn #bizAlwaysStartInNotebookOption {
+    display: inline-block;
+}
+
+#tabs {
+    padding: 0 24px 0 24px;
+}
+
+.tab {
+    color: #82919D;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.tab.pressed {
+    color: white;
+}
+
+.tab:first-child {
+    padding-right: 34px;
+}
+
+.tab:last-child {
+    padding-left: 34px;
+}
+
+#optionsTab {
+    background-position: calc(50% - 17px) 100%;
+}
+
+#shortcutsTab {
+    background-position: 50% 100%;
+}
+
+#legalTab {
+    background-position: calc(50% + 17px) 100%;
+}
+
+.pinch {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.pinch > div {
+    display: none;
+    position: relative;
+    transition: left 200ms ease;
+    vertical-align: top;
+    width: 614px;
+}
+
+.pinch.options > #optionsContainer {
+    display: inline-block !important;
+}
+
+.pinch.shortcuts > #shortcutsContainer {
+    display: inline-block !important;
+}
+
+.pinch.legal > #licenseContainer {
+    display: inline-block !important;
+}
+
+/* options */
+table {
+    border-spacing: 0;
+    color: #A2AEB5;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    padding: 0 24px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    width: 100%;
+}
+
+#optionsContainer td {
+    border-width: 10px 0;
+    vertical-align: top;
+}
+
+#optionsContainer .tagSelection td {
+    border-width: 0;
+}
+
+td {
+    border-color: transparent;
+    border-style: solid;
+    padding: 0;
+}
+
+#optionsContainer tr:first-child td, #shortcutsContainer tr:first-child td {
+    border-top-width: 0;
+}
+
+#optionsContainer tr:last-child td, #shortcutsContainer tr:last-child td {
+    border-bottom-width: 0;
+}
+
+#optionsContainer td:first-child {
+    border-right-width: 20px;
+    max-width: 200px;
+}
+
+input[type=radio] + label:before {
+    margin: 0 32px 0 3px;
+}
+
+.inputLine {
+    margin: 12px 0;
+}
+
+.inputLine:first-child {
+    margin-top: 0;
+}
+
+.inputLine:last-child {
+    margin-bottom: 0;
+}
+
+input[type=checkbox] + label:before {
+    margin-right: 29px;
+}
+
+.multiInput {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+label span {
+    max-width: calc(100% - 51px);
+}
+
+#startNotebook {
+    text-shadow: none;
+}
+
+#startNotebook, #alwaysTags, #clipAction {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    vertical-align: middle;
+}
+
+#alwaysTags::-webkit-input-placeholder,
+#alwaysTags::-moz-placeholder {
+    padding: 2px 0;
+}
+
+input[type=text] {
+    border: 1px solid #232A30;
+    border-radius: 3px;
+    color: #3A4045;
+    height: 24px;
+    line-height: 24px;
+    outline: none;
+    padding: 0 7px 4px 7px;
+    text-shadow: none;
+    width: 152px;
+}
+
+#shortcutsContainer.disabled input[type=text] {
+    background-color: #414C55;
+    color: #576876;
+}
+
+select {
+    width: 168px;
+    height: 24px;
+    -moz-appearance: none;
+}
+
+body.safari #logsRow {
+    display: none;
+}
+
+#logDescription {
+    white-space: normal;
+    line-height: 1.2;
+}
+
+#copyLogs, #resetAllOptions {
+    border: 1px solid #209BC9;
+    border-radius: 3px;
+    color: #209BC9;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    margin-top: 10px;
+    padding: 0 10px;
+    text-shadow: none;
+    background: none;
+}
+
+#footer {
+    padding: 17px 24px;
+}
+
+#copyright {
+    color: #A2AEB5;
+    font-family: "GothamBook", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+    height: 28px;
+}
+
+#done {
+    background-color: #26B064;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 rgb(51, 204, 120);
+    color: white;
+    cursor: pointer;
+    display: none;
+    float: right;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 26px;
+    padding: 0 15px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* developer options */
+h2 {
+    color: white;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin: 25px 0 0 0;
+}
+
+/* saving */
+#savingContainer {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: all 250ms linear;
+    width: 100%;
+    z-index: 1;
+}
+
+#saving {
+    background-clip: border-box;
+    background-color: white;
+    border: 4px solid rgba(250, 250, 250, 0.20);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #6D7880;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: calc(50% - 32px);
+    width: 180px;
+}
+
+#saving span {
+    line-height: 56px;
+    vertical-align: middle;
+}
+
+#savingIcon {
+    background-image: url(../images/options_saving.gif);
+    background-size: 26px;
+    display: inline-block;
+    height: 26px;
+    margin: 0 8px 0 0;
+    width: 26px;
+}
+
+#savingContainer.invisible {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#savingContainer.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+#optionsContainer, #shortcutsContainer, #licenseContainer {
+    height: 100%;
+    overflow: auto;
+    padding: 20px 0 25px 0;
+    box-sizing: border-box;
+}
+
+/* keyboard shortcuts */
+#resetShortcuts {
+    background-color: #5B6871;
+    border-radius: 2px;
+    box-shadow: inset 0 1px #6B7A86;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    line-height: 22px;
+    margin: 14px 0 16px 0;
+    padding: 0 8px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#clipShortcutsHeader, #markupShortcutsHeader {
+    height: 35px;
+}
+
+#clipShortcutsHeader th, #markupShortcutsHeader th {
+    vertical-align: bottom;
+}
+
+#shortcutsContainer input[type=text] {
+    width: 132px;
+}
+
+#shortcutsContainer th {
+    font-family: GothamBold;
+    text-align: left;
+}
+
+.isEdge .hiddenForEdge {
+    display: none;
+}
+
+#shortcutsContainer td {
+    border-width: 4px 0;
+    position: relative;
+}
+
+#shortcutsContainer td:first-child {
+    width: 274px;
+}
+
+.shortcutTooltip:before {
+    background-image: url(../images/tooltip-arrow-left.png);
+    background-size: 8px 12px;
+    content: "";
+    height: 12px;
+    left: 151px;
+    position: absolute;
+    width: 8px;
+    z-index: 1;
+}
+
+.shortcutTooltip:after {
+    background-color: #FAFAFA;
+    border: 1px solid #232A30;
+    border-radius: 3px;
+    color: #575757;
+    content: attr(tooltip);
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    left: 158px;
+    line-height: 12px;
+    padding: 5px 7px;
+    position: absolute;
+    text-shadow: none;
+    white-space: normal;
+    width: 122px;
+}
+
+.shortcutTooltip.error input {
+    background-image: url(../images/error-clip.png);
+    background-position: calc(100% - 5px) 50%;
+    background-size: 16px 16px;
+}
+
+.vanish:before, .vanish:after {
+    opacity: 0;
+    animation-name: fadeout;
+    animation-duration: 200ms;
+}
+
+[message='cyclePreviews'] {
+    line-height: normal;
+    white-space: normal;
+}
+
+/* legal notices */
+#licenseContainer {
+    color: #A2AEB5;
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.license {
+    line-height: 18px;
+    padding: 15px 24px 0 24px;
+}
+
+.license p, .license li {
+    white-space: normal;
+}
+
+[message='legalNoticesTitle'] {
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0 24px;
+}
+
+strong {
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    white-space: normal;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #logo {
+        background-image: url(../images/clipboard@2x.png), url(../images/evernote_web_clipper@2x.png);
+    }
+
+    body.china #logo {
+        background-image: url(../images/clipboard@2x.png), url(../images/evernote_web_clipper_china@2x.png);
+    }
+
+    #savingIcon {
+        background-image: url(../images/options_saving@2x.gif);
+    }
+
+    .shortcutTooltip:before {
+        background-image: url(../images/tooltip-arrow-left@2x.png);
+    }
+
+    .shortcutTooltip.error input {
+        background-image: url(../images/error-clip@2x.png);
+    }
+}
+
+tr.keyline td {
+    border: none 0;
+}
+
+tr.keyline div {
+    margin: 16px 0 27px 0;
+    width: 100%;
+    height: 2px;
+    background: #3b444b;
+}
+
+.sectionTitle {
+    display: flex;
+}
+
+.sectionIcon {
+    flex: 0 0 24px;
+    height: 24px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    background-image: url(../images/options-avatar-empty.svg);
+    border-radius: 50%;
+    align-self: center;
+}
+
+.businessAccountSettings .sectionIcon {
+    background: no-repeat url(../images/options-avatar-business.svg);
+}
+
+.sectionGeneralOptions .sectionIcon {
+    background: no-repeat url(../images/options-general-options.svg);
+}
+
+.sectionName {
+    margin-left: 10px;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    max-width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    align-self: center;
+}
+
+#defaultClipping {
+    display: flex;
+}
+
+#defaultClipping > * {
+    align-self: center;
+}
+
+.tagSelection .inputLine {
+    margin: 4px 0;
+}
+
+#accountSelector {
+    margin: 0;
+}
+
+#defaultClipping {
+    display: inline-block;
+}
+
+#defaultClipping > .defaultClippingAccount {
+    float: left;
+}
+
+#defaultAccount {
+    display: inline-block;
+    margin: 0;
+}
+
+#defaultAccount {
+    display: inline-block;
+    margin: 0;
+}
+
+#defaultAccount > .asSelected {
+    height: auto;
+}
+
+#defaultAccount > .asField {
+    display: block;
+}
+
+.iframe .asDropdown {
+    width: 96%;
+}
+
+#defaultAccount > .asField > .asUserIcon {
+    display: none;
+}
+
+#defaultAccount > .asField > .asLabels {
+    display: inline-block;
+    float: left;
+}
+
+#defaultAccount > .asField > .asDropdownIcon {
+    display: inline-block;
+    float: right;
+    position: relative;
+    height: 16px;
+}
+
+#defaultAccount > .asField > .asDropdownIcon.hidden {
+    display: none;
+}
+
+#defaultAccount > .asField > .asLabels > .asHeader {
+    padding-right: 5px;
+    font-size: 12px;
+    max-width: 300px;
+}
+
+#defaultAccount > .asField > .asLabels > .asDescription {
+    max-width: 300px;
+}
+
+#defaultAccountDropdown .asUserIcon {
+    display: none;
+}
+
+.nbAddNotebookBlock {
+    display: none;
+}
+
+.nbDropdown {
+    width: 284px !important;
+}
+
+.accountSettings {
+    display: none;
+}
+
+body.loggedIn .accountSettings {
+    display: table-row-group;
+}
+
+.businessAccountSettings {
+    display: none;
+}
+
+body.isOnlyBusinessAccount .accountSettings {
+    display: none;
+}
+
+#toggleAccountShortcutRow {
+    display: table-row;
+}
+
+body.isOnlyBusinessAccount #toggleAccountShortcutRow {
+    display: none;
+}
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Collection Runner</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: OpenSansSemibold;
+      src: url('../assets/fonts/OpenSans/OpenSans-Semibold.ttf');
+    }
+    @keyframes orbit {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .pm-loader.is-exiting {
+      opacity: 0;
+    }
+
+    .pm-loader.is-hidden {
+      display: none;
+    }
+
+    body {
+      margin: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .pm-loader {
+      width: 100%;
+      height: 100%;
+      z-index: 300;
+      position: absolute;
+      background: #E8E0CB;
+      transition: opacity 0.5s linear;
+    }
+
+    .pm-loader-text{
+      color: #ef5b25;
+      height: 70px;
+      font-size: 14px;
+      text-align: center;
+      position: relative;
+		  -webkit-user-select: none;
+      font-family: OpenSansSemibold, sans-serif;
+    }
+
+    .pm-loader-text li {
+      opacity: 0;
+      display: none;
+      list-style: none;
+      transition: 0.5s;
+    }
+
+    .pm-loader-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .pm-loader-atoms {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .pm-loader-center-atom {
+      top: 33px;
+      left: 33px;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      border-radius: 50%;
+      background-color: #ef5b25;
+    }
+
+    .pm-loader-orbit-1 {
+      top: 20px;
+      left: 20px;
+      width: 56px;
+      height: 56px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #ef5b25;
+    }
+
+    .pm-loader-orbit-2 {
+      top: 8px;
+      left: 8px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      border: 1px solid #ef5b25;
+    }
+
+    .pm-loader-orbit-3 {
+      top: -4px;
+      left: -4px;
+      width: 104px;
+      height: 104px;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid #ef5b25;
+    }
+
+    .pm-loader-atom-1 {
+      width: 8px;
+      height: 8px;
+      margin-top: 4px;
+      margin-left: 4px;
+      border-radius: 50%;
+      background-color: #ef5b25;
+      transform-origin: 24px 24px;
+      animation: orbit 1s infinite;
+      animation-timing-function: linear;
+      -webkit-transform-origin: 24px 24px;
+    }
+
+    .pm-loader-atom-2 {
+      width: 8px;
+      height: 8px;
+      margin-top: 8px;
+      margin-left: 8px;
+      border-radius: 50%;
+      background-color: #ef5b25;
+      transform-origin: 32px 32px;
+      animation: orbit 2s infinite;
+      animation-timing-function: linear;
+      -webkit-transform-origin: 32px 32px;
+    }
+
+    .pm-loader-atom-3 {
+      width: 8px;
+      height: 8px;
+      margin-top: 11px;
+      margin-left: 11px;
+      border-radius: 50%;
+      background-color: #ef5b25;
+      transform-origin: 41px 41px;
+      animation: orbit 3s infinite;
+      animation-timing-function: linear;
+      -webkit-transform-origin: 41px 41px;
+    }
+
+    .app-root {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .app-root.is-hidden {
+      display: none;
+    }
+  </style>
+  <body>
+    <div class='pm-loader'>
+    	<div class="pm-loader-container">
+    		<div class="pm-loader-text">
+    			<li>Opening control valves to antimatter nacelles...</li>
+    			<li>Fastening seatbelts...</li>
+    			<li>Distorting space-time continuum...</li>
+    			<li>Moving satellites into position...</li>
+    			<li>Resolving transporter buffer...</li>
+    			<li>Launching escape pods...</li>
+    		</div>
+    		<div class='pm-loader-atoms'>
+    			<div class='pm-loader-center-atom'></div>
+    			<div class='pm-loader-orbit-1'><div class='pm-loader-atom-1'></div></div>
+    			<div class='pm-loader-orbit-2'><div class='pm-loader-atom-2'></div></div>
+    			<div class='pm-loader-orbit-3'><div class='pm-loader-atom-3'></div></div>
+    		</div>
+    	</div>
+    </div>
+    <div class='app-root'></div>
+    <script type="text/javascript" src="../js/utils/preloader.js"></script>
+    <script type="text/javascript" src="../js/libs/sails.io.js"></script>
+    <script type="text/javascript" src="../js/libs/vkbeautify.2.0.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/runner.js"></script>
+    <script type="text/javascript" src="../js/libs/ucsv-1.1.0-min.js"></script>
+    <script type="text/javascript" src="../js/libs/converters/all-converters.js"></script>
+    <script type="text/javascript" src="../js/libs/uri.js"></script>
+    <script type="text/javascript" src="../js/libs/oauth.js"></script>
+    <script type="text/javascript" src="../js/libs/hawk.js"></script>
+    <!-- Tester sandbox -->
+    <iframe id="tester_sandbox" seamless="seamless" src="tester_sandbox.html" style='display: none;'></iframe>
+  </body>
+</html>

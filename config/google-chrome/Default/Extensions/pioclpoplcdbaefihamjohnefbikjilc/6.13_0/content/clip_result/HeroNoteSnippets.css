@@ -1,0 +1,114 @@
+table {
+    border: none;
+    border-spacing: 0;
+}
+
+td {
+    padding: 0;
+    vertical-align: top;
+}
+
+td:first-child {
+    padding: 0 24px 0 0;
+}
+
+.hnsNote {
+    color: #8A9CA8;
+    cursor: pointer;
+    font-family: GothamMedium, Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    margin: 0 0 18px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    page-break-inside: avoid;
+    width: 190px;
+}
+
+tr:last-child .hnsNote:last-child {
+    margin: 0;
+}
+
+.hnsNote.hnsHover .hnsTitle, .hnsNote.hnsHover .hnsDate, .hnsNote.hnsHover .hnsSnippet {
+    color: white;
+}
+
+.hnsThumbContainer {
+    background-color: #21262C;
+    height: 144px;
+    margin: 0 0 11px 0;
+    overflow: hidden;
+    position: relative;
+    width: 190px;
+}
+
+.hnsThumbContainer img {
+    position: relative;
+}
+
+.hnsTitle {
+    color: #C8D4DC;
+    font-size: 12px;
+    font-weight: bold;
+    height: 15px;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hnsDateUrl {
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hnsUrl {
+    margin-left: 8px;
+}
+
+.hnsUrl:hover {
+    text-decoration: underline;
+}
+
+.hnsSnippet {
+    line-height: 15px;
+    margin: 2px 0 0 0;
+    max-height: 75px;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.hnsNote.hnsHasNotebookName .hnsSnippet {
+    max-height: 60px;
+}
+
+.hnsNote.hnsHero .hnsSnippet {
+    max-height: 45px;
+}
+
+.hnsNote.hnsHero.hnsHasNotebookName .hnsSnippet {
+    max-height: 30px;
+}
+
+.hnsNote.hnsGrid .hnsSnippet {
+    max-height: 30px;
+}
+
+.hnsNotebookName {
+    background-image: url(../../images/notebook_business_clip_result.png);
+    background-position: 0 50%;
+    background-size: 11px 9px;
+    color: #C8D4DC;
+    cursor: default;
+    margin: 4px 0 0 0;
+    overflow: hidden;
+    padding: 0 0 0 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .hnsNotebookName {
+        background-image: url(../../images/notebook_business_clip_result@2x.png);
+    }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+//
+// This file is part of ColorZilla
+//
+// Written by Alex Sirota (alex @ iosart.com)
+//
+// Copyright (c) iosart labs llc 2011, All Rights Reserved
+//
+-->
+<html>
+<head>
+    <title>--ColorZilla Options</title>
+    <link rel="stylesheet" type="text/css" href="/css/page.css">
+    <script type="text/javascript" src="/js/chrome-utils.js"></script>
+    <script type="text/javascript" src="/lib/jquery-1.7.min.js"></script>
+</head>
+<body>
+    <div class="panel heading">
+        <img src="/images/icon-48.png" width="48" height="48" alt="">
+        <h1>--ColorZilla Options</h1>
+    </div>
+    <div class="panel options-panel">
+        <table>
+            <tr id="eyedropper-options">
+                <th>--Eyedropper</th>
+                <td>
+                    <input id="cz-autostart" class="cz-autostart" type="checkbox" value="1"/>
+                    <label for="cz-autostart" class="cz-autostart">--Automatically start eyedropper when main button is clicked.</label><br class="cz-autostart">
+                    
+                    <input id="cz-outline" type="checkbox" value="1"/>
+                    <label id="cz-outline-label" for="cz-outline">--Outline hovered elements.</label><br>
+
+                    <input id="cz-cursor-crosshair" type="checkbox" value="1"/>
+                    <label id="cz-cursor-crosshair-label" for="cz-cursor-crosshair">--Change cursor to crosshair.</label>
+                </td>
+            </tr>
+             <tr id="autocopy-options">
+                <th>--Auto-copy</th>
+                <td>
+                    <input id="cz-autocopy" type="checkbox" value="1"/>
+                    <label id="cz-autocopy-label" for="cz-autocopy">--Automatically copy picked color to clipboard.</label><br>
+
+                    <div style="display: none">
+                    <input id="cz-autocopy-show-message" type="checkbox" value="1"/>
+                    <label for="cz-autocopy-show-message">--Show autocopy confirmation message.</label><br>
+                    </div>
+                    
+                    <label class="indent" for="cz-autocopy-format" id="cz-autocopy-format-label">--Auto-copy color format: </label>
+                    <select id="cz-autocopy-format">
+                        <option value="hex">#RRGGBB</option>
+                        <option value="hex-no-hash">RRGGBB</option>
+                        <option value="rgb">rgb(R, G, B)</option>
+                        <option value="rgb-perc">rgb(R%, G%, B%)</option>
+                        <option value="hsl">hsl(H, S%, L%)</option>
+                    </select>
+                </td>
+            </tr>
+             <tr id="color-format-options">
+                <th>--Color Format</th>
+                <td>
+                    <input id="cz-hex-lowercase" type="checkbox" value="1"/>
+                    <label id="cz-hex-lowercase-label" for="cz-hex-lowercase">--Show Hex codes in lowercase.</label><br>
+                </td>
+            </tr>
+
+            <tr id="keyboard-shortcut-options">
+                <th>--Keyboard Shortcuts</th>
+                <td>
+                    <input id="cz-keyboard-shortcuts-enabled" type="checkbox" value="1"/>
+                    <label id="cz-keyboard-shortcuts-enabled-label" for="cz-keyboard-shortcuts-enabled">--Enable color picking from page using keyboard shortcut.</label><br>
+                    <label class="indent" for="cz-keyboard-shortcuts-char" id="cz-keyboard-shortcuts-char-label">--Shortcut:</label><span id="cz-keyboard-shortcut-modifier-label"></span><select id="cz-keyboard-shortcuts-char"></select>
+                </td>
+            </tr>
+        </table>
+
+<div id="footer">
+  <button id="save-button">--Save</button>
+  <span id="status"></span>
+</div>
+
+    </div>
+
+<script type="text/javascript" src="/js/options.js"></script>
+
+</body>
+</html>

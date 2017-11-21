@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "FM"
+   },
+   "April": {
+      "message": "April"
+   },
+   "Aug": {
+      "message": "Aug"
+   },
+   "August": {
+      "message": "Augusti"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Klipp till Evernote"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Företag"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Stäng"
+   },
+   "Dec": {
+      "message": "Dec"
+   },
+   "December": {
+      "message": "December"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Okänt fel"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Okänd anteckningsbok"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Tillstånd nekades"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Tillståndet nekades eftersom användaren är inaktiv"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "För många misslyckade inloggningsförsök. Försök igen senare."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Web Clipper använder cookies för att identifiera ditt konto. Kontrollera att tredjepartscookies från Evernote accepteras i webbläsarinställningarna."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Aktivera cookies för att använda Web Clipper"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Cookies krävs för att Web Clipper ska fungera på rätt sätt. Aktivera cookies i webbläsarens inställningar."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "Ett fel inträffade när anteckningsboken skapades."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Tyvärr, det finns redan en anteckningsbok med det namnet."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Ogiltigt anteckningsboksnamn."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "Du har nått det maximala antalet anteckningsböcker."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Ett problem uppstod vid kommunikation med servern [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernotes servrar är inte tillgängliga för tillfället, försök igen senare"
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Ingen internetanslutning"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "Du har inga anteckningsböcker ännu."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "Det uppstod ett fel när anteckningsböckerna uppdaterades."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Använd Evernote-tillägget för att spara saker du ser på webben till Evernotekontot."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Feb"
+   },
+   "February": {
+      "message": "Februari"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Fre"
+   },
+   "Friday": {
+      "message": "Fredag"
+   },
+   "Jan": {
+      "message": "Jan"
+   },
+   "January": {
+      "message": "Januari"
+   },
+   "July": {
+      "message": "Juli"
+   },
+   "June": {
+      "message": "Juni"
+   },
+   "Last_used": {
+      "message": "Senast använd"
+   },
+   "March": {
+      "message": "Mars"
+   },
+   "May": {
+      "message": "Maj"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Mån"
+   },
+   "Monday": {
+      "message": "Måndag"
+   },
+   "Nov": {
+      "message": "Nov"
+   },
+   "November": {
+      "message": "November"
+   },
+   "Oct": {
+      "message": "Okt"
+   },
+   "October": {
+      "message": "Oktober"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "EM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Personligt"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "Lör"
+   },
+   "Saturday": {
+      "message": "Lördag"
+   },
+   "Sept": {
+      "message": "Sept"
+   },
+   "September": {
+      "message": "September"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Logga in"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Sammanfattning"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Sön"
+   },
+   "Sunday": {
+      "message": "Söndag"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "Tor"
+   },
+   "Thursday": {
+      "message": "Torsdag"
+   },
+   "Today": {
+      "message": "Idag"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Tis"
+   },
+   "Tuesday": {
+      "message": "Tisdag"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Ons"
+   },
+   "Wednesday": {
+      "message": "Onsdag"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Lägg till ett meddelande"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Lägg till konto"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Lägg till företagskonto"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Lägg till ett datum"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Lägg till personligt konto"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Lägg till en påminnelse"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Lägg till etiketter"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Lägg till uppgift"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Efter urklipp"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Alla fält är obligatoriska."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Visa alltid"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Börja alltid i"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Tagga alltid med"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Kommentera"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Använd"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Godkänd"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Pil"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pilverktyg"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artikel"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Det går inte att klippa hela den här sidan som en artikel. Markera den del du vill klippa."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "Åtkomsten för det här programmet återkallades med Evernotes webbtjänst. Ange ditt lösenord igen."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Autentisering pågår"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "Din webbläsares inställningar är oförenliga med Evernote-tillägget. Prova med att återställa Chromes sekretessinställningar till standard: Tillåt att lokala data sparas och blockera INTE cookies från tredje part. Du kanske vill inaktivera andra tillägg från tredje part."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Stäng automatiskt klippfunktionen"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Njut av extra funktioner när du uppgraderar till Evernote Plus eller Evernote Premium."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Undvik gränsen. Uppgradera till Evernote Plus nu för 1 GB överföringar per månad."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Uppgradera till Premium om du vill ha tillgång till urklippta artiklar på mobila enheter även när du är offline. Som Premium-användare kan du ställa in offline-anteckningsböcker och snabbt komma åt dina anteckningar när som helst."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Vi introducerar Evernote Plus och Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Uppgradera för 1 GB överföringar per månad"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Klipp ut på bordsdatorn och läs på mobilen"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Du delar företagsanteckningar eller företagsanteckningsböcker i den här chatten som omfattar personer utanför ditt företag. Klicka på OK för att dela med alla chattdeltagare."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Företag"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Företagsanteckningsbok"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Kan redigera"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Får redigera och bjuda in"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Kan visa"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Kan inte spara klipp"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Det går inte att spara detta klipp"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Kan du inte hitta det?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Ange siffror"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Den här versionen av Evernote Web Clipper är inte längre kompatibel med Evernote Service. Installera den senaste versionen."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Visa inte det här meddelandet igen"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Rensa alla etiketter"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Förenklad artikel"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Klipp det"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Klipp:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Urklippsalternativ"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Klipp från $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Stäng webbklipparen eller aktiv panel"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Samarbeta i Work Chat"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Färger"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Bekräfta aktivitet"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Anslut till Google"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Kontakta Evernotes support"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">Klipper\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Klipper\u003C/span>\u003Cspan id=\"title\">“…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Klipp"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">Synkar\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Synkronisering"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Bildklipp"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Klipp PDF"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Klipp hela sidan"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Klipp skärmbild"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Klipp markering"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Klipp bokmärke"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Du måste logga in med knappen Klipp till Evernote innan du kan skapa klipp"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Fortsätt"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Minska artikelmarkering"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Minska artikelmarkering"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Kopiera till urklipp"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. Alla rättigheter reserverade.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Personuppgiftspolicy\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Användarvillkor\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "Företagsanteckningar för $bizName$",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Skapa"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Skapa ny anteckningsbok"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Beskär"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Webbklipparen för Safari kan inte klippa ut den här sidan eftersom sidans utgivare har begränsat säkerhetspolicyn för innehållet."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Gå igenom sidofältets förhandsvisning nedåt ett steg i taget"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Standardkonto för urklipp:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Sista"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Tar bort klippt anteckning..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Ogiltig eller utgången autentisering. Logga in med knappen i verktygsfältet och försök igen."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Kunde inte spara \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "Klippet \"$title$\" har misslyckats för många gånger och kan inte försökas igen.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Urklippt till \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Försök igen"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Kunde inte spara \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Kunde inte spara klipp"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Ett okänt fel inträffade när ett av dina klipp skulle sparas. Felmeddelande: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Ignorera"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Avfärda tips"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Klar"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Visa inte detta igen"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Ellips"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "E-postadress"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "E-post"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "Du kan högst skicka $limit$ e-postmeddelanden per dag",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>E-postanteckning: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Aktivera kortkommandon"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Ange kod"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Ange e-postadress(er)"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Skriv namn"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Ange namn eller e-postadress"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Felloggar"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote spårar inte dina sökord eller resultat och delar inte din information med sökmotorer."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Utöka artikelmarkering"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Utöka artikelmarkering"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "Inloggningssessionen har gått ut. Försök igen."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Uppdatering av lösenord behövs."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Feedback till Evernote (obligatoriskt)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Anteckningen sparas..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Hitta en anteckningsbok"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Hitta kontakter"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Avsluta rundturen"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Nästa"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Sprid budskapet."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Sprid budskapet! Berätta för familj, vänner och kollegor om den nya Web Clipper."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Anteckningsbok"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Webbklipparen"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Rundtur"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Ta skärmbilder med ett enda klick."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Klicka på \u003Cstrong>Skärmbild\u003C/strong> i sidofältet."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Skärmdump"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Använd märkningsverktyg för att snabbt och tydligt kommunicera något till dig själv liksom till kollegor och vänner. Använd pil, markör och märkpenna för att fokusera på viktigt text."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "Stämpelverktyget ger ett enkelt system till att godkänna, avvisa eller ta fram favoritinnehåll.\u003Cbr/>Gör känslig information suddig med pixeleringsverktyget. Framhäv vad som helst."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Nu markerar vi din skärmbild."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Markera webbklipp"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Det kan inte bli enklare att dela dina webbklipp."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Klicka på \u003Cstrong>dela-knappen\u003C/strong> i sidofältet och testa."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "När du har valt ett format till ditt webbklipp (förenklad artikel, märkt artikel o.s.v.) kan du dela den på tre sätt: Posta till sociala nätverk inklusive Facebook, Twitter och LinkedIn, fånga länken till webbklippet eller skicka via e-post."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Delningsalternativ"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Dela webbklipp enkelt"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Nyheter i Web Clipper"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "Med nya Web Clipper kan du klippa, lägga till bokmärken, skärmbilder, märka och spara innehåll du hittar på nätet, och dessutom enkelt och selektivt dela det med vänner."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "För en renare läsupplevelse online eller i ditt Evernote-konto använder du vyn Förenklad artikel för att ta bort onödiga störningsmoment från sidan."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Klicka på \u003Cstrong>Förenklad artikel\u003C/strong> för at visa, sedan spara till ditt Evernote-konto om du vill."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Kom i gång med den nya Web Clipper"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Klipp och märk artiklar från internet"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Har du glömt lösenordet?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>Från: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Helsida"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Det går inte att klippa hela den här sidan i Evernote. Markera den del du vill klippa."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Ange den verifieringskod som visas i din Google-autentiseringsapp."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "Allmänna alternativ"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Skaffa ytterligare 1 GB"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Globalt:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Du måste ha en konversation markerad att för att klippa ut från Gmail."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Du kan nu klippa mejltrådar från Gmail direkt till ditt Evernote-konto."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Skaffa Premium"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Du kan nu klippa mejltrådar från Inbox by Gmail direkt till ditt Evernote-konto."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Jag förstår"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Skapa ett Evernote-konto"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Dölj liknande anteckningar"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Överstrykningspenna"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Ignorera"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Det går inte att klippa den här sidan på grund av begränsningar i webbläsaren"
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Bildmärkningsverktyg"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Ta med bilaga"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Ta med ursprungligt mejl"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "Den kod du angav är felaktig."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Installera nu"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Kortkommandon"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Senaste åtgärd"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Senaste anteckningsbok"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Läs mer"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Juridisk information"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper använder följande Open Source-programvara"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Linje"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Laddar..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Loggar in i Evernote"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Logga in"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Lösenord"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Lösenord är obligatoriskt."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Ogiltigt lösenord"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Kom ihåg mig"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Visa liknande resultat när du söker på webben"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "E-post eller användarnamn"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Ett användarnamn krävs."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Användarnamnet och lösenordet matchar inte någon befintlig användare."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Okänt användarnamn, eller prova Evernote International"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Det finns ingen användare med det namnet."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "När det här är aktiverat kommer sökningar i sökmotorer som stöds också att göras i ditt Evernote-konto."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Exportera loggfiler"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Följ"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Välj loggfil: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Händelseloggfiler"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Post"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Tuschpenna"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Märkningsverktyg"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Markering:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Meddelande:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Mer"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "Mer information"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ fler sidor",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Flytta artikelmarkeringen nedåt"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Flytta artikelmarkeringen uppåt"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "Du har nästan nått din överföringsgräns för den här månaden."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "Du har bara 5 MB kvar. Uppgradera om du vill överföra mer varje månad."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "Du har bara 250 MB kvar. Uppgradera om du vill överföra mer varje månad."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "Du har bara 250 MB kvar."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper kommer att föreslå taggar och anteckningsböcker baserade på klippets innehåll. Redigera denna funktion och andra inställningar i Web Clipper \u003Cspan class='newFeatureOptionsPseudoLink'>Alternativ\u003C/span>."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Smart arkivering"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Om en vecka"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "Inget resultat"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Nej tack"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Inte nu"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Klippet är över $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Du behöver Evernote Plus eller Evernote Premium om du vill klippa ut anteckningar som är större än $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Du behöver Evernote Premium om du vill klippa ut anteckningar som är större än $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Tyvärr är den maximala anteckningsstorleken $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Val av anteckningsbok"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Påminn mig…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Du kan nu klippa mejltrådar från Office 365 direkt till ditt Evernote-konto."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "Ok"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+1 mer sida"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Öppna konversation i gmail"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Öppna konversation i Inbox by Gmail"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Öppna i Evernote"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote webb"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote, skrivbordsversion"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Skicka klipp till"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "Bygg-ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Öppna anteckningar i"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "Första gången du använder den här inställningen visas dialogrutan 'Extern protokollbegäran'. Du får den bästa upplevelsen om du markerar kryssrutan 'Kom ihåg mitt val' och sedan 'Starta program'."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Skrivbordsklient"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Webbklient"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Standardåtgärd för klipp"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Klipp artikel"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Klipp hela sidan"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Klipp webbadress"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Aktivera meddeladen"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "När det här är aktiverat kommer du att meddelas när ett klipp har laddats upp. Med meddelanden blir det enklare att visa, redigera och dela dina klipp."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Behåll stil"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Under aktivering kommer klippen att behålla samma stilinformation för att bli så lika originalsidan som möjligt. Väljer du att inaktivera kommer klippen ges en enkel stil med oformaterad text och utan dekoration."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Alternativ för utvecklare"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Knapp för PDF-sida"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Visa knappen Spara till Evernote på PDF-sidor."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "Aktivitetsloggen innehåller en detaljerad lista över de steg som Evernote-programmet utför, liksom information om ditt konto, din enhet och platsinformation (om den har aktiverats). Även anteckningsrubriker, -taggar, -namn och ibland även anteckningsinnehåll kan innefattas. Vi hanterar din aktivitetsloggsinformation som konfidentiell och villkoren i vår \u003Ca href=\"$privacyLink$\" target=\"_blank\">Personuppgiftspolicy\u003C/a> gäller.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Dölj loggar"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Visa loggfiler"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Okrypterat protokoll"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Åsidosätt tjänst-URL"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Återställ alla alternativ"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Aktivera Kom ihåg-knappar"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Visa snabbåtkomstknappar för att spara bilder, GMail-meddelanden och Facebook-inlägg"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Sparar..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Krypterat protokoll"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Fel vid simulering av checkVersion"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simulera förenklad kinesiska"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "När det här alternativet är aktiverat kommer klipparen att låtsas vara inställd på förenklad kinesiska för att kunna välja en tjänst att ansluta till."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Tillåt smart lagring för företagsanteckningsböcker"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Aktivera smart arkivering"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Smart arkivering väljer automatiskt en anteckningsbok och etiketter baserat på sidan du klipper från."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Etiketter och anteckningsböcker"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Inaktivera smart arkivering"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Endast anteckningsböcker"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Endast etiketter"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Uppgifter"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>OBS:\u003C/b> Om du sparar lösenordet kan andra komma åt ditt Evernote-konto när de använder den här webbläsaren. Ta bort eller logga ut ur tillägget Klipp till Evernote för att permanent ta bort användarnamnet och lösenordet som sparats i webbläsarens tillägg."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Alternativ"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Aktivera snabbmenyer"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "När det här är aktiverat kan du klippa webbsidor via snabbmenyn. Du får upp klippalternativ genom att högerklicka på bilder, markerad text eller någonstans på sidan."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Relaterade resultat"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Visa Evernote-innehåll relaterat till mina webbsökningar"
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Ställer in klipparen på att använda scentjänsten istället för produktionstjänsten, vilket endast är normalt för testning."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Organisera"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "URSPRUNGLIGT MEJL"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "och {COUNT_PLURAL:{COUNT} annan|{COUNT} andra}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Du kan nu klippa mejltrådar från Outlook direkt till ditt Evernote-konto."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Du har nått det maximala antalet anteckningar för Evernote-kontot. Du kan inte skapa fler anteckningar förrän du minskat antalet anteckningar på kontot till mindre än $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "Du har förbrukat ditt utrymme. Uppgradera till Evernote Plus eller Evernote Premium om du vill öka din uppladdningskapacitet varje månad och den maximala anteckningsstorleken."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "Du har förbrukat ditt utrymme. Uppgradera till Evernote Premium om du vill öka din uppladdningskapacitet varje månad och den maximala anteckningsstorleken."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "Du har förbrukat ditt utrymme."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Sida $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Tips: Håll Ctrl nedtryckt när du klickar för att panorera"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Deltagare"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF-klipp"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Visste du att du kan klippa PDF-filer direkt till ditt Evernote-konto med Web Clipper?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Perfekt"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Personligt"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pixelera"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pixeleringsverktyg"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "Den här sidan måste läsas in igen innan du kan klippa ut den. Läs in sidan och försök igen."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Klippning av lokala filer stöds tyvärr inte."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Laddar anteckningsböcker"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "Det tog för lång tid att kontrollera uppgifter. Se till att du är ansluten till internet och försök igen."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Se $count$ fler anteckningar…",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Se en anteckning till…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Klipp från den här platsen stöds inte."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Väntar på sida…"
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Förhandsgranska artikel"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Förhandsvisning av Evernote Web Clipper\u003Cbr>Saker kan gå fel!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Förhandsgranskning i helskärm"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Förhandsgranska bokmärke"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Gå vidare"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Klipp"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Spara artikel"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Spara hela sidan"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Spara markering"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Spara webbadress"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Lägg till kommentar"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Lägg till etikett"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Lägg till text"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Anteckningsbok"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Spara"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Taggar stöds inte"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Titel"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Namnlös anteckning"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Betygsätt nu"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Hur skulle du betygsätta den här versionen av Web Clipper?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "Det nya Web Clipper har utformats för att hjälpa dig att fånga, spara, märka och selektivt dela vad som helst från internet. Berätta vad du tycker om det."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Gillar du Web Clipper?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Rektangel"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Gör om"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "När dina inbjudna vänner kommer igång med Evernote ger vi dig poäng som du kan använda för att uppgradera till Evernote Plus eller Evernote Premium."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Bjud in vänner"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Bjud in vänner. Tjäna poäng."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Uppdatera listan"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Spara dina idéer, saker du gillar, saker du hör och saker du ser."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Avbryt"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Användarnamnet har inaktiverats. Vill du \u003Ca href='$url$'>återaktivera\u003C/a> kontot?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "E-postadress är ett obligatoriskt fält."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Skriv in de siffror som visas i bilden."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "E-postadressen verkar vara ogiltig."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Ange ett lösenord, mellan 6 och 64 tecken långt, som består av bokstäver, siffror och skiljetecken."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "Ditt användarnamn måste börja och sluta med en bokstav eller siffra, det får inte innehålla bindestreck eller understreck."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "Lösenord är ett obligatoriskt fält."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "Den här e-postadressen används redan."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "Användarnamnet du valt används redan av en annan användare."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Registrera"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Användarnamn"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "Genom att klicka på Registrera godtar du \u003Ca href='$tos_url$' target='_blank' tabindex='6'>användarvillkoren\u003C/a> och \u003Ca href='$pp_url$' target='_blank' tabindex='7'>integritetspolicyn\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Avvisad"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Liknande anteckningar"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote hittar upp till tre anteckningar som är relaterade till den sida du just klippte ut och visar dem här."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Kom ihåg"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Kom ihåg"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Kom ihåg"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Påminnelsen har lagts till"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Påminnelse sparad"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Återställ"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Återställ genvägar"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Minimera Web Clipper"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Rundad rektangel"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Spara bilden till Evernote"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "Spara PDF till Evernote"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Spara helsida till Evernote"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Spara skärmbilden till Evernote"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Spara markering till Evernote"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Spara bokmärke till Evernote"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Koppla snabbt Evernote-anteckningar till Salesforce-poster, för detaljerade anteckningar om kunder och få nya insikter om de människor du har kontakt med."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Dela anteckningar med kollegor, få nya insikter om de människor du har kontakt med och länka dina anteckningar direkt till Salesforce-poster. Installera Evernote Business för Salesforce-integrationen."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Gör mer med Evernote Business för Salesforce"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Gör mer med Evernote Business"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Spara till Evernote"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Spara den här artikeln i Evernote"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Spara"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Skärmbild"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Klicka på\u003C/strong> för att fånga helskärm eller \u003Cstrong>dra och släpp\u003C/strong> för att fånga ett område"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Skärmbild tagen"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Sök på ditt Evernote-konto när du söker på webben"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Bästa resultat\u003C/b> på ditt Evernote-konto"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Logga in\u003C/a> på Web Clipper om du vill se andra liknande resultat\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Simultansökning är för tillfället inte tillgängligt eftersom det inte går att nå Evernotes servrar."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Inga liknande resultat i dina personliga anteckningar eller företagsanteckningar"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Inga liknande resultat i dina anteckningar"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ liknande resultat i dina företagsanteckningar",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 liknande resultat i dina företagsanteckningar"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ liknande resultat i dina personliga anteckningar",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 liknande resultat i dina personliga anteckningar"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ liknande resultat i dina anteckningar",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 liknande resultat i dina anteckningar"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Ignorera för alltid"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Ignorera"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "Mer information »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Välj alla markerade objekt"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Välj alla meddelanden"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Välj anteckningsbok"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Markering"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Markeringsläge"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Skicka"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Skicka synpunkter"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Skicka rapport till Evernote"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Skicka till:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "För att ändra trycker du tangentkombinationen på ditt tangentbord nu"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Verktyget Form"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Dela"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Dela anteckning"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Dela det här klippet"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Dela URL"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Delad anteckningsbok"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Två genvägar är i konflikt"
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Genvägar måste bestå av tre eller färre tangenter i kombination"
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Kan inte använda ESC i den här genvägen"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Gå till sidan med \u003Ca href='$href$' target='_blank'>alternativ\u003C/a> för att läsa om och ange dina favoritgenvägar. Ange de viktigaste genvägarna nu!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Tangentbordsgenvägarna kan konfigureras."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Placera markören i fältet och tryck den genväg du vill ha"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "E-post klipp"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Visa mig mer"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Visa liknande anteckningar"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Visa meddelande om lyckad klippning"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Visa meddelande om lyckad klippning utan relaterade anteckningar"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Logga in på Web Clipper"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Logga in på företagskonto"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Logga ut från $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Inloggad som:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Logga ut"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Sexsiffrig kod"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "Vi skickade ett SMS med en verifieringskod till $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Tyvärr"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Du har varit aktiv!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Att lägga till stora mängder innehåll under korta perioder kan leda till störningar i tjänsten. Kontrollera att din aktuella aktivitetsnivå är avsiktlig."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Du måste genomföra ytterligare steg för att få tillgång till ditt företagsinnehåll."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "Om du klickar på Ignorera kommer du inte att kunna komma åt företagsinnehåll innan du slutfört dessa steg. Du kan fortfarande komma åt alla dina personliga anteckningar under tiden."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "Du bör få en uppmaning att autentisera dig för ditt företag i ett separat fönster. Klicka på 'Försök igen' om inget sådant fönster öppnas."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Trave med anteckningsböcker"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Stämpel"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Stämpelverktyg"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Starta Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Starta Web Clipper i förenklat läge"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Ämne (obligatoriskt)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Föreslagna chattar"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Föreslagna kontakter"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "Systeminfo"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Högst 20 taggar"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Taggmarkering"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Ta en skärmbild"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Ta skärmbild"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Text"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Till:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Byt konto"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Imorgon"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Nu sparar Web Clipper klipp från $siteName$ som fräscha anteckningar utan ovidkommande element. Markera sektionerna du vill ha och spara dem i Evernote, för evigt.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Gå utöver bokmärken, börja klippa ut."
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Gillar du sidan? Spara den."
+   },
+   "tryAgain": {
+      "message": "Försök igen"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Testa"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Jag behöver hjälp med att få en verifieringskod"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Textverktyget"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Skriv ditt meddelande ..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Det går inte att öppna meddelandet"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Ångra"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Uppdatera"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Uppgradera"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Bokmärke"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL kopierades till urklipp"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Använd smart arkivering"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Version:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Visa rapport om krasch"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Visa i Evernote"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Visa i Gmail"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Se nyheterna i Web Clipper"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "Vad?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "Vad är det här?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Chatta om klipp från webben. Diskutera artiklar eller dela kommenterade klipp utan att du behöver lämna din arbetsyta."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och $numUnknown$ andra personer i den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och 1 annan person i den här chatten",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till $numUnknown$ andra personer i den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till \u003Cb>$receiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till 1 annan person i den här chatten",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> har lagt till \u003Cb>dig\u003C/b> i den här chatten",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> har ändrat ämnet till \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, MMM d yyyy h:mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, MMM d h:mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och 1 annan person från den här chatten",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort \u003Cb>$receiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> har tagit bort 1 annan person från den här chatten",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade $numNotes$ anteckningar",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade $numNotes$ anteckningar $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade $numNotes$ anteckningar 1 anteckningsbok",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade 1 anteckning",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade 1 anteckning $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade 1 anteckning 1 anteckningsbok",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> inkluderade 1 anteckningsbok",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och $numUnknown$ andra personer i den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och 1 annan person i den här chatten",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till $numUnknown$ andra personer i den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till \u003Cb>$receiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har lagt till 1 annan person i den här chatten"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Någon\u003C/b> har ändrat ämnet till \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och 1 annan person från den här chatten",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort \u003Cb>$receiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Någon\u003C/b> har tagit bort 1 annan person från den här chatten"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade $numNotes$ anteckningar",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade $numNotes$ anteckningar $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade $numNotes$ anteckningar 1 anteckningsbok",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade 1 anteckning"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade 1 anteckning $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade 1 anteckning 1 anteckningsbok"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Någon\u003C/b> inkluderade 1 anteckningsbok"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>Du\u003C/b> har lagt till \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>Du\u003C/b> har lagt till \u003Cb>$receiverName$\u003C/b> i den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>Du\u003C/b> har ändrat ämnet till \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och \u003Cb>$lastReceiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort \u003Cb>$receiverNames$\u003C/b> och 1 annan person från den här chatten",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort $numUnknown$ andra personer från den här chatten",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort \u003Cb>$receiverName$\u003C/b> från den här chatten",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Du\u003C/b> har tagit bort 1 annan person från den här chatten"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade $numNotes$ anteckningar",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade $numNotes$ anteckningar $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade $numNotes$ anteckningar 1 anteckningsbok",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade 1 anteckning"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade 1 anteckning $numNotebooks$ anteckningsböcker",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade 1 anteckning 1 anteckningsbok"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>Du\u003C/b> inkluderade 1 anteckningsbok"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Oj!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Klicka på Evernote-knappen när du vill samla WSJ-artiklar och studera eller läsa dem senare."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Du har anteckningar som liknar denna."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Zooma in (stega)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Zooma ut (stega)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zooma till fönster"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zooma till 100%"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Zooma In"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Zooma ut"
+   }
+}

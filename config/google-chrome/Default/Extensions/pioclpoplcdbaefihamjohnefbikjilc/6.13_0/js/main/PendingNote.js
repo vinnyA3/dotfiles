@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+function PendingNote(){"use strict";this.content=null,this.tempContentClass=null,this.filingInfo=null,this.relatedNotes=null,this.resources=null,this.share=!1,this.updateGuid=null,this.previousToken=null,this.originatingTab=null,this.recommendationText=null,this.notDualLink=!1,this.error=!1,Object.preventExtensions(this)}Object.preventExtensions(PendingNote);

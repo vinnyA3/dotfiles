@@ -1,0 +1,25 @@
+{
+   "background": {
+      "page": "html/background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/main-icon-19.png",
+      "default_popup": "html/popup.html",
+      "default_title": "ColorZilla"
+   },
+   "default_locale": "en",
+   "description": "__MSG_extension_description__",
+   "icons": {
+      "128": "images/icon-128.png",
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC1Ks3Tv4BlSCaQaCS7g+ald+IKtfvOHpTR6h6vE2tEx59fsM5ejHNUmGoHePItUy28IJmnGmzJfgVHZ4OOmUwtvgliT7/hRbgWrEWweGl3uzeO2js0V9HeR4vA1RsxXMRYOC+VY8w2IfCfgOEX0gAslSm6CwpvrHcBMz3Jk/nSMwIDAQAB",
+   "manifest_version": 2,
+   "name": "ColorZilla",
+   "options_page": "html/options.html",
+   "permissions": [ "tabs", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.0",
+   "web_accessible_resources": [ "css/content-style.css", "images/checkmark-icon.png" ]
+}

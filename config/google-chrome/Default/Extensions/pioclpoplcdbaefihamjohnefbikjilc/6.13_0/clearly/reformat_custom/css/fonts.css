@@ -1,0 +1,21 @@
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: normal;
+  font-style: normal;
+  src: url(../fonts/GothamBook.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/GothamMedium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: "Caecilia";
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/CaeciliaBold.woff) format('woff');
+}

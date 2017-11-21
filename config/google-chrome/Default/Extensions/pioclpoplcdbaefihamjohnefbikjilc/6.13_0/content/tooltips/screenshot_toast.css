@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+#main {
+    background-color: #2F373D;
+    border: 2px solid rgba(178, 186, 193, 0.6);
+    border-radius: 2px;
+    color: white;
+    padding: 17.5px 10px;
+}
+
+h1 {
+    font-family: CaeciliaItalic, Times, serif;
+    font-size: 26px;
+    margin: 0 0 6px 0;
+    text-align: center;
+}
+
+div {
+    font-family: GothamBook, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+}
+
+strong {
+    font-family: GothamBold, Helvetica, Arial, sans-serif;
+}

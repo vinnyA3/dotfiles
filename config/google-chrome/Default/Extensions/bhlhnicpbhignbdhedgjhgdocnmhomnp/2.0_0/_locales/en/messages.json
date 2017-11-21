@@ -1,0 +1,242 @@
+{
+   "11x11_average": {
+      "message": "11x11 average"
+   },
+   "25x25_average": {
+      "message": "25x25 average"
+   },
+   "3x3_average": {
+      "message": "3x3 average"
+   },
+   "5x5_average": {
+      "message": "5x5 average"
+   },
+   "NAME": {
+      "message": "MESSAGE"
+   },
+   "about_colorzilla": {
+      "message": "About ColorZilla"
+   },
+   "about_colorzilla_for_chrome": {
+      "message": "About ColorZilla for Chrome"
+   },
+   "allow_access_to_file_urls": {
+      "message": "Click and enable \"Allow access to file URLs\""
+   },
+   "analyzing_please_wait": {
+      "message": "Analyzing... Please wait..."
+   },
+   "attributions": {
+      "message": "Attributions"
+   },
+   "auto_copy": {
+      "message": "Auto-copy"
+   },
+   "auto_copy_format": {
+      "message": "Auto-copy color format:"
+   },
+   "auto_copy_picked_to_clipboard": {
+      "message": "Automatically copy picked color to clipboard."
+   },
+   "auto_start_eyedropper_when_button_clicked": {
+      "message": "Automatically start eyedropper when main button is clicked."
+   },
+   "cancel": {
+      "message": "Cancel"
+   },
+   "change_cursor_to_crosshair": {
+      "message": "Change cursor to crosshair."
+   },
+   "chrome_doesn_allow_picking_local": {
+      "message": "Chrome doesn't allow picking colors from local pages"
+   },
+   "chrome_doesn_allow_picking_special_page": {
+      "message": "Chrome doesn't allow picking colors from this special page"
+   },
+   "chrome_doesn_allow_picking_webstore": {
+      "message": "Chrome doesn't allow picking colors from Chrome Web Store pages"
+   },
+   "clear_history": {
+      "message": "Clear history"
+   },
+   "clear_history_question": {
+      "message": "Clear color history?"
+   },
+   "close_and_stop_picking": {
+      "message": "Close and Stop Picking"
+   },
+   "collapse_this_panel": {
+      "message": "Collapse This Panel"
+   },
+   "color_copied_to_clipboard": {
+      "message": "Color copied to clipboard"
+   },
+   "color_format": {
+      "message": "Color Format"
+   },
+   "color_history_label": {
+      "message": "Color history:"
+   },
+   "color_picker": {
+      "message": "Color Picker"
+   },
+   "color_picker_by": {
+      "message": "Color Picker by $AUTHOR1$ and $AUTHOR2$.",
+      "placeholders": {
+         "author1": {
+            "content": "$1"
+         },
+         "author2": {
+            "content": "$2"
+         }
+      }
+   },
+   "colorzilla_homepage": {
+      "message": "ColorZilla Homepage"
+   },
+   "colorzilla_options": {
+      "message": "ColorZilla Options"
+   },
+   "copy_to_clipboard_menu_label": {
+      "message": "Copy To Clipboard..."
+   },
+   "copy_with_param": {
+      "message": "Copy $STRING$",
+      "placeholders": {
+         "string": {
+            "content": "$1"
+         }
+      }
+   },
+   "created_by": {
+      "message": "Created By"
+   },
+   "css_color_analysis_results": {
+      "message": "CSS Colors on This Page"
+   },
+   "css_gradient_generator": {
+      "message": "CSS Gradient Generator"
+   },
+   "current_color_label": {
+      "message": "current"
+   },
+   "enable_keyboard_shortcuts": {
+      "message": "Enable color picking from page using keyboard shortcut."
+   },
+   "expand_this_panel": {
+      "message": "Expand This Panel"
+   },
+   "extension_description": {
+      "message": "Advanced Eyedropper, Color Picker, Gradient Generator and other colorful goodies"
+   },
+   "eyedropper": {
+      "message": "Eyedropper"
+   },
+   "help": {
+      "message": "Help"
+   },
+   "home_page": {
+      "message": "Home Page"
+   },
+   "keyboard_shortcut_label": {
+      "message": "Shortcut:"
+   },
+   "keyboard_shortcuts": {
+      "message": "Keyboard Shortcuts"
+   },
+   "license": {
+      "message": "License"
+   },
+   "licensing": {
+      "message": "Licensing"
+   },
+   "new_color_label": {
+      "message": "new"
+   },
+   "ok": {
+      "message": "Ok"
+   },
+   "online_help": {
+      "message": "Online Help"
+   },
+   "options": {
+      "message": "Options"
+   },
+   "options_saved": {
+      "message": "Options saved"
+   },
+   "outline_hovered_elements": {
+      "message": "Outline hovered elements."
+   },
+   "page_color_picker_active": {
+      "message": "Page Color Picker Active"
+   },
+   "palette_browser": {
+      "message": "Palette Browser"
+   },
+   "palette_name_huesandbrightnesses": {
+      "message": "Hues and Brightnesses"
+   },
+   "palette_name_huesandsaturations": {
+      "message": "Hues and Saturations"
+   },
+   "palette_name_w3cnamedcolors": {
+      "message": "W3C Named Colors"
+   },
+   "palette_name_webcolorsbyhue": {
+      "message": "Web Colors by Hue"
+   },
+   "palette_name_webnamedcolors": {
+      "message": "Web Named Colors"
+   },
+   "palette_name_websafecolors": {
+      "message": "Web Safe Colors"
+   },
+   "palette_name_xnamedcolors": {
+      "message": "X Named Colors"
+   },
+   "pick_color_from_page": {
+      "message": "Pick Color From Page"
+   },
+   "picked_color_history": {
+      "message": "Picked Color History"
+   },
+   "point_sample": {
+      "message": "Point sample"
+   },
+   "resample_last_location": {
+      "message": "Re-sample Last Location"
+   },
+   "sampling": {
+      "message": "Sampling..."
+   },
+   "save_button_label": {
+      "message": "Save"
+   },
+   "select_area_to_sample": {
+      "message": "Select an area to sample"
+   },
+   "selection_average": {
+      "message": "Selection average"
+   },
+   "show_hex_codes_lowercase": {
+      "message": "Show Hex codes in lowercase."
+   },
+   "some_icons_by": {
+      "message": "Some icons by $AUTHOR$.",
+      "placeholders": {
+         "author": {
+            "content": "$1"
+         }
+      }
+   },
+   "version": {
+      "message": "Version"
+   },
+   "webpage_color_analyzer": {
+      "message": "Webpage Color Analyzer"
+   },
+   "whats_new": {
+      "message": "What's New"
+   }
+}

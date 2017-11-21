@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Evernote Corp.</string>
+	<key>Builder Version</key>
+	<string>11601.7.7</string>
+	<key>CFBundleDisplayName</key>
+	<string>Evernote Web Clipper</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.evernote.safari.clipper</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>6.13</string>
+	<key>CFBundleVersion</key>
+	<string>6.13</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<real>104857600</real>
+		<key>Global Page</key>
+		<string>background.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>clipper</string>
+				<key>Identifier</key>
+				<string>clipper</string>
+				<key>Image</key>
+				<string>images/ext_icons/safari/web-clipper-16x16.png</string>
+				<key>Label</key>
+				<string>Evernote Web Clipper</string>
+				<key>Tool Tip</key>
+				<string>Evernote Web Clipper</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>third_party/port.js</string>
+				<string>js/common/Browser.js</string>
+				<string>js/common/Log.js</string>
+				<string>content/frame_loader.js</string>
+				<string>content/tooltips/PdfTooltipCheck.js</string>
+				<string>content/preparePage.js</string>
+				<string>skitch/js/skitch.js</string>
+				<string>content/tooltips/wsj_tooltip_check.js</string>
+				<string>content/ewc/login.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>third_party/port.js</string>
+				<string>js/common/Browser.js</string>
+				<string>js/common/Konami.js</string>
+				<string>js/common/Log.js</string>
+				<string>third_party/require/require.js</string>
+				<string>content/require/require-config.js</string>
+				<string>content/ContentVeil.js</string>
+				<string>content/Veil.js</string>
+				<string>content/gmail_clipper/GmailTypes.js</string>
+				<string>content/gmail_clipper/GmailClipper.js</string>
+				<string>third_party/jquery-3.2.1.min.js</string>
+				<string>content/HtmlSerializer.js</string>
+				<string>content/simSearch.js</string>
+				<string>js/common/UUID.js</string>
+				<string>content/ClipResultCoordinator.js</string>
+				<string>content/feedback_form/FeedbackFormCoordinator.js</string>
+				<string>clearly/detect/detect.js</string>
+				<string>clearly/next/next.js</string>
+				<string>clearly/highlight/highlight.js</string>
+				<string>clearly/reformat/reformat.js</string>
+				<string>clearly/detect_custom/detect_custom.js</string>
+				<string>clearly/reformat_custom/reformat_custom.js</string>
+				<string>content/init.js</string>
+				<string>content/evernote.js</string>
+				<string>content/tooltips/TooltipCoordinator.js</string>
+				<string>content/tooltips/tooltip_check.js</string>
+				<string>content/tooltips/custom_tooltip_check.js</string>
+				<string>content/salesforce/salesforce.js</string>
+				<string>content/safariMenuListener.js</string>
+				<string>content/ewc/hider.js</string>
+			</array>
+		</dict>
+		<key>Stylesheets</key>
+		<array>
+			<string>content/safari_fonts.css</string>
+			<string>css/contentpreview.css</string>
+			<string>content/clip_result/iframe.css</string>
+			<string>content/tooltips/TooltipCoordinator.css</string>
+			<string>content/tooltips/gmail_tooltip_check.css</string>
+			<string>css/coordinator.css</string>
+			<string>content/salesforce/salesforce.css</string>
+		</array>
+	</dict>
+	<key>Description</key>
+	<string>Save web pages into your Evernote Account.</string>
+	<key>DeveloperIdentifier</key>
+	<string>Q79WDW8YH9</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://update.evernote.com/public/ENMac/SafariExtension/com.evernote.safari.clipper.plist</string>
+	<key>Website</key>
+	<string>http://evernote.com</string>
+</dict>
+</plist>

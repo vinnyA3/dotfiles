@@ -1,0 +1,2934 @@
+{
+   "AM": {
+      "description": "ante meridiem, for use in time strings",
+      "message": "AM"
+   },
+   "April": {
+      "message": "Huhtikuu"
+   },
+   "Aug": {
+      "message": "Elo"
+   },
+   "August": {
+      "message": "Elokuu"
+   },
+   "BrowserActionTitle": {
+      "description": "Title for the browser action that's visible to the user of extension",
+      "message": "Leike Evernoteen"
+   },
+   "Business": {
+      "description": "Options section name",
+      "message": "Business"
+   },
+   "Close": {
+      "description": "The string that shows up on a button used to close a window.",
+      "message": "Sulje"
+   },
+   "Dec": {
+      "message": "Joulu"
+   },
+   "December": {
+      "message": "Joulukuu"
+   },
+   "EDAMError_1": {
+      "description": "Used to describe an unknown EDAM error",
+      "message": "Tuntematon virhe"
+   },
+   "EDAMError_1_notebookGuid": {
+      "description": "Error message indicating unknown notebook",
+      "message": "Tuntematon muistikirja"
+   },
+   "EDAMError_3": {
+      "description": "Indicates that permission was denied for request by the server",
+      "message": "Pääsy evätty"
+   },
+   "EDAMError_3_User_active": {
+      "description": "Indicates that a user tried to login but their account is inactive",
+      "message": "Pääsy evätty, koska käyttäjä on passiivinen"
+   },
+   "EDAMError_3_User_tooManyFailuresTryAgainLater": {
+      "description": "Indicates that a user tried to login way too many times with invalid credentials and needs to chill for a bit",
+      "message": "Liian monta epäonnistunutta kirjautumista. Yritä uudelleen myöhemmin."
+   },
+   "Error_3rdPartyCookies": {
+      "description": "Error message that shows when browser cookie config preventing clipper from login",
+      "message": "Evernote Verkkoleikkuri tunnistaa tilisi evästeiden avulla. Tarkista selaimen asetukset varmistaaksesi, että se hyväksyy kolmannen osapuolen evästeitä Evernotelta."
+   },
+   "Error_3rdPartyCookiesTitle": {
+      "description": "Title for the 3rd party cookies error message",
+      "message": "Ota evästeet käyttöön voidaksesi käyttää Verkkoleikkuria"
+   },
+   "Error_Cookies_Disabled": {
+      "description": "The string that shows when cookies is disabled",
+      "message": "Verkkoleikkuri tarvitsee evästeitä toimiakseen kunnolla. Ota evästeet käyttöön selaimen asetuksista."
+   },
+   "Error_Create_Notebook": {
+      "description": "Nonspecific error message shown when we can't create new notebook.",
+      "message": "Muistikirjaa luotaessa tapahtui virhe."
+   },
+   "Error_Create_Notebook_ExistingName": {
+      "description": "Shown when we can't create new notebook because user has entered name of already existing notebook.",
+      "message": "Tämän niminen muistikirja on valitettavasti jo olemassa."
+   },
+   "Error_Create_Notebook_InvalidName": {
+      "description": "Shown when we can't create new notebook because user has entered incorrect name.",
+      "message": "Virheellinen muistikirjan nimi."
+   },
+   "Error_Create_Notebook_QuotaReached": {
+      "description": "Shown when we can't create new notebook because user hit the notebook amount limit",
+      "message": "Muistikirjojen enimmäismäärä on täynnä."
+   },
+   "Error_HTTP_Transport": {
+      "description": "Generic error indicating that the extension could not get a response from a server",
+      "message": "Ongelma kommunikoitaessa palvelimen kanssa [$status$]. $errorText$",
+      "placeholders": {
+         "errorText": {
+            "content": "$2",
+            "example": "http error response"
+         },
+         "status": {
+            "content": "HTTP $1",
+            "example": "404"
+         }
+      }
+   },
+   "Error_Maintenance": {
+      "description": "Error message that shows when Evernote servers are under maintenance",
+      "message": "Evernoten palvelimet eivät ole tällä hetkellä käytettävissä. Yritä uudelleen myöhemmin."
+   },
+   "Error_Network_Unavailable": {
+      "description": "error message shown when we can't connect to the internet.",
+      "message": "Ei Internet-yhteyttä"
+   },
+   "Error_No_Notebooks": {
+      "description": "Error message shown when user doesn't have any notebooks to clip to.",
+      "message": "Sinulla ei ole vielä muistikirjoja."
+   },
+   "Error_Update_Notebooks": {
+      "description": "Error message shown when we can't update notebooks.",
+      "message": "Muistikirjoja päivitettäessä tapahtui virhe."
+   },
+   "ExtensionDescription": {
+      "description": "Description of the extension as it's visible to the outside world",
+      "message": "Käytä Evernote-laajennusta tallentaaksesi verkossa näkemiäsi asioita Evernote-tunnuksellesi."
+   },
+   "ExtensionName": {
+      "description": "Name of the extension as it's visible to the outside world",
+      "message": "Evernote Web Clipper"
+   },
+   "Feb": {
+      "message": "Helmi"
+   },
+   "February": {
+      "message": "Helmikuu"
+   },
+   "Fri": {
+      "description": "shorthand for Friday",
+      "message": "Pe"
+   },
+   "Friday": {
+      "message": "Perjantai"
+   },
+   "Jan": {
+      "message": "Tammi"
+   },
+   "January": {
+      "message": "Tammikuu"
+   },
+   "July": {
+      "message": "Heinäkuu"
+   },
+   "June": {
+      "message": "Kesäkuu"
+   },
+   "Last_used": {
+      "message": "Viimeksi käytetty"
+   },
+   "March": {
+      "message": "maaliskuu"
+   },
+   "May": {
+      "message": "toukokuu"
+   },
+   "Mon": {
+      "description": "shorthand for Monday",
+      "message": "Ma"
+   },
+   "Monday": {
+      "message": "Maanantai"
+   },
+   "Nov": {
+      "message": "Marras"
+   },
+   "November": {
+      "message": "marraskuu"
+   },
+   "Oct": {
+      "message": "Loka"
+   },
+   "October": {
+      "message": "lokakuu"
+   },
+   "PM": {
+      "description": "prime meridian, for use in time strings",
+      "message": "PM"
+   },
+   "Personal": {
+      "description": "Options section name",
+      "message": "Henkilökohtainen"
+   },
+   "Sat": {
+      "description": "shorthand for Saturday",
+      "message": "La"
+   },
+   "Saturday": {
+      "message": "Lauantai"
+   },
+   "Sept": {
+      "message": "Syys"
+   },
+   "September": {
+      "message": "syyskuu"
+   },
+   "Sign_in": {
+      "description": "Sing in user ... prompt",
+      "message": "Kirjaudu sisään"
+   },
+   "Summary": {
+      "description": "name of summary section in linkedin article",
+      "message": "Yhteenveto"
+   },
+   "Sun": {
+      "description": "shorthand for Sunday",
+      "message": "Su"
+   },
+   "Sunday": {
+      "message": "Sunnuntai"
+   },
+   "Thu": {
+      "description": "shorthand for Thursday",
+      "message": "To"
+   },
+   "Thursday": {
+      "message": "Torstai"
+   },
+   "Today": {
+      "message": "Tänään"
+   },
+   "Tue": {
+      "description": "shorthand for Tuesday",
+      "message": "Ti"
+   },
+   "Tuesday": {
+      "message": "Tiistai"
+   },
+   "Wed": {
+      "description": "shorthand for Wednesday",
+      "message": "Ke"
+   },
+   "Wednesday": {
+      "message": "Keskiviikko"
+   },
+   "addAMessage": {
+      "description": "placeholder text for the message field of the email sharing dialog",
+      "message": "Lisää viesti"
+   },
+   "addAccount": {
+      "description": "Button for logging in as additional user",
+      "message": "Lisää tili"
+   },
+   "addBusinessAccount": {
+      "description": "Button for logging in as additional business user",
+      "message": "Lisää Business-tili"
+   },
+   "addDate": {
+      "description": "button to add date to reminder",
+      "message": "Lisää päivämäärä"
+   },
+   "addPersonalAccount": {
+      "description": "Button for logging in as additional personal user",
+      "message": "Lisää henkilökohtainen tili"
+   },
+   "addReminder": {
+      "description": "string in smart email extension to instruct user to add a reminder if there isn't one set already",
+      "message": "Lisää muistutus"
+   },
+   "addTags": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the tags field",
+      "message": "Lisää avainsanoja"
+   },
+   "addTask": {
+      "description": "string in smart email extension to instruct user to add a task",
+      "message": "Lisää tehtävä"
+   },
+   "afterClip": {
+      "description": "option in options page for what to show after a successful clip",
+      "message": "Leikkaamisen jälkeen"
+   },
+   "allFieldsRequired": {
+      "description": "error message for feedback form if user doesn't fill out all the fields",
+      "message": "Kaikki kentät ovat pakollisia."
+   },
+   "alwaysShow": {
+      "description": "button on related notes UI that allows user to choose whether they want to continue seeing the notes instead of dismissing them and turning off the feature",
+      "message": "Näytä aina"
+   },
+   "alwaysStartIn": {
+      "description": "label for default clip action",
+      "message": "Aloita aina"
+   },
+   "alwaysTagWith": {
+      "description": "label for always tag with option in options page",
+      "message": "Merkitse aina tunnisteella"
+   },
+   "amazon": {
+      "description": "name of custom clip option on amazon pages",
+      "message": "Amazon"
+   },
+   "annotate": {
+      "description": "header for the skitch section of the sidebar",
+      "message": "Merkitse"
+   },
+   "apply": {
+      "description": "label for button to apply crop in skitch mode",
+      "message": "Käytä"
+   },
+   "approved": {
+      "description": "default label for the green checkmark skitch stamp",
+      "message": "Hyväksytty"
+   },
+   "arrow": {
+      "description": "label for shortcut to use the skitch arrow tool in options page",
+      "message": "Nuoli"
+   },
+   "arrowTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Nuolityökalu"
+   },
+   "articleClip": {
+      "description": "Tooltip for article clip tool",
+      "message": "Artikkeli"
+   },
+   "articleClipFailure": {
+      "description": "Messages shown to user when the article of the page isn't clippable.",
+      "message": "Valitettavasti Evernote ei voi ottaa tästä sivusta artikkelileikettä. Valitse sivun osa, josta haluat ottaa leikkeen."
+   },
+   "authExpired": {
+      "description": "Error message if user tries to clip with an expired or revoked auth token.",
+      "message": "Tämän sovelluksen käyttöoikeudet on kumottu Evernote-verkkopalvelun kautta. Anna salasanasi uudelleen."
+   },
+   "authInProgress": {
+      "description": "header of second SSO dialog",
+      "message": "Todennus käynnissä"
+   },
+   "authPersistenceError": {
+      "description": "Error indicating that the browser fails to persist authentication.",
+      "message": "Selaimesi asetukset ovat ristiriidassa Evernote-laajennuksen kanssa. Yritä palauttaa Chromen tietosuoja-asetuksien sisältöasetukset oletuksiin: Salli paikallistietojen asettaminen ja ÄLÄ estä kolmannen osapuolen evästeitä. Voit myös poistaa käytöstä muita kolmannen osapuolen laajennuksia."
+   },
+   "autocloseClipper": {
+      "description": "option in options page. if enabled, it shows the partial post clip dialog that disappears after three seconds",
+      "message": "Sulje leikkuri automaattisesti"
+   },
+   "basicUpsellDetailsA": {
+      "description": "body for upsell to Basic users that appears every 30 days - version A",
+      "message": "Nauti lisäominaisuuksista päivittääksesi Evernote Plussaan tai Evernote Premiumiin."
+   },
+   "basicUpsellDetailsB": {
+      "description": "body for upsell to Basic users that appears every 30 days - version B",
+      "message": "Vältä käyttökiintiöt. Päivitä Evernote Plussaan saadaksesi 1 Gt latauksia kuussa."
+   },
+   "basicUpsellDetailsC": {
+      "description": "body for upsell to Basic users that appears every 30 days - version C",
+      "message": "Päivitä Premiumiin voidaksesi käyttää leikkaamiasi artikkeleita mobiililaitteessasi silloinkin, kun olet offline. Premium-käyttäjänä voit määrittää offline-muistikirjoja ja käyttää muistiinpanoja nopeasti milloin tahansa."
+   },
+   "basicUpsellHeaderA": {
+      "description": "header for upsell to Basic users that appears every 30 days - version A",
+      "message": "Esittelyssä Evernote Plus ja Premium"
+   },
+   "basicUpsellHeaderB": {
+      "description": "header for upsell to Basic users that appears every 30 days - version B",
+      "message": "Päivitä saadaksesi 1 Gt latauksia kuussa"
+   },
+   "basicUpsellHeaderC": {
+      "description": "header for upsell to Basic users that appears every 30 days - version C",
+      "message": "Liekkaa pöytätietokoneessa, lue puhelimessa"
+   },
+   "bizWorkchatWarning": {
+      "description": "warning when business user tries to workchat business note/notebook to someone outside the business",
+      "message": "Olet jakamassa Business-muistiinpanoja tai -muistikirjoja tässä keskustelussa, johon osallistuu yrityksesi ulkopuolisia henkilöitä. Napsauta OK, jos haluat jakaa ne kaikkien keskusteluun osallistuvien kanssa."
+   },
+   "business": {
+      "description": "Notebook type selection option. Variant 2",
+      "message": "Business"
+   },
+   "businessNotebook": {
+      "description": "tooltip for business notebooks in notebook selector",
+      "message": "Business-muistikirja"
+   },
+   "canEdit": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Voi muokata"
+   },
+   "canEditInvite": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Voi muokata ja kutsua"
+   },
+   "canView": {
+      "description": "one of the workchat note sharing permission options",
+      "message": "Voi katsella"
+   },
+   "cannotSaveClip": {
+      "description": "error title",
+      "message": "Leikettä ei voi tallentaa"
+   },
+   "cannotSaveClip2": {
+      "description": "alternative error title",
+      "message": "Tätä leikettä ei voi tallentaa"
+   },
+   "cantFindIt": {
+      "description": "text for refresh notebooks list block",
+      "message": "Eikö löydy?"
+   },
+   "captcha_instruction": {
+      "description": "Instruction for captcha in the registration form.",
+      "message": "Syötä numerot"
+   },
+   "checkVersionWarning": {
+      "description": "Warning message shown to user when the client doesn't pass version check",
+      "message": "Tämä versio Evernote Web Clipper -työkalusta ei ole enää yhteensopiva Evernote-palvelun kanssa. Asenna uusin versio."
+   },
+   "clearFeatureDiscoveryTooltip": {
+      "description": "The message that pops up when you hover over the 'x' icon for the 'feature discovery' box.",
+      "message": "Älä näytä tätä ilmoitusta uudelleen"
+   },
+   "clearTagsToolTip": {
+      "description": "The message that pops up when you hover over the 'x' icon that displays beside the tag list.",
+      "message": "Tyhjennä kaikki avainsanat"
+   },
+   "clearly": {
+      "description": "label for shortcut to go to clearly mode",
+      "message": "Yksinkertaistettu artikkeli"
+   },
+   "clipIt": {
+      "description": "button that lets user start the clipper to clip something",
+      "message": "Leikkaa"
+   },
+   "clipShortcuts": {
+      "description": "header of the clip shortcuts on options page",
+      "message": "Leike:"
+   },
+   "clipperOptions_title": {
+      "description": "Link that's added to web login window to allow access to clipper options. Should clearly state it belongs to Clipper.",
+      "message": "Verkkoleikkurin asetukset"
+   },
+   "clipsFromThisSite": {
+      "description": "Label for the site search button.",
+      "message": "Leikkeitä sivustosta $site$",
+      "placeholders": {
+         "site": {
+            "content": "$1",
+            "example": "71"
+         }
+      }
+   },
+   "closeWebClipper": {
+      "description": "label for shortcut to close clipper",
+      "message": "Sulje Web Clipper tai aktiivinen paneeli"
+   },
+   "collaborateWithWorkChat": {
+      "description": "heading in tooltip that tells users to user workchat",
+      "message": "Tee yhteistyötä Work Chatin avulla"
+   },
+   "colors": {
+      "description": "tooltip for colors selector",
+      "message": "Värit"
+   },
+   "confirmActivity": {
+      "description": "button Premium users use to confirm activity when they're near quota",
+      "message": "Vahvista toiminto"
+   },
+   "connectToGoogle": {
+      "description": "button in workchat that invites user to connect their Evernote account to their Google account",
+      "message": "Yhdistä Googleen"
+   },
+   "contactSupport": {
+      "description": "button to contact customer support",
+      "message": "Ota yhteys Evernoten tukeen"
+   },
+   "contentclipper_clipping": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "\u003Cspan id=\"status\">Leikataan\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_clipping_no_title": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping when the title of the clip is unavailable.",
+      "message": "\u003Cspan id=\"status\">Leikataan\u003C/span>\u003Cspan id=\"title\">”…”\u003C/span>"
+   },
+   "contentclipper_clipping_short": {
+      "description": "Message shown on content pages to notify users that the page is being scraped for clipping.",
+      "message": "Leikkeet"
+   },
+   "contentclipper_syncing": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "\u003Cspan id=\"status\">Synkronoidaan\u003C/span>\u003Cspan id=\"title\">$clipTitle$\u003C/span>",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "contentclipper_syncing_short": {
+      "description": "Message shown on content pages to notify users that the page is being sent to the server.",
+      "message": "Synkronoidaan"
+   },
+   "contextMenuClipImage": {
+      "description": "Context menu item for creating a new note with image",
+      "message": "Ota leike kuvasta"
+   },
+   "contextMenuClipPDF": {
+      "description": "Context menu item for creating a new note with PDF",
+      "message": "Ota leike PDF:stä"
+   },
+   "contextMenuClipPage": {
+      "description": "Context menu item for clipping current page",
+      "message": "Ota leike koko sivusta"
+   },
+   "contextMenuClipScreenshot": {
+      "description": "Context menu item for creating a skitch clip",
+      "message": "Ota kuvakaappaus"
+   },
+   "contextMenuClipSelection": {
+      "description": "Context menu item for clipping current selection",
+      "message": "Ota leike valinnasta"
+   },
+   "contextMenuClipUrl": {
+      "description": "Context menu item for creating a new note with just the URL of the current page",
+      "message": "Ota leike kirjanmerkistä"
+   },
+   "contextMenuPleaseLogin": {
+      "description": "Help message shown to users when they try to clip content via contextual menu items but not being intially logged in",
+      "message": "Sinun pitää kirjautua sisään Leike Evernoteen -työkalupalkkiin ennen kuin voit tehdä leikkeitä"
+   },
+   "continue": {
+      "description": "button to continue",
+      "message": "Jatka"
+   },
+   "contractArticle": {
+      "description": "label for shortcut to contract article selection",
+      "message": "Supista artikkeleiden valinta"
+   },
+   "contractArticleTooltip": {
+      "description": "tooltip for button to contract the article preview box",
+      "message": "Supista artikkelin valintaa"
+   },
+   "copyToClipboard": {
+      "description": "button in sharing dialog to copy the share url to the clipboard",
+      "message": "Kopioi leikepöydälle"
+   },
+   "copyright": {
+      "description": "Copyright statement",
+      "message": "Copyright 2009-$currentYear$ Evernote Corporation. Kaikki oikeudet pidätetään.\u003Cbr>\u003Ca href='$baseUrl$/privacy' target='_blank'>Tietosuojakäytäntö\u003C/a> | \u003Ca href='$baseUrl$/tos' target='_blank'>Käyttöehdot\u003C/a>",
+      "placeholders": {
+         "baseUrl": {
+            "content": "$2",
+            "example": "https://www.evernote.com"
+         },
+         "currentYear": {
+            "content": "$1",
+            "example": "2015"
+         }
+      }
+   },
+   "corpBusinessNotes": {
+      "description": "header of dialog that tells business user that he needs to complete SSO to see his business's content",
+      "message": "Yrityksen $bizName$ Business-muistiinpanot",
+      "placeholders": {
+         "bizName": {
+            "content": "$1",
+            "example": "Acme Corp"
+         }
+      }
+   },
+   "create": {
+      "description": "confirmation button in create notebook dialog",
+      "message": "Luo"
+   },
+   "createNewNotebook": {
+      "description": "name of the button for creating new notebook",
+      "message": "Luo uusi muistikirja"
+   },
+   "crop": {
+      "description": "tooltip for crop tool",
+      "message": "Rajaa"
+   },
+   "cspNotification": {
+      "description": "notification to user that clipper can't start on page because the site's CSP does not allow it to work",
+      "message": "Safari Verkkoleikkuri ei pysty leikkaamaan tätä sivua sivun julkaisijan määrittämien käyttöä rajoittavien sisällön suojauskäytäntöasetusten takia."
+   },
+   "cyclePreviews": {
+      "description": "label for shortcut to cycle through sidebar preview options",
+      "message": "Vaihda sivupalkin esikatselua yksi askel kerrallaan"
+   },
+   "defaultClippingAccount": {
+      "description": "Option name in user options view",
+      "message": "Oletusleiketili:"
+   },
+   "defaultClippingAccountLast": {
+      "description": "Option value name in user options view",
+      "message": "Viimeinen"
+   },
+   "deleting": {
+      "description": "Message indicating that the extension is deleting previously clipped note from the server",
+      "message": "Poistetaan leikemuistiinpano..."
+   },
+   "desktopNotification_clipProcessorSignInMessage": {
+      "description": "Message shown to users inside desktop notification informing users that they clip could not be uploaded because they are not authenticated...",
+      "message": "Virhellinen tai vanhentunut tunnistautuminen. Kirjaudu sisään käyttämällä työkalupalkin painiketta ja yritä uudestaan."
+   },
+   "desktopNotification_clipProcessorSignInTitle": {
+      "description": "Title for desktop notification informing user that there was an error with uploading a clip. This should be as short as possible",
+      "message": "Ei voitu tallentaa leikettä \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_clipProcessorTooManyRetries": {
+      "description": "Message indicating that we've tried too many times to clip this note.",
+      "message": "Leike \"$title$\" on epäonnistunut liian monta kertaa, eikä sitä voi yrittää uudelleen.",
+      "placeholders": {
+         "title": {
+            "content": "$1",
+            "example": "Title of the clip."
+         }
+      }
+   },
+   "desktopNotification_clipUploaded": {
+      "description": "Headline for desktop notification indicating that clip was successfully uploaded into a notebook",
+      "message": "Leikattu kohteeseen \u003Cspan id=\"notebookName\">$notebookName$\u003C/span>",
+      "placeholders": {
+         "notebookName": {
+            "content": "$1",
+            "example": "Notebook Name"
+         }
+      }
+   },
+   "desktopNotification_retryFailedClip": {
+      "description": "Name of the action associated with retrying the clip that failed to upload. Should be as short as possible",
+      "message": "Yritä uudelleen"
+   },
+   "desktopNotification_unableToSaveClip": {
+      "description": "Headline for desktop notifications indicating there was a problem with saving the clip",
+      "message": "Ei voitu tallentaa leikettä \"$clipTitle$\"",
+      "placeholders": {
+         "clipTitle": {
+            "content": "$1",
+            "example": "Sample clip title"
+         }
+      }
+   },
+   "desktopNotification_unableToSaveClipUnknown": {
+      "description": "Headline for desktop notification indicating that there was an unknown error while uploading a clip",
+      "message": "Ei voitu tallentaa leikettä"
+   },
+   "desktopNotification_unableToSaveClipUnknownMessage": {
+      "description": "Description of the unknown error that may occur after the extension failed to upload a clip",
+      "message": "Tuntematon virhe havaittiin tallentaessa yhtä leikkeistäsi. Virheilmoitus: $details$",
+      "placeholders": {
+         "details": {
+            "content": "$1",
+            "example": "Error 503"
+         }
+      }
+   },
+   "dismiss": {
+      "description": "Message shown on buttons to dismiss a widget of some kind",
+      "message": "Hylkää"
+   },
+   "dismissTip": {
+      "description": "button to dismiss a cross promotion (i.e. tip) in the post-clip dialog",
+      "message": "Hylkää vihje"
+   },
+   "done": {
+      "description": "button to close options page",
+      "message": "Valmis"
+   },
+   "dontShowAgain": {
+      "description": "button on promotions that hides the promo forever if the user clicks on it",
+      "message": "Älä näytä uudelleen"
+   },
+   "ellipse": {
+      "description": "label for shortcut to use the ellipse tool in options page",
+      "message": "Ellipsi"
+   },
+   "email": {
+      "description": "Label for email field of registration form",
+      "message": "Sähköpostiosoite"
+   },
+   "emailClip": {
+      "description": "label for option in global toolbar",
+      "message": "Sähköposti"
+   },
+   "emailLimitError": {
+      "description": "error message if user exceeds daily email limit",
+      "message": "Voit lähettää enintään $limit$ sähköpostiviestiä päivässä",
+      "placeholders": {
+         "limit": {
+            "content": "$1",
+            "example": "50"
+         }
+      }
+   },
+   "emailNote": {
+      "description": "label for email sharing dialog",
+      "message": "\u003Cspan class='header'>Sähköpostita muistiinpano: \u003C/span>\u003Cspan class='subheader'>$subject$\u003C/span>",
+      "placeholders": {
+         "subject": {
+            "content": "$1",
+            "example": "Abe continues to be steadying force for Giants"
+         }
+      }
+   },
+   "enableKeyboardShortcuts": {
+      "description": "checkbox in options page to enable keyboard shortcuts",
+      "message": "Ota pikanäppäimet käyttöön"
+   },
+   "enterCode": {
+      "description": "instruction on two step pages to enter the verification or backup code",
+      "message": "Anna koodi"
+   },
+   "enterEmailAddresses": {
+      "description": "placeholder text for the recipient field of the email sharing dialog",
+      "message": "Syötä sähköpostiosoite (-osoitteet)"
+   },
+   "enterName": {
+      "description": "placeholder for new notebook name input field",
+      "message": "Anna nimi"
+   },
+   "enterNameOrEmail": {
+      "description": "placeholder text in recipient input field in workchat",
+      "message": "Syötä nimi tai sähköposti"
+   },
+   "errorLogs": {
+      "description": "label for error logs in options page",
+      "message": "Virhelokit"
+   },
+   "evernoteDoesNotTrackYou": {
+      "message": "Evernote ei pidä kirjaa hakusanoista eikä hakutuloksista tai jaa tietojasi hakukoneiden kanssa."
+   },
+   "expandArticle": {
+      "description": "label for shortcut to expand article selection",
+      "message": "Laajenna artikkeleiden valinta"
+   },
+   "expandArticleTooltip": {
+      "description": "tooltip for button to expand the article preview box",
+      "message": "Laajenna artikkelin valintaa"
+   },
+   "expiredTwoStepCode": {
+      "description": "error for expired two step verification code",
+      "message": "Sisäänkirjautumisistunto on vanhentunut. Yritä uudelleen."
+   },
+   "expiredV1Password": {
+      "description": "error message for when user with a V1 password tries to login. only used for non-english",
+      "message": "Tarvitaan salasanan päivitys."
+   },
+   "facebook": {
+      "description": "text for button to share clip via Facebook",
+      "message": "Facebook"
+   },
+   "feedbackRequired": {
+      "description": "placeholder text for the feedback field in the feedback form",
+      "message": "Palautetta Evernotelle (pakollinen)"
+   },
+   "filing": {
+      "description": "Message indicating that the extension is filing changes made to previously clipped note on the server",
+      "message": "Lähetetään muistiinpanoa..."
+   },
+   "findANotebook": {
+      "description": "placeholder text for notebook search box",
+      "message": "Etsi muistikirjaa"
+   },
+   "findContacts": {
+      "description": "heading for section in workchat that shows options to connect to google, linkedin, facebook to find more contacts",
+      "message": "Etsi yhteystietoja"
+   },
+   "fleButtonFinish": {
+      "description": "Button to go to the last first-time user screen",
+      "message": "Lopeta esittely"
+   },
+   "fleButtonNext": {
+      "description": "Button to go to the next first-time user screen",
+      "message": "Seuraava"
+   },
+   "fleConclusionHeader": {
+      "description": "First-time user conclusion screen, header",
+      "message": "Levitä sanaa."
+   },
+   "fleConclusionSubheader": {
+      "description": "First-time user conclusion screen, subheader",
+      "message": "Levitä sanaa! Kerro perheenjäsenillesi, ystävillesi ja työtovereillesi uudesta Web Clipperistä."
+   },
+   "fleFakeNotebook": {
+      "description": "Fake notebook for the first time user",
+      "message": "Muistikirja"
+   },
+   "fleFakeTag1": {
+      "description": "First time user, fake tag",
+      "message": "Verkkoleikkeet"
+   },
+   "fleFakeTag2": {
+      "description": "First time user, fake tag",
+      "message": "Esittely"
+   },
+   "fleFakeUser": {
+      "description": "Fake name for the first time user",
+      "message": "Evan Note"
+   },
+   "fleMarkUpBody": {
+      "description": "First-time user mark up screen, body",
+      "message": "Ota kuvakaappauksia yhdellä napsautuksella."
+   },
+   "fleMarkUpCTA": {
+      "description": "First-time user mark up screen, CTA",
+      "message": "Napsauta sivupalkissa \u003Cstrong>Kuvakaappaus\u003C/strong>-valintaa."
+   },
+   "fleMarkUpHeader": {
+      "description": "First-time user mark up screen, header",
+      "message": "Kuvakaappaus"
+   },
+   "fleMarkUpToolsBody": {
+      "description": "First-time user mark up tools screen, body",
+      "message": "Merkintätyökalujen avulla voit välittää ajatuksia työtovereillesi ja ystävillesi nopeasti ja selkeästi. Käytä nuolia, korostusta ja merkintätyökalua kiinnittääksesi huomion tärkeään tekstiin."
+   },
+   "fleMarkUpToolsBody2": {
+      "description": "second part of the mark up tools screen in the first launch experience",
+      "message": "Leimatyökalu tuo käyttöön yksinkertaisen järjestelmän suosikkisisältösi hyväksymiseen, hylkäämiseen tai korostamiseen.\u003Cbr/>Sumenna arkaluonteiset tiedot pikselöintityökalulla. Korosta mitä tahansa."
+   },
+   "fleMarkUpToolsCTA": {
+      "description": "First-time user mark up tools demo screen, CTA",
+      "message": "Tehdään merkintöjä kuvakaappaukseen."
+   },
+   "fleMarkUpToolsHeader": {
+      "description": "First-time user mark up tools screen, header",
+      "message": "Tee merkintöjä verkkoleikkeisiin"
+   },
+   "fleShareBody": {
+      "description": "First-time user share screen, body",
+      "message": "Verkkoleikkeiden jakaminen ei enää voisi olla helpompaa."
+   },
+   "fleShareCTA": {
+      "description": "First-time user share screen, CTA",
+      "message": "Napsauta sivupalkissa olevaa \u003Cstrong>jakopainiketta\u003C/strong> ja kokeile itse."
+   },
+   "fleShareDialogBody": {
+      "description": "First-time user share dialog, body",
+      "message": "Kun olet valinnut verkkoleikkeen muodon (esim. yksinkertaistettu artikkeli tai merkitty artikkeli), voit jakaa sen kolmella tavalla: lähettämällä sen sosiaalisiin verkostoihin, kuten Facebookiin, Twitteriin ja LinkedIniin, kaappaamalla linkin verkkoleikkeeseen tai lähettämällä sen sähköpostitse."
+   },
+   "fleShareDialogHeader": {
+      "description": "First-time user share dialog, header",
+      "message": "Jakamisvaihtoehdot"
+   },
+   "fleShareHeader": {
+      "description": "First-time user share screen, header",
+      "message": "Jaa verkkoleikkeitä helposti"
+   },
+   "fleSharedTitle": {
+      "description": "Title of the url to be shared on social networks",
+      "message": "Web Clipperin uudet ominaisuudet"
+   },
+   "fleWelcomeBody1": {
+      "description": "First-time user welcome message, body1",
+      "message": "Uusi Web Clipper mahdollistaa verkossa olevan sisällön leikkaamisen, merkitsemisen kirjanmerkillä, kaappaamisen, merkitsemisen, tallentamisen sekä vaivattoman ja valikoivan jakamisen ystävien kanssa."
+   },
+   "fleWelcomeBody2": {
+      "description": "First-time user welcome message, body2",
+      "message": "Voit selkeyttää lukuelämystä verkossa tai Evernote-tililläsi käyttämällä Yksinkertaistettu artikkeli -näkymää, jonka avulla voit poistaa sivulta tarpeettomat ja häiritsevät tekijät."
+   },
+   "fleWelcomeCTA": {
+      "description": "First-time user welcome message, CTA",
+      "message": "Näytä sisältö valitsemalla \u003Cstrong>Yksinkertaistettu artikkeli\u003C/strong> ja tallenna se sitten halutessasi Evernote-tilillesi."
+   },
+   "fleWelcomeHeader": {
+      "description": "First-time user welcome message, header",
+      "message": "Uuden Web Clipperin käytön aloittaminen"
+   },
+   "fleWelcomeSubheader": {
+      "description": "First-time user welcome message, subheader",
+      "message": "Leikkaa artikkeleita verkosta ja tee niihin merkintöjä"
+   },
+   "forgotPassword": {
+      "description": "label for password recovery link on the login screen",
+      "message": "Unohditko salasanasi?"
+   },
+   "from": {
+      "description": "label for sender in email sharing dialog",
+      "message": "\u003Cspan class='header'>Lähettäjä: \u003C/span>\u003Cspan class='subheader'>$sender$\u003C/span>",
+      "placeholders": {
+         "sender": {
+            "content": "$1",
+            "example": "person@evernote.com"
+         }
+      }
+   },
+   "fullPageClip": {
+      "description": "Tooltip for full page clip tool",
+      "message": "Koko sivu"
+   },
+   "fullPageClipFailure": {
+      "description": "Message shown to user when full page clip wasn't possible",
+      "message": "Evernote ei pysty ottamaan leikettä koko sivusta. Valitse sivun osa, josta haluat ottaa leikkeen."
+   },
+   "gaMessage": {
+      "description": "Message shown on the Google Authenticator Two Step page",
+      "message": "Anna Google Authenticator -sovelluksessa näkyvä varmennuskoodi."
+   },
+   "generalOptions": {
+      "description": "Options section name",
+      "message": "Yleisasetukset"
+   },
+   "getMoreSpacePremium": {
+      "description": "error if premium user exceeds quota",
+      "message": "Hanki 1 Gt lisää"
+   },
+   "globalShortcuts": {
+      "description": "header of the global shortcuts on options page",
+      "message": "Yleinen:"
+   },
+   "gmailError": {
+      "description": "notification to user that a thread needs to be open to clip it",
+      "message": "Sinun on valittava keskustelu leikataksesi sen Gmailista."
+   },
+   "gmailTooltip": {
+      "description": "gmail tooltip",
+      "message": "Voit nyt leikata sähköpostiviestiketjuja Gmailista suoraan Evernote-tilillesi."
+   },
+   "goPremium": {
+      "description": "call to action to Plus users to upgrade to Premium",
+      "message": "Päivitä Premiumiin"
+   },
+   "googleInboxTooltip": {
+      "description": "Google Inbox tooltip",
+      "message": "Voit nyt leikata sähköpostiviestiketjuja Gmailista suoraan Evernote-tilillesi."
+   },
+   "gotIt": {
+      "description": "button that user clicks to confirm that they understand the information about the related notes feature",
+      "message": "Selvä"
+   },
+   "gplus": {
+      "description": "text for button to share clip via Google Plus",
+      "message": "G+"
+   },
+   "header_register": {
+      "description": "Registration link in header",
+      "message": "Luo Evernote-tili"
+   },
+   "hideRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will hide this section.",
+      "message": "Piilota liittyvät muistiinpanot"
+   },
+   "highlighter": {
+      "description": "label for shortcut to use the highlighter tool in options page",
+      "message": "Korostin"
+   },
+   "ignore": {
+      "description": "button in SSO dialog that user uses to avoid completing SSO at the moment",
+      "message": "Ohita"
+   },
+   "illegalUrlClipFailure": {
+      "description": "Error message shown when you try to clip from pages that aren't scriptable by the browser. Such as the chrome gallery pages.",
+      "message": "Selaimen tekemien rajoituksien vuoksi et voi ottaa leikettä tästä sivusta."
+   },
+   "imageHighlighter": {
+      "description": "tooltip for skitch highlighter",
+      "message": "Kuvien korostustyökalu"
+   },
+   "includeAttachment": {
+      "description": "checkbox in smart email extension if user wants to include email attachments in the note",
+      "message": "Sisällytä liite"
+   },
+   "includeOriginalEmail": {
+      "description": "checkbox in smart email extension if user wants to include original email in the note",
+      "message": "Sisällytä alkuperäinen sähköpostiviesti"
+   },
+   "incorrectCode": {
+      "description": "error for incorrect two-step verification code",
+      "message": "Annettu koodi on virheellinen."
+   },
+   "installNow": {
+      "description": "Install now",
+      "message": "Asenna heti"
+   },
+   "keyboardShortcuts": {
+      "description": "label for keyboard shortcuts section in the options page",
+      "message": "Näppäinoikotiet"
+   },
+   "lastUsedAction": {
+      "description": "label for last used action option in options page",
+      "message": "Viimeksi käytetty toiminto"
+   },
+   "lastUsedNotebook": {
+      "description": "label for using last used notebook in notebook selection on options page",
+      "message": "Viimeksi käytetty muistikirja"
+   },
+   "learnMore": {
+      "description": "Learn more",
+      "message": "Lisätietoja"
+   },
+   "legal": {
+      "description": "label for legal notices in the options page",
+      "message": "Lakitekstit"
+   },
+   "legalNoticesTitle": {
+      "description": "the title of the legal notices dialog in the options page where we list the licenses of all third party packages we use",
+      "message": "Web Clipper käyttää seuraavaa avoimen lähdekoodin ohjelmistoa"
+   },
+   "line": {
+      "description": "label for shortcut to use the line tool in options page",
+      "message": "Viiva"
+   },
+   "linkedin": {
+      "description": "text for button to share clip via LinkedIn",
+      "message": "LinkedIn"
+   },
+   "loading": {
+      "description": "Message shown when extension is loading...",
+      "message": "Ladataan..."
+   },
+   "loggingIn": {
+      "description": "Message indicating that the extension is currently attempting to sign in user",
+      "message": "Kirjaudutaan sisään Evernoteen"
+   },
+   "loginForm_login": {
+      "description": "Sign in button label for login form",
+      "message": "Kirjaudu sisään"
+   },
+   "loginForm_password": {
+      "description": "Label for entering password into login form",
+      "message": "Salasana"
+   },
+   "loginForm_passwordError_5": {
+      "description": "",
+      "message": "Salasana vaaditaan."
+   },
+   "loginForm_passwordInvalidError": {
+      "description": "",
+      "message": "Virheellinen salasana"
+   },
+   "loginForm_rememberMe": {
+      "description": "Label for extending login session",
+      "message": "Muista minut"
+   },
+   "loginForm_searchHelper": {
+      "description": "Label for search helper option on the login view",
+      "message": "Näytä liittyvät tulokset web-haun yhteydessä"
+   },
+   "loginForm_username": {
+      "description": "Label for entering email address or username into login form",
+      "message": "Sähköposti tai käyttäjätunnus"
+   },
+   "loginForm_usernameError_5": {
+      "description": "",
+      "message": "Käyttäjätunnus vaaditaan."
+   },
+   "loginForm_usernameError_8": {
+      "description": "",
+      "message": "Käyttäjätunnus ja salasana eivät täsmää olemassa olevaan käyttäjään."
+   },
+   "loginForm_usernameInvalidChinaError": {
+      "description": "",
+      "message": "Tuntematon kirjautuminen, tai käytä Evernote Internationalia"
+   },
+   "loginForm_usernameInvalidError": {
+      "description": "",
+      "message": "Tuon nimistä käyttäjää ei löydy."
+   },
+   "login_searchHelperLongDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Kun toiminto on käytössä, tuetuilla hakukoneilla tekemäsi haut kohdistetaan myös Evernote-tiliisi."
+   },
+   "logs_export": {
+      "description": "Title of the button for exporting all of the logs",
+      "message": "Vientilokit"
+   },
+   "logs_follow": {
+      "description": "Label for an option to trail the logfile",
+      "message": "Seuraa"
+   },
+   "logs_selectLogFile": {
+      "description": "Label for selecting log files for viewing",
+      "message": "Valitse lokitiedosto: "
+   },
+   "logs_title": {
+      "description": "The title of the logs page.",
+      "message": "Tapahtumalokit"
+   },
+   "mail": {
+      "description": "text for button to share clip via email",
+      "message": "Posti"
+   },
+   "marker": {
+      "description": "label for shortcut to use the marker tool in options page",
+      "message": "Merkitsijä"
+   },
+   "markerTool": {
+      "description": "tooltip for marker tool",
+      "message": "Merkintätyökalu"
+   },
+   "markupShortcuts": {
+      "description": "header of the markup shortcuts on options page",
+      "message": "Merkitse:"
+   },
+   "message": {
+      "description": "label for message in the email sharing dialog",
+      "message": "\u003Cspan class='header'>Viesti:\u003C/span>"
+   },
+   "more": {
+      "description": "General purpose, capitalized word for More - as in - there's more to see/read etc.",
+      "message": "Lisää"
+   },
+   "moreInfo": {
+      "description": "button to get more about an error",
+      "message": "Lisätietoa"
+   },
+   "morePagesFound": {
+      "description": "popup in article mode to indicate that the article has more than one additional page",
+      "message": "+$num$ sivua lisää",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "moveArticleDownShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box down the page",
+      "message": "Siirrä artikkelivalintaa alaspäin"
+   },
+   "moveArticleUpShortcut": {
+      "description": "label for keyboard shortcut that moves the article preview box up the page",
+      "message": "Siirrä artikkelivalintaa ylöspäin"
+   },
+   "nearQuota": {
+      "description": "title for near quota message",
+      "message": "Olet lähes saavuttanut kuukausittaisen siirtorajoituksesi."
+   },
+   "nearQuotaBasicAction": {
+      "description": "message for basic users after clipping something that puts them near their quota",
+      "message": "Sinulla on vain 5 Mt tilaa jäljellä. Päivitä kasvattaaksesi kuukausittaista lähetyskapasiteettia."
+   },
+   "nearQuotaPlusAction": {
+      "description": "message for plus users after clipping something that puts them near their quota",
+      "message": "Sinulla on vain 250 Mt tilaa jäljellä. Päivitä kasvattaaksesi kuukausittaista lähetyskapasiteettia."
+   },
+   "nearQuotaPremiumAction": {
+      "description": "message for premium users after clipping something that puts them near their quota",
+      "message": "Sinulla on vain 250 Mt tilaa jäljellä."
+   },
+   "newFeatureDescription": {
+      "description": "The popover description of for the Smart Filing feature, including a link to the options page.",
+      "message": "Web Clipper ehdottaa avainsanoja ja muistikirjoja leikkeen sisällön perusteella. Voit hallinnoida tätä ominaisuutta ja muita toimintoja Web Clipperin \u003Cspan class='newFeatureOptionsPseudoLink'>asetuksissa\u003C/span>."
+   },
+   "newFeatureTitle": {
+      "description": "The title for any new feature we're showcasing in the current release.",
+      "message": "Älykäs arkistointi"
+   },
+   "nextWeek": {
+      "description": "button to set reminder for one week from now",
+      "message": "Viikon kuluessa"
+   },
+   "noResult": {
+      "description": "text in post clip dialog when there are no related notes or clips from that domain",
+      "message": "Ei tuloksia"
+   },
+   "noThanks": {
+      "description": "label for button in the ratings prompt to not rate or send feedback",
+      "message": "Ei kiitos"
+   },
+   "notNow": {
+      "description": "button to dismiss near quota warning",
+      "message": "Ei nyt"
+   },
+   "noteSizeExceeded": {
+      "description": "message that clip is bigger than a certain number of bytes",
+      "message": "Leike on yli $size$",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededBasic": {
+      "description": "Error message shown to Basic users who try to clip something over the maximum note size",
+      "message": "Tarvitset Evernote Plussan tai Evernote Premiumin voidaksesi leikata $size$ suurempia muistiinpanoja.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "25MB"
+         }
+      }
+   },
+   "noteSizeExceededPlus": {
+      "description": "Error message shown to Plus users who try to clip something over the maximum note size",
+      "message": "Tarvitset Evernote Premiumin voidaksesi leikata $size$ suurempia muistiinpanoja.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "50MB"
+         }
+      }
+   },
+   "noteSizeExceededPremium": {
+      "description": "Error message shown to Premium users who try to clip something over the maximum note size",
+      "message": "Valitettavasti suurin muistiinpanon koko on $size$.",
+      "placeholders": {
+         "size": {
+            "content": "$1",
+            "example": "200MB"
+         }
+      }
+   },
+   "notebookSelection": {
+      "description": "label for notebook selection in options page",
+      "message": "Muistikirjan valinta"
+   },
+   "notifyMe": {
+      "description": "label for dialog that adds/updates a date to a reminder",
+      "message": "Ilmoita minulle…"
+   },
+   "office365InboxTooltip": {
+      "description": "Tooltip for Office 365",
+      "message": "Voit nyt leikata sähköpostiviestiketjuja Office 365:stä suoraan Evernote-tilillesi."
+   },
+   "ok": {
+      "description": "message to dismiss error",
+      "message": "OK"
+   },
+   "oneMorePageFound": {
+      "description": "popup in article mode to indicate that the article has one additional page",
+      "message": "+1 sivu lisää"
+   },
+   "openConvoInGmail": {
+      "description": "button in gmail clips that has a link back to the original Gmail thread",
+      "message": "Avaa keskustelu Gmailissa"
+   },
+   "openConvoInGoogleInbox": {
+      "description": "button in inbox by gmail clips that has a link back to the original Inbox by Gmail thread",
+      "message": "Avaa keskustelu Gmailin Saapuneet-kansiossa"
+   },
+   "openInEvernote": {
+      "description": "view/edit link in the post-clip notification",
+      "message": "Avaa Evernotessa"
+   },
+   "optionsClipDestinationCloud": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote desktop' ",
+      "message": "Evernote web"
+   },
+   "optionsClipDestinationNative": {
+      "description": "Item for Clip Destination drop down menu in the options dialog. With optionsSendNoteTo it should read 'Send clips to Evernote web' ",
+      "message": "Evernote-työpöytä"
+   },
+   "optionsSendClipsTo": {
+      "description": "Heading for Clip Destination drop down menu in the options dialog.",
+      "message": "Lähetä leikkeet kohteeseen"
+   },
+   "options_buildId": {
+      "description": "The revison number of this build of the clipper, as pulled fro mSVN at the time the clipper was built.",
+      "message": "Koontiversion ID:"
+   },
+   "options_client": {
+      "description": "Label for the dropdown menu in Options where user can choose what client s/he wants to open and edit notes in",
+      "message": "Avaa muistiinpanot kohteessa"
+   },
+   "options_clientSelectionDescription": {
+      "description": "Description of the dropdown menu to select what client the user wants to open notes in. Only displayed when user selects the desktop client",
+      "message": "Kun käytät tätä asetusta ensimmäistä kertaa, näet 'Ulkoinen protokollapyyntö'-valintaikkunan. Parhaan käyttökokemuksen saat, kun merkitset 'Muista valintani'-laatikon ja valitset sitten 'Käynnistä sovellus'."
+   },
+   "options_client_desktop": {
+      "description": "Desktop client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Työpöytäohjelma"
+   },
+   "options_client_web": {
+      "description": "Web client choice in the dropdown menu to select what client to open/edit a note in",
+      "message": "Web-palvelu"
+   },
+   "options_clipAction": {
+      "description": "Label for specifying default clipping action",
+      "message": "Oletusleiketoiminto"
+   },
+   "options_clipAction_article": {
+      "description": "Label for article as the default clipping action",
+      "message": "Ota leike artikkelista"
+   },
+   "options_clipAction_fullPage": {
+      "description": "Label for full-page as the default clipping action",
+      "message": "Ota leike koko sivusta"
+   },
+   "options_clipAction_url": {
+      "description": "Label for url as the default clipping action",
+      "message": "Ota leike osoitteesta"
+   },
+   "options_clipNotificationEnabled": {
+      "description": "Label for option to enable notification about successful clips",
+      "message": "Ota ilmoitukset käyttöön"
+   },
+   "options_clipNotificationEnabledDescription": {
+      "description": "Description of the notifications option",
+      "message": "Kun käytössä, saat ilmoituksen aina, kun leike on ladattu. Ilmoitusten ansiosta leikkeiden katselu, muokkaus ja jakaminen on helpompaa."
+   },
+   "options_clipStyle": {
+      "description": "Label for the option to keep the style of the page while clipping.",
+      "message": "Säilytä tyyli"
+   },
+   "options_clipStyleDescription": {
+      "description": "Description for the option to preserve styles with clips.",
+      "message": "Kun käytössä, leikkeet säilyttävät tyylitiedot ja muotoilut, jotka ovat mahdollisimman lähellä alkuperäistä sivua. Kun ei käytössä, leikkeille annetaan yksinkertainen tyyli ilman muotoiluja."
+   },
+   "options_developer_title": {
+      "description": "Title for developer options",
+      "message": "Kehittäjän asetukset"
+   },
+   "options_enablePdfPageButton": {
+      "description": "label in options page for setting that controls whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "PDF-sivupainike"
+   },
+   "options_enablePdfPageButtonDescription": {
+      "description": "explanation of the setting to show whether the permanent 'Save PDF to Evernote' button always shows",
+      "message": "Näytä Tallenna Evernoteen -painike PDF-sivuilla."
+   },
+   "options_eventLogDescription": {
+      "description": "Describes the purpose of the event logs link in the options page.",
+      "message": "Aktiivisuusloki sisältää yksityiskohtaisen luettelon vaiheista, jotka Evernote sovellus tekee, samoin kuin tietoa tilistäsi, laitteestasi ja sijainnistasi (jos sallittu). Myös muistiinpanojesi otsikot, merkinnät, muistikirjojen nimet ja joskus myös muistiinpanon sisältö voivat sisältyä lokiin. Aktiivisuuslokisi tietoja käsitellään luottamuksellisesti, ja \u003Ca href=\"$privacyLink$\" target=\"_blank\">yksityisyyskäytäntömme \u003C/a> ehdot ovat voimassa.",
+      "placeholders": {
+         "privacyLink": {
+            "content": "$1",
+            "example": "https://www.evernote.com/privacy"
+         }
+      }
+   },
+   "options_eventLogHide": {
+      "description": "the text for the button to hide event logs",
+      "message": "Piilota lokit"
+   },
+   "options_eventLogLink": {
+      "description": "the text for the link to the event logs page from the options page",
+      "message": "Näytä lokit"
+   },
+   "options_insecureProto": {
+      "description": "Label for specifying insecure protocol option.",
+      "message": "Turvaton protokolla"
+   },
+   "options_overrideServiceURL": {
+      "description": "Custom URL to use that will override both stage and production URLs.",
+      "message": "Ohita palvelu-URL"
+   },
+   "options_resetAllOptions": {
+      "description": "Text for button that resets all clipper settings",
+      "message": "Nollaa kaikki asetukset"
+   },
+   "options_saveToEvernote": {
+      "description": "Label for option that enables integrated clip buttons",
+      "message": "Ota Muistutus-painikkeet käyttöön"
+   },
+   "options_saveToEvernoteDescription": {
+      "description": "Description for option that enables integrated clip buttons",
+      "message": "Näytä kuvien, GMail-viestien ja Facebook-julkaisujen pikapainikkeet"
+   },
+   "options_saving": {
+      "description": "Notifies the user that their changes to the options page are being saved",
+      "message": "Tallennetaan..."
+   },
+   "options_secureProto": {
+      "description": "Label specifying secure protocol option.",
+      "message": "Turvallinen protokolla"
+   },
+   "options_simulateCheckVersionFailure": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Simuloi checkVersion-epäonnistumista"
+   },
+   "options_simulateSimplifiedChinese": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Jäljittele yksinkertaistettua kiinaa"
+   },
+   "options_simulateSimplifiedChineseDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Kun tämä asetus on valittu, verkkoleiketyökalu toimii ikään kuin sen kieliasetuksena olisi yksinkertaistettu kiina, kun yhdistettävää palvelua valitaan."
+   },
+   "options_smartFilingBizDesc": {
+      "description": "Description of option to allow smart filing into business notebooks",
+      "message": "Salli älykäs arkistointi Business-muistikirjoihin"
+   },
+   "options_smartFilingEnabled": {
+      "description": "Label for option to enable automatic tagging and notebook selection for new notes.",
+      "message": "Ota älykäs arkistointi käyttöön"
+   },
+   "options_smartFilingEnabledDescription": {
+      "description": "Description of the smart filing option",
+      "message": "Älykäs arkistointi valitsee automaattisesti muistikirjan ja avainsanaluettelon sen sivun perusteella, josta olet ottamassa leikettä."
+   },
+   "options_smartFilingEnabled_all": {
+      "description": "",
+      "message": "Avainsanat ja muistikirjat"
+   },
+   "options_smartFilingEnabled_none": {
+      "description": "",
+      "message": "Ota älykäs arkistointi pois käytöstä"
+   },
+   "options_smartFilingEnabled_notebooks": {
+      "description": "",
+      "message": "Vain muistikirjat"
+   },
+   "options_smartFilingEnabled_tags": {
+      "description": "",
+      "message": "Vain avainsanat"
+   },
+   "options_storedCredentials": {
+      "description": "Label for a set of options controls enabling users to store their credentials",
+      "message": "Tunnukset"
+   },
+   "options_storedCredentialsDescription": {
+      "description": "Educational message for users who wish to store their Evernote password. First sentence is the most critical one as it will be used in options_storedCredentialsShortDescription",
+      "message": "\u003Cb>HUOM:\u003C/b> Salasanojen tallentamisesta voi seurata, että muut pystyvät käyttämään Evernote-tiliäsi tällä selaimella. Poista Leike Evernoteen -laajennus tai kirjaudu siitä ulos, jos haluat pysyvästi poistaa selainlaajennukseen tallennetun käyttäjätunnuksen ja salasanan."
+   },
+   "options_title": {
+      "description": "Title of the options page",
+      "message": "Asetukset"
+   },
+   "options_useContextMenu": {
+      "description": "Label for option to enable clipping via contextual menu",
+      "message": "Ota kohdevalikot käyttöön"
+   },
+   "options_useContextMenuDescription": {
+      "description": "Description of the contextual menu option",
+      "message": "Kun käytössä, voit ottaa leikkeitä verkkosivuista kohdevalikon avulla. Kuvien, valitun tekstin tai minkä tahansa sivulla olevan alueen napsautus hiiren oikealla näppäimellä tuo näkyviin käytettävissä olevat leiketoiminnot."
+   },
+   "options_useSearchHelper": {
+      "description": "Label for search-helper feature toggle",
+      "message": "Liittyvät tulokset"
+   },
+   "options_useSearchHelperDescription": {
+      "description": "Description of the search-helper feature as shown on the options page",
+      "message": "Näytä Evernote sisältö, joka liittyy internet-hakuihini."
+   },
+   "options_useStage": {
+      "description": "Label for developer option to simulate checkVersion failure",
+      "message": "Use Stage"
+   },
+   "options_useStageDescription": {
+      "description": "Description for what it means to select this option",
+      "message": "Määrittää verkkoleiketyökalun käyttämään tuotantopalvelun sijasta 'näyttämöpalvelua', jota normaalisti käytetään vain testaukseen."
+   },
+   "organize": {
+      "description": "header for the filing info section of the sidebar",
+      "message": "Organisoi"
+   },
+   "originalEmail": {
+      "description": "header in notes generated by the smart email extension that marks the start of the original email",
+      "message": "ALKUPERÄINEN SÄHKÖPOSTIVIESTI"
+   },
+   "otherParticipants": {
+      "description": "Label for unknown participants in workchat",
+      "message": "ja {COUNT_PLURAL:{COUNT} muu|{COUNT} muuta}"
+   },
+   "outlookTooltip": {
+      "description": "Tooltip for Outlook.com",
+      "message": "Voit nyt leikata sähköpostiviestiketjuja Outlookista suoraan Evernote-tilillesi."
+   },
+   "overAccountMaxError": {
+      "description": "error message in post clip dialog when user can't finish clip because s/he reached the maximum number of notes allowed",
+      "message": "Evernote-tililläsi on nyt suurin sallittu määrä muistiinpanoja. Et voi luoda uusia muistiinpanoja, ennen kuin vähennät tilisi muistiinpanojen määrän alle $max$.",
+      "placeholders": {
+         "max": {
+            "content": "$1",
+            "example": "100,000"
+         }
+      }
+   },
+   "overQuotaBasic": {
+      "description": "Indicates that Basic user has exceeded quota",
+      "message": "Tilasi loppui. Kasvata kuukausittaista lähetyskiintiötäsi ja muistiinpanojen kokorajoitusta päivittämällä Evernote Plussaan tai Evernote Premiumiin."
+   },
+   "overQuotaPlus": {
+      "description": "Indicates that Plus user has exceeded quota",
+      "message": "Tilasi loppui. Kasvata kuukausittaista lähetyskiintiötäsi ja muistiinpanojen kokorajoitusta päivittämällä Evernote Premiumiin."
+   },
+   "overQuotaPremium": {
+      "description": "body of error message when Premium user has exceeded 4GB quota",
+      "message": "Tilasi loppui."
+   },
+   "page": {
+      "description": "page number label in clearly",
+      "message": "Sivu $num$",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "panInstruction": {
+      "description": "Label for tip to hold control key to pan in skitch mode",
+      "message": "Vihje: pidä Ctrl-näppäin pohjassa kun haluat panoroida"
+   },
+   "participants": {
+      "description": "label in gmail preview for the senders and recipients of a thread",
+      "message": "Osanottajat"
+   },
+   "pdf": {
+      "description": "label for shortcut to go to pdf mode",
+      "message": "PDF-leike"
+   },
+   "pdfClip": {
+      "description": "Tooltip for pdf clip tool",
+      "message": "PDF"
+   },
+   "pdfTip": {
+      "description": "Tooltip that appears on PDFs",
+      "message": "Tiesitkö, että voit liittää PDF-tiedostoja suoraan Evernote-tiliisi Web Clipperin avulla?"
+   },
+   "perfect": {
+      "description": "default label for the pink heart skitch stamp",
+      "message": "Täydellistä"
+   },
+   "personal": {
+      "description": "Notebook type selection option. Variant 1",
+      "message": "Henkilökohtaiset"
+   },
+   "pixelate": {
+      "description": "label for shortcut to use the pixelate tool in options page",
+      "message": "Pikselöi"
+   },
+   "pixelatorTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Pikselöintityökalu"
+   },
+   "popup_couldntStart": {
+      "description": "Message that shows up when the clipper popup can't open.",
+      "message": "Tämä sivu on ladattava uudelleen, ennen kuin voit leikata sen. Lataa tili uudelleen ja yritä uudestaan."
+   },
+   "popup_couldntStartLocalFile": {
+      "description": "Message that shows up when user is trying to clip local files.",
+      "message": "Paikallisten tiedostojen leikkaamista ei tueta."
+   },
+   "popup_loadingNotebooks": {
+      "description": "Message shown while smart filing is running. Should *not* include trailing punctuation.",
+      "message": "Ladataan muistikirjoja"
+   },
+   "popup_loginCheckTimeout": {
+      "description": "Message that displays if checking if the user is logged in takes too long.",
+      "message": "Tunnusten tarkistus kesti liian kauan. Varmista, että Internet-yhteytesi on käytössä, ja yritä uudelleen."
+   },
+   "popup_moreNotesLink": {
+      "description": "Message showing how many more notes can be seen on the server.",
+      "message": "Näytä $count$ muistiinpanoa lisää...",
+      "placeholders": {
+         "count": {
+            "content": "$1",
+            "example": "10"
+         }
+      }
+   },
+   "popup_oneMoreNoteLink": {
+      "description": "Message showing there is one more note on the server.",
+      "message": "Katso vielä yksi muistiinpano…"
+   },
+   "popup_unsupportedScheme": {
+      "description": "The error to display when the popup can't operate on a specific type of url.",
+      "message": "Leikkeen ottamista tästä sijainnista ei tueta."
+   },
+   "popup_waiting": {
+      "description": "Displays while the popup window waits for a page to finish loading.",
+      "message": "Odotetaan sivua..."
+   },
+   "previewArticle": {
+      "description": "label for shortcut to go to article preview mode",
+      "message": "Esikatsele artikkeli"
+   },
+   "previewBanner": {
+      "description": "Warning for users that this version of clipper is unstable and may contain bugs",
+      "message": "Evernote Verkkoleikkurin esikatselu\u003Cbr>Jotain voi rikkoutua!"
+   },
+   "previewFullPage": {
+      "description": "label for shortcut to go to full page preview mode",
+      "message": "Esikatsele koko sivu"
+   },
+   "previewUrl": {
+      "description": "label for shortcut to go to url preview mode",
+      "message": "Esikatsele kirjanmerkki"
+   },
+   "proceed": {
+      "description": "button in SSO dialog that user uses to continue completing SSO",
+      "message": "Jatka"
+   },
+   "quickNote": {
+      "description": "Title for creating quick note",
+      "message": "Leike"
+   },
+   "quickNoteAction_clipArticle": {
+      "description": "Label for clipping article action",
+      "message": "Tallenna artikkeli"
+   },
+   "quickNoteAction_clipFullPage": {
+      "description": "Label for clipping full page action",
+      "message": "Tallenna koko sivu"
+   },
+   "quickNoteAction_clipSelection": {
+      "description": "Label for clipping selection action",
+      "message": "Tallenna valinta"
+   },
+   "quickNoteAction_clipUrl": {
+      "description": "Label for clipping URL action",
+      "message": "Tallenna osoite"
+   },
+   "quickNote_addComment": {
+      "description": "Placeholder text for comment input",
+      "message": "Lisää huomautus"
+   },
+   "quickNote_addTags": {
+      "description": "Placeholder text for tag input",
+      "message": "Lisää avainsana"
+   },
+   "quickNote_comment": {
+      "description": "Label for additional text to be added to the note",
+      "message": "Lisää teksti"
+   },
+   "quickNote_notebook": {
+      "description": "Label for selection of note's notebook",
+      "message": "Muistikirja"
+   },
+   "quickNote_submit": {
+      "description": "Label for saving quick note",
+      "message": "Tallenna"
+   },
+   "quickNote_tagsDisabled": {
+      "description": "Message indicating that you can't use tags for shared notebooks.",
+      "message": "Avainsanoja ei tueta"
+   },
+   "quickNote_title": {
+      "description": "Label for note title",
+      "message": "Otsikko"
+   },
+   "quickNote_untitledNote": {
+      "description": "Placeholder title for untitled note",
+      "message": "Nimetön muistiinpano"
+   },
+   "rateNow": {
+      "description": "label for button in the ratings prompt to rate the web clipper in the chrome webstore",
+      "message": "Arvostele nyt"
+   },
+   "rateQuestion": {
+      "description": "question at the bottom of the feedback form that asks user to give a numerical rating for the clipper",
+      "message": "Minkä arvosanan antaisit Web Clipperin tälle versiolle?"
+   },
+   "ratingPromptBody": {
+      "description": "body of the ratings prompt",
+      "message": "Uusi Web Clipper on suunniteltu verkossa olevan sisällön kaappaamisen, tallentamisen, merkitsemisen ja valikoivan jakamisen helpottamista ajatellen. Kerro meille, mitä pidät siitä."
+   },
+   "ratingPromptHeader": {
+      "description": "header of the ratings prompt",
+      "message": "Mitä pidät Web Clipperistä?"
+   },
+   "rectangle": {
+      "description": "label for shortcut to use the rectangle tool in options page",
+      "message": "Suorakaide"
+   },
+   "redo": {
+      "description": "label for shortcut to redo skitch action in options page",
+      "message": "Tee uudelleen"
+   },
+   "referralTipBody": {
+      "description": "body of the promotion to refer friends to Evernote",
+      "message": "Kun kutsumasi ystävät aloittavat Evernoten käytön, annamme sinulle palkinnoksi pisteitä, joilla voit päivittää Evernote Plussaan tai Evernote Premiumiin."
+   },
+   "referralTipCTA": {
+      "description": "text for button at the bottom of the promotion to refer friends to Evernote",
+      "message": "Kutsu ystäviä"
+   },
+   "referralTipHeader": {
+      "description": "header of the promotion to refer friends to Evernote",
+      "message": "Kutsu ystäviä. Ansaitse pisteitä."
+   },
+   "refreshList": {
+      "description": "text for refresh notebooks list block",
+      "message": "Päivitä lista"
+   },
+   "regAd": {
+      "description": "ad for evernote on the registration screen",
+      "message": "Tallenna kaikki ideasi sekä asiat, joita näet, kuulet tai joista pidät."
+   },
+   "regForm_cancel": {
+      "description": "Allows user to back out of registration when s/he's creating an account during account switching",
+      "message": "Peruuta"
+   },
+   "regForm_deactivated_username": {
+      "description": "User wanted to register with a deactivated username",
+      "message": "Käyttäjätunnus on poistettu käytöstä. Haluatko \u003Ca href='$url$'>aktivoida tilin uudelleen\u003C/a>?",
+      "placeholders": {
+         "url": {
+            "content": "$1",
+            "example": "https://www.evernote.com/AccountReactivation.action"
+         }
+      }
+   },
+   "regForm_email_required": {
+      "description": "User didn't enter an email address",
+      "message": "Sähköpostiosoite on vaadittu kenttä."
+   },
+   "regForm_invalid_captcha": {
+      "description": "User didn't fill out the captcha.",
+      "message": "Syötä kuvassa näkyvät numerot."
+   },
+   "regForm_invalid_email": {
+      "description": "User didn't enter a properly-formatted email address",
+      "message": "Sähköpostiosoite näyttää olevan virheellinen."
+   },
+   "regForm_invalid_password": {
+      "description": "User entered an invalid password",
+      "message": "Valitse 6–64 merkin pituinen salasana, joka sisältää kirjaimia, numeroita ja välimerkkejä."
+   },
+   "regForm_invalid_username": {
+      "description": "User entered an invalid username",
+      "message": "Käyttäjätunnuksesi pitää alkaa ja loppua joko kirjaimella tai numerolla, se voi sisältää myös väliviivoja ja alaviivoja."
+   },
+   "regForm_password_required": {
+      "description": "User didn't enter a password",
+      "message": "Salasana on vaadittu kenttä."
+   },
+   "regForm_taken_email": {
+      "description": "User entered a valid but unavailable email",
+      "message": "Tämä sähköpostiosoite on jo käytössä."
+   },
+   "regForm_taken_username": {
+      "description": "User entered a valid but unavailable username",
+      "message": "Valitsemasi käyttäjätunnus on jo toisen käyttäjän käytössä."
+   },
+   "register": {
+      "description": "Text on the submit button of the registration form",
+      "message": "Rekisteröidy"
+   },
+   "registrationForm_username": {
+      "description": "Text on the username field of the registration form",
+      "message": "Käyttäjätunnus"
+   },
+   "registration_terms": {
+      "description": "Terms of Service and Privacy Policy agreement",
+      "message": "Valitsemalla Rekisteröidy hyväksyt \u003Ca href='$tos_url$' target='_blank' tabindex='6'>palveluehdot\u003C/a> ja \u003Ca href='$pp_url$' target='_blank' tabindex='7'>tietosuojakäytännön\u003C/a>.",
+      "placeholders": {
+         "pp_url": {
+            "content": "$2",
+            "example": "http://www.evernote.com/privacy"
+         },
+         "tos_url": {
+            "content": "$1",
+            "example": "http://www.evernote.com/tos"
+         }
+      }
+   },
+   "rejected": {
+      "description": "default label for the red X skitch stamp",
+      "message": "Hylätty"
+   },
+   "relatedNotes": {
+      "description": "Label for the related notes button, and the title for the descriptive overlay.",
+      "message": "Liittyvät muistiinpanot"
+   },
+   "relatedNotesDescription": {
+      "description": "message describing what Related Notes do.",
+      "message": "Evernote etsii jopa kolme tililläsi olevaa muistiinpanoa, jotka liittyvät juuri leikkaamaasi sivuun ja esittää ne tässä."
+   },
+   "rememberFacebook": {
+      "description": "'Remember' button text for Facebook",
+      "message": "Muista"
+   },
+   "rememberGmail": {
+      "description": "'Remember' button text for Gmail",
+      "message": "Muista"
+   },
+   "rememberImage": {
+      "description": "'Remember' button text for images",
+      "message": "Muista"
+   },
+   "reminderAdded": {
+      "description": "message that reminder has been added to the note",
+      "message": "Muistutus lisätty"
+   },
+   "reminderSaved": {
+      "description": "notification in smart email extension after note has been saved",
+      "message": "Muistutus tallennettu"
+   },
+   "reset": {
+      "description": "label for resetting zoom and pan in skitch mode",
+      "message": "Nollaa"
+   },
+   "resetShortcuts": {
+      "description": "button to reset shortcuts in options page",
+      "message": "Palauta oikotiet"
+   },
+   "resizeClipperPanel": {
+      "description": "Label for shortcut to minimize Web Clipper",
+      "message": "Pienennä Verkkoleikkuri"
+   },
+   "roundedRectangle": {
+      "description": "label for shortcut to use the rounded rectangle tool in options page",
+      "message": "Pyöreäkulmainen suorakaide"
+   },
+   "safariContextClipImage": {
+      "description": "Label for right-click menu to clip an image in Safari.",
+      "message": "Tallenna kuva Evernoteen"
+   },
+   "safariContextClipPDF": {
+      "description": "Label for right-click menu to clip a PDF in Safari.",
+      "message": "Tallenna PDF-tiedosto Evernoteen"
+   },
+   "safariContextClipPage": {
+      "description": "Label for right-click menu to clip the whole page in Safari.",
+      "message": "Tallenna koko sivu Evernoteen"
+   },
+   "safariContextClipScreenshot": {
+      "description": "Label for right-click menu to clip a screenshot in Safari",
+      "message": "Tallenna näyttökuva Evernoteen"
+   },
+   "safariContextClipSelection": {
+      "description": "Label for right-click menu to clip a selection in Safari.",
+      "message": "Tallenna valinta Evernoteen"
+   },
+   "safariContextClipUrl": {
+      "description": "Label for right-click menu to clip a URL in Safari.",
+      "message": "Tallenna kirjanmerkki Evernoteen"
+   },
+   "salesforceBodyA": {
+      "description": "body of the salesforce promotion, design A",
+      "message": "Yhdistä Evernote-muistiinpanot nopeasti Salesforce-tietueisiin, tee yksityiskohtaisia muistiinpanoja asiakkaista ja tarkastele uudessa valossa ihmisiä, joihin olet yhteydessä."
+   },
+   "salesforceBodyB": {
+      "description": "body of the salesforce promotion, design B",
+      "message": "Asentamalla Evernote Business for Salesforce -integroinnin voit jakaa muistiinpanoja työtovereiden kanssa, tarkastella uudessa valossa ihmisiä, joihin olet yhteydessä, ja jopa liittää muistiinpanot suoraan Salesforce-tietueisiin."
+   },
+   "salesforceHeaderA": {
+      "description": "headline for salesforce promotion, design A",
+      "message": "Tee Evernote Business for Salesforcella entistä enemmän"
+   },
+   "salesforceHeaderB": {
+      "description": "headline for salesforce promotion, design B",
+      "message": "Tee Evernote Businessillä entistä enemmän"
+   },
+   "save": {
+      "description": "button in smart email extension if user wants to save note to evernote",
+      "message": "Tallenna Evernoteen"
+   },
+   "saveThisArticleToEvernote": {
+      "description": "header for tooltip to save article to Evernote",
+      "message": "Tallenna tämä artikkeli Evernoteen"
+   },
+   "saveToEvernote": {
+      "description": "Label for button to save clip to Evernote",
+      "message": "Tallenna"
+   },
+   "screenshotClip": {
+      "description": "label for option in global toolbar",
+      "message": "Kuvakaappaus"
+   },
+   "screenshotCrosshairToast": {
+      "message": "\u003Cstrong>Klikkaa\u003C/strong> tallentaaksesi koko sivu tai \u003Cstrong>raahaa ja vapauta\u003C/strong> tallentaaksesi osan sivusta"
+   },
+   "screenshotToast": {
+      "description": "A toast to notify the user that skitch has completed taking a screenshot",
+      "message": "Näyttökuva otettu"
+   },
+   "searchEvernoteAsYouSearchWeb": {
+      "message": "Tee haku Evernote-tililläsi samaan tapaan kuin verkossa"
+   },
+   "searchHelperFoundNotes": {
+      "description": "Message indicating that related notes were found",
+      "message": "\u003Cb>Tärkeimmät tulokset\u003C/b> Evernote-tililläsi"
+   },
+   "searchHelperLoginMessage": {
+      "description": "Message injected into search-engine page indicating that the user must login prior to seeing results.",
+      "message": "\u003Cdiv class='grayText' id='login'>\u003Ca target='_blank' href='$loginUrl$'>Kirjaudu sisään\u003C/a> Web Clipper, jos haluat nähdä liittyvät tulokset\u003C/div>",
+      "placeholders": {
+         "loginUrl": {
+            "content": "$1",
+            "example": "http://www.evernote.com/Login.action"
+         }
+      }
+   },
+   "searchHelperNoTransportError": {
+      "description": "Error message shown to user when there is a problem reaching the servers when doing simultaneous search.",
+      "message": "Samanaikainen haku ei ole tällä hetkellä käytettävissä, koska Evernoten palvelimiin ei saada yhteyttä."
+   },
+   "searchHelperNotesNotFoundBiz": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal or business accounts",
+      "message": "Ei liittyviä tuloksia henkilökohtaisissa tai Business-muistiinpanoissa"
+   },
+   "searchHelperNotesNotFoundPers": {
+      "description": "Message injected into search-engine page indicating there were no related notes found in personal account",
+      "message": "Ei liittyviä tuloksia muistiinpanoissasi"
+   },
+   "searchHelperTopBizLibraryMatches": {
+      "description": "Section heading for the simsearch notes found in the user's business account",
+      "message": "$num$ liittyvää tulosta Business-muistiinpanoissasi",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "2"
+         }
+      }
+   },
+   "searchHelperTopBizLibraryMatchesOne": {
+      "description": "Section heading for the simsearch notes found in the user's business account, if there was only one result",
+      "message": "1 liittyvä tulos Business-muistiinpanoissasi"
+   },
+   "searchHelperTopMatchesBiz": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account",
+      "message": "$num$ liittyvää tulosta henkilökohtaisissa muistiinpanoissasi",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesBizOne": {
+      "description": "Section heading for the simsearch notes found in a business user's personal account, if there was only one result",
+      "message": "1 liittyvä tulos henkilökohtaisissa muistiinpanoissasi"
+   },
+   "searchHelperTopMatchesPers": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account",
+      "message": "$num$ liittyvää tulosta muistiinpanoissasi",
+      "placeholders": {
+         "num": {
+            "content": "$1",
+            "example": "3"
+         }
+      }
+   },
+   "searchHelperTopMatchesPersOne": {
+      "description": "Section heading for the simsearch notes found in a non-business user's personal account, if there was only one result",
+      "message": "1 liittyvä tulos muistiinpanoissasi"
+   },
+   "searchHelper_hidePerm": {
+      "description": "Text for the option in the simsearch drop down menu to let user to disable simsearch in the options",
+      "message": "Älä näytä enää"
+   },
+   "searchHelper_hideTemp": {
+      "description": "Text for the option in the simsearch drop down menu to let user temporarily close the simsearch box, but not disable in the options",
+      "message": "Hylkää"
+   },
+   "seeMore": {
+      "description": "link on expertise search results to open person's People Detail view in the desktop client",
+      "message": "Näytä lisää »"
+   },
+   "selectAllMarkup": {
+      "description": "label for shortcut to select all markup objects in options page",
+      "message": "Valitse kaikki merkittävät objektit"
+   },
+   "selectAllMessages": {
+      "description": "label in gmail preview for the checkbox to select all messages in a thread",
+      "message": "Valitse kaikki viestit"
+   },
+   "selectNotebook": {
+      "description": "label in options page to describe the keyboard shortcut that opens the filing dialog with a focus on the notebook field",
+      "message": "Valitse muistikirja"
+   },
+   "selectionClip": {
+      "description": "Tooltip for selection clip tool",
+      "message": "Valinta"
+   },
+   "selectionMode": {
+      "description": "label for shortcut to go to text selection mode",
+      "message": "Valintatila"
+   },
+   "send": {
+      "description": "label for submit button on the feedback form",
+      "message": "Lähetä"
+   },
+   "sendFeedback": {
+      "description": "label for button in the ratings prompt to send feedback to our customer support team",
+      "message": "Lähetä palautetta"
+   },
+   "sendReport": {
+      "description": "button to submit crash report when the user fails to clip a page",
+      "message": "Lähetä raportti Evernotelle"
+   },
+   "sendTo": {
+      "description": "label for recipients textbox of the email sharing dialog",
+      "message": "Lähetä kohteeseen:"
+   },
+   "setShortcutInstruction": {
+      "description": "tooltip for setting a keyboard shortcut in the options page",
+      "message": "Muuta painamalla näppäinyhdistelmää näppäimistöllä nyt"
+   },
+   "shapeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Muoto-työkalu"
+   },
+   "share": {
+      "description": "button to send note in email sharing dialog",
+      "message": "Jaa"
+   },
+   "shareNote": {
+      "description": "text for button to share clipped note via work chat",
+      "message": "Jaa muistiinpano"
+   },
+   "shareThisClip": {
+      "description": "button that invites users to share the note they just clipped",
+      "message": "Jaa tämä leike"
+   },
+   "shareUrl": {
+      "description": "text for button to create public link of clip",
+      "message": "Jaa URL-osoite"
+   },
+   "sharedNotebook": {
+      "description": "tooltip for shared notebooks in notebook selector",
+      "message": "Jaettu muistikirja"
+   },
+   "shortcutConflict": {
+      "description": "error message when user tries to use a key combo for a shortcut that has already been used",
+      "message": "Kaksi oikotietä on ristiriidassa keskenään."
+   },
+   "shortcutLengthError": {
+      "description": "error message when user tries to set a shortcut that's more than three keys long",
+      "message": "Pikanäppäinyhdistelmässä voi olla enintään kolme näppäintä."
+   },
+   "shortcutNoEsc": {
+      "description": "error message when user tries to use ESC for any shortcut other than the one to close the clipper",
+      "message": "Tässä oikotiessä ei voi käyttää ESC-näppäintä"
+   },
+   "shortcutReleaseNotesBody": {
+      "description": "body for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Käy \u003Ca href='$href$' target='_blank'>asetussivulla\u003C/a>, niin saat lisätietoja suosikkioikoteistäsi ja voit määrittää ne. Määritä kaikkein tärkein oikotie heti!",
+      "placeholders": {
+         "href": {
+            "content": "$1",
+            "example": "chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/options.html"
+         }
+      }
+   },
+   "shortcutReleaseNotesHeader": {
+      "description": "header for the release notes that notifies the user that shortcuts are configurable",
+      "message": "Pikanäppäimet ovat nyt määritettävissä."
+   },
+   "shortcutReleaseNotesTooltip": {
+      "description": "tooltip for shortcut release notes",
+      "message": "Aseta osoitin kenttään ja valitse haluamasi oikotie"
+   },
+   "shortcuts_email": {
+      "description": "label for shortcut to go to email mode",
+      "message": "Lähetä leike sähköpostilla"
+   },
+   "showMeMore": {
+      "description": "button on promotions that links to a web page on the Evernote marketing site that has more info about the product that is in the promotion",
+      "message": "Näytä lisää"
+   },
+   "showRelatedNotes": {
+      "description": "text for the link in the 'related notes' overlay that will show this section.",
+      "message": "Näytä liittyvät muistiinpanot"
+   },
+   "showSuccessfulClipDialog": {
+      "description": "option in options page. if enabled, it shows the full post clip dialog after a successful clip",
+      "message": "Näytä onnistunut leikkaus-dialogi"
+   },
+   "showSuccessfulClipDialogWithoutRelatedNotes": {
+      "description": "option in options page. if enabled, it shows the post clip dialog w/o related notes after a successful clip",
+      "message": "Näytä onnistunut leikkaus-dialogi ilman asiaan liittyviä muistiinpanoja"
+   },
+   "signInPrompt": {
+      "description": "hover text on signed out state of the toolbar icon",
+      "message": "Kirjaudu Web Clipperiin"
+   },
+   "signInToBusiness": {
+      "description": "link in sidebar for user to complete SSO",
+      "message": "Kirjaudu Businessiin"
+   },
+   "signOutAccount": {
+      "description": "menu item for logging out of the currently selected account.",
+      "message": "Kirjaudu ulos tililtä $name$",
+      "placeholders": {
+         "name": {
+            "content": "$1",
+            "example": "Username"
+         }
+      }
+   },
+   "signedInAs": {
+      "description": "label for username in options page",
+      "message": "Kirjautunut sisään käyttäjänä:"
+   },
+   "signout": {
+      "description": "Text on a link prompting for signing out currently logged in user",
+      "message": "Kirjaudu ulos"
+   },
+   "sixDigitCode": {
+      "description": "placeholder text in the textbox for the two step verification/backup code",
+      "message": "Kuusinumeroinen koodi"
+   },
+   "smsMessage": {
+      "description": "Message shown on the SMS Two Step page",
+      "message": "Lähetimme varmennuskoodin sisältävän tekstiviestin vastaanottajalle $phone$.",
+      "placeholders": {
+         "phone": {
+            "content": "$1",
+            "example": "(***) ***-**36"
+         }
+      }
+   },
+   "sorry": {
+      "description": "appears before error message",
+      "message": "Pahoittelut"
+   },
+   "speedbumpPremium": {
+      "description": "title of warning when a Premium user is near quota",
+      "message": "Olet ollut ahkera!"
+   },
+   "speedbumpPremiumAction": {
+      "description": "details of warning when a Premium is near quota",
+      "message": "Suuren sisältömäärän lisääminen lyhyessä ajassa saattaa aiheuttaa palvelun keskeytymisen. Vahvista, että nykyiset toiminnot ovat tahallisia."
+   },
+   "ssoDialog1Part1": {
+      "description": "first part of the SSO dialog",
+      "message": "Business-sisältöjen käyttö edellyttää lisätoimenpiteitä."
+   },
+   "ssoDialog1Part2": {
+      "description": "second part of the SSO dialog",
+      "message": "Jos valitset Ohita, et voi käyttää Business-sisältöä ennen näiden toimien suorittamista. Sillä välin voit käyttää henkilökohtaista sisältöä."
+   },
+   "ssoDialog2": {
+      "description": "body of the second SSO dialog",
+      "message": "Erilliseen ikkunaan pitäisi ilmestyä kehote todentaa yrityksesi. Valitse Yritä uudelleen, jos tämä ikkuna ei tule näyttöön."
+   },
+   "stack": {
+      "description": "tooltip for stack icon in filing dialog",
+      "message": "Muistikirjapino"
+   },
+   "stamp": {
+      "description": "label for shortcut to use the stamp tool in options page",
+      "message": "Leima"
+   },
+   "stampTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Leimatyökalu"
+   },
+   "startWebClipper": {
+      "description": "label for shortcut to start web clipper",
+      "message": "Käynnistä Web Clipper"
+   },
+   "startWebClipperClearly": {
+      "description": "label for shortcut to start clipper in clearly mode",
+      "message": "Käynnistä Web Clipper yksinkertaistetussa tilassa"
+   },
+   "subjectRequired": {
+      "description": "placeholder text for the subject field in the feedback form",
+      "message": "Aihe (pakollinen)"
+   },
+   "suggestedChats": {
+      "description": "heading for section in workchat that shows suggested chats",
+      "message": "Suositellut keskustelut"
+   },
+   "suggestedContacts": {
+      "description": "heading for section in workchat that shows suggested contacts",
+      "message": "Suositellut yhteystiedot"
+   },
+   "systemInfo": {
+      "description": "header for the system info section of the feedback form. contains info about operating system, clipper version, language",
+      "message": "Järjestelmätiedot"
+   },
+   "tagNamesNotInRange": {
+      "description": "Indicates that user entered an abnormal number of tags",
+      "message": "Enintään 20 avainsanaa"
+   },
+   "tagSelection": {
+      "description": "label for tag selection in options page",
+      "message": "Avainsanan valinta"
+   },
+   "takeAScreenshot": {
+      "description": "header for the screenshot toast",
+      "message": "Ota ruutukaappaus"
+   },
+   "takeScreenshot": {
+      "description": "label for shortcut to go to skitch mode",
+      "message": "Ota näyttökuva"
+   },
+   "text": {
+      "description": "label for shortcut to use the text tool in options page",
+      "message": "Teksti"
+   },
+   "toColon": {
+      "description": "label that goes right before the recipient input field in workchat",
+      "message": "Kohteeseen:"
+   },
+   "toggleAccountShortcut": {
+      "description": "label for keyboard shortcut that switches accounts",
+      "message": "Tilin vaihto"
+   },
+   "tomorrow": {
+      "description": "button to set reminder for tomorrow",
+      "message": "Huomenna"
+   },
+   "topSitesTooltipBodyPart1": {
+      "description": " first part of the body of the Top Sites tooltip/FLE",
+      "message": "Verkkoleikkuri tallentaa $siteName$-leikkeitä puhtaina ja siisteinä muistiinpanoina. Valitse haluamasi osiot ja säilytä ne sitten Evernotessa niin kauan kuin haluat.",
+      "placeholders": {
+         "siteName": {
+            "content": "$1",
+            "example": "LinkedIn"
+         }
+      }
+   },
+   "topSitesTooltipBodyPart2": {
+      "description": "bottom part of the body of the Top Sites tooltip/FLE",
+      "message": "Älä tyydy kirjanmerkkeihin vaan ala leikkelemään"
+   },
+   "topSitesTooltipHeader": {
+      "description": "header for the Top Sites tooltip/FLE",
+      "message": "Pidätkö tästä sivusta? Tallenna se."
+   },
+   "tryAgain": {
+      "message": "Yritä uudelleen"
+   },
+   "tryItOut": {
+      "description": "text for button on pdf tooltip",
+      "message": "Kokeile sitä"
+   },
+   "twitter": {
+      "description": "text for button to share clip via Twitter",
+      "message": "Twitter"
+   },
+   "twoStepHelp": {
+      "description": "link to TwoStepHelp.action",
+      "message": "Tarvitsen apua varmennuskoodin saamisessa"
+   },
+   "typeTool": {
+      "description": "tooltip for arrow tool",
+      "message": "Tyyppityökalu"
+   },
+   "typeYourMessage": {
+      "description": "placeholder text in workchat's message box",
+      "message": "Kirjoita viestisi..."
+   },
+   "unableOpenEmail": {
+      "description": "Notification that is shown when email preview cannot be loaded",
+      "message": "Tätä viestiä ei voi avata"
+   },
+   "undo": {
+      "description": "label for shortcut to undo skitch action in options page",
+      "message": "Kumoa"
+   },
+   "update": {
+      "description": "label for update button in sidebar",
+      "message": "Päivitä"
+   },
+   "upgrade": {
+      "description": "call to action to Basic users to upgrade to Plus or Premium",
+      "message": "Päivitä"
+   },
+   "urlClip": {
+      "description": "Tooltip for url clip tool",
+      "message": "Kirjanmerkki"
+   },
+   "urlCopied": {
+      "description": "shared url copied to clipboard confirmation",
+      "message": "URL-osoite kopioitu leikepöydälle"
+   },
+   "useSmartFiling": {
+      "description": "label for using smart filing in notebook/tag selection on options page",
+      "message": "Käytä älykästä arkistointia"
+   },
+   "version": {
+      "description": "string for version info in the options page",
+      "message": "Versio:"
+   },
+   "viewCrashReport": {
+      "description": "link to view crash report when the user fails to clip a page",
+      "message": "Näytä kaatumisraportti"
+   },
+   "viewInEvernote": {
+      "description": "link to smart email note after note has been saved",
+      "message": "Näytä Evernotessa"
+   },
+   "viewInGmail": {
+      "description": "button in notes generated by the smart email extension that links back to the original gmail thread",
+      "message": "Näytä Gmailissa"
+   },
+   "webClipperUpdated": {
+      "description": "hover text on the Updated state of the toolbar icon",
+      "message": "Web Clipperin uudet ominaisuudet"
+   },
+   "weibo": {
+      "description": "text for button to share clip via Weibo",
+      "message": "Weibo"
+   },
+   "what": {
+      "description": "default label for the blue question skitch stamp",
+      "message": "Mitä?"
+   },
+   "whatsThis": {
+      "description": "link on related notes UI that users can click on to find more info about the feature",
+      "message": "Mikä tämä on?"
+   },
+   "workChatExplanation": {
+      "description": "description of what work chat does",
+      "message": "Keskustele Internetistä lataamistasi leikkeistä. Puhu artikkeleista tai jaa huomautuksin merkittyjä leikkeitä poistumatta työtilastasi."
+   },
+   "workchatAddedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi käyttäjän \u003Cb>$receiverNames$\u003C/b> ja $numUnknown$ muuta henkilöä tähän keskusteluun",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi käyttäjän \u003Cb>$receiverNames$\u003C/b> ja 1 muun henkilön tähän keskusteluun",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi $numUnknown$ muuta henkilöä tähän keskusteluun",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi käyttäjän \u003Cb>$receiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi1 muun henkilön tähän keskusteluun",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatAddedParticipantYou": {
+      "message": "\u003Cb>$senderName$\u003C/b> lisäsi \u003Cb>sinut\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatChangedThreadName": {
+      "message": "\u003Cb>$senderName$\u003C/b> vaihtoi aiheeksi \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         },
+         "threadName": {
+            "content": "$2",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatDateFormat": {
+      "description": "format for date string in workchat. messages that were sent outside of this year are shown with their send time, e.g. 'Tue, Jan 27 2015 2:57PM'",
+      "message": "EEE, d. MMM yyyy h.mm a"
+   },
+   "workchatDateFormatThisYear": {
+      "description": "format for date string in workchat. messages that were sent in this year are shown with their send time, e.g. 'Tue, Jan 27 2:57PM'",
+      "message": "EEE, d. MMM h.mm a"
+   },
+   "workchatRemovedParticipantManyKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$3",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David, Frank"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti käyttäjän \u003Cb>$receiverNames$\u003C/b> ja $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$3",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl, David"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti käyttäjän \u003Cb>$receiverNames$\u003C/b> ja 1 muun henkilön tästä keskustelusta",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$2",
+            "example": "Bob, Carl"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneKnown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti käyttäjän \u003Cb>$receiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "receiverName": {
+            "content": "$2",
+            "example": "Bob"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>$senderName$\u003C/b> poisti 1 muun henkilön tästä keskustelusta",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: $numNotes$ muistiinpanoa",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: $numNotes$ muistiinpanoa $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$3",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: $numNotes$ muistiinpanoa 1 muistikirjan",
+      "placeholders": {
+         "numNotes": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNote": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: 1 muistiinpanon",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: 1 muistiinpanon $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: 1 muistiinpanon 1 muistikirjan",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatResharedOneNotebook": {
+      "message": "\u003Cb>$senderName$\u003C/b> liitti: 1 muistikirjan",
+      "placeholders": {
+         "senderName": {
+            "content": "$1",
+            "example": "Alice"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi käyttäjän \u003Cb>$receiverNames$\u003C/b> ja $numUnknown$ muuta henkilöä tähän keskusteluun",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi käyttäjän \u003Cb>$receiverNames$\u003C/b> ja 1 muun henkilön tähän keskusteluun",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantManyUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi $numUnknown$ muuta henkilöä tähän keskusteluun",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneKnown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi käyttäjän \u003Cb>$receiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownAddedParticipantOneUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> lisäsi 1 muun henkilön tähän keskusteluun"
+   },
+   "workchatUnknownChangedThreadName": {
+      "message": "\u003Cb>Joku\u003C/b> vaihtoi aiheeksi \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Frank"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti käyttäjän \u003Cb>$receiverNames$\u003C/b> ja $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti käyttäjän \u003Cb>$receiverNames$\u003C/b> ja 1 muun henkilön tästä keskustelusta",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti käyttäjän \u003Cb>$receiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatUnknownRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Joku\u003C/b> poisti 1 muun henkilön tästä keskustelusta"
+   },
+   "workchatUnknownResharedManyNote": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: $numNotes$ muistiinpanoa",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: $numNotes$ muistiinpanoa $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: $numNotes$ muistiinpanoa 1 muistikirjan",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedManyNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNote": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: 1 muistiinpanon"
+   },
+   "workchatUnknownResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: 1 muistiinpanon $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatUnknownResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: 1 muistiinpanon 1 muistikirjan"
+   },
+   "workchatUnknownResharedOneNotebook": {
+      "message": "\u003Cb>Joku\u003C/b> liitti: 1 muistikirjan"
+   },
+   "workchatYouAddedParticipantManyKnown": {
+      "message": "\u003Cb>Sinä\u003C/b> lisäsit käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouAddedParticipantOneKnown": {
+      "message": "\u003Cb>Sinä\u003C/b> lisäsit käyttäjän \u003Cb>$receiverName$\u003C/b> tähän keskusteluun",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouChangedThreadName": {
+      "message": "\u003Cb>Sinä\u003C/b> vaihdoit aiheeksi \u003Cb>$threadName$\u003C/b>",
+      "placeholders": {
+         "threadName": {
+            "content": "$1",
+            "example": "Party Planning Committee"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit käyttäjät \u003Cb>$receiverNames$\u003C/b> ja \u003Cb>$lastReceiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "lastReceiverName": {
+            "content": "$2",
+            "example": "Gary"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David, Ed, Frank"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownManyUnknown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit käyttäjän \u003Cb>$receiverNames$\u003C/b> ja $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$2",
+            "example": "4"
+         },
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl, David"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyKnownOneUnknown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit käyttäjän \u003Cb>$receiverNames$\u003C/b> ja 1 muun henkilön tästä keskustelusta",
+      "placeholders": {
+         "receiverNames": {
+            "content": "$1",
+            "example": "Bob, Carl"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantManyUnknown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit $numUnknown$ muuta henkilöä tästä keskustelusta",
+      "placeholders": {
+         "numUnknown": {
+            "content": "$1",
+            "example": "4"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneKnown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit käyttäjän \u003Cb>$receiverName$\u003C/b> tästä keskustelusta",
+      "placeholders": {
+         "receiverName": {
+            "content": "$1",
+            "example": "Bob"
+         }
+      }
+   },
+   "workchatYouRemovedParticipantOneUnknown": {
+      "message": "\u003Cb>Sinä\u003C/b> poistit 1 muun henkilön tästä keskustelusta"
+   },
+   "workchatYouResharedManyNote": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: $numNotes$ muistiinpanoa",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteManyNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: $numNotes$ muistiinpanoa $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$2",
+            "example": "5"
+         },
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNoteOneNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: $numNotes$ muistiinpanoa 1 muistikirjan",
+      "placeholders": {
+         "numNotes": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedManyNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNote": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: 1 muistiinpanon"
+   },
+   "workchatYouResharedOneNoteManyNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: 1 muistiinpanon $numNotebooks$ muistikirjaa",
+      "placeholders": {
+         "numNotebooks": {
+            "content": "$1",
+            "example": "5"
+         }
+      }
+   },
+   "workchatYouResharedOneNoteOneNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: 1 muistiinpanon 1 muistikirjan"
+   },
+   "workchatYouResharedOneNotebook": {
+      "message": "\u003Cb>Sinä\u003C/b> liitit: 1 muistikirjan"
+   },
+   "wow": {
+      "description": "default label for the orange exclamation skitch stamp",
+      "message": "Vau!"
+   },
+   "wsjTooltipBody": {
+      "description": "body for WSJ clipper tooltip",
+      "message": "Napsauta tätä Evernote-painiketta kerätäksesi WSJ-artikkeleita tutkimustarkoituksissa tai luettavaksi myöhemmin."
+   },
+   "youHaveRelatedNotes": {
+      "description": "Text indicating that the user has other related notes.",
+      "message": "Sinulla on muita tämänkaltaisia muistiinpanoja."
+   },
+   "youtube": {
+      "description": "name of custom clip option on youtube pages",
+      "message": "Youtube"
+   },
+   "zoomInShortcut": {
+      "description": "label for shortcut to zoom in on skitch in options page",
+      "message": "Lähennä (askel)"
+   },
+   "zoomOutShortcut": {
+      "description": "label for shortcut to zoom out on skitch in options page",
+      "message": "Loitonna (askel)"
+   },
+   "zoomToFit": {
+      "description": "label for shortcut to make skitch image stretch the image to fit in the window in options page",
+      "message": "Zoomaa näkymän kokoiseksi"
+   },
+   "zoomToOriginal": {
+      "description": "label for shortcut to make skitch image go to 100% zoom level in options page",
+      "message": "Zoomaa 100 %:iin"
+   },
+   "zoomin": {
+      "description": "tooltip for skitch zoom in tool",
+      "message": "Lähennä"
+   },
+   "zoomout": {
+      "description": "tooltip for skitch zoom out tool",
+      "message": "Loitonna"
+   }
+}

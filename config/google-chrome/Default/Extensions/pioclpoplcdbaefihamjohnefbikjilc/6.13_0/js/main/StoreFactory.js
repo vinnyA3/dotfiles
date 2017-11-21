@@ -1,0 +1,3 @@
+/*! Copyright 2009-2017 Evernote Corporation. All rights reserved. */
+
+define(function(){function a(a){var b=new Thrift.BinaryHttpTransport(a),c=new Thrift.BinaryProtocol(b);return new NoteStoreClient(c)}function b(a){var b=new Thrift.BinaryHttpTransport(a),c=new Thrift.BinaryProtocol(b);return new UserStoreClient(c)}function c(a,c){return b("https://"+a+(void 0!==c?"/u/"+c:"")+"/edam/user/")}function d(a){var b=new Thrift.BinaryHttpTransport(a),c=new Thrift.BinaryProtocol(b);return new UtilityClient(c)}var e={};return e.createNoteStoreClient=a,e.createUserStoreClient=b,e.createDefaultUserStoreClient=c,e.createUtilityClient=d,e});

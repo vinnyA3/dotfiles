@@ -1,0 +1,309 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #F6F6F6;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+#header {
+    padding: 0;
+    background: linear-gradient(#F1F1F1, #E9E9E9);
+    border-bottom: 1px #E2E2E2 solid;
+    box-shadow: 0 1px 0 white, 0 -1px 0 #F5F5F5;
+    height: 39px;
+}
+
+.branding span {
+    margin: 5px 10px;
+    background-image: url(../images/simsearch_logo.png);
+    background-size: 126px 29px;
+    background-repeat: no-repeat;
+    width: 126px;
+    height: 29px;
+    display: inline-block;
+}
+
+.branding span.china {
+    background-image: url(../images/simsearch_logo_china.png);
+}
+
+#disable {
+    font-size: 10px;
+    text-decoration: none;
+    float: right;
+    color: #69AB35;
+    line-height: 32px;
+}
+
+#login {
+    margin: 5px 4px 0px 7px;
+}
+
+#noNotes {
+    margin: 5px 4px 0px 7px;
+    display: none;
+}
+
+#simSearchNotes {
+    padding: 6px 10px 0 10px;
+    position: relative;
+}
+
+.noteSection {
+    width: 100%;
+    padding-bottom: 11px;
+    position: relative;
+}
+
+.noteSection:empty {
+    display: none;
+}
+
+.noteSectionTitle {
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #ADACAC;
+    padding: 0 4px;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.noteSectionNotes {
+    margin-top: 5px;
+    overflow-x: auto;
+    position: relative;
+    white-space: nowrap;
+}
+
+.noteBlock {
+    border: 1px solid #E9E9E9;
+}
+
+.expert {
+    height: 180px;
+    position: relative;
+    text-align: center;
+    width: 136px;
+}
+
+.expert .snippet {
+    margin: calc(87px - 50%) 0;
+    position: absolute;
+    width: 100%;
+}
+
+.expert h1 {
+    color: #3E3E3E;
+    font-family: HelveticaNeue-Bold, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.expert .role {
+    color: #9E9E9E;
+    font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.expert .seeMoreLink {
+    color: #618C94;
+    display: block;
+    font-family: HelveticaNeue-Bold, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.expert .divider {
+    background-color: #CDCDCD;
+    height: 1px;
+    margin: 11px auto 0 auto;
+    width: 40px;
+}
+
+.expert .smallimage {
+    border-radius: 50%;
+}
+
+.contactName {
+    color: #618C94;
+    font-family: HelveticaNeue-Bold, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.notebookName, .contactName {
+    max-width: 117px;
+}
+
+.grayText {
+    color: #ADADAD;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+}
+
+.grayText a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#closeSimSearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#closeButton {
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-image: url(../images/simsearch_close_btn_normal.png);
+    background-repeat: no-repeat;
+    width: 25px;
+    height: 26px;
+    background-size: 25px 26px;
+}
+
+#closeButton:active, #closeButton:hover {
+    background-image: url(../images/simsearch_close_btn_pressed.png);
+}
+
+#closeOptions {
+    display: none;
+    position: relative;
+    top: 10px;
+    right: 40px;
+    z-index: 1000;
+    width: 193px;
+}
+
+#closeOptions > ul {
+    background-color: white;
+    border: 1px solid #DCDCDC;
+    text-align: left;
+    margin: 0;
+    padding: 2px 0;
+    font-size: 13px;
+    list-style-type: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#closeOptions > ul > li {
+    color: #747474;
+    padding: 8px 15px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+#closeOptions > ul > li:hover {
+    color: #444;
+}
+
+#closeOptions > ul > li.divider {
+    padding: 0;
+    border-top: 1px solid #DCDCDC;
+    height: 0;
+}
+
+#featureInfo {
+    color: #ADACAC;
+    display: none;
+    padding: 0 10px 10px;
+}
+
+#featureInfo.visible {
+    display: block;
+}
+
+#featureInfo .cta {
+    color: #5CB52A;
+    cursor: pointer;
+}
+
+#featureInfo .info {
+    float: right;
+}
+
+#featureInfoPreview {
+    background-color: #ECECEC;
+    border-radius: 4px;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    display: none;
+    font-family: GothamBook;
+    font-size: 12px;
+    left: 5px;
+    padding: 20px 40px;
+    position: absolute;
+    text-align: center;
+    top: 47px;
+    width: calc(100% - 10px);
+}
+
+#featureInfoPreview.visible {
+    display: block;
+}
+
+#featureInfoPreview:before {
+    background-image: url(../images/arrow-up-grey.png);
+    background-size: 15px 6px;
+    content: "";
+    height: 6px;
+    left: 15px;
+    position: absolute;
+    top: -6px;
+    width: 15px;
+}
+
+#featureInfoPreview h1 {
+    font-family: GothamMedium;
+    font-size: 14px;
+    margin: 0;
+}
+
+#featureInfoPreview br {
+    font-size: 14px;
+}
+
+#featureInfoPreview .body {
+    height: 80px;
+}
+
+#featureInfoPreview .button {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 28px;
+    padding: 0 40px;
+    margin: 15px 0 0 0;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    .branding span {
+        background-image: url(../images/simsearch_logo@2x.png);
+    }
+
+    .branding span.china {
+        background-image: url(../images/simsearch_logo_china@2x.png);
+    }
+
+    #closeButton {
+        background-image: url(../images/simsearch_close_btn_normal@2x.png);
+    }
+
+    #closeButton:active, #closeButton:hover {
+        background-image: url(../images/simsearch_close_btn_pressed@2x.png);
+    }
+
+    #featureInfoPreview:before {
+        background-image: url(../images/arrow-up-grey@2x.png);
+    }
+}

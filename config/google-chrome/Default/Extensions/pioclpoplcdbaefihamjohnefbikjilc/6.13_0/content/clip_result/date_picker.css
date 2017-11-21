@@ -1,0 +1,95 @@
+#previous, #next {
+    background-image: url(../../images/arrow_month.png);
+    background-position: 0 50%;
+    background-size: 7px 8px;
+    cursor: pointer;
+    height: 14px;
+    width: 18px;
+}
+
+#previous {
+    float: left;
+    transform: scaleX(-1);
+}
+
+#next {
+    float: right;
+}
+
+#topRow, #dowHeader {
+    clear: both;
+    background-color: #ECECEC;
+}
+
+#topRow {
+    padding-top: 9px;
+}
+
+#monthYearHeader {
+    font-family: "GothamMedium", Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#dowHeader, .day {
+    font-family: "GothamBold", Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+.dow, .day {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    width: 19px;
+}
+
+.dow:first-child, .day:first-child {
+    margin-left: 3px;
+}
+
+.dow:last-child, .day:last-child {
+    margin-right: 2px;
+}
+
+.dow {
+    margin: 4px 1px 2px 1px;
+}
+
+.day {
+    cursor: pointer;
+    margin: 1px;
+}
+
+.week:nth-child(3) .day {
+    margin-top: 3px;
+}
+
+.week:last-child .day {
+    margin-bottom: 3px;
+}
+
+.day.previousMonth, .day.nextMonth {
+    color: #B0B0B0;
+    cursor: default;
+}
+
+#today {
+    background-color: #C4C4C4;
+    border: 1px solid #9B9B9B;
+}
+
+.selected, #today.selected {
+    background-color: #0784F6;
+    border: 1px solid #3B5C6B;
+    color: white;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5) {
+    #previous, #next {
+        background-image: url(../../images/arrow_month@2x.png);
+    }
+}

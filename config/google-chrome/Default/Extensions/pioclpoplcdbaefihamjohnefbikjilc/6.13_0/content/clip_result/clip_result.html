@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css"></link>
+    <link rel="stylesheet" type="text/css" href="small_snippet.css"></link>
+    <link rel="stylesheet" type="text/css" href="date_picker.css"></link>
+    <link rel="stylesheet" type="text/css" href="ReminderSetter.css"></link>
+    <link rel="stylesheet" type="text/css" href="HeroNoteSnippets.css"></link>
+    <link rel="stylesheet" type="text/css" href="clip_result.css"></link>
+    <script type="text/javascript" src="../../third_party/port.js"></script>
+    <script type="text/javascript" src="../../js/opera.js"></script>
+    <script type="text/javascript" src="../../js/yandex.js"></script>
+    <script type="text/javascript" src="../../js/common/Browser.js"></script>
+    <script type="text/javascript" src="../../js/common/Compatibility.js"></script>
+    <script type="text/javascript" src="../../js/GlobalUtils.js"></script>
+    <script src="../../js/common/Log.js" type="text/javascript"></script>
+    <script type="text/javascript" src="NoteSnippets.js"></script>
+    <script type="text/javascript" src="HeroNoteSnippets.js"></script>
+    <script type="text/javascript" src="DatePicker.js"></script>
+    <script type="text/javascript" src="ReminderSetter.js"></script>
+    <script type="text/javascript" src="../../js/common/Analytics.js"></script>
+    <script type="text/javascript" src="ClipResult.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="close"></div>
+      <section id="account"></section>
+      <section id="header" message="contentclipper_clipping_no_title"></section>
+      <section id="share">
+        <div id="defaultShare" message="share"></div><!--
+        --><div id="shareDropdownToggle"></div>
+        <div id="shareDropdown">
+          <div id="workchat" class="shareOpt" message="shareNote"></div>
+          <div id="linkedin" class="shareOpt" message="linkedin"></div>
+          <div id="weibo" class="shareOpt" message="weibo"></div>
+          <div id="facebook" class="shareOpt" message="facebook"></div>
+          <div id="twitter" class="shareOpt" message="twitter"></div>
+          <div id="gplus" class="shareOpt" message="gplus"></div>
+          <div id="email" class="shareOpt" message="mail"></div>
+          <div id="url" class="shareOpt" message="shareUrl"></div>
+        </div>
+      </section>
+      <hr />
+      <section id="smart">
+        <div>
+          <h2 message="relatedNotes" id="relatedNotes"></h2><!--
+          --><h2 id="sameSiteNotes"></h2><!--
+          --><h2 id="tips" message="dismissTip"></h2>
+        </div>
+        <div id="smartPanel">
+          <div id="relatedNotesContainer"></div><!--
+          --><div id="sameSiteNotesContainer"></div><!--
+          --><div id="tipsContainer">
+            <div id="ratingsPrompt">
+              <div class="tipLogo" message="ratingPromptHeader"></div>
+              <div class="tipDetails" message="ratingPromptBody"></div>
+              <a class="green button" message="rateNow" target="_blank" id="rateNow" href="https://chrome.google.com/webstore/detail/evernote-web-clipper/pioclpoplcdbaefihamjohnefbikjilc/reviews"></a>
+              <div class="tipLink" id="sendFeedback"><span message="sendFeedback"></span></div>
+              <div class="tipLink" id="closeRatingsPrompt"><span message="noThanks"></span></div>
+            </div>
+            <div id="referralTip">
+              <div class="tipLogo" message="referralTipHeader"></div>
+              <div class="tipDetails" message="referralTipBody"></div>
+              <div class="flat green button" message="referralTipCTA" id="referralCTA"></div>
+            </div>
+            <div id="speedbumpTip">
+              <div class="tipTextContainer">
+                <div class="tipLogo"></div>
+                <div class="tipDetails"></div>
+              </div>
+              <a target="_blank" class="green button"></a>
+              <div class="tipDismiss" message="notNow"></div>
+            </div>
+            <div id="nearQuotaTip">
+              <div class="tipTextContainer">
+                <div class="tipLogo"></div>
+                <div class="tipDetails"></div>
+              </div>
+              <a target="_blank" class="green button"></a>
+            </div>
+            <div id="workchatTip">
+              <div class="tipLogo" message="collaborateWithWorkChat"></div>
+              <div class="tipDetails" message="workChatExplanation"></div>
+              <div class="green button" message="shareThisClip"></div>
+              <div class="tipCloseX"></div>
+            </div>
+            <div id="basicUpsellTip">
+              <div class="tipTextContainer">
+                <div class="tipLogo"></div>
+                <div class="tipDetails"></div>
+              </div>
+              <a target="_blank" class="green button" message="upgrade"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="error">
+        <div id="errorTitle"></div>
+        <div id="errorDetails"></div>
+        <a target="_blank" id="errorButton"></a>
+      </div>
+    </div>
+  </body>
+</html>

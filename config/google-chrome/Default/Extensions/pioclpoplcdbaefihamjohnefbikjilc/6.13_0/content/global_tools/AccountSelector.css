@@ -1,0 +1,140 @@
+.asField {
+  position: relative;
+  height: 36px;
+
+  color: white;
+  font-family: GothamMedium, Helvetica, Arial, sans-serif;
+  display: flex;
+}
+
+.asUserIcon {
+  flex: 0 0 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.asLabels {
+  margin-left: 6px;
+  flex: 0 1 auto;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.asHeader {
+  font-size: 13px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asDescription {
+  font-family: 'Gotham Book', GothamBook, Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.asDropdownIcon {
+  margin-left: 8px;
+  width: 15px;
+  height: 24px;
+  background-image: url(../../images/dropdown_down_icon.png);
+  background-size: 15px 10px;
+  background-position: 0 50%;
+  align-self: center;
+}
+
+@media (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5)  {
+  .asDropdownIcon {
+    background-image: url(../../images/dropdown_down_icon@2x.png);
+  }
+}
+
+.accountSelector {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.asDropdownOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.asDropdown {
+  position: absolute;
+  left: 5px;
+  right: 5px;
+  background-color: #bccdd5;
+  border-radius: 2px;
+}
+
+.asDropdown:before {
+  border-right: 5px solid transparent;
+  border-bottom: 6px solid #BBCBD5;
+  border-left: 5px solid transparent;
+  content: "";
+  left: 27px;
+  position: absolute;
+  top: -6px;
+}
+
+.asDropdown .asField {
+  padding: 0 19px;
+  cursor: pointer;
+}
+
+.asDropdown .asField:first-child {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+
+.asDropdown .asField:last-child {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.asDropdown .asField:hover {
+  background-color: #99AFBD;
+}
+
+.asDropdown .asField.asSelected {
+  color: black;
+  background-image: url(../../images/account-selector-check-mark-black.svg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 19px) center;
+}
+
+.asDropdown .asField.asSelection {
+  color: white;
+  background-color: #4da4e5;
+}
+
+.asDropdown .asField.asSelection.asSelected {
+  background-image: url(../../images/account-selector-check-mark.svg);
+}
+
+#accountSelector .asHeader, #accountSelector .asDescription {
+  max-width: 160px;
+}
+
+.asDropdown .asField.asSelected .asHeader, .asDropdown .asField.asSelected .asDescription {
+  max-width: 170px;
+}
+
+.asDropdown .asField {
+  color: black;
+}
+
+.accountSelector.disabled {
+  cursor: default;
+}
