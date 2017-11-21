@@ -5,4 +5,5 @@ config/dconf
 config/configstore/
 config/mimeapps.list
 nvm
-!xmonad/*.hs
+xmonad/*
+!xmonad/xmonad.hs
