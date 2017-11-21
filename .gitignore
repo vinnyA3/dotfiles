@@ -4,4 +4,5 @@ config/lemonbar
 config/dconf
 config/configstore/
 config/mimeapps.list
+nvm
 !xmonad/*.hs
