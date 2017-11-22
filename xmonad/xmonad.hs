@@ -5,6 +5,8 @@ import XMonad.Layout.Spacing
 import XMonad.Hooks.ManageDocks
 import XMonad.Util.EZConfig
 
+-- ModKey: Set to Windows Key
+modm = mod4Mask
 -- TODO: Get these colors from xrdb
 backgroundColor   = "#FEFEFE"
 middleColor       = "#AEAEAE"
@@ -16,12 +18,13 @@ main = do
         , focusedBorderColor = foregroundColor
         , focusFollowsMouse  = False
         , layoutHook         = avoidStruts $ spacingWithEdge 8 emptyBSP
-        , modMask            = mod4Mask
+        , modMask            = modm 
         , normalBorderColor  = middleColor
         , terminal           = "termite"
         , workspaces         = [ "browse", "code", "read", "chat", "etc" ]
-        }
-        `additionalKeysP`
+        } `additionalKeys`
+        [ ((modm, xK_p), spawn "rofi -show run")
+        ] `additionalKeysP`
         [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +5%")
         , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -5%")
         , ("<XF86AudioMute>", spawn "pactl set-sink-mute 0 toggle")
