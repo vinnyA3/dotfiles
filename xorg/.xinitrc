@@ -32,6 +32,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-exec feh --bg-scale ~/Pictures/wallpaper/deerpark.png &
+exec feh --bg-scale ~/Pictures/wallpaper/dirtywindow.jpg &
 exec yabar > /dev/null 2>&1 &
 exec xmonad
