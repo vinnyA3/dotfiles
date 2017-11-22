@@ -1,1 +1,5 @@
-[ -s "$NVM_DIR/nvm-exec" ] && . "NVM_DIR/nvm-exec" # load nvm
+[ -s "$NVM_DIR/nvm-exec" ] && . "$NVM_DIR/nvm-exec" # load nvm
+
+#source nvm
+source /usr/share/nvm/init-nvm.sh
+
