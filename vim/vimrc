@@ -3,7 +3,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 syntax on
-colors dracula
+colorscheme wal 
 filetype plugin indent on
 
 " Airline
