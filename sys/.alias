@@ -4,6 +4,9 @@ alias tmux='tmux -2'
 # Xclip
 alias xp='xclip -o -selection clipboard'
 
+# pywal - manual
+alias wal="wal -o ya-update-colors"
+
 # Git
 alias g='git'
 alias gadd='git add'
