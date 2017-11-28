@@ -6,10 +6,10 @@ source $HOME/.cache/wal/colors.sh
 function updateColorScheme {
     local bg=$( echo $background | sed -r "s/#/0x/" )
     local fg=$color12
-    # replace first occurrence of pattern with sourced pywal bg color
+    # replace first occurrence of 0x-hex color with sourced pywal bg color
     sed -ri "0,/0x.+/{s/0x.+/$bg/}" \
        $HOME/.dotfiles/config/yabar/*.conf
-    # replace all fg icon colors with a sourced pywal color
+    # replace all occurrences of #-hex colors(pango) with a sourced pywal color
     sed -ri "s/#[0-9A-Za-z]+{6}/$fg/g" \
        $HOME/.dotfiles/config/yabar/*.conf
 }
