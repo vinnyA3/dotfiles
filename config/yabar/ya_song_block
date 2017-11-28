@@ -1,0 +1,7 @@
+    ya_song: {
+        exec: "YABAR_SONG";
+        align: "left";
+        fixed-size: 370;
+        internal-prefix: "             ";
+        internal-option1: "spotify";
+    }
