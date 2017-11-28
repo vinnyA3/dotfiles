@@ -1,0 +1,40 @@
+#!/bin/bash
+
+ya=/usr/bin/yabar
+ya_conf_dir=$HOME/.dotfiles/config/yabar
+
+# If we don't have a yabar config file in tmp, create both
+# yabar.confg and yabar-sp.config
+if [ ! -f /tmp/yabar.conf ];
+then
+    # source pywal color scheme
+    source $HOME/.cache/wal/colors.sh
+
+    bg=$( echo $background | sed -r "s/#//g" )
+    fg=$( echo $color12 | sed -r "s/#//g" )
+    
+    # create tmp ya config
+    cp $ya_conf_dir/yabar.conf /tmp/yabar.conf
+
+    # create tmp ya-sp config
+    awk '/ya_workspace:/ && c == 0 {
+        c = 1;
+        system("cat ~/.dotfiles/config/yabar/ya_song_block");
+    }; {print} ' $ya_conf_dir/yabar.conf > /tmp/yabar-sp.conf
+
+    # insert 'ya_song' into loaded blocks (yabar-sp.conf)
+    sed -i "/\"ya_workspace\"/a \"ya_song\"," /tmp/yabar-sp.conf
+
+    # replace all occurrences of primary/secondary color keys
+    # with sourced pywal colors
+    sed -ri "s/PRICOLOR/$bg/g;s/SECCOLOR/$fg/g" /tmp/yabar*
+fi
+
+# check if spotify is running ....
+if [[ $(pidof spotify | wc -w) > 0 ]];
+then
+    $ya -c /tmp/yabar-sp.conf > /dev/null 2>&1 &
+else
+    $ya -c /tmp/yabar.conf > /dev/null 2>&1 &
+fi
+
