@@ -4,31 +4,30 @@
 source $HOME/.cache/wal/colors.sh
 
 function updateColorScheme {
-    local bg=$( echo $background | sed -r "s/#/0x/" )
-    local fg=$color12
-    # replace first occurrence of 0x-hex color with sourced pywal bg color
-    sed -ri "0,/0x.+/{s/0x.+/$bg/}" \
-       $HOME/.dotfiles/config/yabar/*.conf
-    # replace all occurrences of #-hex colors(pango) with a sourced pywal color
-    sed -ri "s/#[0-9A-Za-z]+{6}/$fg/g" \
-       $HOME/.dotfiles/config/yabar/*.conf
+
+    if [ $(pidof yabar | wc -w) > 0 ];
+    then
+        kill $(pidof yabar)
+    fi
+
+    # delete old yabar temp files
+    rm /tmp/yabar*
+
+    # execute /usr/local/bin yabar
+    yabar
+    # 1- replace first 2 occurrences of 0x-hex color with sourced pywal bg color
+    # awk -v bg=$bg '/0x/ {
+    #     if (count < 2)
+    #         gsub(/0x.+[^;]/,"bg");
+    #         count++;
+    # }' $HOME/.dotfiles/config/yabar/*.conf
+    # sed -ri "0,/0x.+/{s/0x.+/$bg/};s/#[0-9A-Za-z]+{6}/$fg/g" \
+    #   $HOME/.dotfiles/config/yabar/*.conf
+
+    # 2- replace all occurrences of #-hex colors(pango) with a sourced pywal color
+    # sed -ri "s/#[0-9A-Za-z]+{6}/$fg/g" \
+    #    $HOME/.dotfiles/config/yabar/*.conf
 }
 
-# update yabar color schemes
 updateColorScheme
 
-# if yabar is running ...
-if [ $( pidof yabar | wc -l ) != 0 ];
-then
-    # kill current yabar process
-    kill $(pidof yabar)
-    # to avoid cpu-munching race condition when using internal song block ... 
-    # check if spotify is running. if so, start yabar with yabar-sp.conf
-    if [ $( pidof spotify | wc -l ) != 0 ];
-    then
-        yabar -c $HOME/.dotfiles/config/yabar/yabar-sp.conf \
-            > /dev/null 2>&1 &
-    else
-        yabar > /dev/null 2>&1 & # use base config
-    fi
-fi
