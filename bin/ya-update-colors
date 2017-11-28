@@ -14,4 +14,18 @@ function updateColorScheme {
        $HOME/.dotfiles/config/yabar/*.conf
 }
 
-updateColorScheme
+if [ $( pidof yabar | wc -l ) != 0 ];
+then
+    updateColorScheme
+    kill $(pidof yabar)
+    # if spotify is running, start yabar with yabar-sp.conf
+    if [ $( pidof spotify | wc -l ) != 0 ];
+    then
+        yabar -c $HOME/.dotfiles/config/yabar/yabar-sp.conf \
+            > /dev/null 2>&1 &
+    else
+        yabar > /dev/null 2>&1 &
+    fi
+else
+    updateColorScheme
+fi
