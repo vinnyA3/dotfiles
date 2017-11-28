@@ -9,23 +9,26 @@ function updateColorScheme {
     # replace first occurrence of pattern with sourced pywal bg color
     sed -ri "0,/0x.+/{s/0x.+/$bg/}" \
        $HOME/.dotfiles/config/yabar/*.conf
-    # replace all fg colors with sourced pywal color
+    # replace all fg icon colors with a sourced pywal color
     sed -ri "s/#[0-9A-Za-z]+{6}/$fg/g" \
        $HOME/.dotfiles/config/yabar/*.conf
 }
 
+# update yabar color schemes
+updateColorScheme
+
+# if yabar is running ...
 if [ $( pidof yabar | wc -l ) != 0 ];
 then
-    updateColorScheme
+    # kill current yabar process
     kill $(pidof yabar)
-    # if spotify is running, start yabar with yabar-sp.conf
+    # to avoid cpu-munching race condition when using internal song block ... 
+    # check if spotify is running. if so, start yabar with yabar-sp.conf
     if [ $( pidof spotify | wc -l ) != 0 ];
     then
         yabar -c $HOME/.dotfiles/config/yabar/yabar-sp.conf \
             > /dev/null 2>&1 &
     else
-        yabar > /dev/null 2>&1 &
+        yabar > /dev/null 2>&1 & # use base config
     fi
-else
-    updateColorScheme
 fi
