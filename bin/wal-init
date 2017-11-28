@@ -5,7 +5,6 @@ ya_udate=/usr/local/bin/ya-update-colors
 
 if [[ -x $wal && -x $ya_udate ]];
 then
-    $ya_udate
     $wal -Rt
 fi
             
