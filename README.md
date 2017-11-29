@@ -1,12 +1,12 @@
 # Dotfiles
 
-My personal dotfiles.  Dotfiles are simply configuration files that personalize
-your system.  These configs are responsible for the personalization of your
-system.  This
-repo contains my very own dotfiles.  Feel free to use anything here.
+Dotfiles are configuration files that are used to customize and personalize
+your system.  The *dotfiles* name comes from the UNIX convention of prefixing
+config files with a dot. By default, these files are usually hidden in directory
+listings.
+This repo contains my very own dotfiles.  Feel free to use anything and
+everything.
 
-Currently, I'm using [pywal](https://github.com/dylanaraps/pywal) to generate a color palette based off of whatever
-wallpaper I have loaded.
 
 ## Screenshot(s)
 ![screenshot of
@@ -16,6 +16,12 @@ workspace](https://raw.githubusercontent.com/vinnyA3/dotfiles/master/screenshots
 you need, that is if you want to get up and running with my full setup without
 hassle.
 
+## Sys Overview
+
+* os: Arch Linux
+* window manager: Xmonad
+* statusbar: Yabar
+* theme: Pywal-generated color palette
 
 ## Install
 
