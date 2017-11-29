@@ -12,16 +12,14 @@ everything.
 ![screenshot of
 workspace](https://raw.githubusercontent.com/vinnyA3/dotfiles/master/screenshots/screenshot-21%3A06%3A42.jpg)
 
-**Note**:  As of now, the master installation file does not install everything
-you need, that is if you want to get up and running with my full setup without
-hassle.
 
 ## Sys Overview
 
-* os: Arch Linux
-* window manager: Xmonad
-* statusbar: Yabar
-* theme: Pywal-generated color palette
+* os:  Arch Linux
+* window manager:  Xmonad
+* statusbar:  Yabar
+* theme:  Pywal-generated color palette
+* editor:   Vim
 
 ## Install
 
@@ -31,6 +29,8 @@ To install with Git:
     git clone https://github.com/vinnyA3/dotfiles.git ~/.dotfiles
     source ~/.dotfiles/install.sh
 ```
+**Warning**:  As of now, the master installation file does not install everything
+you need, that is, if you want to get up and running without any hassle.
 
 ## Additional Resources
 
