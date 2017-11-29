@@ -10,8 +10,7 @@ then
     # source pywal color scheme
     source $HOME/.cache/wal/colors.sh
 
-    bg=$( echo $background | sed -r "s/#//g" )
-    fg=$( echo $color12 | sed -r "s/#//g" )
+    colors=( $(echo $background $color12 | sed -e 's/#//g') )
     
     # create tmp ya config
     cp $ya_conf_dir/yabar.conf /tmp/yabar.conf
@@ -23,11 +22,12 @@ then
     }; {print} ' $ya_conf_dir/yabar.conf > /tmp/yabar-sp.conf
 
     # insert 'ya_song' into loaded blocks (yabar-sp.conf)
-    sed -i "/\"ya_workspace\"/a \"ya_song\"," /tmp/yabar-sp.conf
+    sed -ie "/\"ya_workspace\"/a \"ya_song\"," /tmp/yabar-sp.conf
 
     # replace all occurrences of primary/secondary color keys
     # with sourced pywal colors
-    sed -ri "s/PRICOLOR/$bg/g;s/SECCOLOR/$fg/g" /tmp/yabar*
+    sed -ie "s/PRICOLOR/${colors[0]}/g;s/SECCOLOR/${colors[1]}/g" /tmp/yabar* 
+
 fi
 
 # check if spotify is running ....
