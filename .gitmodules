@@ -25,3 +25,6 @@
 [submodule "vim/bundle/wal.vim"]
 	path = vim/bundle/wal.vim
 	url = https://github.com/dylanaraps/wal.vim.git
+[submodule "vim/bundle/vim-surround"]
+	path = vim/bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
