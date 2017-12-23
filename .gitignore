@@ -8,7 +8,6 @@ nvm
 
 # Tmux
 tmux/plugins/*
-!tmux/plugins/tpm
 
 # Xmonad
 xmonad/*
