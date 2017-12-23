@@ -1,18 +1,14 @@
 # Config
 config/*
-!config/neofetch
-!config/termite
-!config/yabar
-!config/i3
-!config/compton
-!config/gtk-3.0
-!config/vifm
-config/vifm/*
-!config/vifm/vifmrc
+!config/alacritty
+!config/xmobar
 
 # Nvm
 nvm
 
+# Tmux
+tmux/plugins/*
+!tmux/plugins/tpm
+
 # Xmonad
 xmonad/*
-!xmonad/xmonad.hs
