@@ -1,6 +1,5 @@
 #0 Configuration for Alacritty, the GPU enhanced terminal emulator
 
-
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty it self.
@@ -100,19 +99,12 @@ render_timer: false
 # and cursor.background colors, otherwise invert the colors of the cursor.
 custom_cursor_colors: false
 
-# Colors (Tomorrow Night Bright)
+# Colors (My Dracula)
 colors:
-  # Default colors
   primary:
     background: '0x000000'
     foreground: '0xF8F8F2'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
-  cursor:
-    text: '0x000000'
-    cursor: '0xffffff'
-
-  # Normal colors
   normal:
     black:   '0x000000'
     red:     '0xFF5555'
@@ -123,7 +115,6 @@ colors:
     cyan:    '0x8BE9FD'
     white:   '0xBFBFBF'
 
-  # Bright colors
   bright:
     black:   '0x4D4D4D'
     red:     '0xFF6E67'
@@ -134,16 +125,31 @@ colors:
     cyan:    '0x9AEDFE'
     white:   '0xE6E6E6'
 
-  # Dim colors (Optional)
-  #   dim:
-  #     black:   ''
-  #     red:     ''
-  #     green:   ''
-  #     yellow:  ''
-  #     blue:    ''
-  #     magenta: ''
-  #     cyan:    ''
-  #     white:   ''
+# Colors (Dracula)
+#colors:
+#  primary:
+#    background: '0x000000'
+#    foreground: '0xf8f8f2'
+# 
+#  normal:
+#    black:   '0x000000'
+#    red:     '0xff5555'
+#    green:   '0x50fa7b'
+#    yellow:  '0xf1fa8c'
+#    blue:    '0xbd93f9'
+#    magenta: '0xff79c6'
+#    cyan:    '0x8be9fd'
+#    white:   '0xbbbbbb'
+# 
+#  bright:
+#    black:   '0x555555'
+#    red:     '0xff5555'
+#    green:   '0x50fa7b'
+#    yellow:  '0xf1fa8c'
+#    blue:    '0xcaa9fa'
+#    magenta: '0xff79c6'
+#    cyan:    '0x8be9fd'
+#    white:   '0xffffff'
 
 # Visual Bell
 #
@@ -172,8 +178,11 @@ visual_bell:
   duration: 0 
 
 # Background opacity
-background_opacity: .948
-# background_opacity: 1.0
+# early day - pre redshift
+# background_opacity: .948
+
+# later night - redshift
+background_opacity: .889
 
 # Mouse bindings
 #
