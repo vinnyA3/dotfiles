@@ -1,36 +1,31 @@
-Config { font = "-misc-fixed-*-*-*-*-14-*-*-*-*-*-*-*"
-       , additionalFonts = []
-       , borderColor = "black"
-       , border = TopB
-       , bgColor = "black"
-       , fgColor = "grey"
+Config { font = "xft:Noto Sans UI:style=Regular:size=8,FontAwesome:size=8"
+       , bgColor = "#282A36"
+       , fgColor = "#E6E6E6"
        , alpha = 255
-       , position = Top
+       , position = Static { xpos = 0, ypos = 0, width = 1024, height = 28 } 
        , textOffset = -1
        , iconOffset = -1
        , lowerOnStart = False 
        , pickBroadest = False
-       , persistent = False
+       , persistent = True 
        , hideOnStart = False
-       , iconRoot = "."
        , allDesktops = True
        , overrideRedirect = True
-       , commands = [ Run Weather "KEWR" ["-t","<station>: <tempC>C",
-                                          "-L","18","-H","25",
-                                          "--normal","green",
-                                          "--high","red",
-                                          "--low","lightblue"] 36000
-                    , Run Network "enp2s0" ["-L","0","-H","32",
-                                          "--normal","green","--high","red"] 10
-                    , Run Cpu ["-L","3","-H","50",
-                               "--normal","green","--high","red"] 10
-                    , Run Memory ["-t","Mem: <usedratio>%"] 10
-                    , Run Swap [] 10
-                    , Run Com "uname" ["-s","-r"] "" 36000
-                    , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+       , commands = [ Run Network "enp2s0" ["-t", "<fc=#F1FA8C>\xf1eb</fc> <rx>KB|<tx>KB", "-L","0","-H","32",
+                                            "--normal","green","--high","#FF5555"] 10
+                    , Run Cpu ["-t", "<fc=#8BE9FD>\xf085</fc> <total>%", "-L","3","-H","50",
+                               "--high","#FF5555"] 10
+                    , Run Memory ["-t","<fc=#FF79C6>\xf1c0</fc> <usedratio>%"] 10
+                    , Run Swap ["-t", "<fc=#50FA7B>\xf021</fc> <usedratio>%"] 10
+                    , Run Volume "default" "Master" [
+                        "-t", " <fc=#FF6E67>\xf028</fc> <volume>%"
+                        ] 10
+                    , Run Date "\xf073 %a %b %_d %H:%M" "date" 10
+                    , Run Mpris2 "spotify" ["-x", "", "-M", "45", "-t", "<fc=#CAA9FA>\xf001</fc> <artist>: <title>"] 10
+                    , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%cpu% | %memory% * %swap% | %enp2s0% }\
-                    \{ <fc=#ee9a00>%date%</fc>| %KEWR% | %uname%"
-       }
+       , template = "%StdinReader% }\
+                    \{ %mpris2%    %default:Master%    %cpu%    %memory%    %swap%    %enp2s0%    <fc=#282A36,#50FA7B>   %date%   </fc>" }
+
