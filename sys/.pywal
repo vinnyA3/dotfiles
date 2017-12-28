@@ -1,6 +1,0 @@
-#!/bin/bash
-
-# Import colorscheme from 'wal'
-# & run as bg process
-# hide shell job control messages
-(wal -rt &)
