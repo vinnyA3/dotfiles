@@ -7,7 +7,7 @@ allow_bold = true
 dynamic_title = true
 urgent_on_bell = true
 clickable_url = true
-font = Source Code Pro Medium 10
+font = Source Code Pro Regular 8
 padding = 18 
 scrollback_lines = 10000
 search_wrap = true
@@ -40,7 +40,7 @@ cursor_foreground = #28292c
 background = #101110
 
 # 20% background transparency (requires a compositor)
-background = rgba(.8,.4,5.9,.96)
+# background = rgba(.8,.4,5.9,.96)
 
 # if unset, will reverse foreground and background
 #highlight = #212322
