@@ -24,8 +24,8 @@ dimensions:
 # Units are physical pixels; this is not DPI aware.
 # (change requires restart)
 padding:
-  x: 12 
-  y: 12 
+  x: 13
+  y: 13 
 
 # Display tabs using this many cells (changes require restart)
 tabspaces: 2 
@@ -55,24 +55,24 @@ draw_bold_text_with_bright_colors: true
 font:
   # The normal (roman) font face to use.
   normal:
-    family: Inconsolata # should be "Menlo" or something on macOS.
+    family: Source Code Pro # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     # style: Regular
 
   # The bold font face
   bold:
-    family: Inconsolata # should be "Menlo" or something on macOS.
+    family: Source Code Pro # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     # style: Bold
 
   # The italic font face
   italic:
-    family: Inconsolata # should be "Menlo" or something on macOS.
+    family: Source Code Pro # should be "Menlo" or something on macOS.
     # Style can be specified to pick a specific face.
     # style: Italic
 
   # Point size of the font
-  size: 8.88 
+  size: 9.43
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -181,8 +181,8 @@ visual_bell:
 # early day - pre redshift
 # background_opacity: .948
 
-# later night - redshift
-background_opacity: .889
+# later night - redshift - dark bg
+background_opacity: .869
 
 # Mouse bindings
 #
