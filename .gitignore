@@ -2,6 +2,9 @@
 config/*
 !config/alacritty
 !config/xmobar
+!config/neofetch
+!config/ranger/rc.conf
+!config/ranger/scope.sh
 
 # Nvm
 nvm
