@@ -8,11 +8,6 @@ This repo contains my very own dotfiles.  Feel free to use anything and
 everything.
 
 
-## Screenshot(s)
-![screenshot of
-workspace](https://raw.githubusercontent.com/vinnyA3/dotfiles/master/screenshots/screenshot-21%3A06%3A42.jpg)
-
-
 ## Sys Overview
 
 * os:  Arch Linux
