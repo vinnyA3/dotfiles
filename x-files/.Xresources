@@ -2,22 +2,14 @@
 ! General Colors
 
 ! maybe need full path here
-#include "/home/qwerty/.colors/dracula"
+! #include "/home/qwerty/.colors/dracula"
 
 !-------------------------------------------
 ! Man pages colors
 
-*VT100.colorBDMode:                  true
-*VT100.colorBD:                      red
-*VT100.colorULMode:                  true
-*VT100.colorUL:                      cyan   
-*VT100.veryBoldColors:               6
+! *VT100.colorBDMode:                  true
+! *VT100.colorBD:                      red
+! *VT100.colorULMode:                  true
+! *VT100.colorUL:                      cyan   
+! *VT100.veryBoldColors:               6
 
-!-------------------------------------------
-! xclock
-
-xclock*majorColor:                  #9a875f
-xclock*minorColor:                  #9a875f
-xclock*minuteColor:                 #9a875f
-xclock*hourColor:                   #9a875f
-xclock*secondColor:                 #9a875f
