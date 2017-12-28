@@ -3,7 +3,7 @@ execute pathogen#infect()
 execute pathogen#helptags()
 
 syntax on
-colorscheme wal 
+colorscheme dracula 
 filetype plugin indent on
 
 " Airline
@@ -14,10 +14,12 @@ let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 
 " - set tmux status line with airline's tmuxline
-let g:tmuxline_powerline_separators = 0
+let g:tmuxline_powerline_separators = 1
 
 " NerdTREE
 map <C-n> :NERDTreeToggle<CR>
+
+nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
 
 " Ale
 " - lint only on save
@@ -28,7 +30,7 @@ let g:ale_lint_on_text_changed = 0
 set autoindent
 set indentexpr=off
 set expandtab
-set tabstop=4
+set tabstop=2
 set number
 
 set sw=4
@@ -44,3 +46,4 @@ set nojoinspaces " pesky 2-spaces after the period thing - substack :p
 set nowritebackup
 set noswapfile
 set nobackup
+
