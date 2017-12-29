@@ -40,6 +40,7 @@ exec feh --bg-scale $HOME/Pictures/wallpaper/noir.jpg &
 exec unclutter -grab &
 
 # use basic compton config
+# exec compton --config ~/.dotfiles/config/compton/config &
 exec compton -Cf &
 
 # init xmonad
