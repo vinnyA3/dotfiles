@@ -45,7 +45,7 @@ myLayout       = avoidStruts $ smartBorders $ smartSpacingWithEdge 8  $  Tall 1 
 -- myManageHook
 myManageHook   = composeAll
     [ className =? "Chromium" --> doShift "2:  \xf268  "
-    , className =? "spotify"  --> doShift "4:  \xf1bc  "
+    , className =? "Spotify"  --> doShift "4:  \xf1bc  "
     , className =? "Firefox"  --> doShift "5:  \xf269  "
     , manageDocks
     ]
@@ -56,7 +56,7 @@ myNewManageHook   = myManageHook <+> manageHook desktopConfig
 main :: IO ()
 
 main = do
-    xmproc <- spawnPipe "xmobar"
+    xmproc <- spawnPipe "xmobar > /dev/null 2>&1"
     xmonad $ defaults {
         logHook      = dynamicLogWithPP $ xmobarPP {
             ppOutput    = hPutStrLn xmproc
