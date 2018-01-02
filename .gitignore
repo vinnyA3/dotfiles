@@ -6,7 +6,8 @@ config/*
 !config/ranger
 
 # Nvm
-nvm
+nvm/*
+!nvm/.nvmrc
 
 # Tmux
 tmux/plugins/*
