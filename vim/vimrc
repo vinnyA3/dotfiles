@@ -16,6 +16,9 @@ let g:airline_powerline_fonts = 1
 " - set tmux status line with airline's tmuxline
 let g:tmuxline_powerline_separators = 1
 
+" - enable smarter vim airline buffer tab line
+let g:airline#extensions#tabline#enabled = 1
+
 " NerdTREE
 map <C-n> :NERDTreeToggle<CR>
 
