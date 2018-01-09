@@ -1,7 +1,9 @@
 snippet ir
-	import React from 'react';
+	import React from 'react'
+snippet irc
+		import {Component} from 'react'
 snippet ird
-	import ReactDOM from 'react-dom';
+	import {render} from 'react-dom'
 snippet cdm
 	componentDidMount() {
 		${1}
@@ -27,7 +29,7 @@ snippet cwu
 		${1}
 	}
 snippet fup
-	forceUpdate(${1:callback});
+	forceUpdate(${1:callback})
 snippet dp
 	static defaultProps = {
 		${1}: ${2},
@@ -41,38 +43,38 @@ snippet pt
 		${1}: React.PropTypes.${2:type},
 	}
 snippet rcc
-	class ${1:ClassName} extends React.Component {
+	class ${1:ClassName} extends Component {
 		render() {
 			return (
 				${0:<div />}
-			);
+			)
 		}
 	}
 snippet rdr
-	ReactDOM.render(${1}, ${2})
+	render(${1}, ${2})
 snippet ercc
 	export default class ${1:ClassName} extends React.Component {
 		render() {
 			return (
 				${0:<div />}
-			);
+			)
 		}
 	}
 snippet ctor
 	constructor() {
-		super();
+		super()
 		${1}
 	}
 snippet ren
 	render() {
 		return (
 			${1:<div />}
-		);
+		)
 	}
 snippet sst
 	this.setState({
 		${1}: ${2}
-	});
+	})
 snippet scu
 	shouldComponentUpdate(nextProps, nextState) {
 		${1}
