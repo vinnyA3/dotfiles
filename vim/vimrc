@@ -20,9 +20,7 @@ let g:tmuxline_powerline_separators = 1
 " - enable smarter vim airline buffer tab line
 let g:airline#extensions#tabline#enabled = 1
 
-" NerdTREE
-map <C-n> :NERDTreeToggle<CR>
-
+" - map relative number toggle
 nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
 
 " Ale
