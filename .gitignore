@@ -5,6 +5,9 @@ config/*
 !config/neofetch
 !config/ranger
 
+# Vim
+vim/.netrwhist
+
 # Nvm
 nvm/*
 !nvm/.nvmrc
