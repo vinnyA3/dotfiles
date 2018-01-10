@@ -23,6 +23,10 @@ let g:airline#extensions#tabline#enabled = 1
 " - map relative number toggle
 nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
 
+" - easier window navigation
+map <C-J> <C-W>j<C-W>
+map <C-K> <C-W>k<C-W>
+
 " Ale
 " - lint only on save
 let g:ale_lint_on_save = 1
