@@ -34,7 +34,7 @@ fi
 
 # randomize wallpaper - /usr/bin/rand-wallpaper
 # exec rand-wallpaper & 
-exec feh --bg-scale $HOME/Pictures/wallpaper/noir.jpg &
+exec feh --bg-scale $HOME/Pictures/wallpaper/forest.jpg &
 
 # unclutter mouse
 exec unclutter -grab &
