@@ -20,6 +20,11 @@ let g:tmuxline_powerline_separators = 1
 " - enable smarter vim airline buffer tab line
 let g:airline#extensions#tabline#enabled = 1
 
+" - easy buffer navigation
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
 " - map relative number toggle
 nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
 
