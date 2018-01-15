@@ -2,6 +2,7 @@ import XMonad
 import XMonad.Config.Desktop
 import XMonad.Layout.NoBorders
 import XMonad.Layout.Spacing
+import XMonad.Layout.ResizableTile
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
 import XMonad.Util.Run
@@ -40,7 +41,7 @@ myWorkspaces   = [ "1:  \xf120  "
                  ] ++ map show [7..9]
 
 -- My Layout Hook
-myLayout       = avoidStruts $ smartBorders $ smartSpacingWithEdge 8  $  Tall 1 (3/100) (1/2)
+myLayout       = avoidStruts $ smartBorders $ smartSpacingWithEdge 8  $  ResizableTall 1 (3/100) (1/2) []
 
 -- myManageHook
 myManageHook   = composeAll
@@ -78,6 +79,8 @@ defaults = desktopConfig
     , layoutHook  = myLayout
     } `additionalKeys`
     [ ((modm, xK_p), spawn myLauncher)
+    , ((modm, xK_a), sendMessage MirrorShrink)
+    , ((modm, xK_z), sendMessage MirrorExpand)
     -- , ((modm .|. controlMask, xK_g), sendMessage (ModifySpacing 0))  -- toggle all gaps
     ] `additionalKeysP`
     [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%")
