@@ -4,6 +4,7 @@ config/*
 !config/xmobar
 !config/neofetch
 !config/ranger
+!config/cava
 
 # Vim
 vim/.netrwhist
