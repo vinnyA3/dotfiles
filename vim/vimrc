@@ -27,11 +27,13 @@ noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
 
 " - map relative number toggle
-nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
+nmap <silent> <leader>l :exec &rnu? "se rnu!" : "se rnu"<CR>
 
 " - easier window navigation
 map <C-J> <C-W>j<C-W>
 map <C-K> <C-W>k<C-W>
+map <C-H> <C-W>h<C-W>
+map <C-L> <C-W>l<C-W>
 
 " Ale
 " - lint only on save
