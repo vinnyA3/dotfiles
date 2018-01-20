@@ -20,20 +20,20 @@ let g:tmuxline_powerline_separators = 1
 " - enable smarter vim airline buffer tab line
 let g:airline#extensions#tabline#enabled = 1
 
+" - map relative number toggle
+nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
+
 " - easy buffer navigation
 let mapleader = ';'
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
 
-" - map relative number toggle
-nmap <silent> <leader>l :exec &rnu? "se rnu!" : "se rnu"<CR>
-
 " - easier window navigation
-map <C-J> <C-W>j<C-W>
-map <C-K> <C-W>k<C-W>
-map <C-H> <C-W>h<C-W>
-map <C-L> <C-W>l<C-W>
+map <leader>j <C-W>j<C-W>
+map <leader>k <C-W>k<C-W>
+map <leader>h <C-W>h<C-W>
+map <leader>l <C-W>l<C-W>
 
 " Ale
 " - lint only on save
