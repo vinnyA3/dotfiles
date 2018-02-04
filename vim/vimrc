@@ -6,8 +6,9 @@ syntax on
 colorscheme dracula 
 filetype plugin indent on
 
-" Airline
+" Airline extensions
 let g:airline_extensions = ['tmuxline', 'tabline']
+
 " - set airline theme
 let g:airline_theme='dracula'
 
