@@ -1,19 +1,19 @@
+#!/bin/bash
 # Get the current dir - now we can run this script from anywhere
-
 export DOTFILES_DIR
-
-DOTFILES_DIR=cd "$(dirname "${BASH_SOURCE[0]}")" && pwd
+DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
 
 # Make utilities available
-
 PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Update dotfiles itself first
-
-if is-executable git -a -d "$DOTFILES_DIR/.git"; then git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master; fi
+if [is-executable git -a -d "$DOTFILES_DIR/.git"]; then
+    git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
+    # update and pull submodules
+    git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" submodule init
+fi
 
 # Create symlinks
-
 ln -sfv $DOTFILES_DIR/runcom/.bash_profile ~
 ln -sfv $DOTFILES_DIR/git/.gitconfig ~
 ln -sfv $DOTFILES_DIR/config ~/.config
@@ -25,3 +25,4 @@ ln -sfv $DOTFILES_DIR/xmonad ~/.xmonad
 ln -sfv $DOTFILES_DIR/x-files/.xinitrc ~/.xinitrc
 ln -sfv $DOTFILES_DIR/x-files/.xserverrc ~/.xserverrc
 ln -sfv $DOTFILES_DIR/xfiles/.Xresources ~/.Xresources
+
