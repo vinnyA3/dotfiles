@@ -45,7 +45,8 @@ let g:ale_lint_on_text_changed = 0
 set autoindent
 set indentexpr=off
 set expandtab
-set tabstop=2
+set tabstop=4
+set softtabstop=4
 set number
 
 set sw=4
