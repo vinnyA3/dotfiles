@@ -81,7 +81,6 @@ defaults = desktopConfig
     [ ((modm, xK_p), spawn myLauncher)
     , ((modm, xK_a), sendMessage MirrorShrink)
     , ((modm, xK_z), sendMessage MirrorExpand)
-    -- , ((modm .|. controlMask, xK_g), sendMessage (ModifySpacing 0))  -- toggle all gaps
     ] `additionalKeysP`
     [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%")
     , ("<XF86AudioLowerVolume>", spawn "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%")
