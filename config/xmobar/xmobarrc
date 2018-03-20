@@ -2,7 +2,7 @@ Config { font = "xft:Roboto:style=Medium:size=9,FontAwesome:size=9"
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
-       , position = BottomSize C 100 37
+       , position = TopSize C 100 37
        , textOffset = -1
        , iconOffset = -1
        , lowerOnStart = False 

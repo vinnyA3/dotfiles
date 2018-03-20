@@ -12,7 +12,7 @@ import XMonad.Util.EZConfig
 myTerminal     = "alacritty"
 
 -- Launcher: Set to Dmenu
-myLauncher     = "dmenu_run -p '\xf00e' -b -x 380 -y 9 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
+myLauncher     = "dmenu_run -p '\xf00e' -x 380 -y 9 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
 
 -- ModKey: Set to Windows Key
 modm           = mod4Mask
