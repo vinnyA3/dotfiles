@@ -5,6 +5,7 @@ config/*
 !config/neofetch
 !config/ranger
 !config/cava
+!config/qutebrowser/config.py
 
 # Vim
 vim/.netrwhist
