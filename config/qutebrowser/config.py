@@ -36,7 +36,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = []
+c.content.user_stylesheets = '~/Themes/solarized-everything/css/solarized-all-sites-dark.css'
 
 # Editor (and arguments) to use for the `open-editor` command. The
 # following placeholders are defined: * `{file}`: Filename of the file
@@ -217,3 +217,4 @@ c.fonts.web.family.standard = None
 
 # Bindings for normal mode
 config.bind(',n', 'config-cycle content.user_stylesheets ~/Themes/solarized-everything/css/solarized-all-sites-dark.css ""')
+config.bind('M', 'hint links spawn mpv {hint-url}')
