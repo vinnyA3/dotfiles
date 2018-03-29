@@ -12,10 +12,6 @@ filetype plugin indent on
 " - Finding files
 set path+=**
 
-" - Indent lines
-set listchars=tab:\|\
-set list
-
 " Airline extensions
 let g:airline_extensions = ['tmuxline', 'tabline']
 
@@ -61,6 +57,11 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2 
 set number
+
+" - for indent lines
+" https://vi.stackexchange.com/questions/666/how-to-add-indentation-guides-lines
+set cursorcolumn
+set cursorline
 
 set textwidth=80
 set nohls
