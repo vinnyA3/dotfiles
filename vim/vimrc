@@ -60,8 +60,8 @@ set number
 
 " - for indent lines
 " https://vi.stackexchange.com/questions/666/how-to-add-indentation-guides-lines
-set cursorcolumn
-set cursorline
+" set cursorcolumn
+" set cursorline
 
 set textwidth=80
 set nohls
