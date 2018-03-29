@@ -2,9 +2,15 @@
 execute pathogen#infect()
 execute pathogen#helptags()
 
+" - Basic setup
+set nocompatible
+
 syntax on
 colorscheme dracula 
 filetype plugin indent on
+
+" - Finding files
+set path+=**
 
 " Indent lines
 let g:indentLine_char = '¦'
