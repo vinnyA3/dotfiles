@@ -9,8 +9,12 @@ syntax on
 colorscheme dracula 
 filetype plugin indent on
 
-" - Finding files
+" - Finding files recursively
 set path+=**
+
+" - display found files in tabline
+set wildmenu
+set wildignore+=**/node_modules/**
 
 " Airline extensions
 let g:airline_extensions = ['tmuxline', 'tabline']
