@@ -34,7 +34,7 @@ fi
 
 # randomize wallpaper - /usr/bin/rand-wallpaper
 # exec rand-wallpaper & 
-exec feh --bg-scale $HOME/Pictures/wallpaper/bionic.jpg &
+exec feh --bg-scale $HOME/Pictures/wallpaper/pattern.png &
 
 # unclutter mouse
 exec unclutter -grab &
