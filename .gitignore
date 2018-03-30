@@ -1,11 +1,11 @@
 # Config
 config/*
-!config/alacritty
-!config/xmobar
-!config/neofetch
-!config/ranger
-!config/cava
-!config/qutebrowser/config.py
+  !config/alacritty
+  !config/xmobar
+  !config/neofetch
+  !config/ranger
+  !config/cava
+  !config/qutebrowser/config.py
 
 # Vim
 vim/.netrwhist
