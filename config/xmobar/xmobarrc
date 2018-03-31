@@ -21,7 +21,7 @@ Config { font = "xft:Roboto:style=Medium:size=9,FontAwesome:size=9"
                     , Run Date "     \xf073  %a %b %_d %H:%M     " "date" 10
                     , Run Mpris2 "spotify" ["-t"
                                             , "<fc=#CAA9FA>\xf001</fc>  <artist> : :  <tracknumber>  \xf178  <title>    <fc=#747C84>|</fc> "
-                                            , "-T", "110", "-x", ""] 10
+                                            , "-T", "105", "-x", ""] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
