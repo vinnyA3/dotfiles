@@ -36,7 +36,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = '~/Themes/solarized-everything/css/solarized-all-sites-dark.css'
+c.content.user_stylesheets = []
 
 # Editor (and arguments) to use for the `open-editor` command. The
 # following placeholders are defined: * `{file}`: Filename of the file
@@ -97,6 +97,23 @@ c.editor.command = ['vim', '-f', '{file}', '-c', 'normal {line}G{column0}l']
 #   - vi-VN: Vietnamese (Viet Nam)
 c.spellcheck.languages = ['en-US']
 
+# Position of the tab bar.
+# Type: Position
+# Valid values:
+#   - top
+#   - bottom
+#   - left
+#   - right
+c.tabs.position = 'bottom'
+
+# Which tab to select when the focused tab is removed.
+# Type: SelectOnRemove
+# Valid values:
+#   - prev: Select the tab which came before the closed one (left in horizontal, above in vertical).
+#   - next: Select the tab which came after the closed one (right in horizontal, below in vertical).
+#   - last-used: Select the previously selected tab.
+c.tabs.select_on_remove = 'next'
+
 # Search engines which can be used via the address bar. Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
 # placeholder. The placeholder will be replaced by the search term, use
@@ -155,11 +172,15 @@ c.colors.tabs.selected.odd.fg = 'white'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#282A36'
+c.colors.tabs.selected.odd.bg = '#BD93F9'
+
+# Foreground color of selected even tabs.
+# Type: QtColor
+c.colors.tabs.selected.even.fg = 'white'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#282A36'
+c.colors.tabs.selected.even.bg = '#BD93F9'
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
