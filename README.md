@@ -12,8 +12,8 @@ everything.
 
 * os:  Arch Linux
 * window manager:  Xmonad
-* statusbar:  Yabar
-* theme:  Pywal-generated color palette
+* statusbar: Xmobar 
+* theme: Dracula 
 * editor:   Vim
 
 ## Install
