@@ -25,7 +25,7 @@ Config { font = "xft:Adobe Source Code Pro:style=Medium:size=9,FontAwesome:size=
                     , Run StdinReader
                     , Run Mpris2 "mps-youtube.instance32378" ["-t"
                                             , "<fc=#CAA9FA>\xf025</fc>  <title>    <fc=#747C84>|</fc> "
-                                            , "-w", "65", "-x", ""] 10
+                                            , "-M", "65", "-x", ""] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
