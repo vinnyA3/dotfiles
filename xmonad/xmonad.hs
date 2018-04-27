@@ -88,5 +88,6 @@ defaults = desktopConfig
     , ("<XF86AudioNext>", spawn "playerctl next")
     , ("<XF86AudioPrev>", spawn "playerctl previous")
     , ("<XF86AudioPlay>", spawn "playerctl play-pause")
+    , ("<XF86AudioStop>", spawn "playerctl stop")
     ]
 
