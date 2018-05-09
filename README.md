@@ -10,11 +10,11 @@ everything.
 
 ## Sys Overview
 
-* os:  Arch Linux
+* os: Arch Linux
 * window manager:  Xmonad
 * statusbar: Xmobar 
 * theme: Dracula 
-* editor:   Vim
+* editor: Vim
 
 ## Install
 
