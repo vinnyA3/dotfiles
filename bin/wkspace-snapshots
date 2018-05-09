@@ -1,6 +1,0 @@
-#!/bin/bash
-
-t=$(date +%T)
-
-"$(import -window root ~/Pictures/screenshots/screenshot-"$t".jpg)" \
-    > /dev/null 2>&1;
