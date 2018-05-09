@@ -66,10 +66,10 @@ let g:ale_lint_on_text_changed = 0
 " Tmuxline
 let g:tmuxline_preset = {
       \'a'    : '#S',
-      \'c'    : ['#(whoami)', '#(uptime | cut -d " " -f 1,2,3)'],
+      \'b'    : ['#(whoami)'],
       \'win'  : ['#I', '#W'],
       \'cwin' : ['#I', '#W', '#F'],
-      \'y'    : ['%R', '%a', '%Y'],
+      \'y'    : 'uptime: #(get_uptime)',
       \'z'    : '#H'}
 
 " - editorconfigs
