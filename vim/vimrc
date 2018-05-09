@@ -1,13 +1,36 @@
-" Pathogen Init
-execute pathogen#infect()
-execute pathogen#helptags()
+" - Vim Plug
+call plug#begin('~/.dotfiles/vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'edkolev/tmuxline.vim'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'w0rp/ale'
+Plug 'ajh17/VimCompletesMe'
+Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'pangloss/vim-javascript'
+Plug 'neovimhaskell/haskell-vim'
+
+" - Initialize plugin system
+call plug#end()
 
 " - Basic setup
 set nocompatible
-
 syntax on
-colorscheme dracula 
-filetype plugin indent on
+
+" Recent Dracula Theme messed up a ton of things ...
+" these settings resolve the issues 
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
+
+" - Vim Airline
+let g:airline_powerline_fonts=1
+let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='dracula'
 
 " - Finding files recursively
 set path+=**
@@ -15,21 +38,6 @@ set path+=**
 " - display found files in tabline
 set wildmenu
 set wildignore+=**/node_modules/**
-
-" Airline extensions
-let g:airline_extensions = ['tmuxline', 'tabline']
-
-" - set airline theme
-let g:airline_theme='dracula'
-
-" - convenience var for airline fonts
-let g:airline_powerline_fonts = 1
-
-" - set tmux status line with airline's tmuxline
-let g:tmuxline_powerline_separators = 1
-
-" - enable smarter vim airline buffer tab line
-let g:airline#extensions#tabline#enabled = 1
 
 " - map relative number toggle
 nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
@@ -50,8 +58,19 @@ map <leader>l <C-W>l<C-W>
 
 " Ale
 " - lint only on save
+" Write this in your vimrc file
+let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
+
+" Tmuxline
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'c'    : ['#(whoami)', '#(uptime | cut -d " " -f 1,2,3)'],
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W', '#F'],
+      \'y'    : ['%R', '%a', '%Y'],
+      \'z'    : '#H'}
 
 " - editorconfigs
 set autoindent
@@ -70,6 +89,7 @@ set number
 set textwidth=80
 set nohls
 set noshowmatch
+set noshowmode
 setlocal spell spelllang=en_us
 set nospell
 
