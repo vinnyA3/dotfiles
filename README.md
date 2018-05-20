@@ -16,6 +16,9 @@ everything.
 * theme: Dracula 
 * editor: Vim
 
+## Requirements
+* gnu stow (symlink manager) - avoid having to manually create sym links
+
 ## Install
 
 To install with Git:
