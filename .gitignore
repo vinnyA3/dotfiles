@@ -8,9 +8,9 @@ config/.config/*
   !config/.config/qutebrowser/config.py
 
 # Vim
-vim/*
-  !vim/.vim/autoload
-  !vim/.vim/snippets
+!vim/.vim/autoload
+!vim/.vim/snippets
+!vim/.vim/vimrc
 
 # Nvm
 nvm/*
