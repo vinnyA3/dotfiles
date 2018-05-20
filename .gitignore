@@ -1,16 +1,18 @@
 # Config
 config/.config/*
-  !config/.config/alacritty
-  !config/.config/xmobar
-  !config/.config/neofetch
-  !config/.config/ranger
-  !config/.config/cava
-  !config/.config/qutebrowser/config.py
+!config/.config/alacritty
+!config/.config/xmobar
+!config/.config/neofetch
+!config/.config/ranger
+!config/.config/cava
+!config/.config/qutebrowser/config.py
 
 # Vim
-!vim/.vim/autoload
-!vim/.vim/snippets
+vim/.vim/*
+!vim/.vim/autoload/*
+!vim/.vim/vimrc/snippets/*
 !vim/.vim/vimrc
+
 
 # Nvm
 nvm/*
