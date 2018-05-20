@@ -1,23 +1,23 @@
 # Config
-config/*
-  !config/alacritty
-  !config/xmobar
-  !config/neofetch
-  !config/ranger
-  !config/cava
-  !config/qutebrowser/config.py
+config/.config/*
+  !config/.config/alacritty
+  !config/.config/xmobar
+  !config/.config/neofetch
+  !config/.config/ranger
+  !config/.config/cava
+  !config/.config/qutebrowser/config.py
 
 # Vim
 vim/*
-  !vim/autoload
-  !vim/snippets
+  !vim/.vim/autoload
+  !vim/.vim/snippets
 
 # Nvm
 nvm/*
 !nvm/.nvmrc
 
 # Tmux
-tmux/plugins/*
+tmux/.tmux/plugins/*
 
 # Xmonad
-xmonad/*
+xmonad/.xmonad/*
