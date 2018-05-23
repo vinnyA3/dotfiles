@@ -2,9 +2,9 @@ Config { font = "xft:Adobe Source Code Pro:style=Medium:size=9,FontAwesome:size=
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
-       , position = TopSize C 100 37
-       , textOffset = -1
-       , iconOffset = -1
+       , position = BottomSize C 100 37
+       , textOffset = -1 
+       , iconOffset = -1 
        , lowerOnStart = False 
        , pickBroadest = False
        , persistent = True 
@@ -19,12 +19,9 @@ Config { font = "xft:Adobe Source Code Pro:style=Medium:size=9,FontAwesome:size=
                         , "--", "-O", "<fc=#FF6E67>\xf028</fc>"
                         , "-o", "<fc=#FF6E67>\xf026</fc>"] 10
                     , Run Date "     \xf073  %a %b %_d %H:%M     " "date" 10
-                    , Run Mpris2 "spotify" ["-t"
-                                            , "<fc=#CAA9FA>\xf025</fc>  <artist> : :  <tracknumber>  \xf178  <title>    <fc=#747C84>|</fc> "
+                    , Run Mpris2 "cmus" ["-t"
+                                            , "<fc=#CAA9FA>\xf025</fc>  <artist> : : <title>    <fc=#747C84>|</fc> "
                                             , "-M", "105", "-x", ""] 10
-                    , Run Mpris2 "mps-youtube.instance23939" ["-t"
-                                            , "<fc=#CAA9FA>\xf025</fc>  <artist> - <title>    <fc=#747C84>|</fc> "
-                                            , "-M", "65", "-x", ""] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
