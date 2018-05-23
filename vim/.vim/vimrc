@@ -67,12 +67,12 @@ let g:ale_lint_on_text_changed = 0
 " Tmuxline
 let g:tmuxline_powerline_separators = 0
 let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'b'  : ['#I', '#W'],
-      \'win' : ['#I', '#W'],
-      \'y'    : 'uptime: #(get_uptime)',
-      \'z'    : '#H',
-      \'options': {'status-justify': 'left'}}
+        \ 'a': '#S',
+        \ 'win': '#I #W',
+        \ 'cwin': '#I #W',
+        \ 'z': 'up: #(get_uptime)',
+        \ 'options': {
+        \ 'status-justify': 'left'}}
 
 " - editorconfigs
 set autoindent
