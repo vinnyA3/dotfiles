@@ -72,7 +72,7 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 9.43
+  size: 9.48
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
@@ -102,8 +102,9 @@ custom_cursor_colors: false
 # Colors (My Dracula)
 colors:
   primary:
-    background: '0x000000'
-    foreground: '0xF8F8F2'
+   # background: '0x282A36'
+   background: '0x000000'
+   foreground: '0xF8F8F2'
 
   normal:
     black:   '0x000000'
@@ -180,9 +181,10 @@ visual_bell:
 # Background opacity
 # early day - pre redshift
 # background_opacity: .948
+# background_opacity: 1
 
 # later night - redshift - dark bg
-background_opacity: .869
+background_opacity: .899
 
 # Mouse bindings
 #

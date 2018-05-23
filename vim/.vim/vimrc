@@ -29,7 +29,7 @@ colorscheme dracula
 highlight Normal ctermbg=None
 
 " - Vim Airline
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 let g:airline#extensions#tabline#enabled=1
 let g:airline_theme='dracula'
 
@@ -65,13 +65,14 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 
 " Tmuxline
+let g:tmuxline_powerline_separators = 0
 let g:tmuxline_preset = {
       \'a'    : '#S',
-      \'b'    : ['#(whoami)'],
-      \'win'  : ['#I', '#W'],
-      \'cwin' : ['#I', '#W', '#F'],
+      \'b'  : ['#I', '#W'],
+      \'win' : ['#I', '#W'],
       \'y'    : 'uptime: #(get_uptime)',
-      \'z'    : '#H'}
+      \'z'    : '#H',
+      \'options': {'status-justify': 'left'}}
 
 " - editorconfigs
 set autoindent
