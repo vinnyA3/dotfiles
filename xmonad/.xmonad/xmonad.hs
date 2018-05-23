@@ -6,7 +6,9 @@ import XMonad.Layout.ResizableTile
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
 import XMonad.Util.Run
+import XMonad.Util.Loggers
 import XMonad.Util.EZConfig
+import Data.Char
 
 -- DefaultTerminal: Set to Termite
 myTerminal     = "alacritty"
@@ -27,32 +29,37 @@ myFocusedBorderColor = "#FF79C6"
 -- Xmobar dyn colors
 xmobarCurrFG  = "#282A36"
 
-xmobarCurrBG = "#CAA9FA"
+xmobarCurrBG = "#FF79C6"
 
 xmobarHiddenFG = "#747C84"
 
 -- My Workspaces
-myWorkspaces   = [ "1:  \xf120  "
-                 , "2:  \xf268  "
-                 , "3:  \xf121  "
-                 , "4:  \xf1bc  "
-                 , "5:  \xf269  "
-                 , "6:  \xf259  "
-                 ] ++ map show [7..9]
+myWorkspaces = [ "Terminal"
+                  ,"Qutebrowser"
+                  ,"Code"
+                  ,"Firefox"
+                  ,"Media"
+                  ,"Misc"
+                  ,"Alt7"
+                  ,"Alt8"
+                  ,"Alt9" ]
+
+--myWorkspaces   =  map show $ take 9 [1..] 
 
 -- My Layout Hook
-myLayout       = avoidStruts $ smartBorders $ smartSpacingWithEdge 8  $  ResizableTall 1 (3/100) (1/2) []
+myLayout = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ ResizableTall 1 (3/100) (1/2) []
 
 -- myManageHook
-myManageHook   = composeAll
-    [ className =? "Chromium" --> doShift "2:  \xf268  "
-    , className =? "Spotify"  --> doShift "4:  \xf1bc  "
-    , className =? "Firefox"  --> doShift "5:  \xf269  "
-    , manageDocks
-    ]
+myManageHook = composeAll
+    [ className =? "Chromium" --> doShift "2  \xf268  "
+    , className =? "Spotify"  --> doShift "4  \xf1bc  "
+    , className =? "Firefox"  --> doShift "5  \xf269  "
+    , manageDocks ]
 
 -- myNewManageHook   = manageHook desktopConfig <+> manageDocks
 myNewManageHook   = myManageHook <+> manageHook desktopConfig
+
+tagL l = onLogger $ wrap(l ++ " :: ") ""
 
 main :: IO ()
 
@@ -61,8 +68,11 @@ main = do
     xmonad $ defaults {
         logHook      = dynamicLogWithPP $ xmobarPP {
             ppOutput    = hPutStrLn xmproc
-            , ppCurrent = xmobarColor xmobarCurrFG xmobarCurrBG . wrap "   " "   "
-            , ppHidden  = xmobarColor xmobarHiddenFG "" . wrap "   " "   "
+            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 4 
+            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 4 
+            , ppSep = "   " 
+            , ppWsSep = "   "
+            , ppExtras = [fmap (\m -> fmap (\s -> "\xf178  " ++ s) m) $ logCurrent]
             , ppTitle   = (\str -> "")
             , ppLayout  = (\str -> "")
         }
