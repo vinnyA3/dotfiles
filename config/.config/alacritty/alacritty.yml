@@ -72,20 +72,20 @@ font:
     # style: Italic
 
   # Point size of the font
-  size: 9.48
+  size: 9
 
   # Offset is the extra space around each character. offset.y can be thought of
   # as modifying the linespacing, and offset.x as modifying the letter spacing.
   offset:
-    x: 0.9 
-    y: 2.44
+    x: 0 
+    y: 0 
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increase the x offset to move the glyph to
   # the right, increase the y offset to move the glyph upward.
   glyph_offset:
-    x: 0.0
-    y: 0.0
+    x: 0
+    y: 0
 
   # OS X only: use thin stroke font rendering. Thin strokes are suitable
   # for retina displays, but for non-retina you probably want this set to
@@ -180,11 +180,10 @@ visual_bell:
 
 # Background opacity
 # early day - pre redshift
-# background_opacity: .948
-# background_opacity: 1
+background_opacity: .838
 
 # later night - redshift - dark bg
-background_opacity: .899
+# background_opacity: .899
 
 # Mouse bindings
 #
