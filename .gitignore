@@ -1,12 +1,6 @@
 # Config
-config/.config/*
-!config/.config/alacritty
-!config/.config/xmobar
-!config/.config/neofetch
-!config/.config/ranger
-!config/.config/cava
-!config/.config/qutebrowser/config.py
-
+# check sub dir config/.config
+#
 # Vim
 vim/.vim/*
 !vim/.vim/autoload/*
