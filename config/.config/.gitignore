@@ -19,5 +19,6 @@ systemd
 mimeapps.list
 
 qutebrowser/**/*
+!qutebrower/themes/*
 !qutebrowser/*.py
 
