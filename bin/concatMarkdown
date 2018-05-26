@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# concatMarkdown
+# concatenates all markdown files and creates a pdf from the result
+# hard coded for ydkjs atm ...
+
+# cli arguments
+filename=$1 # filename (used for md & pdf outputs)
+binary=$2   # binary (path-to + markdown binary)
+
+toc="toc.md"
+chapters="ch*.md"
+aps="ap*.md"
+
+add_newline () {
+  echo >> "$1"
+}
+
+add_newlines_to_files() {
+  add_newline $toc
+  add_newline $chapters
+  add_newline $aps
+}
+
+if [[ -n "$filename" && -n "$binary" ]]; then
+
+  # add new lines to all markdown files to be included
+  add_newlines_to_files
+
+  # concatenate all md files into file with passed $filename
+  cat $toc $chapters $aps >> "$filename"
+
+  pdfName="$filename.pdf"
+  output="$(pwd)/$pdfName"
+
+  # generate pdf
+  $("${binary}" -c "pwd" -o "${output}" "${filename}")
+
+else
+  echo "args err: pass in output filename AND markdown-gen (abs path + binary)"
+fi
+
