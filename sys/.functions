@@ -7,10 +7,3 @@ function rand-wal {
 	    awk "NR==$(shuf -i $min-$max -n 1)")
 }
 
-# get workspace snapshot, then add new jpg to screenshots dir
-function workspace-snapshot {
-  t=$(date +%T)
-
-  "$(import -window root ~/Pictures/screenshots/screenshot-"$t".jpg)" \
-      > /dev/null 2>&1;
-}
