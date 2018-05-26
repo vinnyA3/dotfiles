@@ -18,6 +18,5 @@ inkscape
 systemd
 mimeapps.list
 
-qutebrowser
-!qutebrowser/*.py
+!qutebrowser
 
