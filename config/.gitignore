@@ -7,4 +7,6 @@
 !cava/
 !ranger/
 !redshift.conf
+rtv/*
+!rtv/themes/dracula.theme
 !qutebrowser/
