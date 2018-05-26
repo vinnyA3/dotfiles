@@ -1,0 +1,62 @@
+#################################
+#
+# Compton configuration baby!
+#
+#################################
+
+#
+# Shadows
+#
+#################################
+
+# Enabled client-side shadows on windows.
+shadow = true;
+# Don't draw shadows on DND windows.
+no-dnd-shadow = true;
+# Avoid drawing shadows on dock/panel windows.
+no-dock-shadow = true;
+# Zero the part of the shadow's mask behind the window. Fix some weirdness with
+# ARGB windows.
+clear-shadow = true;
+# The blur radius for shadows. (default 12)
+shadow-radius = 5;
+# The left offset for shadows. (default -15)
+shadow-offset-x = -5;
+# The top offset for shadows. (default -15)
+shadow-offset-y = -5;
+# The translucency for shadows. (default .75)
+shadow-opacity = 0.5;
+
+# Set if you want different colour shadows
+# shadow-red = 0.0;
+# shadow-green = 0.0;
+# shadow-blue = 0.0;
+
+opacity-rule = [
+    "99:_NET_WM_STATE@[0]:32a = '_NET_WM_STATE_FULLSCREEN'",
+    "99:_NET_WM_STATE@[1]:32a = '_NET_WM_STATE_FULLSCREEN'",
+    "99:_NET_WM_STATE@[2]:32a = '_NET_WM_STATE_FULLSCREEN'",
+    "99:_NET_WM_STATE@[3]:32a = '_NET_WM_STATE_FULLSCREEN'",
+    "99:_NET_WM_STATE@[4]:32a = '_NET_WM_STATE_FULLSCREEN'",
+];
+
+#################################
+#
+# Fading
+#
+#################################
+
+# Fade windows during opacity changes.
+fading = true;
+# The time between steps in a fade in milliseconds. (default 10).
+fade-delta = 4;
+# Opacity change between steps while fading in. (default 0.028).
+fade-in-step = 0.03;
+# Opacity change between steps while fading out. (default 0.03).
+fade-out-step = 0.03;
+# Fade windows in/out when opening/closing
+# no-fading-openclose = true;
+
+# Specify a list of conditions of windows that should not be faded.
+fade-exclude = [ ];
+
