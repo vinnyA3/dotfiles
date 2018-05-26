@@ -13,9 +13,11 @@ VirtualBox
 UNDERTALE
 oomox
 pulse
+mps-youtube
 inkscape
 systemd
 mimeapps.list
 
 qutebrowser/**/*
 !qutebrowser/*.py
+
