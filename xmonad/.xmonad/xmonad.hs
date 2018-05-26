@@ -16,7 +16,7 @@ import Data.Char
 myTerminal = "st"
 
 -- Launcher: Set to Dmenu (x: 380)
-myLauncher = "dmenu_run -b -p '\xf00e' -x 10 -y 10 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
+myLauncher = "dmenu_run -b -p '\xf00e' -x 310 -y 10 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
@@ -36,7 +36,7 @@ xmobarCurrBG = "#FF79C6"
 xmobarHiddenFG = "#747C84"
 
 -- My Workspaces
-myWorkspaces = [ " Terminal"
+myWorkspaces = [ " The Hub"
                   ," Qutebrowser"
                   ," Code"
                   ," Firefox"
@@ -92,6 +92,8 @@ defaults = desktopConfig
     , ((modm, xK_z), sendMessage MirrorShrink)
     , ((modm, xK_a), sendMessage MirrorExpand) 
     , ((modm, xK_e), toggleFloatNext)
+    -- workspace-snapshots (bash function)
+    , ((modm .|. shiftMask, xK_p), spawn "workspace-snapshot")
     -- easier keybindings for media keys
     ] `additionalKeysP`
     [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%")
