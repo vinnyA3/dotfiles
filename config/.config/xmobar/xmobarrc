@@ -1,4 +1,4 @@
-Config { font = "xft:Adobe Source Code Pro:style=Medium:size=9,FontAwesome:size=9"
+Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
@@ -11,21 +11,21 @@ Config { font = "xft:Adobe Source Code Pro:style=Medium:size=9,FontAwesome:size=
        , hideOnStart = False
        , allDesktops = True
        , overrideRedirect = True
-       , commands = [ Run Cpu ["-t", "   <fc=#8BE9FD>cpu:</fc>  <total>   ", "-L","3","-H","50",
+       , commands = [ Run Cpu ["-t", "<fc=#8BE9FD>\xf6fa</fc> <total>", "-L","3","-H","50",
                                "--high","#FF5555", "-S", "True"] 10
-                    , Run Memory ["-t","   <fc=#FF79C6>mem:</fc>  <usedratio> ",
-                                  "-S", "True"] 10
-                    , Run Volume "default" "Master" ["-t", "  <status>  <volume>%   "
-                        , "--", "-O", "<fc=#FF6E67>\xf028</fc>"
-                        , "-o", "<fc=#FF6E67>\xf026</fc>"] 10
-                    , Run Date "     \xf073  %a %b %_d %H:%M     " "date" 10
+                    , Run Memory ["-t","<fc=#FF79C6>\xf85a</fc> <usedratio>", "-S", "True"] 10
+                    , Run Volume "default" "Master" ["-t", "<status> <volume>%"
+                        , "--", "-O", "<fc=#FF6E67>\xf028</fc>" , "-o", "<fc=#FF6E67>\xf026</fc>"] 10
+                    , Run Weather "KEWR" ["-t"
+                        , "<fc=#F1FA8C>\xe30c</fc> SI: <tempF><fc=#E6E6E6>\xfa04</fc>, rh <rh>% (<hour>)"] 36000
+                    , Run Date "  \xf073  %a %b %_d %H:%M   " "date" 60
                     , Run Mpris2 "cmus" ["-t"
-                                            , "<fc=#CAA9FA>\xf025</fc>  <artist> : : <title>    <fc=#747C84>|</fc> "
-                                            , "-M", "105", "-x", ""] 10
+                        , "<fc=#747C84>|</fc>  <fc=#CAA9FA>\xfc58</fc> <artist> :: <title>"
+                        , "-M", "230", "-x", ""] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "   %StdinReader% } \
-            \ { %mpris2% %default:Master% <fc=#747C84>|</fc> %cpu% <fc=#747C84>|</fc> %memory%   <fc=#282A36,#50FA7B>%date%</fc>   " }
+       , template = " %StdinReader%  %mpris2%} \
+            \ { %default:Master%  <fc=#747C84>|</fc>  %KEWR% <fc=#747C84>|</fc>  %cpu%  <fc=#747C84>|</fc>  %memory%  <fc=#282A36,#50FA7B>%date%</fc> " }
 
