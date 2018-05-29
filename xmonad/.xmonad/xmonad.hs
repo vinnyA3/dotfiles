@@ -68,11 +68,11 @@ main = do
     xmonad $ defaults {
         logHook      = dynamicLogWithPP $ xmobarPP {
             ppOutput    = hPutStrLn xmproc
-            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 5 
-            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 5
-            , ppSep = "   " 
-            , ppWsSep = "   "
-            , ppExtras = [fmap (\m -> fmap (\s -> "\xf178  " ++ s) m) $ logCurrent]
+            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 3
+            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 3
+            , ppSep = " "  
+            , ppWsSep = "  "
+            , ppExtras = [fmap (\m -> fmap (\s -> "\xfc96" ++ s) m) $ logCurrent]
             , ppTitle   = (\str -> "")
             , ppLayout  = (\str -> "")
         }
