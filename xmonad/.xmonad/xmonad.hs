@@ -12,11 +12,11 @@ import XMonad.Util.Loggers
 import XMonad.Util.EZConfig
 import Data.Char
 
--- DefaultTerminal: Set to St (Alacritty, Termite)
+-- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
 myTerminal = "st"
 
 -- Launcher: Set to Dmenu (x: 380)
-myLauncher = "dmenu_run -b -p '\xf00e' -x 310 -y 10 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
+myLauncher = "dmenu_run -b -p '\xf00e' -x 8 -y 10 -W 620 -i -fn 'Noto Sans UI-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
@@ -68,8 +68,8 @@ main = do
     xmonad $ defaults {
         logHook      = dynamicLogWithPP $ xmobarPP {
             ppOutput    = hPutStrLn xmproc
-            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 3
-            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 3
+            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 1
+            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 1
             , ppSep = " "  
             , ppWsSep = "  "
             , ppExtras = [fmap (\m -> fmap (\s -> "\xfc96" ++ s) m) $ logCurrent]
@@ -104,4 +104,3 @@ defaults = desktopConfig
     , ("<XF86AudioPlay>", spawn "playerctl play-pause")
     , ("<XF86AudioStop>", spawn "playerctl stop")
     ]
-
