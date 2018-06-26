@@ -1,8 +1,7 @@
 " - Vim Plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-surround'
@@ -29,9 +28,15 @@ colorscheme dracula
 highlight Normal ctermbg=None
 
 " - Vim Airline
-let g:airline_powerline_fonts=0
-let g:airline#extensions#tabline#enabled=1
-let g:airline_theme='dracula'
+" let g:airline_powerline_fonts=0
+" let g:airline#extensions#tabline#enabled=1
+" let g:airline_theme='dracula'
+
+" - Vim Lightline
+set laststatus=2
+let g:lightline = {
+  \ 'colorscheme': 'Dracula',
+  \ }
 
 " - Finding files recursively
 set path+=**
@@ -65,14 +70,14 @@ let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 
 " Tmuxline
-let g:tmuxline_powerline_separators = 0
-let g:tmuxline_preset = {
-        \ 'a': '#S',
-        \ 'win': '#I #W',
-        \ 'cwin': '#I #W',
-        \ 'z': 'up: #(get_uptime)',
-        \ 'options': {
-        \ 'status-justify': 'left'}}
+" let g:tmuxline_powerline_separators = 0
+" let g:tmuxline_preset = {
+        " \ 'a': '#S',
+        " \ 'win': '#I #W',
+        " \ 'cwin': '#I #W',
+        " \ 'z': 'up: #(get_uptime)',
+        " \ 'options': {
+        " \ 'status-justify': 'left'}}
 
 " - editorconfigs
 set autoindent
