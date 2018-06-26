@@ -40,8 +40,7 @@ exec feh --bg-scale $HOME/Pictures/wallpaper/pattern.png &
 exec unclutter -grab &
 
 # use basic compton config
-# exec compton --config ~/.dotfiles/config/compton/config &
-exec compton -Cf &
+exec compton --config ~/.config/compton/compton.conf &
 
 # init xmonad
 exec xmonad
