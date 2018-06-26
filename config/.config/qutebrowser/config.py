@@ -309,5 +309,5 @@ c.fonts.tabs = '11pt Roboto'
 c.fonts.web.family.standard = None
 
 # Bindings for normal mode
-config.bind(',n', 'config-cycle content.user_stylesheets ~/Themes/css/dracula/dracula-all-sites.css ""')
+config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/dracula-all-sites.css ""')
 config.bind('M', 'hint links spawn mpv {hint-url}')
