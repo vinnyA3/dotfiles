@@ -34,7 +34,7 @@ fi
 
 # randomize wallpaper - /usr/bin/rand-wallpaper
 # exec rand-wallpaper & 
-exec feh --bg-scale $HOME/Pictures/wallpaper/pattern.png &
+exec feh --bg-scale $HOME/Pictures/wallpaper/color-gradient.jpg &
 
 # unclutter mouse
 exec unclutter -grab &
