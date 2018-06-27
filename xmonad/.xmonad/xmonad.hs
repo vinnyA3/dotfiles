@@ -4,6 +4,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.Spacing
 import XMonad.Layout.Spiral
 import XMonad.Layout.ResizableTile
+import XMonad.Layout.Accordion
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
 import XMonad.Actions.FloatKeys
@@ -50,7 +51,7 @@ myWorkspaces = [ " The Hub"
 --myWorkspaces   =  map show $ take 9 [1..] 
 
 -- My Layout Hook
-myLayout = sizeTall ||| spiral (6/7)
+myLayout = sizeTall ||| spiral (6/7) ||| Accordion
   where sizeTall = ResizableTall 1 (3/100) (1/2) []
         spir = spiral (6/7)
 
