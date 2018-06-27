@@ -6,6 +6,7 @@ import XMonad.Layout.Spiral
 import XMonad.Layout.ResizableTile
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.DynamicLog
+import XMonad.Actions.FloatKeys
 import XMonad.Hooks.FloatNext
 import XMonad.Util.Run
 import XMonad.Util.Loggers
@@ -49,7 +50,9 @@ myWorkspaces = [ " The Hub"
 --myWorkspaces   =  map show $ take 9 [1..] 
 
 -- My Layout Hook
-myLayout = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ (ResizableTall 1 (3/100) (1/2) [] ||| spiral (6/7))
+myLayout = sizeTall ||| spiral (6/7)
+  where sizeTall = ResizableTall 1 (3/100) (1/2) []
+        spir = spiral (6/7)
 
 -- myManageHook
 myManageHook = composeAll
@@ -86,7 +89,7 @@ defaults = desktopConfig
     , modMask     = modm 
     , terminal    = myTerminal 
     , workspaces  = myWorkspaces
-    , layoutHook  = myLayout
+    , layoutHook  = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ myLayout
     } `additionalKeys`
     [ ((modm, xK_p), spawn myLauncher)
     , ((modm, xK_z), sendMessage MirrorShrink)
@@ -94,6 +97,12 @@ defaults = desktopConfig
     , ((modm, xK_e), toggleFloatNext)
     -- workspace-snapshots (bash function)
     , ((modm .|. shiftMask, xK_p), spawn "workspace-snapshot")
+    -- floating window keys
+    , ((modm, xK_d), withFocused (keysResizeWindow (-10,-10) (1,1)))
+    , ((modm, xK_s), withFocused (keysResizeWindow (10,10) (1,1)))
+    , ((modm .|. shiftMask, xK_d), withFocused (keysAbsResizeWindow (-10,-10) (1024,752)))
+    , ((modm .|. shiftMask, xK_s), withFocused (keysAbsResizeWindow (10,10) (1024,752)))
+    --, ((modm, xK_m), withFocused (keysMoveWindowTo (512,384) (1%2,1%2)))
     -- easier keybindings for media keys
     ] `additionalKeysP`
     [ ("<XF86AudioRaiseVolume>", spawn "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%")
@@ -104,3 +113,4 @@ defaults = desktopConfig
     , ("<XF86AudioPlay>", spawn "playerctl play-pause")
     , ("<XF86AudioStop>", spawn "playerctl stop")
     ]
+
