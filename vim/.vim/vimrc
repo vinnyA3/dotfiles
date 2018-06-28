@@ -63,6 +63,9 @@ map <leader>k <C-W>k<C-W>
 map <leader>h <C-W>h<C-W>
 map <leader>l <C-W>l<C-W>
 
+" - GitGutter
+set updatetime=2000
+
 " Ale
 " - lint only on save
 " Write this in your vimrc file
