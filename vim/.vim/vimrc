@@ -10,9 +10,8 @@ Plug 'w0rp/ale'
 Plug 'ajh17/VimCompletesMe'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'leafgarland/typescript-vim'
-Plug 'pangloss/vim-javascript'
-Plug 'neovimhaskell/haskell-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'sheerun/vim-polyglot'
 
 " - Initialize plugin system
 call plug#end()
