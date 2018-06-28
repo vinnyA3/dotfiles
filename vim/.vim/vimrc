@@ -3,7 +3,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'itchyny/lightline.vim'
 Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'edkolev/tmuxline.vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'w0rp/ale'
