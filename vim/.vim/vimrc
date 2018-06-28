@@ -11,7 +11,8 @@ Plug 'ajh17/VimCompletesMe'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
+Plug 'pangloss/vim-javascript'
+Plug 'neovimhaskell/haskell-vim'
 
 " - Initialize plugin system
 call plug#end()
@@ -19,6 +20,7 @@ call plug#end()
 " - Basic setup
 set nocompatible
 syntax on
+filetype plugin indent on
 
 " Recent Dracula Theme messed up a ton of things ...
 " these settings resolve the issues 
