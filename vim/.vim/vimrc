@@ -62,13 +62,16 @@ map <leader>k <C-W>k<C-W>_
 map <leader>h <C-W>h<C-W>
 map <leader>l <C-W>l<C-W>
 
+set winminheight=0
+set winheight=999
 " - set window height to 0 by default
 " - helps with screen real-estate :)
-set winminheight=1
-set winheight=999
 
 " - GitGutter
 set updatetime=1000
+nmap <Leader>gs <Plug>GitGutterStageHunk
+nmap <Leader>gu <Plug>GitGutterUndoHunk
+nmap <Leader>gp <Plug>GitGutterPreviewHunk
 
 " Ale
 " - lint only on save
