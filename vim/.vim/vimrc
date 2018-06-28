@@ -58,10 +58,16 @@ noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
 
 " - easier window navigation
-map <leader>j <C-W>j<C-W>
-map <leader>k <C-W>k<C-W>
+map <leader>j <C-W>j<C-W>_
+map <leader>k <C-W>k<C-W>_
 map <leader>h <C-W>h<C-W>
 map <leader>l <C-W>l<C-W>
+
+set winminheight=0
+set winheight=999
+" - set window height to 0 by default
+" - helps with screen real-estate :)
+set wmh=0
 
 " - GitGutter
 set updatetime=1000
