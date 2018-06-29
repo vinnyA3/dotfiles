@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ajh17/VimCompletesMe'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'dracula/vim', {'as': 'dracula'}
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
