@@ -11,7 +11,7 @@ everything.
 ## Sys Overview
 
 * os: Arch Linux
-* window manager:  Xmonad
+* window manager:  XMonad
 * statusbar: Xmobar 
 * theme: Dracula 
 * editor: Vim
