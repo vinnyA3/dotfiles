@@ -46,10 +46,10 @@ noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
 
 " - easier window navigation
-map <leader>j <C-W>j<C-W>_
-map <leader>k <C-W>k<C-W>_
-map <leader>h <C-W>h<C-W>
-map <leader>l <C-W>l<C-W>
+" map <leader>j <C-W>j<C-W>_
+" map <leader>k <C-W>k<C-W>_
+" map <leader>h <C-W>h<C-W>
+" map <leader>l <C-W>l<C-W>
 
 set winminheight=0
 set winheight=999
