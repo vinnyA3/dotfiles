@@ -40,7 +40,7 @@ exec feh --bg-scale $HOME/Pictures/wallpaper/color-gradient.jpg &
 exec unclutter -grab &
 
 # use basic compton config
-exec compton --config ~/.config/compton/compton.conf &
+exec compton -c --shadow-exclude-reg 1920x37+0-0 --config ~/.config/compton/compton.conf &
 
 # init xmonad
 exec xmonad
