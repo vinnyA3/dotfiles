@@ -1,19 +1,21 @@
 " - Vim Plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'ajh17/VimCompletesMe'
 Plug 'dracula/vim', {'as': 'dracula'}
+Plug 'itchyny/lightline.vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
+Plug 'mhinz/vim-startify'
+Plug 'neovimhaskell/haskell-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'ryanoasis/vim-devicons'
+
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
+
 Plug 'w0rp/ale'
-Plug 'ajh17/VimCompletesMe'
-Plug 'mattn/emmet-vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'mhinz/vim-startify'
-Plug 'jiangmiao/auto-pairs'
-Plug 'airblade/vim-gitgutter'
-Plug 'pangloss/vim-javascript'
-Plug 'neovimhaskell/haskell-vim'
 
 " - Initialize plugin system
 call plug#end()
