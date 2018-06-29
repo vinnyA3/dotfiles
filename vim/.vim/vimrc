@@ -20,44 +20,15 @@ Plug 'w0rp/ale'
 " - Initialize plugin system
 call plug#end()
 
+" - set leader key
+let mapleader = ';'
+
 set encoding=UTF-8
 
 " - Basic setup
 set nocompatible
 syntax on
 filetype plugin indent on
-
-" Recent Dracula Theme messed up a ton of things ...
-" these settings resolve the issues 
-let g:dracula_italic = 0
-colorscheme dracula
-highlight Normal ctermbg=None
-
-" Plugin: netrw {{{2
-" let g:loaded_netrwPlugin = 1
-let g:netrw_banner       = 0
-let g:netrw_bufsettings  = 'relativenumber'
-let g:netrw_keepdir      = 0
-let g:netrw_liststyle    = 1
-let g:netrw_sort_options = 'i'
-
-" - Vim Lightline
-set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'Dracula',
-      \ 'component_function': {
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
-      \ }
-    \ }
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
-endfunction
 
 " - Finding files recursively
 set path+=**
@@ -68,9 +39,6 @@ set wildignore+=**/node_modules/**
 
 " - map relative number toggle
 nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
-
-" - set leader key
-let mapleader = ';'
 
 " - easy buffer navigation
 noremap <leader>n :bn<cr>
@@ -87,19 +55,6 @@ set winminheight=0
 set winheight=999
 " - set window height to 0 by default
 " - helps with screen real-estate :)
-
-" - GitGutter
-set updatetime=1000
-nmap <Leader>gs <Plug>GitGutterStageHunk
-nmap <Leader>gu <Plug>GitGutterUndoHunk
-nmap <Leader>gp <Plug>GitGutterPreviewHunk
-
-" Ale
-" - lint only on save
-" Write this in your vimrc file
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 0
 
 " - editorconfigs
 set autoindent
@@ -128,4 +83,49 @@ set nojoinspaces " pesky 2-spaces after the period thing - substack :p
 set nowritebackup
 set noswapfile
 set nobackup
+
+" Plugin: dracula
+" Recent Dracula Theme messed up a ton of things ...
+" these settings resolve the issues 
+let g:dracula_italic = 0
+colorscheme dracula
+highlight Normal ctermbg=None
+
+" Plugin: GitGutter
+set updatetime=1000
+nmap <Leader>gs <Plug>GitGutterStageHunk
+nmap <Leader>gu <Plug>GitGutterUndoHunk
+nmap <Leader>gp <Plug>GitGutterPreviewHunk
+
+" Plugin: Ale
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 0
+
+
+" Plugin: netrw {{{2
+" let g:loaded_netrwPlugin = 1
+let g:netrw_banner       = 0
+let g:netrw_bufsettings  = 'relativenumber'
+let g:netrw_keepdir      = 0
+let g:netrw_liststyle    = 1
+let g:netrw_sort_options = 'i'
+
+" Plugin: lightline {{{1
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'Dracula',
+      \ 'component_function': {
+      \   'filetype': 'MyFiletype',
+      \   'fileformat': 'MyFileformat',
+      \ }
+    \ }
+
+function! MyFiletype()
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+endfunction
+
+function! MyFileformat()
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
 
