@@ -18,6 +18,8 @@ Plug 'neovimhaskell/haskell-vim'
 " - Initialize plugin system
 call plug#end()
 
+set encoding=UTF-8
+
 " - Basic setup
 set nocompatible
 syntax on
