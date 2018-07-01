@@ -2,7 +2,7 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
-       , position = BottomSize C 100 37
+       , position = TopSize C 100 37
        , textOffset = -1 
        , iconOffset = -1 
        , lowerOnStart = False 
@@ -20,12 +20,12 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
                         , "<fc=#F1FA8C>\xe30c</fc> SI: <tempF><fc=#E6E6E6>\xfa04</fc>, rh <rh>% (<hour>)"] 36000
                     , Run Date "  \xf073  %a %b %_d %H:%M   " "date" 60
                     , Run Mpris2 "cmus" ["-t"
-                        , "<fc=#747C84>|</fc>  <fc=#CAA9FA>\xfc58</fc> <artist> :: <title>"
+                        , "<fc=#6d7c8c>|</fc> <fc=#CAA9FA>\xfc58</fc> <artist> :: <title>"
                         , "-M", "230", "-x", ""] 10
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader%  %mpris2%} \
-            \ { %default:Master%  <fc=#747C84>|</fc>  %KEWR%  <fc=#747C84>|</fc>  %cpu%  <fc=#747C84>|</fc>  %memory%  <fc=#282A36,#50FA7B>%date%</fc> " }
+       , template = " %StdinReader% %mpris2%} \
+            \ { %default:Master% <fc=#6d7c8c>|</fc> %KEWR% <fc=#6d7c8c>|</fc> %cpu% <fc=#6d7c8c>|</fc> %memory%  <fc=#282A36,#50FA7B>%date%</fc> " }
 
