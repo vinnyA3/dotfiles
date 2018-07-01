@@ -26,6 +26,6 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = " %StdinReader% %mpris2%} \
+       , template = " %StdinReader% %mpris2%} <fc=#6d7c8c></fc> \
             \ { %default:Master% <fc=#6d7c8c>|</fc> %KEWR% <fc=#6d7c8c>|</fc> %cpu% <fc=#6d7c8c>|</fc> %memory%  <fc=#282A36,#50FA7B>%date%</fc> " }
 
