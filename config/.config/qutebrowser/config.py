@@ -36,7 +36,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = []
+c.content.user_stylesheets = '~/.config/qutebrowser/dracula-all-sites.css'
 
 # Enable WebGL.
 # Type: Bool
@@ -135,7 +135,7 @@ c.statusbar.widgets = ['keypress', 'url', 'scroll', 'history', 'tabs', 'progress
 #   - bottom
 #   - left
 #   - right
-c.tabs.position = 'top'
+c.tabs.position = 'bottom'
 
 # Which tab to select when the focused tab is removed.
 # Type: SelectOnRemove
