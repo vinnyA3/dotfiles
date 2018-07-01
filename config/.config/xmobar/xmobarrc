@@ -1,10 +1,9 @@
 Config { font = "xft:FuraCode Nerd Font:style=Regular:size=9"
+       , additionalFonts = ["xft:FuraCode Nerd Font:style=Regular:size=13"]
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
        , position = TopSize C 100 37
-       , textOffset = -1 
-       , iconOffset = -1 
        , lowerOnStart = False 
        , pickBroadest = False
        , persistent = True 
