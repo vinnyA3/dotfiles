@@ -12,6 +12,7 @@ import XMonad.Hooks.FloatNext
 import XMonad.Util.Run
 import XMonad.Util.Loggers
 import XMonad.Util.EZConfig
+import qualified Data.Text as T
 import Data.Char
 
 -- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
@@ -38,15 +39,15 @@ xmobarCurrBG = "#FF79C6"
 xmobarHiddenFG = "#747C84"
 
 -- My Workspaces
-myWorkspaces = [ " The Hub"
-                  ," Qutebrowser"
-                  ," Code"
-                  ," Firefox"
-                  ," Chrome"
-                  ," Media"
-                  ," Alt7"
-                  ," Alt8"
-                  ," Alt9" ]
+myWorkspaces = [ "\xf8a3 The Hub"
+                  ,"\xf8a6 Qutebrowser"
+                  ,"\xf8a9 Code"
+                  ,"\xf8ac Firefox"
+                  ,"\xf8af Chrome"
+                  ,"\xf8b2 Media"
+                  ,"\xf8b5 Alt7"
+                  ,"\xf8b8 Alt8"
+                  ,"\xf8bb Alt9" ]
 
 --myWorkspaces   =  map show $ take 9 [1..] 
 
@@ -66,17 +67,25 @@ myManageHook = composeAll
 -- myNewManageHook   = manageHook desktopConfig <+> manageDocks
 myNewManageHook   = myManageHook <+> floatNextHook <+> manageHook desktopConfig
 
+splitH s = T.splitOn (T.pack " ") (T.pack s)
+
+splitAndDropFst = tail . splitH
+
+splitAndTakeFst = take 1 . splitH
+
+splitMapJoin fn s = unwords(fmap T.unpack (fn s))
+
 main :: IO ()
 main = do
     xmproc <- spawnPipe "xmobar > /dev/null 2>&1"
     xmonad $ defaults {
         logHook      = dynamicLogWithPP $ xmobarPP {
             ppOutput    = hPutStrLn xmproc
-            , ppCurrent = xmobarColor "" xmobarCurrBG . shorten 1
-            , ppHidden  = xmobarColor "" xmobarHiddenFG . shorten 1
+            , ppCurrent = xmobarColor xmobarCurrBG "" . splitMapJoin splitAndTakeFst
+            , ppHidden  = xmobarColor xmobarHiddenFG "" . splitMapJoin splitAndTakeFst
             , ppSep = " "  
             , ppWsSep = " "
-            , ppExtras = [fmap (\m -> fmap (\s -> "\xfc96" ++ s) m) $ logCurrent]
+            , ppExtras = [fmap (\m -> fmap (\s -> (++) ":: " $ splitMapJoin splitAndDropFst s) m) $ logCurrent]
             , ppTitle   = (\str -> "")
             , ppLayout  = (\str -> "")
         }
