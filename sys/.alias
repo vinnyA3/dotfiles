@@ -19,7 +19,7 @@ alias gadd='git add'
 alias gpush='git push origin master'
 
 # Physlock
-alias plock='physlock -ms -p "$(fortune | cowthink -s | lolcat -)" > /dev/null 2>&1'
+# alias plock='physlock -ms -p "$(fortune | cowthink -s | lolcat -)" > /dev/null 2>&1'
 
 # List aliases
 alias ls='ls --color=auto'
