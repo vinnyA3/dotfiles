@@ -77,6 +77,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'justinmk/vim-dirvish'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
 Plug 'neovimhaskell/haskell-vim'
