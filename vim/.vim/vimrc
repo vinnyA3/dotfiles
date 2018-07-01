@@ -192,12 +192,12 @@ let g:ale_lint_on_text_changed = 0
 
 
 " Plugin: netrw {{{2
-" let g:loaded_netrwPlugin = 1
-let g:netrw_banner       = 0
-let g:netrw_bufsettings  = 'relativenumber'
-let g:netrw_keepdir      = 0
-let g:netrw_liststyle    = 1
-let g:netrw_sort_options = 'i'
+let g:loaded_netrwPlugin = 1
+" let g:netrw_banner       = 0
+" let g:netrw_bufsettings  = 'relativenumber'
+" let g:netrw_keepdir      = 0
+" let g:netrw_liststyle    = 1
+" let g:netrw_sort_options = 'i'
 
 " Plugin: lightline {{{1
 set laststatus=2
