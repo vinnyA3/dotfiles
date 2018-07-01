@@ -12,6 +12,7 @@ import XMonad.Hooks.FloatNext
 import XMonad.Util.Run
 import XMonad.Util.Loggers
 import XMonad.Util.EZConfig
+
 import qualified Data.Text as T
 import Data.Char
 
@@ -39,20 +40,20 @@ xmobarCurrBG = "#FF79C6"
 xmobarHiddenFG = "#747C84"
 
 -- My Workspaces
-myWorkspaces = [ "\xf8a3 The Hub"
-                  ,"\xf8a6 Qutebrowser"
-                  ,"\xf8a9 Code"
-                  ,"\xf8ac Firefox"
-                  ,"\xf8af Chrome"
-                  ,"\xf8b2 Media"
-                  ,"\xf8b5 Alt7"
-                  ,"\xf8b8 Alt8"
-                  ,"\xf8bb Alt9" ]
+myWorkspaces = [ "<fn=1>\xf8a4</fn> The Hub"
+                  ,"<fn=1>\xf8a7</fn> Qutebrowser"
+                  ,"<fn=1>\xf8aa</fn> Code"
+                  ,"<fn=1>\xf8ad</fn> Firefox"
+                  ,"<fn=1>\xf8b0</fn> Chrome"
+                  ,"<fn=1>\xf8b3</fn> Media"
+                  ,"<fn=1>\xf8b6</fn> Alt7"
+                  ,"<fn=1>\xf8b9</fn> Alt8"
+                  ,"<fn=1>\xf8bc</fn> Alt9" ]
 
 --myWorkspaces   =  map show $ take 9 [1..] 
 
 -- My Layout Hook
-myLayout = sizeTall ||| spiral (6/7) ||| Accordion
+myLayout = sizeTall ||| spir ||| Accordion
   where sizeTall = ResizableTall 1 (3/100) (1/2) []
         spir = spiral (6/7)
 
@@ -75,6 +76,9 @@ splitAndTakeFst = take 1 . splitH
 
 splitMapJoin fn s = unwords(fmap T.unpack (fn s))
 
+mapPrepend :: String -> String
+mapPrepend s = (++) ":: " $ splitMapJoin splitAndDropFst s
+
 main :: IO ()
 main = do
     xmproc <- spawnPipe "xmobar > /dev/null 2>&1"
@@ -85,7 +89,7 @@ main = do
             , ppHidden  = xmobarColor xmobarHiddenFG "" . splitMapJoin splitAndTakeFst
             , ppSep = " "  
             , ppWsSep = " "
-            , ppExtras = [fmap (\m -> fmap (\s -> (++) ":: " $ splitMapJoin splitAndDropFst s) m) $ logCurrent]
+            , ppExtras = [fmap (\m -> fmap mapPrepend m) $ logCurrent]
             , ppTitle   = (\str -> "")
             , ppLayout  = (\str -> "")
         }
