@@ -46,6 +46,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/vim-peekaboo'
 Plug 'justinmk/vim-dirvish'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
@@ -54,6 +55,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-surround'
 
 Plug 'w0rp/ale'
