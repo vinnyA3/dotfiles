@@ -108,6 +108,7 @@ noremap <leader>d :bd<cr>
 
 set winminheight=0
 set winheight=999
+set wmh=0
 " - set window height to 0 by default
 " - helps with screen real-estate :)
 
