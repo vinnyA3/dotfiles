@@ -166,6 +166,9 @@ let g:ale_lint_on_text_changed = 0
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 " let g:netrw_banner       = 0
 " let g:netrw_bufsettings  = 'relativenumber'
 " let g:netrw_keepdir      = 0
