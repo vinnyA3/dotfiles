@@ -12,7 +12,6 @@ import XMonad.Layout.Spiral
 import XMonad.Util.EZConfig
 import XMonad.Util.Loggers
 import XMonad.Util.Run
-
 import Data.Char
 import qualified Data.Text as T
 
