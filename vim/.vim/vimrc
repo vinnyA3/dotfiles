@@ -106,11 +106,12 @@ noremap <leader>d :bd<cr>
 " map <leader>h <C-W>h<C-W>
 " map <leader>l <C-W>l<C-W>
 
+" - Window settings
 set winminheight=0
 set winheight=999
 set wmh=0
-" - set window height to 0 by default
-" - helps with screen real-estate :)
+set splitbelow
+set splitright
 
 " - editorconfigs
 set number
