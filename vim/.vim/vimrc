@@ -50,6 +50,7 @@ Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'pangloss/vim-javascript'
+Plug 'roman/golden-ratio'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'tpope/vim-commentary'
