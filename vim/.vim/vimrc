@@ -93,7 +93,7 @@ set wildignore+=**/node_modules/**
 
 " Mappings
 " - map relative number toggle
-nmap <silent> <C-l> :exec &rnu? "se rnu!" : "se rnu"<CR>
+nmap <silent> <leader>t :exec &rnu? "se rnu!" : "se rnu"<CR>
 
 " - easy buffer navigation
 noremap <leader>n :bn<cr>
