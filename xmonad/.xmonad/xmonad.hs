@@ -26,7 +26,7 @@ myLauncher = "dmenu_run -l 6 -p '\xf303' -x 8 -y 37 -w 520 -i -fn 'FuraCode Nerd
 modm = mod4Mask
 
 -- Border Styling
-myBorderWidth = 1
+myBorderWidth = 2
 
 myNormalBorderColor = "#BFBFBF"
 
