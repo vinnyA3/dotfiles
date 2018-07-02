@@ -39,7 +39,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'ajh17/VimCompletesMe'
-Plug 'alx741/vim-hindent'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'dracula/vim', {'as': 'dracula'}
   
