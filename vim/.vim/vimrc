@@ -43,8 +43,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'dracula/vim', {'as': 'dracula'}
   
 Plug 'itchyny/lightline.vim'
-Plug 'itchyny/vim-gitbranch'
-
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-peekaboo'
 Plug 'justinmk/vim-dirvish'
@@ -193,11 +191,8 @@ let g:lightline = {
     \ }
 
 function! LightLineGitBranch()
-  if exists("*gitbranch#name")
-    let branch = gitbranch#name()
-    return branch !=# '' ? ' '.branch : ''
-  endif
-  return ''
+  let l:branch = fugitive#head()
+  return l:branch ==# '' ? '' : 'שׂ ' . l:branch
 endfunction
 
 function! MyFiletype()
