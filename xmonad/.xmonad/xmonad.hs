@@ -13,7 +13,6 @@ import XMonad.Util.Run
 import XMonad.Util.Loggers
 import XMonad.Util.EZConfig
 
-import qualified Data.Text as T
 import Data.Char
 
 -- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
