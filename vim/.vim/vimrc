@@ -45,19 +45,23 @@ Plug 'dracula/vim', {'as': 'dracula'}
   
 Plug 'itchyny/lightline.vim'
 Plug 'jiangmiao/auto-pairs'
+
+Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/vim-peekaboo'
+
 Plug 'justinmk/vim-dirvish'
 Plug 'mattn/emmet-vim'
 Plug 'mhinz/vim-startify'
-Plug 'neovimhaskell/haskell-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'roman/golden-ratio'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-syntastic/syntastic'
 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rsi'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-tbone'
 
 Plug 'w0rp/ale'
 
