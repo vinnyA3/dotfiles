@@ -108,9 +108,9 @@ noremap <leader>d :bd<cr>
 " map <leader>l <C-W>l<C-W>
 
 " - Window settings
-set winminheight=0
-set winheight=999
-set wmh=0
+" set winminheight=0
+" set winheight=999
+" set wmh=0
 set splitbelow
 set splitright
 
