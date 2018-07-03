@@ -20,7 +20,7 @@ myTerminal = "st"
 
 -- Launcher: Set to Dmenu (x: 380)
 myLauncher
-  = "dmenu_run -l 6 -p '\xf303' -x 8 -y 37 -w 520 -i -fn 'FuraCode Nerd Font-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
+  = "dmenu_run -l 6 -p '\xf303' -x 8 -y 34 -w 520 -i -fn 'FuraCode Nerd Font-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
