@@ -92,9 +92,9 @@ main = do
       , ppHidden  = xmobarColor xmobarHiddenFG "" . splitMapJoin splitAndTakeFst
       , ppSep     = " "
       , ppWsSep   = " "
-      , ppExtras  = [fmap (\m -> fmap mapPrepend m) $ logCurrent]
-      , ppTitle   = (\str -> "")
-      , ppLayout  = (\str -> "")
+      , ppExtras  = [fmap (fmap mapPrepend) logCurrent]
+      , ppTitle   = const ""
+      , ppLayout  = const ""
       }
     , manageHook = myNewManageHook
     }
@@ -109,8 +109,7 @@ defaults =
       , workspaces         = myWorkspaces
       , layoutHook         = avoidStruts
         $ smartBorders
-        $ smartSpacingWithEdge 8
-        $ myLayout
+        $ smartSpacingWithEdge 8 myLayout
       }
     `additionalKeys`  [ ((modm, xK_p), spawn myLauncher)
                       , ((modm, xK_z), sendMessage MirrorShrink)
