@@ -13,6 +13,9 @@ alias t='todo.sh'
 # Rtv
 alias rtv='rtv --theme ~/.config/rtv/themes/dracula'
 
+# Vim
+alias vim='nvim'
+
 # Git
 alias g='git'
 alias gadd='git add'
