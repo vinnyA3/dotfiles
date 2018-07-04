@@ -40,7 +40,7 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
 call minpac#add('ajh17/VimCompletesMe')
-" Plug 'christoomey/vim-tmux-navigator'
+call minpac#add('christoomey/vim-tmux-navigator')
 call minpac#add('dracula/vim', {'name': 'dracula'})
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('justinmk/vim-dirvish')
