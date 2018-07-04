@@ -32,42 +32,52 @@
 "                                                                 .o...P'
 "                                                                 `XER0'
 
+" Plugin: minpac (setup)
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+
+call minpac#add('airblade/vim-gitgutter')
+call minpac#add('ap/vim-css-color')
+call minpac#add('ajh17/VimCompletesMe')
+" Plug 'christoomey/vim-tmux-navigator'
+call minpac#add('dracula/vim', {'name': 'dracula'})
+call minpac#add('itchyny/lightline.vim')
+call minpac#add('justinmk/vim-dirvish')
+call minpac#add('jiangmiao/auto-pairs')
+" Plug 'junegunn/vim-easy-align'
+call minpac#add('junegunn/vim-peekaboo')
+call minpac#add('mattn/emmet-vim')
+call minpac#add('mhinz/vim-startify')
+call minpac#add('roman/golden-ratio')
+call minpac#add('ryanoasis/vim-devicons')
+
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-repeat')
+
+call minpac#add('w0rp/ale')
+
+" Commands
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
+
+" Basic setup
+let mapleader = ';' " - set leader key
 set encoding=UTF-8
-
-" - Vim Plug
-call plug#begin('~/.vim/plugged')
-
-Plug 'airblade/vim-gitgutter'
-Plug 'ajh17/VimCompletesMe'
-Plug 'christoomey/vim-tmux-navigator'
-Plug 'dracula/vim', {'as': 'dracula'}
-  
-Plug 'itchyny/lightline.vim'
-Plug 'jiangmiao/auto-pairs'
-
-Plug 'junegunn/vim-easy-align'
-Plug 'junegunn/vim-peekaboo'
-
-Plug 'justinmk/vim-dirvish'
-Plug 'mattn/emmet-vim'
-Plug 'mhinz/vim-startify'
-Plug 'pangloss/vim-javascript'
-Plug 'roman/golden-ratio'
-Plug 'ryanoasis/vim-devicons'
-
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-rsi'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-
-Plug 'w0rp/ale'
-
-" - Initialize plugin system
-call plug#end()
-
-" - set leader key
-let mapleader = ';'
+set noshowmode
+set splitbelow
+set splitright
+set number
+set textwidth=80
+set nohls
+set noshowmatch
+set noshowmode
+setlocal spell spelllang=en_us
+set nospell
+set modeline
+set nojoinspaces " pesky 2-spaces after the period thing - substack :p
 
 " Indent Settings
 set autoindent
@@ -82,12 +92,6 @@ set nowritebackup
 set noswapfile
 set nobackup
 
-
-" - Basic setup
-" set nocompatible
-syntax on
-" filetype plugin indent on
-
 " - Finding files recursively
 set path+=**
 
@@ -96,55 +100,44 @@ set wildmenu
 set wildignore+=**/node_modules/**
 
 " Mappings
-" - map relative number toggle
 nmap <silent> <leader>t :exec &rnu? "se rnu!" : "se rnu"<CR>
-imap <C-v> <ESC>"+pa
-vmap <C-c> "+y
-vmap <C-d> "+d
-
-" - easy buffer navigation
+" imap <C-v> <ESC>"+pa
+" vmap <C-c> "+y
+" vmap <C-d> "+d
+ " - easy buffer navigation
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
+nnoremap <C-p> :<C-u>FZF<CR>
+" - easy window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
-" - easier window navigation
-" map <leader>j <C-W>j<C-W>_
-" map <leader>k <C-W>k<C-W>_
-" map <leader>h <C-W>h<C-W>
-" map <leader>l <C-W>l<C-W>
+if has('nvim')
+  tnoremap <Esc> <C-\><C-n>
+  tnoremap <C-v><Esc> <Esc>
+  " - easy window navigation - when in term
+  tnoremap <C-h> <C-\><C-n><C-w>h
+  tnoremap <C-j> <C-\><C-n><C-w>j
+  tnoremap <C-k> <C-\><C-n><C-w>k
+  tnoremap <C-l> <C-\><C-n><C-w>l
+endif
 
-" - Window settings
-" set winminheight=0
-" set winheight=999
-" set wmh=0
-set splitbelow
-set splitright
-
-" - editorconfigs
-set number
-
-" - for indent lines
-" https://vi.stackexchange.com/questions/666/how-to-add-indentation-guides-lines
-" set cursorcolumn
-" set cursorline
-
-set textwidth=80
-set nohls
-set noshowmatch
-set noshowmode
-setlocal spell spelllang=en_us
-set nospell
-
-set modeline
-set nojoinspaces " pesky 2-spaces after the period thing - substack :p
-
-
-" Plugin: dracula
+" Plugin: Dracula
 " Recent Dracula Theme messed up a ton of things ...
 " these settings resolve the issues 
+let g:dracula_colorterm = 0
 let g:dracula_italic = 0
 colorscheme dracula
-highlight Normal ctermbg=None
+
+" Plugin: netrw {{{2
+let g:loaded_netrwPlugin = 1
+let g:dirvish_relative_paths = 0
+command! -nargs=? -complete=dir Explore Dirvish <args>
+command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
+command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
 " Plugin: GitGutter
 set updatetime=1000
@@ -179,21 +172,7 @@ let g:ale_fixers = {
 " Only run linters named in ale_linters settings.
 " let g:ale_linters_explicit = 1
 
-
-" Plugin: netrw {{{2
-let g:loaded_netrwPlugin = 1
-let g:dirvish_relative_paths = 0
-command! -nargs=? -complete=dir Explore Dirvish <args>
-command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
-command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
-" let g:netrw_banner       = 0
-" let g:netrw_bufsettings  = 'relativenumber'
-" let g:netrw_keepdir      = 0
-" let g:netrw_liststyle    = 1
-" let g:netrw_sort_options = 'i'
-
 " Plugin: lightline {{{1
-set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'Dracula',
       \ 'component': {
