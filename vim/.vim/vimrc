@@ -84,9 +84,9 @@ set nobackup
 
 
 " - Basic setup
-set nocompatible
+" set nocompatible
 syntax on
-filetype plugin indent on
+" filetype plugin indent on
 
 " - Finding files recursively
 set path+=**
