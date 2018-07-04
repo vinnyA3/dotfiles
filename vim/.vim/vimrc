@@ -78,6 +78,7 @@ setlocal spell spelllang=en_us
 set nospell
 set modeline
 set nojoinspaces " pesky 2-spaces after the period thing - substack :p
+set guicursor=
 
 " Indent Settings
 set autoindent
