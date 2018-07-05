@@ -49,7 +49,8 @@ call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mhinz/vim-startify')
-call minpac#add('roman/golden-ratio')
+" call minpac#add('roman/golden-ratio')
+call minpac#add('roxma/vim-window-resize-easy')
 call minpac#add('ryanoasis/vim-devicons')
 
 call minpac#add('tpope/vim-fugitive')
@@ -117,6 +118,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 if has('nvim')
+  " - avoid term buffers from closing on buf switch
+  set hidden
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
   " - easy window navigation - when in term
@@ -174,8 +177,6 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \   'haskell': ['brittany']
 \}
-" Only run linters named in ale_linters settings.
-" let g:ale_linters_explicit = 1
 
 " Plugin: lightline {{{1
 let g:lightline = {
