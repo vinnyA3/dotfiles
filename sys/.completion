@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if is_executable fzf; then
+  source /usr/share/fzf/completion.bash && source /usr/share/fzf/key-bindings.bash
+ 
+  if is_executable zathura; then
+    complete -o bashdefault -o default -F _fzf_path_completion zathura
+  endfi
+endfi
