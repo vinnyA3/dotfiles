@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Tmux
 alias tmux='tmux -2 -f ~/.tmux/tmux.conf'
 
@@ -15,6 +17,11 @@ alias rtv='rtv --theme ~/.config/rtv/themes/dracula'
 
 # Vim
 alias vim='nvim'
+
+# If nvim instance ...
+if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
+  alias nvim='echo "Warning: Avoid Nesting!!"'
+fi
 
 # Git
 alias g='git'
