@@ -43,13 +43,14 @@ call minpac#add('ajh17/VimCompletesMe')
 call minpac#add('christoomey/vim-tmux-navigator')
 call minpac#add('dracula/vim', {'name': 'dracula'})
 call minpac#add('itchyny/lightline.vim')
+
 call minpac#add('justinmk/vim-dirvish')
+call minpac#add('justinmk/vim-sneak')
+
 call minpac#add('jiangmiao/auto-pairs')
-" Plug 'junegunn/vim-easy-align'
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mhinz/vim-startify')
-" call minpac#add('roman/golden-ratio')
 call minpac#add('roxma/vim-window-resize-easy')
 call minpac#add('ryanoasis/vim-devicons')
 
