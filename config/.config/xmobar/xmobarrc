@@ -11,7 +11,7 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
        , allDesktops = True
        , overrideRedirect = True
        , commands = [ Run Cpu ["-t", "<fc=#8BE9FD>\xf6fa</fc> <total>", "-L","3","-H","50",
-                               "--high","#FF5555", "-S", "True"] 10
+                               "--high","#FF5555", "-S", "True", "-w", "3"] 10
                     , Run Memory ["-t","<fc=#FF79C6>\xf85a</fc> <usedratio>", "-S", "True"] 10
                     , Run Volume "default" "Master" ["-t", "<status> <volume>%"
                         , "--", "-O", "<fc=#FF6E67>\xf028</fc>" , "-o", "<fc=#FF6E67>\xf026</fc>"] 10
