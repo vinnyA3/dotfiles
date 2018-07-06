@@ -103,9 +103,9 @@ set wildignore+=**/node_modules/**
 
 " Mappings
 nmap <silent> <leader>t :exec &rnu? "se rnu!" : "se rnu"<CR>
-" imap <C-v> <ESC>"+pa
-" vmap <C-c> "+y
-" vmap <C-d> "+d
+" Copy selected text to system clipboard (requires vim compiled with x-11)
+vnoremap <C-c> "*y :let @+=@*<CR>
+map <C-v> "+P
  " - easy buffer navigation
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
