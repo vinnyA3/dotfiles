@@ -107,9 +107,9 @@ defaults =
       , modMask            = modm
       , terminal           = myTerminal
       , workspaces         = myWorkspaces
-      , layoutHook         = avoidStruts
-        $ smartBorders
-        $ smartSpacingWithEdge 8 myLayout
+      , layoutHook         = avoidStruts $ smartBorders $ smartSpacingWithEdge
+        8
+        myLayout
       }
     `additionalKeys`  [ ((modm, xK_p), spawn myLauncher)
                       , ((modm, xK_z), sendMessage MirrorShrink)
@@ -120,6 +120,10 @@ defaults =
     -- workspace-snapshots (bash function)
                       , ( (modm .|. shiftMask, xK_p)
                         , spawn "workspace-snapshot"
+                        )
+                        -- toggle fullscreen float
+                      , ( (mod4Mask .|. shiftMask, xK_f)
+                        , sendMessage ToggleStruts
                         )
     -- floating window keys
                       , ( (modm, xK_d)
