@@ -122,7 +122,7 @@ defaults =
                         , spawn "workspace-snapshot"
                         )
                         -- toggle fullscreen float
-                      , ( (mod4Mask .|. shiftMask, xK_f)
+                      , ( (modm .|. shiftMask, xK_f)
                         , sendMessage ToggleStruts
                         )
     -- floating window keys
