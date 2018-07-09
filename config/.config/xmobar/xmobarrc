@@ -4,7 +4,7 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
        , fgColor = "#E6E6E6"
        , alpha = 255
        , position = TopSize C 100 34
-       , lowerOnStart = False 
+       , lowerOnStart = True 
        , pickBroadest = False
        , persistent = True 
        , hideOnStart = False
