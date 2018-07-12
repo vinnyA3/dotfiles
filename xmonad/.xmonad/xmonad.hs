@@ -16,7 +16,7 @@ import Data.Char
 import qualified Data.Text as T
 
 -- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
-myTerminal = "st"
+myTerminal = "st -e '/bin/elvish'"
 
 -- Launcher: Set to Dmenu (x: 380)
 myLauncher
@@ -39,18 +39,42 @@ xmobarCurrBG = "#FF79C6"
 
 xmobarHiddenFG = "#747C84"
 
--- My Workspaces
-myWorkspaces =
-  [ "<fn=1>\xf8a4</fn> The Hub"
-  , "<fn=1>\xf8a7</fn> Qutebrowser"
-  , "<fn=1>\xf8aa</fn> Code"
-  , "<fn=1>\xf8ad</fn> Firefox"
-  , "<fn=1>\xf8b0</fn> Chrome"
-  , "<fn=1>\xf8b3</fn> Media"
-  , "<fn=1>\xf8b6</fn> Alt7"
-  , "<fn=1>\xf8b9</fn> Alt8"
-  , "<fn=1>\xf8bc</fn> Alt9"
+-- xmobarStrip = concatMap doubleLts
+--  where
+--   doubleLts '<' = "<<"
+--   doubleLts x   = [x]
+
+workspaceIcons =
+  [ "\xe17e"
+  , "\xe17f"
+  , "\xe180"
+  , "\xe181"
+  , "\xe182"
+  , "\xe183"
+  , "\xe184"
+  , "\xe185"
+  , "\xe186"
   ]
+
+-- My Workspaces
+workspaceNames =
+  [ "The Hub"
+  , "Qutebrowser"
+  , "Code"
+  , "Firefox"
+  , "Chrome"
+  , "Media"
+  , "Alt7"
+  , "Alt8"
+  , "Alt9"
+  ]
+
+myWorkspaces =
+  wrapWorkspaces workspaceIcons . map xmobarStrip $ workspaceNames
+ where
+  wrapWorkspaces icons workspaces =
+    [ "<fn=1>" ++ i ++ "</fn> " ++ ws | (i, ws) <- zip icons workspaces ]
+
 
 --myWorkspaces   =  map show $ take 9 [1..] 
 -- My Layout Hook
@@ -80,11 +104,11 @@ splitAndTakeFst = take 1 . splitH
 splitMapJoin fn s = unwords (fmap T.unpack (fn s))
 
 mapPrepend :: String -> String
-mapPrepend s = (++) ":: " $ splitMapJoin splitAndDropFst s
+mapPrepend s = (++) "<fn=1>\xe194</fn> " $ splitMapJoin splitAndDropFst s
 
 main :: IO ()
 main = do
-  xmproc <- spawnPipe "xmobar > /dev/null 2>&1"
+  xmproc <- spawnPipe "xmobar"
   xmonad $ defaults
     { logHook    = dynamicLogWithPP $ xmobarPP
       { ppOutput  = hPutStrLn xmproc
