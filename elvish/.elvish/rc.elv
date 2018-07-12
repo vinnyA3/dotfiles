@@ -1,4 +1,8 @@
-#===================
+# ==================
+# imports
+use readline-binding
+
+# ==================
 # path
 E:PATH=$E:PATH":/usr/share:"$E:HOME"/.stack/snapshots/x86_64-linux-tinfo6/lts-9.17/8.0.2/bin:"$E:HOME"/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.0.2/bin:"$E:HOME"/.stack/programs/x86_64-linux/ghc-tinfo6-8.0.2/bin:"$E:HOME"/.local/bin"
 
