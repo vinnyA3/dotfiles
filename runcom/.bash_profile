@@ -28,3 +28,4 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 
 # export
 export DOTFILES_DIR
+if [ -e /home/qwerty/.nix-profile/etc/profile.d/nix.sh ]; then . /home/qwerty/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
