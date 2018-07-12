@@ -22,5 +22,6 @@ stow git
 stow config
 stow vim
 stow tmux
+stow elvish
 stow xmonad
 stow x-files
