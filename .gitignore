@@ -18,3 +18,6 @@ tmux/.tmux/plugins/*
 # Xmonad
 xmonad/.xmonad/*
 !/xmonad/.xmonad/xmonad.hs
+
+elvish/.elvish/*
+!/elvish/.elvish/rc.elv
