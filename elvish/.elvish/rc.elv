@@ -23,7 +23,7 @@ fn rtv [@a]{ e:rtv --theme ~/.config/rtv/themes/dracula $@a }
 # git
 fn g [@a]{ e:git $@a }
 fn gadd [@a]{ e:git $@a add}
-fn gpush []{ e:git origin master }
+fn gpush []{ e:git push origin master }
 
 # ==================
 # prompt
