@@ -1,6 +1,7 @@
-Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
-       , additionalFonts = ["xft:FuraCode Nerd Font:style=Regular:size=13"]
-       , bgColor = "#282A36"
+Config { font = "xft:Misc Tamsyn:pixelsize=14:antialias=false:hinting=false"
+       , additionalFonts = ["xft:Wuncon Siji:style=Regular:size=9", "xft:FuraCode Nerd Font:style=Thin:size=9"]
+       , textOffsets = [-1]
+       , bgColor = "#1b202a"
        , fgColor = "#E6E6E6"
        , alpha = 255
        , position = TopSize C 100 34
@@ -10,23 +11,23 @@ Config { font = "xft:FuraCode Nerd Font:style=Medium:size=9"
        , hideOnStart = False
        , allDesktops = True
        , overrideRedirect = True
-       , commands = [ Run Cpu ["-t", "<fc=#8BE9FD>\xf6fa</fc> <total>", "-L","3","-H","50",
+       , commands = [ Run Cpu ["-t", "<fc=#8BE9FD><fn=2>\xf6fa</fn></fc> <total>", "-L","3","-H","50",
                                "--high","#FF5555", "-S", "True", "-w", "3",
                                "-c", "0"] 10
-                    , Run Memory ["-t","<fc=#FF79C6>\xf85a</fc> <usedratio>",
+                    , Run Memory ["-t","<fc=#FF79C6><fn=2>\xf85a</fn></fc> <usedratio>",
                       "-S", "True", "-w", "3", "-c", "0"] 10
                     , Run Volume "default" "Master" ["-t", "<status> <volume>%"
-                        , "--", "-O", "<fc=#FF6E67>\xf028</fc>" , "-o", "<fc=#FF6E67>\xf026</fc>"] 10
+                        , "--", "-O", "<fc=#FF6E67><fn=2>\xf028</fn></fc>"
+                        , "-o", "<fc=#FF6E67><fn=2>\xf026</fn></fc>"] 10
                     , Run Weather "KEWR" ["-t"
-                        , "<fc=#F1FA8C>\xe30c</fc> SI: <tempF><fc=#E6E6E6>\xfa04</fc>, rh <rh>% (<hour>)"] 36000
-                    , Run Date "<fc=#50FA7B>\xf073</fc> %a %b %d %H:%M" "date" 60
+                        , "<fc=#F1FA8C><fn=2>\xe30c</fn></fc> SI: <tempF><fc=#E6E6E6><fn=2>\xfa04</fn></fc>, rh <rh>% (<hour>)"] 36000
+                    , Run Date "<fc=#50FA7B><fn=2>\xf073</fn></fc> %a %b %d %H:%M" "date" 60
                     , Run Mpris2 "cmus" ["-t"
-                        , "<fc=#6d7c8c>|</fc> <fc=#CAA9FA>\xfc58</fc> <artist> <fc=#6d7c8c>-</fc> <title>"
+                        , "  <fc=#CAA9FA><fn=2>\xfc58</fn></fc> <artist> <fc=#6d7c8c>-</fc> <title>"
                         , "-M", "230", "-x", ""] 10
-                    , Run StdinReader
+                    , Run UnsafeStdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "  %StdinReader% %mpris2%}\
-            \ { %default:Master% <fc=#6d7c8c>|</fc> %KEWR% <fc=#6d7c8c>|</fc> %cpu% <fc=#6d7c8c>|</fc> %memory% <fc=#6d7c8c>|</fc> %date%  <fc=#6d7c8c>[  ]</fc>  "
-
+       , template = "  %UnsafeStdinReader% }{ %mpris2%   %default:Master%   %KEWR%   %cpu%   %memory%   %date%   "
+}
