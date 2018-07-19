@@ -1,36 +1,47 @@
+import System.IO
+import System.Exit
+
 import XMonad
+import XMonad.Actions.DynamicWorkspaces
+import XMonad.Actions.CycleWS
 import XMonad.Actions.FloatKeys
 import XMonad.Config.Desktop
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.FloatNext
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers
+import XMonad.Layout
 import XMonad.Layout.Accordion
 import XMonad.Layout.NoBorders
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
 import XMonad.Layout.Spiral
-import XMonad.Util.EZConfig
 import XMonad.Util.Loggers
+import XMonad.Util.Font
 import XMonad.Util.Run
+import Graphics.X11.ExtraTypes.XF86
+
 import Data.Char
-import qualified Data.Text as T
+import Data.Bits ((.|.))
+import qualified XMonad.StackSet as W
+import qualified Data.Map as M
+-- import qualified Data.Text as T
 
 -- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
-myTerminal = "st -e '/bin/elvish'"
+myTerminal = "st -e '/home/qwerty/.nix-profile/bin/elvish'"
 
--- Launcher: Set to Dmenu (x: 380)
-myLauncher
-  = "dmenu_run -l 6 -p '\xf303' -x 8 -y 34 -w 520 -i -fn 'FuraCode Nerd Font-10' -nb '#282A36' -nf '#F8F8F2' -sb '#50FA7B' -sf '#282A36'"
+-- Launcher: Set to Rofi (x: 380)
+myLauncher = "rofi -show drun"
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
 
 -- Border Styling
-myBorderWidth = 2
+myBorderWidth = 3
 
 myNormalBorderColor = "#BFBFBF"
 
-myFocusedBorderColor = "#FF79C6"
+myFocusedBorderColor = "#CAA9FA"
 
 -- Xmobar dyn colors
 xmobarCurrFG = "#282A36"
@@ -38,11 +49,6 @@ xmobarCurrFG = "#282A36"
 xmobarCurrBG = "#FF79C6"
 
 xmobarHiddenFG = "#747C84"
-
--- xmobarStrip = concatMap doubleLts
---  where
---   doubleLts '<' = "<<"
---   doubleLts x   = [x]
 
 workspaceIcons =
   [ "\xe17e"
@@ -69,15 +75,12 @@ workspaceNames =
   , "Alt9"
   ]
 
-myWorkspaces =
-  wrapWorkspaces workspaceIcons . map xmobarStrip $ workspaceNames
+myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
  where
   wrapWorkspaces icons workspaces =
     [ "<fn=1>" ++ i ++ "</fn> " ++ ws | (i, ws) <- zip icons workspaces ]
 
-
---myWorkspaces   =  map show $ take 9 [1..] 
--- My Layout Hook
+-- Layout Hook
 myLayout = sizeTall ||| spir ||| Accordion
  where
   sizeTall = ResizableTall 1 (3 / 100) (1 / 2) []
@@ -92,93 +95,156 @@ myManageHook = composeAll
   , manageDocks
   ]
 
--- myNewManageHook   = manageHook desktopConfig <+> manageDocks
-myNewManageHook = myManageHook <+> floatNextHook <+> manageHook desktopConfig
+myNewManageHook =
+  composeAll [myManageHook, floatNextHook, manageHook desktopConfig]
 
-splitH s = T.splitOn (T.pack " ") (T.pack s)
+myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
+myKeys conf@(XConfig { XMonad.modMask = modMask }) =
+  M.fromList
+    $  [ ((modm .|. shiftMask, xK_Return), spawn myTerminal)
+       , ((modm, xK_p)                   , spawn myLauncher)
+       , ((modm, xK_Tab)                 , nextWS)
+       , ((modm .|. shiftMask, xK_Tab)   , prevWS)
+       , ( (0, xF86XK_AudioRaiseVolume)
+         , spawn
+           "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"
+         )
+       , ( (0, xF86XK_AudioLowerVolume)
+         , spawn
+           "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"
+         )
+       , ((0, xF86XK_AudioNext), spawn "playerctl next")
+       , ((0, xF86XK_AudioPrev), spawn "playerctl previous")
+       , ((0, xF86XK_AudioPlay), spawn "playerctl play-pause")
+       , ((0, xF86XK_AudioStop), spawn "playerctl stop")
+       , ( (0, xF86XK_AudioMute)
+         , spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+         )
+       , ( (modm, xK_j)
+         , windows W.focusDown
+         ) -- %! Move focus to the next window
+       , ((modm, xK_k), windows W.focusUp)
+       , ( (modm, xK_comma)
+         , sendMessage (IncMasterN 1)
+         ) -- %! Increment the number of windows in the master area
+       , ( (modm, xK_period)
+         , sendMessage (IncMasterN (-1))
+         ) -- %! Deincrement the number of windows in the master area
+       , ( (modm, xK_space)
+         , sendMessage NextLayout
+         ) -- %! Rotate through the available layout algorithms
+       , ( (modm .|. shiftMask, xK_space)
+         , setLayout $ XMonad.layoutHook conf
+         ) -- %!  Reset the layouts on the current workspace to default
+       , ( (modMask, xK_space)
+         , sendMessage NextLayout
+         ) -- %! Rotate through the available layout algorithms
+       , ( (modMask .|. shiftMask, xK_space)
+         , setLayout $ XMonad.layoutHook conf
+         ) -- %!  Reset the layouts on the current workspace to default
+       , ( (mod4Mask, xK_comma)
+         , sendMessage (IncMasterN 1)
+         ) -- %! Increment the number of windows in the master area
+       , ( (mod4Mask, xK_period)
+         , sendMessage (IncMasterN (-1))
+         ) -- %! Deincrement the number of windows in the master area
+       , ( (mod4Mask, xK_t)
+         , withFocused $ windows . W.sink
+         ) -- %! Push window back into tiling
+       , ( (mod4Mask, xK_h)
+         , sendMessage Shrink
+         ) -- %! Shrink the master area
+       , ( (mod4Mask, xK_l)
+         , sendMessage Expand
+         ) -- %! Expand the master area
+       , ( (mod4Mask, xK_Return)
+         , windows W.swapMaster
+         ) -- %! Swap the focused window and the master window
+       , ( (mod4Mask .|. shiftMask, xK_j)
+         , windows W.swapDown
+         ) -- %! Swap the focused window with the next window
+       , ( (mod4Mask .|. shiftMask, xK_k)
+         , windows W.swapUp
+         ) -- %! Swap the focused window with the previous window
+        -- , ((mod4Mask              , xK_m     ), windows W.focusMaster  ) -- %! Move focus to the master window
+       , ( (mod4Mask .|. shiftMask, xK_c)
+         , kill
+         ) -- %! Close the focused window
+                        -- Quit xmonad.
+       , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess))
+       , ( (mod4Mask, xK_q)
+         , broadcastMessage ReleaseResources >> restart "xmonad" True
+         ) -- %! Restart xmonad
+       , ((modm, xK_z)              , sendMessage MirrorShrink)
+       , ((modm, xK_a)              , sendMessage MirrorExpand)
+       , ((modm, xK_e)              , toggleFloatNext)
+       , ((modm .|. shiftMask, xK_e), toggleFloatAllNew)
+       , ( (modm .|. shiftMask, xK_p)
+         , spawn "workspace-snapshot"
+         )
+                        -- toggle fullscreen (really just lower status bar
+                        --    below everything)
+       , ( (modm .|. shiftMask, xK_f)
+         , sendMessage ToggleStruts
+         )
+                      -- floating window keys
+       , ((modm .|. shiftMask, xK_Up), withFocused (keysMoveWindow (0, -10)))
+       , ((modm .|. shiftMask, xK_Down), withFocused (keysMoveWindow (0, 10)))
+       , ((modm .|. shiftMask, xK_Right), withFocused (keysMoveWindow (10, 0)))
+       , ((modm .|. shiftMask, xK_Left), withFocused (keysMoveWindow (-10, 0)))
+       , ((modm, xK_d), withFocused (keysResizeWindow (-10, -10) (0, 1)))
+       , ((modm, xK_s), withFocused (keysResizeWindow (10, 10) (0, 1)))
+       ]
+    ++ [ ((m .|. modMask, k), windows $ f i) -- mod-[1..9], Switch to workspace N
+       | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9] -- mod-shift-[1..9], Move client to workspace N
+       , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
+       ]
 
-splitAndDropFst = tail . splitH
+-- my TEXT manipulation functions ... no longer of use, but might
+--    come in handy later, so leaving here ....
+-- splitH s = T.splitOn (T.pack " ") (T.pack s)
+-- splitAndDropFst = tail . splitH
+-- splitAndTakeFst = take 1 . splitH
+-- splitMapJoin fn s = unwords (fmap T.unpack (fn s))
 
-splitAndTakeFst = take 1 . splitH
+splitTakeFst = head . words
 
-splitMapJoin fn s = unwords (fmap T.unpack (fn s))
+splitTakeLst = last . words
 
-mapPrepend :: String -> String
-mapPrepend s = (++) "<fn=1>\xe194</fn> " $ splitMapJoin splitAndDropFst s
+prependIcon = (++) "<fn=1>\xe194</fn> " . splitTakeLst
+
+prependWSLogger = fmap prependIcon <$> logCurrent
+
+getShortenedLayout = fmap splitTakeLst <$> logLayout
+
+myLogHook h = do
+  dynamicLogWithPP $ myXmobarPP h
+
+myXmobarPP h = def { ppCurrent = xmobarColor xmobarCurrBG "" . splitTakeFst
+                   , ppHidden  = xmobarColor xmobarHiddenFG "" . splitTakeFst
+                   , ppSep     = " "
+                   , ppWsSep   = " "
+                   , ppExtras  = [prependWSLogger, logSp 54, getShortenedLayout]
+                   , ppTitle   = const ""
+                   , ppLayout  = const ""
+                   , ppOutput  = hPutStrLn h
+                   }
 
 main :: IO ()
 main = do
-  xmproc <- spawnPipe "xmobar"
-  xmonad $ defaults
-    { logHook    = dynamicLogWithPP $ xmobarPP
-      { ppOutput  = hPutStrLn xmproc
-      , ppCurrent = xmobarColor xmobarCurrBG "" . splitMapJoin splitAndTakeFst
-      , ppHidden  = xmobarColor xmobarHiddenFG "" . splitMapJoin splitAndTakeFst
-      , ppSep     = " "
-      , ppWsSep   = " "
-      , ppExtras  = [fmap (fmap mapPrepend) logCurrent]
-      , ppTitle   = const ""
-      , ppLayout  = const ""
-      }
-    , manageHook = myNewManageHook
-    }
+  xmobar <- spawnPipe "xmobar"
+  xmonad $ defaults { logHook = myLogHook xmobar }
 
-defaults =
-  desktopConfig
-      { borderWidth        = myBorderWidth
-      , normalBorderColor  = myNormalBorderColor
-      , focusedBorderColor = myFocusedBorderColor
-      , modMask            = modm
-      , terminal           = myTerminal
-      , workspaces         = myWorkspaces
-      , layoutHook         = avoidStruts $ smartBorders $ smartSpacingWithEdge
-        8
-        myLayout
-      }
-    `additionalKeys`  [ ((modm, xK_p), spawn myLauncher)
-                      , ((modm, xK_z), sendMessage MirrorShrink)
-                      , ((modm, xK_a), sendMessage MirrorExpand)
-                      , ( (modm, xK_e)
-                        , toggleFloatNext
-                        )
-    -- workspace-snapshots (bash function)
-                      , ( (modm .|. shiftMask, xK_p)
-                        , spawn "workspace-snapshot"
-                        )
-                        -- toggle fullscreen float
-                      , ( (modm .|. shiftMask, xK_f)
-                        , sendMessage ToggleStruts
-                        )
-    -- floating window keys
-                      , ( (modm, xK_d)
-                        , withFocused (keysResizeWindow (-10, -10) (1, 1))
-                        )
-                      , ( (modm, xK_s)
-                        , withFocused (keysResizeWindow (10, 10) (1, 1))
-                        )
-                      , ( (modm .|. shiftMask, xK_d)
-                        , withFocused
-                          (keysAbsResizeWindow (-10, -10) (1024, 752))
-                        )
-                      , ( (modm .|. shiftMask, xK_s)
-                        , withFocused (keysAbsResizeWindow (10, 10) (1024, 752))
-                        )
-    --, ((modm, xK_m), withFocused (keysMoveWindowTo (512,384) (1%2,1%2)))
-    -- easier keybindings for media keys
-                      ]
-    `additionalKeysP` [ ( "<XF86AudioRaiseVolume>"
-                        , spawn
-                          "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"
-                        )
-                      , ( "<XF86AudioLowerVolume>"
-                        , spawn
-                          "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"
-                        )
-                      , ( "<XF86AudioMute>"
-                        , spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-                        )
-                      , ("<XF86AudioNext>", spawn "playerctl next")
-                      , ("<XF86AudioPrev>", spawn "playerctl previous")
-                      , ("<XF86AudioPlay>", spawn "playerctl play-pause")
-                      , ("<XF86AudioStop>", spawn "playerctl stop")
-                      ]
+defaults = desktopConfig
+  { borderWidth        = myBorderWidth
+  , normalBorderColor  = myNormalBorderColor
+  , focusedBorderColor = myFocusedBorderColor
+  , modMask            = modm
+  , terminal           = myTerminal
+  , workspaces         = myWorkspaces
+  , keys               = myKeys
+  , manageHook         = myNewManageHook
+  , layoutHook = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ myLayout
+  , startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/geo-drac.png"
+  }
+
