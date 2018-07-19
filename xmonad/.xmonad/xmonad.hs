@@ -234,7 +234,7 @@ main = do
   xmobar <- spawnPipe "xmobar"
   xmonad $ defaults { logHook = myLogHook xmobar }
 
-defaults = desktopConfig
+defaults = docks $ desktopConfig
   { borderWidth        = myBorderWidth
   , normalBorderColor  = myNormalBorderColor
   , focusedBorderColor = myFocusedBorderColor
