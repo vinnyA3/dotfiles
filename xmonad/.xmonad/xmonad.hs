@@ -92,7 +92,6 @@ myManageHook = composeAll
   , className =? "Spotify" --> doShift " Media"
   , className =? "Firefox" --> doShift " Firefox"
   , className =? "Chromium" --> doShift " Chrome"
-  , manageDocks
   ]
 
 myNewManageHook =
