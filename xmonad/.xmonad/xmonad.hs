@@ -182,7 +182,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ((modm, xK_e)              , toggleFloatNext)
        , ((modm .|. shiftMask, xK_e), toggleFloatAllNew)
        , ( (modm .|. shiftMask, xK_p)
-         , spawn "workspace-snapshot"
+         , spawn "scrot '%Y-%m-%d_$wx$h.png' -c -d 5"
          )
                         -- toggle fullscreen (really just lower status bar
                         --    below everything)
