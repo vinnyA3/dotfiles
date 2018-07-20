@@ -4,14 +4,16 @@ use readline-binding
 
 # ==================
 # path
-E:PATH=$E:PATH":/usr/share:"$E:HOME"/.stack/snapshots/x86_64-linux-tinfo6/lts-9.17/8.0.2/bin:"$E:HOME"/.stack/compiler-tools/x86_64-linux-tinfo6/ghc-8.0.2/bin:"$E:HOME"/.stack/programs/x86_64-linux/ghc-tinfo6-8.0.2/bin:"$E:HOME"/.local/bin"
+E:PATH=$E:PATH":/usr/share:"$E:HOME"/.local/bin"
+E:TERM="xterm-256color"
 
 # ==================
 # ls aliases 
 fn ls [@a]{ e:ls --color $@a }
 fn ll [@a]{ e:ls -la --color $@a }
 fn la [@a]{ e:ls -a --color $@a }
-fn t [@a]{ e:todo.sh $@a }
+fn rtv [@a]{ e:rtv --theme .config/rtv/themes/dracula $@a }
+# fn t [@a]{ e:todo.sh $@a }
 
 # git aliases
 fn g [@a]{ e:git $@a }
@@ -29,10 +31,10 @@ fn vim [@a]{
 
 # misc program aliases
 fn tmux [@a]{ e:tmux -2 -f ~/.tmux/tmux.conf $@a}
-fn rtv [@a]{ e:rtv --theme ~/.config/rtv/themes/dracula $@a }
+# fn rtv [@a]{ e:rtv --theme ~/.config/rtv/themes/dracula $@a }
 
 # ==================
 # prompt
 edit:prompt = { tilde-abbr $pwd; put ' -> ' }
-edit:rprompt = (constantly (edit:styled (whoami)@(hostname) "italic;green;bold"))
+edit:rprompt = (constantly (edit:styled (whoami)@(hostname) "green;bold"))
 
