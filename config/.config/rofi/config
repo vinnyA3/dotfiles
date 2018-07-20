@@ -1,0 +1,9 @@
+rofi.modi: drun
+rofi.theme: white 
+rofi.location: 1
+rofi.width: 22
+rofi.font: OpenSans 11 
+rofi.drun-icon-theme: Papirus
+rofi.show-icons: true
+rofi.yoffset: 32
+rofi.lines: 25

@@ -1,0 +1,106 @@
+/* ================================================= */
+/*  Rofi config by vinnya3                           */
+/*  Icon pack: Papirus                               */
+/*  Font: Gohu Font                                  */
+/* ================================================= */
+
+* {
+  /* Make text color white and background fully transparent */
+  text-color:        #D8DEE9;
+  background-color:  #282A36;
+
+  /* This variables change other elements color
+   * Change here and it will change over all the
+   * theme (for an unified experience) */
+  fc-color: #D8DEE9;
+  bg-color: #282A36;
+  fc-color-trans: #D8DEE9;
+  bg-color-trans: #282A36;
+
+  font: "GohuFont 11";
+}
+
+/* ================================================= */
+/* Main container                                    */
+/* ================================================= */
+#window {
+  fullscreen:    false;
+  border:        0px 0px 30px 0px;
+  border-color: @bg-color-trans;
+  orientation:  horizontal;
+}
+
+#button {
+  padding:    10px;
+}
+
+#button selected {
+  font: "GohuFont SemiBold 11";
+  background-color:  @fc-color-trans;
+}
+/* ================================================= */
+
+/* ================================================= */
+/*  Input bar                                        */
+/* ================================================= */
+#inputbar {
+  background-color:  @bg-color;
+  padding:           5px;
+  spacing:           5px;
+}
+
+#prompt {
+  font: "GohuFont SemiBold 11";
+}
+
+#entry {
+  font: "GohuFont 11";
+  width: 15em;
+}
+/* ================================================= */
+
+
+/* ================================================= */
+/* List view                                         */
+/* ================================================= */
+#listview {
+  /*spacing: 0.5em;*/
+}
+
+#element {
+  font:     "GohuFont 11";
+  padding:  12px 1.5em 12px 14px;
+}
+
+#element selected normal {
+  background-color: #3B4252;
+}
+
+#element normal active {
+  background-color: #3B4252;
+}
+
+#element normal ur gent {
+  background-color: Orange;
+}
+
+#element alternate normal {
+}
+
+#element alternate active {
+  text-color: @focus-col;
+}
+
+#element alternate urgent {
+  background-color: OrangeRed;
+}
+
+#element selected active {
+  background-color:  #3B4252;
+}
+
+#element selected urgent {
+  background-color:  DarkOrange;
+}
+
+/* vim:ft=css */

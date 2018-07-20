@@ -19,7 +19,7 @@ else
 fi
 
 # Source the dotfiles (order matters here)
-for DOTFILE in "$DOTFILES_DIR"/sys/.{functions,env,nvm,alias,completion,prompt,terminal}; do
+for DOTFILE in "$DOTFILES_DIR"/sys/.{functions,env,alias,completion,prompt,terminal}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
