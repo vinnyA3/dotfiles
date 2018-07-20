@@ -1,5 +1,5 @@
 rofi.modi: drun
-rofi.theme: white 
+rofi.theme: drac
 rofi.location: 1
 rofi.width: 22
 rofi.font: OpenSans 11 
