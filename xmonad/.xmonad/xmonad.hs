@@ -28,7 +28,7 @@ import qualified Data.Map as M
 -- import qualified Data.Text as T
 
 -- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
-myTerminal = "st -e '/home/qwerty/.nix-profile/bin/elvish'"
+myTerminal = "st -e '/run/current-system/sw/bin/elvish'"
 
 -- Launcher: Set to Rofi (x: 380)
 myLauncher = "rofi -show drun"
@@ -42,6 +42,8 @@ myBorderWidth = 3
 myNormalBorderColor = "#BFBFBF"
 
 myFocusedBorderColor = "#CAA9FA"
+
+xmproc = "xmobar ~/.config/xmobar/xmobarrc.hs"
 
 -- Xmobar dyn colors
 xmobarCurrFG = "#282A36"
@@ -64,7 +66,7 @@ workspaceIcons =
 
 -- My Workspaces
 workspaceNames =
-  [ "The Hub"
+  [ "Main"
   , "Qutebrowser"
   , "Code"
   , "Firefox"
@@ -174,6 +176,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (mod4Mask, xK_q)
          , broadcastMessage ReleaseResources >> restart "xmonad" True
          ) -- %! Restart xmonad
+       , ((modm .|. shiftMask, xK_x), spawn "kill $(pidof xmobar); xmobar ~/.config/xmobar/xmobarrc.hs") -- %! Kill & restart xmobar
        , ((modm, xK_z)              , sendMessage MirrorShrink)
        , ((modm, xK_a)              , sendMessage MirrorExpand)
        , ((modm, xK_e)              , toggleFloatNext)
@@ -187,12 +190,12 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , sendMessage ToggleStruts
          )
                       -- floating window keys
-       , ((modm .|. shiftMask, xK_Up), withFocused (keysMoveWindow (0, -10)))
-       , ((modm .|. shiftMask, xK_Down), withFocused (keysMoveWindow (0, 10)))
-       , ((modm .|. shiftMask, xK_Right), withFocused (keysMoveWindow (10, 0)))
-       , ((modm .|. shiftMask, xK_Left), withFocused (keysMoveWindow (-10, 0)))
-       , ((modm, xK_d), withFocused (keysResizeWindow (-10, -10) (0, 1)))
-       , ((modm, xK_s), withFocused (keysResizeWindow (10, 10) (0, 1)))
+       -- , ((modm .|. shiftMask, xK_Up), withFocused (keysMoveWindow (0, -10)))
+       -- , ((modm .|. shiftMask, xK_Down), withFocused (keysMoveWindow (0, 10)))
+       -- , ((modm .|. shiftMask, xK_Right), withFocused (keysMoveWindow (10, 0)))
+       -- , ((modm .|. shiftMask, xK_Left), withFocused (keysMoveWindow (-10, 0)))
+       -- , ((modm, xK_d), withFocused (keysResizeWindow (-10, -10) (0, 1)))
+       -- , ((modm, xK_s), withFocused (keysResizeWindow (10, 10) (0, 1)))
        ]
     ++ [ ((m .|. modMask, k), windows $ f i) -- mod-[1..9], Switch to workspace N
        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9] -- mod-shift-[1..9], Move client to workspace N
@@ -214,25 +217,21 @@ prependIcon = (++) "<fn=1>\xe194</fn> " . splitTakeLst
 
 prependWSLogger = fmap prependIcon <$> logCurrent
 
-getShortenedLayout = fmap splitTakeLst <$> logLayout
+-- getShortenedLayout = fmap splitTakeLst <$> logLayout
 
-myLogHook h = do
-  dynamicLogWithPP $ myXmobarPP h
-
-myXmobarPP h = def { ppCurrent = xmobarColor xmobarCurrBG "" . splitTakeFst
-                   , ppHidden  = xmobarColor xmobarHiddenFG "" . splitTakeFst
-                   , ppSep     = " "
-                   , ppWsSep   = " "
-                   , ppExtras  = [prependWSLogger, logSp 54, getShortenedLayout]
-                   , ppTitle   = const ""
-                   , ppLayout  = const ""
-                   , ppOutput  = hPutStrLn h
-                   }
+myXmobarPP = def { ppCurrent = xmobarColor xmobarCurrBG "" . splitTakeFst
+                 , ppHidden  = xmobarColor xmobarHiddenFG "" . splitTakeFst
+                 , ppSep     = " "
+                 , ppWsSep   = " "
+                 , ppExtras  = [prependWSLogger]
+                 , ppTitle   = const ""
+                 , ppLayout  = const ""
+                 }
 
 main :: IO ()
 main = do
-  xmobar <- spawnPipe "xmobar"
-  xmonad $ defaults { logHook = myLogHook xmobar }
+  spawn xmproc 
+  xmonad $ defaults { logHook = dynamicLogString myXmobarPP >>= xmonadPropLog }
 
 defaults = docks $ desktopConfig
   { borderWidth        = myBorderWidth
@@ -245,6 +244,6 @@ defaults = docks $ desktopConfig
   , manageHook         = myNewManageHook
   , layoutHook = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ myLayout
   , startupHook        = spawn
-    "feh --bg-scale /home/qwerty/Pictures/wallpaper/geo-drac.png"
+    "feh --bg-scale /home/qwerty/Pictures/wallpaper/goodz.png"
   }
 
