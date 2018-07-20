@@ -281,7 +281,7 @@ c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}', 'yt': 'https://www.youtube.com/results?search_query={}', 'g': 'https://google.com/search?hl=en&q={}', 'r': 'https://old.reddit.com/r/{}'}
+c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}', 'yt': 'https://www.youtube.com/results?search_query={}', 'g': 'https://google.com/search?hl=en&q={}', 'r': 'https://old.reddit.com/r/{}', 'nx': 'https://nixos.org/nixos/packages.html#{}'}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
@@ -387,7 +387,15 @@ c.colors.webpage.bg = 'white'
 # Default monospace fonts. Whenever "monospace" is used in a font
 # setting, it's replaced with the fonts listed here.
 # Type: Font
-c.fonts.monospace = '"Source Code Pro", Terminus, Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+c.fonts.monospace = '"GohuFont", Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+
+# Font used in the completion widget.
+# Type: Font
+c.fonts.completion.entry = '10pt Open Sans'
+
+# Font used in the completion categories.
+# Type: Font
+c.fonts.completion.category = '10pt Open Sans'
 
 # Font used for the debugging console.
 # Type: QtFont
@@ -395,7 +403,7 @@ c.fonts.debug_console = '10pt monospace'
 
 # Font used for the downloadbar.
 # Type: Font
-c.fonts.downloads = '10pt Roboto'
+c.fonts.downloads = '10pt Open Sans'
 
 # Font used for the hints.
 # Type: Font
@@ -411,28 +419,49 @@ c.fonts.messages.error = '10pt monospace'
 
 # Font used for info messages.
 # Type: Font
-c.fonts.messages.info = '10pt Roboto'
+c.fonts.messages.info = '10pt Open Sans'
 
 # Font used for warning messages.
 # Type: Font
-c.fonts.messages.warning = '10pt Roboto'
+c.fonts.messages.warning = '10pt Open Sans'
 
 # Font used for prompts.
 # Type: Font
-c.fonts.prompts = '10pt Roboto'
+c.fonts.prompts = '10pt Open Sans'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = '10pt Roboto'
+c.fonts.statusbar = '10pt Open Sans'
 
 # Font used in the tab bar.
 # Type: QtFont
-c.fonts.tabs = '11pt Roboto'
+c.fonts.tabs = '10pt Open Sans'
 
 # Font family for standard fonts.
 # Type: FontFamily
 c.fonts.web.family.standard = None
 
+# Font family for fixed fonts.
+# Type: FontFamily
+c.fonts.web.family.fixed = None
+
+# Font family for sans-serif fonts.
+# Type: FontFamily
+c.fonts.web.family.sans_serif = 'Open Sans'
+
+# Font family for cursive fonts.
+# Type: FontFamily
+c.fonts.web.family.cursive = None
+
+# Font family for fantasy fonts.
+# Type: FontFamily
+c.fonts.web.family.fantasy = None
+
+# Default font size (in pixels) for regular text.
+# Type: Int
+c.fonts.web.size.default = 16
+
 # Bindings for normal mode
 config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/dracula-all-sites.css ""')
+config.bind(',s', 'config-cycle statusbar.hide')
 config.bind('M', 'hint links spawn mpv {hint-url}')
