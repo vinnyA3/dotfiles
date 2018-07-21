@@ -36,7 +36,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = []
+c.content.user_stylesheets = '~/.config/qutebrowser/dracula-all-sites.css'
 
 # Enable WebGL.
 # Type: Bool
@@ -464,4 +464,12 @@ c.fonts.web.size.default = 16
 # Bindings for normal mode
 config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/dracula-all-sites.css ""')
 config.bind(',s', 'config-cycle statusbar.hide')
+config.bind('<Ctrl+w>', None)
 config.bind('M', 'hint links spawn mpv {hint-url}')
+
+# Bindings for insert mode
+config.bind('<Ctrl+a>', 'fake-key <Home>', mode='insert')
+config.bind('<Ctrl+e>', 'fake-key <End>', mode='insert')
+config.bind('<Ctrl+k>', 'fake-key <Shift-End> ;; fake-key <Delete>', mode='insert')
+config.bind('<Ctrl+u>', 'fake-key <Shift+Home> ;; fake-key <Delete>', mode='insert')
+config.bind('<Ctrl+w>', 'fake-key <Ctrl-backspace>', mode='insert')
