@@ -99,11 +99,8 @@ myManageHook = composeAll
   ]
 
 scratchpads =
-  [ NS "htop" "st -t process -e htop" (title =? "process") defaultFloating
-  , NS "cmus"
-       "st -t cmus -e cmus"
-       (title =? "cmus")
-       (customFloating $ W.RationalRect (1 / 6) (1 / 6) (2 / 3) (2 / 3))
+  [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
+  , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
   ]
 
 myNewManageHook = composeAll
