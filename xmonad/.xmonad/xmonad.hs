@@ -74,9 +74,9 @@ workspaceNames =
   , "Firefox"
   , "Chrome"
   , "Media"
-  , "Alt7"
-  , "Alt8"
-  , "Alt9"
+  , "Misc7"
+  , "Misc8"
+  , "NSP"
   ]
 
 myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
