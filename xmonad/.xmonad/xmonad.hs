@@ -76,7 +76,7 @@ workspaceNames =
   , "Media"
   , "Misc7"
   , "Misc8"
-  , "NSP"
+  , "Misc9"
   ]
 
 myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
