@@ -263,6 +263,6 @@ defaults = docks $ desktopConfig
   , manageHook         = myNewManageHook
   , layoutHook = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ myLayout
   , startupHook        = spawn
-    "feh --bg-scale /home/qwerty/Pictures/wallpaper/goodz.png"
+    "feh --bg-scale /home/qwerty/Pictures/wallpaper/geo-dracula.png"
   }
 
