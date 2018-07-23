@@ -34,14 +34,14 @@ fi
 
 # randomize wallpaper - /usr/bin/rand-wallpaper
 # exec rand-wallpaper & 
-exec feh --bg-scale $HOME/Pictures/wallpaper/color-gradient.jpg &
+exec feh --bg-scale $HOME/Downloads/tsuyu.png
 
 # unclutter mouse
-exec unclutter -grab &
+# exec unclutter -grab &
 
 # use basic compton config
-exec compton -c --shadow-exclude-reg 1920x37+0-0 --config ~/.config/compton/compton.conf &
+# exec compton -c --shadow-exclude-reg 1920x37+0-0 --config ~/.config/compton/compton.conf &
 
 # init xmonad
-exec xmonad
+# exec xmonad
 
