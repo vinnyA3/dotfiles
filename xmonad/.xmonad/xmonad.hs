@@ -100,6 +100,7 @@ myManageHook = composeAll
 
 scratchpads =
   [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
+  , NS "chat" "st -t chat -e weechat"    (title =? "chat") defaultFloating
   , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
   ]
 
@@ -124,6 +125,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (modm .|. controlMask .|. shiftMask, xK_c)
          , namedScratchpadAction scratchpads "cmus"
          )
+       , ((modm .|. controlMask .|. shiftMask, xK_w), namedScratchpadAction scratchpads "chat"
        -- audio keybindings
        , ( (0, xF86XK_AudioRaiseVolume)
          , spawn
