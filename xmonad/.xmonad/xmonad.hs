@@ -100,7 +100,7 @@ myManageHook = composeAll
 
 scratchpads =
   [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
-  , NS "chat" "st -t chat -e weechat" (title =? "chat")     defaultFloating
+  , NS "chat" "st -c chat -e weechat" (className =? "chat") defaultFloating
   , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
   ]
 
