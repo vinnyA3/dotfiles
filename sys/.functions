@@ -1,9 +1,10 @@
 # generate random wallpaper
-function rand-wal {
-    wallpaperDir=$HOME/Pictures/wallpaper
-    local min=1
-    local max=$(ls -1 $wallpaperDir | wc -l)
-    feh --bg-scale $wallpaperDir/$(ls -1 $wallpaperDir | \
-	    awk "NR==$(shuf -i $min-$max -n 1)")
-}
+# function rand-wal {
+#     wallpaperDir=$HOME/Pictures/wallpaper
+#     local min=1
+#     local max=$(ls -1 $wallpaperDir | wc -l)
+#     feh --bg-scale $wallpaperDir/$(ls -1 $wallpaperDir | \
+# 	    awk "NR==$(shuf -i $min-$max -n 1)")
+# }
 
+function npm-do { (PATH=$(npm bin):$PATH; eval $@;) }
