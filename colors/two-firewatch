@@ -1,0 +1,64 @@
+! ------------------------------- !
+! ----- Two Firewatch Theme ----- !
+! ------------------------------- !
+
+! -------------------------------- !
+! ----- Variable Definitions ----- !
+! -------------------------------- !
+ /* #define mypadding 10 */
+ 
+! ----- normal colors ----- !
+#define base00      #282c34
+#define base01      #e06c75
+#define base02      #98c379
+#define base03      #e5c07b
+#define base04      #61afef
+#define base05      #c678dd
+#define base06      #56b6c2
+#define base07      #dcdfe4
+ 
+ ! ----- bright colors ----- !
+#define base08      #3f4850
+#define base09      #e06c75
+#define base0A      #98c379
+#define base0B      #e5c07b
+#define base0C      #61afef
+#define base0D      #c678dd
+#define base0E      #56b6c2
+#define base0F      #4e5666
+ 
+! ----- special colors ----- !
+#define basefg      #dcdfe4
+#define basebg      #282c34
+#define border      #626c80
+ 
+! ---------------------------- !
+! ----- terminal colours ----- !
+! ---------------------------- !
+ 
+! ----- special colors ----- !
+*foreground:	basefg
+*background:	basebg
+*cursorColor:	basefg
+ 
+! ----- normal colours ----- !
+*color0:	base00
+*color1:	base01
+*color2:	base02
+*color3:	base03
+*color4:	base04
+*color5:	base05
+*color6:	base06
+*color7:	base07
+
+! -----	bold colors ----- !
+*color8:	base08
+*color9:	base09
+*color10:	base0A
+*color11:	base0B
+*color12:	base0C
+*color13:	base0D
+*color14:	base0E
+*color15:	base0F
+ 
+! vim: set syntax=xdefaults sw=4 ts=4 :
