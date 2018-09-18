@@ -40,7 +40,6 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
 call minpac#add('ajh17/VimCompletesMe')
-call minpac#add('arcticicestudio/nord-vim')
 call minpac#add('christoomey/vim-tmux-navigator')
 call minpac#add('dracula/vim', {'name': 'dracula'})
 call minpac#add('itchyny/lightline.vim')
@@ -52,6 +51,7 @@ call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mhinz/vim-startify')
+call minpac#add('rakr/vim-two-firewatch')
 call minpac#add('roxma/vim-window-resize-easy')
 call minpac#add('ryanoasis/vim-devicons')
 
@@ -67,6 +67,7 @@ command! PackUpdate call minpac#update()
 command! PackClean call minpac#clean()
 
 " Basic setup
+syntax on
 let mapleader = ';' " - set leader key
 set encoding=UTF-8
 set noshowmode
@@ -122,6 +123,7 @@ nnoremap <C-p> :<C-u>FZF<CR>
 if has('nvim')
   " - avoid term buffers from closing on buf switch
   set hidden
+  set termguicolors
   tnoremap <Esc> <C-\><C-n>
   tnoremap <C-v><Esc> <Esc>
   " - easy window navigation - when in term
@@ -138,10 +140,34 @@ endif
 " Plugin: Dracula
 " Recent Dracula Theme messed up a ton of things ...
 " these settings resolve the issues 
-set termguicolors
 let g:dracula_colorterm = 0
 let g:dracula_italic = 0
 colorscheme dracula
+
+" Colors
+" let g:jellybeans_overrides = {
+" \    'background': { 'ctermbg': 'none', '256ctermbg': 'none', 'guibg': 'none' },
+" \}
+
+" colorscheme jellybeans
+
+" temp: term jellybeans colors
+" let g:terminal_color_0 = '#393939'
+" let g:terminal_color_1 = '#ca674a'
+" let g:terminal_color_2 = '#96a967'
+" let g:terminal_color_3 = '#d3a94a'
+" let g:terminal_color_4 = '#5778c1'
+" let g:terminal_color_5 = '#9c35ac'
+" let g:terminal_color_5 = '#6eb5f3'
+" let g:terminal_color_6 = '#a9a9a9'
+" let g:terminal_color_7 = '#535551'
+" let g:terminal_color_8 = '#ea2828'
+" let g:terminal_color_9 = '#87dd32'
+" let g:terminal_color_10 = '#f7e44d'
+" let g:terminal_color_11 = '#7f9bca'
+" let g:terminal_color_12 = '#a97ca4'
+" let g:terminal_color_13 = '#32dddd'
+" let g:terminal_color_14 = '#e9e9e7'
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -158,7 +184,7 @@ nmap <Leader>gp <Plug>GitGutterPreviewHunk
 
 " Plugin: Startify
 let g:startify_custom_header =
-        \ map(split(system('figlet zerodayz'), '\n'), '"   ". v:val')
+        \ map(split(system('figlet Life is Strange'), '\n'), '"   ". v:val')
 
 let g:startify_files_number = 10
 
@@ -173,19 +199,16 @@ let g:ale_lint_on_text_changed = 'never'
 let g:ale_lint_on_save = 1
 let g:ale_lint_on_text_changed = 0
 let g:ale_linters = {
-      \   'javascript': ['eslint'],
-      \   'haskell': ['hlint','hdevtools']
+      \   'javascript': ['eslint']
 \}
 
-let g:ale_fixers = {
-      \   'haskell': ['brittany']
-\}
+" let g:ale_fixers = { \   'haskell': ['brittany'] \}
 
 " Plugin: lightline {{{1
 let g:lightline = {
       \ 'colorscheme': 'Dracula',
       \ 'component': {
-      \   'lineinfo': '%3l:%-2v',
+      \   'lineinfo': ' %3l:%-2v',
       \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
@@ -195,22 +218,12 @@ let g:lightline = {
       \              [ 'fileencoding', 'filetype'] ]
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'LightLineGitBranch',
-      \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat',
+      \   'gitbranch': 'LightLineGitBranch'
       \ }
     \ }
 
 function! LightLineGitBranch()
   let l:branch = fugitive#head()
-  return l:branch ==# '' ? '' : 'שׂ ' . l:branch
-endfunction
-
-function! MyFiletype()
-  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
-endfunction
-
-function! MyFileformat()
-  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+  return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
 
