@@ -41,7 +41,6 @@ call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
 call minpac#add('ajh17/VimCompletesMe')
 call minpac#add('christoomey/vim-tmux-navigator')
-call minpac#add('dracula/vim', {'name': 'dracula'})
 call minpac#add('itchyny/lightline.vim')
 
 call minpac#add('justinmk/vim-dirvish')
@@ -50,8 +49,8 @@ call minpac#add('justinmk/vim-sneak')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
+call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
-call minpac#add('rakr/vim-two-firewatch')
 call minpac#add('roxma/vim-window-resize-easy')
 call minpac#add('ryanoasis/vim-devicons')
 
@@ -140,34 +139,19 @@ endif
 " Plugin: Dracula
 " Recent Dracula Theme messed up a ton of things ...
 " these settings resolve the issues 
-let g:dracula_colorterm = 0
-let g:dracula_italic = 0
-colorscheme dracula
+" let g:dracula_colorterm = 0
+" let g:dracula_italic = 0
 
-" Colors
-" let g:jellybeans_overrides = {
-" \    'background': { 'ctermbg': 'none', '256ctermbg': 'none', 'guibg': 'none' },
-" \}
+function! s:base16_customize() abort
+  call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
+endfunction
 
-" colorscheme jellybeans
+augroup on_change_colorschema
+  autocmd!
+  autocmd ColorScheme * call s:base16_customize()
+augroup END
 
-" temp: term jellybeans colors
-" let g:terminal_color_0 = '#393939'
-" let g:terminal_color_1 = '#ca674a'
-" let g:terminal_color_2 = '#96a967'
-" let g:terminal_color_3 = '#d3a94a'
-" let g:terminal_color_4 = '#5778c1'
-" let g:terminal_color_5 = '#9c35ac'
-" let g:terminal_color_5 = '#6eb5f3'
-" let g:terminal_color_6 = '#a9a9a9'
-" let g:terminal_color_7 = '#535551'
-" let g:terminal_color_8 = '#ea2828'
-" let g:terminal_color_9 = '#87dd32'
-" let g:terminal_color_10 = '#f7e44d'
-" let g:terminal_color_11 = '#7f9bca'
-" let g:terminal_color_12 = '#a97ca4'
-" let g:terminal_color_13 = '#32dddd'
-" let g:terminal_color_14 = '#e9e9e7'
+colorscheme base16-ashes
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -206,7 +190,7 @@ let g:ale_linters = {
 
 " Plugin: lightline {{{1
 let g:lightline = {
-      \ 'colorscheme': 'Dracula',
+      \ 'colorscheme': 'base16_ashes',
       \ 'component': {
       \   'lineinfo': ' %3l:%-2v',
       \ },
