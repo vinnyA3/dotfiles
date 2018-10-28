@@ -21,3 +21,5 @@ xmonad/.xmonad/*
 
 elvish/.elvish/*
 !/elvish/.elvish/rc.elv
+
+TODO.md
