@@ -1,0 +1,24 @@
+// getMessageType :: Object -> String
+const getMessageType = message =>
+  message.fatal || message.severity === 2 ? 'Error' : 'Warning';
+
+module.exports = results => {
+  let output = '',
+    total = 0;
+  results.forEach(result => {
+    const messages = result.messages;
+    total += messages.length;
+    messages.forEach(message => {
+      output += `${result.filePath}:`;
+      output += `${message.line || 0}:`;
+      output += `${message.column || 0}:`;
+      output += ` ${getMessageType(message)}:`;
+      output += ` ${message.message} (${message.ruleId}) `;
+      output += '\n';
+    });
+  });
+
+  return total > 0
+    ? (output += `\n${total} problem${total !== 1 ? 's' : ''}`)
+    : output;
+};

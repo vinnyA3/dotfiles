@@ -1,0 +1,102 @@
+#                                      .......
+#                                  ...............           
+#                                ....................        
+#                              .........................    
+#                             ...........................  
+#                            .............................  
+#                           ...............................  
+#                           ..............x................  
+#                           ............xo@................
+#                           ...........xoo@xxx.............
+#                          ........o@oxxoo@@@@@@x..xx.....
+#                           .....xo@oo...o@@@@@@x...o\\./.
+#                           ....o@@@@@@@@@@@@@@@@@@@o.\\..
+#                           .....x@@@@@@@@@@@o@@@@@@x/.\\.
+#                            ......@@@@@@@@@@o@@@@@x....
+#                            .......@@@@@@@@o@@@@o......
+#                                 .x@@@@@@@@@@ox.. .....
+#                                .@@@@@@@ooooxxxo.   ...
+#                             ...x@@@@@@@@@ooooo@... ..
+#                          ........@@@@@@@....xoo........
+#                       .............@@@....................
+#                    ........................................
+#                    ....................x..x................
+
+#     .o88o.                               o8o                .
+#     888 `"                               `"'              .o8
+#    o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
+#     888    d88(  "8 d88' `88b d88' `"Y8 `888  d88' `88b   888    `88.  .8'
+#     888    `"Y88b.  888   888 888        888  888ooo888   888     `88..8'
+#     888    o.  )88b 888   888 888   .o8  888  888    .o   888 .    `888'
+#    o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'
+#                                                                 .o...P'
+#                                                                 `XER0'
+
+source ~/.config/kak/plugins/plug.kak/rc/plug.kak
+
+# make sure that plug.kak is installed at the plug_install_dir_path
+plug "andreyorst/plug.kak" "noload"
+
+plug "https://github.com/alexherbo2/auto-pairs.kak" %{
+    hook global WinCreate .* %{ auto-pairs-enable }
+    map global user s -docstring 'Surround' ':<space>auto-pairs-surround<ret>'
+    map global user S -docstring 'Surround++' ':<space>auto-pairs-surround__* *<ret>'
+}
+
+plug "https://github.com/TeddyDD/kakoune-edit-or-dir" %{
+    unalias global e edit
+    alias global e edit-or-dir
+}
+
+plug "https://github.com/Delapouite/kakoune-palette"
+
+# colorscheme
+colorscheme base16-ashes
+
+# default face overrides
+# set-face global LineNumbers white,default+d
+
+## enable line flags
+add-highlighter global/ number-lines -separator ' '
+
+# user-defined bindings
+map global user | -docstring 'Tmux-Horiz (|)' ':tmux-new-horizontal<ret>'
+map global user _ -docstring 'Tmux-Ver (-)' ':tmux-new-vertical<ret>'
+map global user n -docstring 'Buf-Next' ':buffer-next<ret>'
+map global user p -docstring 'Buf-Prev' ':buffer-previous<ret>'
+
+# editor conf
+set global tabstop 2
+set global indentwidth 2
+
+# hooks
+hook global InsertCompletionShow .* %{
+    try %{
+    # this command temporarily removes cursors preceded by whitespace;
+    # if there are no cursors left, it raises an error, does not
+    # continue to execute the mapping commands, and the error is eaten
+    # by the `try` command so no warning appears.
+    execute-keys -draft 'h<a-K>\h<ret>'
+    map window insert <tab> <c-n>
+    map window insert <s-tab> <c-p>
+    }
+}
+
+hook global InsertCompletionHide .* %{
+    unmap window insert <tab> <c-n>
+    unmap window insert <s-tab> <c-p>
+}
+
+hook global WinSetOption filetype=mail %{
+    set window autowrap_column 72
+    autowrap-enable
+}
+
+hook global WinSetOption filetype=javascript %{
+    set window lintcmd 'eslint -f ~/.config/kak/eslint-kakoune.js'
+		lint-enable
+		lint
+		set window formatcmd 'prettier --stdin --semi --single-quote --jsx-bracket-same-line --trailing-comma all'
+}
+
+hook global BufWritePre .*\.js %{ format }
