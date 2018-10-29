@@ -53,23 +53,38 @@ plug "https://github.com/Delapouite/kakoune-palette"
 # colorscheme
 colorscheme base16-ashes
 
-# default face overrides
-# set-face global LineNumbers white,default+d
-
 ## enable line flags
 add-highlighter global/ number-lines -separator ' '
+
+# editor conf
+set-option global tabstop 2
+set-option global indentwidth 2
+
+# select whole lines when moving selection with J / K
+map global normal J J<a-x>
+map global normal K K<a-x>
+
+# vim old habits
+map global normal D '<a-l>d' -docstring 'delete to end of line'
+map global normal Y '<a-l>y' -docstring 'yank to end of line'
+map global normal <a-h> Gi
 
 # user-defined bindings
 map global user | -docstring 'Tmux-Horiz (|)' ':tmux-new-horizontal<ret>'
 map global user _ -docstring 'Tmux-Ver (-)' ':tmux-new-vertical<ret>'
 map global user n -docstring 'Buf-Next' ':buffer-next<ret>'
 map global user p -docstring 'Buf-Prev' ':buffer-previous<ret>'
+# clipboard interaction
+map global user p -docstring 'paste from clipboard' '!xclip -o -sel clip<ret>'
+map global user y -docstring 'copy to clipboard' '<a-|>xclip -sel clip<ret>; :echo "copied selection to X11 clipboard"<ret>'
 
-# editor conf
-set global tabstop 2
-set global indentwidth 2
+# other mappings
+map global normal x <a-x>
+map global normal <a-x> gi<a-l>
 
-# hooks
+# comment lines
+map global normal <a-m> %{_:try comment-block catch comment-line<ret>}
+
 hook global InsertCompletionShow .* %{
     try %{
     # this command temporarily removes cursors preceded by whitespace;
