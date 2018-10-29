@@ -51,7 +51,7 @@ call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
-call minpac#add('roxma/vim-window-resize-easy')
+" call minpac#add('roxma/vim-window-resize-easy')
 call minpac#add('ryanoasis/vim-devicons')
 
 call minpac#add('tpope/vim-fugitive')
@@ -105,19 +105,16 @@ set wildignore+=**/node_modules/**
 
 " Mappings
 nmap <silent> <leader>t :exec &rnu? "se rnu!" : "se rnu"<CR>
+
 " Copy selected text to system clipboard (requires vim compiled with x-11)
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
+
  " - easy buffer navigation
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
 nnoremap <C-p> :<C-u>FZF<CR>
-" - easy window navigation
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-l> <C-w>l
 
 if has('nvim')
   " - avoid term buffers from closing on buf switch
@@ -136,9 +133,13 @@ if has('nvim')
   endif
 endif
 
+" Resizing Windows
+nnoremap <C-up> <C-W>+
+nnoremap <C-down> <C-W>-
+nnoremap <C-left> <C-W><
+nnoremap <C-right> <C-W>>
+
 " Plugin: Dracula
-" Recent Dracula Theme messed up a ton of things ...
-" these settings resolve the issues 
 " let g:dracula_colorterm = 0
 " let g:dracula_italic = 0
 
