@@ -51,7 +51,6 @@ call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
-call minpac#add('ryanoasis/vim-devicons')
 
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-commentary')
@@ -217,4 +216,15 @@ function! LightLineGitBranch()
   let l:branch = fugitive#head()
   return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
+
+augroup file-types
+  autocmd!
+  " Override some syntaxes so things look better
+  autocmd BufNewFile,BufRead *.ts,*.snap*,*.es6,*.tsx setlocal filetype=javascript.jsx
+  autocmd BufNewFile,BufRead *stylelintrc,*eslintrc,*babelrc,*jshintrc setlocal syntax=json
+  autocmd BufNewFile,BufRead *.css,*.pcss setlocal syntax=scss filetype=scss
+
+  " Allow stylesheets to autocomplete hyphenated words
+  autocmd FileType css,scss,sass setlocal iskeyword+=-
+augroup END
 
