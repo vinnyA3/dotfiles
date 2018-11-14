@@ -1,27 +1,4 @@
-"                                      .......
-"                                  ...............           
-"                                ....................        
-"                              .........................    
-"                             ...........................  
-"                            .............................  
-"                           ...............................  
-"                           ..............x................  
-"                           ............xo@................
-"                           ...........xoo@xxx.............
-"                          ........o@oxxoo@@@@@@x..xx.....
-"                           .....xo@oo...o@@@@@@x...o\\./.
-"                           ....o@@@@@@@@@@@@@@@@@@@o.\\..
-"                           .....x@@@@@@@@@@@o@@@@@@x/.\\.
-"                            ......@@@@@@@@@@o@@@@@x....
-"                            .......@@@@@@@@o@@@@o......
-"                                 .x@@@@@@@@@@ox.. .....
-"                                .@@@@@@@ooooxxxo.   ...
-"                             ...x@@@@@@@@@ooooo@... ..
-"                          ........@@@@@@@....xoo........
-"                       .............@@@....................
-"                    ........................................
-"                    ....................x..x................
-
+"
 "     .o88o.                               o8o                .
 "     888 `"                               `"'              .o8
 "    o888oo   .oooo.o  .ooooo.   .ooooo.  oooo   .ooooo.  .o888oo oooo    ooo
@@ -36,27 +13,23 @@
 packadd minpac
 call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
-
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
-call minpac#add('ajh17/VimCompletesMe')
 call minpac#add('christoomey/vim-tmux-navigator')
 call minpac#add('itchyny/lightline.vim')
-
 call minpac#add('justinmk/vim-dirvish')
 call minpac#add('justinmk/vim-sneak')
-
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
+call minpac#add('junegunn/fzf')
+call minpac#add('junegunn/fzf.vim')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
-
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-repeat')
-
 call minpac#add('w0rp/ale')
 
 " Commands
@@ -65,7 +38,9 @@ command! PackClean call minpac#clean()
 
 " Basic setup
 syntax on
-let mapleader = ';' " - set leader key
+nnoremap <Space> <Nop>
+vnoremap <Space> <Nop>
+let mapleader = " "
 set encoding=UTF-8
 set noshowmode
 set splitbelow
@@ -80,6 +55,7 @@ set nospell
 set modeline
 set nojoinspaces " pesky 2-spaces after the period thing - substack :p
 set guicursor=
+set rtp+=/usr/bin/fzf
 
 " Indent Settings
 set autoindent
@@ -112,7 +88,6 @@ map <C-v> "+P
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
-nnoremap <C-p> :<C-u>FZF<CR>
 
 if has('nvim')
   " - avoid term buffers from closing on buf switch
@@ -137,10 +112,13 @@ nnoremap <C-down> <C-W>-
 nnoremap <C-left> <C-W><
 nnoremap <C-right> <C-W>>
 
-" Plugin: Dracula
+" fzf
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 " let g:dracula_colorterm = 0
 " let g:dracula_italic = 0
 
+" Base16 reset
 function! s:base16_customize() abort
   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
 endfunction
@@ -150,7 +128,7 @@ augroup on_change_colorschema
   autocmd ColorScheme * call s:base16_customize()
 augroup END
 
-colorscheme base16-ashes
+colorscheme base16-ashes 
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
