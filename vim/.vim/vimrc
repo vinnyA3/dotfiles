@@ -15,17 +15,20 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
+call minpac#add('autozimu/LanguageClient-neovim', { 'branch': 'next' })
 call minpac#add('christoomey/vim-tmux-navigator')
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('justinmk/vim-dirvish')
-call minpac#add('justinmk/vim-sneak')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
+call minpac#add('ncm2/ncm2')
+call minpac#add('ncm2/ncm2-bufword')
 call minpac#add('mattn/emmet-vim')
 call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
+call minpac#add('roxma/nvim-yarp')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-surround')
@@ -112,12 +115,40 @@ nnoremap <C-down> <C-W>-
 nnoremap <C-left> <C-W><
 nnoremap <C-right> <C-W>>
 
+" ncm2 config
+autocmd BufEnter * call ncm2#enable_for_buffer()
+set completeopt=noinsert,menuone,noselect
+" suppress the annoying 'match x of y', 'The only match' and 'Pattern not
+" found' messages
+set shortmess+=c
+
+" CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
+inoremap <c-c> <ESC>
+
+" When the <Enter> key is pressed while the popup menu is visible, it only
+" hides the menu. Use this mapping to close the menu and also start a new
+" line.
+inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+
+" Use <TAB> to select the popup menu:
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" set signcolumn=no
+
+" LanguageClient + Server setup
+let g:LanguageClient_serverCommands = {
+  \ 'javascript': ['javascript-typescript-stdio']
+  \ }
+
+nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+
 " fzf
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+nnoremap <C-p> :FZF<Cr>
 
-" let g:dracula_colorterm = 0
-" let g:dracula_italic = 0
-
+" let g:dracula_colorterm = 0 / let g:dracula_italic = 0
 " Base16 reset
 function! s:base16_customize() abort
   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
