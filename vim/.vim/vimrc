@@ -147,6 +147,7 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 " fzf
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 nnoremap <C-p> :FZF<Cr>
+nnoremap <C-b> :Buffers<Cr>
 
 " let g:dracula_colorterm = 0 / let g:dracula_italic = 0
 " Base16 reset
