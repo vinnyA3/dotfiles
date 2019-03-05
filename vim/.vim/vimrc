@@ -173,7 +173,15 @@ command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args
 set updatetime=1000
 nmap <Leader>gs <Plug>GitGutterStageHunk
 nmap <Leader>gu <Plug>GitGutterUndoHunk
-nmap <Leader>gp <Plug>GitGutterPreviewHunk
+" nmap <Leader>gp <Plug>GitGutterPreviewHunk
+nmap <Leader>gn <Plug>GitGutterNextHunk
+nmap <Leader>gb <Plug>GitGutterPrevHunk
+
+"Plugin: Fugitive
+nmap <Leader>gc :Gcommit<C-r>
+
+" Plugin: Search and Replace 
+nmap <Leader>s :%s/\<<C-r><C-w>\>/
 
 " Plugin: Startify
 let g:startify_custom_header =

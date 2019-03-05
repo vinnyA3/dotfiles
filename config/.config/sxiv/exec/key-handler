@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#walldir=/home/qwerty/Pictures/wallpaper
+
+while read file
+do
+  fullpath="$(pwd)/$file"
+  case "$1" in
+    "w")
+      feh --bg-scale "$fullpath" &&
+      notify-send -i "$fullpath" "Wallpaper changed, bitch." ;;
+  esac
+done
