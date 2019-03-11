@@ -1,5 +1,5 @@
 Config { font = "xft:GohuFont:style=Regular:pixelsize=12:antialias=true:hinting=false"
-       , additionalFonts = ["xft:Siji:style=Regular:size=9", "xft:FuraCode Nerd Font:style=Thin:size=7"]
+       , additionalFonts = ["xft:Siji:style=Regular:size=9"]
        , bgColor = "#282A36"
        , fgColor = "#E6E6E6"
        , alpha = 255
