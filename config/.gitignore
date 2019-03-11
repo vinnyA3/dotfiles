@@ -15,6 +15,7 @@ qutebrowser/*
 !qutebrowser
 !mps-youtube/config
 !mps-youtube/transcode
+!coc/
 
 !xmobar/
 !neofetch/
