@@ -21,6 +21,7 @@ stow runcom
 stow git
 stow config
 stow xmonad
+stow scripts
 stow vim
 stow tmux
 stow x-files
