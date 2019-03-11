@@ -1,6 +1,7 @@
 # Config
 # check sub dir config/.config
 config/.config/*
+
 #
 # Vim
 vim/.vim/*
