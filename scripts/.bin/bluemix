@@ -1,0 +1,5 @@
+#!/bin/bash
+if pgrep -x "bluealsa" > /dev/null
+then
+  alsamixer -D bluealsa
+fi
