@@ -163,7 +163,7 @@
     icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 32
+    max_icon_size = 44 
 
     # Paths to default icons.
     icon_path = /home/qwerty/Pictures/profiles/:/usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
@@ -249,20 +249,20 @@
     background = "#282A36"    
     foreground = "#888888"
     timeout = 10
-    icon = /home/qwerty/Pictures/profiles/sasha-chibi.jpg 
+    icon = /home/qwerty/Pictures/profiles/ochaco.png
 
 [urgency_normal]
     background = "#282A36"    
     foreground = "#ffffff"
     timeout = 10
-    icon = /home/qwerty/Pictures/profiles/sasha-chibi.jpg 
+    icon = /home/qwerty/Pictures/profiles/ochaco.png
 
 [urgency_critical]
     background = "#50fa7b"
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
-    icon = /home/qwerty/Pictures/profiles/sasha-chibi.jpg 
+    icon = /home/qwerty/Pictures/profiles/ochaco.png
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

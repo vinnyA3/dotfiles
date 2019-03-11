@@ -15,25 +15,27 @@ call minpac#init()
 call minpac#add('k-takata/minpac', {'type': 'opt'})
 call minpac#add('airblade/vim-gitgutter')
 call minpac#add('ap/vim-css-color')
-call minpac#add('autozimu/LanguageClient-neovim', { 'branch': 'next' })
+" call minpac#add('autozimu/LanguageClient-neovim', { 'branch': 'next' })
 call minpac#add('christoomey/vim-tmux-navigator')
+" call minpac#add('dracula/vim', { 'as': 'dracula' })
 call minpac#add('itchyny/lightline.vim')
 call minpac#add('justinmk/vim-dirvish')
 call minpac#add('jiangmiao/auto-pairs')
 call minpac#add('junegunn/vim-peekaboo')
 call minpac#add('junegunn/fzf')
 call minpac#add('junegunn/fzf.vim')
-call minpac#add('ncm2/ncm2')
-call minpac#add('ncm2/ncm2-bufword')
-call minpac#add('mattn/emmet-vim')
+" call minpac#add('ncm2/ncm2')
+" call minpac#add('ncm2/ncm2-bufword')
+" call minpac#add('mattn/emmet-vim')
 call minpac#add('mike-hearn/base16-vim-lightline')
 call minpac#add('mhinz/vim-startify')
-call minpac#add('roxma/nvim-yarp')
+call minpac#add('neoclide/coc.nvim')
+" call minpac#add('roxma/nvim-yarp')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-commentary')
 call minpac#add('tpope/vim-surround')
 call minpac#add('tpope/vim-repeat')
-call minpac#add('w0rp/ale')
+" call minpac#add('w0rp/ale')
 
 " Commands
 command! PackUpdate call minpac#update()
@@ -105,7 +107,8 @@ if has('nvim')
   tnoremap <C-l> <C-\><C-n><C-w>l
 
   if executable('nvr')
-    let $VISUAL="nvr -cc split --remote-wait +'set bufhidden=wipe'"
+    autocmd FileType gitcommit set bufhidden=delete
+    let $VISUAL="nvr -cc split --remote-wait"
   endif
 endif
 
@@ -115,41 +118,75 @@ nnoremap <C-down> <C-W>-
 nnoremap <C-left> <C-W><
 nnoremap <C-right> <C-W>>
 
+" Plugin: COC
+set shortmess+=c
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+" Use `[c` and `]c` for navigate diagnostics
+nmap <silent> [c <Plug>(coc-diagnostic-prev)
+nmap <silent> ]c <Plug>(coc-diagnostic-next)
+
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+" ==================== ncm2 ======================
 " ncm2 config
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
+" autocmd BufEnter * call ncm2#enable_for_buffer()
+" set completeopt=noinsert,menuone,noselect
 " suppress the annoying 'match x of y', 'The only match' and 'Pattern not
 " found' messages
-set shortmess+=c
-
+" set shortmess+=c
 " CTRL-C doesn't trigger the InsertLeave autocmd . map to <ESC> instead.
-inoremap <c-c> <ESC>
+" inoremap <c-c> <ESC>
 
 " When the <Enter> key is pressed while the popup menu is visible, it only
 " hides the menu. Use this mapping to close the menu and also start a new
 " line.
-inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
+" inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 
 " Use <TAB> to select the popup menu:
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+" inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+" inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " set signcolumn=no
 
 " LanguageClient + Server setup
-let g:LanguageClient_serverCommands = {
-  \ 'javascript': ['javascript-typescript-stdio']
-  \ }
+" let g:LanguageClient_serverCommands = {
+"   \ 'javascript': ['javascript-typescript-stdio']
+"   \ }
 
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+" nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+" nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+" nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+" ==================================================
 
 " fzf
-let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 nnoremap <C-p> :FZF<Cr>
 nnoremap <C-b> :Buffers<Cr>
 
-" let g:dracula_colorterm = 0 / let g:dracula_italic = 0
+" let g:dracula_colorterm = 0
+" let g:dracula_italic = 0
 " Base16 reset
 function! s:base16_customize() abort
   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
@@ -160,7 +197,7 @@ augroup on_change_colorschema
   autocmd ColorScheme * call s:base16_customize()
 augroup END
 
-colorscheme base16-ashes 
+colorscheme base16-material-darker 
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -178,7 +215,7 @@ nmap <Leader>gn <Plug>GitGutterNextHunk
 nmap <Leader>gb <Plug>GitGutterPrevHunk
 
 "Plugin: Fugitive
-nmap <Leader>gc :Gcommit<C-r>
+nnoremap <Leader>gc :Gcommit<Cr>
 
 " Plugin: Search and Replace 
 nmap <Leader>s :%s/\<<C-r><C-w>\>/
@@ -195,26 +232,27 @@ let g:startify_lists = [
       \ { 'type': 'commands',  'header': [   'Commands']       },
       \ ]
 
-" Plugin: Ale
-let g:ale_lint_on_text_changed = 'never'
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_enter = 0
-let g:ale_fix_on_save = 1
-let g:ale_javascript_prettier_options = '--semi --single-quote --trailing-comma es5'
-let g:ale_linters = {
-      \   'javascript': ['eslint'],
-\}
 
-let g:ale_fixers = {
-      \   'javascript': ['prettier'],
-      \   'css': ['prettier'],
-      \   'scss': ['prettier'],
-\}
+" Plugin: Ale
+" let g:ale_lint_on_text_changed = 'never'
+" let g:ale_lint_on_save = 1
+" let g:ale_lint_on_enter = 0
+" let g:ale_fix_on_save = 1
+" let g:ale_javascript_prettier_options = '--semi --single-quote --trailing-comma es5'
+" let g:ale_linters = {
+"       \   'javascript': ['eslint'],
+" \}
+
+" let g:ale_fixers = {
+"       \   'javascript': ['prettier'],
+"       \   'css': ['prettier'],
+"       \   'scss': ['prettier'],
+" \}
 " let g:ale_fixers = { \   'haskell': ['brittany'] \}
 
 " Plugin: lightline {{{1
 let g:lightline = {
-      \ 'colorscheme': 'base16_ashes',
+      \ 'colorscheme': 'base16_material_darker',
       \ 'component': {
       \   'lineinfo': ' %3l:%-2v',
       \ },

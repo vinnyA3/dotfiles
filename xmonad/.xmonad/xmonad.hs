@@ -10,6 +10,7 @@ import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.FloatNext
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
+import XMonad.Hooks.EwmhDesktops
 import XMonad.Util.NamedScratchpad
 import XMonad.Layout
 import XMonad.Layout.Accordion
@@ -18,41 +19,39 @@ import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
 import XMonad.Layout.Spiral
 import XMonad.Util.Loggers
+import XMonad.Util.NamedWindows (getName)
 import XMonad.Util.Font
 import XMonad.Util.Run
 import Graphics.X11.ExtraTypes.XF86
 
+import Control.Monad (forM_, join)
+
 import Data.Char
+import Data.List (sortBy)
+import Data.Function (on)
 import Data.Bits ((.|.))
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
--- import qualified Data.Text as T
 
--- DefaultTerminal: Set to succless terminal (Alacritty, Termite)
-myTerminal = "st -e '/run/current-system/sw/bin/elvish'"
--- myTerminal = "xterm"
+-- DefaultTerminal: Set to succless terminal
+myTerminal = "st"
 
--- Launcher: Set to Rofi (x: 380)
-myLauncher = "rofi -show drun"
+-- Launcher (ie. dmenu, rofi...)
+myLauncher = "dmenu_run"
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
 
 -- Border Styling
 myBorderWidth = 3
-
 myNormalBorderColor = "#BFBFBF"
+myFocusedBorderColor = "#89DDFF"
 
-myFocusedBorderColor = "#CAA9FA"
+-- status bar
+xmproc = "polybar main"
 
-xmproc = "xmobar ~/.config/xmobar/xmobarrc.hs"
-
--- Xmobar dyn colors
-xmobarCurrFG = "#282A36"
-
-xmobarCurrBG = "#FF79C6"
-
-xmobarHiddenFG = "#747C84"
+-- gaps (border / window spacing)
+gaps = spacingRaw True (Border 0 10 10 10) True (Border 10 10 10 10) True 
 
 workspaceIcons =
   [ "\xe17e"
@@ -74,15 +73,12 @@ workspaceNames =
   , "Firefox"
   , "Chrome"
   , "Media"
-  , "Misc7"
-  , "Misc8"
-  , "Misc9"
   ]
 
 myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
  where
   wrapWorkspaces icons workspaces =
-    [ "<fn=1>" ++ i ++ "</fn> " ++ ws | (i, ws) <- zip icons workspaces ]
+    [ i ++ " " ++ ws | (i, ws) <- zip icons workspaces ]
 
 -- Layout Hook
 myLayout = sizeTall ||| spir ||| Accordion
@@ -91,16 +87,23 @@ myLayout = sizeTall ||| spir ||| Accordion
   spir     = spiral (6 / 7)
 
 -- myManageHook
-myManageHook = composeAll
-  [ className =? "qutebrowser" --> doShift " Qutebrowser"
-  , className =? "Spotify" --> doShift " Media"
-  , className =? "Firefox" --> doShift " Firefox"
-  , className =? "Chromium" --> doShift " Chrome"
+myManageHook = composeAll . concat $
+  [ [className =? "qutebrowser" --> doShift " Qutebrowser"]
+  , [className =? "Spotify" --> doShift " Media"]
+  , [className =? "Firefox" --> doShift " Firefox"]
+  , [className =? "Chromium" --> doShift " Chrome"]
+  , [className =? c --> doRectFloat (W.RationalRect 0.3 0.3 0.4 0.4) | c <- floatsClass]
+  , [wmName =? "sxiv" -->  doRectFloat (W.RationalRect 0.3 0.3 0.4 0.4)] 
   ]
+  where
+    wmName = stringProperty "WM_NAME"
+    floatsClass = [ "feh"
+                  , "mpv"
+                  ,"VirtualBox"
+                  ]
 
 scratchpads =
   [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
-  , NS "chat" "st -c chat -e weechat" (className =? "chat") defaultFloating
   , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
   ]
 
@@ -131,18 +134,18 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        -- audio keybindings
        , ( (0, xF86XK_AudioRaiseVolume)
          , spawn
-           "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ +5%"
+           "amixer set Master 3+"
          )
        , ( (0, xF86XK_AudioLowerVolume)
          , spawn
-           "pactl set-sink-mute @DEFAULT_SINK@ false ; pactl set-sink-volume @DEFAULT_SINK@ -5%"
+           "amixer set Master 3-"
          )
        , ((0, xF86XK_AudioNext), spawn "playerctl next")
        , ((0, xF86XK_AudioPrev), spawn "playerctl previous")
        , ((0, xF86XK_AudioPlay), spawn "playerctl play-pause")
        , ((0, xF86XK_AudioStop), spawn "playerctl stop")
        , ( (0, xF86XK_AudioMute)
-         , spawn "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+         , spawn "amixer set Master toggle"
          )
        , ( (modm, xK_j)
          , windows W.focusDown
@@ -194,79 +197,53 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (mod4Mask .|. shiftMask, xK_c)
          , kill
          ) -- %! Close the focused window
-                        -- Quit xmonad.
        , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess))
+          -- Quit xmonad.
        , ( (mod4Mask, xK_q)
          , broadcastMessage ReleaseResources >> restart "xmonad" True
          ) -- %! Restart xmonad
        , ( (modm .|. shiftMask, xK_x)
-         , spawn "kill $(pidof xmobar); xmobar ~/.config/xmobar/xmobarrc.hs"
-         ) -- %! Kill & restart xmobar
+         , spawn "kill $(pidof polybar); polybar main"
+         ) -- %! Kill & restart statusbar (polybar)
        , ((modm, xK_z)              , sendMessage MirrorShrink)
        , ((modm, xK_a)              , sendMessage MirrorExpand)
        , ((modm, xK_e)              , toggleFloatNext)
        , ((modm .|. shiftMask, xK_e), toggleFloatAllNew)
        , ( (modm .|. shiftMask, xK_p)
-         , spawn "scrot '%Y-%m-%d_$wx$h.png' -c -d 5"
+         , spawn "notify-send ' Taking screenshot in 5..4..3..2..1..';scrot ~/Pictures/screenshots/'%Y-%m-%d_$wx$h.png' -c -d 5;notify-send ' Screenshot taken!'"
          )
                         -- toggle fullscreen (really just lower status bar
                         --    below everything)
-       , ((modm .|. shiftMask, xK_f), sendMessage ToggleStruts)
+       , ((modm, xK_b), sendMessage ToggleStruts)
+       , ((modm .|. shiftMask, xK_g), toggleWindowSpacingEnabled)
                       -- floating window keys
-       -- , ((modm .|. shiftMask, xK_Up), withFocused (keysMoveWindow (0, -10)))
-       -- , ((modm .|. shiftMask, xK_Down), withFocused (keysMoveWindow (0, 10)))
-       -- , ((modm .|. shiftMask, xK_Right), withFocused (keysMoveWindow (10, 0)))
-       -- , ((modm .|. shiftMask, xK_Left), withFocused (keysMoveWindow (-10, 0)))
-       -- , ((modm, xK_d), withFocused (keysResizeWindow (-10, -10) (0, 1)))
-       -- , ((modm, xK_s), withFocused (keysResizeWindow (10, 10) (0, 1)))
+       , ((controlMask .|. shiftMask, xK_k), withFocused (keysMoveWindow (0, -15)))
+       , ((controlMask .|. shiftMask, xK_j), withFocused (keysMoveWindow (0, 15)))
+       , ((controlMask .|. shiftMask, xK_l), withFocused (keysMoveWindow (15, 0)))
+       , ((controlMask .|. shiftMask, xK_h), withFocused (keysMoveWindow (-15, 0)))
+       , ((controlMask .|. shiftMask, xK_m), withFocused $ keysResizeWindow (0, -15) (0, 0))
+       , ((controlMask .|. shiftMask, xK_comma), withFocused $ keysResizeWindow (0, 15) (0, 0))
        ]
     ++ [ ((m .|. modMask, k), windows $ f i) -- mod-[1..9], Switch to workspace N
        | (i, k) <- zip (XMonad.workspaces conf) [xK_1 .. xK_9] -- mod-shift-[1..9], Move client to workspace N
        , (f, m) <- [(W.greedyView, 0), (W.shift, shiftMask)]
        ]
 
--- my TEXT manipulation functions ... no longer of use, but might
---    come in handy later, so leaving here ....
--- splitH s = T.splitOn (T.pack " ") (T.pack s)
--- splitAndDropFst = tail . splitH
--- splitAndTakeFst = take 1 . splitH
--- splitMapJoin fn s = unwords (fmap T.unpack (fn s))
-
-splitTakeFst = head . words
-
-splitTakeLst = last . words
-
-prependIcon = (++) "<fn=1>\xe194</fn> " . splitTakeLst
-
-prependWSLogger = fmap prependIcon <$> logCurrent
-
--- getShortenedLayout = fmap splitTakeLst <$> logLayout
-
-myXmobarPP = def { ppCurrent = xmobarColor xmobarCurrBG "" . splitTakeFst
-                 , ppHidden  = xmobarColor xmobarHiddenFG "" . splitTakeFst
-                 , ppSep     = " "
-                 , ppWsSep   = " "
-                 , ppExtras  = [prependWSLogger]
-                 , ppTitle   = const ""
-                 , ppLayout  = const ""
-                 }
 
 main :: IO ()
 main = do
   spawn xmproc
-  xmonad $ defaults { logHook = dynamicLogString myXmobarPP >>= xmonadPropLog }
+  xmonad $ ewmh $ defaults { handleEventHook = handleEventHook desktopConfig }
 
-defaults = docks $ desktopConfig
-  { borderWidth        = myBorderWidth
-  , normalBorderColor  = myNormalBorderColor
-  , focusedBorderColor = myFocusedBorderColor
-  , modMask            = modm
-  , terminal           = myTerminal
-  , workspaces         = myWorkspaces
-  , keys               = myKeys
-  , manageHook         = myNewManageHook
-  , layoutHook = avoidStruts $ smartBorders $ smartSpacingWithEdge 8 $ myLayout
-  , startupHook        = spawn
-    "feh --bg-scale /home/qwerty/Pictures/wallpaper/ururaka.png"
-  }
+defaults = docks $ desktopConfig { borderWidth = myBorderWidth
+, normalBorderColor  = myNormalBorderColor
+, focusedBorderColor = myFocusedBorderColor
+, modMask            = modm
+, terminal           = myTerminal
+, workspaces         = myWorkspaces
+, keys               = myKeys
+, manageHook         = myNewManageHook <+> manageDocks
+, layoutHook         = avoidStruts $ smartBorders $ gaps $ myLayout
+, startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/the-look.jpg"
+}
 

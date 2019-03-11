@@ -11,16 +11,71 @@
 # Type: Dict
 c.aliases = {'q': 'quit', 'w': 'session-save', 'wq': 'quit --save'}
 
+# Require a confirmation before quitting the application.
+# Type: ConfirmQuit
+# Valid values:
+#   - always: Always show a confirmation.
+#   - multiple-tabs: Show a confirmation if multiple tabs are opened.
+#   - downloads: Show a confirmation if downloads are running
+#   - never: Never show a confirmation.
+c.confirm_quit = ['never']
+
+# Maximum time (in minutes) between two history items for them to be
+# considered being from the same browsing session. Items with less time
+# between them are grouped when being displayed in `:history`. Use -1 to
+# disable separation.
+# Type: Int
+c.history_gap_interval = 30
+
+# When to find text on a page case-insensitively.
+# Type: IgnoreCase
+# Valid values:
+#   - always: Search case-insensitively.
+#   - never: Search case-sensitively.
+#   - smart: Search case-sensitively if there are capital characters.
+c.search.ignore_case = 'smart'
+
+# Find text on a page incrementally, renewing the search for each typed
+# character.
+# Type: Bool
+c.search.incremental = True
+
 # Enable host blocking.
 # Type: Bool
-c.content.host_blocking.enabled = True
+c.content.host_blocking.enabled = False
 
 # List of URLs of lists which contain hosts to block.  The file can be
 # in one of the following formats:  - An `/etc/hosts`-like file - One
 # host per line - A zip-file of any of the above, with either only one
-# file, or a file   named `hosts` (with any extension).
+# file, or a file   named `hosts` (with any extension).  It's also
+# possible to add a local file or directory via a `file://` URL. In case
+# of a directory, all files in the directory are read as adblock lists.
+# The file `~/.config/qutebrowser/blocked-hosts` is always read if it
+# exists.
 # Type: List of Url
 c.content.host_blocking.lists = ['https://www.malwaredomainlist.com/hostslist/hosts.txt', 'http://someonewhocares.org/hosts/hosts', 'http://winhelp2002.mvps.org/hosts.zip', 'http://malwaredomains.lehigh.edu/files/justdomains.zip', 'https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&mimetype=plaintext']
+
+# A list of patterns that should always be loaded, despite being ad-
+# blocked. Note this whitelists blocked hosts, not first-party URLs. As
+# an example, if `example.org` loads an ad from `ads.example.org`, the
+# whitelisted host should be `ads.example.org`. If you want to disable
+# the adblocker on a given page, use the `content.host_blocking.enabled`
+# setting with a URL pattern instead. Local domains are always exempt
+# from hostblocking.
+# Type: List of UrlPattern
+c.content.host_blocking.whitelist = ['piwik.org']
+
+# Enable hyperlink auditing (`<a ping>`).
+# Type: Bool
+c.content.hyperlink_auditing = False
+
+# Load images automatically in web pages.
+# Type: Bool
+c.content.images = True
+
+# Show javascript alerts.
+# Type: Bool
+c.content.javascript.alert = True
 
 # Enable JavaScript.
 # Type: Bool
@@ -79,7 +134,7 @@ c.completion.timestamp_format = '%Y-%m-%d'
 # Number of URLs to show in the web history. 0: no history / -1:
 # unlimited
 # Type: Int
-c.completion.web_history_max_items = -1
+c.completion.web_history.max_items = -1
 
 # Delay (in milliseconds) before updating completions after typing a
 # character.
@@ -208,7 +263,7 @@ c.tabs.mode_on_change = 'normal'
 #   - bottom
 #   - left
 #   - right
-c.tabs.position = 'bottom'
+c.tabs.position = 'top'
 
 # Which tab to select when the focused tab is removed.
 # Type: SelectOnRemove
@@ -281,7 +336,7 @@ c.tabs.indicator.padding = {'top': 2, 'bottom': 2, 'left': 0, 'right': 4}
 # used by prepending the search engine name to the search term, e.g.
 # `:open google qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}', 'yt': 'https://www.youtube.com/results?search_query={}', 'g': 'https://google.com/search?hl=en&q={}', 'r': 'https://old.reddit.com/r/{}', 'nx': 'https://nixos.org/nixos/packages.html#{}'}
+c.url.searchengines = {'DEFAULT': 'https://duckduckgo.com/?q={}', 'aw': 'https://wiki.archlinux.org/index.php?title=Special%3ASearch&search={}', 'g': 'https://google.com/search?hl=en&q={}', 'm': 'https://mdn.io/{}', 'r': 'https://old.reddit.com/r/{}', 'yt': 'https://www.youtube.com/results?search_query={}', 'fn': 'https://www.funimation.com/search/?q={}'}
 
 # Page(s) to open at the start.
 # Type: List of FuzzyUrl, or FuzzyUrl
@@ -304,80 +359,302 @@ c.window.title_format = '{perc}{title}{title_sep}qutebrowser'
 # Text color of the completion widget. May be a single color to use for
 # all columns or a list of three colors, one for each column.
 # Type: List of QtColor, or QtColor
-c.colors.completion.fg = ['white', 'white', 'white']
+c.colors.completion.fg = '#C7CCD1'
+
+# Background color of the completion widget for odd rows.
+# Type: QssColor
+c.colors.completion.odd.bg = '#747C84'
+
+# Background color of the completion widget for even rows.
+# Type: QssColor
+c.colors.completion.even.bg = '#1C2023'
+
+# Foreground color of completion widget category headers.
+# Type: QtColor
+c.colors.completion.category.fg = '#AEC795'
+
+# Background color of the completion widget category headers.
+# Type: QssColor
+c.colors.completion.category.bg = '#1C2023'
+
+# Top border color of the completion widget category headers.
+# Type: QssColor
+c.colors.completion.category.border.top = '#1C2023'
+
+# Bottom border color of the completion widget category headers.
+# Type: QssColor
+c.colors.completion.category.border.bottom = '#1C2023'
+
+# Foreground color of the selected completion item.
+# Type: QtColor
+c.colors.completion.item.selected.fg = '#393F45'
+
+# Background color of the selected completion item.
+# Type: QssColor
+c.colors.completion.item.selected.bg = '#AEC795'
+
+# Top border color of the completion widget category headers.
+# Type: QssColor
+c.colors.completion.item.selected.border.top = '#AEC795'
+
+# Bottom border color of the selected completion item.
+# Type: QssColor
+c.colors.completion.item.selected.border.bottom = '#AEC795'
+
+# Foreground color of the matched text in the completion.
+# Type: QtColor
+c.colors.completion.match.fg = '#95C7AE'
+
+# Color of the scrollbar handle in the completion view.
+# Type: QssColor
+c.colors.completion.scrollbar.fg = '#C7CCD1'
+
+# Color of the scrollbar in the completion view.
+# Type: QssColor
+c.colors.completion.scrollbar.bg = '#1C2023'
+
+# Background color for the download bar.
+# Type: QssColor
+c.colors.downloads.bar.bg = '#1C2023'
+
+# Color gradient start for download text.
+# Type: QtColor
+c.colors.downloads.start.fg = '#1C2023'
+
+# Color gradient start for download backgrounds.
+# Type: QtColor
+c.colors.downloads.start.bg = '#AE95C7'
+
+# Color gradient end for download text.
+# Type: QtColor
+c.colors.downloads.stop.fg = '#1C2023'
+
+# Color gradient stop for download backgrounds.
+# Type: QtColor
+c.colors.downloads.stop.bg = '#95AEC7'
+
+# Foreground color for downloads with errors.
+# Type: QtColor
+c.colors.downloads.error.fg = '#C7AE95'
+
+# Font color for hints.
+# Type: QssColor
+c.colors.hints.fg = '#1C2023'
+
+# Background color for hints. Note that you can use a `rgba(...)` value
+# for transparency.
+# Type: QssColor
+c.colors.hints.bg = '#AEC795'
+
+# Font color for the matched part of hints.
+# Type: QssColor
+c.colors.hints.match.fg = '#C7CCD1'
+
+# Text color for the keyhint widget.
+# Type: QssColor
+c.colors.keyhint.fg = '#C7CCD1'
+
+# Highlight color for keys to complete the current keychain.
+# Type: QssColor
+c.colors.keyhint.suffix.fg = '#C7CCD1'
+
+# Background color of the keyhint widget.
+# Type: QssColor
+c.colors.keyhint.bg = '#1C2023'
+
+# Foreground color of an error message.
+# Type: QssColor
+c.colors.messages.error.fg = '#1C2023'
+
+# Background color of an error message.
+# Type: QssColor
+c.colors.messages.error.bg = '#C7AE95'
+
+# Border color of an error message.
+# Type: QssColor
+c.colors.messages.error.border = '#C7AE95'
+
+# Foreground color of a warning message.
+# Type: QssColor
+c.colors.messages.warning.fg = '#1C2023'
+
+# Background color of a warning message.
+# Type: QssColor
+c.colors.messages.warning.bg = '#C795AE'
+
+# Border color of a warning message.
+# Type: QssColor
+c.colors.messages.warning.border = '#C795AE'
+
+# Foreground color of an info message.
+# Type: QssColor
+c.colors.messages.info.fg = '#C7CCD1'
+
+# Background color of an info message.
+# Type: QssColor
+c.colors.messages.info.bg = '#1C2023'
+
+# Border color of an info message.
+# Type: QssColor
+c.colors.messages.info.border = '#1C2023'
+
+# Foreground color for prompts.
+# Type: QssColor
+c.colors.prompts.fg = '#C7CCD1'
+
+# Border used around UI elements in prompts.
+# Type: String
+c.colors.prompts.border = '#1C2023'
+
+# Background color for prompts.
+# Type: QssColor
+c.colors.prompts.bg = '#1C2023'
+
+# Background color for the selected item in filename prompts.
+# Type: QssColor
+c.colors.prompts.selected.bg = '#AEC795'
+
+# Foreground color of the statusbar.
+# Type: QssColor
+c.colors.statusbar.normal.fg = '#95C7AE'
 
 # Background color of the statusbar.
 # Type: QssColor
-c.colors.statusbar.normal.bg = '#282A36'
+c.colors.statusbar.normal.bg = '#1C2023'
 
 # Foreground color of the statusbar in insert mode.
 # Type: QssColor
-c.colors.statusbar.insert.fg = '#282A36'
+c.colors.statusbar.insert.fg = '#1C2023'
 
 # Background color of the statusbar in insert mode.
 # Type: QssColor
-c.colors.statusbar.insert.bg = '#50FA7B'
+c.colors.statusbar.insert.bg = '#AE95C7'
 
 # Foreground color of the statusbar in passthrough mode.
 # Type: QssColor
-c.colors.statusbar.passthrough.fg = 'white'
+c.colors.statusbar.passthrough.fg = '#1C2023'
+
+# Background color of the statusbar in passthrough mode.
+# Type: QssColor
+c.colors.statusbar.passthrough.bg = '#95AEC7'
+
+# Foreground color of the statusbar in private browsing mode.
+# Type: QssColor
+c.colors.statusbar.private.fg = '#1C2023'
+
+# Background color of the statusbar in private browsing mode.
+# Type: QssColor
+c.colors.statusbar.private.bg = '#747C84'
+
+# Foreground color of the statusbar in command mode.
+# Type: QssColor
+c.colors.statusbar.command.fg = '#C7CCD1'
+
+# Background color of the statusbar in command mode.
+# Type: QssColor
+c.colors.statusbar.command.bg = '#1C2023'
+
+# Foreground color of the statusbar in private browsing + command mode.
+# Type: QssColor
+c.colors.statusbar.command.private.fg = '#C7CCD1'
+
+# Background color of the statusbar in private browsing + command mode.
+# Type: QssColor
+c.colors.statusbar.command.private.bg = '#1C2023'
+
+# Foreground color of the statusbar in caret mode.
+# Type: QssColor
+c.colors.statusbar.caret.fg = '#1C2023'
+
+# Background color of the statusbar in caret mode.
+# Type: QssColor
+c.colors.statusbar.caret.bg = '#C795AE'
+
+# Foreground color of the statusbar in caret mode with a selection.
+# Type: QssColor
+c.colors.statusbar.caret.selection.fg = '#1C2023'
+
+# Background color of the statusbar in caret mode with a selection.
+# Type: QssColor
+c.colors.statusbar.caret.selection.bg = '#AE95C7'
+
+# Background color of the progress bar.
+# Type: QssColor
+c.colors.statusbar.progress.bg = '#AE95C7'
 
 # Default foreground color of the URL in the statusbar.
 # Type: QssColor
-c.colors.statusbar.url.fg = 'white'
+c.colors.statusbar.url.fg = '#C7CCD1'
 
 # Foreground color of the URL in the statusbar on error.
 # Type: QssColor
-c.colors.statusbar.url.error.fg = 'orange'
+c.colors.statusbar.url.error.fg = '#C7AE95'
+
+# Foreground color of the URL in the statusbar for hovered links.
+# Type: QssColor
+c.colors.statusbar.url.hover.fg = '#C7CCD1'
+
+# Foreground color of the URL in the statusbar on successful load
+# (http).
+# Type: QssColor
+c.colors.statusbar.url.success.http.fg = '#95AEC7'
 
 # Foreground color of the URL in the statusbar on successful load
 # (https).
 # Type: QssColor
-c.colors.statusbar.url.success.https.fg = '#50FA7B'
+c.colors.statusbar.url.success.https.fg = '#95C7AE'
 
 # Foreground color of the URL in the statusbar when there's a warning.
 # Type: QssColor
-c.colors.statusbar.url.warn.fg = 'yellow'
+c.colors.statusbar.url.warn.fg = '#C795AE'
 
 # Background color of the tab bar.
 # Type: QtColor
-c.colors.tabs.bar.bg = '#555555'
+c.colors.tabs.bar.bg = '#1C2023'
 
 # Color gradient start for the tab indicator.
 # Type: QtColor
-c.colors.tabs.indicator.start = '#0000aa'
+c.colors.tabs.indicator.start = '#AE95C7'
+
+# Color gradient end for the tab indicator.
+# Type: QtColor
+c.colors.tabs.indicator.stop = '#95AEC7'
+
+# Color for the tab indicator on errors.
+# Type: QtColor
+c.colors.tabs.indicator.error = '#C7AE95'
 
 # Foreground color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.fg = 'white'
+c.colors.tabs.odd.fg = '#C7CCD1'
 
 # Background color of unselected odd tabs.
 # Type: QtColor
-c.colors.tabs.odd.bg = 'grey'
+c.colors.tabs.odd.bg = '#747C84'
 
 # Foreground color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.fg = 'white'
+c.colors.tabs.even.fg = '#C7CCD1'
 
 # Background color of unselected even tabs.
 # Type: QtColor
-c.colors.tabs.even.bg = 'grey'
+c.colors.tabs.even.bg = '#1C2023'
 
 # Foreground color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.fg = 'white'
+c.colors.tabs.selected.odd.fg = '#1C2023'
 
 # Background color of selected odd tabs.
 # Type: QtColor
-c.colors.tabs.selected.odd.bg = '#282A36'
+c.colors.tabs.selected.odd.bg = '#C7CCD1'
 
 # Foreground color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.fg = 'white'
+c.colors.tabs.selected.even.fg = '#1C2023'
 
 # Background color of selected even tabs.
 # Type: QtColor
-c.colors.tabs.selected.even.bg = '#282A36'
+c.colors.tabs.selected.even.bg = '#C7CCD1'
 
 # Background color for webpages if unset (or empty to use the theme's
 # color).
@@ -387,55 +664,55 @@ c.colors.webpage.bg = 'white'
 # Default monospace fonts. Whenever "monospace" is used in a font
 # setting, it's replaced with the fonts listed here.
 # Type: Font
-c.fonts.monospace = '"GohuFont", Monospace, "DejaVu Sans Mono", Monaco, "Bitstream Vera Sans Mono", "Andale Mono", "Courier New", Courier, "Liberation Mono", monospace, Fixed, Consolas, Terminal'
+c.fonts.monospace = '"Tamzen", "DejaVu Sans Mono"'
 
 # Font used in the completion widget.
 # Type: Font
-c.fonts.completion.entry = '10pt Open Sans'
+c.fonts.completion.entry = '10pt DejaVu Sans'
 
 # Font used in the completion categories.
 # Type: Font
-c.fonts.completion.category = '10pt Open Sans'
+c.fonts.completion.category = '10pt DejaVu Sans'
 
 # Font used for the debugging console.
 # Type: QtFont
-c.fonts.debug_console = '10pt monospace'
+c.fonts.debug_console = '10pt tewi'
 
 # Font used for the downloadbar.
 # Type: Font
-c.fonts.downloads = '10pt Open Sans'
+c.fonts.downloads = '10pt DejaVu Sans'
 
 # Font used for the hints.
 # Type: Font
-c.fonts.hints = 'bold 10pt monospace'
+c.fonts.hints = 'bold 10pt tewi'
 
 # Font used in the keyhint widget.
 # Type: Font
-c.fonts.keyhint = '10pt monospace'
+c.fonts.keyhint = '10pt tewi'
 
 # Font used for error messages.
 # Type: Font
-c.fonts.messages.error = '10pt monospace'
+c.fonts.messages.error = '10pt tewi'
 
 # Font used for info messages.
 # Type: Font
-c.fonts.messages.info = '10pt Open Sans'
+c.fonts.messages.info = '10pt DejaVu Sans'
 
 # Font used for warning messages.
 # Type: Font
-c.fonts.messages.warning = '10pt Open Sans'
+c.fonts.messages.warning = '10pt DejaVu Sans'
 
 # Font used for prompts.
 # Type: Font
-c.fonts.prompts = '10pt Open Sans'
+c.fonts.prompts = '10pt DejaVu Sans'
 
 # Font used in the statusbar.
 # Type: Font
-c.fonts.statusbar = '10pt Open Sans'
+c.fonts.statusbar = '10pt DejaVu Sans'
 
 # Font used in the tab bar.
 # Type: QtFont
-c.fonts.tabs = '10pt Open Sans'
+c.fonts.tabs = '10pt DejaVu Sans'
 
 # Font family for standard fonts.
 # Type: FontFamily
@@ -445,9 +722,13 @@ c.fonts.web.family.standard = None
 # Type: FontFamily
 c.fonts.web.family.fixed = None
 
+# Font family for serif fonts.
+# Type: FontFamily
+c.fonts.web.family.serif = None
+
 # Font family for sans-serif fonts.
 # Type: FontFamily
-c.fonts.web.family.sans_serif = 'Open Sans'
+c.fonts.web.family.sans_serif = 'DejaVu Sans'
 
 # Font family for cursive fonts.
 # Type: FontFamily
@@ -465,7 +746,7 @@ c.fonts.web.size.default = 16
 config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/dracula-all-sites.css ""')
 config.bind(',s', 'config-cycle statusbar.hide')
 config.bind('<Ctrl+w>', None)
-config.bind('M', 'hint links spawn mpv {hint-url}')
+config.bind('M', 'hint links spawn mpv --geometry=50%+10+10 {hint-url}')
 
 # Bindings for insert mode
 config.bind('<Ctrl+a>', 'fake-key <Home>', mode='insert')

@@ -9,7 +9,8 @@ Xft.autohint:   false
 *termname: st-256color
 
 ! Need full path here
-#include "/home/qwerty/Public/themes/xresources/xresources/base16-tomorrow-night-256.Xresources" 
+/* #include "/home/qwerty/.dotfiles/colors/dracula" */ 
+#include "/home/qwerty/Public/themes/xresources/xresources/base16-material-darker-256.Xresources" 
 
 ! --- background
 *dwm.colgray1: base00

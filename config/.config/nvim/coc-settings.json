@@ -1,0 +1,6 @@
+{
+  "eslint.packageManager": "npm",
+  "eslint.options": {"configFile": "/home/qwerty/.eslintrc"},
+  "eslint.autoFixOnSave": "true",
+  "coc.preferences.formatOnSaveFiletypes": ["css", "Markdown", "javascript", "javascriptreact", "html"]
+}

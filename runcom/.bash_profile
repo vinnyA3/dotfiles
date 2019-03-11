@@ -5,9 +5,6 @@
 READLINK=$(which readlink || which greadlink)
 CURRENT_SCRIPT=$BASH_SOURCE
 
-# Make utilities available
-PATH="$DOTFILES_DIR/bin:$PATH"
-
 if [[ -n $CURRENT_SCRIPT && -x "$READLINK" ]]; then
   SCRIPT_PATH=$($READLINK -f "$CURRENT_SCRIPT")
   DOTFILES_DIR=$(dirname "$(dirname "$SCRIPT_PATH")")
@@ -18,8 +15,11 @@ else
   return
 fi
 
+# Make utilities available
+PATH="$DOTFILES_DIR/bin:$PATH"
+
 # Source the dotfiles (order matters here)
-for DOTFILE in "$DOTFILES_DIR"/sys/.{functions,env,alias,completion,prompt,terminal}; do
+for DOTFILE in "$DOTFILES_DIR"/sys/.{functions,env,nvm,alias,completion,prompt,terminal}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
