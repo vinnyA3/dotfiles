@@ -21,7 +21,8 @@ stow runcom
 stow git
 stow config
 stow xmonad
-stow scripts
 stow vim
 stow tmux
 stow x-files
+# custom scripts
+ln -sv $DOTFILES_DIR/scripts/bin $HOME/.local/bin
