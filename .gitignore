@@ -1,5 +1,6 @@
 # Config
 # check sub dir config/.config
+config/.config/*
 #
 # Vim
 vim/.vim/*
@@ -18,8 +19,5 @@ tmux/.tmux/plugins/*
 # Xmonad
 xmonad/.xmonad/*
 !/xmonad/.xmonad/xmonad.hs
-
-elvish/.elvish/*
-!/elvish/.elvish/rc.elv
 
 TODO.md
