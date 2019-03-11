@@ -14,14 +14,13 @@ if [is-executable git -a -d "$DOTFILES_DIR/.git"]; then
 fi
 
 # Create symlinks (nvm) refactor to use stow ... later
-ln -sfv $DOTFILES_DIR/nvm ~/.nvm
+# ln -sfv $DOTFILES_DIR/nvm ~/.nvm
 
 # Stow
 stow runcom
 stow git
 stow config
+stow xmonad
 stow vim
 stow tmux
-stow elvish
-stow xmonad
 stow x-files
