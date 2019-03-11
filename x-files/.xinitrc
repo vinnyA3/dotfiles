@@ -13,8 +13,7 @@ if [ -f "$userresources" ]; then
 fi
 
 # exec feh --bg-scale $HOME/Pictures/wallpaper/samus.png &
-exec unclutter &
-exec slstatus &
+exec unclutter -grab &
 exec redshift &
 exec compton --config $HOME/.config/compton/compton.conf &
 
