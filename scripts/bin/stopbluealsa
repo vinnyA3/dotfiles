@@ -1,0 +1,7 @@
+#!/bin/bash
+if pgrep -x "bluealsa" > /dev/null
+then
+  bluealsa_pid=$(ps aux | awk '/bluealsa/ && /\/usr\/bin/{ print $2 }')
+  SUDO_ASKPASS=/home/qwerty/.local/bin/dpass sudo -A kill $bluealsa_pid
+fi
+
