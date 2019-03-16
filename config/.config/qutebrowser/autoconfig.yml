@@ -3,5 +3,31 @@
 
 config_version: 2
 settings:
+  bindings.commands:
+    global:
+      insert:
+        <Ctrl+a>: fake-key <Home>
+        <Ctrl+e>: fake-key <End>
+        <Ctrl+k>: fake-key <Shift-End> ;; fake-key <Delete>
+        <Ctrl+u>: fake-key <Shift+Home> ;; fake-key <Delete>
+        <Ctrl+w>: fake-key <Ctrl-backspace>
+      normal:
+        ',n': config-cycle content.user_stylesheets ~/.config/qutebrowser/jellybeans-all-sites.css
+          ""
+        ',s': config-cycle statusbar.hide
+        <Ctrl+w>: null
+        M: hint links spawn mpv --geometry=50%+10+10 {hint-url}
+  bindings.key_mappings:
+    global:
+      <Ctrl-6>: <Ctrl-^>
+      <Ctrl-Enter>: <Ctrl-Return>
+      <Ctrl-J>: <Return>
+      <Ctrl-M>: <Return>
+      <Ctrl-[>: <Escape>
+      <Enter>: <Return>
+      <Shift-Enter>: <Return>
+      <Shift-Return>: <Return>
   content.user_stylesheets:
     global: null
+  statusbar.hide:
+    global: false
