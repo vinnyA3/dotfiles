@@ -12,7 +12,7 @@ vim/.vim/*
 !vim/.vim/vimrc/snippets/*
 !vim/.vim/vimrc
 
-scripts/.bin/xmonad
+scripts/bin/xmonad
 # Nvm
 nvm/*
 !nvm/.nvmrc
