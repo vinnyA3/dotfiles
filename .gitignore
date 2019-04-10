@@ -13,6 +13,8 @@ vim/.vim/*
 !vim/.vim/vimrc
 
 scripts/bin/xmonad
+scripts/bin/st
+scripts/bin/dwm
 # Nvm
 nvm/*
 !nvm/.nvmrc
