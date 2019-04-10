@@ -184,6 +184,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 nnoremap <C-p> :FZF<Cr>
 nnoremap <C-b> :Buffers<Cr>
+nnoremap <C-r> :Rg<Cr>
 
 " let g:dracula_colorterm = 0
 " let g:dracula_italic = 0
@@ -275,6 +276,9 @@ function! LightLineGitBranch()
   let l:branch = fugitive#head()
   return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
+
+" FT
+au BufNewFile,BufRead *.ejs set filetype=html 
 
 augroup file-types
   autocmd!
