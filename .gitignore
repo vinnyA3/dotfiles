@@ -1,6 +1,9 @@
 # Config
 # check sub dir config/.config
 config/.config/*
+!config/.config/dunst/
+!config/.config/ranger/
+!config/.config/qutebrowser/
 
 #
 # Vim
@@ -9,7 +12,9 @@ vim/.vim/*
 !vim/.vim/vimrc/snippets/*
 !vim/.vim/vimrc
 
-scripts/.bin/xmonad
+scripts/bin/xmonad
+scripts/bin/st
+scripts/bin/dwm
 # Nvm
 nvm/*
 !nvm/.nvmrc

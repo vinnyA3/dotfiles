@@ -91,7 +91,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = '~/.config/qutebrowser/dracula-all-sites.css'
+c.content.user_stylesheets = []
 
 # Enable WebGL.
 # Type: Bool
@@ -742,8 +742,17 @@ c.fonts.web.family.fantasy = None
 # Type: Int
 c.fonts.web.size.default = 16
 
+# This setting can be used to map keys to other keys. When the key used
+# as dictionary-key is pressed, the binding for the key used as
+# dictionary-value is invoked instead. This is useful for global
+# remappings of keys, for example to map Ctrl-[ to Escape. Note that
+# when a key is bound (via `bindings.default` or `bindings.commands`),
+# the mapping is ignored.
+# Type: Dict
+c.bindings.key_mappings = {'<Ctrl+6>': '<Ctrl+^>', '<Ctrl+Enter>': '<Ctrl+Return>', '<Ctrl+j>': '<Return>', '<Ctrl+m>': '<Return>', '<Ctrl+[>': '<Escape>', '<Enter>': '<Return>', '<Shift+Enter>': '<Return>', '<Shift+Return>': '<Return>'}
+
 # Bindings for normal mode
-config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/dracula-all-sites.css ""')
+config.bind(',n', 'config-cycle content.user_stylesheets ~/.config/qutebrowser/jellybeans-all-sites.css ""')
 config.bind(',s', 'config-cycle statusbar.hide')
 config.bind('<Ctrl+w>', None)
 config.bind('M', 'hint links spawn mpv --geometry=50%+10+10 {hint-url}')

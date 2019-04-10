@@ -48,10 +48,10 @@ myNormalBorderColor = "#BFBFBF"
 myFocusedBorderColor = "#89DDFF"
 
 -- status bar
-xmproc = "polybar main"
+xmproc = "polybar --config=/home/qwerty/.config/polybar/desktop-config main"
 
 -- gaps (border / window spacing)
-gaps = spacingRaw True (Border 0 10 10 10) True (Border 10 10 10 10) True 
+gaps = spacingRaw True (Border 0 0 0 0) False (Border 8 8 8 8) True 
 
 workspaceIcons =
   [ "\xe17e"
@@ -60,10 +60,11 @@ workspaceIcons =
   , "\xe181"
   , "\xe182"
   , "\xe183"
-  , "\xe184"
-  , "\xe185"
-  , "\xe186"
   ]
+
+  -- , "\xe184"
+  -- , "\xe185"
+  -- , "\xe186"
 
 -- My Workspaces
 workspaceNames =
@@ -203,14 +204,14 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , broadcastMessage ReleaseResources >> restart "xmonad" True
          ) -- %! Restart xmonad
        , ( (modm .|. shiftMask, xK_x)
-         , spawn "kill $(pidof polybar); polybar main"
+         , spawn "kill $(pidof polybar); polybar --config=/home/qwerty/.config/polybar/desktop-config main"
          ) -- %! Kill & restart statusbar (polybar)
        , ((modm, xK_z)              , sendMessage MirrorShrink)
        , ((modm, xK_a)              , sendMessage MirrorExpand)
        , ((modm, xK_e)              , toggleFloatNext)
        , ((modm .|. shiftMask, xK_e), toggleFloatAllNew)
        , ( (modm .|. shiftMask, xK_p)
-         , spawn "notify-send ' Taking screenshot in 5..4..3..2..1..';scrot ~/Pictures/screenshots/'%Y-%m-%d_$wx$h.png' -c -d 5;notify-send ' Screenshot taken!'"
+         , spawn "notify-send -t 4998 ' Taking screenshot in 5..4..3..2..1..';scrot ~/Pictures/screenshots/'%Y-%m-%d_$wx$h.png' -c -d 5;notify-send ' Screenshot taken!'"
          )
                         -- toggle fullscreen (really just lower status bar
                         --    below everything)
@@ -243,7 +244,7 @@ defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , workspaces         = myWorkspaces
 , keys               = myKeys
 , manageHook         = myNewManageHook <+> manageDocks
-, layoutHook         = avoidStruts $ smartBorders $ gaps $ myLayout
+, layoutHook         = avoidStruts $ gaps $ myLayout
 , startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/the-look.jpg"
 }
 

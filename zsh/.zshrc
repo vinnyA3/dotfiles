@@ -4,6 +4,8 @@ source $HOME/.zshenv
 
 # Set vim keybindings
 bindkey -v
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
 
 # =============
 #    PROMPT
@@ -74,11 +76,22 @@ for cmd in "${NODE_GLOBALS[@]}"; do
   eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
 done
 
+npm-do () {
+  PATH=$(npm bin):$PATH
+  eval $@
+}
+
 # ==============
 #    AUTOCOMP 
 # ==============
 autoload -U compinit
 compinit
+
+
+# ==============
+#    HISTORY 
+# ==============
+HISTSIZE=1000000
 
 # ==============
 #    PLUGINS

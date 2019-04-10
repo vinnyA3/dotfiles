@@ -184,6 +184,7 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 nnoremap <C-p> :FZF<Cr>
 nnoremap <C-b> :Buffers<Cr>
+nnoremap <C-r> :Rg<Cr>
 
 " let g:dracula_colorterm = 0
 " let g:dracula_italic = 0
@@ -198,6 +199,9 @@ augroup on_change_colorschema
 augroup END
 
 colorscheme base16-material-darker 
+
+" adhere to terminal tranparency
+hi Normal guibg=NONE ctermbg=NONE
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -272,6 +276,9 @@ function! LightLineGitBranch()
   let l:branch = fugitive#head()
   return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
+
+" FT
+au BufNewFile,BufRead *.ejs set filetype=html 
 
 augroup file-types
   autocmd!
