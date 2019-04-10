@@ -87,6 +87,12 @@ npm-do () {
 autoload -U compinit
 compinit
 
+
+# ==============
+#    HISTORY 
+# ==============
+HISTSIZE=1000000
+
 # ==============
 #    PLUGINS
 # ==============
