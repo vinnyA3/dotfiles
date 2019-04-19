@@ -119,7 +119,7 @@ myNewManageHook = composeAll
 myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XConfig { XMonad.modMask = modMask }) =
   M.fromList
-    $  [ ((modm .|. shiftMask, xK_Return), spawn myTerminal)
+    $  [ ((modm, xK_Return), spawn myTerminal)
        , ((modm, xK_p)                   , spawn myLauncher)
        , ((modm, xK_Tab)                 , nextWS)
        , ((modm .|. shiftMask, xK_Tab)   , prevWS)
