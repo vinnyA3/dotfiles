@@ -23,11 +23,6 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[blue]%}) %{$fg[yellow]%}✗"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 # interactive cd
-vf() {
-  local files
-  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
-  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
-}
 
 # Outputs current branch info in prompt format
 function git_prompt_info() {
@@ -90,11 +85,19 @@ f() {
 }
 
 # ==============
+#    FZF 
+# ==============
+vf() {
+  local files
+  IFS=$'\n' files=($(fzf-tmux --query="$1" --multi --select-1 --exit-0))
+  [[ -n "$files" ]] && ${EDITOR:-vim} "${files[@]}"
+}
+
+# ==============
 #    AUTOCOMP 
 # ==============
 autoload -U compinit
 compinit
-
 
 # ==============
 #    HISTORY 
