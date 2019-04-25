@@ -15,6 +15,10 @@ vim/.vim/*
 scripts/bin/xmonad
 scripts/bin/st
 scripts/bin/dwm
+scripts/bin/dmenu
+scripts/bin/dmenu_run
+scripts/bin/dmenu_path
+scripts/bin/stest
 # Nvm
 nvm/*
 !nvm/.nvmrc
