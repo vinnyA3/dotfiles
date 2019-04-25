@@ -17,7 +17,6 @@ import XMonad.Layout.Accordion
 import XMonad.Layout.NoBorders
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
-import XMonad.Layout.Spiral
 import XMonad.Util.Loggers
 import XMonad.Util.NamedWindows (getName)
 import XMonad.Util.Font
@@ -33,25 +32,18 @@ import Data.Bits ((.|.))
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
--- DefaultTerminal: Set to succless terminal
+-- State
 myTerminal = "st"
-
--- Launcher (ie. dmenu, rofi...)
-myLauncher = "dmenu_run"
+myLauncher = "dmenu_run -fn 'Tamzen-10' -nf '#fff' -b -y '0' -x '420' -w '600' -h '27' -p ' Search '"
+myScreenshot = "shot" -- custom script '.local/bin/shot'
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
 
 -- Border Styling
-myBorderWidth = 3
+myBorderWidth = 2
 myNormalBorderColor = "#BFBFBF"
 myFocusedBorderColor = "#89DDFF"
-
--- status bar
-xmproc = "polybar --config=/home/qwerty/.config/polybar/desktop-config main"
-
--- gaps (border / window spacing)
-gaps = spacingRaw True (Border 0 0 0 0) False (Border 8 8 8 8) True 
 
 workspaceIcons =
   [ "\xe17e"
@@ -61,10 +53,6 @@ workspaceIcons =
   , "\xe182"
   , "\xe183"
   ]
-
-  -- , "\xe184"
-  -- , "\xe185"
-  -- , "\xe186"
 
 -- My Workspaces
 workspaceNames =
@@ -76,23 +64,26 @@ workspaceNames =
   , "Media"
   ]
 
-myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
- where
-  wrapWorkspaces icons workspaces =
-    [ i ++ " " ++ ws | (i, ws) <- zip icons workspaces ]
+xmproc = "polybar --config=/home/qwerty/.config/polybar/desktop-config main" --statusbar
+
+gaps = spacingRaw True (Border 0 0 0 0) False (Border 8 8 8 8) True -- gaps (border / window spacing)
+-- myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
+--  where
+--   wrapWorkspaces icons workspaces =
+--     [ i ++ " " ++ ws | (i, ws) <- zip icons workspaces ]
+myWorkspaces = workspaceNames
 
 -- Layout Hook
-myLayout = sizeTall ||| spir ||| Accordion
+myLayout = sizeTall ||| Accordion
  where
   sizeTall = ResizableTall 1 (3 / 100) (1 / 2) []
-  spir     = spiral (6 / 7)
 
 -- myManageHook
 myManageHook = composeAll . concat $
-  [ [className =? "qutebrowser" --> doShift " Qutebrowser"]
-  , [className =? "Spotify" --> doShift " Media"]
-  , [className =? "Firefox" --> doShift " Firefox"]
-  , [className =? "Chromium" --> doShift " Chrome"]
+  [ [className =? "qutebrowser" --> doShift "Qutebrowser"]
+  , [className =? "Spotify" --> doShift "Media"]
+  , [className =? "Firefox" --> doShift "Firefox"]
+  , [className =? "Chromium" --> doShift "Chrome"]
   , [className =? c --> doRectFloat (W.RationalRect 0.3 0.3 0.4 0.4) | c <- floatsClass]
   , [wmName =? "sxiv" -->  doRectFloat (W.RationalRect 0.3 0.3 0.4 0.4)] 
   ]
@@ -119,7 +110,7 @@ myNewManageHook = composeAll
 myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XConfig { XMonad.modMask = modMask }) =
   M.fromList
-    $  [ ((modm, xK_Return), spawn myTerminal)
+    $  [ ((modm .|. shiftMask, xK_Return), spawn myTerminal)
        , ((modm, xK_p)                   , spawn myLauncher)
        , ((modm, xK_Tab)                 , nextWS)
        , ((modm .|. shiftMask, xK_Tab)   , prevWS)
@@ -128,9 +119,6 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          )
        , ( (modm .|. controlMask .|. shiftMask, xK_c)
          , namedScratchpadAction scratchpads "cmus"
-         )
-       , ( (modm .|. controlMask .|. shiftMask, xK_w)
-         , namedScratchpadAction scratchpads "chat"
          )
        -- audio keybindings
        , ( (0, xF86XK_AudioRaiseVolume)
@@ -195,7 +183,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , windows W.swapUp
          ) -- %! Swap the focused window with the previous window
         -- , ((mod4Mask              , xK_m     ), windows W.focusMaster  ) -- %! Move focus to the master window
-       , ( (mod4Mask .|. shiftMask, xK_c)
+       , ( (mod4Mask, xK_c)
          , kill
          ) -- %! Close the focused window
        , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess))
@@ -211,7 +199,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ((modm, xK_e)              , toggleFloatNext)
        , ((modm .|. shiftMask, xK_e), toggleFloatAllNew)
        , ( (modm .|. shiftMask, xK_p)
-         , spawn "notify-send -t 4998 ' Taking screenshot in 5..4..3..2..1..';scrot ~/Pictures/screenshots/'%Y-%m-%d_$wx$h.png' -c -d 5;notify-send ' Screenshot taken!'"
+         , spawn myScreenshot 
          )
                         -- toggle fullscreen (really just lower status bar
                         --    below everything)
@@ -244,7 +232,7 @@ defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , workspaces         = myWorkspaces
 , keys               = myKeys
 , manageHook         = myNewManageHook <+> manageDocks
-, layoutHook         = avoidStruts $ gaps $ myLayout
-, startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/the-look.jpg"
+, layoutHook         = avoidStruts $ gaps $ smartBorders $ myLayout
+, startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/mai-san.png"
 }
 
