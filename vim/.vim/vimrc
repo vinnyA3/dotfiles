@@ -91,8 +91,8 @@ if has('nvim')
   " - avoid term buffers from closing on buf switch
   set hidden
   set termguicolors
-  tnoremap <Esc> <C-\><C-n>
-  tnoremap <C-v><Esc> <Esc>
+  tnoremap <Esc><Esc> <C-\><C-n>
+  " tnoremap <C-v><Esc> <Esc>
   " - easy window navigation - when in term
   tnoremap <C-h> <C-\><C-n><C-w>h
   tnoremap <C-j> <C-\><C-n><C-w>j
@@ -151,7 +151,7 @@ nnoremap <C-r> :Rg<Cr>
 
 " fff
 let g:fff#split = "30new"
-nnoremap F :F<CR>
+nnoremap <Leader>f :F<CR>
 
 " let g:dracula_colorterm = 0
 " let g:dracula_italic = 0
