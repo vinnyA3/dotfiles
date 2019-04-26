@@ -69,7 +69,7 @@ snap_bl()
     wtp $GAP $((SH - SH/2 + GAP/2 - 40)) $HSW $HSH $PFW
 }
 
-direction=$(echo "h\nl\nk\nj\ntr\ntl\nbr\nbl" | dmenu -p 'Direction:')
+direction=$(echo "h\nl\nk\nj\ntr\ntl\nbr\nbl" | dmenu -fn 'Tamzen-10' -nf '#fff' -b -y '0' -x '420' -w '600' -h '27' -p ' Direction ')
 
 case $direction in
     h|a|west|left)  snap_left ;;
@@ -81,4 +81,3 @@ case $direction in
     tl|northwest)   snap_tl ;;
     bl|southwest)   snap_bl ;;
 esac
-
