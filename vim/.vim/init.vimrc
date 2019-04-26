@@ -16,7 +16,6 @@ packadd minpac
 if !exists('*minpac#init') "load plugin-less env
   call CheckNvim()
 else
-  call CheckNvim()
   " minpac is loaded
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
@@ -50,4 +49,6 @@ else
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+  " check if neovim is installed
+  call CheckNvim()
 endif
