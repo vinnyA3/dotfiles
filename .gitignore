@@ -4,6 +4,7 @@ config/.config/*
 !config/.config/dunst/
 !config/.config/ranger/
 !config/.config/qutebrowser/
+!config/.config/polybar/
 
 #
 # Vim
@@ -11,6 +12,10 @@ vim/.vim/*
 !vim/.vim/autoload/*
 !vim/.vim/vimrc/snippets/*
 !vim/.vim/vimrc
+!vim/.vim/init.vimrc
+!vim/.vim/general.vimrc
+!vim/.vim/plugins.vimrc
+!vim/.vim/keys.vimrc
 
 scripts/bin/xmonad
 scripts/bin/st
