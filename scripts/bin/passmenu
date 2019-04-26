@@ -42,7 +42,9 @@ while [ "$DONE" -eq 0 ] ; do
     else
       # not a directory so it must be a real password entry
       if [[ $typeit -eq 0 ]]; then
-        pass show -c "$SELECTION" 2>/dev/null; notify-send "Password for '$entry' copied to clipboard!"
+        pass show -c "$SELECTION" 2>/dev/null; notify-send "Pass for:
+'$SELECTION'
+copied to clipboard!"
       else
         xdotool - <<<"type --clearmodifiers -- $(pass show "$SELECTION" | head -n 1)"
       fi
