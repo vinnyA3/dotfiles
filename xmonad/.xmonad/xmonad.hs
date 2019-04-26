@@ -32,6 +32,11 @@ import Data.Bits ((.|.))
 import qualified XMonad.StackSet as W
 import qualified Data.Map as M
 
+-- Border Styling
+myBorderWidth = 2
+myNormalBorderColor = "#BFBFBF"
+myFocusedBorderColor = "#89DDFF"
+
 -- State
 myTerminal = "st"
 myLauncher = "dmenu_run -fn 'Tamzen-10' -nf '#fff' -b -y '0' -x '420' -w '600' -h '27' -p ' Search '"
@@ -39,11 +44,6 @@ myScreenshot = "shot" -- custom script '.local/bin/shot'
 
 -- ModKey: Set to Windows Key
 modm = mod4Mask
-
--- Border Styling
-myBorderWidth = 2
-myNormalBorderColor = "#BFBFBF"
-myFocusedBorderColor = "#89DDFF"
 
 workspaceIcons =
   [ "\xe17e"
