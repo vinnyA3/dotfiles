@@ -110,7 +110,7 @@ myNewManageHook = composeAll
 myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XConfig { XMonad.modMask = modMask }) =
   M.fromList
-    $  [ ((modm .|. shiftMask, xK_Return), spawn myTerminal)
+    $  [ ((modm, xK_Return), spawn myTerminal)
        , ((modm, xK_p)                   , spawn myLauncher)
        , ((modm, xK_Tab)                 , nextWS)
        , ((modm .|. shiftMask, xK_Tab)   , prevWS)
@@ -173,7 +173,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (mod4Mask, xK_l)
          , sendMessage Expand
          ) -- %! Expand the master area
-       , ( (mod4Mask, xK_Return)
+       , ( (mod4Mask, xK_m)
          , windows W.swapMaster
          ) -- %! Swap the focused window and the master window
        , ( (mod4Mask .|. shiftMask, xK_j)
