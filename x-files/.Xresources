@@ -12,19 +12,23 @@ Xft.autohint:   false
 /* #include "/home/qwerty/.dotfiles/colors/dracula" */ 
 #include "/home/qwerty/Public/themes/xresources/xresources/base16-material-darker-256.Xresources" 
 
-! --- background
-*dwm.colgray1: base00
-*dwm.colgray2: base02
-/* *dwm.colgray1: #161821 */
-/* *dwm.colgray2: #d2d4de */
+dmenu.selforeground:	    #FFFFFF
+dmenu.background:	        #000000
+dmenu.selbackground:	    #0C73C2
+dmenu.foreground:	        #A0A0A0a
+/* ! --- background */
+/* *dwm.colgray1: base00 */
+/* *dwm.colgray2: base02 */
+/* /1* *dwm.colgray1: #161821 *1/ */
+/* /1* *dwm.colgray2: #d2d4de *1/ */
  
-! --- foreground
-*dwm.colgray3: base05
-*dwm.colgray4: base00
-/* *dwm.colgray3: #d2d4de */
-/* *dwm.colgray4: #161821 */
+/* ! --- foreground */
+/* *dwm.colgray3: base05 */
+/* *dwm.colgray4: base00 */
+/* /1* *dwm.colgray3: #d2d4de *1/ */
+/* /1* *dwm.colgray4: #161821 *1/ */
 
-! --- borders and such
-*dwm.colcyan: base0C
-/* *dwm.colcyan: #b4be82 */
+/* ! --- borders and such */
+/* *dwm.colcyan: base0C */
+/* /1* *dwm.colcyan: #b4be82 *1/ */
 
