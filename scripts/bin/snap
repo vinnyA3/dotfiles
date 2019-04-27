@@ -18,6 +18,9 @@ GAP=${GAP:-18}
 PFW=$(xprop -root _NET_ACTIVE_WINDOW | cut -d ' ' -f 5)
 BW=$(wattr b $PFW)
 
+RHSW=$(wattr w $PFW)
+RHSH=$(wattr h $PFW)
+
 # get root window's size
 ROOT=$(lsw -r)
 SW=$(wattr w $ROOT)
@@ -46,8 +49,10 @@ snap_left()
     wtp $GAP $((GAP + TOP_PANEL)) $((SW/2 - 2*BW - GAP - GAP/2)) $((SH - 2*BW - 90)) $PFW
 }
 
-HSW=$((SW/2 - 2*BW - GAP - GAP/2))
-HSH=$((SH/2 - 2*BW - GAP - GAP/2))
+# HSW=$((SW/2 - 2*BW - GAP - GAP/2))
+# HSH=$((SH/2 - 2*BW - GAP - GAP/2))
+HSW=$((SW/2 - 2*BW - GAP))
+HSH=$((SH/2 - 2*BW - GAP))
 
 snap_tr()
 {
@@ -56,7 +61,7 @@ snap_tr()
 
 snap_br()
 {
-    wtp $((SW - SW/2 + GAP/2)) $((SH - SH/2 + GAP/2 - 40)) $HSW $HSH $PFW
+    wtp $((SW - SW/2 + GAP/2)) $((SH - SH/2 + GAP/2 - 40)) $HSW $HSH $PFW 
 }
 
 snap_tl()
