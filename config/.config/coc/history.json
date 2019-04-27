@@ -1,0 +1,11 @@
+{
+  "extensions": {
+    "%2Fhome%2Fqwerty%2F": {
+      "dotfiles%2Fvim%2F": {
+        "vim": [
+          "Og "
+        ]
+      }
+    }
+  }
+}

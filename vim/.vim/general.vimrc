@@ -1,3 +1,4 @@
+" general settings
 " remap space for leader
 nnoremap <Space> <Nop>
 vnoremap <Space> <Nop>

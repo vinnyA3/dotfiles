@@ -25,8 +25,8 @@ scripts/bin/dmenu_run
 scripts/bin/dmenu_path
 scripts/bin/stest
 # Nvm
-nvm/*
-!nvm/.nvmrc
+nvm
+# !nvm/.nvmrc
 
 # Tmux
 tmux/.tmux/plugins/*

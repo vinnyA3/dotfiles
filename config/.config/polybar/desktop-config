@@ -15,17 +15,14 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:background:#444}
-; background = #222
-background-alt = #444
-foreground = ${xrdb:foreground:#dfdfdf}
-; foreground = #dfdfdf
-; foreground-alt = ${xrdb:color8:#dfdfdf} 
-foreground-alt = #727272
+background = ${xrdb:background}
+background-alt = ${xrdb:color18}
+foreground = ${xrdb:foreground}
+foreground-alt = ${xrdb:color19}
 
 primary = ${xrdb:color2:#e60053} 
-secondary = ${xrdb:color1:#e60053} 
-alert = ${xrdb:color1:#e60053} 
+secondary = ${xrdb:color5} 
+alert = ${xrdb:color9} 
 
 [bar/main]
 monitor = ${env:MONITOR:HDMI-1}
@@ -107,7 +104,8 @@ interval = 25
 
 mount-0 = /home
 
-label-mounted = %{F#8be9fd}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#95AEC7}%mountpoint%%{F-}: %percentage_used%%
+; label-mounted-foreground = ${xrdb:color6}
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -124,7 +122,7 @@ enable-click = true
 enable-scroll = false
 label-active-foreground = ${colors.foreground}
 label-active-background = ${colors.background}
-label-active-underline = ${xrdb:color4} 
+label-active-underline = ${xrdb:color6} 
 label-empty-padding = 2
 label-active-padding = 2
 label-urgent-background = ${colors.primary}
@@ -199,7 +197,6 @@ time-alt = %H:%M:%S
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-; format-underline = #50fa7b
 label = %time% %date%
 
 [module/alsa]
@@ -214,12 +211,12 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #50fa7b
-bar-volume-foreground-1 = #50fa7b
-bar-volume-foreground-2 = #50fa7b
-bar-volume-foreground-4 = #50fa7b
-bar-volume-foreground-5 = #ffb86c 
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = ${xrdb:color2}
+bar-volume-foreground-1 = ${xrdb:color2}
+bar-volume-foreground-2 = ${xrdb:color2}
+bar-volume-foreground-4 = ${xrdb:color2}
+bar-volume-foreground-5 = ${colors:alert} 
+bar-volume-foreground-6 = ${colors:secondary} 
 bar-volume-gradient = false
 bar-volume-indicator = | 
 bar-volume-indicator-font = 1
