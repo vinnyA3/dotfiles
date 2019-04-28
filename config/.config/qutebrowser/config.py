@@ -40,6 +40,20 @@ c.search.ignore_case = 'smart'
 # Type: Bool
 c.search.incremental = True
 
+# Backend to use to display websites. qutebrowser supports two different
+# web rendering engines / backends, QtWebKit and QtWebEngine. QtWebKit
+# was discontinued by the Qt project with Qt 5.6, but picked up as a
+# well maintained fork: https://github.com/annulen/webkit/wiki -
+# qutebrowser only supports the fork. QtWebEngine is Qt's official
+# successor to QtWebKit. It's slightly more resource hungry than
+# QtWebKit and has a couple of missing features in qutebrowser, but is
+# generally the preferred choice.
+# Type: String
+# Valid values:
+#   - webengine: Use QtWebEngine (based on Chromium).
+#   - webkit: Use QtWebKit (based on WebKit, similar to Safari).
+c.backend = 'webengine'
+
 # Enable host blocking.
 # Type: Bool
 c.content.host_blocking.enabled = False
@@ -91,7 +105,7 @@ config.set('content.javascript.enabled', True, 'qute://*/*')
 
 # List of user stylesheet filenames to use.
 # Type: List of File, or File
-c.content.user_stylesheets = []
+c.content.user_stylesheets = '~/.config/qutebrowser/jellybeans-all-sites.css'
 
 # Enable WebGL.
 # Type: Bool
