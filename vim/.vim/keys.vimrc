@@ -13,10 +13,15 @@ tnoremap <C-h> <C-\><C-n><C-w>h
 tnoremap <C-j> <C-\><C-n><C-w>j
 tnoremap <C-k> <C-\><C-n><C-w>k
 tnoremap <C-l> <C-\><C-n><C-w>l
-" resizing Windows
-nnoremap <C-up> <C-W>+
-nnoremap <C-down> <C-W>-
-nnoremap <C-left> <C-W><
-nnoremap <C-right> <C-W>>
+" disable arrow keys
+nnoremap <up> <nop>
+nnoremap <left> <nop>
+nnoremap <right> <nop>
+nnoremap <down> <nop>
+" rebind arrow keys to window resize
+map <left> :5winc ><CR>
+map <right> :5winc <<CR>
+map <down> :5winc +<CR>
+map <up> :5winc -<CR>
 " search and replace all occurences of focused word
 nmap <Leader>s :%s/\<<C-r><C-w>\>/
