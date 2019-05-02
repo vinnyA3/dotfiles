@@ -233,6 +233,5 @@ defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , keys               = myKeys
 , manageHook         = myNewManageHook <+> manageDocks
 , layoutHook         = avoidStruts $ gaps $ smartBorders $ myLayout
-, startupHook        = spawn "feh --bg-scale /home/qwerty/Pictures/wallpaper/cammie.png"
 }
 
