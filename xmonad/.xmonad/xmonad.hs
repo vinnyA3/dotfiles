@@ -129,10 +129,10 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , spawn
            "amixer set Master 3-"
          )
-       , ((0, xF86XK_AudioNext), spawn "playerctl next")
-       , ((0, xF86XK_AudioPrev), spawn "playerctl previous")
-       , ((0, xF86XK_AudioPlay), spawn "playerctl play-pause")
-       , ((0, xF86XK_AudioStop), spawn "playerctl stop")
+       -- , ((0, xF86XK_AudioNext), spawn "playerctl next")
+       -- , ((0, xF86XK_AudioPrev), spawn "playerctl previous")
+       -- , ((0, xF86XK_AudioPlay), spawn "playerctl play-pause")
+       -- , ((0, xF86XK_AudioStop), spawn "playerctl stop")
        , ( (0, xF86XK_AudioMute)
          , spawn "amixer set Master toggle"
          )
@@ -206,10 +206,10 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ((modm, xK_b), sendMessage ToggleStruts)
        , ((modm .|. shiftMask, xK_g), toggleWindowSpacingEnabled)
                       -- floating window keys
-       , ((controlMask .|. shiftMask, xK_k), withFocused (keysMoveWindow (0, -15)))
-       , ((controlMask .|. shiftMask, xK_j), withFocused (keysMoveWindow (0, 15)))
-       , ((controlMask .|. shiftMask, xK_l), withFocused (keysMoveWindow (15, 0)))
-       , ((controlMask .|. shiftMask, xK_h), withFocused (keysMoveWindow (-15, 0)))
+       , ((modm, xK_equal), withFocused (keysMoveWindow (0, -30)))
+       , ((modm, xK_apostrophe), withFocused (keysMoveWindow (0, 30)))
+       , ((modm, xK_bracketright), withFocused (keysMoveWindow (30, 0)))
+       , ((modm, xK_bracketleft), withFocused (keysMoveWindow (-30, 0)))
        , ((controlMask .|. shiftMask, xK_m), withFocused $ keysResizeWindow (0, -15) (0, 0))
        , ((controlMask .|. shiftMask, xK_comma), withFocused $ keysResizeWindow (0, 15) (0, 0))
        ]
