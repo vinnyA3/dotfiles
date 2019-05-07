@@ -11,10 +11,10 @@ import XMonad.Hooks.FloatNext
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Hooks.EwmhDesktops
-import XMonad.Util.NamedScratchpad
+-- import XMonad.Util.NamedScratchpad
 import XMonad.Layout
-import XMonad.Layout.Accordion
 import XMonad.Layout.NoBorders
+import XMonad.Layout.Maximize
 import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
 import XMonad.Util.Loggers
@@ -45,15 +45,6 @@ myScreenshot = "shot" -- custom script '.local/bin/shot'
 -- ModKey: Set to Windows Key
 modm = mod4Mask
 
-workspaceIcons =
-  [ "\xe17e"
-  , "\xe17f"
-  , "\xe180"
-  , "\xe181"
-  , "\xe182"
-  , "\xe183"
-  ]
-
 -- My Workspaces
 workspaceNames =
   [ "Main"
@@ -74,9 +65,7 @@ gaps = spacingRaw True (Border 0 0 0 0) False (Border 8 8 8 8) True -- gaps (bor
 myWorkspaces = workspaceNames
 
 -- Layout Hook
-myLayout = sizeTall ||| Accordion
- where
-  sizeTall = ResizableTall 1 (3 / 100) (1 / 2) []
+myLayout = maximize (ResizableTall 1 (3 / 100) (1 / 2) [] ||| Full)
 
 -- myManageHook
 myManageHook = composeAll . concat $
@@ -91,19 +80,20 @@ myManageHook = composeAll . concat $
     wmName = stringProperty "WM_NAME"
     floatsClass = [ "feh"
                   , "mpv"
-                  ,"VirtualBox"
+                  , "VirtualBox",
+                  , "gimp"
                   ]
 
-scratchpads =
-  [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
-  , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
-  ]
+-- scratchpads =
+--   [ NS "htop" "st -t process -e htop" (title =? "process")  defaultFloating
+--   , NS "cmus" "st -c cmus -e cmus"    (className =? "cmus") defaultFloating
+--   ]
 
 myNewManageHook = composeAll
   [ myManageHook
   , floatNextHook
   , manageHook desktopConfig
-  , namedScratchpadManageHook scratchpads
+  -- , namedScratchpadManageHook scratchpads
   ]
 
 
@@ -114,12 +104,12 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ((modm, xK_p)                   , spawn myLauncher)
        , ((modm, xK_Tab)                 , nextWS)
        , ((modm .|. shiftMask, xK_Tab)   , prevWS)
-       , ( (modm .|. controlMask .|. shiftMask, xK_t)
-         , namedScratchpadAction scratchpads "htop"
-         )
-       , ( (modm .|. controlMask .|. shiftMask, xK_c)
-         , namedScratchpadAction scratchpads "cmus"
-         )
+       -- , ( (modm .|. controlMask .|. shiftMask, xK_t)
+       --   , namedScratchpadAction scratchpads "htop"
+       --   )
+       -- , ( (modm .|. controlMask .|. shiftMask, xK_c)
+       --   , namedScratchpadAction scratchpads "cmus"
+       --   )
        -- audio keybindings
        , ( (0, xF86XK_AudioRaiseVolume)
          , spawn
@@ -194,6 +184,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (modm .|. shiftMask, xK_x)
          , spawn "kill $(pidof polybar); polybar --config=/home/qwerty/.config/polybar/desktop-config main"
          ) -- %! Kill & restart statusbar (polybar)
+       , ((modm, xK_f)              , withFocused (sendMessage . maximizeRestore))
        , ((modm, xK_z)              , sendMessage MirrorShrink)
        , ((modm, xK_a)              , sendMessage MirrorExpand)
        , ((modm, xK_e)              , toggleFloatNext)
@@ -234,4 +225,3 @@ defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , manageHook         = myNewManageHook <+> manageDocks
 , layoutHook         = avoidStruts $ gaps $ smartBorders $ myLayout
 }
-
