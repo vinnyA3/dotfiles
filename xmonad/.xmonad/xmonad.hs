@@ -80,7 +80,7 @@ myManageHook = composeAll . concat $
     wmName = stringProperty "WM_NAME"
     floatsClass = [ "feh"
                   , "mpv"
-                  , "VirtualBox",
+                  , "VirtualBox"
                   , "gimp"
                   ]
 
@@ -95,7 +95,6 @@ myNewManageHook = composeAll
   , manageHook desktopConfig
   -- , namedScratchpadManageHook scratchpads
   ]
-
 
 myKeys :: XConfig Layout -> M.Map (KeyMask, KeySym) (X ())
 myKeys conf@(XConfig { XMonad.modMask = modMask }) =
@@ -192,11 +191,10 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
        , ( (modm .|. shiftMask, xK_p)
          , spawn myScreenshot 
          )
-                        -- toggle fullscreen (really just lower status bar
-                        --    below everything)
+       -- toggle fullscreen (really just lower status bar below everything)
        , ((modm, xK_b), sendMessage ToggleStruts)
-       , ((modm .|. shiftMask, xK_g), toggleWindowSpacingEnabled)
-                      -- floating window keys
+       , ((modm , xK_g), toggleWindowSpacingEnabled)
+       -- floating window keys
        , ((modm, xK_equal), withFocused (keysMoveWindow (0, -30)))
        , ((modm, xK_apostrophe), withFocused (keysMoveWindow (0, 30)))
        , ((modm, xK_bracketright), withFocused (keysMoveWindow (30, 0)))
@@ -218,6 +216,7 @@ main = do
 defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , normalBorderColor  = myNormalBorderColor
 , focusedBorderColor = myFocusedBorderColor
+, focusFollowsMouse  = False
 , modMask            = modm
 , terminal           = myTerminal
 , workspaces         = myWorkspaces
