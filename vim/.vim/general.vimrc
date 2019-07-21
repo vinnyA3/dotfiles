@@ -51,7 +51,7 @@ augroup on_change_colorschema
   autocmd ColorScheme * call s:base16_customize()
 augroup END
 
-colorscheme base16-material-darker
+colorscheme base16-snazzy
 
 " adhere to terminal tranparency if set
 hi Normal guibg=NONE ctermbg=NONE

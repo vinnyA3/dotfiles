@@ -64,7 +64,7 @@ workspaceNames =
   , "Media"
   ]
 
-xmproc = "polybar --config=/home/qwerty/.config/polybar/desktop-config main" --statusbar
+xmproc = "polybar main" --statusbar
 
 gaps = spacingRaw True (Border 0 0 0 0) False (Border 8 8 8 8) True -- gaps (border / window spacing)
 -- myWorkspaces = wrapWorkspaces workspaceIcons $ workspaceNames
@@ -183,7 +183,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , windows W.swapUp
          ) -- %! Swap the focused window with the previous window
         -- , ((mod4Mask              , xK_m     ), windows W.focusMaster  ) -- %! Move focus to the master window
-       , ( (mod4Mask, xK_c)
+       , ( (mod4Mask .|. shiftMask, xK_c)
          , kill
          ) -- %! Close the focused window
        , ((modMask .|. shiftMask, xK_q), io (exitWith ExitSuccess))
@@ -192,7 +192,7 @@ myKeys conf@(XConfig { XMonad.modMask = modMask }) =
          , broadcastMessage ReleaseResources >> restart "xmonad" True
          ) -- %! Restart xmonad
        , ( (modm .|. shiftMask, xK_x)
-         , spawn "kill $(pidof polybar); polybar --config=/home/qwerty/.config/polybar/desktop-config main"
+         , spawn "kill $(pidof polybar); polybar main"
          ) -- %! Kill & restart statusbar (polybar)
        , ((modm, xK_z)              , sendMessage MirrorShrink)
        , ((modm, xK_a)              , sendMessage MirrorExpand)
@@ -234,4 +234,3 @@ defaults = docks $ desktopConfig { borderWidth = myBorderWidth
 , manageHook         = myNewManageHook <+> manageDocks
 , layoutHook         = avoidStruts $ gaps $ smartBorders $ myLayout
 }
-

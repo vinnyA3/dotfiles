@@ -10,7 +10,7 @@ Xft.autohint:   false
 
 ! Need full path here
 /* #include "/home/qwerty/.dotfiles/colors/dracula" */ 
-#include "/home/qwerty/Public/themes/xresources/xresources/base16-material-darker-256.Xresources" 
+#include "/home/qwerty/Themes/themes/xresources/xresources/base16-snazzy-256.Xresources" 
 
 dmenu.selforeground:	    #FFFFFF
 dmenu.background:	        #000000

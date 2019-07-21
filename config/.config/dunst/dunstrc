@@ -86,7 +86,7 @@
 
     ### Text ###
 
-    font = Tamzen 10 
+    font = Tamzen 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -163,7 +163,7 @@
     icon_position = left
 
     # Scale larger icons down to this size, set to 0 to disable
-    max_icon_size = 50 
+    max_icon_size = 65 
 
     # Paths to default icons.
     icon_path = /home/qwerty/Pictures/profiles/
@@ -247,20 +247,20 @@
     background = "#282A36"    
     foreground = "#888888"
     timeout = 10
-    icon = /home/qwerty/Pictures/profiles/eliza.png
+    icon = /home/qwerty/Pictures/profiles/mira.png
 
 [urgency_normal]
     background = "#282A36"    
     foreground = "#ffffff"
-    timeout = 10
-    icon = /home/qwerty/Pictures/profiles/eliza.png
+    timeout = 15
+    icon = /home/qwerty/Pictures/profiles/mira.png
 
 [urgency_critical]
-    background = "#50fa7b"
+    background = "#282A36"    
     foreground = "#ffffff"
     frame_color = "#ff0000"
     timeout = 0
-    icon = /home/qwerty/Pictures/profiles/eliza.png
+    icon = /home/qwerty/Pictures/profiles/mira.png
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.

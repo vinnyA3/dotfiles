@@ -86,7 +86,7 @@ let g:startify_lists = [
 " currently using lightline: https://github.com/itchyny/lightline.vim
 " colorscheme for lightline: https://github.com/mike-hearn/base16-vim-lightline
 let g:lightline = {
-      \ 'colorscheme': 'base16_material_darker',
+      \ 'colorscheme': 'base16_snazzy',
       \ 'component': {
       \   'lineinfo': ' %3l:%-2v',
       \ },
