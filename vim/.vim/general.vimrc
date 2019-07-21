@@ -42,14 +42,14 @@ set wildmenu
 set wildignore+=**/node_modules/**
 
 " colorscheme --- currently using base16
-function! s:base16_customize() abort
-  call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
-endfunction
+" function! s:base16_customize() abort
+"   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
+" endfunction
 
-augroup on_change_colorschema
-  autocmd!
-  autocmd ColorScheme * call s:base16_customize()
-augroup END
+" augroup on_change_colorschema
+"   autocmd!
+"   autocmd ColorScheme * call s:base16_customize()
+" augroup END
 
 colorscheme base16-snazzy
 

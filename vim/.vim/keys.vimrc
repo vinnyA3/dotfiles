@@ -1,4 +1,4 @@
-nmap <silent> <leader>t :exec &rnu? "se rnu!" : "se rnu"<CR>
+nmap <silent> <leader>m :exec &rnu? "se rnu!" : "se rnu"<CR>
 " copy selected text to system clipboard (requires vim compiled with x-11)
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
@@ -25,3 +25,5 @@ map <down> :5winc +<CR>
 map <up> :5winc -<CR>
 " search and replace all occurences of focused word
 nmap <Leader>s :%s/\<<C-r><C-w>\>/
+" 'fullscreen' buffer (open current buffer in new tab)
+nnoremap <leader>t :tab split<CR>
