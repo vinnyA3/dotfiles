@@ -31,7 +31,8 @@ manager on macOS. Interestingly enough, homebrew works with linux as well; howev
 distro's package manager for the most part. The installer will try to detect
 your linux distro; specifically, it will try detect your distro's default package manager. 
 Right now, the supported linux package managers are: 
-  *  Void Linux's `xbps`
+  * Void Linux's `xbps`
+  * PopOS's `apt` 
 
 Feel free to add other package managers to the script!
 
