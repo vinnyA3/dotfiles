@@ -11,7 +11,7 @@ endif
 let &packpath = &runtimepath
 packadd minpac
 
-if exists('*minpac#init') "load plugin-less env
+if exists('*minpac#init')
   " minpac is loaded
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
@@ -40,7 +40,7 @@ if exists('*minpac#init') "load plugin-less env
   call minpac#add('tpope/vim-repeat')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
-  
+
   if executable('node') && has('nvim')
     packadd coc.nvim
   else
@@ -56,5 +56,4 @@ if exists('*minpac#init') "load plugin-less env
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
-  " check if neovim is installed
 endif
