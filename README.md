@@ -1,34 +1,55 @@
-# Dotfiles
+# :computer: Dotfiles
 
 Dotfiles are configuration files that are used to customize and personalize
 your system.  The *dotfiles* name comes from the UNIX convention of prefixing
 config files with a dot. By default, these files are usually hidden in directory
 listings.
-This repo contains my very own dotfiles.  Feel free to use anything and
+
+This repo contains my very own dotfiles, please feel free to use anything and
 everything.
 
-
-## Sys Overview
-
-* os: Arch Linux
-* window manager:  XMonad
-* statusbar: Xmobar 
-* theme: Dracula 
-* editor: Vim
-
 ## Requirements
-* gnu stow (symlink manager) - avoid having to manually create sym links
+
+**Note**: the [installer script](https://github.com/vinnyA3/dotfiles/blob/master/install.sh) will attempt to install these hard requirements :point_down: 
+- [gnu stow](https://www.gnu.org/software/stow/) (symlink manager) - avoid having to manually create sym links
+- [homebrew](https://brew.sh/) - missing package manager (mac only). 
+
+Please see the Install section directly below for more information!
+
 
 ## Install
 
 To install with Git:
 
+```bash
+    git clone https://github.com/vinnyA3/dotfiles.git ~/.dotfiles &&
+      source ~/.dotfiles/install.sh
 ```
-    git clone https://github.com/vinnyA3/dotfiles.git ~/.dotfiles
-    source ~/.dotfiles/install.sh
-```
-**Warning**:  As of now, the master installation file does not install everything
-you need, that is, if you want to get up and running without any hassle.
+
+The installer script will attempt to install GNU's *Stow* & the *Homebrew* package
+manager on macOS. Interestingly enough, homebrew works with linux as well; however, I choose to use the
+distro's package manager for the most part. The installer will try to detect
+your linux distro; specifically, it will try detect your distro's default package manager. 
+Right now, the supported linux package managers are: 
+  *  Void Linux's `xbps`
+
+Feel free to add other package managers to the script!
+
+## My System Overview
+
+* os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
+* window manager:  [xmonad](https://xmonad.org/)
+* statusbar(s): [polybar](https://github.com/polybar/polybar) - default, xmobar 
+* theme: dracula 
+* editor: neovim
+* shell: zsh
+* terminal emulator: iterm2 - macOS, alacritty/suckless term - linux
+
+The core configuration of my development env (zsh, tmux, vim, helper scripts)
+try their best to be OS agnostic; however, there are certain instances where you
+just can't get around configuration for the specific platform that you're
+working with.  For those cases, the lines are commented in/out in the config
+files.
 
 ## Additional Resources
 
