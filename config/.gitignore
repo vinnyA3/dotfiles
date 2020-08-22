@@ -22,3 +22,4 @@ qutebrowser/*
 !rofi
 !zathura/
 !redshift.conf
+!starship.toml
