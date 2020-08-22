@@ -1,4 +1,5 @@
-nmap <silent> <leader>m :exec &rnu? "se rnu!" : "se rnu"<CR>
+nmap <silent> <leader>e :exec &rnu? "se rnu!" : "se rnu"<CR>
+
 " copy selected text to system clipboard (requires vim compiled with x-11)
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
@@ -6,6 +7,12 @@ map <C-v> "+P
 noremap <leader>n :bn<cr>
 noremap <leader>p :bp<cr>
 noremap <leader>d :bd<cr>
+" - buffer deletion
+noremap <leader>c :BD<cr>
+noremap <leader>d :bd<cr>
+" close all buffers (%) , open last for editing (e#)
+noremap <leader>x :%bd\|e#<cr>
+
 " read escape in terminal .. double tap to go back to insert mode
 tnoremap <Esc><Esc> <C-\><C-n>
 " easy window navigation - when in term
@@ -26,4 +33,8 @@ map <up> :5winc -<CR>
 " search and replace all occurences of focused word
 nmap <Leader>s :%s/\<<C-r><C-w>\>/
 " 'fullscreen' buffer (open current buffer in new tab)
-nnoremap <leader>t :tab split<CR>
+
+" namp leader + t  for fulltab
+noremap <leader>z :tab split<CR>
+" nmap split terminal 
+noremap <leader>t :sp \| term<CR>

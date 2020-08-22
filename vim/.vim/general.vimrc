@@ -41,6 +41,7 @@ set path+=**
 set wildmenu
 set wildignore+=**/node_modules/**
 
+colorscheme dracula
 " colorscheme --- currently using base16
 " function! s:base16_customize() abort
 "   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
@@ -51,13 +52,19 @@ set wildignore+=**/node_modules/**
 "   autocmd ColorScheme * call s:base16_customize()
 " augroup END
 
-colorscheme base16-material-darker
 
 " adhere to terminal tranparency if set
 hi Normal guibg=NONE ctermbg=NONE
 
 " set filetypes for files with certain extentions ... helps with plugins
 au BufNewFile,BufRead *.ejs set filetype=html 
+
+" set cursorline only in active window
+augroup CursorLineOnlyInActiveWindow
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+  autocmd WinLeave * setlocal nocursorline
+augroup END
 
 augroup file-types
   autocmd!
@@ -68,3 +75,16 @@ augroup file-types
   " Allow stylesheets to autocomplete hyphenated words
   autocmd FileType css,scss,sass setlocal iskeyword+=-
 augroup END
+
+function! Bufs()
+  redir => list
+  silent ls
+  redir END
+  return split(list, "\n")
+endfunction
+
+command! BD call fzf#run(fzf#wrap({
+  \ 'source': Bufs(),
+  \ 'sink*': { lines -> execute('bwipeout '.join(map(lines, {_, line -> split(line)[0]}))) },
+  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
+\ }))
