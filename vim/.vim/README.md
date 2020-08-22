@@ -90,3 +90,18 @@ settings live here.
 #### `keys.vimrc`:
 
 The keys file contains custom keybindings & keybinding overrides.
+
+----
+
+### Additional Notes & Tips
+
+* `coc.nvim` requires NodeJS + the yarn package manager installed, as does `markdown-preview.nvim`
+* Some of the icons my look funky, depending on what fonts you have installed.
+  Please feel free to modify them according to your needs.
+* Some additional binarys you're going to need to install for the corresponding
+  wrappers/plugins:
+
+    * `fzf` - fuzzy file search
+    * `nnn` - terminal file manager
+    * `ripgrep` - line oriented search tool that recursively searchs your
+      current directory for a regex pattern 
