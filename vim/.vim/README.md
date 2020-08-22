@@ -19,7 +19,21 @@ config)
 
 See [Files](#files) for a bit more information.
 
-**Note**: I use [Neovim](https://neovim.io/).  Most things should work for Vim as well; however, I
+**Note 1**: If you ran the installer script and the script failed, or you opted
+to add things manually;
+AND you're choosing to use `nvim` > `vim`; AND you want to use this configuration/setup, then you're going to need to add an `init.vim` to your `~/.config/nvim`
+directory with the following contents:
+
+```
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+source $HOME/.vim/init.vimrc
+source $HOME/.vim/general.vimrc
+source plugin setup and keybindings
+source $HOME/.vim/plugins.vimrc
+source $HOME/.vim/keys.vimrc
+```
+
+**Note 2**: I use [Neovim](https://neovim.io/).  Most things should work for Vim as well; however, I
 can't make any promises.
 
 ### Getting Started

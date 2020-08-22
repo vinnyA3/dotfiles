@@ -103,10 +103,11 @@ HISTSIZE=1000000
 # ==============
 #    PLUGINS
 # ==============
-# Linux distros - void
-# source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-eval "$(starship init zsh)" # dynamic prompt (requires starship)
+# ==============
+#    PROMPT
+# ==============
+
+eval "$(starship init zsh)"

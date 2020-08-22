@@ -28,7 +28,7 @@ if exists('*minpac#init')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('justinmk/vim-dirvish')
-  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'call mkdp#util#install()'})
+  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'packloadall! call mkdp#util#install()'})
   call minpac#add('lifepillar/vim-mucomplete', {'type': 'opt'})
   call minpac#add('maxmellon/vim-jsx-pretty')
   call minpac#add('mcchrish/nnn.vim')
@@ -43,6 +43,7 @@ if exists('*minpac#init')
 
   if executable('node') && has('nvim')
     packadd coc.nvim
+    packadd markdown-preview.nvim
   else
     packadd vim-css-color
     packadd vim-mucomplete 
@@ -53,6 +54,7 @@ if exists('*minpac#init')
   packadd! dracula
   
   " minpac Commands
+  " note: $MYVIMRC is sourced in .config/nvim/init.vimrc
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
