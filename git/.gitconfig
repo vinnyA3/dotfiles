@@ -2,4 +2,5 @@
 	email = vincent.aceto@gmail.com
 	name = vinnyA3
 [core]
-	editor = /usr/local/bin/nvim
+  # this path will vary on diff systems, find the nvim bin path with: 'which nvim'
+	editor = /usr/bin/nvim
