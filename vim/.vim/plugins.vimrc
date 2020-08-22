@@ -49,14 +49,6 @@ nnoremap <Leader>b :Buffers<Cr>
 nnoremap <Leader>h :History<Cr>
 nnoremap <Leader>r :Rg<Cr>
 
-" Plugin: limelight + goyo
-let g:limelight_conceal_ctermfg = 'gray'
-let g:limelight_conceal_ctermfg = 240
-let g:limelight_conceal_guifg = 'DarkGray'
-let g:limelight_conceal_guifg = '#777777'
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
 " Plugin: nnn 
 " disable default mappings
 let g:nnn#set_default_mappings = 0
