@@ -1,0 +1,70 @@
+#!/bin/bash
+
+# NOTE: this script needs $ANDROID_HOME env var set & yarn installed globally
+
+# custom path for the darwin project - change as you need
+DAR_HOME=~/Development/mls-projects/darwin
+
+# default emulator - choose whatever sim you want to run on [emulator -list-avds]
+DEFAULT_EMULATOR="Pixel_3a_API_29"
+
+run_on_device() {
+  # initiate port forwarding  - see pkg.json scripts
+  yarn adb:reverse
+
+  cd $DAR_HOME/android
+
+  ./gradlew assembleDebug && ./gradlew installDebug
+  # start app on device
+  adb shell am start -n com.mlssoccer/.MainActivity
+
+  echo 'Everything should be up & running!  Now, you may want to run logcat to
+  view whatever logs are coming through ...
+  ie. `adb logcat ReactNativeJS:V com.mlssoccer:V \*:S`'
+  exit
+}
+
+run_on_sim() {
+  # start with emulator
+  if [ -e $ANDROID_HOME ] 
+  then
+    echo "Starting up on AVD: $DEFAULT_EMULATOR..."
+    # all logs are thrown into the ether
+    $ANDROID_HOME/emulator/emulator -avd $DEFAULT_EMULATOR -netdelay none -netspeed full > /dev/null 2>&1 &
+
+    echo "The emulation process has been backgrounded!"
+
+    # install & run on sim
+    cd $DAR_HOME/android
+
+    # start the app yo!
+    ./gradlew assembleDebug && ./gradlew installDebug
+
+    exit
+  else
+    echo 'The android directory does not exist in your path!'; exit
+  fi
+}
+
+cd $DAR_HOME 
+
+# check if supplied an arg (emulator or no emulator)
+DEVICE_ID=$(adb devices | tail -n +2 | awk '{ print $1 }')
+
+echo 'Attemping to start Darwin ... make sure you have the bundle process running!'
+
+if [ -z "$DEVICE_ID" ]
+then
+  run_on_sim
+  exit
+else
+  echo "Run on connected device: $DEVICE_ID ? (y/n)"
+
+  read USER_INPUT 
+
+  case $USER_INPUT in
+    'y') run_on_device;;
+    'n') run_on_sim;;
+    *) echo 'Not a valid input.  Please choose "y" or "n"'; exit;;
+  esac
+fi

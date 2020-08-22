@@ -1,0 +1,18 @@
+#!/bin/bash
+
+DOCKER_COMPOSE_LOC=$HOME/Docker
+
+if [ -z "$DOCKER_MACHINE_NAME" ]
+then
+  echo "Docker Machine is not up ... make sure to run your custom 'docker-env' script"
+else 
+  if [ -z "$(docker ps | grep main-sql)" ]
+  then
+    echo "[main-sql] not running ... Let us start it up!!"  
+    docker-compose -f $DOCKER_COMPOSE_LOC/docker-compose.yml up
+  else
+    echo "[main-sql] container is already running"
+  fi
+fi
+
+exit

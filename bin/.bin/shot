@@ -1,0 +1,4 @@
+#!/bin/sh
+notify-send -t 4998 ' Taking screenshot in 5..4..3..2..1..';
+scrot ~/Pictures/screenshots/'%Y-%m-%d-%X_$wx$h.png' -c -d 5;
+notify-send ' Screenshot taken!'

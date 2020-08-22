@@ -1,0 +1,79 @@
+#!/bin/bash
+
+# NEEDS jq & mpv (default & best player) .. to install on MAC:
+# brew install jq
+# brew install mpv
+
+# CONSTANTS
+DEFAULT_PLAYER=mpv
+# get api from env .. for now, for ease of use, we're going to add it here
+API_KEY="AIzaSyCxco0RYbcQy34J5jcLx-Qv7aTSkNCH0WE"
+
+# FUNCTIONS
+search_yt() {
+  if [ -z $1 ]
+  then
+    echo "Please supply a search term."
+    exit
+  else
+    local QUERY=$(echo $1 | sed -e 's/ /%/g') # strip spaces - use special char instead
+    local RESULT=""
+    local MAX_RESULTS=10 # determines the # of search results to return .. best to leave @ 10
+
+    VIDEO_ID=$(curl \
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$QUERY&safeSearch=none&type=video&key=$API_KEY" \
+      --header 'Accept: application/json' \
+      --compressed | jq '.items[0].id.videoId')
+
+    VIDEO_ID=$(echo $VIDEO_ID | tr -d \") # strip quotes .. maybe jq can do this?
+
+    echo "Starting MPV with videoId: $VIDEO_ID..."; play_video $VIDEO_ID
+  fi
+}
+
+# play_video :: String(term) -> Void
+play_video() {
+  if [ $DEFAULT_PLAYER == 'mpv' ]
+  then
+    mpv --geometry=50%x50% "https://www.youtube.com/watch?v=$1"
+  else
+    echo "Player $DEFAULT_PLAYER not found."
+    exit 1
+  fi
+}
+
+# INIT
+if [ ! command -v $DEFAULT_PLAYER &> /dev/null || ! command -v jq &> /dev/null ]
+then
+  echo "Please make sure that you have both $DEFAULT_PLAYER & jq installed."
+  exit 
+else
+  if [ -z $1 &> /dev/null ]
+  then
+    read -p "Enter search query: " search_query
+    search_yt $search_query 
+  else
+    search_yt $1
+  fi
+fi
+
+# check if mpv exists as a binary
+
+# If no API KEY ... then, echo "Make sure you set up your developer key on the
+# dev console .. additionaly, add the api key to your ENV"
+
+# else, if key exists ... then:
+# .. wait for a search input ... 
+# .. on enter & when search input is not empty ...
+# .... send an API request (with key attached) & retrieve related videos (maybe
+# top 10 for now ??) -- we can make this more robust later
+
+# Now, using that response, we'll have a UI to choose based on the output & the
+# number .... if user types #, then grab that url & pass to mpv .. .done (for
+# now) 
+# --- read return items (parsed with video title, video time  & attached id) array (if !empty) into a bash array
+# --- loop over that bash array & display items in a list as such ... 
+# `[i - array idx] - <Video Title> - <Time?>`
+
+# Now, wait for user input (type number -- corresponds to the array index / desired video)
+# on a succesfull & valid input ... pass that video id to mpv & make that bank

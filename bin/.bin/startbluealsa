@@ -1,0 +1,5 @@
+#!/bin/bash
+if ! pgrep -x "bluealsa" > /dev/null
+then
+  SUDO_ASKPASS=/home/qwerty/.local/bin/dpass sudo -A bluealsa > /dev/null 2>&1
+fi

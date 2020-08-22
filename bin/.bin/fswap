@@ -1,0 +1,11 @@
+#!/bin/bash
+TMPFILE=""
+
+if [ $# -ne 2 ]; then
+  echo "Usage: swap file1 file2"
+else
+  TMPFILE=$(mktemp)
+  mv "$1" $TMPFILE
+  mv "$2" "$1"
+  mv $TMPFILE "$2"
+fi

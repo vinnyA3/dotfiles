@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd $HOME && sxiv -N 'sxiv' -t Pictures/wallpaper
