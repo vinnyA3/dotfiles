@@ -12,6 +12,7 @@ vim/.vim/*
 !vim/.vim/autoload/*
 !vim/.vim/vimrc/snippets/*
 !vim/.vim/vimrc
+!vim/.vim/README.md
 !vim/.vim/init.vimrc
 !vim/.vim/general.vimrc
 !vim/.vim/plugins.vimrc
