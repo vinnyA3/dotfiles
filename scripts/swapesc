@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $(uname) == 'Linux' ]
+then
+	setxkbmap -option "caps:swapescape"
+else
+	echo 'This command only works for linux machines!'
+fi
+
