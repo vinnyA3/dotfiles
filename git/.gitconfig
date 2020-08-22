@@ -1,3 +1,5 @@
 [user]
 	email = vincent.aceto@gmail.com
 	name = vinnyA3
+[core]
+	editor = /usr/local/bin/nvim
