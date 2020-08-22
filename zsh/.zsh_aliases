@@ -1,5 +1,8 @@
+# conveniently quit the terminal session 
 alias :q=exit
 
+# tmux
+alias mux='tmuxinator' # requires tmuxinator binary
 alias tmux='tmux -f ~/.tmux/tmux.conf'
 alias ta='tmux attach -t'
 alias tad='tmux attach -d -t'
@@ -7,29 +10,37 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
+alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done'
 
-alias xp='xclip -o -selection clipboard'
-alias startx='ssh-agent startx'
-alias rtv='rtv --theme ~/.config/rtv/themes/dracula'
+# alias xp='xclip -o -selection clipboard' # available where default clip program is xclip
+# alias startx='ssh-agent startx' # start agent on xsession initialization
 alias vim='nvim'
 
-# If nvim instance ...
+# If an nvim instance exists ...
 if [[ -v NVIM_LISTEN_ADDRESS ]]; then
   alias nvim='echo "Warning: Avoid Nesting!!"'
 fi
 
+# fzf
+alias vf='vim $(fzf)'
+alias vr='vim $(rg --files | fzf)'
+
+# cat aliases
+alias cat='bat' # this requires the binary (bat) to be installed!
+
 # ls aliases
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
+# alias la='ls -A' - for ls
+alias ls='exa' # exa is an implementation of ls
 alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls CF'
+alias la='ls -a'
 
 # Dir aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-alias cd.="cd $(readlink -f .)" # Go to real dir (i.e. if current dir is linked)
 
+# Git aliases
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'

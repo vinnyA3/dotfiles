@@ -3,6 +3,9 @@
 # Tmux
 alias tmux='tmux -f ~/.tmux/tmux.conf'
 
+# Tmuxinator
+alias mux='tmuxinator'
+
 # Xclip
 alias xp='xclip -o -selection clipboard'
 
@@ -21,6 +24,9 @@ alias vim='nvim'
 if [ -n "$NVIM_LISTEN_ADDRESS" ]; then
   alias nvim='echo "Warning: Avoid Nesting!!"'
 fi
+
+# kill all android emulators(devices)
+alias kemus='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done'
 
 # Git
 alias g='git'

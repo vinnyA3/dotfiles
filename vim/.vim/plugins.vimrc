@@ -57,9 +57,11 @@ let g:limelight_conceal_guifg = '#777777'
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 
-" Plugin: fff
-let g:fff#split = "30new"
-nnoremap <Leader>f :F<CR>
+" Plugin: nnn 
+" disable default mappings
+let g:nnn#set_default_mappings = 0
+let g:nnn#layout = 'new'
+nnoremap <Leader>f :NnnPicker<CR>
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -70,33 +72,42 @@ command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args
 
 " Plugin: GitGutter
 set updatetime=1000
-nmap <Leader>gs <Plug>GitGutterStageHunk
-nmap <Leader>gu <Plug>GitGutterUndoHunk
-nmap <Leader>gn <Plug>GitGutterNextHunk
-nmap <Leader>gb <Plug>GitGutterPrevHunk
+nmap <Leader>gs <Plug>(GitGutterStageHunk)
+nmap <Leader>gu <Plug>(GitGutterUndoHunk)
+nmap <Leader>gn <Plug>(GitGutterNextHunk)
+nmap <Leader>gb <Plug>(GitGutterPrevHunk)
+
+" Plugin: vim-jsx
+let g:jsx_ext_required = 0
 
 "Plugin: Fugitive
 nnoremap <Leader>gc :Gcommit<Cr>
 
 " Plugin: Startify
 let g:startify_custom_header =
-        \ map(split(system('figlet Life is Strange'), '\n'), '"   ". v:val')
+        \ map(split(system('figlet MLS'), '\n'), '"   ". v:val')
 
 let g:startify_files_number = 10
 
+let g:startify_session_dir = '~/.vim/session'
+
 let g:startify_lists = [
-      \ { 'type': 'files',     'header': [   'Recent Files']            },
+      \ { 'type': 'files',     'header': [   'Recent Files']   },
       \ { 'type': 'bookmarks', 'header': [   'Bookmarks']      },
+      \ { 'type': 'sessions',  'header': [   'Sessions']       },
       \ { 'type': 'commands',  'header': [   'Commands']       },
       \ ]
+
+" Plugin: indentLine
+let g:indentLine_fileTypeExclude = ['json', 'md']
 
 " Plugin: Lightline
 " currently using lightline: https://github.com/itchyny/lightline.vim
 " colorscheme for lightline: https://github.com/mike-hearn/base16-vim-lightline
 let g:lightline = {
-      \ 'colorscheme': 'base16_material_darker',
+      \ 'colorscheme': 'dracula',
       \ 'component': {
-      \   'lineinfo': ' %3l:%-2v',
+      \   'lineinfo': ' %3l:%-2v',
       \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
@@ -114,3 +125,34 @@ function! LightLineGitBranch()
   let l:branch = fugitive#head()
   return l:branch ==# '' ? '' : ' ' . l:branch
 endfunction
+
+" Plugin markdown-preview.nvim
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_browser = 'chrome'
+let g:mkdp_preview_options = {
+    \ 'mkit': {},
+    \ 'katex': {},
+    \ 'uml': {},
+    \ 'maid': {},
+    \ 'disable_sync_scroll': 0,
+    \ 'sync_scroll_type': 'middle',
+    \ 'hide_yaml_meta': 1,
+    \ 'sequence_diagrams': {},
+    \ 'flowchart_diagrams': {},
+    \ 'content_editable': v:false
+    \ }
+
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_echo_preview_url = 1 
+let g:mkdp_port = '8881'
+let g:mkdp_page_title = '「${name}」'
+
+" Plugin vim-jsx-pretty
+let g:vim_jsx_pretty_template_tags = ['html', 'js', 'jsx']
+let g:vim_jsx_pretty_highlight_close_tag = 1
+let g:vim_jsx_pretty_colorful_config = 1
