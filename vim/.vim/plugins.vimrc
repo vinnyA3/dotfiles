@@ -99,7 +99,7 @@ let g:indentLine_fileTypeExclude = ['json', 'md']
 let g:lightline = {
       \ 'colorscheme': 'dracula',
       \ 'component': {
-      \   'lineinfo': ' %3l:%-2v',
+      \   'lineinfo': '📄 %3l:%-2v',
       \ },
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
@@ -115,7 +115,7 @@ let g:lightline = {
 " get branch name from vim-fugitive
 function! LightLineGitBranch()
   let l:branch = fugitive#head()
-  return l:branch ==# '' ? '' : ' ' . l:branch
+  return l:branch ==# '' ? '' : '🔨 ' . l:branch
 endfunction
 
 " Plugin markdown-preview.nvim
