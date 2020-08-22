@@ -5,9 +5,8 @@ function detect_linux_distro {
   local DISTRO=$(( lsb_release -ds || cat /etc/*release || uname -om ) 2>/dev/null | head -n1 | sed -E 's/[\"]+//g') 
 
   case $DISTRO in
-    'Void Linux')
-      PKG_INSTALL_CMD="sudo xbps-install -Syu"
-    ;;
+    'Void Linux') PKG_INSTALL_CMD="sudo xbps-install -Syu";;
+    'Pop!_OS 20.04 LTS') PKG_INSTALL_CMD="sudo apt-get install";;
     *) echo "Your distro wasn't found.  Please add to the script (fn detect_linux_distro), or install git & stow manually."; exit
     ;;
   esac
@@ -54,10 +53,17 @@ function setup_symlinks {
     echo "Creating symlinks..."
     stow runcom
     stow git
-    stow config
     stow zsh
     stow vim
     stow tmux
+
+    if [ -d "$HOME/.config" ]
+    then
+      printf "Looks like you already have a .config directory located in $HOME.\n
+If you need configs from '.dotfiles/config', please add them manually."
+    else
+      stow config
+    fi
 
     if [ $SYS == 'Linux' ]
     then
@@ -65,9 +71,9 @@ function setup_symlinks {
       stow x-files
     fi
   else
-    echo "GNU's stow is not available! Something must have went wrong during
-    installation. Please refer to the error logs above, or install stow
-    manually."
+    printf "GNU's stow is not available! Something must have went wrong during\n
+installation. Please refer to the error logs above, or install stow\n
+manually."
   fi
 }
 
@@ -80,6 +86,7 @@ function setup_symlinks {
 
 echo "Let's get started!
 First, we need to install the following tools:
+
 git - essential version control
 homebrew - pkg manager for MACOSX (this won't get installed if you're running on
 Linux)
@@ -90,7 +97,7 @@ Is this okay? (Y/N)
 
 read USER_CONFIRMATION
 
-if [ $USER_CONFIRMATION == 'Y' ]
+if [ $(echo $USER_CONFIRMATION | tr '[:upper:]' '[:lower:]') == 'y' ]
 then
   SYS=$(uname -s) # get OS info
   case "${SYS}" in
@@ -98,29 +105,28 @@ then
     "Darwin"*) install_pkgs "MAC";; # install pkgs 
     CYGWIN*) echo "Sorry, Windows isn't supported at the moment :)"; exit;;
   esac
+
+  # Get the current dir - now we can run this script from anywhere
+  export DOTFILES_DIR
+
+  DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
+
+  # Make utilities available
+  PATH="$DOTFILES_DIR/bin:$PATH"
+
+  # Update dotfiles itself first
+  if [ -x git -a -d "$DOTFILES_DIR/.git" ]; then
+      git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
+      # update and pull submodules (if we have)
+      git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" submodule init
+  fi
+
+  # run stow
+  setup_symlinks
+
+  echo -e "\n\nSetup is finished!!  You're good to go :)"; exit
 else
-  echo "No worries.  Come back when you're ready."
+  echo -e "\nNo worries.  Come back when you're ready."
+  exit 1
 fi
 
-# Get the current dir - now we can run this script from anywhere
-export DOTFILES_DIR
-
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
-
-# Make utilities available
-PATH="$DOTFILES_DIR/bin:$PATH"
-
-# Update dotfiles itself first
-if [ -x git -a -d "$DOTFILES_DIR/.git" ]; then
-    git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" pull origin master
-    # update and pull submodules (if we have)
-    git --work-tree="$DOTFILES_DIR" --git-dir="$DOTFILES_DIR/.git" submodule init
-fi
-
-# custom scripts - stow is finicky with this, manually set up sym link for now
-ln -sv $DOTFILES_DIR/scripts/bin $HOME/.local/bin
-
-# run stow
-setup_symlinks
-
-echo "Setup is finished!!  You're good to go :)"; exit
