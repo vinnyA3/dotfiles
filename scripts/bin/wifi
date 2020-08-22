@@ -1,3 +1,0 @@
-#!/bin/bash
-config=/etc/wpa_supplicant/wpa_supplicant-wlp59s0.conf
-sudo wpa_supplicant -B -i wlp59s0 -c "$config" 

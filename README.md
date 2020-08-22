@@ -1,61 +1,10 @@
-# :computer: Dotfiles
+Custom Scripts
+==============
 
-Dotfiles are configuration files that are used to customize and personalize
-your system.  The *dotfiles* name comes from the UNIX convention of prefixing
-config files with a dot. By default, these files are usually hidden in directory
-listings.
+These scripts are meant to exist inside of your `.local/bin` directory.  Make
+sure that `.local/bin` exists on your `$PATH`.
 
-This repo contains my very own dotfiles, please feel free to use anything and
-everything.
-
-## Requirements
-
-**Note**: the [installer script](https://github.com/vinnyA3/dotfiles/blob/master/install.sh) will attempt to install these hard requirements :point_down: 
-- [gnu stow](https://www.gnu.org/software/stow/) (symlink manager) - avoid having to manually create sym links
-- [homebrew](https://brew.sh/) - missing package manager (mac only). 
-
-Please see the Install section directly below for more information!
-
-
-## Install
-
-To install with Git:
-
-```bash
-    git clone https://github.com/vinnyA3/dotfiles.git ~/.dotfiles &&
-      source ~/.dotfiles/install.sh
-```
-
-The installer script will attempt to install GNU's *Stow* & the *Homebrew* package
-manager on macOS. Interestingly enough, homebrew works with linux as well; however, I choose to use the
-distro's package manager for the most part. The installer will try to detect
-your linux distro; specifically, it will try detect your distro's default package manager. 
-Right now, the supported linux package managers are: 
-  *  Void Linux's `xbps`
-
-Feel free to add other package managers to the script!
-
-## My System Overview
-
-* os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
-* window manager:  [xmonad](https://xmonad.org/)
-* statusbar(s): [polybar](https://github.com/polybar/polybar) - default, xmobar 
-* theme: dracula 
-* editor: neovim
-* shell: zsh
-* terminal emulator: iterm2 - macOS, alacritty/suckless term - linux
-
-The core configuration of my development env (zsh, tmux, vim, helper scripts)
-try their best to be OS agnostic; however, there are certain instances where you
-just can't get around configuration for the specific platform that you're
-working with.  For those cases, the lines are commented in/out in the config
-files.
-
-## Additional Resources
-
-* Get started with your own dotfiles 
-
-    Lars Kappart has a fantastic [article](https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789) on dotfiles and how to get them set up. I
-    used some of Lar's setup scripts to help with some
-    scaffolding. 
-
+Most of these scripts were meant for specific linux distros, where those distros
+were extremely lightweight & minimal (think void or arch linux).  If you're
+using Mac or some other, more robust linux distro, you're probably not going to
+need most of these scripts.
