@@ -110,4 +110,4 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #    PROMPT
 # ==============
 
-eval "$(starship init zsh)"
+eval "$(starship init zsh)" # requires https://github.com/starship/starship
