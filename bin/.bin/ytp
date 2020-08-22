@@ -7,7 +7,7 @@
 # CONSTANTS
 DEFAULT_PLAYER=mpv
 # get api from env .. for now, for ease of use, we're going to add it here
-API_KEY="AIzaSyCxco0RYbcQy34J5jcLx-Qv7aTSkNCH0WE"
+API_KEY=""
 
 # FUNCTIONS
 search_yt() {
