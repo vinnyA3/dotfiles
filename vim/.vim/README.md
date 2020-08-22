@@ -42,19 +42,12 @@ can't make any promises.
 
 To run and manage plugins, you're going to need [minpac](https://github.com/k-takata/minpac).  `minpac` is a convenience wrapper for Vim 8's plugin system.
 
-
 ##### Linux & macOS
 
-Vim:
+Vim & Neovim (this will only work for neovim if you set the *rtp* in `.config/nvim/init.vim`):
 
 ```sh
 git clone https://github.com/k-takata/minpac.git ~/.vim/pack/minpac/opt/minpac
-```
-
-Neovim (use `$XDG_CONFIG_HOME` in place of `~/.config` if set on your system):
-
-```sh
-git clone https://github.com/k-takata/minpac.git ~/.config/nvim/pack/minpac/opt/minpac
 ```
 
 Once you have `minpac` installed, you're pretty much good to go.  You're just
