@@ -1,8 +1,23 @@
 #!/bin/bash
 
+# Install.sh
+# ==========
+# First, we'll try to detect your OS...
+# If you're on a Mac, homebrew will be installed (if you already have Homebrew +
+#   stow or git, don't worry .. things won't get installed again)
+
+# If you're on Linux, we'll detect your distro & attempt to use your distro's
+#   default package manager to install the stow & git
+
+# Finally, we'll use stow to create the appropriate symlinks
+# If you decide there were some things that you don't want/need that were
+# linked, you can delete it from your HOME directory ..
+#   TIP: view symlinks with `ls -la` in your HOME directory, the proceed to
+#   remove the link: `rm <link>`
+
 # ==== FUNCTIONS =====
 function detect_linux_distro {
-  local DISTRO=$(( lsb_release -ds || cat /etc/*release || uname -om ) 2>/dev/null | head -n1 | sed -E 's/[\"]+//g') 
+  local DISTRO=$(( lsb_release -ds || cat /etc/*release || uname -om ) 2>/dev/null | head -n1 | tr -d '"') 
 
   case $DISTRO in
     'Void Linux') PKG_INSTALL_CMD="sudo xbps-install -Syu";;
@@ -16,26 +31,23 @@ function detect_linux_distro {
 function install_pkgs {
   case "$1" in
     'MAC'*) 
-      if [ -x $(which brew | head -n1) 2>/dev/null ]
-      then
-        # Brew exists on machine, install git & stow with Homebrew
-        brew install git
-        brew install stow
-      else
+      if [ ! -x $(which brew | head -n1) 2>/dev/null ]
         # Install Homebrew
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-
-        # : === noop
+        # Check if the installation was successful 
         [ -x $(which brew | head -n1) 2>/dev/null ] && : || 
           echo "Something went wrong while installing Homebrew!
                 Please check above logs or, install homebrew manually."; exit
       fi
+      # Brew exists on machine, try to install git & stow with Homebrew
+      brew install git
+      brew install stow
       ;;
     'LINUX'*)
       detect_linux_distro # call fn
       if [ -z "$PKG_INSTALL_CMD" ]
       then
-        echo "Your installer was not detected!"; exit
+        echo "Your pkg installer was not detected!"; exit
       else
         $PKG_INSTALL_CMD git
         $PKG_INSTALL_CMD stow
@@ -106,9 +118,9 @@ then
     CYGWIN*) echo "Sorry, Windows isn't supported at the moment :)"; exit;;
   esac
 
-  # Get the current dir - now we can run this script from anywhere
   export DOTFILES_DIR
 
+  # Get the current dir
   DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
 
   # Make utilities available
