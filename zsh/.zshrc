@@ -32,22 +32,16 @@ npm-do () {
 }
 
 # ==============
-#    Docker
+#    DOCKER
 # ==============
 docker-env() {
-  if [ ! -z "$(uname -s | grep -i darwin)" ] # mac only / linux unnecessary
+  if [ ! -z "$(uname -s | grep -i darwin)" ] # mac only
   then
     local script_dir=$HOME/.local/bin
     [ -s "$script_dir/docker-machine-env" ] && . "$script_dir/docker-machine-env"
+  else
+    echo "The quieter you become, the more you are able to hear ..."
   fi
-}
-
-# ==============
-#      FFF
-# ==============
-f() {
-  fff "$@"
-  cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
 }
 
 # ==============
@@ -81,7 +75,7 @@ n() {
 }
 
 # ==============
-#    FZF 
+#      FZF 
 # ==============
 
 # fh - repeat history :)
