@@ -45,8 +45,8 @@ Feel free to add other package managers to the script!
 * editor: neovim
 * shell: zsh
 * terminal emulator: iterm2 - macOS, alacritty/suckless term - linux
-* programs & binaries(installed separately): [nnn](https://github.com/jarun/nnn), [fzf](https://github.com/junegunn/fzf), [rg](https://github.com/BurntSushi/ripgrep), [ag](https://github.com/ggreer/the_silver_searcher), NodeJS 
-  - many, if not all of these programs are utilized by my Vim setup
+* programs & binaries(installed separately): [nnn](https://github.com/jarun/nnn), [fzf](https://github.com/junegunn/fzf), [rg](https://github.com/BurntSushi/ripgrep), [ag](https://github.com/ggreer/the_silver_searcher), node (managed by [nvm](https://github.com/nvm-sh/nvm)) 
+  - many, if not all of these programs are utilized by my [Vim](https://github.com/vinnyA3/dotfiles/tree/master/vim) setup
 
 The core configuration of my development env (zsh, tmux, vim, helper scripts)
 try their best to be OS agnostic; however, there are certain instances where you
