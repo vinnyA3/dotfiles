@@ -8,6 +8,9 @@ export XDG_CONFIG_HOME=$HOME/.config
 export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
+# nnn
+export NNN_BMS='d:~/.dotfiles'
+
 export PATH=$HOME/.local/bin:/usr/local/opt/gnu-getopt/bin:$PATH
 export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
 
