@@ -28,7 +28,8 @@ To install with Git:
 
 The installer script will attempt to install GNU's *Stow* & the *Homebrew* package
 manager on macOS. Interestingly enough, homebrew works with linux as well; however, I choose to use the
-distro's package manager for the most part. The installer will try to detect
+distro's package manager for the most part (I'll opt to use Linuxbrew when the
+default pkg manager does not have the latest pkg version & when I need it). The installer will try to detect
 your linux distro; specifically, it will try detect your distro's default package manager. 
 Right now, the supported linux package managers are: 
   * Void Linux's `xbps`
