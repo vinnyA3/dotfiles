@@ -5,7 +5,15 @@
 if [ -x "$(command -v docker-machine)" > /dev/null ]
 then
   # fetch the first running machine name
-  local machine=$(docker-machine ls | grep "Running" | head -n1 | awk '{ print $1 }')
+  isRunning=$(docker-machine ls | grep "Running")
+
+  if [ -z "$isRunning" ];
+  then
+    docker-machine start # starts default machine
+  fi
+
+  machine=$(docker-machine ls | grep "Running" | head -n1 | awk '{ print $1 }')
+
   if [ "$machine" != "" ];
   then
     eval "$(docker-machine env $machine)"
