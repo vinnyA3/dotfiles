@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Provisions docker env
+# Provisions docker env (only works with default machine for now)
 
 if [ -x "$(command -v docker-machine)" > /dev/null ]
 then
@@ -10,12 +10,5 @@ then
   if [ -z "$isRunning" ];
   then
     docker-machine start # starts default machine
-  fi
-
-  machine=$(docker-machine ls | grep "Running" | head -n1 | awk '{ print $1 }')
-
-  if [ "$machine" != "" ];
-  then
-    eval "$(docker-machine env $machine)"
   fi
 fi
