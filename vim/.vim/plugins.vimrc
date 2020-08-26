@@ -108,17 +108,30 @@ let g:lightline = {
       \              [ 'percent' ],
       \              [ 'fileencoding', 'filetype'] ]
       \ },
+      \ 'inactive': {
+      \   'left': [ [ 'parentDirAndFilename' ] ]
+      \ },
       \ 'component_function': {
-      \   'gitbranch': 'LightLineGitBranch'
+      \   'gitbranch': 'LightLineGitBranch',
+      \   'parentDirAndFilename': 'LightLineFilename'
       \ }
     \ }
+" requires vim fugitive wrapper
+function! LightLineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 " get branch name from vim-fugitive
 function! LightLineGitBranch()
   let l:branch = fugitive#head()
   return l:branch ==# '' ? '' : '🔨 ' . l:branch
 endfunction
 
-" Plugin markdown-preview.nvim
+" Plugin: markdown-preview.nvim
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
