@@ -10,13 +10,19 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
+
+# NOTE: this requires adb installed
 alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done'
+
+# python
+alias python='python3'
 
 # alias xp='xclip -o -selection clipboard' # available where default clip program is xclip
 # alias startx='ssh-agent startx' # start agent on xsession initialization
 alias vim='nvim'
 
 # If an nvim instance exists ...
+# NOTE: this requires NVR - https://github.com/mhinz/neovim-remote 
 if [[ -v NVIM_LISTEN_ADDRESS ]]; then
   alias nvim='echo "Warning: Avoid Nesting!!"'
 fi
@@ -26,12 +32,11 @@ alias vf='vim $(fzf)'
 alias vr='vim $(rg --files | fzf)'
 
 # cat aliases
-alias cat='bat' # this requires the binary (bat) to be installed!
+alias cat='bat' # this requires the binary (bat) to be installed! - https://github.com/sharkdp/bat
 
 # ls aliases
 # alias ls='ls --color=auto'
-# alias la='ls -A' - for ls
-alias ls='exa' # exa is an implementation of ls
+alias ls='exa' # exa is an implementation of ls - https://github.com/ogham/exa
 alias ll='ls -alF'
 alias la='ls -a'
 
