@@ -41,6 +41,10 @@ if exists('*minpac#init')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
 
+  if has('macunix') " I really want to run this on Mac only for now ... ¯\_(ツ)_/¯  
+    call minpac#add('aurieh/discord.nvim')
+  endif
+
   if executable('node') && has('nvim')
     packadd coc.nvim
     packadd markdown-preview.nvim
@@ -49,12 +53,13 @@ if exists('*minpac#init')
     packadd vim-mucomplete 
   endif
 
-  " the dracula coloscheme needs to be on the RTP before 'colorscheme dracula' gets
+  " the dracula colorscheme needs to be on the RTP before 'colorscheme dracula' gets
   " executed - colorscheme is defined in `general.vimrc`
   packadd! dracula
   
   " minpac Commands
-  " note: $MYVIMRC is sourced in .config/nvim/init.vimrc
+  " note: $MYVIMRC is sourced in .config/nvim/init.vimrc .. I think .. I
+  " actually have no fucking clue
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
