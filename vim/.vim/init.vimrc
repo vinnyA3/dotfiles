@@ -1,6 +1,8 @@
 if has('nvim')
   set hidden " avoid term buffers from closing on buf switch
   set termguicolors
+  " https://github.com/mhinz/neovim-remote/blob/master/INSTALLATION.md
+  " * check installation path (.local/bin, /usr/local/bin)
   if executable('nvr') " check for nvr to avoid nesting sessions
     autocmd FileType gitcommit set bufhidden=delete
     let $VISUAL="nvr -cc split --remote-wait"
@@ -18,6 +20,7 @@ if exists('*minpac#init')
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
+  call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯  
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('easymotion/vim-easymotion')
@@ -40,10 +43,6 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-repeat')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
-
-  if has('macunix') " I really want to run this on Mac only for now ... ¯\_(ツ)_/¯  
-    call minpac#add('aurieh/discord.nvim')
-  endif
 
   if executable('node') && has('nvim')
     packadd coc.nvim
