@@ -100,7 +100,7 @@ echo "Let's get started!
 First, we need to install the following tools:
 
 git - essential version control
-homebrew - pkg manager for MACOSX (this won't get installed if you're running on
+homebrew - pkg manager for macOS (this won't get installed if you're running on
 Linux)
 stow - GNU's defacto sym link manager
 
