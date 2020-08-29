@@ -96,8 +96,7 @@ The keys file contains custom keybindings & keybinding overrides.
 ### Additional Notes & Tips
 
 * `coc.nvim` requires NodeJS + the yarn package manager installed, as does `markdown-preview.nvim`
-* Some of the icons might look funky, depending on which fonts you have available.
-  Please feel free to modify the icons according to your needs.
+* For icons, I tried using UTF-8 emojis for universal support.  On Mac, I can say that some of the icons are offset vertically ... if they're a bother, feel free to change them up!
 * Some additional binaries you're going to need to install for the corresponding
   wrappers/plugins:
 
