@@ -34,7 +34,7 @@ if executable('node')
 
 " load some helpful plugins that coc.nvim would have taken care of for us
 else   
-"   " Plugin: MuComplete
+" Plugin: MuComplete
   set completeopt+=menuone
   set completeopt+=noselect
   set shortmess+=c

@@ -1,4 +1,4 @@
-if has('nvim')
+if executable('nvim')
   set hidden " avoid term buffers from closing on buf switch
   set termguicolors
   " https://github.com/mhinz/neovim-remote/blob/master/INSTALLATION.md
@@ -44,12 +44,14 @@ if exists('*minpac#init')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
 
-  if executable('node') && has('nvim')
-    packadd coc.nvim
-    packadd markdown-preview.nvim
-  else
-    packadd vim-css-color
-    packadd vim-mucomplete 
+  if executable('nvim')
+    if executable('node')
+      packadd coc.nvim
+      packadd markdown-preview.nvim
+    else
+      packadd vim-css-color
+      packadd vim-mucomplete
+    endif
   endif
 
   " the dracula colorscheme needs to be on the RTP before 'colorscheme dracula' gets
