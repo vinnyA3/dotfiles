@@ -39,7 +39,7 @@ Feel free to add other package managers to the script!
 
 ## My System Overview
 
-![screenshot of development environment](./images/Screen Shot 2020-09-01 at 10.47.24 AM.png)
+![screenshot of development environment](./images/screenshot.png)
 
 * os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
 * window manager:  [xmonad](https://xmonad.org/)
