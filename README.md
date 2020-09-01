@@ -39,6 +39,8 @@ Feel free to add other package managers to the script!
 
 ## My System Overview
 
+![screenshot of development environment](./images/Screen Shot 2020-09-01 at 10.47.24 AM.png)
+
 * os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
 * window manager:  [xmonad](https://xmonad.org/)
 * statusbar(s): [polybar](https://github.com/polybar/polybar) - default, xmobar 
