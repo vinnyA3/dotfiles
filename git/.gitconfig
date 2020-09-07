@@ -3,5 +3,4 @@
 	name = vinnyA3
 [core]
   # this path will vary on diff systems, find the nvim bin path with: 'which nvim'
-	editor = /home/linuxbrew/.linuxbrew/bin/nvim  
-
+	editor = /home/linuxbrew/.linuxbrew/bin/nvim
