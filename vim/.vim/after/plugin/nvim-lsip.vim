@@ -3,6 +3,6 @@ lua << END
 END
 
 sign define LspDiagnosticsErrorSign text=❌
-sign define LspDiagnosticsWarningSign text=b
-sign define LspDiagnosticsInformationSign text=k
-sign define LspDiagnosticsHintSign text=j
+sign define LspDiagnosticsWarningSign text=⚠️
+sign define LspDiagnosticsInformationSign text=💬
+sign define LspDiagnosticsHintSign text=▶️
