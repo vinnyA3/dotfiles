@@ -8,6 +8,12 @@
 "  set shortmess+=c
 "  let g:mucomplete#enable_auto_at_startup = 1
 
+" Plugin: Deoplete
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
 " Plugin: fzf
 " set rtp+=/usr/bin/fzf " fzf must exist 
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now

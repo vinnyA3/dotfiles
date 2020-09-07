@@ -20,11 +20,9 @@ if exists('*minpac#init')
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
-  " call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯  
+  " call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
-  call minpac#add('easymotion/vim-easymotion')
-  call minpac#add('honza/vim-snippets', {'type': 'opt'})
   call minpac#add('itchyny/lightline.vim')
   call minpac#add('jiangmiao/auto-pairs')
   call minpac#add('junegunn/vim-peekaboo')
@@ -37,8 +35,10 @@ if exists('*minpac#init')
   call minpac#add('mcchrish/nnn.vim')
   call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
-  call minpac#add('Shougo/deoplete.nvim')
+  call minpac#add('Shougo/deoplete.nvim') " vim8 compatilble as well
   call minpac#add('Shougo/deoplete-lsp')
+  call minpac#add('Shougo/neosnippet.vim')
+  call minpac#add('Shougo/neosnippet-snippets')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
@@ -46,33 +46,23 @@ if exists('*minpac#init')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
 
+  packadd! dracula " add dracula to RTP - errors out if it's not
+
   if executable('nvim')
+    packadd nvim-lspconfig " lsp-config
+    packadd deoplete.nvim
+    packadd deoplete-lsp
+
     if executable('node')
-      " packadd coc.nvim
       packadd markdown-preview.nvim
     else
-      packadd vim-css-color
-      packadd vim-mucomplete
+      packadd vim-mucomplete " simple autocompletion
     endif
   endif
 
-  packadd nvim-lspconfig " lsp-config
-  packadd! dracula " add dracula to RTP 
-
-  " minpac Commands
-  " note: $MYVIMRC is sourced in .config/nvim/init.vimrc .. I think .. I
-  " actually have no fucking clue
+  " minpac commands
+  " note: $MYVIMRC is sourced in .config/nvim/init.vimrc .. I think .. I actually have no fucking clue
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
-
 endif
-
-lua << END
-  require'nvim_lsp'.tsserver.setup{}
-END
-
-sign define LspDiagnosticsErrorSign text=❌
-sign define LspDiagnosticsWarningSign text=⚠️
-sign define LspDiagnosticsInformationSign text=ℹ
-sign define LspDiagnosticsHintSign text=➤
