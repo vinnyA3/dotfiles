@@ -27,6 +27,9 @@ if [[ -v NVIM_LISTEN_ADDRESS ]]; then
   alias nvim='echo "Warning: Avoid Nesting!!"'
 fi
 
+# Check globally installed npm packages
+alias npg='npm list -g --depth 0'
+
 # fzf
 alias vf='vim $(fzf)'
 alias vr='vim $(rg --files | fzf)'
