@@ -20,7 +20,7 @@ if exists('*minpac#init')
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
-  call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯  
+  " call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯  
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('easymotion/vim-easymotion')
@@ -36,7 +36,9 @@ if exists('*minpac#init')
   call minpac#add('maxmellon/vim-jsx-pretty')
   call minpac#add('mcchrish/nnn.vim')
   call minpac#add('mhinz/vim-startify')
-  call minpac#add('neoclide/coc.nvim', {'type': 'opt'}) 
+  call minpac#add('neovim/nvim-lspconfig') 
+  call minpac#add('Shougo/deoplete.nvim')
+  call minpac#add('Shougo/deoplete-lsp')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
@@ -46,7 +48,7 @@ if exists('*minpac#init')
 
   if executable('nvim')
     if executable('node')
-      packadd coc.nvim
+      " packadd coc.nvim
       packadd markdown-preview.nvim
     else
       packadd vim-css-color
@@ -54,14 +56,23 @@ if exists('*minpac#init')
     endif
   endif
 
-  " the dracula colorscheme needs to be on the RTP before 'colorscheme dracula' gets
-  " executed - colorscheme is defined in `general.vimrc`
-  packadd! dracula
-  
+  packadd nvim-lspconfig " lsp-config
+  packadd! dracula " add dracula to RTP 
+
   " minpac Commands
   " note: $MYVIMRC is sourced in .config/nvim/init.vimrc .. I think .. I
   " actually have no fucking clue
   command! PackUpdate packadd minpac | source $MYVIMRC | call minpac#update('', {'do': 'call minpac#status()'})
   command! PackClean  packadd minpac | source $MYVIMRC | call minpac#clean()
   command! PackStatus packadd minpac | source $MYVIMRC | call minpac#status()
+
 endif
+
+lua << END
+  require'nvim_lsp'.tsserver.setup{}
+END
+
+sign define LspDiagnosticsErrorSign text=❌
+sign define LspDiagnosticsWarningSign text=⚠️
+sign define LspDiagnosticsInformationSign text=ℹ
+sign define LspDiagnosticsHintSign text=➤

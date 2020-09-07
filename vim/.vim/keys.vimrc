@@ -1,5 +1,13 @@
 nmap <silent> <leader>e :exec &rnu? "se rnu!" : "se rnu"<CR>
 
+" tab completion
+inoremap <silent><expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" lsp completions
+nnoremap <silent>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
+nnoremap <silent><c-]> <cmd>lua vim.lsp.buf.definition()<CR>
+nnoremap <silent>K     <cmd>lua vim.lsp.buf.hover()<CR>
+
 " copy selected text to system clipboard (requires vim compiled with x-11)
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
