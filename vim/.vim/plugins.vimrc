@@ -137,7 +137,14 @@ let g:mkdp_echo_preview_url = 1
 let g:mkdp_port = '8881'
 let g:mkdp_page_title = '「${name}」'
 
-" Plugin vim-jsx-pretty
+" Plugin: vim-jsx-pretty
 let g:vim_jsx_pretty_template_tags = ['html', 'js', 'jsx']
 let g:vim_jsx_pretty_highlight_close_tag = 1
 let g:vim_jsx_pretty_colorful_config = 1
+
+
+" Plugin: diagnostic-nvim 
+let g:diagnostic_enable_virtual_text = 1
+let g:diagnostic_virtual_text_prefix = '<'
+let g:diagnostic_trimmed_virtual_text = '20'
+let g:diagnostic_insert_delay = 1

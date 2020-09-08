@@ -35,6 +35,7 @@ if exists('*minpac#init')
   call minpac#add('mcchrish/nnn.vim')
   call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
+  call minpac#add('nvim-lua/diagnostic-nvim') 
   call minpac#add('Shougo/deoplete.nvim') " vim8 compatilble as well
   call minpac#add('Shougo/deoplete-lsp')
   call minpac#add('Shougo/neosnippet.vim')
