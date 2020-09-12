@@ -13,6 +13,8 @@
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 xmap <C-k>     <Plug>(neosnippet_expand_target)
+" close preview window after completion done
+autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
 
 " Plugin: fzf
 " set rtp+=/usr/bin/fzf " fzf must exist 
