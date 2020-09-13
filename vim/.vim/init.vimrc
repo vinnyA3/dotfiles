@@ -20,7 +20,6 @@ if exists('*minpac#init')
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
-  " call minpac#add('aurieh/discord.nvim') " this plugin updates too quickly, might fork || make own ¯ \_(ツ)_/¯
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('itchyny/lightline.vim')
@@ -35,11 +34,13 @@ if exists('*minpac#init')
   call minpac#add('mcchrish/nnn.vim')
   call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
+  call minpac#add('nvim-lua/completion-nvim')
   call minpac#add('nvim-lua/diagnostic-nvim') 
   call minpac#add('Shougo/deoplete.nvim') " vim8 compatilble as well
   call minpac#add('Shougo/deoplete-lsp')
   call minpac#add('Shougo/neosnippet.vim')
   call minpac#add('Shougo/neosnippet-snippets')
+  call minpac#add('steelsojka/completion-buffers')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
@@ -51,14 +52,10 @@ if exists('*minpac#init')
 
   if executable('nvim')
     packadd nvim-lspconfig " lsp-config
-    packadd deoplete.nvim
-    packadd deoplete-lsp
+  endif
 
-    if executable('node')
-      packadd markdown-preview.nvim
-    else
-      packadd vim-mucomplete " simple autocompletion
-    endif
+  if executable('node')
+    packadd markdown-preview.nvim
   endif
 
   " minpac commands
