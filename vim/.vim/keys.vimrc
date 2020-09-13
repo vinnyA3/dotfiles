@@ -1,7 +1,8 @@
 nmap <silent> <leader>e :exec &rnu? "se rnu!" : "se rnu"<CR>
 
-" tab completion
-inoremap <silent><expr> <TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+" Use <Tab> and <S-Tab> to navigate through popup menu
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
 " lsp completions
 nnoremap <silent>gd    <cmd>lua vim.lsp.buf.declaration()<CR>

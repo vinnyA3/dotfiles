@@ -1,21 +1,6 @@
 " plugins defined in .vim/init.vim using minpac
 " this contains plugin specific setup and keybindings
 
-" TODO: detect deoplete .. if it doesn't exist, set mucomplete binds 
-"  Plugin: MuComplete
-"  set completeopt+=menuone
-"  set completeopt+=noselect
-"  set shortmess+=c
-"  let g:mucomplete#enable_auto_at_startup = 1
-
-" Plugin: Deoplete
-" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
-" close preview window after completion done
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | silent! pclose | endif
-
 " Plugin: fzf
 " set rtp+=/usr/bin/fzf " fzf must exist 
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
@@ -150,3 +135,12 @@ let g:diagnostic_enable_virtual_text = 1
 let g:diagnostic_virtual_text_prefix = '<'
 let g:diagnostic_trimmed_virtual_text = '20'
 let g:diagnostic_insert_delay = 1
+
+" Plugin: completion-nvim 
+let g:completion_enable_snippet = 'Neosnippet'
+let g:completion_chain_complete_list = [
+    \{'complete_items': ['lsp', 'snippet', 'buffers']},
+    \{'mode': '<c-p>'},
+    \{'mode': '<c-n>'}
+\]
+autocmd BufEnter * lua require'completion'.on_attach()
