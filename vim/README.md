@@ -70,11 +70,14 @@ list (managed by `minpac`) and `minpac`'s initial configuration.
 
 If `minpac` does not exist, the pluginless environment will run.
 
-Additionally, you'll find some conditions in this file.  Basically, if you have
-NodeJS & are running Neovim, then [coc.nvim](https://github.com/neoclide/coc.nvim) will be added to the runtimepath;
-however, it should be noted that `coc.nvim` gets installed regardless--you can
-remove the sourcing line & run a `:PackClean` if you choose to opt out of using
-`coc`.
+Additionally, you'll find some conditions in this file.  Basically, if
+you're running Neovim, `deoplete` (nvim autocompletion), `neosnippets` and
+`nvim-lsp` will be added to the runtime path.
+
+Quick notes about `nvim-lsp`:
+
+  * If you're using `nvim-lsp`, consult the following: https://github.com/neovim/nvim-lspconfig
+  * Check the [config/nvim](https://github.com/vinnyA3/dotfiles/tree/master/config/.config/nvim) directory for LSP lua config!
 
 #### `plugins.vimrc`:
 
@@ -95,7 +98,8 @@ The keys file contains custom keybindings & keybinding overrides.
 
 ### Additional Notes & Tips
 
-* `coc.nvim` requires NodeJS + the yarn package manager installed, as does `markdown-preview.nvim`
+* `markdown-preview.nvim` requires NodeJS.  Additionally, if you're using the
+  LSP for JavaScript dev, you're going to need Node.
 * For icons, I tried using UTF-8 emojis for universal support.  On Mac, I can say that some of the icons are offset vertically ... if they're a bother, feel free to change them up!
 * Some additional binaries you're going to need to install for the corresponding
   wrappers/plugins:

@@ -1,48 +1,9 @@
 " plugins defined in .vim/init.vim using minpac
 " this contains plugin specific setup and keybindings
 
-" Plugin: COC
-if executable('node')
-  set shortmess+=c
-
-  inoremap <silent><expr> <TAB>
-        \ pumvisible() ? "\<C-n>" :
-        \ <SID>check_back_space() ? "\<TAB>" :
-        \ coc#refresh()
-  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-  function! s:check_back_space() abort
-    let col = col('.') - 1
-    return !col || getline('.')[col - 1]  =~# '\s'
-  endfunction
-
-  " use <c-space> for trigger completion.
-  inoremap <silent><expr> <c-space> coc#refresh()
-  " use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
-  " coc only does snippet and additional edit on confirm.
-  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-  " use `[c` and `]c` for navigate diagnostics
-  nmap <silent> [c <Plug>(coc-diagnostic-prev)
-  nmap <silent> ]c <Plug>(coc-diagnostic-next)
-  " remap keys for gotos
-  nmap <silent> gd <Plug>(coc-definition)
-  nmap <silent> gy <Plug>(coc-type-definition)
-  nmap <silent> gi <Plug>(coc-implementation)
-  nmap <silent> gr <Plug>(coc-references)
-  " formatter
-  command! -nargs=0 Prettier :CocCommand prettier.formatFile
-
-" load some helpful plugins that coc.nvim would have taken care of for us
-else   
-" Plugin: MuComplete
-  set completeopt+=menuone
-  set completeopt+=noselect
-  set shortmess+=c
-  let g:mucomplete#enable_auto_at_startup = 1
-endif
-
 " Plugin: fzf
-set rtp+=/usr/bin/fzf " fzf must exist 
+" set rtp+=/usr/bin/fzf " fzf must exist 
+set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
 nnoremap <C-p> :FZF<Cr>
 nnoremap <Leader>b :Buffers<Cr>
@@ -163,7 +124,22 @@ let g:mkdp_echo_preview_url = 1
 let g:mkdp_port = '8881'
 let g:mkdp_page_title = '「${name}」'
 
-" Plugin vim-jsx-pretty
+" Plugin: vim-jsx-pretty
 let g:vim_jsx_pretty_template_tags = ['html', 'js', 'jsx']
 let g:vim_jsx_pretty_highlight_close_tag = 1
 let g:vim_jsx_pretty_colorful_config = 1
+
+
+" Plugin: diagnostic-nvim 
+let g:diagnostic_enable_virtual_text = 1
+let g:diagnostic_virtual_text_prefix = '<'
+let g:diagnostic_insert_delay = 1
+
+" Plugin: completion-nvim 
+let g:completion_enable_snippet = 'Neosnippet'
+let g:completion_chain_complete_list = [
+    \{'complete_items': ['lsp', 'snippet', 'buffers']},
+    \{'mode': '<c-p>'},
+    \{'mode': '<c-n>'}
+\]
+autocmd BufEnter * lua require'completion'.on_attach()
