@@ -44,6 +44,7 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-repeat')
+  call minpac#add('udalov/kotlin-vim')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
 
