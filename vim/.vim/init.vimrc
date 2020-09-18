@@ -49,9 +49,9 @@ if exists('*minpac#init')
 
   packadd! dracula " add dracula to RTP - errors out if it's not
 
-  if executable('nvim')
-    packadd nvim-lspconfig " lsp-config
-  endif
+  if has('nvim')
+    packadd nvim-lspconfig
+  endif " viml block
 
   if executable('node')
     packadd markdown-preview.nvim
