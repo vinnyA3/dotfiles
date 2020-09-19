@@ -162,7 +162,36 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 
-# Colors (Tomorrow Night)
+# Colors (Palenight)
+colors:
+   # Default colors
+   primary:
+     background: '0x292d3e'
+     foreground: '0xD8DEE9'
+
+   # Normal colors
+   normal:
+     black:   '0x3B4252'
+     red:     '0xff5370'
+     green:   '0xA3BE8C'
+     yellow:  '0xEBCB8B'
+     blue:    '0x81A1C1'
+     magenta: '0xB48EAD'
+     cyan:    '0x88C0D0'
+     white:   '0xE5E9F0'
+     orange:  '0xf78c6c'
+
+   # Bright colors
+   bright:
+     black:   '0x3B4252'
+     red:     '0xff5370'
+     green:   '0xA3BE8C'
+     yellow:  '0xEBCB8B'
+     blue:    '0x81A1C1'
+     magenta: '0xB48EAD'
+     cyan:    '0x88C0D0'
+     white:   '0xE5E9F0'
+     orange:  '0xf78c6c'
 #colors:
   # Default colors
   #primary:
