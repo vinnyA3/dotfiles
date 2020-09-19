@@ -19,7 +19,6 @@ set nospell
 set modeline
 set nojoinspaces " pesky 2-spaces after the period thing - substack :p
 set guicursor=
-" set rtp+=/usr/bin/fzf " fzf must exist 
 
 " indent Settings
 set autoindent
@@ -41,17 +40,8 @@ set path+=**
 set wildmenu
 set wildignore+=**/node_modules/**
 
-colorscheme dracula
-" colorscheme --- currently using base16
-" function! s:base16_customize() abort
-"   call Base16hi("LineNr", g:base16_gui03, g:base16_gui00, g:base16_cterm03, g:base16_cterm00, "", "")
-" endfunction
-
-" augroup on_change_colorschema
-"   autocmd!
-"   autocmd ColorScheme * call s:base16_customize()
-" augroup END
-
+" set background=dark
+colorscheme palenight
 
 " adhere to terminal tranparency if set
 hi Normal guibg=NONE ctermbg=NONE
