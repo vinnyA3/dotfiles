@@ -64,7 +64,7 @@ let g:indentLine_fileTypeExclude = ['json', 'md']
 " currently using lightline: https://github.com/itchyny/lightline.vim
 " colorscheme for lightline: https://github.com/mike-hearn/base16-vim-lightline
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'palenight',
       \ 'component': {
       \   'lineinfo': '📄 %3l:%-2v',
       \ },
@@ -143,3 +143,6 @@ let g:completion_chain_complete_list = [
     \{'mode': '<c-n>'}
 \]
 autocmd BufEnter * lua require'completion'.on_attach()
+
+" Plugin: palenight.vim
+let g:palenight_terminal_italics=1
