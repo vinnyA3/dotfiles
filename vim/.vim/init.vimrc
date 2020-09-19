@@ -21,7 +21,7 @@ if exists('*minpac#init')
   call minpac#add('airblade/vim-gitgutter')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
   call minpac#add('christoomey/vim-tmux-navigator')
-  call minpac#add('dracula/vim', { 'name': 'dracula' })
+  call minpac#add('drewtempelmeyer/palenight.vim', { 'name': 'palenight' })
   call minpac#add('itchyny/lightline.vim')
   call minpac#add('jiangmiao/auto-pairs')
   call minpac#add('junegunn/vim-peekaboo')
@@ -48,11 +48,11 @@ if exists('*minpac#init')
   call minpac#add('Yggdroot/indentLine')
   call minpac#add('yuezk/vim-js')
 
-  packadd! dracula " add dracula to RTP - errors out if it's not
+  packadd! palenight "colors error out if it's not added to RTP
 
   if has('nvim')
     packadd nvim-lspconfig
-  endif " viml block
+  endif
 
   if executable('node')
     packadd markdown-preview.nvim
