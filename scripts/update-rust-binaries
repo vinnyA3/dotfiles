@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# if cargo exists .. update installed binaries to latest 
+if command -v cargo > /dev/null 2>&1;
+then
+  while IFS= read -r line; do
+    if [ ! -z "$(echo $line | grep -i :)" ];
+    then
+      binary=$(echo $line | sed -E 's/\s.+//g')
+      cargo install $binary 
+    fi
+  done < <(cargo install --list)
+fi
