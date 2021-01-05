@@ -10,11 +10,9 @@ nnoremap <Leader>b :Buffers<Cr>
 nnoremap <Leader>h :History<Cr>
 nnoremap <Leader>r :Rg<Cr>
 
-" Plugin: nnn 
-" disable default mappings
-let g:nnn#set_default_mappings = 0
-let g:nnn#layout = 'new'
-nnoremap <Leader>f :NnnPicker<CR>
+" Plugin: fff 
+nnoremap <Leader>f :F<CR>
+let g:fff#split = "30new"
 
 " Plugin: netrw {{{2
 let g:loaded_netrwPlugin = 1
@@ -134,6 +132,10 @@ let g:vim_jsx_pretty_colorful_config = 1
 let g:diagnostic_enable_virtual_text = 1
 let g:diagnostic_virtual_text_prefix = '<'
 let g:diagnostic_insert_delay = 1
+call sign_define("LspDiagnosticsErrorSign", {"text" : "✘", "texthl" : "LspDiagnosticsError"})
+call sign_define("LspDiagnosticsWarningSign", {"text": "⚠️ "}) 
+call sign_define("LspDiagnosticsInformationSign", {"text": "💬"}) 
+call sign_define("LspDiagnosticsHintSign", {"text": "▶️ "})
 
 " Plugin: completion-nvim 
 let g:completion_enable_snippet = 'Neosnippet'

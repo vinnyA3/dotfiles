@@ -4,7 +4,7 @@ nnoremap <Space> <Nop>
 vnoremap <Space> <Nop>
 let mapleader = " "
 
-syntax on
+syntax on 
 set encoding=UTF-8
 set noshowmode
 set splitbelow

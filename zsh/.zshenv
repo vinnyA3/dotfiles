@@ -11,14 +11,17 @@ export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
 # nnn
 export NNN_BMS='d:~/.dotfiles'
 
-export PATH=$HOME/.local/bin:/usr/local/opt/gnu-getopt/bin:$PATH
+# ripgrep
+export RIPGREP_CONFIG_PATH=$HOME
+
+export PATH=$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$PATH
 export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
 
 # colored, pretty man pages - requires bat (https://github.com/sharkdp/bat) binary
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # androidz
-# export ANDROID_HOME=~/Library/Android/sdk
-# export JAVA_HOME=$(/usr/libexec/java_home)
-# export PATH=${PATH}:${ANDROID_HOME}/tools
-# export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export ANDROID_HOME=~/Library/Android/sdk
+export JAVA_HOME=$(/usr/libexec/java_home)
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools

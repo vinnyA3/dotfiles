@@ -13,7 +13,7 @@ endif
 let &packpath = &runtimepath
 packadd minpac
 
-if exists('*minpac#init')
+if exists('g:loaded_minpac')
   " minpac is loaded
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
@@ -22,6 +22,8 @@ if exists('*minpac#init')
   call minpac#add('ap/vim-css-color', {'type': 'opt'})
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('drewtempelmeyer/palenight.vim', { 'name': 'palenight' })
+  call minpac#add('dracula/vim', { 'name': 'dracula' })
+  call minpac#add('dylanaraps/fff.vim')
   call minpac#add('itchyny/lightline.vim')
   call minpac#add('jiangmiao/auto-pairs')
   call minpac#add('junegunn/vim-peekaboo')
@@ -30,12 +32,10 @@ if exists('*minpac#init')
   call minpac#add('justinmk/vim-dirvish')
   call minpac#add('iamcco/markdown-preview.nvim', {'do': 'packloadall! call mkdp#util#install()'})
   call minpac#add('mattn/emmet-vim')
-  call minpac#add('maxmellon/vim-jsx-pretty')
-  call minpac#add('mcchrish/nnn.vim')
   call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
   call minpac#add('nvim-lua/completion-nvim')
-  call minpac#add('nvim-lua/diagnostic-nvim') 
+  call minpac#add('nvim-treesitter/nvim-treesitter', { 'type': 'opt' })
   call minpac#add('prettier/vim-prettier')
   call minpac#add('Shougo/neosnippet.vim')
   call minpac#add('Shougo/neosnippet-snippets')
@@ -46,12 +46,24 @@ if exists('*minpac#init')
   call minpac#add('tpope/vim-repeat')
   call minpac#add('udalov/kotlin-vim')
   call minpac#add('Yggdroot/indentLine')
-  call minpac#add('yuezk/vim-js')
 
-  packadd! palenight "colors error out if it's not added to RTP
+  packadd! palenight  "colors error out if it's not added to RTP
 
   if has('nvim')
     packadd nvim-lspconfig
+    packadd nvim-treesitter
+    " TODO: move to designated lua file
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"typescript", "javascript"},
+  incremental_selection = {
+      enable = false,
+  },
+  highlight = {
+    enable = true,
+  },
+}
+EOF
   endif
 
   if executable('node')

@@ -3,4 +3,11 @@
 	name = vinnyA3
 [core]
   # this path will vary on diff systems, find the nvim bin path with: 'which nvim'
-	editor = /home/linuxbrew/.linuxbrew/bin/nvim
+	editor = /usr/local/bin/nvim
+  # editor = /home/linuxbrew/.linuxbrew/bin/nvim
+[diff]
+	tool = nvimdiff
+[difftool]
+	prompt = false
+[difftool "nvimdiff"]
+	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
