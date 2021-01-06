@@ -41,7 +41,7 @@ set wildmenu
 set wildignore+=**/node_modules/**
 
 " set background=dark
-colorscheme palenight
+colorscheme dracula
 
 " adhere to terminal tranparency if set
 hi Normal guibg=NONE ctermbg=NONE
@@ -65,7 +65,9 @@ augroup END
 augroup file-types
   autocmd!
   " Override some syntaxes so things look better
-  autocmd BufNewFile,BufRead *.ts,*.snap*,*.es6,*.tsx setlocal filetype=javascript.jsx
+  " set filetypes as typescriptreact
+  autocmd BufNewFile,BufRead *.ts,*.snap*,*.es6 setlocal filetype=typescript.jsx
+  autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
   autocmd BufNewFile,BufRead *stylelintrc,*eslintrc,*babelrc,*jshintrc setlocal syntax=json
   autocmd BufNewFile,BufRead *.css,*.pcss setlocal syntax=scss filetype=scss
   " Allow stylesheets to autocomplete hyphenated words
