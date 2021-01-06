@@ -5,7 +5,7 @@
 " set rtp+=/usr/bin/fzf " fzf must exist 
 set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
-nnoremap <C-p> :FZF<Cr>
+nnoremap <C-p> :Files<Cr>
 nnoremap <Leader>b :Buffers<Cr>
 nnoremap <Leader>h :History<Cr>
 nnoremap <Leader>r :Rg<Cr>
