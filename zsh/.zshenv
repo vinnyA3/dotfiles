@@ -5,11 +5,6 @@ export EDITOR="vim"
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx # probably not even needed tbh
 export CLICOLOR=1
 export XDG_CONFIG_HOME=$HOME/.config
-export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-# nnn
-export NNN_BMS='d:~/.dotfiles'
 
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME
@@ -21,7 +16,9 @@ export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # androidz
-export ANDROID_HOME=~/Library/Android/sdk
+export ANDROID_HOME=$HOME/Library/Android/sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
