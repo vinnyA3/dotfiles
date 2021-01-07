@@ -130,8 +130,9 @@ let g:vim_jsx_pretty_colorful_config = 1
 
 " Plugin: diagnostic-nvim 
 let g:diagnostic_enable_virtual_text = 1
-let g:diagnostic_virtual_text_prefix = '<'
 let g:diagnostic_insert_delay = 1
+" TODO -- we might be able to define diagnotics & virtual text prefix here, in
+" viml for now
 call sign_define("LspDiagnosticsErrorSign", {"text" : "✘", "texthl" : "LspDiagnosticsError"})
 call sign_define("LspDiagnosticsWarningSign", {"text": "⚠️ "}) 
 call sign_define("LspDiagnosticsInformationSign", {"text": "💬"}) 
@@ -140,9 +141,10 @@ call sign_define("LspDiagnosticsHintSign", {"text": "▶️ "})
 " Plugin: completion-nvim 
 let g:completion_enable_snippet = 'Neosnippet'
 let g:completion_chain_complete_list = [
-    \{'complete_items': ['lsp', 'snippet', 'buffers']},
-    \{'mode': '<c-p>'},
-    \{'mode': '<c-n>'}
+    \{'complete_items': ['lsp', 'snippet']},
+    \{'complete_items': ['buffers']},
+    \{'mode': '<c-n>'},
+    \{'mode': '<c-p>'}
 \]
 autocmd BufEnter * lua require'completion'.on_attach()
 
