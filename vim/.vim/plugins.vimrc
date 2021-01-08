@@ -11,7 +11,7 @@ nnoremap <Leader>h :History<Cr>
 nnoremap <Leader>r :Rg<Cr>
 
 " Plugin: fff 
-nnoremap <Leader>f :F<CR>
+nnoremap <Leader>f :F %:p:h<CR>
 let g:fff#split = "30new"
 
 " Plugin: netrw {{{2
