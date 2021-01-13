@@ -117,6 +117,7 @@ nvim_lsp.diagnosticls.setup{
   init_options = {
     filetypes = {
       javascript = "eslint",
+      typescript = "eslint",
       ["javascript.jsx"] = "eslint",
       javascriptreact = "eslint",
       typescriptreact = "eslint",
