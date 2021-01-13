@@ -1,9 +1,7 @@
 :memo: Vim/Neovim
 ======
 
-Here lies the main editor configuration!  The organization is a bit
-unconventional, and the config is a bit opinionated; but, if you want a solid
-development environment, you've found one.
+Here lies the main editor configuration! 
 
 The file hierarchy is as follows:
 
@@ -33,8 +31,12 @@ source $HOME/.vim/plugins.vimrc
 source $HOME/.vim/keys.vimrc
 ```
 
-**Note 2**: I use [Neovim](https://neovim.io/).  Most things should work for Vim as well; however, I
+**Note 2**: I use the nightly (development/unstable) version of [Neovim](https://neovim.io/).  Most things should work for Vim as well; however, I
 can't make any promises.
+
+
+**Note 3**: The nightly version is necessary (as of now) for NVIM-LSP
+functionality.
 
 ----
 
@@ -108,3 +110,7 @@ The keys file contains custom keybindings & keybinding overrides.
     * `nnn` - terminal file manager
     * `ripgrep` - line oriented search tool that recursively searchs your
       current directory for a regex pattern 
+    
+:warning: If you're using the LSP w/ typescript support, you need to install the
+appropriate packages manually.  You can no longer install necessary binaries via
+`:LspInstall` (deprecated).
