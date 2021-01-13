@@ -32,6 +32,7 @@ function install_pkgs {
   case "$1" in
     'MAC'*) 
       if [ ! -x $(which brew | head -n1) 2>/dev/null ]
+      then
         # Install Homebrew
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
         # Check if the installation was successful 
