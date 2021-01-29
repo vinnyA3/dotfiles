@@ -10,7 +10,7 @@ config/.config/*
 # Vim
 vim/.vim/*
 !vim/.vim/autoload/*
-!vim/.vim/after
+!vim/.vim/lua
 !vim/.vim/vimrc
 !vim/.vim/README.md
 !vim/.vim/init.vimrc
