@@ -107,4 +107,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ==============
 
 eval "$(starship init zsh)" # requires https://github.com/starship/starship
-# eval "$(rbenv init -)"
+eval "$(rbenv init -)"
