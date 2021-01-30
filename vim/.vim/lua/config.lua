@@ -116,6 +116,9 @@ saga.init_lsp_saga {
   border_style = 2
 }
 
+--indent-guides
+require 'indent_guides'.setup();
+
 --colorizer
 require 'colorizer'.setup {
   'javascript';
