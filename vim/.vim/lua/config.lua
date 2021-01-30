@@ -1,6 +1,6 @@
-local nvim_treesitter = require 'nvim-treesitter.configs'
-local nvim_lsp = require 'lspconfig'
-local saga = require 'lspsaga'
+local nvim_treesitter = require'nvim-treesitter.configs'
+local nvim_lsp = require'lspconfig'
+local saga = require'lspsaga'
 local fn = vim.fn
 
 nvim_treesitter.setup {
@@ -24,11 +24,6 @@ nvim_lsp.tsserver.setup{
   };
   filetypes = { "javascript", "javascript.jsx", "typescript", "typescriptreact" };
 }
-
-fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
-fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
-fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
-fn.sign_define("LspDiagnosticsSignError", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
 
 nvim_lsp.diagnosticls.setup{
   handlers = {
@@ -97,5 +92,42 @@ nvim_lsp.diagnosticls.setup{
   }
 }
 
+require'compe'.setup {
+  enabled = true;
+  autocomplete = true;
+  debug = false;
+  min_length = 1;
+  preselect = 'enable';
+  throttle_time = 80;
+  source_timeout = 200;
+  incomplete_delay = 400;
+  allow_prefix_unmatch = false;
+  source = {
+    path = true;
+    buffer = true;
+    vsnip = true;
+    nvim_lsp = true;
+    nvim_lua = true;
+  };
+}
+
 --lspsaga
-saga.init_lsp_saga()
+saga.init_lsp_saga {
+  border_style = 2
+}
+
+--colorizer
+require 'colorizer'.setup {
+  'javascript';
+  'typescript';
+  'css';
+  javascript = { css = true; };
+  typescript = { css = true; };
+  css = { rgb_fn = true; };
+}
+
+--- quick diagnotics
+fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
+fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
+fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
+fn.sign_define("LspDiagnosticsErrorSign", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
