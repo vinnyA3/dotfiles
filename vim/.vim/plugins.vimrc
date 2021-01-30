@@ -58,11 +58,10 @@ let g:startify_lists = [
 " Plugin: indentLine
 let g:indentLine_fileTypeExclude = ['json', 'md']
 
-" Plugin: Lightline
+" " Plugin: Lightline
 " currently using lightline: https://github.com/itchyny/lightline.vim
-" colorscheme for lightline: https://github.com/mike-hearn/base16-vim-lightline
 let g:lightline = {
-      \ 'colorscheme': 'palenight',
+      \ 'colorscheme': 'dracula',
       \ 'component': {
       \   'lineinfo': '📄 %3l:%-2v',
       \ },
@@ -138,15 +137,15 @@ call sign_define("LspDiagnosticsWarningSign", {"text": "⚠️ "})
 call sign_define("LspDiagnosticsInformationSign", {"text": "💬"}) 
 call sign_define("LspDiagnosticsHintSign", {"text": "▶️ "})
 
-" Plugin: completion-nvim 
-let g:completion_enable_snippet = 'Neosnippet'
-let g:completion_chain_complete_list = [
-    \{'complete_items': ['lsp', 'snippet']},
-    \{'complete_items': ['buffers']},
-    \{'mode': '<c-n>'},
-    \{'mode': '<c-p>'}
-\]
-autocmd BufEnter * lua require'completion'.on_attach()
+" Plugin: lspsaga.vim
+nnoremap <silent>gh :LspSagaFinder<CR>
+nnoremap <silent>K :LspSagaHoverDoc<CR>
+nnoremap <silent>gs <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>
+nnoremap <silent>gr :LspSagaRename<CR>
+nnoremap <silent>gd :LspSagaDefPreview<CR>
+nnoremap <silent>gl :LspSagaShowLineDiags<CR>
+nnoremap <silent><leader>ca :LspSagaCodeAction<CR>
+vnoremap <silent><leader>ca :'<,'>LspSagaRangeCodeAction<CR>
 
 " Plugin: palenight.vim
 let g:palenight_terminal_italics=1
