@@ -9,37 +9,37 @@ if executable('nvim')
   endif
 endif
 
-" Try to load minpac
+" Try to load minpac by adding to the RTP
 let &packpath = &runtimepath
 packadd minpac
 
 if exists('g:loaded_minpac')
-  " minpac is loaded
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
-  call minpac#add('ap/vim-css-color', {'type': 'opt'})
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('dylanaraps/fff.vim')
+  " call minpac#add('glepnir/galaxyline.nvim')
   call minpac#add('glepnir/lspsaga.nvim')
+  call minpac#add('hrsh7th/nvim-compe')
+  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'packloadall! call mkdp#util#install()'})
   call minpac#add('itchyny/lightline.vim')
   call minpac#add('jiangmiao/auto-pairs')
   call minpac#add('junegunn/vim-peekaboo')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('justinmk/vim-dirvish')
-  call minpac#add('iamcco/markdown-preview.nvim', {'do': 'packloadall! call mkdp#util#install()'})
+  " call minpac#add('kyazdani42/nvim-web-devicons') " lua -- needed for most galaxyline defaults
   call minpac#add('mattn/emmet-vim')
   call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
-  call minpac#add('nvim-lua/completion-nvim')
+  call minpac#add('norcalli/nvim-colorizer.lua') " config in lua/config
   call minpac#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
   call minpac#add('prettier/vim-prettier')
-  call minpac#add('Shougo/neosnippet.vim')
-  call minpac#add('Shougo/neosnippet-snippets')
-  call minpac#add('steelsojka/completion-buffers')
+  " call minpac#add('Shougo/neosnippet.vim') -- add back when we figure out how to use with 'nvim-compe'
+  " call minpac#add('Shougo/neosnippet-snippets')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
@@ -47,12 +47,11 @@ if exists('g:loaded_minpac')
   call minpac#add('udalov/kotlin-vim')
   call minpac#add('Yggdroot/indentLine')
 
-  packadd! dracula  "colors error out if it's not added to RTP
-
   if has('nvim')
     packadd nvim-lspconfig
     packadd nvim-treesitter
     lua require('config')
+    " lua require('galaxy-status-line')
   endif
 
   if executable('node')
