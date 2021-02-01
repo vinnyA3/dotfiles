@@ -43,7 +43,6 @@ if exists('g:loaded_minpac')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-repeat')
-  call minpac#add('udalov/kotlin-vim')
 
   if has('nvim')
     packadd nvim-lspconfig

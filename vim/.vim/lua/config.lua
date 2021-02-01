@@ -4,7 +4,7 @@ local saga = require'lspsaga'
 local fn = vim.fn
 
 nvim_treesitter.setup {
-  ensure_installed = {"typescript", "javascript"},
+  ensure_installed = {"typescript", "javascript", "kotlin"},
   incremental_selection = {
       enable = false,
   },
