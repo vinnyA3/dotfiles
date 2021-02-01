@@ -34,8 +34,29 @@ let g:jsx_ext_required = 0
 "Plugin: Fugitive
 nnoremap <Leader>gc :Gcommit<Cr>
 
-" Plugin: Startify
-let g:startify_custom_header = [
+" " Plugin: Startify
+" let g:startify_custom_header = [
+" \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+" \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+" \ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+" \ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+" \ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+" \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+" \]
+
+" let g:startify_files_number = 10
+
+" let g:startify_session_dir = '~/.vim/session'
+
+" let g:startify_lists = [
+"       \ { 'type': 'files',     'header': [   'Recent Files']   },
+"       \ { 'type': 'bookmarks', 'header': [   'Bookmarks']      },
+"       \ { 'type': 'sessions',  'header': [   'Sessions']       },
+"       \ { 'type': 'commands',  'header': [   'Commands']       },
+"       \ ]
+"
+let g:dashboard_default_executive ='fzf'
+let g:dashboard_custom_header = [
 \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
 \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
 \ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
@@ -44,21 +65,14 @@ let g:startify_custom_header = [
 \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
 \]
 
-let g:startify_files_number = 10
+nnoremap <silent> <Leader>fh :DashboardFindHistory<CR>
+nnoremap <silent> <Leader>ff :DashboardFindFile<CR>
+nnoremap <silent> <Leader>tc :DashboardChangeColorscheme<CR>
+nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
+nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
+nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
 
-let g:startify_session_dir = '~/.vim/session'
-
-let g:startify_lists = [
-      \ { 'type': 'files',     'header': [   'Recent Files']   },
-      \ { 'type': 'bookmarks', 'header': [   'Bookmarks']      },
-      \ { 'type': 'sessions',  'header': [   'Sessions']       },
-      \ { 'type': 'commands',  'header': [   'Commands']       },
-      \ ]
-
-" Plugin: indentLine
-let g:indentLine_fileTypeExclude = ['json', 'md']
-
-" " Plugin: Lightline
+" Plugin: Lightline
 " currently using lightline: https://github.com/itchyny/lightline.vim
 let g:lightline = {
       \ 'colorscheme': 'dracula',

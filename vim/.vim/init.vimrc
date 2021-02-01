@@ -21,7 +21,7 @@ if exists('g:loaded_minpac')
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('dylanaraps/fff.vim')
-  " call minpac#add('glepnir/galaxyline.nvim')
+  call minpac#add('glepnir/dashboard-nvim')
   call minpac#add('glepnir/indent-guides.nvim')
   call minpac#add('glepnir/lspsaga.nvim')
   call minpac#add('hrsh7th/nvim-compe')
@@ -32,9 +32,7 @@ if exists('g:loaded_minpac')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('justinmk/vim-dirvish')
-  " call minpac#add('kyazdani42/nvim-web-devicons') " lua -- needed for most galaxyline defaults
   call minpac#add('mattn/emmet-vim')
-  call minpac#add('mhinz/vim-startify')
   call minpac#add('neovim/nvim-lspconfig') 
   call minpac#add('norcalli/nvim-colorizer.lua') " config in lua/config
   call minpac#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
@@ -46,13 +44,12 @@ if exists('g:loaded_minpac')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-repeat')
   call minpac#add('udalov/kotlin-vim')
-  " call minpac#add('Yggdroot/indentLine')
 
   if has('nvim')
     packadd nvim-lspconfig
     packadd nvim-treesitter
     lua require('config')
-    " lua require('galaxy-status-line')
+    " lua require('galaxy-status-line') -- call minpac#add('glepnir/galaxyline.nvim')
   endif
 
   if executable('node')
