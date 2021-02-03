@@ -22,3 +22,8 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# fff
+export FFF_FAV1=~/.dotfiles
+export FFF_FAV2=~/Development/equinox-work/app-mobile
+export FFF_FAV3=~/Documents/notes/
