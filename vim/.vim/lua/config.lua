@@ -117,7 +117,9 @@ saga.init_lsp_saga {
 }
 
 --indent-guides
-require 'indent_guides'.setup();
+require 'indent_guides'.setup {
+  exclude_filetypes = {'help', 'dashboard', 'sagahover', 'markdown'};
+};
 
 --colorizer
 require 'colorizer'.setup {
