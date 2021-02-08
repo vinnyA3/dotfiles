@@ -13,6 +13,8 @@ vim/.vim
 config)
 ├── keys.vimrc - custom keybindings & settings
 └── plugins.vimrc - plugin specific configuration
+└── lua
+    └── config - neovim-specific plugin config, written in Lua
 ```
 
 See [Files](#files) for a bit more information.
@@ -95,6 +97,14 @@ settings live here.
 #### `keys.vimrc`:
 
 The keys file contains custom keybindings & keybinding overrides.
+
+#### `lua/config`:
+
+:warning: This is breaking config!  The configuration here will only work for
+Neovim Nightly (development version of neovim)! **USE AT YOUR OWN RISK!**
+
+You'll find configuration for lua-based plugins here.  You *could* put this
+stuff in a vim file, but I find it better to separate things.
 
 ----
 
