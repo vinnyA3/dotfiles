@@ -18,8 +18,8 @@ if exists('g:loaded_minpac')
   call minpac#add('k-takata/minpac', {'type': 'opt'})
   " additional plugins
   call minpac#add('airblade/vim-gitgutter')
+  call minpac#add('bluz71/vim-moonfly-colors')
   call minpac#add('christoomey/vim-tmux-navigator')
-  call minpac#add('dracula/vim', { 'name': 'dracula' })
   call minpac#add('dylanaraps/fff.vim')
   call minpac#add('glepnir/dashboard-nvim')
   call minpac#add('glepnir/indent-guides.nvim')
@@ -37,8 +37,6 @@ if exists('g:loaded_minpac')
   call minpac#add('norcalli/nvim-colorizer.lua') " config in lua/config
   call minpac#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
   call minpac#add('prettier/vim-prettier')
-  " call minpac#add('Shougo/neosnippet.vim') -- add back when we figure out how to use with 'nvim-compe'
-  " call minpac#add('Shougo/neosnippet-snippets')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-surround')
@@ -48,7 +46,6 @@ if exists('g:loaded_minpac')
     packadd nvim-lspconfig
     packadd nvim-treesitter
     lua require('config')
-    " lua require('galaxy-status-line') -- call minpac#add('glepnir/galaxyline.nvim')
   endif
 
   if executable('node')
