@@ -1,9 +1,13 @@
 " general settings
+" note: the only config here that require dependecies: colorscheme & autogroup ->
+"   autocmd -> indentLines.  The rest can be use in any barebones Vim/Neovim environment.
+
 " remap space for leader
 nnoremap <Space> <Nop>
 vnoremap <Space> <Nop>
 let mapleader = " "
 
+" pretty sane defaults. check :help for setting information
 syntax on 
 set encoding=UTF-8
 set noshowmode
@@ -17,10 +21,10 @@ set noshowmode
 setlocal spell spelllang=en_us
 set nospell
 set modeline
-set nojoinspaces " pesky 2-spaces after the period thing - substack :p
+set nojoinspaces
 set guicursor=
 
-" indent Settings
+" indent settings
 set autoindent
 set indentexpr=off
 set expandtab
@@ -33,27 +37,27 @@ set nowritebackup
 set noswapfile
 set nobackup
 
-" finding files recursively
+" finding files recursively - helps with autocomplete in command mode 
 set path+=**
 
 " wild search stuff and such
 set wildmenu
 set wildignore+=**/node_modules/**
 
-" set background=dark
-colorscheme dracula
+" set background=dark -- here if you need
+colorscheme moonfly " dependent on whatever colorscheme you have installed 
 
-" adhere to terminal tranparency if set
+" adhere to terminal tranparency if set -- turn on if you have a terminal
+"   background image
 hi Normal guibg=NONE ctermbg=NONE
-
-" set filetypes for files with certain extentions ... helps with plugins
-au BufNewFile,BufRead *.ejs set filetype=html 
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
 
 " Avoid showing message extra message when using completion
 set shortmess+=c
+
+" ========== AUTOGROUPS ==========
 
 " set cursorline only in active window
 augroup CursorLineOnlyInActiveWindow
@@ -65,7 +69,8 @@ augroup END
 augroup file-types
   autocmd!
   " Override some syntaxes so things look better
-  " set filetypes as typescriptreact
+  " set filetypes for files with certain extentions ... helps with plugins
+  autocmd BufNewFile,BufRead *.ejs set filetype=html 
   autocmd BufNewFile,BufRead *.ts,*.snap*,*.es6 setlocal filetype=typescript.jsx
   autocmd BufNewFile,BufRead *.tsx,*.jsx set filetype=typescriptreact
   autocmd BufNewFile,BufRead *stylelintrc,*eslintrc,*babelrc,*jshintrc setlocal syntax=json
@@ -74,15 +79,7 @@ augroup file-types
   autocmd FileType css,scss,sass setlocal iskeyword+=-
 augroup END
 
-function! Bufs()
-  redir => list
-  silent ls
-  redir END
-  return split(list, "\n")
-endfunction
-
-command! BD call fzf#run(fzf#wrap({
-  \ 'source': Bufs(),
-  \ 'sink*': { lines -> execute('bwipeout '.join(map(lines, {_, line -> split(line)[0]}))) },
-  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
-\ }))
+" note, requires IndentGuides plugin: https://github.com/glepnir/indent-guides.nvim 
+augroup term-buf-mods
+  autocmd TermOpen * IndentGuidesDisable
+augroup END
