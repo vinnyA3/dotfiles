@@ -52,13 +52,6 @@ command! -nargs=? -complete=dir Explore Dirvish <args>
 command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
-" Plugin: GitGutter
-set updatetime=1000
-nmap <Leader>gs <Plug>(GitGutterStageHunk)
-nmap <Leader>gu <Plug>(GitGutterUndoHunk)
-nmap <Leader>gn <Plug>(GitGutterNextHunk)
-nmap <Leader>gb <Plug>(GitGutterPrevHunk)
-
 " Plugin: vim-jsx
 let g:jsx_ext_required = 0
 
