@@ -161,7 +161,7 @@ require 'colorizer'.setup {
 --Config: gitsigns 
 require 'gitsigns'.setup {
   signs = {
-    add = { hl = 'DiffChange', text = '++', numhl='GitSignsAddNr' },
+    add = { hl = 'DiffAdd', text = '++', numhl='GitSignsAddNr' },
   }
 }
 
