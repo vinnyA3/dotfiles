@@ -1,9 +1,7 @@
-local nvim_treesitter = require'nvim-treesitter.configs'
 local nvim_lsp = require'lspconfig'
-local saga = require'lspsaga'
 local fn = vim.fn
 
-nvim_treesitter.setup {
+require 'nvim-treesitter.configs'.setup {
   ensure_installed = {"typescript", "javascript", "kotlin"},
   incremental_selection = {
       enable = true,
@@ -123,7 +121,7 @@ require'compe'.setup {
 }
 
 --Config: lspsaga
-saga.init_lsp_saga {
+require 'lspsaga'.init_lsp_saga {
   border_style = 2
 }
 
@@ -158,6 +156,13 @@ require 'colorizer'.setup {
   javascript = { css = true; };
   typescript = { css = true; };
   css = { rgb_fn = true; };
+}
+
+--Config: gitsigns 
+require 'gitsigns'.setup {
+  signs = {
+    add = { hl = 'DiffChange', text = '++', numhl='GitSignsAddNr' },
+  }
 }
 
 --- quick diagnotics
