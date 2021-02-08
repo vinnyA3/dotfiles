@@ -16,8 +16,8 @@ packadd minpac
 if exists('g:loaded_minpac')
   call minpac#init()
   call minpac#add('k-takata/minpac', {'type': 'opt'})
+
   " additional plugins
-  call minpac#add('airblade/vim-gitgutter')
   call minpac#add('bluz71/vim-moonfly-colors')
   call minpac#add('christoomey/vim-tmux-navigator')
   call minpac#add('dylanaraps/fff.vim')
@@ -32,9 +32,11 @@ if exists('g:loaded_minpac')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('justinmk/vim-dirvish')
+  call minpac#add('lewis6991/gitsigns.nvim')
   call minpac#add('mattn/emmet-vim')
   call minpac#add('neovim/nvim-lspconfig') 
   call minpac#add('norcalli/nvim-colorizer.lua') " config in lua/config
+  call minpac#add('nvim-lua/plenary.nvim')
   call minpac#add('nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'})
   call minpac#add('prettier/vim-prettier')
   call minpac#add('tpope/vim-fugitive')
