@@ -2,19 +2,50 @@
 " this contains plugin specific setup and keybindings
 
 " Plugin: fzf
+" note: fzf config requires ag (the silver searcher & ripgrep)
+
+" uncomment for your current system
 " set rtp+=/usr/bin/fzf " fzf must exist 
-set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
+" set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
+set rtp+=/usr/local/opt/fzf " using brew to install latest ver. for now
+
+" temporarily hide status line when fzf window is open
+if has('nvim') && !exists('g:fzf_layout')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+endif
+
+function! s:list_buffers()
+  redir => list
+  silent ls
+  redir END
+  return split(list, "\n")
+endfunction
+
+function! s:delete_buffers(lines)
+  execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]})))
+endfunction
+
+command! BD call fzf#run(fzf#wrap({
+  \ 'source': s:list_buffers(),
+  \ 'sink*': { lines -> s:delete_buffers(lines) }, 
+  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
+\ }))
+
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
+
 nnoremap <C-p> :Files<Cr>
 nnoremap <Leader>b :Buffers<Cr>
 nnoremap <Leader>h :History<Cr>
 nnoremap <Leader>r :Rg<Cr>
+noremap <leader>c :BD<cr>
 
 " Plugin: fff 
 nnoremap <Leader>f :F %:p:h<CR>
 let g:fff#split = "30new"
 
-" Plugin: netrw {{{2
+" Plugin: dirvish
 let g:loaded_netrwPlugin = 1
 let g:dirvish_relative_paths = 0
 command! -nargs=? -complete=dir Explore Dirvish <args>
@@ -34,27 +65,6 @@ let g:jsx_ext_required = 0
 "Plugin: Fugitive
 nnoremap <Leader>gc :Gcommit<Cr>
 
-" " Plugin: Startify
-" let g:startify_custom_header = [
-" \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
-" \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
-" \ ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
-" \ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
-" \ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
-" \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
-" \]
-
-" let g:startify_files_number = 10
-
-" let g:startify_session_dir = '~/.vim/session'
-
-" let g:startify_lists = [
-"       \ { 'type': 'files',     'header': [   'Recent Files']   },
-"       \ { 'type': 'bookmarks', 'header': [   'Bookmarks']      },
-"       \ { 'type': 'sessions',  'header': [   'Sessions']       },
-"       \ { 'type': 'commands',  'header': [   'Commands']       },
-"       \ ]
-"
 let g:dashboard_default_executive ='fzf'
 let g:dashboard_custom_header = [
 \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
@@ -63,6 +73,29 @@ let g:dashboard_custom_header = [
 \ ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
 \ ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
 \ ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+\]
+
+let g:dashboard_custom_footer=[
+  \'    ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠤⠖⠚⢉⣩⣭⡭⠛⠓⠲⠦⣄⡀⠀⠀⠀⠀⠀⠀⠀  ',
+  \'    ⠀⠀⠀⠀⠀⠀⢀⡴⠋⠁⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠳⢦⡀⠀⠀⠀⠀  ',
+  \'    ⠀⠀⠀⠀⢀⡴⠃⢀⡴⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣆⠀⠀⠀  ',
+  \'    ⠀⠀⠀⠀⡾⠁⣠⠋⠀⠈⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢧⠀⠀  ',
+  \'    ⠀⠀⠀⣸⠁⢰⠃⠀⠀⠀⠈⢣⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀  ',
+  \'    ⠀⠀⠀⡇⠀⡾⡀⠀⠀⠀⠀⣀⣹⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀  ',
+  \'    ⠀⠀⢸⠃⢀⣇⡈⠀⠀⠀⠀⠀⠀⢀⡑⢄⡀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇  ',
+  \'    ⠀⠀⢸⠀⢻⡟⡻⢶⡆⠀⠀⠀⠀⡼⠟⡳⢿⣦⡑⢄⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇  ',
+  \'    ⠀⠀⣸⠀⢸⠃⡇⢀⠇⠀⠀⠀⠀⠀⡼⠀⠀⠈⣿⡗⠂⠀⠀⠀⠀⠀⠀⠀⢸⠁  ',
+  \'    ⠀⠀⡏⠀⣼⠀⢳⠊⠀⠀⠀⠀⠀⠀⠱⣀⣀⠔⣸⠁⠀⠀⠀⠀⠀⠀⠀⢠⡟⠀  ',
+  \'    ⠀⠀⡇⢀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⢸⠃⠀  ',
+  \'    ⠀⢸⠃⠘⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⢀⠀⠀⠀⠀⠀⣾⠀⠀  ',
+  \'    ⠀⣸⠀⠀⠹⡄⠀⠀⠈⠁⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠸⠀⠀⠀⠀⠀⡇⠀⠀  ',
+  \'    ⠀⡏⠀⠀⠀⠙⣆⠀⠀⠀⠀⠀⠀⠀⢀⣠⢶⡇⠀⠀⢰⡀⠀⠀⠀⠀⠀⡇⠀⠀  ',
+  \'    ⢰⠇⡄⠀⠀⠀⡿⢣⣀⣀⣀⡤⠴⡞⠉⠀⢸⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⣧⠀⠀  ',
+  \'    ⣸⠀⡇⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⢹⠀⠀⢸⠀⠀⢀⣿⠇⠀⠀⠀⠁⠀⢸⠀⠀  ',
+  \'    ⣿⠀⡇⠀⠀⠀⠀⠀⢀⡤⠤⠶⠶⠾⠤⠄⢸⠀⡀⠸⣿⣀⠀⠀⠀⠀⠀⠈⣇⠀  ',
+  \'    ⡇⠀⡇⠀⠀⡀⠀⡴⠋⠀⠀⠀⠀⠀⠀⠀⠸⡌⣵⡀⢳⡇⠀⠀⠀⠀⠀⠀⢹⡀  ',
+  \'    ⡇⠀⠇⠀⠀⡇⡸⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠮⢧⣀⣻⢂⠀⠀⠀⠀⠀⠀⢧  ',
+  \'    ⣇⠀⢠⠀⠀⢳⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡎⣆⠀⠀⠀⠀⠀⠘  ',
 \]
 
 nnoremap <silent> <Leader>fh :DashboardFindHistory<CR>
@@ -75,7 +108,7 @@ nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
 " Plugin: Lightline
 " currently using lightline: https://github.com/itchyny/lightline.vim
 let g:lightline = {
-      \ 'colorscheme': 'dracula',
+      \ 'colorscheme': 'moonfly',
       \ 'component': {
       \   'lineinfo': '📄 %3l:%-2v',
       \ },
@@ -103,6 +136,7 @@ function! LightLineFilename()
   endif
   return expand('%')
 endfunction
+
 " get branch name from vim-fugitive
 function! LightLineGitBranch()
   let l:branch = fugitive#head()
@@ -152,14 +186,10 @@ call sign_define("LspDiagnosticsInformationSign", {"text": "💬"})
 call sign_define("LspDiagnosticsHintSign", {"text": "▶️ "})
 
 " Plugin: lspsaga.vim
-nnoremap <silent>gh :LspSagaFinder<CR>
-nnoremap <silent>K :LspSagaHoverDoc<CR>
-nnoremap <silent>gs <cmd>lua require('lspsaga.signaturehelp').signature_help()<CR>
-nnoremap <silent>gr :LspSagaRename<CR>
-nnoremap <silent>gd :LspSagaDefPreview<CR>
-nnoremap <silent>gl :LspSagaShowLineDiags<CR>
-nnoremap <silent><leader>ca :LspSagaCodeAction<CR>
-vnoremap <silent><leader>ca :'<,'>LspSagaRangeCodeAction<CR>
-
-" Plugin: palenight.vim
-let g:palenight_terminal_italics=1
+nnoremap <silent>gh :Lspsaga lsp_finder<CR>
+nnoremap <silent>K :Lspsaga hover_doc<CR>
+nnoremap <silent>gs :Lspsaga signature_help<CR>
+nnoremap <silent>gr :Lspsaga rename<CR>
+nnoremap <silent>gd :Lspsaga preview_definition<CR>
+nnoremap <silent>gl :Lspsaga show_line_diagnostics<CR>
+nnoremap <silent>ca :Lspsaga code_action<CR>
