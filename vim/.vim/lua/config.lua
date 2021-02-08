@@ -6,11 +6,13 @@ local fn = vim.fn
 nvim_treesitter.setup {
   ensure_installed = {"typescript", "javascript", "kotlin"},
   incremental_selection = {
-      enable = false,
+      enable = true,
   },
   highlight = {
     enable = true,
+    use_languagetree = false,
   },
+  textobjects = { enable = true },
 }
 
 nvim_lsp.tsserver.setup{
@@ -65,7 +67,15 @@ nvim_lsp.diagnosticls.setup{
       eslint = {
         sourceName = "eslint",
         command = "./node_modules/.bin/eslint",
-        rootPatterns = { ".eslintrc", ".eslintrc.json", ".eslintrc.cjs", ".eslintrc.js", ".eslintrc.yml", ".eslintrc.yaml", "package.json" },
+        rootPatterns = {
+          ".eslintrc",
+          ".eslintrc.json",
+          ".eslintrc.cjs",
+          ".eslintrc.js",
+          ".eslintrc.yml",
+          ".eslintrc.yaml",
+          "package.json"
+        },
         debounce = 100,
         args = {
           "--stdin",
@@ -92,6 +102,7 @@ nvim_lsp.diagnosticls.setup{
   }
 }
 
+--Config: compe
 require'compe'.setup {
   enabled = true;
   autocomplete = true;
@@ -111,17 +122,35 @@ require'compe'.setup {
   };
 }
 
---lspsaga
+--Config: lspsaga
 saga.init_lsp_saga {
   border_style = 2
 }
 
---indent-guides
+--Config: indent-guides
+--colors slightly altered for 'moonfly' colorscheme
+local indent_fg='#16171c'
+local indent_bg='#202126'
+
 require 'indent_guides'.setup {
-  exclude_filetypes = {'help', 'dashboard', 'sagahover', 'markdown'};
+  exclude_filetypes = {
+    'help',
+    'dashboard',
+    'dashpreview',
+    'sagahover',
+    'markdown',
+    'css',
+    'scss',
+    'fugitive',
+    'fugitiveblame',
+    'fzf',
+  };
+
+  even_colors = { fg = indent_fg, bg = indent_bg };
+  odd_colors = { fg = indent_bg, bg = indent_fg };
 };
 
---colorizer
+--Config: colorizer
 require 'colorizer'.setup {
   'javascript';
   'typescript';
