@@ -1,7 +1,8 @@
-local nvim_lsp = require'lspconfig'
+local nvim_lsp = require('lspconfig')
 local fn = vim.fn
+local actions = require('telescope.actions')
 
-require 'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   ensure_installed = {"typescript", "javascript", "kotlin"},
   incremental_selection = {
       enable = true,
@@ -101,7 +102,7 @@ nvim_lsp.diagnosticls.setup{
 }
 
 --Config: compe
-require'compe'.setup {
+require('compe').setup {
   enabled = true;
   autocomplete = true;
   debug = false;
@@ -121,7 +122,7 @@ require'compe'.setup {
 }
 
 --Config: lspsaga
-require 'lspsaga'.init_lsp_saga {
+require ('lspsaga').init_lsp_saga {
   border_style = 2
 }
 
@@ -130,7 +131,7 @@ require 'lspsaga'.init_lsp_saga {
 local indent_fg='#16171c'
 local indent_bg='#202126'
 
-require 'indent_guides'.setup {
+require ('indent_guides').setup {
   exclude_filetypes = {
     'help',
     'dashboard',
@@ -149,7 +150,7 @@ require 'indent_guides'.setup {
 };
 
 --Config: colorizer
-require 'colorizer'.setup {
+require('colorizer').setup {
   'javascript';
   'typescript';
   'css';
@@ -159,11 +160,50 @@ require 'colorizer'.setup {
 }
 
 --Config: gitsigns 
-require 'gitsigns'.setup {
+require('gitsigns').setup {
   signs = {
     add = { hl = 'DiffAdd', text = '++', numhl='GitSignsAddNr' },
   }
 }
+
+require('telescope').setup {
+  defaults = {
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case'
+    },
+    prompt_prefix = "> ",
+    selection_caret = "> ",
+    entry_prefix = "  ",
+    file_sorter =  require('telescope.sorters').get_fzy_sorter,
+    -- file_ignore_patterns = {},
+    color_devicons = false, --TODO: check this option, does true require devicons installed?
+    -- use_less = true,
+    file_previewer = require('telescope.previewers').vim_buffer_cat.new,
+    grep_previewer = require('telescope.previewers').vim_buffer_vimgrep.new,
+    qflist_previewer = require('telescope.previewers').vim_buffer_qflist.new,
+
+    mappings = {
+      i = {
+        ['<C-x>'] = false,
+        ['<C-q>'] = actions.send_to_qflist,
+      }
+    }
+  },
+  extensions = {
+    fzy_native = {
+      override_generic_sorter = false,
+      override_file_sorter = true,
+    }
+  }
+}
+
+require('telescope').load_extension('fzy_native') -- load override
 
 --- quick diagnotics
 fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
