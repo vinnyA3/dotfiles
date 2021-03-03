@@ -27,3 +27,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export FFF_FAV1=~/.dotfiles
 export FFF_FAV2=~/Development/equinox-work/app-mobile
 export FFF_FAV3=~/Documents/notes/
+
+# lynx
+export LYNX_CFG=$XDG_CONFIG_HOME/lynx.cfg
+export LYNX_LSS=$XDG_CONFIG_HOME/lynx.lss
