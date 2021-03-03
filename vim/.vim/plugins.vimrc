@@ -1,13 +1,49 @@
 " plugins defined in .vim/init.vim using minpac
 " this contains plugin specific setup and keybindings
 
-" Plugin: nvim-telescope
-nnoremap <c-p> :Telescope git_files<cr>
-nnoremap <Leader>ff :Telescope find_files<cr>
-nnoremap <Leader>b :Telescope buffers<cr>
-nnoremap <Leader>r :Telescope live_grep<cr>
-nnoremap <Leader>fb :Telescope file_browser<cr>
-nnoremap <Leader>fs :lua require('telescope.builtin').grep_string({ search = vim.fn.input('Grep For > ') })<cr>
+" Plugin: fzf
+" note: fzf config requires ag (the silver searcher & ripgrep)
+
+" uncomment for your current system
+" set rtp+=/usr/bin/fzf " fzf must exist 
+" set rtp+=/home/linuxbrew/.linuxbrew/opt/fzf " using brew to install latest ver. for now
+set rtp+=/usr/local/opt/fzf " using brew to install latest ver. for now
+
+" temporarily hide status line when fzf window is open
+if has('nvim') && !exists('g:fzf_layout')
+  autocmd! FileType fzf
+  autocmd  FileType fzf set laststatus=0 noshowmode noruler
+    \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
+endif
+
+function! s:list_buffers()
+  redir => list
+  silent ls
+  redir END
+  return split(list, "\n")
+endfunction
+
+function! s:delete_buffers(lines)
+  execute 'bwipeout' join(map(a:lines, {_, line -> split(line)[0]})))
+endfunction
+
+command! BD call fzf#run(fzf#wrap({
+  \ 'source': s:list_buffers(),
+  \ 'sink*': { lines -> s:delete_buffers(lines) }, 
+  \ 'options': '--multi --reverse --bind ctrl-a:select-all+accept'
+\ }))
+
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -f -g ""'
+
+nnoremap <C-p> :Files<Cr>
+nnoremap <Leader>b :Buffers<Cr>
+nnoremap <Leader>h :History<Cr>
+nnoremap <Leader>r :Rg<Cr>
+noremap <leader>c :BD<cr>
+
+" Plugin: fff 
+nnoremap <Leader>f :F %:p:h<CR>
+let g:fff#split = "30new"
 
 " Plugin: dirvish
 let g:loaded_netrwPlugin = 1
@@ -20,9 +56,9 @@ command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args
 let g:jsx_ext_required = 0
 
 "Plugin: Fugitive
-nnoremap <Leader>gc :Git commit<Cr>
+nnoremap <Leader>gc :Gcommit<Cr>
 
-let g:dashboard_default_executive ='telescope'
+let g:dashboard_default_executive ='fzf'
 let g:dashboard_custom_header = [
 \ ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
 \ ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
