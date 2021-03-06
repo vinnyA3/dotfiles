@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# NOTE: you need a directory with the correct filename (cargo-installed-apps.md)
+# for this script to process.  Additionally, each cargo package/rust binary must
+# exist on it's own line, be prefixed with a (^) caret symbol, and be surrounded
+# by spaces (for awk to process correctly) ... ie:
+#  * ^starship: some lorem ipsum
+#  * ^tealdeer: lorem ipsum
+
+CARGO_PKGS_FILE=$HOME/Applications/third-party/rust-binaries/cargo-installed-apps.md
+
+echo "Updating cargo packages located in: $CARGO_PKGS_FILE"
+
+if [ -f "$CARGO_PKGS_FILE" ]; then
+  cat $CARGO_PKGS_FILE | grep -i '\^' | awk '{ print $2 }' | sed -E 's/\^|://g' |
+    while read -r package; do 
+      echo "Updating package: $package..."
+      cargo install $package
+    done
+    echo "Cool, packages have updated.  If there are any issues, please check
+    STDOUT for more information."
+    exit 0
+fi
+
+echo "Sorry, $CARGO_PKGS_FILE does not exist."
+exit 1
