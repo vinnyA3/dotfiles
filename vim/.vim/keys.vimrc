@@ -8,11 +8,6 @@ nmap <silent> <leader>e :exec &rnu? "se rnu!" : "se rnu"<CR>
 inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 
-" lsp completions -- note, these are 'redefined' in lua/config
-" nnoremap <silent>gd    <cmd>lua vim.lsp.buf.declaration()<CR>
-" nnoremap <silent><c-]> <cmd>lua vim.lsp.buf.definition()<CR>
-" nnoremap <silent>K     <cmd>lua vim.lsp.buf.hover()<CR>
-
 " copy selected text to system clipboard (requires vim compiled with x-11)
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
