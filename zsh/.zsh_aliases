@@ -14,7 +14,7 @@ alias tkss='tmux kill-session -t'
 # cheat.sh - require https://github.com/chubin/cheat.sh & an internet connection
 alias cheat='cht.sh'
 
-# NOTE: this requires adb installed
+# NOTE: this requires adb installed - kill all the sims
 alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done'
 
 # python
