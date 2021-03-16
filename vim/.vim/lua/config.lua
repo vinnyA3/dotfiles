@@ -2,7 +2,9 @@ local nvim_lsp = require'lspconfig'
 local fn = vim.fn
 
 require 'nvim-treesitter.configs'.setup {
-  ensure_installed = {"typescript", "javascript", "kotlin"},
+  -- TODO: comment back in when parser migrations happens upstream || when I dig
+  -- deeper and conclude things are safe
+  -- ensure_installed = {"typescript", "javascript", "kotlin"},
   incremental_selection = {
       enable = true,
   },
@@ -142,6 +144,7 @@ require 'indent_guides'.setup {
     'fugitive',
     'fugitiveblame',
     'fzf',
+    'terminfo',
   };
 
   even_colors = { fg = indent_fg, bg = indent_bg };
