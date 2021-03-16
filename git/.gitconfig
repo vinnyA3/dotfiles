@@ -3,7 +3,7 @@
 	name = vinnyA3
 [core]
   # this path will vary on diff systems, find the nvim bin path with: 'which nvim'
-	editor = /usr/local/bin/nvim
+	editor = /Users/vincent.aceto/.local/bin/nvim # work machine - mac
   # editor = /home/linuxbrew/.linuxbrew/bin/nvim
 [diff]
 	tool = nvimdiff
