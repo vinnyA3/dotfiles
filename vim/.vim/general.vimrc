@@ -78,8 +78,3 @@ augroup file-types
   " Allow stylesheets to autocomplete hyphenated words
   autocmd FileType css,scss,sass setlocal iskeyword+=-
 augroup END
-
-" note, requires IndentGuides plugin: https://github.com/glepnir/indent-guides.nvim 
-augroup term-buf-mods
-  autocmd TermOpen * IndentGuidesDisable
-augroup END
