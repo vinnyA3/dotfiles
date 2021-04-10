@@ -122,6 +122,18 @@ require'compe'.setup {
   };
 }
 
+--Config: lualine.nvim
+vim.cmd('colorscheme moonfly')
+
+require'lualine'.setup {
+  options = {
+    theme = 'nightfly';
+    icons_enabled = false;
+    section_separators = {'', ''};
+    component_separators = {'⟡', '⟡'};
+  }
+}
+
 --Config: lspsaga
 require 'lspsaga'.init_lsp_saga {
   border_style = 2
@@ -164,7 +176,7 @@ require 'colorizer'.setup {
 --Config: gitsigns 
 require 'gitsigns'.setup {
   signs = {
-    add = { hl = 'DiffAdd', text = '++', numhl='GitSignsAddNr' },
+    add = { text = '++', numhl='GitSignsAddNr' },
   }
 }
 
