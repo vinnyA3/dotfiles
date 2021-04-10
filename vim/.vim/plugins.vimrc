@@ -98,44 +98,6 @@ nnoremap <silent> <Leader>fa :DashboardFindWord<CR>
 nnoremap <silent> <Leader>fb :DashboardJumpMark<CR>
 nnoremap <silent> <Leader>cn :DashboardNewFile<CR>
 
-" Plugin: Lightline
-" currently using lightline: https://github.com/itchyny/lightline.vim
-let g:lightline = {
-      \ 'colorscheme': 'moonfly',
-      \ 'component': {
-      \   'lineinfo': '📄 %3l:%-2v',
-      \ },
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ],
-      \   'right': [ [ 'lineinfo' ],
-      \              [ 'percent' ],
-      \              [ 'fileencoding', 'filetype'] ]
-      \ },
-      \ 'inactive': {
-      \   'left': [ [ 'parentDirAndFilename' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'LightLineGitBranch',
-      \   'parentDirAndFilename': 'LightLineFilename'
-      \ }
-    \ }
-" requires vim fugitive wrapper
-function! LightLineFilename()
-  let root = fnamemodify(get(b:, 'git_dir'), ':h')
-  let path = expand('%:p')
-  if path[:len(root)-1] ==# root
-    return path[len(root)+1:]
-  endif
-  return expand('%')
-endfunction
-
-" get branch name from vim-fugitive
-function! LightLineGitBranch()
-  let l:branch = fugitive#head()
-  return l:branch ==# '' ? '' : '🔨 ' . l:branch
-endfunction
-
 " Plugin: markdown-preview.nvim
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
