@@ -44,9 +44,6 @@ set path+=**
 set wildmenu
 set wildignore+=**/node_modules/**
 
-" set background=dark -- here if you need
-colorscheme moonfly " dependent on whatever colorscheme you have installed 
-
 " adhere to terminal tranparency if set -- turn on if you have a terminal
 "   background image
 hi Normal guibg=NONE ctermbg=NONE
@@ -58,13 +55,6 @@ set completeopt=menuone,noinsert,noselect
 set shortmess+=c
 
 " ========== AUTOGROUPS ==========
-
-" set cursorline only in active window
-augroup CursorLineOnlyInActiveWindow
-  autocmd!
-  autocmd VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-  autocmd WinLeave * setlocal nocursorline
-augroup END
 
 augroup file-types
   autocmd!
