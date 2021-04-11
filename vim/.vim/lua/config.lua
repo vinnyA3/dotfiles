@@ -1,20 +1,13 @@
-local nvim_lsp = require'lspconfig'
+local nvim_lsp = require('lspconfig')
 local fn = vim.fn
 
-require 'nvim-treesitter.configs'.setup {
-  -- TODO: comment back in when parser migrations happens upstream || when I dig
-  -- deeper and conclude things are safe
-  -- ensure_installed = {"typescript", "javascript", "kotlin"},
-  incremental_selection = {
-      enable = true,
-  },
-  highlight = {
-    enable = true,
-    use_languagetree = false,
-  },
-  textobjects = { enable = true },
-}
+--- quick diagnotics
+fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
+fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
+fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
+fn.sign_define("LspDiagnosticsErrorSign", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
 
+-- Config: LSP
 nvim_lsp.tsserver.setup{
   handlers = {
     ["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -102,8 +95,23 @@ nvim_lsp.diagnosticls.setup{
   }
 }
 
+-- Config: nvim-treesitter
+require('nvim-treesitter.configs').setup {
+  -- TODO: comment back in when parser migrations happens upstream || when I dig
+  -- deeper and conclude things are safe
+  -- ensure_installed = {"typescript", "javascript", "kotlin"},
+  incremental_selection = {
+      enable = true,
+  },
+  highlight = {
+    enable = true,
+    use_languagetree = false,
+  },
+  textobjects = { enable = true },
+}
+
 --Config: compe
-require'compe'.setup {
+require('compe').setup {
   enabled = true;
   autocomplete = true;
   debug = false;
@@ -125,7 +133,7 @@ require'compe'.setup {
 --Config: lualine.nvim
 vim.cmd('colorscheme moonfly')
 
-require'lualine'.setup {
+require('lualine').setup {
   options = {
     theme = 'nightfly';
     icons_enabled = false;
@@ -135,7 +143,7 @@ require'lualine'.setup {
 }
 
 --Config: lspsaga
-require 'lspsaga'.init_lsp_saga {
+require('lspsaga').init_lsp_saga {
   border_style = 2
 }
 
@@ -144,7 +152,7 @@ require 'lspsaga'.init_lsp_saga {
 local indent_fg='#16171c'
 local indent_bg='#202126'
 
-require 'indent_guides'.setup {
+require('indent_guides').setup {
   exclude_filetypes = {
     'help',
     'dashboard',
@@ -164,7 +172,7 @@ require 'indent_guides'.setup {
 };
 
 --Config: colorizer
-require 'colorizer'.setup {
+require('colorizer').setup {
   'javascript';
   'typescript';
   'css';
@@ -174,14 +182,8 @@ require 'colorizer'.setup {
 }
 
 --Config: gitsigns 
-require 'gitsigns'.setup {
+require('gitsigns').setup {
   signs = {
     add = { text = '++', numhl='GitSignsAddNr' },
   }
 }
-
---- quick diagnotics
-fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
-fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
-fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
-fn.sign_define("LspDiagnosticsErrorSign", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
