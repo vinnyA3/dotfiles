@@ -26,6 +26,12 @@ noremap <leader>x :%bd\|e#<cr>
 " read escape in terminal .. double tap to go back to insert mode
 tnoremap <Esc><Esc> <C-\><C-n>
 
+" easy window navigation
+noremap <C-h> <C-\><C-n><C-w>h
+noremap <C-j> <C-\><C-n><C-w>j
+noremap <C-k> <C-\><C-n><C-w>k
+noremap <C-l> <C-\><C-n><C-w>l
+
 " easy window navigation - when in term
 tnoremap <C-h> <C-\><C-n><C-w>h
 tnoremap <C-j> <C-\><C-n><C-w>j
