@@ -52,9 +52,6 @@ command! -nargs=? -complete=dir Explore Dirvish <args>
 command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>
 command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>
 
-" Plugin: vim-jsx
-let g:jsx_ext_required = 0
-
 "Plugin: Fugitive
 nnoremap <Leader>gc :Gcommit<Cr>
 
@@ -133,12 +130,6 @@ let g:vim_jsx_pretty_colorful_config = 1
 " Plugin: diagnostic-nvim 
 let g:diagnostic_enable_virtual_text = 1
 let g:diagnostic_insert_delay = 1
-" TODO -- we might be able to define diagnotics & virtual text prefix here, in
-" viml for now
-call sign_define("LspDiagnosticsErrorSign", {"text" : "✘", "texthl" : "LspDiagnosticsError"})
-call sign_define("LspDiagnosticsWarningSign", {"text": "⚠️ "}) 
-call sign_define("LspDiagnosticsInformationSign", {"text": "💬"}) 
-call sign_define("LspDiagnosticsHintSign", {"text": "▶️ "})
 
 " Plugin: lspsaga.vim
 nnoremap <silent>gh :Lspsaga lsp_finder<CR>
