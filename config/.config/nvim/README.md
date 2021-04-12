@@ -1,15 +1,20 @@
-Neovim Lua Configuration
+:rocket: Neovim Lua Configuration
 ==========
 
-This is the configuration for my custom NeoVim setup.
+Here lies the configuration for my custom NeoVim setup!
 
-Always a WIP :smile:
+Always a *WIP* :smile:
 
 ---
 
-Directory Structure:
+### Directory Structure
 
-```
+The folder hierarchy isn't anything special.  Things are separated out for the
+most part.  I could have separated plugin configuration a bit better, but to be
+honest, I don't have many plugins; so, as a result, all those configs live in a
+single file: `lua/plugins/config.lua`
+
+```javascript
 nvim
 ├── README.md
 ├── init.lua // main entry point
