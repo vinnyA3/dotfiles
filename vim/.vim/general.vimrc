@@ -2,6 +2,9 @@
 " note: the only config here that require dependecies: colorscheme & autogroup ->
 "   autocmd -> indentLines.  The rest can be use in any barebones Vim/Neovim environment.
 
+set hidden " avoid term buffers from closing on buf switch
+set termguicolors " take advantage of term's full color capabilities
+
 " remap space for leader
 nnoremap <Space> <Nop>
 vnoremap <Space> <Nop>

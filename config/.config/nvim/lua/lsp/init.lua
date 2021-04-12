@@ -1,13 +1,6 @@
 local nvim_lsp = require('lspconfig')
 local fn = vim.fn
 
---- quick diagnotics
-fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
-fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
-fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
-fn.sign_define("LspDiagnosticsErrorSign", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
-
--- Config: LSP
 nvim_lsp.tsserver.setup{
   handlers = {
     ["textDocument/publishDiagnostics"] = vim.lsp.with(
@@ -95,95 +88,8 @@ nvim_lsp.diagnosticls.setup{
   }
 }
 
--- Config: nvim-treesitter
-require('nvim-treesitter.configs').setup {
-  -- TODO: comment back in when parser migrations happens upstream || when I dig
-  -- deeper and conclude things are safe
-  -- ensure_installed = {"typescript", "javascript", "kotlin"},
-  incremental_selection = {
-      enable = true,
-  },
-  highlight = {
-    enable = true,
-    use_languagetree = false,
-  },
-  textobjects = { enable = true },
-}
-
---Config: compe
-require('compe').setup {
-  enabled = true;
-  autocomplete = true;
-  debug = false;
-  min_length = 1;
-  preselect = 'enable';
-  throttle_time = 80;
-  source_timeout = 200;
-  incomplete_delay = 400;
-  allow_prefix_unmatch = false;
-  source = {
-    path = true;
-    buffer = true;
-    vsnip = true;
-    nvim_lsp = true;
-    nvim_lua = true;
-  };
-}
-
---Config: lualine.nvim
-vim.cmd('colorscheme moonfly')
-
-require('lualine').setup {
-  options = {
-    theme = 'nightfly';
-    icons_enabled = false;
-    section_separators = {'', ''};
-    component_separators = {'⟡', '⟡'};
-  }
-}
-
---Config: lspsaga
-require('lspsaga').init_lsp_saga {
-  border_style = 2
-}
-
---Config: indent-guides
---colors slightly altered for 'moonfly' colorscheme
-local indent_fg='#16171c'
-local indent_bg='#202126'
-
-require('indent_guides').setup {
-  exclude_filetypes = {
-    'help',
-    'dashboard',
-    'dashpreview',
-    'sagahover',
-    'markdown',
-    'css',
-    'scss',
-    'fugitive',
-    'fugitiveblame',
-    'fzf',
-    'terminfo',
-  };
-
-  even_colors = { fg = indent_fg, bg = indent_bg };
-  odd_colors = { fg = indent_bg, bg = indent_fg };
-};
-
---Config: colorizer
-require('colorizer').setup {
-  'javascript';
-  'typescript';
-  'css';
-  javascript = { css = true; };
-  typescript = { css = true; };
-  css = { rgb_fn = true; };
-}
-
---Config: gitsigns 
-require('gitsigns').setup {
-  signs = {
-    add = { text = '++', numhl='GitSignsAddNr' },
-  }
-}
+-- Diagnostic Signs Configuration  
+fn.sign_define("LspDiagnosticsSignWarning", { text="⚠️ ", texthl="LspDiagnosticsSignWarning" })
+fn.sign_define("LspDiagnosticsSignInformation", { text="💬", texthl="LspDiagnosticsSignInformation" })
+fn.sign_define("LspDiagnosticsSignHint", { text="▶️ ", texthl="LspDiagnosticsSignHint" })
+fn.sign_define("LspDiagnosticsErrorSign", { text = "✘", texthl = "LspDiagnosticsDefaultError" })
