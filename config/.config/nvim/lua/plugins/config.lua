@@ -104,6 +104,9 @@ require('gitsigns').setup {
   }
 }
 
+-- Config: vim-markdown-composer 
+vim.g.markdown_composer_autostart = 0
+
 -- Config: Fugitive
 map('n', '<Leader>gc', ':Gcommit<cr>', keyOpts)
 
@@ -164,16 +167,3 @@ vim.g.dirvish_relative_paths = 0
 vim.cmd('command! -nargs=? -complete=dir Explore Dirvish <args>')
 vim.cmd('command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>')
 vim.cmd('command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>')
-
--- Config: markdown-preview.nvim
-vim.g.mkdp_auto_start = 0
-vim.g.mkdp_auto_close = 1
-vim.g.mkdp_refresh_slow = 0
-vim.g.mkdp_command_for_global = 0
-vim.g.mkdp_open_to_the_world = 0
-vim.g.mkdp_browser = 'chrome'
-vim.g.mkdp_markdown_css = ''
-vim.g.mkdp_highlight_css = ''
-vim.g.mkdp_echo_preview_url = 1 
-vim.g.mkdp_port = '8881'
-vim.g.mkdp_page_title = '「${name}」'

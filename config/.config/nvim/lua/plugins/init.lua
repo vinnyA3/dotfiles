@@ -5,6 +5,7 @@ return require('packer').startup(
   
     use { 'bluz71/vim-moonfly-colors' }
     use 'dylanaraps/fff.vim'
+    -- warning: vim-markdown-composer cargo, as it uses uses rust :)
     use {
 	'euclio/vim-markdown-composer',
 	opt = true,
