@@ -7,11 +7,11 @@ return require('packer').startup(
     use 'dylanaraps/fff.vim'
     -- warning: vim-markdown-composer cargo, as it uses uses rust :)
     use {
-	'euclio/vim-markdown-composer',
-	opt = true,
-	run = 'cargo build --release',
-	cmd = { 'ComposerStart', 'ComposerOpen' },
-	ft = 'markdown' }
+      'euclio/vim-markdown-composer',
+      opt = true,
+      run = 'cargo build --release',
+      cmd = { 'ComposerStart', 'ComposerOpen' },
+      ft = 'markdown' }
     use 'glepnir/dashboard-nvim'
     use 'glepnir/indent-guides.nvim'
     use { 'glepnir/lspsaga.nvim' } -- requires nvim-lspconfig, but it's always installed regardless

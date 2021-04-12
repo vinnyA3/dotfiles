@@ -68,24 +68,24 @@ map('n', 'ca', ':Lspsaga code_action<cr>', keyOpts)
 
 -- Config: indent-guides
 --  note: colors slightly altered for 'moonfly' colorscheme
--- local indent_fg='#16171c'
--- local indent_bg='#202126'
+local indent_fg='#16171c'
+local indent_bg='#202126'
 
--- require('indent_guides').setup {
---   exclude_filetypes = {
---     'help',
---     'dashboard',
---     'dashpreview',
---     'sagahover',
---     'markdown',
---     'css',
---     'scss',
---     'fugitive',
---     'fugitiveblame',
---     'fzf',
---     'terminfo',
---   };
--- };
+require('indent_guides').setup {
+  exclude_filetypes = {
+    'help',
+    'dashboard',
+    'dashpreview',
+    'sagahover',
+    'markdown',
+    'css',
+    'scss',
+    'fugitive',
+    'fugitiveblame',
+    'fzf',
+    'terminfo',
+  };
+};
 
 -- Config: colorizer
 require('colorizer').setup {
