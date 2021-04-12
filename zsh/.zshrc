@@ -77,6 +77,7 @@ HISTSIZE=1000000
 # ==============
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# linux sourced
 # source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
@@ -85,4 +86,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ==============
 
 eval "$(starship init zsh)" # requires https://github.com/starship/starship
-eval "$(rbenv init -)"
+eval "$(rbenv init -)" # pretty sure I only use this on Mac

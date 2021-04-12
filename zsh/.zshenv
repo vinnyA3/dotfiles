@@ -1,7 +1,7 @@
 # =============
 #    EXPORT
 # =============
-export EDITOR="vim"
+export EDITOR="vim" # aliases to nvim most likely
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx # probably not even needed tbh
 export CLICOLOR=1
 export XDG_CONFIG_HOME=$HOME/.config
@@ -9,7 +9,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME
 
-export PATH=$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$PATH
+export PATH=$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:$PATH
 export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
 
 # colored, pretty man pages - requires bat (https://github.com/sharkdp/bat) binary
