@@ -5,14 +5,18 @@ return require('packer').startup(
   
     use { 'bluz71/vim-moonfly-colors' }
     use 'dylanaraps/fff.vim'
-
+    use {
+	'euclio/vim-markdown-composer',
+	opt = true,
+	run = 'cargo build --release',
+	cmd = { 'ComposerStart', 'ComposerOpen' },
+	ft = 'markdown' }
     use 'glepnir/dashboard-nvim'
     use 'glepnir/indent-guides.nvim'
     use { 'glepnir/lspsaga.nvim' } -- requires nvim-lspconfig, but it's always installed regardless
 
     use 'hoob3rt/lualine.nvim'
     use 'hrsh7th/nvim-compe'
-    use { 'iamcco/markdown-preview.nvim', run = 'cd app && yarn install' }
     use 'jiangmiao/auto-pairs'
 
     use 'junegunn/vim-peekaboo'
