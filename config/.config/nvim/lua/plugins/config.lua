@@ -14,7 +14,7 @@ require('nvim-treesitter.configs').setup {
   },
   highlight = {
     enable = true,
-    use_languagetree = false,
+    use_languagetree = true,
   },
   textobjects = { enable = true },
 }
@@ -33,9 +33,9 @@ require('compe').setup {
   source = {
     path = true;
     buffer = true;
-    vsnip = true;
+    vsnip = false;
     nvim_lsp = true;
-    nvim_lua = true;
+    nvim_lua = false;
   };
 }
 
@@ -66,27 +66,6 @@ map('n', 'gd', ':Lspsaga preview_definition<cr>', keyOpts)
 map('n', 'gl', ':Lspsaga show_line_diagnostics<cr>', keyOpts)
 map('n', 'ca', ':Lspsaga code_action<cr>', keyOpts)
 
--- Config: indent-guides
---  note: colors slightly altered for 'moonfly' colorscheme
-local indent_fg='#16171c'
-local indent_bg='#202126'
-
-require('indent_guides').setup {
-  exclude_filetypes = {
-    'help',
-    'dashboard',
-    'dashpreview',
-    'sagahover',
-    'markdown',
-    'css',
-    'scss',
-    'fugitive',
-    'fugitiveblame',
-    'fzf',
-    'terminfo',
-  };
-};
-
 -- Config: colorizer
 require('colorizer').setup {
   'javascript';
@@ -95,6 +74,24 @@ require('colorizer').setup {
   javascript = { css = true; };
   typescript = { css = true; };
   css = { rgb_fn = true; };
+}
+
+-- Config: indent-blankline
+vim.g.indent_blankline_use_treesitter = true
+vim.g.indent_blankline_filetype = {
+  'lua',
+  'javascript',
+  'javascriptreact',
+  'typescript',
+  'typescriptreact',
+  'lua',
+  'json',
+  'yaml',
+  'html',
+  'c',
+  'python',
+  'dockerfile',
+  'haskell',
 }
 
 -- Config: gitsigns 

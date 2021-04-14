@@ -13,7 +13,6 @@ return require('packer').startup(
       cmd = { 'ComposerStart', 'ComposerOpen' },
       ft = 'markdown' }
     use 'glepnir/dashboard-nvim'
-    use 'glepnir/indent-guides.nvim'
     use { 'glepnir/lspsaga.nvim' } -- requires nvim-lspconfig, but it's always installed regardless
 
     use 'hoob3rt/lualine.nvim'
@@ -26,6 +25,10 @@ return require('packer').startup(
     use 'justinmk/vim-dirvish'
     use { 'keith/swift.vim', opt = true, ft = 'swift' }
     use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
+    use {
+      'lukas-reineke/indent-blankline.nvim',
+      branch = 'lua',
+      config = function() require('indent_blankline') end }
     use 'mattn/emmet-vim'
     use 'neovim/nvim-lspconfig' 
     use 'norcalli/nvim-colorizer.lua'
