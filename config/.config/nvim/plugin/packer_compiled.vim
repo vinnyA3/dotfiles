@@ -60,9 +60,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
-  ["indent-guides.nvim"] = {
+  ["indent-blankline.nvim"] = {
+    config = { "\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21indent_blankline\frequire\0" },
     loaded = true,
-    path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/indent-guides.nvim"
+    path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -71,10 +72,6 @@ _G.packer_plugins = {
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/lualine.nvim"
-  },
-  ["markdown-preview.nvim"] = {
-    loaded = true,
-    path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim"
   },
   ["nvim-colorizer.lua"] = {
     loaded = true,
@@ -117,6 +114,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/vim-fugitive"
   },
+  ["vim-markdown-composer"] = {
+    commands = { "ComposerStart", "ComposerOpen" },
+    loaded = false,
+    needs_bufread = false,
+    path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/opt/vim-markdown-composer"
+  },
   ["vim-moonfly-colors"] = {
     loaded = true,
     path = "/Users/vincent.aceto/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors"
@@ -141,14 +144,19 @@ _G.packer_plugins = {
   }
 }
 
+-- Config for: indent-blankline.nvim
+try_loadstring("\27LJ\2\n0\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
 
 -- Command lazy-loads
-vim.cmd [[command! -nargs=* -range -bang -complete=file PrettierAsync lua require("packer.load")({'vim-prettier'}, { cmd = "PrettierAsync", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 vim.cmd [[command! -nargs=* -range -bang -complete=file Prettier lua require("packer.load")({'vim-prettier'}, { cmd = "Prettier", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file ComposerStart lua require("packer.load")({'vim-markdown-composer'}, { cmd = "ComposerStart", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file ComposerOpen lua require("packer.load")({'vim-markdown-composer'}, { cmd = "ComposerOpen", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
+vim.cmd [[command! -nargs=* -range -bang -complete=file PrettierAsync lua require("packer.load")({'vim-prettier'}, { cmd = "PrettierAsync", l1 = <line1>, l2 = <line2>, bang = <q-bang>, args = <q-args> }, _G.packer_plugins)]]
 
 vim.cmd [[augroup packer_load_aucmds]]
 vim.cmd [[au!]]
   -- Filetype lazy-loads
+vim.cmd [[au FileType markdown ++once lua require("packer.load")({'vim-markdown-composer'}, { ft = "markdown" }, _G.packer_plugins)]]
 vim.cmd [[au FileType swift ++once lua require("packer.load")({'swift.vim'}, { ft = "swift" }, _G.packer_plugins)]]
 vim.cmd("augroup END")
 vim.cmd [[augroup filetypedetect]]
