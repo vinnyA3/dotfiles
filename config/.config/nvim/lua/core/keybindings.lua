@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 map('n', '<leader>n', ':bnext<cr>', opts)
 map('n', '<leader>p', ':bprev<cr>', opts)
 map('n', '<leader>d', ':bd<cr>', opts)
-map('n', '<leader>x', '<leader>x :%bd\\|e#<cr>', opts) -- close all buffers(%), open last for editing(e#)
+map('n', '<leader>x', ':%bd|e#<cr>', opts) -- close all buffers(%), open last for editing(e#)
 
 -- Easy Window Navigation
 map('n', '<C-h>', '<C-w>h', opts)
