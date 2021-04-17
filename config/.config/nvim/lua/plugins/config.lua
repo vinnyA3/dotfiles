@@ -88,6 +88,7 @@ vim.g.indent_blankline_filetype = {
   'json',
   'yaml',
   'html',
+  'swift',
   'c',
   'python',
   'dockerfile',
