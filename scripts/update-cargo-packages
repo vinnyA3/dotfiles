@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# if cargo exists .. update installed cargo pkgs to latest 
+if command -v cargo > /dev/null 2>&1;
+then
+  echo -e 'Updating your cargo packages!\n'
+  while IFS= read -r line; do
+    if [ ! -z "$(echo $line | grep -i :)" ];
+    then
+      pkg=$(echo $line | sed -E 's/\s.+//g')
+      cargo install $pkg 
+    fi
+  done < <(cargo install --list)
+  echo -e '\nYour cargo packages have been updated!'
+  exit 1
+else
+  echo -e 'The cargo binary does not exist on your $PATH.  Please make sure that it is install\n
+    and sourced correctly.'
+fi
