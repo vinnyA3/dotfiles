@@ -8,6 +8,6 @@ vim.g.mapleader = " "
 
 require('core/options')
 require('core/keybindings')
-require('lsp/init')
 require('plugins/init')
 require('plugins/config')
+require('lsp/init')
