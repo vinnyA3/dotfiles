@@ -27,20 +27,20 @@ return require('packer').startup(
     use 'tpope/vim-surround'
     use 'tpope/vim-repeat'
     use 'mattn/emmet-vim'
-    use 'jiangmiao/auto-pairs'
+    use 'jiangmiao/auto-pairs' -- TODO: find lua alternative
 
     -- Utilites and Editing Convenience
     use 'justinmk/vim-dirvish'
-    use 'junegunn/vim-peekaboo'
+    use 'junegunn/vim-peekaboo' -- TODO: find a nice lua alternative, if possible
     use { 'junegunn/fzf.vim', requires = 'junegunn/fzf' }
     use 'tpope/vim-fugitive'
-    use 'dylanaraps/fff.vim'
+    use 'dylanaraps/fff.vim' -- TODO: fix slow init OR find lua alternative
     use {
       'euclio/vim-markdown-composer',
       opt = true,
       run = 'cargo build --release',
       cmd = { 'ComposerStart', 'ComposerOpen' },
-      ft = 'markdown' } -- warning: vim-markdown-composer cargo, as it uses uses rust :)
+      ft = 'markdown' } -- warning: vim-markdown-composer needs cargo installed.  Rust ftw :)
     use 'glepnir/dashboard-nvim'
     use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
 
