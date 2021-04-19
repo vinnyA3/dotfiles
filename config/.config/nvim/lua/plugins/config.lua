@@ -55,7 +55,7 @@ require('lualine').setup {
 
 -- Config: Lspsaga
 require('lspsaga').init_lsp_saga {
-  border_style = 2
+  border_style = "single"
 }
 
 map('n', 'gh', 'Lspsaga lsp_finder<cr>', keyOpts)
