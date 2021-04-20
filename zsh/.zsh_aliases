@@ -11,6 +11,9 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
+# weather !!
+alias wtr='curl wttr.in'
+
 # cheat.sh - require https://github.com/chubin/cheat.sh & an internet connection
 alias cheat='cht.sh'
 
