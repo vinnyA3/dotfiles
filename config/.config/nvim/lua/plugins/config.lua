@@ -40,13 +40,17 @@ require('compe').setup {
 }
 
 -- Config: moonfly
-vim.cmd('colorscheme moonfly')
-vim.g.moonflyTransparent = 1
+vim.cmd[[colorscheme tokyonight]]
+-- vim.g.moonflyTransparent = 1
+
+-- Config tokyonight
+vim.g.tokyonight_style = "night"
+vim.g.tokyonight_italic_functions = false
 
 -- Config: lualine.nvim
 require('lualine').setup {
   options = {
-    theme = 'nightfly';
+    theme = 'tokyonight';
     icons_enabled = false;
     section_separators = {'', ''};
     component_separators = {'⟡', '⟡'};
@@ -58,7 +62,7 @@ require('lspsaga').init_lsp_saga {
   border_style = "single"
 }
 
-map('n', 'gh', 'Lspsaga lsp_finder<cr>', keyOpts)
+map('n', 'gh', ':Lspsaga lsp_finder<cr>', keyOpts)
 map('n', 'K',  ':Lspsaga hover_doc<cr>', keyOpts)
 map('n', 'gs', ':Lspsaga signature_help<cr>', keyOpts)
 map('n', 'gr', ':Lspsaga rename<cr>', keyOpts)
@@ -102,15 +106,55 @@ require('gitsigns').setup {
   }
 }
 
+-- Config: lir 
+local actions = require'lir.actions'
+local mark_actions = require 'lir.mark.actions'
+local clipboard_actions = require'lir.clipboard.actions'
+
+require'lir'.setup {
+  show_hidden_files = false,
+  devicons_enable = false,
+  mappings = {
+    ['l']     = actions.edit,
+    ['<C-s>'] = actions.split,
+    ['<C-v>'] = actions.vsplit,
+    ['<C-t>'] = actions.tabedit,
+
+    ['h']     = actions.up,
+    ['q']     = actions.quit,
+
+    ['K']     = actions.mkdir,
+    ['N']     = actions.newfile,
+    ['R']     = actions.rename,
+    ['@']     = actions.cd,
+    ['Y']     = actions.yank_path,
+    ['.']     = actions.toggle_show_hidden,
+    ['D']     = actions.delete,
+
+    ['J'] = function()
+      mark_actions.toggle_mark()
+      vim.cmd('normal! j')
+    end,
+    ['C'] = clipboard_actions.copy,
+    ['X'] = clipboard_actions.cut,
+    ['P'] = clipboard_actions.paste,
+  },
+  float = {
+    size_percentage = 0.5,
+    winblend = 15,
+    border = true,
+    borderchars = {"╔" , "═" , "╗" , "║" , "╝" , "═" , "╚", "║"},
+  },
+  hide_cursor = true,
+}
+
+map('n', '<Leader>f', ":lua require'lir.float'.toggle()<CR>", keyOpts)
+
 -- Config: vim-markdown-composer 
 vim.g.markdown_composer_autostart = 0
 
 -- Config: Fugitive
 map('n', '<Leader>gc', ':Gcommit<cr>', keyOpts)
-
--- Config: fff 
-map('n', '<Leader>f', ':F %:p:h<cr>', keyOpts)
---vim.g.fff#split = '30new'
 
 -- Config: Dashboard
 vim.g.dashboard_default_executive = 'fzf'

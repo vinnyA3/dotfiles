@@ -23,6 +23,7 @@ return require('packer').startup(
     use { 'keith/swift.vim', opt = true, ft = 'swift' }
 
     -- Editing
+    use { 'tamago324/lir.nvim', requires = 'nvim-lua/plenary.nvim' }
     use 'tpope/vim-commentary'
     use 'tpope/vim-surround'
     use 'tpope/vim-repeat'
@@ -30,11 +31,9 @@ return require('packer').startup(
     use 'jiangmiao/auto-pairs' -- TODO: find lua alternative
 
     -- Utilites and Editing Convenience
-    use 'justinmk/vim-dirvish'
     use 'junegunn/vim-peekaboo' -- TODO: find a nice lua alternative, if possible
     use { 'junegunn/fzf.vim', requires = 'junegunn/fzf' }
     use 'tpope/vim-fugitive'
-    use 'dylanaraps/fff.vim' -- TODO: fix slow init OR find lua alternative
     use {
       'euclio/vim-markdown-composer',
       opt = true,
@@ -49,6 +48,7 @@ return require('packer').startup(
 
     -- Cosmetics
     use { 'bluz71/vim-moonfly-colors' }
+    use { 'folke/tokyonight.nvim' }
     use {
       'lukas-reineke/indent-blankline.nvim',
       branch = 'lua',
