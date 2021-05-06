@@ -39,8 +39,6 @@ Feel free to add other package managers to the script!
 
 ## My System Overview
 
-![screenshot of development environment](./images/screenshot.png)
-
 * os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
 * window manager:  [xmonad](https://xmonad.org/)
 * statusbar(s): [polybar](https://github.com/polybar/polybar) - default, xmobar 
@@ -56,6 +54,12 @@ try their best to be OS agnostic; however, there are certain instances where you
 just can't get around configuration for the specific platform that you're
 working with.  For those cases, the lines are commented in/out in the config
 files.
+
+**screenshots**
+
+![screenshot of nvim development environment](./images/screenshot.png)
+
+![screenshot of nvim development environment number 2](./images/screenshot2.png)
 
 ## Additional Resources
 
