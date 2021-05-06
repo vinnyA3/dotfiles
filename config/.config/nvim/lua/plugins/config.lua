@@ -116,6 +116,7 @@ require'lir'.setup {
   devicons_enable = false,
   mappings = {
     ['l']     = actions.edit,
+    ['<CR>']  = actions.edit,
     ['<C-s>'] = actions.split,
     ['<C-v>'] = actions.vsplit,
     ['<C-t>'] = actions.tabedit,
@@ -205,4 +206,5 @@ map('n', '<Leader>h', ':History<cr>', keyOpts)
 map('n', '<Leader>r', ':Rg<cr>', keyOpts)
 
 -- Config: netrw
+vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1 -- don't load default netrw
