@@ -2,8 +2,6 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- Easy Buffer Navigation and manipulation
-map('n', '<leader>n', ':bnext<cr>', opts)
-map('n', '<leader>p', ':bprev<cr>', opts)
 map('n', '<leader>d', ':bd<cr>', opts)
 map('n', '<leader>x', ':%bd|e#<cr>', opts) -- close all buffers(%), open last for editing(e#)
 
@@ -39,7 +37,7 @@ map('n', '<Right>', ':vertical resize +5<CR>', opts)
 -- nmap (leader + t)  for fulltab
 map('n', '<leader>z', ':tab split<CR>', opts)
 
--- split terminal 
+-- split terminal (horiz)
 map('n', '<leader>t', ':sp | term<CR>', opts)
 
 -- find and replace all occurences of focused word, in current buffer
