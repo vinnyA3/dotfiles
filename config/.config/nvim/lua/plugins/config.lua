@@ -112,7 +112,7 @@ local mark_actions = require 'lir.mark.actions'
 local clipboard_actions = require'lir.clipboard.actions'
 
 require'lir'.setup {
-  show_hidden_files = false,
+  show_hidden_files = true,
   devicons_enable = false,
   mappings = {
     ['l']     = actions.edit,
@@ -142,7 +142,7 @@ require'lir'.setup {
   },
   float = {
     size_percentage = 0.5,
-    winblend = 15,
+    winblend = 10,
     border = true,
     borderchars = {"╔" , "═" , "╗" , "║" , "╝" , "═" , "╚", "║"},
   },
