@@ -40,12 +40,12 @@ require('compe').setup {
 }
 
 -- Config: moonfly
-vim.cmd[[colorscheme tokyonight]]
 -- vim.g.moonflyTransparent = 1
 
 -- Config tokyonight
 vim.g.tokyonight_style = "night"
 vim.g.tokyonight_italic_functions = false
+vim.cmd[[colorscheme tokyonight]]
 
 -- Config: lualine.nvim
 require('lualine').setup {
@@ -149,6 +149,7 @@ require'lir'.setup {
 }
 
 map('n', '<Leader>f', ":lua require'lir.float'.toggle()<CR>", keyOpts)
+map('n', '-', [[<CMD>execute 'e ' .. expand('%:p:h')<CR>]], keyOpts) -- netrw/dirvish file exp functionality
 
 -- Config: vim-markdown-composer 
 vim.g.markdown_composer_autostart = 0
@@ -203,9 +204,5 @@ map('n', '<Leader>b', ':Buffers<cr>', keyOpts)
 map('n', '<Leader>h', ':History<cr>', keyOpts)
 map('n', '<Leader>r', ':Rg<cr>', keyOpts)
 
--- Config: Dirvish
-vim.g.loaded_netrwPlugin = 1
-vim.g.dirvish_relative_paths = 0
-vim.cmd('command! -nargs=? -complete=dir Explore Dirvish <args>')
-vim.cmd('command! -nargs=? -complete=dir Sexplore belowright split | silent Dirvish <args>')
-vim.cmd('command! -nargs=? -complete=dir Vexplore leftabove vsplit | silent Dirvish <args>')
+-- Config: netrw
+vim.g.loaded_netrwPlugin = 1 -- don't load default netrw
