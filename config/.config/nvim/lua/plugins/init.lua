@@ -27,6 +27,7 @@ return require('packer').startup(
     use 'tpope/vim-commentary'
     use 'tpope/vim-surround'
     use 'tpope/vim-repeat'
+    use 'tpope/vim-unimpaired'
     use 'mattn/emmet-vim'
     use 'jiangmiao/auto-pairs' -- TODO: find lua alternative
 
