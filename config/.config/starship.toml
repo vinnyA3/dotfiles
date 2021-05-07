@@ -2,5 +2,5 @@
 symbol = "🌱 "
 
 [git_state]
-progress_divider = " of "
+format = "[\\($state( $progress_current of $progress_total)\\)]($style) "
 cherry_pick = "🍒 PICKING"
