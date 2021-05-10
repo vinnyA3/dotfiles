@@ -91,7 +91,23 @@ scrolling:
 
 # Font configuration
 font:
-  # Normal (roman) font face
+    # The normal (roman) font face to use.
+  normal:
+    family: Iosevka
+    # Style can be specified to pick a specific face.
+    style: Regular
+
+  # The bold font face
+  bold:
+    family: Iosevka
+    # Style can be specified to pick a specific face.
+    style: Bold
+
+  # The italic font face
+  italic:
+    family: Iosevka
+    # Style can be specified to pick a specific face.
+    style: Italic
   #normal:
     # Font family
     #
@@ -138,12 +154,12 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 9.7
+  size: 13.9 
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1 
+    x: 0 
     y: 0 
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -161,38 +177,39 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
-
-# Colors (Palenight)
+# TokyoNight Alacritty Colors
 colors:
-   # Default colors
-   primary:
-     # background: '0x292d3e'
-     background: '0x161821'
-     foreground: '0xD8DEE9'
+  # Default colors
+  primary:
+    background: '0x1a1b26'
+    foreground: '0xc0caf5'
 
-   # Normal colors
-   normal:
-     black:   '0x3B4252'
-     red:     '0xff5370'
-     green:   '0xA3BE8C'
-     yellow:  '0xEBCB8B'
-     blue:    '0x81A1C1'
-     magenta: '0xB48EAD'
-     cyan:    '0x88C0D0'
-     white:   '0xE5E9F0'
-     orange:  '0xf78c6c'
+  # Normal colors
+  normal:
+    black:   '0x15161E'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xa9b1d6'
 
-   # Bright colors
-   bright:
-     black:   '0x3B4252'
-     red:     '0xff5370'
-     green:   '0xA3BE8C'
-     yellow:  '0xEBCB8B'
-     blue:    '0x81A1C1'
-     magenta: '0xB48EAD'
-     cyan:    '0x88C0D0'
-     white:   '0xE5E9F0'
-     orange:  '0xf78c6c'
+  # Bright colors
+  bright:
+    black:   '0x414868'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xbb9af7'
+    cyan:    '0x7dcfff'
+    white:   '0xc0caf5'
+
+  indexed_colors:
+    - { index: 16, color: '0xff9e64' }
+    - { index: 17, color: '0xdb4b4b' }
+
 #colors:
   # Default colors
   #primary:
