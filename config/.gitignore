@@ -17,6 +17,7 @@ qutebrowser/*
 !mps-youtube/transcode
 !coc/
 
+!bat/
 !xmobar/
 !neofetch/
 !rofi
