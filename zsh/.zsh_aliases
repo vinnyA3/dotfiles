@@ -17,8 +17,9 @@ alias wtr='curl wttr.in'
 # cheat.sh - require https://github.com/chubin/cheat.sh & an internet connection
 alias cheat='cht.sh'
 
-# NOTE: this requires adb installed - kill all the sims
-alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done'
+# NOTE: this requires adb installed 
+alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done' # kill all sims
+alias arev='adb reverse tcp:8081 tcp:8081' 
 
 # python
 alias python='python3'
@@ -71,6 +72,7 @@ alias gbD='git branch -D'
 alias gbl='git blame -b -w'
 alias gbnm='git branch --no-merged'
 alias gbr='git branch --remote'
+alias gbs='git for-each-ref --sort=committerdate refs/heads/ --format="%(committerdate:short) %(refname:short)"'
 
 alias gc='git commit -v'
 alias gc!='git commit -v --amend'
