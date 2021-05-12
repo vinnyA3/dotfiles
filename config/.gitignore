@@ -8,7 +8,6 @@ qutebrowser/*
 !compton/
 !alacritty/
 !cava/
-!nvim/
 !rtv/
 !dunst/
 !ranger

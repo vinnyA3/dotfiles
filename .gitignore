@@ -18,9 +18,6 @@ vim/.vim/*
 !vim/.vim/plugins.vimrc
 !vim/.vim/keys.vimrc
 
-# neovim
-config/.config/nvim/plugin/*
-
 # nvm
 nvm
 # !nvm/.nvmrc
