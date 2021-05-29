@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SYS=$(uname -a)
+
+if [[ ! -z $(echo $SYS | grep -i Linux) ]];
+then
+	# warning: will error out if xdg-open does not exist
+	xdg-open $1
+else
+	# assuming this script will only ever run on Mac lol
+	open $1
+fi
