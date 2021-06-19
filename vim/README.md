@@ -1,5 +1,8 @@
-:memo: Vim/Neovim
+:memo: Vim
 ======
+
+:warning: Neovim has been moved out to it's own, separate repo.
+More notes and links to follow.
 
 Here lies the main editor configuration! 
 
@@ -38,7 +41,7 @@ can't make any promises.
 
 
 **Note 3**: The nightly version is necessary (as of now) for NVIM-LSP
-functionality.
+functionality .. amongst other plugin functionality.
 
 ----
 
