@@ -17,6 +17,11 @@ alias wtr='curl wttr.in'
 # cheat.sh - require https://github.com/chubin/cheat.sh & an internet connection
 alias cheat='cht.sh'
 
+# dbus music player control (see scripts in dotfiles' scripts dir)
+alias mpt='dbus-mpris-player-control toggle'
+alias mpn='dbus-mpris-player-control next'
+alias mpp='dbus-mpris-player-control prev'
+
 # NOTE: this requires adb installed 
 alias simk='adb devices | grep emulator | cut -f1 | while read line; do adb -s $line emu kill; done' # kill all sims
 alias arev='adb reverse tcp:8081 tcp:8081' 

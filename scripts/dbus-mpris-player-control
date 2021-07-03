@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# dbus-mpris-player-control:
+#   * this script allows basic cli control for valid mpris dbus clients
+#   * (note) only works for firefox atm .. will add other browsers later
+
+# search valid dbus music player client 
+FOUND_MUSIC_PLAYER_CLIENT=$(dbus-send \
+  --print-reply \
+  --dest=org.freedesktop.DBus \
+  /org/freedesktop/DBus \
+  org.freedesktop.DBus.ListNames | awk '/mpris/ && /firefox/')
+
+# toggle between play/pause states
+function toggle()
+{
+  dbus-send \
+    --print-reply \
+    --dest="$1" \
+    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+}
+
+# next song 
+function next()
+{
+  dbus-send \
+    --print-reply \
+    --dest="$1" \
+    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+}
+
+# prev song
+function prev()
+{
+  dbus-send \
+    --print-reply \
+    --dest="$1" \
+    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+}
+
+function handleErrorneousInput()
+{
+  if [ -z "$1" ];
+  then
+    echo 'Please input a damn command!'
+  else
+    echo "'$1' is not a valid command, you dope!"
+  fi
+}
+
+# if our variable does not contain an empty string (target acquired)
+if [ ! -z "$FOUND_MUSIC_PLAYER_CLIENT" ];
+then
+  NORMALIZED_PLAYER_STRING=$(echo "$FOUND_MUSIC_PLAYER_CLIENT" | awk '{ print $2 }' | tr -d '"')
+
+  case "$1" in
+    "toggle" ) toggle $NORMALIZED_PLAYER_STRING;; 
+    "next" ) next $NORMALIZED_PLAYER_STRING;; 
+    "prev" ) prev $NORMALIZED_PLAYER_STRING;; 
+    *) handleErrorneousInput $1; exit 1;; 
+  esac
+else
+  echo 'A valid player client has not been found ... better luck next time :)'
+  exit 1
+fi
+
