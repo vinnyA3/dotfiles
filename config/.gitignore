@@ -16,5 +16,7 @@ qutebrowser/*
 !xmobar/
 !neofetch/
 !zathura/
+
+!lynx.*
 !redshift.conf
 !starship.toml
