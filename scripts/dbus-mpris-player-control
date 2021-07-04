@@ -11,16 +11,15 @@ FOUND_MUSIC_PLAYER_CLIENT=$(dbus-send \
   /org/freedesktop/DBus \
   org.freedesktop.DBus.ListNames | awk '/mpris/ && /firefox/')
 
-# toggle between play/pause states
-function toggle()
-{
+# toggle: toggle between play/pause states
+function toggle() {
   dbus-send \
     --print-reply \
     --dest="$1" \
     /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 }
 
-# next song 
+# next: next song 
 function next()
 {
   dbus-send \
@@ -29,7 +28,7 @@ function next()
     /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 }
 
-# prev song
+# prev: previous song 
 function prev()
 {
   dbus-send \
@@ -42,11 +41,37 @@ function handleErrorneousInput()
 {
   if [ -z "$1" ];
   then
-    echo 'Please input a damn command!'
+    echo 'Please input a command!'
   else
-    echo "'$1' is not a valid command, you dope!"
+    echo "'$1' is not a valid command!  Consult help if needed: dbus-mpris-player-control --help"
   fi
 }
+
+# help: description script & valid commands
+function help()
+{
+  echo -e '
+  dbus-mpris-player-control: a helpful script to control current audio source
+  managed by the mpris client.  Actions and commands are relayed using the dbus
+  protocol.
+  \n
+  Syntax: dbus-mpris-player-control [-options][command]\n
+  Options:
+  h     Print this help.
+  \n
+  Commands:
+  toggle: play/pause the current mpris media
+  next: skip to the next track in the media playlist
+  prev: restart current track, or play previous track
+  \n
+  Example(s):
+  Print help     dbus-mpris-player-control -h
+  Toggle current track     dbus-mpris-player-control toggle '
+}
+
+###################################################################
+# Main Entry Point
+###################################################################
 
 # if our variable does not contain an empty string (target acquired)
 if [ ! -z "$FOUND_MUSIC_PLAYER_CLIENT" ];
@@ -57,6 +82,7 @@ then
     "toggle" ) toggle $NORMALIZED_PLAYER_STRING;; 
     "next" ) next $NORMALIZED_PLAYER_STRING;; 
     "prev" ) prev $NORMALIZED_PLAYER_STRING;; 
+    "--help" | "-h" ) help;;
     *) handleErrorneousInput $1; exit 1;; 
   esac
 else
