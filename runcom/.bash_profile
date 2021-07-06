@@ -16,10 +16,10 @@ else
 fi
 
 # Make utilities available
-PATH="$DOTFILES_DIR/bin:$PATH"
+# PATH="$DOTFILES_DIR/bin:$PATH"
 
 # Source the dotfiles (order matters here)
-for DOTFILE in "$DOTFILES_DIR"/sys/.{functions,env,nvm,alias,completion,prompt,terminal}; do
+for DOTFILE in "$DOTFILES_DIR"/sys/.{profile,functions,env,nvm,alias,completion,prompt,terminal}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
 
@@ -28,4 +28,3 @@ unset READLINK CURRENT_SCRIPT SCRIPT_PATH DOTFILE
 
 # export
 export DOTFILES_DIR
-if [ -e /home/qwerty/.nix-profile/etc/profile.d/nix.sh ]; then . /home/qwerty/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
