@@ -14,7 +14,7 @@ everything.
 - [gnu stow](https://www.gnu.org/software/stow/) (symlink manager) - avoid having to manually create sym links
 - [homebrew](https://brew.sh/) - missing package manager (mac only). 
 
-Please see the Install section directly below for more information!
+Please see the *Install* section directly below for more information!
 
 
 ## Install
@@ -39,17 +39,19 @@ Feel free to add other package managers to the script!
 
 ## My System Overview
 
-* os(s): [Void Linux](https://voidlinux.org/), [PopOS](https://pop.system76.com/)
-* window manager:  [xmonad](https://xmonad.org/)
+* os(s): [PopOS](https://pop.system76.com/), [Void Linux](https://voidlinux.org/),
+* window manager:  PopOS's tiling manager, [xmonad](https://xmonad.org/)
 * statusbar(s): [polybar](https://github.com/polybar/polybar) - default, xmobar 
-* theme: dracula 
-* editor: neovim
+* theme: Tokyonight
+* editor: Neovim
 * shell: zsh
 * terminal emulator: iterm2 - macOS, alacritty/suckless term - linux
 * programs & binaries(installed separately): [nnn](https://github.com/jarun/nnn), [fzf](https://github.com/junegunn/fzf), [rg](https://github.com/BurntSushi/ripgrep), [ag](https://github.com/ggreer/the_silver_searcher), node (managed by [nvm](https://github.com/nvm-sh/nvm)) 
   - many, if not all of these programs are utilized by my [Vim](https://github.com/vinnyA3/dotfiles/tree/master/vim) setup
+  - :warning: while the legacy vim config lives here, the main neovim configuration
+  exists in separate repo: https://github.com/vinnyA3/neovim-config 
 
-The core configuration of my development env (zsh, tmux, vim, helper scripts)
+The core configuration of my development env (zsh, tmux, vim/neovim, helper scripts)
 try their best to be OS agnostic; however, there are certain instances where you
 just can't get around configuration for the specific platform that you're
 working with.  For those cases, the lines are commented in/out in the config
