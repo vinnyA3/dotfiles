@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# script requires fzf for fuzzy wallpaper dir search
+
+WAL_DIR="$HOME/.local/share/backgrounds"
+FZF_OUTPUT=$(ls "$WAL_DIR" | fzf)
+
+if command -v fzf > /dev/null;
+then
+  echo "Changing background now..."
+  gsettings set org.gnome.desktop.background picture-uri "$WAL_DIR/$FZF_OUTPUT"
+else
+  echo "Please install 'fzf' to use this script."
+fi
