@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# script requires fzf for fuzzy wallpaper dir search
+# cb - change background
+#   requires fzf for fuzzy wallpaper dir search
 
 WAL_DIR="$HOME/.local/share/backgrounds"
 FZF_OUTPUT=$(ls "$WAL_DIR" | fzf)
