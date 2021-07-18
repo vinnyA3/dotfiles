@@ -1,3 +1,0 @@
-[submodule "nvim"]
-	path = nvim
-	url = git@github.com:vinnyA3/neovim-config.git 
