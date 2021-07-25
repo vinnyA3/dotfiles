@@ -1,7 +1,7 @@
 #!/bin/bash
 DOTFILES_DIR=$HOME/.dotfiles
 
-STOW_FOLDERS="config,git,tmux,zsh"
+STOW_FOLDERS="bin,config,git,tmux,zsh"
 
 if ! command -v stow > /dev/null
 then
