@@ -16,7 +16,6 @@ qutebrowser/*
 !xmobar/
 !neofetch/
 !zathura/
-!nvim/
 
 !lynx.*
 !redshift.conf
