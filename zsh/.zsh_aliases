@@ -11,6 +11,9 @@ alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
 
+# requires custom python script (get-date.py)--see bin in dotfiles
+alias cdate='get-date.py | pbcopy; echo "copied date to clipboard!"' # mac
+
 # weather !!
 alias wtr='curl wttr.in'
 
