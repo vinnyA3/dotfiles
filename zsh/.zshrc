@@ -7,6 +7,11 @@ bindkey -v
 bindkey "^P" history-beginning-search-backward
 bindkey "^N" history-beginning-search-forward
 
+# Source edit-command-line 'plug'
+autoload -z edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd ' ' edit-command-line # binds cmd-editor trigger to space
+
 # ==============
 #    NVM Node
 # ==============

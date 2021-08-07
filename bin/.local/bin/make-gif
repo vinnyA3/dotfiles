@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# make-gif (requires ffmpeg)
+# - this script creates a small gif (600x400) from an mp4 file
+
+# @params
+# 1 - string filename
+
+if command -v ffmpeg 2>&1 > /dev/null;
+then
+  if [ -z $1 ];
+  then
+    echo 'Please supply an argument (mp4 file to make a gif)'
+    exit 1
+  fi
+
+  ffmpeg \
+    -i $1 \
+    -s 600x400 -pix_fmt rgb24 -r 10 \
+    cast-success.gif
+else
+  echo 'You need ffmpeg to run this script!'
+fi
