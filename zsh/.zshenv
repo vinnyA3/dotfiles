@@ -1,7 +1,10 @@
 # =============
 #    EXPORT
 # =============
-export EDITOR=$HOME/.local/bin/nvim # aliases to nvim
+
+# editor(script) - please check script exists in '.local/bin'
+export EDITOR=$HOME/.local/bin/editor # aliases to nvim
+
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx # probably not even needed anymore tbh
 export CLICOLOR=1
 export XDG_CONFIG_HOME=$HOME/.config
