@@ -4,12 +4,13 @@ SYS=$(uname -a)
 
 if [[ ! -z $(echo $SYS | grep -i Linux) ]];
 then
+
 	# warning: will error out if xdg-open does not exist
-  if [[ -x xdg-open ]];
+  if ! command -v xdg-open &> /dev/null
   then
-    xdg-open $1
-  else
     echo "xdg-open command not found!"
+  else
+    xdg-open $1
   fi
 else
 	# assuming this script will only ever run on Mac lol
