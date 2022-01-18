@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Dependencies:
+#  * yt-dlp (dlp is preferred, but youtube-dl can also be used -- just update the call in the chosen_rendition assignment)
+#  * fzf 
+#  * mpv >= 0.33.1 (needs ytdl hook options)
+
+# @param(s) youtubeURL - youtube video url string
+
+if [ $# -eq 0 ]
+then
+  echo "Please supply a valid Youtube URL"
+  exit 1
+fi
+
+chosen_rendition=$(\
+  yt-dlp --list-formats $1 \
+  | grep -A5000 -m1 -e 'ID' | tail -n+3 | fzf)
+
+normalized_rendition_choice=$(echo $chosen_rendition | awk '{ print $1 }')
+
+if [[ ! -z $normalized_rendition_choice ]]; then
+  echo 'Preparing stream ....'
+  mpv $1 --ytdl --ytdl-format=$normalized_rendition_choice
+fi
