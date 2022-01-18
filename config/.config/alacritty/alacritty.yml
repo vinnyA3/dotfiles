@@ -154,7 +154,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 12.5
+  size: 13.5
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -178,38 +178,107 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 #draw_bold_text_with_bright_colors: false
 #
-# TokyoNight (Storm) Alacritty Colors -> https://github.com/folke/tokyonight.nvim/blob/main/extras/alacritty_tokyonight_storm.yml
-colors:
-  # Default colors
-  primary:
-    background: '0x1a1b26'
-    foreground: '0xc0caf5'
+# Nightfox Alacritty Colors
+# Style: nightfox
+schemes:
+  nightfox: &nightfox
+    # Default colors
+    primary:
+      background: '0x192330'
+      foreground: '0xcdcecf'
+    # Normal colors
+    normal:
+      black:   '0x393b44'
+      red:     '0xc94f6d'
+      green:   '0x81b29a'
+      yellow:  '0xdbc074'
+      blue:    '0x719cd6'
+      magenta: '0x9d79d6'
+      cyan:    '0x63cdcf'
+      white:   '0xdfdfe0'
+    # Bright colors
+    bright:
+      black:   '0x7f8c98'
+      red:     '0xd6616b'
+      green:   '0x58cd8b'
+      yellow:  '0xffe37e'
+      blue:    '0x84cee4'
+      magenta: '0xb8a1e3'
+      cyan:    '0x59f0ff'
+      white:   '0xf2f2f2'
+    indexed_colors:
+      - { index: 16, color: '0xf4a261' }
+      - { index: 17, color: '0xd67ad2' }
 
-  # Normal colors
-  normal:
-    black:   '0x15161E'
-    red:     '0xf7768e'
-    green:   '0x9ece6a'
-    yellow:  '0xe0af68'
-    blue:    '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan:    '0x7dcfff'
-    white:   '0xa9b1d6'
+  catppuccin: &catppuccin
+    primary:
+      background: '#1E1E28'
+      foreground: '#DADAE8'
 
-  # Bright colors
-  bright:
-    black:   '0x414868'
-    red:     '0xf7768e'
-    green:   '0x9ece6a'
-    yellow:  '0xe0af68'
-    blue:    '0x7aa2f7'
-    magenta: '0xbb9af7'
-    cyan:    '0x7dcfff'
-    white:   '0xc0caf5'
+    # Colors the cursor will use if `custom_cursor_colors` is true
+    cursor:
+      text: '#1E1E28'
+      cursor: '#B1E3AD'
 
-  indexed_colors:
-    - { index: 16, color: '0xff9e64' }
-    - { index: 17, color: '0xdb4b4b' }
+    # Normal colors
+    normal:
+      black:   '#6E6C7E'
+      red:     '#E38C8F'
+      green:   '#B1E3AD'
+      yellow:  '#EBDDAA'
+      blue:    '#A4B9EF'
+      magenta: '#C6AAE8'
+      cyan:    '#E5B4E2'
+      white:   '#DADAE8'
+
+    # Bright colors
+    bright:
+      black:   '#6E6C7E'
+      red:     '#E38C8F'
+      green:   '#B1E3AD'
+      yellow:  '#EBDDAA'
+      blue:    '#A4B9EF'
+      magenta: '#C6AAE8'
+      cyan:    '#E5B4E2'
+      white:   '#DADAE8'
+
+    indexed_colors:
+      - { index: 16, color: '#F2CECF' }
+      - { index: 17, color: '#3E4058' }
+
+  tokyonight: &tokyonight
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xc0caf5'
+
+    # Normal colors
+    normal:
+      black:   '0x15161E'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xbb9af7'
+      cyan:    '0x7dcfff'
+      white:   '0xa9b1d6'
+
+    # Bright colors
+    bright:
+      black:   '0x414868'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xbb9af7'
+      cyan:    '0x7dcfff'
+      white:   '0xc0caf5'
+
+    indexed_colors:
+      - { index: 16, color: '0xff9e64' }
+      - { index: 17, color: '0xdb4b4b' }
+
+colors: *catppuccin
 
 #colors:
   # Default colors
@@ -360,7 +429,8 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.94
+background_opacity: 1 
+# background_opacity: 0.94
 
 #selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
