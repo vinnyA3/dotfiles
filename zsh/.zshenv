@@ -37,3 +37,7 @@ export FFF_FAV3=~/Documents/notes/
 # lynx
 export LYNX_CFG=$XDG_CONFIG_HOME/lynx.cfg
 export LYNX_LSS=$XDG_CONFIG_HOME/lynx.lss
+
+if [ -e /home/qwerty/.nix-profile/etc/profile.d/nix.sh ];
+  then . /home/qwerty/.nix-profile/etc/profile.d/nix.sh;
+fi # added by Nix installer
