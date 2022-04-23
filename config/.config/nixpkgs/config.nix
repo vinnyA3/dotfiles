@@ -1,12 +1,15 @@
-with import <nixpkgs> {};
+{ pkgs }:
 
-{
+let
+  inherit (pkgs) buildEnv;
+
+in {
   allowUnfree = false;
 
-  packageOverrides = pkgs: with pkgs; {
-    main = pkgs.buildEnv {
+  packageOverrides = pkgs: {
+    main = (buildEnv {
       name = "main";
-      paths = [
+      paths = with pkgs; [
         bat
         cmake
         exa
@@ -17,6 +20,7 @@ with import <nixpkgs> {};
         jq
         lynx
         nerdfonts
+        neovim
         starship
         tab-rs
         tealdeer
@@ -25,7 +29,8 @@ with import <nixpkgs> {};
         tree-sitter
         yt-dlp
       ];
+
       pathsToLink = [ "/share" "/bin" ];
-    };
+    });
   };
 }
