@@ -4,7 +4,7 @@ let
   inherit (pkgs) buildEnv;
 
 in {
-  allowUnfree = false;
+  allowUnfree = true;
 
   packageOverrides = pkgs: {
     main = (buildEnv {
@@ -21,6 +21,7 @@ in {
         lynx
         nerdfonts
         neovim
+        obsidian
         starship
         tab-rs
         tealdeer
