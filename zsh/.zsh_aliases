@@ -22,6 +22,7 @@ alias cheat='cht.sh'
 
 # dbus music player control (see scripts in dotfiles' scripts dir)
 alias mpt='dbus-mpris-player-control toggle'
+alias mpm='dbus-mpris-player-control meta'
 alias mpn='dbus-mpris-player-control next'
 alias mpp='dbus-mpris-player-control prev'
 
