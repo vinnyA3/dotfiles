@@ -16,6 +16,7 @@ in {
         feh
         fff
         fzf
+        gitui
         gtypist
         iosevka
         jq

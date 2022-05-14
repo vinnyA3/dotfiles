@@ -17,6 +17,7 @@ qutebrowser/*
 !neofetch/
 !zathura/
 !mpv/
+!gitui/
 !nixpkgs
 
 !lynx.*
