@@ -3,12 +3,15 @@ TMUX Configuration
 
 Default prefix: `CTRL + a`
 
-To get fully setup with this configuration, you're going to need to install
-[TPM - Tmux Plugin Manager](https://github.com/tmux-plugins/tpm):
+:warning: note: config utilizes external plugin
+[tmux-pain-control](https://github.com/tmux-plugins/tmux-pain-control).  Currently, loading is done manually via `tmux.conf`.
+However, you can use [tpm](https://github.com/tmux-plugins/tpm) to manage third-party plugins if you prefer.
 
-`git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+---
 
-Once you have that installed, source your `tmux.conf` file (you can use:
-`CTRL<Prefix> + r`) and install plugins with: `CTRL<prefix> + I`.
+### Theme(s)
 
-:sunglasses: You're ready to rock!
+This configuration is using a modified **Catppuccin** color theme -- see
+`tmux.conf`.
+
+![screenshot of tmux theme - featuring neovim](../images/tmux-nvim.png)
