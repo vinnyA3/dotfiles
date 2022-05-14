@@ -1,12 +1,13 @@
 remove Lock = Caps_Lock
-! remove mod1 = Alt_R
+remove mod1 = Alt_R
 
 ! Right Alt remapped to Super
 clear mod4
-! keycode 108 = Super_R
-keycode 135 = Super_R
+
+keycode 108 = Super_R
 add mod4 = Super_R
-add Lock = Escape
+add Lock = Caps_Lock 
+
 keysym Caps_Lock = Escape
 keysym Escape = Caps_Lock
 
