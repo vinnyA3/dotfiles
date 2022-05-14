@@ -19,10 +19,11 @@ in {
         gtypist
         iosevka
         jq
+        lolcat
         lynx
         nerdfonts
-        (neovim.override
-          { buildInputs = [ stdenv.cc.cc.lib ]; })
+        neovim
+        neovim-remote
         obsidian
         starship
         tab-rs
