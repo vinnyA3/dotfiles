@@ -13,6 +13,7 @@ in {
         bat
         cmake
         exa
+        feh
         fff
         fzf
         gtypist
@@ -20,7 +21,8 @@ in {
         jq
         lynx
         nerdfonts
-        neovim
+        (neovim.override
+          { buildInputs = [ stdenv.cc.cc.lib ]; })
         obsidian
         starship
         tab-rs
