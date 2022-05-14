@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# notify-track:
+#  simple wrapper to display currently playing track meta from MPRIS client
+
+title=$(dbus-mpris-player-control meta title)
+artist=$(dbus-mpris-player-control meta artist)
+artUrl=$(dbus-mpris-player-control meta art)
+
+notify-send -i $artUrl "Now Playing:" \
+  -u normal \
+  "$title - <i>$artist</i>"
