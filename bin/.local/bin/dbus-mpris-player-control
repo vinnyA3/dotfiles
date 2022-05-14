@@ -2,7 +2,7 @@
 
 # dbus-mpris-player-control:
 #   * this script allows basic cli control for valid mpris dbus clients
-#   * (note) only works for firefox atm .. will add other browsers later
+#   * (note) only works for firefox atm .. will add other mpris clients later
 
 # search valid dbus music player client 
 FOUND_MUSIC_PLAYER_CLIENT=$(dbus-send \
@@ -11,34 +11,91 @@ FOUND_MUSIC_PLAYER_CLIENT=$(dbus-send \
   /org/freedesktop/DBus \
   org.freedesktop.DBus.ListNames | awk '/mpris/ && /firefox/')
 
+MPRIS_PLAYER_INTERFACE=org.mpris.MediaPlayer2.Player
+PROPERTIES_INTERFACE=org.freedesktop.DBus.Properties
+
+###################################################################
+# Utilities
+###################################################################
+function dumpMetadata() {
+  dbus-send \
+    --dest="$1" \
+    --print-reply \
+    /org/mpris/MediaPlayer2 \
+    $PROPERTIES_INTERFACE.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata'
+}
+
+function extractSongTitleFromMetadata() {
+  dbus-send \
+    --dest="$1" \
+    --print-reply \
+    /org/mpris/MediaPlayer2 \
+    $PROPERTIES_INTERFACE.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata' | grep -E 'title' -A 1 | tail -n1 | cut -d '"' -f2
+}
+
+function extractMainArtistFromMetadata() {
+  dbus-send \
+    --dest="$1" \
+    --print-reply \
+    /org/mpris/MediaPlayer2 \
+    $PROPERTIES_INTERFACE.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata' | grep -E 'artist' -A 2 | tail -n1 | cut -d '"' -f2
+}
+
+function extractArtUrlFromMetadata() {
+  dbus-send \
+    --dest="$1" \
+    --print-reply \
+    /org/mpris/MediaPlayer2 \
+    $PROPERTIES_INTERFACE.Get string:'org.mpris.MediaPlayer2.Player' \
+    string:'Metadata' | grep -E 'artUrl' -A 1 | tail -n1 | cut -d '"' -f2
+}
+
+###################################################################
+# MPRIS Controls
+###################################################################
+
 # toggle: toggle between play/pause states
 function toggle() {
   dbus-send \
     --print-reply \
     --dest="$1" \
-    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+    /org/mpris/MediaPlayer2 $MPRIS_PLAYER_INTERFACE.PlayPause
 }
 
-# next: next song 
-function next()
-{
+# next: next song
+function next() {
   dbus-send \
     --print-reply \
     --dest="$1" \
-    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+    /org/mpris/MediaPlayer2 $MPRIS_PLAYER_INTERFACE.Next
 }
 
-# prev: previous song 
-function prev()
-{
+# prev: previous song
+function prev() {
   dbus-send \
     --print-reply \
     --dest="$1" \
-    /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+    /org/mpris/MediaPlayer2 $MPRIS_PLAYER_INTERFACE.Previous
 }
 
-function handleErrorneousInput()
-{
+function getMetadata() {
+  if [ -z "$2" ];
+  then
+    dumpMetadata $1;
+  else
+    case "$2" in
+      "artist" ) extractMainArtistFromMetadata $1;;
+      "title" ) extractSongTitleFromMetadata $1;;
+      "art" ) extractArtUrlFromMetadata $1;;
+      *) dumpMetadata $1;;
+    esac
+  fi
+}
+
+function handleErrorneousInput() {
   if [ -z "$1" ];
   then
     echo 'Please input a command!'
@@ -48,8 +105,7 @@ function handleErrorneousInput()
 }
 
 # help: description script & valid commands
-function help()
-{
+function help() {
   echo -e '
   dbus-mpris-player-control: a helpful script to control current audio source
   managed by the mpris client.  Actions and commands are relayed using the dbus
@@ -63,9 +119,13 @@ function help()
   toggle: play/pause the current mpris media
   next: skip to the next track in the media playlist
   prev: restart current track, or play previous track
+  meta: get metadata for current track -- if either 'artist', 'title', or 'art'
+  is passed as an argument, you will get the corresponding piece of meta.  If no
+  arg is supplied, you will get a dump of raw meta from DBus properties output.
   \n
   Example(s):
   Print help     dbus-mpris-player-control -h
+  Get Metadata    dbus-mpris-player-control meta title
   Toggle current track     dbus-mpris-player-control toggle '
 }
 
@@ -79,14 +139,14 @@ then
   NORMALIZED_PLAYER_STRING=$(echo "$FOUND_MUSIC_PLAYER_CLIENT" | awk '{ print $2 }' | tr -d '"')
 
   case "$1" in
-    "toggle" ) toggle $NORMALIZED_PLAYER_STRING;; 
-    "next" ) next $NORMALIZED_PLAYER_STRING;; 
-    "prev" ) prev $NORMALIZED_PLAYER_STRING;; 
+    "toggle" ) toggle $NORMALIZED_PLAYER_STRING;;
+    "next" ) next $NORMALIZED_PLAYER_STRING;;
+    "prev" ) prev $NORMALIZED_PLAYER_STRING;;
+    "meta" ) getMetadata $NORMALIZED_PLAYER_STRING $2;;
     "--help" | "-h" ) help;;
-    *) handleErrorneousInput $1; exit 1;; 
+    *) handleErrorneousInput $1; exit 1;;
   esac
 else
   echo 'A valid player client has not been found ... better luck next time :)'
   exit 1
 fi
-
