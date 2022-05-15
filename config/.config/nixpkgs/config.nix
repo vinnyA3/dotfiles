@@ -12,6 +12,7 @@ in {
       paths = with pkgs; [
         bat
         cmake
+        discord
         exa
         feh
         fff
