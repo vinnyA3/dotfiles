@@ -20,6 +20,7 @@ qutebrowser/*
 !gitui/
 !nixpkgs
 !btop
+!systemd
 
 !lynx.*
 !redshift.conf

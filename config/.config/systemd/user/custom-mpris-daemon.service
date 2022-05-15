@@ -1,0 +1,8 @@
+[Unit]
+Description=Custom MPRIS Player daemon - firefox only (for now)
+
+[Service]
+ExecStart=/usr/bin/python3 /home/qwerty/.local/bin/monitor-mpris-track.py
+
+[Install]
+WantedBy=default.target
