@@ -19,6 +19,7 @@ qutebrowser/*
 !mpv/
 !gitui/
 !nixpkgs
+!btop
 
 !lynx.*
 !redshift.conf
