@@ -1,0 +1,18 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+TryExec=/home/qwerty/.local/bin/alacritty-float
+Exec=/home/qwerty/.local/bin/alacritty-float
+Icon=com.alacritty.Alacritty
+Terminal=false
+Categories=System;TerminalEmulator;
+
+Name=Alacritty Float
+GenericName=a float terminal for convenience
+Comment=A floating alacritty instance
+StartupWMClass=Alacritty
+Actions=New;
+
+[Desktop Action New]
+Name=New Float Terminal
+Exec=/home/qwerty/.local/bin/alacritty-float

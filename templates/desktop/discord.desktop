@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Discord
+StartupWMClass=Discord
+GenericName=A VoIP and instant messaging application
+Comment=Discord (w/ discocss wrapper)
+TryExec=/home/qwerty/.local/bin/discocss
+Exec=/home/qwerty/.local/bin/discocss
+Icon=/home/qwerty/.nix-profile/share/pixmaps/discord.png
+Type=Application
+Categories=Office;Utility;
+Keywords=Discord;Instant Messager;
