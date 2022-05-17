@@ -34,6 +34,7 @@ in {
         traceroute
         tree-sitter
         yt-dlp
+        zathura
       ];
 
       pathsToLink = [ "/share" "/bin" ];
