@@ -2,10 +2,8 @@
 	email = vincent.aceto@gmail.com
 	name = vinnyA3
 [core]
-  # this path will vary on diff systems, find the nvim bin path with: 'which nvim'
-	editor = /Users/vincent.aceto/.local/bin/nvim # work machine - mac
-	editor = /home/qwerty/Applications/third-party/appimages/nvim
-  # editor = /home/linuxbrew/.linuxbrew/bin/nvim
+ # env var set dynamically by script in './local/bin'
+  editor = "$EDITOR"
 [diff]
 	tool = nvimdiff
 [difftool]
