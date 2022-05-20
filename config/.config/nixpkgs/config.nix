@@ -24,7 +24,6 @@ in {
         lolcat
         lynx
         nerdfonts
-        neovim
         neovim-remote
         obsidian
         starship
