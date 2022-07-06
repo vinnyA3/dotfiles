@@ -1,12 +1,14 @@
 [user]
-	email = vincent.aceto@gmail.com
-	name = vinnyA3
+  email = vincent.aceto@gmail.com
+  name = vinnyA3
 [core]
- # env var set dynamically by script in './local/bin'
+# env var set dynamically by script in './local/bin'
   editor = "$EDITOR"
 [diff]
-	tool = nvimdiff
+  tool = nvimdiff
 [difftool]
-	prompt = false
+  prompt = false
 [difftool "nvimdiff"]
-	cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+  cmd = "nvim -d \"$LOCAL\" \"$REMOTE\""
+[alias]
+  vimdiff = difftool
