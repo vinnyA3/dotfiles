@@ -53,16 +53,15 @@ class FirefoxMPRISWatcher(object):
         self.bus = dbus.SessionBus(mainloop = bus_loop)
         mainloop = GLib.MainLoop()
         self.notify_id = None
+        self.firefox_mpris_client = None
         self.previousTitle = ''
             
         # setup interfaces
         self.session_bus = self.bus.get_object(
                 "org.freedesktop.DBus",
                 "/org/freedesktop/DBus")
-
         
         self.notifier = Notifier(self.bus)
-        self.firefox_mpris_client = self.get_connected_firefox_instance_name()
 
         try:
             self.props_changed_listener()
@@ -73,7 +72,7 @@ class FirefoxMPRISWatcher(object):
         self.session_bus.connect_to_signal(
                 DBusSignals.NameOwnerChanged,
                 self.handle_name_owner_changed,
-                arg0=self.firefox_mpris_client)
+                arg0=self.get_connected_firefox_instance_name())
 
         mainloop.run()
 
@@ -84,20 +83,22 @@ class FirefoxMPRISWatcher(object):
     def props_changed_listener(self):
         """Hook up callback to PropertiesChanged event"""
 
-        self.firefox = self.bus.get_object(
-                self.firefox_mpris_client,
-                "/org/mpris/MediaPlayer2")
+        if (self.firefox_mpris_client != None):
+            self.firefox = self.bus.get_object(
+                    self.firefox_mpris_client,
+                    "/org/mpris/MediaPlayer2")
 
-        self.firefox.connect_to_signal(
-                DBusSignals.PropertiesChanged,
-                self.handle_properties_changed)
+            self.firefox.connect_to_signal(
+                    DBusSignals.PropertiesChanged,
+                    self.handle_properties_changed)
 
     def handle_name_owner_changed(self, name, older_owner, new_owner):
         """Introspect the NameOwnerChanged signal to work out if firefox mpris client has started"""
 
-        if name == self.firefox_mpris_client:
+        if name.find("MediaPlayer2.firefox.instance") != 1:
             if new_owner and new_owner != older_owner:
                 print('[MPRIS] registering new ff client ...')
+                self.firefox_mpris_client = self.get_connected_firefox_instance_name()
                 self.props_changed_listener()
             else:
                 print('[MPRIS] ff client cleaning up ...')
