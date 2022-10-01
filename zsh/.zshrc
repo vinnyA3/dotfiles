@@ -13,30 +13,6 @@ zle -N edit-command-line
 bindkey -M vicmd ' ' edit-command-line # binds cmd-editor trigger to space
 
 # ==============
-#    NVM Node
-# ==============
-#Add every binary that requires nvm, npm or node to run to an array of node globals
-NODE_GLOBALS=(`find $XDG_CONFIG_HOME/nvm/versions/node -maxdepth 3 -type l -wholename '*/bin/*' | xargs -n1 basename | sort | uniq`)
-NODE_GLOBALS+=("node")
-NODE_GLOBALS+=("nvm")
-
-# Lazy-loading nvm + npm on node globals call
-load_nvm () {
-  export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-}
-
-# Making node global trigger the lazy loading
-for cmd in "${NODE_GLOBALS[@]}"; do
-  eval "${cmd}(){ unset -f ${NODE_GLOBALS}; load_nvm; ${cmd} \$@ }"
-done
-
-npm-do () {
-  PATH=$(npm bin):$PATH
-  eval $@
-}
-
-# ==============
 #    DOCKER
 # ==============
 docker-env() {
@@ -82,13 +58,14 @@ HISTSIZE=1000000
 # ==============
 # source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# linux sourced
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# linux sourced (nix)
+source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # ==============
 #    PROMPT
 # ==============
 
-eval "$(starship init zsh)" # requires https://github.com/starship/starship
 # eval "$(rbenv init -)" # pretty sure I only use this on Mac
+eval "$(starship init zsh)" # requires https://github.com/starship/starship
