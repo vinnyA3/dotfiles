@@ -1,6 +1,8 @@
 mps-youtube/*
 qutebrowser/*
 
+.config/fontconfig/conf.d/*
+
 !mps-youtube/config
 !mps-youtube/transcode
 !qutebrowser

@@ -1,11 +1,3 @@
-# Config
-# check sub dir config/.config
-config/.config/*
-!config/.config/dunst/
-!config/.config/qutebrowser/
-!config/.config/polybar/
-
-#
 # Vim
 vim/.vim/*
 !vim/.vim/autoload/*
