@@ -4,8 +4,7 @@ let
   inherit (pkgs) buildEnv;
 
 in {
-  # TODO: this needs to be tested
-  # imports = [ ./rustlang-config.nix ];
+  imports = [ ./rust-shell.nix ];
 
   allowUnfree = true;
 
@@ -38,6 +37,9 @@ in {
         tree-sitter
         yt-dlp
         zathura
+        zsh
+        zsh-autosuggestions
+        zsh-syntax-highlighting
       ];
 
       pathsToLink = [ "/share" "/bin" ];
