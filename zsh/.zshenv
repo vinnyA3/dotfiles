@@ -12,7 +12,7 @@ export XDG_CONFIG_HOME=$HOME/.config
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME
 
-export PATH=$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:$PATH:/usr/local/opt/llvm/bin:$PATH
+export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:/usr/local/opt/llvm/bin
 
 # requires fzf installed
 export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
@@ -29,6 +29,10 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # export JAVA_HOME=$(/usr/libexec/java_home)
 
+# volta - nodejs version manager
+export VOLTA_HOME=$HOME/.volta
+export PATH=$PATH:$VOLTA_HOME/bin # add volta to path
+
 # fff - configuration
 export FFF_FAV1=~/.dotfiles
 export FFF_FAV2=~/Development/equinox-work/app-mobile
@@ -38,6 +42,8 @@ export FFF_FAV3=~/Documents/notes/
 export LYNX_CFG=$XDG_CONFIG_HOME/lynx.cfg
 export LYNX_LSS=$XDG_CONFIG_HOME/lynx.lss
 
-if [ -e /home/qwerty/.nix-profile/etc/profile.d/nix.sh ];
-  then . /home/qwerty/.nix-profile/etc/profile.d/nix.sh;
+if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ];
+  then
+    . $HOME/.nix-profile/etc/profile.d/nix.sh;
+    . $HOME/.nix-profile/etc/profile.d/hm-session-vars.sh;
 fi # added by Nix installer
