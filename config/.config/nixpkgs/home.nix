@@ -10,9 +10,12 @@
   fonts.fontconfig = {
     enable = true;
   };
+
+  nixpkgs.config.allowUnfree = true;
   
   home.packages = with pkgs; [
     bat
+    cargo
     cmake
     discord
     exa
@@ -25,9 +28,12 @@
     jq
     lolcat
     lynx
+    mpv
     neovim-remote
     nerdfonts
     obsidian
+    ripgrep
+    rustc
     rust-analyzer
     starship
     tab-rs
