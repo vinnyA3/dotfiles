@@ -43,6 +43,7 @@
     traceroute
     tree-sitter
     unclutter-xfixes
+    xclip
     yt-dlp
     zathura
     zsh
