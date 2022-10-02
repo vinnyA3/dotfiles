@@ -15,6 +15,7 @@
   
   home.packages = with pkgs; [
     bat
+    btop
     cargo
     cmake
     discord
@@ -41,6 +42,7 @@
     tmux
     traceroute
     tree-sitter
+    unclutter-xfixes
     yt-dlp
     zathura
     zsh
