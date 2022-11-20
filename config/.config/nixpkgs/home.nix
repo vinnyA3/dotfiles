@@ -12,6 +12,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+
   
   home.packages = with pkgs; [
     bat
@@ -22,6 +23,7 @@
     exa
     feh
     fff
+    ffmpeg
     fzf
     gitui
     gtypist
@@ -29,7 +31,9 @@
     jq
     lolcat
     lynx
+    mitmproxy
     mpv
+    neofetch
     neovim-remote
     nerdfonts
     obsidian

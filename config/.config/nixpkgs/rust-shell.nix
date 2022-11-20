@@ -1,5 +1,8 @@
 { pkgs ? import <nixpkgs> {} }:
+
 pkgs.mkShell rec {
+  name = "rustup-custom-toolchain";
+
   buildInputs = with pkgs; [
     llvmPackages_latest.llvm
     llvmPackages_latest.bintools
