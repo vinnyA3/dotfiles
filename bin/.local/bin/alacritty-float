@@ -1,3 +1,3 @@
 #!/bin/bash
 
-/usr/bin/alacritty -t 'Float Alacritty'
+/usr/bin/alacritty --title 'Alacritty Float' --class "floating-terminal,floating-terminal"
