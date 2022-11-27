@@ -22,7 +22,6 @@
     discord
     exa
     feh
-    fff
     ffmpeg
     fzf
     gitui
