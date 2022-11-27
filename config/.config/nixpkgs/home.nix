@@ -36,6 +36,8 @@
     neofetch
     neovim-remote
     nerdfonts
+    nmap
+    nnn
     obsidian
     ripgrep
     rustc
