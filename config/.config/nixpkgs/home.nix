@@ -13,11 +13,10 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  
   home.packages = with pkgs; [
     bat
     btop
-    cargo
+    cava
     cmake
     discord
     exa
@@ -39,8 +38,8 @@
     nnn
     obsidian
     ripgrep
-    rustc
     rust-analyzer
+    rustup
     starship
     tab-rs
     tealdeer
