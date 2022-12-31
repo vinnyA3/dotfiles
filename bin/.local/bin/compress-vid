@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ ! command -v ffmpeg &> /dev/null ]
+then
+  echo "Ensure you have ffmpeg installed & is in your executable PATH"
+  exit
+else
+  if [ -z $1 &> /dev/null ]
+  then
+    echo "Please include your file to compress as the first argument - cannot be null\n"
+    exit
+  fi
+
+  output_file = $2
+  crf = $3
+  # only works on mp4 for now
+  ffmpeg -i $1 -vcodec libx264 -crf "${crf:=28}" "${output_file:="compressed-output.mp4"}"
+fi
