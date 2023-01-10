@@ -17,6 +17,7 @@
     bat
     btop
     cava
+    clang
     cmake
     discord
     exa
@@ -26,7 +27,9 @@
     gitui
     gtypist
     iosevka
+    imagemagick
     jq
+    lld
     lolcat
     lynx
     mitmproxy
@@ -37,8 +40,8 @@
     nmap
     nnn
     obsidian
+    racket
     ripgrep
-    rust-analyzer
     rustup
     starship
     tab-rs
