@@ -1,0 +1,10 @@
+#!/bin/bash
+
+IMAGES="./images/*"
+
+for image in $IMAGES
+do
+  echo "Processing $image file ..."
+  output_filename=$(echo $image | sed -r 's/\.\/images\/(.*).png+$/\1/')
+  cwebp -q 80 $image -o "./output/$output_filename.webp"
+done
