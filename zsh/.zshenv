@@ -15,7 +15,7 @@ export RIPGREP_CONFIG_PATH=$HOME
 export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:/usr/local/opt/llvm/bin
 
 # requires fzf installed
-export FZF_DEFAULT_COMMAND='ag --hidden --follow -f -g ""'
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 
 # colored, pretty man pages - requires bat (https://github.com/sharkdp/bat) binary
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
