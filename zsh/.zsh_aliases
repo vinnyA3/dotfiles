@@ -2,7 +2,6 @@
 alias :q=exit
 
 # tmux
-alias mux='tmuxinator' # requires tmuxinator binary
 alias tmux='tmux -f ~/.tmux/tmux.conf'
 alias ta='tmux attach -t'
 alias tad='tmux attach -d -t'
@@ -10,6 +9,7 @@ alias ts='tmux new-session -s'
 alias tl='tmux list-sessions'
 alias tksv='tmux kill-server'
 alias tkss='tmux kill-session -t'
+alias twerk="tmuxp load app-dev -f $HOME/.tmux/tmux.conf" # tmuxp - https://github.com/tmux-python/tmuxp
 
 # requires custom python script (get-date.py)--see bin in dotfiles
 alias cdate='get-date.py | pbcopy; echo "copied date to clipboard!"' # mac

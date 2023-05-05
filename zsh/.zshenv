@@ -17,6 +17,9 @@ export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:
 # requires fzf installed
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 
+# tmuxp - https://github.com/tmux-python/tmuxp
+export TMUXP_CONFIGDIR=$HOME/.dotfiles/tmux/.tmux/sessions
+
 # colored, pretty man pages - requires bat (https://github.com/sharkdp/bat) binary
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 

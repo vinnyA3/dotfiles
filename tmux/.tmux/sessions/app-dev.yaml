@@ -1,0 +1,24 @@
+session_name: mobile-development
+start_directory: ~/Development/work/app-mobile
+windows:
+  - window_name: editor
+    layout: tiled
+    shell_command_before:
+      - setup-volta
+    panes:
+      - nvim
+
+  - window_name: processes
+    layout: tiled
+    panes:
+      - shell_command:
+          - setup-volta
+          - yarn start
+      - adb devices
+
+  - window_name: proxy
+    layout: tiled
+    shell_command_before:
+      - cd ~/Development/work/app-mobile
+    panes:
+      - mitmproxy
