@@ -5,6 +5,9 @@
 # editor(script) - please check script exists in '.local/bin'
 export EDITOR=$HOME/.local/bin/editor # aliases to nvim
 
+# zk (cli tool for second brain note archive) - https://github.com/mickael-menu/zk
+export ZK_NOTEBOOK_DIR=$HOME/Documents/brain-stew
+
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx # probably not even needed anymore tbh
 export CLICOLOR=1
 export XDG_CONFIG_HOME=$HOME/.config
