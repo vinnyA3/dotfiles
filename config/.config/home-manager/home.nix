@@ -53,6 +53,7 @@
     xclip
     yt-dlp
     zathura
+    zk
     zsh
     zsh-autosuggestions
     zsh-syntax-highlighting
