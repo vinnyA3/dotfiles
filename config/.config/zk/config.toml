@@ -44,8 +44,11 @@ author = "Vin"
 paths = ["software-engineering/"]
 template = "default.md"
 
+[group.inbox]
+paths = ["00-inbox/"]
+
 [group.journal]
-paths = ["journal/weekly", "journal/daily"]
+paths = ["03-journal/weekly", "03-journal/daily"]
 
 [group.journal.note]
 filename = "{{format-date now}}"
@@ -93,11 +96,19 @@ recent = "zk edit --sort created- --created-after 'last two weeks' --interactive
 lucky = "zk list --quiet --format full --sort random --limit 1"
 
 # Edit global config file
-conf = 'nvim "$HOME/.dotfiles/config/.config/zk/config.toml"'
+config = 'nvim "$HOME/.dotfiles/config/.config/zk/config.toml"'
 
 # Group aliases
 # >> Journal
-daily = 'zk new --no-input "$ZK_NOTEBOOK_DIR/journal/daily"'
+daily = 'zk new --no-input "$ZK_NOTEBOOK_DIR/03-journal/daily"'
+
+new = 'zk new "$ZK_NOTEBOOK_DIR/00-inbox" --title $@'
+
+# NEW (all new notes - general unsorted, go in inbox)
+# new = 'zk new --group inbox'
+
+# >> Journal
+# se = 'zk new "$ZK_NOTEBOOK_DIR/03-journal/daily"'
 
 # LSP (EDITOR INTEGRATION)
 [lsp]
