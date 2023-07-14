@@ -9,7 +9,7 @@ windows:
       - nvim
 
   - window_name: processes
-    layout: tiled
+    layout: even-horizontal
     panes:
       - shell_command:
           - setup-volta
