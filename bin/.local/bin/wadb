@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# [ Wireless ADB setup ]
+# This script is used to quikly provision wireless adb debugging & opens port
+# for default React native bundle
+
+static_test_ip=192.168.1.128
+tcp_port=5555
+
+adb tcpip $tcp_port # open tcpip connections on port
+adb connect "$static_test_ip:$tcp_port"
+
+device_output="$(adb devices | grep "$static_test_ip:$tcp_port")"
+
+if [[ ! -z $device_output ]]; then
+  echo "Please disconnect your device now ...."
+  sleep 7;
+  echo "Opening port 8081 on your device ...."
+  adb reverse tcp:8081 tcp:8081
+  adb devices
+  echo "Setup successful!"
+fi

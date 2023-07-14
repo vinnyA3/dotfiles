@@ -1,1 +1,3 @@
 .local/bin/nvim
+.local/bin/android-studio
+.local/bin/create-eqx-release
