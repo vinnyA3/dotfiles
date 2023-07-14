@@ -23,12 +23,14 @@
     exa
     feh
     ffmpeg
+    firefox
     fzf
     gitui
     gtypist
     iosevka
     imagemagick
     jq
+    ktlint
     lld
     lolcat
     lynx
@@ -40,7 +42,11 @@
     nmap
     nnn
     obsidian
+    # pass - uncomment when using X
+    pass-wayland
     racket
+    react-native-debugger
+    ripasso-cursive
     ripgrep
     rustup
     starship
@@ -49,12 +55,14 @@
     tmux
     traceroute
     tree-sitter
-    unclutter-xfixes
-    xclip
+    # unclutter-xfixes
+    # xclip
     yt-dlp
     zathura
+    zig
     zk
     zsh
+    zsh-autocomplete
     zsh-autosuggestions
     zsh-syntax-highlighting
   ];
