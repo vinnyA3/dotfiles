@@ -1,9 +1,17 @@
 #!/bin/bash
 
-/usr/bin/alacritty \
-  --title 'Alacritty Float' \
-  --class "floating-terminal,floating-terminal" \
-  # there is an issue with the compositor when there is another alacritty
-  # instance running with transparency. so, just ensure the float variant has
-  # transparency disabled to avoid issue
-  --option window.opacity=1
+# there is an issue with the compositor when there is another alacritty
+# instance running with transparency. so, just ensure the float variant has
+# transparency disabled to avoid issue
+
+if [[ ! -z $1 ]]; then
+  alacritty \
+    --title 'Alacritty Float' \
+    --class "floating-terminal,floating-terminal" \
+    --option window.opacity=1 -e $1
+else
+  alacritty \
+    --title 'Alacritty Float' \
+    --class "floating-terminal,floating-terminal" \
+    --option window.opacity=1
+fi

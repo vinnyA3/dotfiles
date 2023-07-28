@@ -20,14 +20,13 @@ search_yt() {
     local RESULT=""
     local MAX_RESULTS=10 # determines the # of search results to return .. best to leave @ 10
 
-    VIDEO_ID=$(curl \
+    SELECTED_RESULT=$(curl -s \
       "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$QUERY&safeSearch=none&type=video&key=$API_KEY" \
       --header 'Accept: application/json' \
-      --compressed | jq '.items[0].id.videoId')
+      --compressed | jq '.items | map(.id.videoId + " :: " + .snippet.title)[]' | fzf)
 
-    VIDEO_ID=$(echo $VIDEO_ID | tr -d \") # strip quotes .. maybe jq can do this?
-
-    echo "Starting MPV with videoId: $VIDEO_ID..."; play_video $VIDEO_ID
+    RESULT_VIDEO_ID=$(echo $SELECTED_RESULT | tr -d \" | awk '{ print $1 }')
+    echo "Starting MPV with videoId: $RESULT_VIDEO_ID..."; play_video $RESULT_VIDEO_ID
   fi
 }
 
@@ -51,7 +50,7 @@ else
   if [ -z $1 &> /dev/null ]
   then
     read -p "Enter search query: " search_query
-    search_yt $search_query 
+    search_yt $search_query
   else
     search_yt $1
   fi

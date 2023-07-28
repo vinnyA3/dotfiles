@@ -1,0 +1,14 @@
+#!/bin/bash
+# NOTE: ideally, this script for use in cronjob
+pictures_dir=$HOME/Pictures/wallpaper
+wal=$(ls -1a $pictures_dir | shuf -n 1)
+EUID=$(id --real --user)
+PID=$(pgrep --euid $EUID gnome-session | head -n 1)
+export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
+
+if [ ! -z $wal ] && [ $wal != '..' ]; then
+  file_uri="file://$pictures_dir/$wal"
+  # date=$(date)
+  # echo "[$date] $EUID / $PID / $DBUS_SESSION_BUS_ADDRESS / $file_uri"
+  /usr/bin/gsettings set org.gnome.desktop.background picture-uri-dark $file_uri # assuming dark mode (for now)
+fi

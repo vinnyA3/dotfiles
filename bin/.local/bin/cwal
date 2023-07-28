@@ -1,7 +1,7 @@
 #!/bin/bash
 # [Deps]: FZF
 pictures_dir=$HOME/Pictures/wallpaper
-selected_img=$(ls $pictures_dir | fzf)
+selected_img=$(ls -1a $pictures_dir | fzf)
 
 if [ ! -z $selected_img ]; then
   # assuming dark mode
