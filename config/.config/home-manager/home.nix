@@ -17,7 +17,6 @@
     bat
     btop
     cava
-    clang
     cmake
     discord
     exa
