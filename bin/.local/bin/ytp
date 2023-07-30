@@ -1,40 +1,43 @@
 #!/bin/bash
 
-# NEEDS jq & mpv (default & best player) .. to install on MAC:
-# brew install jq
-# brew install mpv
+# REQUIREMENTS & DEPENDENCIES:
+#   * NEEDS jq & mpv (default & best player) .. to install on MAC: brew install jq && brew install mpv
+#   * A Youtube API key (you can get on via your gmail/developer console)
 
 # CONSTANTS
 DEFAULT_PLAYER=mpv
-# get api from env .. for now, for ease of use, we're going to add it here
-API_KEY=""
+MAX_RESULTS=20
 
 # FUNCTIONS
+# =========
 search_yt() {
   if [ -z $1 ]
   then
     echo "Please supply a search term."
     exit
   else
-    local QUERY=$(echo $1 | sed -e 's/ /%/g') # strip spaces - use special char instead
-    local RESULT=""
-    local MAX_RESULTS=10 # determines the # of search results to return .. best to leave @ 10
-
-    SELECTED_RESULT=$(curl -s \
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$QUERY&safeSearch=none&type=video&key=$API_KEY" \
+    local query=$(echo $1 | sed -e 's/ /%/g') # strip spaces - use special char instead
+    local selected_result=$(curl -s \
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$query&safeSearch=none&type=video&key=$API_KEY" \
       --header 'Accept: application/json' \
       --compressed | jq '.items | map(.id.videoId + " :: " + .snippet.title)[]' | fzf)
 
-    RESULT_VIDEO_ID=$(echo $SELECTED_RESULT | tr -d \" | awk '{ print $1 }')
-    echo "Starting MPV with videoId: $RESULT_VIDEO_ID..."; play_video $RESULT_VIDEO_ID
+    local result_video_id=$(echo $selected_result | tr -d \" | awk '{ print $1 }')
+
+    if [ ! -z $result_video_id ]; then
+      echo "Starting MPV with videoId: $result_video_id..."; play_video $result_video_id
+    else
+      echo "Video ID not selected.  Aborting ..."
+      exit 1
+    fi
   fi
 }
 
-# play_video :: String(term) -> Void
+# play_video :: string(term) -> void
 play_video() {
   if [ $DEFAULT_PLAYER == 'mpv' ]
   then
-    mpv --geometry=50%x50% "https://www.youtube.com/watch?v=$1"
+    mpv --ontop --screen=1 --geometry=33%x33%+95%+95% "https://www.youtube.com/watch?v=$1"
   else
     echo "Player $DEFAULT_PLAYER not found."
     exit 1
@@ -55,24 +58,3 @@ else
     search_yt $1
   fi
 fi
-
-# check if mpv exists as a binary
-
-# If no API KEY ... then, echo "Make sure you set up your developer key on the
-# dev console .. additionaly, add the api key to your ENV"
-
-# else, if key exists ... then:
-# .. wait for a search input ... 
-# .. on enter & when search input is not empty ...
-# .... send an API request (with key attached) & retrieve related videos (maybe
-# top 10 for now ??) -- we can make this more robust later
-
-# Now, using that response, we'll have a UI to choose based on the output & the
-# number .... if user types #, then grab that url & pass to mpv .. .done (for
-# now) 
-# --- read return items (parsed with video title, video time  & attached id) array (if !empty) into a bash array
-# --- loop over that bash array & display items in a list as such ... 
-# `[i - array idx] - <Video Title> - <Time?>`
-
-# Now, wait for user input (type number -- corresponds to the array index / desired video)
-# on a succesfull & valid input ... pass that video id to mpv & make that bank
