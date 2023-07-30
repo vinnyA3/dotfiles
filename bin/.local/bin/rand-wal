@@ -1,14 +1,19 @@
 #!/bin/bash
+# [rand-wal] change wallpaper every X minutes (currenlty 15 mins)
+# dependencies:
+#   * libnotify - sends notif with the wallpaper as preview
 # NOTE: ideally, this script for use in cronjob
 pictures_dir=$HOME/Pictures/wallpaper
 wal=$(ls -1a $pictures_dir | shuf -n 1)
 EUID=$(id --real --user)
 PID=$(pgrep --euid $EUID gnome-session | head -n 1)
-export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-)
+export DBUS_SESSION_BUS_ADDRESS=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ | cut -d= -f2-)
 
-if [ ! -z $wal ] && [ $wal != '..' ]; then
+if [ ! -z $wal ] && [ $wal != '..' ] && [ $wal != '.' ]; then
   file_uri="file://$pictures_dir/$wal"
-  # date=$(date)
+  # date=$(date) # for debug logs
   # echo "[$date] $EUID / $PID / $DBUS_SESSION_BUS_ADDRESS / $file_uri"
   /usr/bin/gsettings set org.gnome.desktop.background picture-uri-dark $file_uri # assuming dark mode (for now)
+
+  notify-send -t 4200 'Wallpaper Changed!' "$(echo $wal | sed -E 's/\..+$//')" --icon $file_uri
 fi
