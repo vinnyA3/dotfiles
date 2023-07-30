@@ -22,7 +22,7 @@
     exa
     feh
     ffmpeg
-    firefox
+    # firefox
     fzf
     gitui
     gtypist
@@ -30,6 +30,7 @@
     imagemagick
     jq
     ktlint
+    libnotify
     lld
     lolcat
     lynx
