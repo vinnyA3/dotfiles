@@ -18,7 +18,7 @@
     btop
     cava
     cmake
-    discord
+    # discord
     exa
     feh
     ffmpeg
