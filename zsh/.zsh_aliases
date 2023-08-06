@@ -20,6 +20,9 @@ alias wtr='curl wttr.in'
 # cheat.sh - require https://github.com/chubin/cheat.sh & an internet connection
 alias cheat='cht.sh'
 
+# cava - this is to get gradients working in tmux
+alias cava='TERM=st-256color cava'
+
 # dbus music player control (see scripts in dotfiles' scripts dir)
 alias mpt='dbus-mpris-player-control toggle'
 alias mpm='dbus-mpris-player-control meta'
