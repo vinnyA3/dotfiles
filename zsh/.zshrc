@@ -1,6 +1,8 @@
 # Source aliases
 source $HOME/.zsh_aliases
-source $HOME/.zshenv
+# this is commented for now, looks like zsh will source this automatically? or maybe
+# is sourced somewhere else ... who knows ... whatever
+# source $HOME/.zshenv
 
 # Set vim terminal keybindings
 bindkey -v
