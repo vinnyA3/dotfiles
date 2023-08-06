@@ -3,9 +3,13 @@
 # REQUIREMENTS & DEPENDENCIES:
 #   * NEEDS jq & mpv (default & best player) .. to install on MAC: brew install jq && brew install mpv
 #   * A Youtube API key (you can get on via your gmail/developer console)
+#     - note: I source this from a local file located in my home_dir (.env_secrets)
 
 # CONSTANTS
 DEFAULT_PLAYER=mpv
+# it's better to create a secrets file and source in your shell config ..
+# but you can uncomment this and add your key if you want
+# YT_API_KEY="you super secret key here"
 MAX_RESULTS=20
 
 # FUNCTIONS
@@ -18,7 +22,7 @@ search_yt() {
   else
     local query=$(echo $1 | sed -e 's/ /%/g') # strip spaces - use special char instead
     local selected_result=$(curl -s \
-      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$query&safeSearch=none&type=video&key=$API_KEY" \
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=$MAX_RESULTS&q=$query&safeSearch=none&type=video&key=$YT_API_KEY" \
       --header 'Accept: application/json' \
       --compressed | jq '.items | map(.id.videoId + " :: " + .snippet.title)[]' | fzf)
 
