@@ -48,6 +48,11 @@ export FFF_FAV3=~/Documents/notes/
 export LYNX_CFG=$XDG_CONFIG_HOME/lynx.cfg
 export LYNX_LSS=$XDG_CONFIG_HOME/lynx.lss
 
+# local secrets (used for various custom scripts)
+if [ -f $HOME/.env_secrets ]; then
+  source $HOME/.env_secrets
+fi
+
 if [ -e $HOME/.nix-profile/etc/profile.d/nix.sh ];
   then
     . $HOME/.nix-profile/etc/profile.d/nix.sh;
