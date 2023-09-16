@@ -52,7 +52,7 @@ play_video() {
 if [ ! command -v $DEFAULT_PLAYER &> /dev/null || ! command -v jq &> /dev/null ]
 then
   echo "Please make sure that you have both $DEFAULT_PLAYER & jq installed."
-  exit 
+  exit
 else
   if [ -z $1 &> /dev/null ]
   then
