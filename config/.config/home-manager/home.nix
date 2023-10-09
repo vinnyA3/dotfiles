@@ -16,10 +16,11 @@
   home.packages = with pkgs; [
     bat
     btop
+    bun
     cava
     cmake
     # discord
-    exa
+    eza
     feh
     ffmpeg
     # firefox
@@ -29,7 +30,7 @@
     iosevka
     imagemagick
     jq
-    ktlint
+    # ktlint
     libnotify
     lld
     lolcat
