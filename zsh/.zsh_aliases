@@ -58,7 +58,7 @@ alias cat='bat' # this requires the binary (bat) to be installed! - https://gith
 
 # ls aliases
 # alias ls='ls --color=auto'
-alias ls='exa' # exa is an implementation of ls - https://github.com/ogham/exa
+alias ls='eza' # eza is an implementation of ls - https://github.com/eza-community/eza
 alias ll='ls -alF'
 alias la='ls -a'
 
