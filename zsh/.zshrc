@@ -36,7 +36,7 @@ ff() {
 }
 
 # ==============
-#      FZF 
+#      FZF
 # ==============
 
 # fh - repeat history :)
@@ -45,13 +45,13 @@ fh() {
 }
 
 # ==============
-#    AUTOCOMP 
+#    AUTOCOMP
 # ==============
 autoload -U compinit
 compinit
 
 # ==============
-#    HISTORY 
+#    HISTORY
 # ==============
 HISTSIZE=1000000
 

@@ -7,6 +7,7 @@ export EDITOR=$HOME/.local/bin/editor # aliases to nvim
 
 # zk (cli tool for second brain note archive) - https://github.com/mickael-menu/zk
 export ZK_NOTEBOOK_DIR=$HOME/Documents/brain-stew
+export ZK_SHELL=$HOME/.nix-profile/bin/zsh
 
 export LSCOLORS=cxBxhxDxfxhxhxhxhxcxcx # probably not even needed anymore tbh
 export CLICOLOR=1
@@ -17,6 +18,9 @@ export RIPGREP_CONFIG_PATH=$HOME
 
 export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:/usr/local/opt/llvm/bin
 
+# gopath reset - on linux, default dir is ~/go.  hiding the dir in home to avoid clutter
+export GOPATH=$HOME/.go
+
 # requires fzf installed
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 
@@ -24,6 +28,7 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 export TMUXP_CONFIGDIR=$HOME/.dotfiles/tmux/.tmux/sessions
 
 # colored, pretty man pages - requires bat (https://github.com/sharkdp/bat) binary
+export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 # androidz (linux - popos default install)
