@@ -26,6 +26,7 @@
     # firefox
     fzf
     gitui
+    go
     gtypist
     iosevka
     imagemagick
@@ -36,7 +37,7 @@
     lolcat
     lynx
     mitmproxy
-    mpv
+    # mpv
     neofetch
     neovim-remote
     nerdfonts
