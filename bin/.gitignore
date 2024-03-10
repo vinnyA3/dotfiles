@@ -1,4 +1,5 @@
 .local/bin/nvim
+.local/bin/wezterm
 .local/bin/godot4
 .local/bin/android-studio
 .local/bin/create-eqx-release
