@@ -79,7 +79,12 @@ compinit
 # ==============
 #    HISTORY
 # ==============
-HISTSIZE=1000000
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=500000
+SAVEHIST=500000
+setopt appendhistory
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 # ==============
 #    PLUGINS

@@ -16,10 +16,10 @@ export XDG_CONFIG_HOME=$HOME/.config
 # ripgrep
 export RIPGREP_CONFIG_PATH=$HOME
 
-export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:/usr/local/opt/llvm/bin
-
 # gopath reset - on linux, default dir is ~/go.  hiding the dir in home to avoid clutter
 export GOPATH=$HOME/.go
+
+export PATH=$PATH:$HOME/.local/bin:/usr/local/bin:/usr/local/opt/gnu-getopt/bin:$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$GOPATH/bin
 
 # requires fzf installed
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
