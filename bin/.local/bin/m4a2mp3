@@ -1,5 +1,0 @@
-#!/bin/bash
-# m4a2mp3: convert m4a files in the working directory to mp3 320kbps
-for FILE in *.m4a ; do
-    ffmpeg -i "$FILE" -f mp3 -ab 320k "`basename "$FILE" .m4a`.mp3" || break;
-done

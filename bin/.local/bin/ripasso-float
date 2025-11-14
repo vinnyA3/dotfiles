@@ -1,5 +1,0 @@
-#!/bin/bash
-
-# note: this wrapping script uses custom alacritty-float script
-
-$HOME/.local/bin/alacritty-float 'ripasso-cursive'
