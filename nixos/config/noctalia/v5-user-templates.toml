@@ -1,0 +1,9 @@
+[theme.templates.user.nvim-base16]
+input_path = "~/.config/nvim/lua/misc/matugen-template.lua"
+output_path = "~/.config/nvim/lua/misc/matugen.lua"
+post_hook = 'pkill -SIGUSR1 nvim'
+
+[theme.templates.user.qutebrowser]
+input_path = "~/.config/qutebrowser/noctalia/color-template.json"
+output_path = "~/.config/qutebrowser/noctalia/colors.json"
+post_hook = '/home/qwerty_asdf/.local/bin/reload-qutebrowser-config'
